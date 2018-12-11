@@ -28,4 +28,11 @@ public class Images {
 		return new Image(LOGO_DATA);
 	}
 
+	public static Image get(String name) {
+		return get(name, 10f);
+	}
+
+	public static Image get(String name, float size) {
+		return new Image(ImageDataFactory.create(Image.class.getResource(String.format("/img/%s.png", name.toLowerCase())))).scaleToFit(size, size);
+	}
 }

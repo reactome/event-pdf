@@ -1,0 +1,1037 @@
+{
+  "dbId" : 354192,
+  "stId" : "R-HSA-354192",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 57600,
+    "stId" : "R-HSA-57600",
+    "displayName" : "ITGB3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05106",
+    "geneNames" : [ "ITGB3", "GP3A" ],
+    "parents" : [ 114514 ]
+  }, {
+    "dbId" : 74112,
+    "stId" : "R-ALL-74112",
+    "displayName" : "Ca2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 377604 ]
+  }, {
+    "dbId" : 377604,
+    "stId" : "R-ALL-377604",
+    "displayName" : "Integrin binding divalent cations [extracellular region]",
+    "schemaClass" : "CandidateSet",
+    "diagramIds" : [ 29 ],
+    "parents" : [ 377619, 377616, 354137, 377622, 377620 ],
+    "children" : [ 74112, 266099, 114632 ]
+  }, {
+    "dbId" : 203776,
+    "stId" : "R-HSA-203776",
+    "displayName" : "CSK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 69 ],
+    "identifier" : "P41240",
+    "geneNames" : [ "CSK" ],
+    "parents" : [ 377606 ]
+  }, {
+    "dbId" : 377606,
+    "stId" : "R-HSA-377606",
+    "displayName" : "p-Y530-SRC:CSK [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 377608 ],
+    "children" : [ 377598, 203776 ]
+  }, {
+    "dbId" : 377600,
+    "stId" : "R-HSA-377600",
+    "displayName" : "RAP1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 354074, 354126 ],
+    "children" : [ 377590, 354118 ]
+  }, {
+    "dbId" : 354176,
+    "stId" : "R-HSA-354176",
+    "displayName" : "Talin:RIAM complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 23 ],
+    "parents" : [ 377619, 377616, 377620, 377622, 354130 ],
+    "children" : [ 350713, 354110 ]
+  }, {
+    "dbId" : 199430,
+    "stId" : "R-HSA-199430",
+    "displayName" : "p-T308,S473-AKT1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31749",
+    "geneNames" : [ "AKT1", "PKB", "RAC" ],
+    "parents" : [ 432180 ]
+  }, {
+    "dbId" : 377603,
+    "stId" : "R-HSA-377603",
+    "displayName" : "Integrin alphaIIb beta3 ECM ligands [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "parents" : [ 377619, 377616, 377620, 377622, 354137 ],
+    "children" : [ 140586, 67271, 54851 ]
+  }, {
+    "dbId" : 377612,
+    "stId" : "R-HSA-377612",
+    "displayName" : "Integrin alphaIIb beta3:Inactive (p-Y530)-SRC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 377616 ],
+    "children" : [ 377598, 114514 ]
+  }, {
+    "dbId" : 377614,
+    "stId" : "R-HSA-377614",
+    "displayName" : "Integrin alphaIIb beta3:Active (p-Y419)-SRC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 377622 ],
+    "children" : [ 1810408, 114514 ]
+  }, {
+    "dbId" : 392841,
+    "stId" : "R-HSA-392841",
+    "displayName" : "CalDAG-GEFs:DAG:Ca2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 374 ],
+    "children" : [ 392488, 114519, 74016 ]
+  }, {
+    "dbId" : 377608,
+    "stId" : "R-HSA-377608",
+    "displayName" : "Integrin alphaIIb beta3:p-Y530-SRC:CSK [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 25, 44 ],
+    "parents" : [ 377619, 354130 ],
+    "children" : [ 377606, 114514 ]
+  }, {
+    "dbId" : 377620,
+    "stId" : "R-HSA-377620",
+    "displayName" : "Talin:RIAM complex:ECM ligands: 2X(Integrin alphaIIb beta3:SRC) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 53 ],
+    "children" : [ 1215929, 377603, 354176, 377604 ]
+  }, {
+    "dbId" : 354068,
+    "stId" : "R-HSA-354068",
+    "displayName" : "p-Y397-PTK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05397",
+    "geneNames" : [ "PTK2", "FAK", "FAK1" ],
+    "parents" : [ 354135 ]
+  }, {
+    "dbId" : 179856,
+    "stId" : "R-ALL-179856",
+    "displayName" : "PI(4,5)P2 [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8 ],
+    "identifier" : "18348",
+    "parents" : [ 354110 ]
+  }, {
+    "dbId" : 377622,
+    "stId" : "R-HSA-377622",
+    "displayName" : "Talin:RIAM complex:ECM ligands:2X(Integrin alphaIIb beta3:Active (p-Y419)-SRC) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 73 ],
+    "parents" : [ 429434, 429424, 354103, 354135, 354080 ],
+    "children" : [ 377614, 377603, 354176, 377604 ]
+  }, {
+    "dbId" : 61459,
+    "stId" : "R-HSA-61459",
+    "displayName" : "PDPK1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15530",
+    "geneNames" : [ "PDPK1", "PDK1" ],
+    "parents" : [ 432180 ]
+  }, {
+    "dbId" : 377616,
+    "stId" : "R-HSA-377616",
+    "displayName" : "Talin:RIAM complex:ECM ligands: 2X(Integrin alphaIIb beta3:Inactive (p-Y530)-SRC) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 68 ],
+    "children" : [ 377612, 377603, 354176, 377604 ]
+  }, {
+    "dbId" : 201621,
+    "stId" : "R-HSA-201621",
+    "displayName" : "PTK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 76 ],
+    "identifier" : "Q05397",
+    "geneNames" : [ "PTK2", "FAK", "FAK1" ],
+    "parents" : [ 354103 ]
+  }, {
+    "dbId" : 377619,
+    "stId" : "R-HSA-377619",
+    "displayName" : "Talin:RIAM complex:ECM ligands: 2X(Integrin alphaIIb beta3:p(Y530)-SRC:CSK) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 37 ],
+    "children" : [ 377608, 377603, 354176, 377604 ]
+  }, {
+    "dbId" : 201625,
+    "stId" : "R-HSA-201625",
+    "displayName" : "BCAR1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 120 ],
+    "identifier" : "P56945",
+    "geneNames" : [ "BCAR1", "CAS", "CASS1", "CRKAS" ],
+    "parents" : [ 372688 ]
+  }, {
+    "dbId" : 58268,
+    "stId" : "R-HSA-58268",
+    "displayName" : "SYK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 181 ],
+    "identifier" : "P43405",
+    "geneNames" : [ "SYK" ],
+    "parents" : [ 429424 ]
+  }, {
+    "dbId" : 354074,
+    "stId" : "R-HSA-354074",
+    "displayName" : "RAP1:GDP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ],
+    "children" : [ 29420, 377600 ]
+  }, {
+    "dbId" : 372645,
+    "stId" : "R-HSA-372645",
+    "displayName" : "p-Y-BCAR1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P56945",
+    "geneNames" : [ "BCAR1", "CAS", "CASS1", "CRKAS" ],
+    "parents" : [ 372646 ]
+  }, {
+    "dbId" : 392485,
+    "stId" : "R-HSA-392485",
+    "displayName" : "Rap1 cAMP-GEFs [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 134 ],
+    "children" : [ 3008666, 3008670 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 392841 ]
+  }, {
+    "dbId" : 372646,
+    "stId" : "R-HSA-372646",
+    "displayName" : "Phosphorylated p130Cas in complex with FADK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 125 ],
+    "parents" : [ 372652 ],
+    "children" : [ 354080, 372645 ]
+  }, {
+    "dbId" : 354081,
+    "stId" : "R-HSA-354081",
+    "displayName" : "APBB1IP [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "identifier" : "Q7Z5R6",
+    "geneNames" : [ "APBB1IP", "PREL1", "RARP1", "RIAM" ],
+    "parents" : [ 354110 ]
+  }, {
+    "dbId" : 140583,
+    "stId" : "R-HSA-140583",
+    "displayName" : "FGA [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02671",
+    "geneNames" : [ "FGA" ],
+    "parents" : [ 140586 ]
+  }, {
+    "dbId" : 354080,
+    "stId" : "R-HSA-354080",
+    "displayName" : "Talin:RIAM complex:ECM ligands: Integrin alphaIIb beta3:Active (p-Y419)-SRC:p(Y397,407,576,577,861,925)-FADK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 94 ],
+    "parents" : [ 354113, 372646, 372688 ],
+    "children" : [ 354128, 377622 ]
+  }, {
+    "dbId" : 140586,
+    "stId" : "R-HSA-140586",
+    "displayName" : "fibrin monomer [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 377603 ],
+    "children" : [ 140585, 140584, 140583 ]
+  }, {
+    "dbId" : 372652,
+    "stId" : "R-HSA-372652",
+    "displayName" : "Crk bound to p130Cas:FADK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 128 ],
+    "children" : [ 2980677, 372646 ]
+  }, {
+    "dbId" : 140584,
+    "stId" : "R-HSA-140584",
+    "displayName" : "FGB [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02675",
+    "geneNames" : [ "FGB" ],
+    "parents" : [ 140586 ]
+  }, {
+    "dbId" : 1215929,
+    "stId" : "R-HSA-1215929",
+    "displayName" : "Integrin alphaIIb beta3:SRC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 377620 ],
+    "children" : [ 8876922, 114514 ]
+  }, {
+    "dbId" : 140585,
+    "stId" : "R-HSA-140585",
+    "displayName" : "FGG [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02679",
+    "geneNames" : [ "FGG", "PRO2061" ],
+    "parents" : [ 140586 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 135 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 392488,
+    "stId" : "R-HSA-392488",
+    "displayName" : "CalDAG-GEFs [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 392841 ],
+    "children" : [ 870270, 3008671 ]
+  }, {
+    "dbId" : 3008671,
+    "stId" : "R-HSA-3008671",
+    "displayName" : "RASGRP2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7LDG7",
+    "geneNames" : [ "RASGRP2", "CDC25L", "MCG7" ],
+    "parents" : [ 392488 ]
+  }, {
+    "dbId" : 432180,
+    "stId" : "R-HSA-432180",
+    "displayName" : "AKT1/PDK1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 142 ],
+    "children" : [ 199430, 61459 ]
+  }, {
+    "dbId" : 354103,
+    "stId" : "R-HSA-354103",
+    "displayName" : "Talin:RIAM complex: ECM ligands:Integrin alphaIIb beta3:Active (p-Y419)- SRC:FADK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 77 ],
+    "children" : [ 201621, 377622 ]
+  }, {
+    "dbId" : 3008670,
+    "stId" : "R-HSA-3008670",
+    "displayName" : "RAPGEF3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95398",
+    "geneNames" : [ "RAPGEF3", "CGEF1", "EPAC", "EPAC1" ],
+    "parents" : [ 392485 ]
+  }, {
+    "dbId" : 3008666,
+    "stId" : "R-HSA-3008666",
+    "displayName" : "RAPGEF4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WZA2",
+    "geneNames" : [ "RAPGEF4", "CGEF2", "EPAC2" ],
+    "parents" : [ 392485 ]
+  }, {
+    "dbId" : 74680,
+    "stId" : "R-HSA-74680",
+    "displayName" : "SHC1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 144 ],
+    "identifier" : "P29353",
+    "geneNames" : [ "SHC1", "SHC", "SHCA" ],
+    "parents" : [ 432098 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 371, 84, 356, 137, 123 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 372, 86, 358, 138, 124 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 354110,
+    "stId" : "R-HSA-354110",
+    "displayName" : "Rap1-GTP:PIP2:RIAM [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 10 ],
+    "parents" : [ 354176 ],
+    "children" : [ 354126, 354081, 179856 ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 361 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 74684,
+    "stId" : "R-HSA-74684",
+    "displayName" : "p-Y427-SHC1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 178 ],
+    "identifier" : "P29353",
+    "geneNames" : [ "SHC1", "SHC", "SHCA" ],
+    "parents" : [ 443900 ]
+  }, {
+    "dbId" : 74686,
+    "stId" : "R-HSA-74686",
+    "displayName" : "GRB2-1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 102 ],
+    "identifier" : "P62993-1",
+    "geneNames" : [ "GRB2", "ASH" ],
+    "parents" : [ 354113 ]
+  }, {
+    "dbId" : 210625,
+    "stId" : "R-HSA-210625",
+    "displayName" : "PTPN1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 74 ],
+    "identifier" : "P18031",
+    "geneNames" : [ "PTPN1", "PTP1B" ]
+  }, {
+    "dbId" : 354118,
+    "stId" : "R-HSA-354118",
+    "displayName" : "RAP1A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62834",
+    "geneNames" : [ "RAP1A", "KREV1" ],
+    "parents" : [ 377600 ]
+  }, {
+    "dbId" : 54851,
+    "stId" : "R-HSA-54851",
+    "displayName" : "FN1(32-2386) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02751",
+    "geneNames" : [ "FN1", "FN" ],
+    "parents" : [ 377603 ]
+  }, {
+    "dbId" : 354113,
+    "stId" : "R-HSA-354113",
+    "displayName" : "GRB2 bound to pFADK1 in Focal adhesion [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 103 ],
+    "parents" : [ 354168 ],
+    "children" : [ 74686, 354080 ]
+  }, {
+    "dbId" : 67271,
+    "stId" : "R-HSA-67271",
+    "displayName" : "VWF(23-763) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04275",
+    "geneNames" : [ "VWF", "F8VWF" ],
+    "parents" : [ 377603 ]
+  }, {
+    "dbId" : 114632,
+    "stId" : "R-ALL-114632",
+    "displayName" : "Mg2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 377604 ]
+  }, {
+    "dbId" : 354126,
+    "stId" : "R-HSA-354126",
+    "displayName" : "RAP1:GTP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ],
+    "parents" : [ 354110 ],
+    "children" : [ 29438, 377600 ]
+  }, {
+    "dbId" : 64847,
+    "stId" : "R-HSA-64847",
+    "displayName" : "SOS1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 116 ],
+    "identifier" : "Q07889",
+    "geneNames" : [ "SOS1" ],
+    "parents" : [ 354168 ]
+  }, {
+    "dbId" : 354135,
+    "stId" : "R-HSA-354135",
+    "displayName" : "Talin:RIAM complex:ECM ligands: alphaIIb beta3:Active (p-Y419)-SRC:p(Y397)-FADK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 85 ],
+    "children" : [ 377622, 354068 ]
+  }, {
+    "dbId" : 114514,
+    "stId" : "R-HSA-114514",
+    "displayName" : "Integrin alpha2bbeta3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 140 ],
+    "parents" : [ 377612, 1215929, 377614, 377608 ],
+    "children" : [ 57578, 57600 ]
+  }, {
+    "dbId" : 354128,
+    "stId" : "R-HSA-354128",
+    "displayName" : "p-6Y-PTK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05397",
+    "geneNames" : [ "PTK2", "FAK", "FAK1" ],
+    "parents" : [ 354080 ]
+  }, {
+    "dbId" : 372688,
+    "stId" : "R-HSA-372688",
+    "displayName" : "FADK1 bound p130Cas complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 121 ],
+    "children" : [ 201625, 354080 ]
+  }, {
+    "dbId" : 114519,
+    "stId" : "R-ALL-114519",
+    "displayName" : "DAG [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17815",
+    "parents" : [ 392841 ]
+  }, {
+    "dbId" : 354130,
+    "stId" : "R-HSA-354130",
+    "displayName" : "Integrin alphaIIb beta3:p-Y530-SRC:CSK:Talin:RIAM complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 26 ],
+    "parents" : [ 432098, 443900, 354137 ],
+    "children" : [ 377608, 354176 ]
+  }, {
+    "dbId" : 354137,
+    "stId" : "R-HSA-354137",
+    "displayName" : "Focal complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 30 ],
+    "children" : [ 354130, 377603, 377604 ]
+  }, {
+    "dbId" : 432098,
+    "stId" : "R-HSA-432098",
+    "displayName" : "Integrin alphaIIb beta 3:p(Y530)-SRC:CSK:Talin:RIAM complex:SHC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 145 ],
+    "children" : [ 74680, 354130 ]
+  }, {
+    "dbId" : 2980677,
+    "stId" : "R-HSA-2980677",
+    "displayName" : "CRK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 373 ],
+    "identifier" : "P46108",
+    "geneNames" : [ "CRK" ],
+    "parents" : [ 372652 ]
+  }, {
+    "dbId" : 57578,
+    "stId" : "R-HSA-57578",
+    "displayName" : "ITGA2B(32-1039) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08514",
+    "geneNames" : [ "ITGA2B", "GP2B", "ITGAB" ],
+    "parents" : [ 432105, 114514 ]
+  }, {
+    "dbId" : 354153,
+    "stId" : "R-HSA-354153",
+    "displayName" : "SRC-1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 54 ],
+    "identifier" : "P12931-1",
+    "geneNames" : [ "SRC", "SRC1" ]
+  }, {
+    "dbId" : 29420,
+    "stId" : "R-ALL-29420",
+    "displayName" : "GDP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4 ],
+    "identifier" : "17552",
+    "parents" : [ 354074 ]
+  }, {
+    "dbId" : 432107,
+    "stId" : "R-HSA-432107",
+    "displayName" : "p-T779-ITGB3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05106",
+    "geneNames" : [ "ITGB3", "GP3A" ],
+    "parents" : [ 432105 ]
+  }, {
+    "dbId" : 432105,
+    "stId" : "R-HSA-432105",
+    "displayName" : "Integrin alpha IIb p(T779)-beta 3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 141 ],
+    "children" : [ 432107, 57578 ]
+  }, {
+    "dbId" : 1810408,
+    "stId" : "R-HSA-1810408",
+    "displayName" : "MyrG-p-Y419-SRC [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12931",
+    "geneNames" : [ "SRC", "SRC1" ],
+    "parents" : [ 377614 ]
+  }, {
+    "dbId" : 870270,
+    "stId" : "R-HSA-870270",
+    "displayName" : "RASGRP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95267",
+    "geneNames" : [ "RASGRP1", "RASGRP" ],
+    "parents" : [ 392488 ]
+  }, {
+    "dbId" : 377590,
+    "stId" : "R-HSA-377590",
+    "displayName" : "RAP1B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61224",
+    "geneNames" : [ "RAP1B", "OK/SW-cl.11" ],
+    "parents" : [ 377600 ]
+  }, {
+    "dbId" : 429424,
+    "stId" : "R-HSA-429424",
+    "displayName" : "Talin:RIAM:ECM ligands:2X (Integrin alphaIIb beta3:Active (p-Y419)-SRC):SYK [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 182 ],
+    "children" : [ 58268, 377622 ]
+  }, {
+    "dbId" : 266099,
+    "stId" : "R-ALL-266099",
+    "displayName" : "Mn2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29035",
+    "parents" : [ 377604 ]
+  }, {
+    "dbId" : 443900,
+    "stId" : "R-HSA-443900",
+    "displayName" : "Integrin alpha IIb beta 3:p-Y530-SRC:CSK:Talin:RIAM complex:p-Y427-SHC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 176 ],
+    "children" : [ 74684, 354130 ]
+  }, {
+    "dbId" : 377598,
+    "stId" : "R-HSA-377598",
+    "displayName" : "MyrG,p-Y530-SRC [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12931",
+    "geneNames" : [ "SRC", "SRC1" ],
+    "parents" : [ 377612, 377606 ]
+  }, {
+    "dbId" : 429434,
+    "stId" : "R-HSA-429434",
+    "displayName" : "Talin:RIAM:ECM ligands:2X(Integrin alphaIIb beta3:Active (p-Y419)-SRC):p(Y)-SYK [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 185 ],
+    "children" : [ 429432, 377622 ]
+  }, {
+    "dbId" : 350713,
+    "stId" : "R-HSA-350713",
+    "displayName" : "TLN1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 22 ],
+    "identifier" : "Q9Y490",
+    "geneNames" : [ "TLN1", "KIAA1027", "TLN" ],
+    "parents" : [ 354176 ]
+  }, {
+    "dbId" : 354168,
+    "stId" : "R-HSA-354168",
+    "displayName" : "SOS bound to Grb2:pFADK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 117 ],
+    "children" : [ 64847, 354113 ]
+  }, {
+    "dbId" : 8876922,
+    "stId" : "R-HSA-8876922",
+    "displayName" : "MyrG-SRC [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12931",
+    "geneNames" : [ "SRC", "SRC1" ],
+    "parents" : [ 1215929 ]
+  }, {
+    "dbId" : 429432,
+    "stId" : "R-HSA-429432",
+    "displayName" : "p-Y-SYK [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P43405",
+    "geneNames" : [ "SYK" ],
+    "parents" : [ 429434 ]
+  }, {
+    "dbId" : 29438,
+    "stId" : "R-ALL-29438",
+    "displayName" : "GTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "15996",
+    "parents" : [ 354126 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 354149,
+    "stId" : "R-HSA-354149",
+    "displayName" : "Interaction of integrin alphaIIb beta3 with Fibrinogen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 354077 ],
+    "following" : [ 377641 ],
+    "inputs" : [ 354130, 377603, 377604 ],
+    "outputs" : [ 354137 ],
+    "efs" : [ ],
+    "diagramIds" : [ 27 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 443910,
+    "stId" : "R-HSA-443910",
+    "displayName" : "SHC1 dissociates from integrin alphaIIb beta3",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 443905 ],
+    "inputs" : [ 443900 ],
+    "outputs" : [ 74684, 354130 ],
+    "efs" : [ ],
+    "diagramIds" : [ 177 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 429415,
+    "stId" : "R-HSA-429415",
+    "displayName" : "SYK binds to integrin alphaIIb beta3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 377640 ],
+    "following" : [ 429441 ],
+    "inputs" : [ 58268, 377622 ],
+    "outputs" : [ 429424 ],
+    "efs" : [ ],
+    "diagramIds" : [ 179 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 354087,
+    "stId" : "R-HSA-354087",
+    "displayName" : "Recruitment of GRB2 to p-FADK1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 354124 ],
+    "following" : [ 354165 ],
+    "inputs" : [ 74686, 354080 ],
+    "outputs" : [ 354113 ],
+    "efs" : [ ],
+    "diagramIds" : [ 101 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 372705,
+    "stId" : "R-HSA-372705",
+    "displayName" : "Recruitment of p130Cas to FADK1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 354124 ],
+    "following" : [ 372693 ],
+    "inputs" : [ 201625, 354080 ],
+    "outputs" : [ 372688 ],
+    "efs" : [ ],
+    "diagramIds" : [ 119 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 432096,
+    "stId" : "R-HSA-432096",
+    "displayName" : "Activated integrin alphaIIb beta3 binds SHC1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 354077, 432110 ],
+    "following" : [ 443905 ],
+    "inputs" : [ 74680, 354130 ],
+    "outputs" : [ 432098 ],
+    "efs" : [ ],
+    "diagramIds" : [ 143 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 443905,
+    "stId" : "R-HSA-443905",
+    "displayName" : "SHC1 bound to integrin alphaIIb beta3 is phosphorylated somehow",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 432096 ],
+    "following" : [ 443910 ],
+    "inputs" : [ 432098 ],
+    "outputs" : [ 443900 ],
+    "efs" : [ ],
+    "diagramIds" : [ 175 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 429441,
+    "stId" : "R-HSA-429441",
+    "displayName" : "SYK activation by SRC",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 429415 ],
+    "inputs" : [ 113592, 429424 ],
+    "outputs" : [ 429434, 29370 ],
+    "catalysts" : [ 429424 ],
+    "efs" : [ ],
+    "diagramIds" : [ 183 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 432110,
+    "stId" : "R-HSA-432110",
+    "displayName" : "Integrin alpha IIb beta3 T779 phosphorylation blocks SHC binding",
+    "schemaClass" : "Reaction",
+    "following" : [ 432096 ],
+    "inputs" : [ 114514 ],
+    "outputs" : [ 432105 ],
+    "catalysts" : [ 432180 ],
+    "efs" : [ ],
+    "diagramIds" : [ 139 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 354060,
+    "stId" : "R-HSA-354060",
+    "displayName" : "Translocation of RIAM to plasma membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 939265, 354173 ],
+    "following" : [ 354097 ],
+    "inputs" : [ 354126, 354081, 179856 ],
+    "outputs" : [ 354110 ],
+    "efs" : [ ],
+    "diagramIds" : [ 7 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 377644,
+    "stId" : "R-HSA-377644",
+    "displayName" : "Release of CSK from SRC",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 377641 ],
+    "following" : [ 377643 ],
+    "inputs" : [ 377619 ],
+    "outputs" : [ 377616, 203776 ],
+    "efs" : [ ],
+    "diagramIds" : [ 67 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 354124,
+    "stId" : "R-HSA-354124",
+    "displayName" : "Phosphorylation of pFADK1 by SRC",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 354073 ],
+    "following" : [ 354087, 372705 ],
+    "inputs" : [ 113592, 354135 ],
+    "outputs" : [ 29370, 354080 ],
+    "catalysts" : [ 377622 ],
+    "efs" : [ ],
+    "diagramIds" : [ 92 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 377641,
+    "stId" : "R-HSA-377641",
+    "displayName" : "Clustering of Integrin alphaIIb beta3 complexes",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 354149 ],
+    "following" : [ 377644 ],
+    "inputs" : [ 377608, 354137 ],
+    "outputs" : [ 377619 ],
+    "efs" : [ ],
+    "diagramIds" : [ 36 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 377640,
+    "stId" : "R-HSA-377640",
+    "displayName" : "Autophosphorylation of SRC",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 377643 ],
+    "following" : [ 429415, 354066 ],
+    "inputs" : [ 113592, 377620 ],
+    "outputs" : [ 29370, 377622 ],
+    "catalysts" : [ 354153 ],
+    "efs" : [ ],
+    "diagramIds" : [ 370 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 377643,
+    "stId" : "R-HSA-377643",
+    "displayName" : "Dephosphorylation of inactive SRC by PTPB1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 377644 ],
+    "following" : [ 377640 ],
+    "inputs" : [ 29356, 377616 ],
+    "outputs" : [ 29372, 377620 ],
+    "catalysts" : [ 210625 ],
+    "efs" : [ ],
+    "diagramIds" : [ 70 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 939265,
+    "stId" : "R-HSA-939265",
+    "displayName" : "Activation of Rap1 by membrane-associated GEFs",
+    "schemaClass" : "Reaction",
+    "following" : [ 354060 ],
+    "inputs" : [ 354074, 29438 ],
+    "outputs" : [ 29420, 354126 ],
+    "catalysts" : [ 392485 ],
+    "efs" : [ ],
+    "diagramIds" : [ 133 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 354165,
+    "stId" : "R-HSA-354165",
+    "displayName" : "Interaction of SOS with GRB2 bound to FADK1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 354087 ],
+    "inputs" : [ 64847, 354113 ],
+    "outputs" : [ 354168 ],
+    "efs" : [ ],
+    "diagramIds" : [ 115 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 372693,
+    "stId" : "R-HSA-372693",
+    "displayName" : "Phosphorylation of p130Cas by SRC-FADK1 complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 372705 ],
+    "following" : [ 372697 ],
+    "inputs" : [ 113592, 372688 ],
+    "outputs" : [ 29370, 372646 ],
+    "catalysts" : [ 354080 ],
+    "efs" : [ ],
+    "diagramIds" : [ 122 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 354097,
+    "stId" : "R-HSA-354097",
+    "displayName" : "Activation of Talin",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 354060 ],
+    "following" : [ 354077 ],
+    "inputs" : [ 350713, 354110 ],
+    "outputs" : [ 354176 ],
+    "efs" : [ ],
+    "diagramIds" : [ 21 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 354066,
+    "stId" : "R-HSA-354066",
+    "displayName" : "Translocation of FADK1 to Focal complexes",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 377640 ],
+    "following" : [ 354073 ],
+    "inputs" : [ 201621, 377622 ],
+    "outputs" : [ 354103 ],
+    "efs" : [ ],
+    "diagramIds" : [ 75 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 354077,
+    "stId" : "R-HSA-354077",
+    "displayName" : "Integrin alphaIIb beta3 activation",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 354097 ],
+    "following" : [ 432096, 354149 ],
+    "inputs" : [ 377608, 354176 ],
+    "outputs" : [ 354130 ],
+    "efs" : [ ],
+    "diagramIds" : [ 24 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 354173,
+    "stId" : "R-HSA-354173",
+    "displayName" : "Activation of Rap1 by cytosolic GEFs",
+    "schemaClass" : "Reaction",
+    "following" : [ 354060 ],
+    "inputs" : [ 354074, 29438 ],
+    "outputs" : [ 29420, 354126 ],
+    "catalysts" : [ 392841 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 354073,
+    "stId" : "R-HSA-354073",
+    "displayName" : "Autophosphorylation of FADK1 at Y397",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 354066 ],
+    "following" : [ 354124 ],
+    "inputs" : [ 113592, 354103 ],
+    "outputs" : [ 29370, 354135 ],
+    "catalysts" : [ 354103 ],
+    "efs" : [ ],
+    "diagramIds" : [ 83 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 372697,
+    "stId" : "R-HSA-372697",
+    "displayName" : "Crk binding to p130cas",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 372693 ],
+    "inputs" : [ 2980677, 372646 ],
+    "outputs" : [ 372652 ],
+    "efs" : [ ],
+    "diagramIds" : [ 126 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 354194,
+    "stId" : "R-HSA-354194",
+    "displayName" : "GRB2:SOS provides linkage to MAPK signaling for Integrins ",
+    "events" : [ 354165, 354087 ]
+  }, {
+    "dbId" : 372708,
+    "stId" : "R-HSA-372708",
+    "displayName" : "p130Cas linkage to MAPK signaling for integrins",
+    "events" : [ 372693, 372705, 372697 ]
+  } ]
+}

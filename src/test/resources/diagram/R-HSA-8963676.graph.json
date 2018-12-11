@@ -1,0 +1,276 @@
+{
+  "dbId" : 8963676,
+  "stId" : "R-HSA-8963676",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 38 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 188995,
+    "stId" : "R-ALL-188995",
+    "displayName" : "Gal [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17118",
+    "parents" : [ 189219, 189227 ]
+  }, {
+    "dbId" : 265479,
+    "stId" : "R-ALL-265479",
+    "displayName" : "EZE [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 13 ],
+    "identifier" : "49040"
+  }, {
+    "dbId" : 189254,
+    "stId" : "R-ALL-189254",
+    "displayName" : "Gal, Glc [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 41 ],
+    "children" : [ 29590, 70113 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 40 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 5216133,
+    "stId" : "R-HSA-5216133",
+    "displayName" : "RSC1A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 43 ],
+    "identifier" : "Q92681",
+    "geneNames" : [ "RSC1A1" ]
+  }, {
+    "dbId" : 265546,
+    "stId" : "R-ALL-265546",
+    "displayName" : "phytosterols [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 10 ],
+    "identifier" : "26125"
+  }, {
+    "dbId" : 171149,
+    "stId" : "R-ALL-171149",
+    "displayName" : "CHOL [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 189202,
+    "stId" : "R-HSA-189202",
+    "displayName" : "SLC2A5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 36 ],
+    "identifier" : "P22732",
+    "geneNames" : [ "SLC2A5", "GLUT5" ]
+  }, {
+    "dbId" : 265495,
+    "stId" : "R-ALL-265495",
+    "displayName" : "EZE [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "49040",
+    "parents" : [ 265464 ]
+  }, {
+    "dbId" : 70421,
+    "stId" : "R-HSA-70421",
+    "displayName" : "SLC2A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11168",
+    "geneNames" : [ "SLC2A2", "GLUT2" ],
+    "parents" : [ 70422 ]
+  }, {
+    "dbId" : 29590,
+    "stId" : "R-ALL-29590",
+    "displayName" : "Gal [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17118",
+    "parents" : [ 189246, 189254 ]
+  }, {
+    "dbId" : 70422,
+    "stId" : "R-HSA-70422",
+    "displayName" : "GLUT2 / SLC2A2 tetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 51 ],
+    "children" : [ 70421 ]
+  }, {
+    "dbId" : 29532,
+    "stId" : "R-ALL-29532",
+    "displayName" : "Fru [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 35 ],
+    "identifier" : "15824",
+    "parents" : [ 189246 ]
+  }, {
+    "dbId" : 176478,
+    "stId" : "R-ALL-176478",
+    "displayName" : "CHOL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 7 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 70113,
+    "stId" : "R-ALL-70113",
+    "displayName" : "Glc [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17925",
+    "parents" : [ 189246, 189254 ]
+  }, {
+    "dbId" : 189219,
+    "stId" : "R-ALL-189219",
+    "displayName" : "Fru, Gal, Glc [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 48 ],
+    "children" : [ 189049, 70115, 188995 ]
+  }, {
+    "dbId" : 70115,
+    "stId" : "R-ALL-70115",
+    "displayName" : "Glc [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17925",
+    "parents" : [ 189219, 189227 ]
+  }, {
+    "dbId" : 265453,
+    "stId" : "R-HSA-265453",
+    "displayName" : "NPC1L1-1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "identifier" : "Q9UHC9-2",
+    "geneNames" : [ "NPC1L1" ],
+    "parents" : [ 265464 ]
+  }, {
+    "dbId" : 189227,
+    "stId" : "R-ALL-189227",
+    "displayName" : "Gal, Glc [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 39 ],
+    "children" : [ 70115, 188995 ]
+  }, {
+    "dbId" : 265525,
+    "stId" : "R-ALL-265525",
+    "displayName" : "phytosterols [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 11 ],
+    "identifier" : "26125"
+  }, {
+    "dbId" : 189243,
+    "stId" : "R-HSA-189243",
+    "displayName" : "SLC5A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 42 ],
+    "identifier" : "P13866",
+    "geneNames" : [ "SLC5A1", "NAGT", "SGLT1" ]
+  }, {
+    "dbId" : 189049,
+    "stId" : "R-ALL-189049",
+    "displayName" : "Fru [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 34 ],
+    "identifier" : "15824",
+    "parents" : [ 189219 ]
+  }, {
+    "dbId" : 189246,
+    "stId" : "R-ALL-189246",
+    "displayName" : "Fru, Gal, Glc [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 45 ],
+    "children" : [ 29532, 29590, 70113 ]
+  }, {
+    "dbId" : 265464,
+    "stId" : "R-HSA-265464",
+    "displayName" : "NPC1L1:ezetimibe complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 14 ],
+    "children" : [ 265453, 265495 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 8932955,
+    "stId" : "R-HSA-8932955",
+    "displayName" : "SLC5A1 cotransports Glc,Gal with Na+ from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 189227, 74113 ],
+    "outputs" : [ 83910, 189254 ],
+    "catalysts" : [ 189243 ],
+    "efs" : [ ],
+    "inhibitors" : [ 5216133 ],
+    "diagramIds" : [ 37 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189222,
+    "stId" : "R-HSA-189222",
+    "displayName" : "SLC2A5 transports fructose from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "following" : [ 189242 ],
+    "inputs" : [ 189049 ],
+    "outputs" : [ 29532 ],
+    "catalysts" : [ 189202 ],
+    "efs" : [ ],
+    "diagramIds" : [ 33 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 265456,
+    "stId" : "R-HSA-265456",
+    "displayName" : "NPC1L1 inactivation by ezetimibe",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 265453, 265479 ],
+    "outputs" : [ 265464 ],
+    "efs" : [ ],
+    "diagramIds" : [ 12 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 265443,
+    "stId" : "R-HSA-265443",
+    "displayName" : "NPC1L1-mediated cholesterol uptake",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 171149 ],
+    "outputs" : [ 176478 ],
+    "catalysts" : [ 265453 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189242,
+    "stId" : "R-HSA-189242",
+    "displayName" : "SLC2A2 tetramer transports Fru, Gal, Glc from cytosol to extracellular region",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189222 ],
+    "inputs" : [ 189246 ],
+    "outputs" : [ 189219 ],
+    "catalysts" : [ 70422 ],
+    "efs" : [ ],
+    "diagramIds" : [ 44 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 265545,
+    "stId" : "R-HSA-265545",
+    "displayName" : "NPC1L1-mediated phytosterol uptake",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 265546 ],
+    "outputs" : [ 265525 ],
+    "catalysts" : [ 265453 ],
+    "efs" : [ ],
+    "diagramIds" : [ 9 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 8981373,
+    "stId" : "R-HSA-8981373",
+    "displayName" : "Intestinal hexose absorption",
+    "events" : [ 8932955, 189222, 189242 ]
+  }, {
+    "dbId" : 8963678,
+    "stId" : "R-HSA-8963678",
+    "displayName" : "Intestinal lipid absorption",
+    "events" : [ 265456, 265443, 265545 ]
+  } ]
+}

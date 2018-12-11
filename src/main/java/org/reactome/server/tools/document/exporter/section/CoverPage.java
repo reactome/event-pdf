@@ -4,6 +4,7 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.tools.document.exporter.AnalysisData;
+import org.reactome.server.tools.document.exporter.DocumentArgs;
 import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 
@@ -16,7 +17,7 @@ public class CoverPage implements Section {
 	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
 
 	@Override
-	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event) {
+	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event, DocumentArgs args) {
 		document.add(Images.getLogo().scaleToFit(100, 100).setHorizontalAlignment(HorizontalAlignment.LEFT));
 		// Empty space
 		document.add(profile.getTitle(""));

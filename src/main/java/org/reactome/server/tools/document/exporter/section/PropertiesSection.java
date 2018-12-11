@@ -6,6 +6,7 @@ import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.analysis.core.result.model.AnalysisSummary;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.tools.document.exporter.AnalysisData;
+import org.reactome.server.tools.document.exporter.DocumentArgs;
 import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
@@ -26,7 +27,7 @@ public class PropertiesSection implements Section {
 	private final static String ANALYSIS_PATH = "/user/guide/analysis";
 
 	@Override
-	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event) {
+	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event, DocumentArgs args) {
 		document.add(new AreaBreak());
 		document.add(profile.getH1("Properties").setDestination("properties"));
 		final List<Paragraph> list = new LinkedList<>();

@@ -1,0 +1,934 @@
+{
+  "dbId" : 8935690,
+  "stId" : "R-HSA-8935690",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 6786660,
+    "stId" : "R-ALL-6786660",
+    "displayName" : "ADGP [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 177 ],
+    "identifier" : "47977"
+  }, {
+    "dbId" : 189057,
+    "stId" : "R-HSA-189057",
+    "displayName" : "AMY2B [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19961",
+    "geneNames" : [ "AMY2B" ],
+    "parents" : [ 189046 ]
+  }, {
+    "dbId" : 8936203,
+    "stId" : "R-HSA-8936203",
+    "displayName" : "GUCY2C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25092",
+    "geneNames" : [ "GUCY2C", "GUC2C", "STAR" ],
+    "parents" : [ 8936213 ]
+  }, {
+    "dbId" : 8936204,
+    "stId" : "R-HSA-8936204",
+    "displayName" : "GUCY2C trimer:GUCA2A,B [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "children" : [ 8936213, 8936209 ]
+  }, {
+    "dbId" : 174602,
+    "stId" : "R-ALL-174602",
+    "displayName" : "LCFAs [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 19, 29 ],
+    "identifier" : "15904"
+  }, {
+    "dbId" : 189071,
+    "stId" : "R-ALL-189071",
+    "displayName" : "starch (amylopectin) [extracellular region]",
+    "schemaClass" : "Polymer",
+    "diagramIds" : [ 52 ],
+    "children" : [ 189075 ]
+  }, {
+    "dbId" : 171149,
+    "stId" : "R-ALL-171149",
+    "displayName" : "CHOL [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 189075,
+    "stId" : "R-ALL-189075",
+    "displayName" : "starch (amylose) [extracellular region]",
+    "schemaClass" : "Polymer",
+    "diagramIds" : [ 48 ],
+    "parents" : [ 189071 ],
+    "children" : [ 70115 ]
+  }, {
+    "dbId" : 8936219,
+    "stId" : "R-HSA-8936219",
+    "displayName" : "GUCA2B(97-112) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16661",
+    "geneNames" : [ "GUCA2B" ],
+    "parents" : [ 8936209 ]
+  }, {
+    "dbId" : 189078,
+    "stId" : "R-ALL-189078",
+    "displayName" : "alpha,alpha-trehalose [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 72 ],
+    "identifier" : "16551"
+  }, {
+    "dbId" : 113685,
+    "stId" : "R-ALL-113685",
+    "displayName" : "O2 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 11 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 8979998,
+    "stId" : "R-HSA-8979998",
+    "displayName" : "digestive LIPs [extracellular region]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 34 ],
+    "children" : [ 6789323, 6789314 ]
+  }, {
+    "dbId" : 189082,
+    "stId" : "R-HSA-189082",
+    "displayName" : "sucrase-isomaltase dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 64, 56, 60 ],
+    "children" : [ 189115 ]
+  }, {
+    "dbId" : 8936209,
+    "stId" : "R-HSA-8936209",
+    "displayName" : "GUCA2A,B [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "parents" : [ 8936204 ],
+    "children" : [ 8936191, 8936219 ]
+  }, {
+    "dbId" : 6786428,
+    "stId" : "R-ALL-6786428",
+    "displayName" : "GlcNAc-beta1,4-GlcNAc [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 172 ],
+    "identifier" : "86361"
+  }, {
+    "dbId" : 192415,
+    "stId" : "R-ALL-192415",
+    "displayName" : "TCDCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "9407",
+    "parents" : [ 192483 ]
+  }, {
+    "dbId" : 6786426,
+    "stId" : "R-ALL-6786426",
+    "displayName" : "GlcNAc-beta1,4-GlcNAc-beta1,4-GlcNAc [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 171 ],
+    "identifier" : "86362"
+  }, {
+    "dbId" : 8936213,
+    "stId" : "R-HSA-8936213",
+    "displayName" : "GUCY2C trimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "parents" : [ 8936204 ],
+    "children" : [ 8936203 ]
+  }, {
+    "dbId" : 189090,
+    "stId" : "R-HSA-189090",
+    "displayName" : "SI(1-1006) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14410",
+    "geneNames" : [ "SI" ],
+    "parents" : [ 189115 ]
+  }, {
+    "dbId" : 3902875,
+    "stId" : "R-HSA-3902875",
+    "displayName" : "PNLIPRP2-like proteins [extracellular region]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 30 ],
+    "children" : [ 192427, 3902876, 192419 ]
+  }, {
+    "dbId" : 189091,
+    "stId" : "R-HSA-189091",
+    "displayName" : "LCT [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09848",
+    "geneNames" : [ "LCT", "LPH" ],
+    "parents" : [ 189026 ]
+  }, {
+    "dbId" : 192419,
+    "stId" : "R-HSA-192419",
+    "displayName" : "PNLIP [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16233",
+    "geneNames" : [ "PNLIP" ],
+    "parents" : [ 3902875, 192466 ]
+  }, {
+    "dbId" : 192416,
+    "stId" : "R-HSA-192416",
+    "displayName" : "CEL [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19835",
+    "geneNames" : [ "CEL", "BAL" ],
+    "parents" : [ 192452 ]
+  }, {
+    "dbId" : 6789314,
+    "stId" : "R-HSA-6789314",
+    "displayName" : "PNLIPRP3 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RR3",
+    "geneNames" : [ "PNLIPRP3" ],
+    "parents" : [ 8979998 ]
+  }, {
+    "dbId" : 8953390,
+    "stId" : "R-HSA-8953390",
+    "displayName" : "PIR [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "identifier" : "O00625",
+    "geneNames" : [ "PIR" ]
+  }, {
+    "dbId" : 192421,
+    "stId" : "R-ALL-192421",
+    "displayName" : "TCCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28865",
+    "parents" : [ 192483 ]
+  }, {
+    "dbId" : 3902876,
+    "stId" : "R-HSA-3902876",
+    "displayName" : "PNLIPRP1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P54315",
+    "geneNames" : [ "PNLIPRP1", "PLRP1" ],
+    "parents" : [ 3902875 ]
+  }, {
+    "dbId" : 192427,
+    "stId" : "R-HSA-192427",
+    "displayName" : "PNLIPRP2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P54317",
+    "geneNames" : [ "PNLIPRP2", "PLRP2" ],
+    "parents" : [ 3902875 ]
+  }, {
+    "dbId" : 6789323,
+    "stId" : "R-HSA-6789323",
+    "displayName" : "LIPF [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07098",
+    "geneNames" : [ "LIPF" ],
+    "parents" : [ 8979998 ]
+  }, {
+    "dbId" : 6814795,
+    "stId" : "R-ALL-6814795",
+    "displayName" : "MAG [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26, 27 ],
+    "identifier" : "17408"
+  }, {
+    "dbId" : 192431,
+    "stId" : "R-ALL-192431",
+    "displayName" : "CCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16359",
+    "parents" : [ 192483 ]
+  }, {
+    "dbId" : 188973,
+    "stId" : "R-ALL-188973",
+    "displayName" : "Lac [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 66 ],
+    "identifier" : "36219"
+  }, {
+    "dbId" : 8953383,
+    "stId" : "R-ALL-8953383",
+    "displayName" : "2PCPGCA [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 13 ],
+    "identifier" : "16068"
+  }, {
+    "dbId" : 192438,
+    "stId" : "R-ALL-192438",
+    "displayName" : "glycerol [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 21 ],
+    "identifier" : "17754"
+  }, {
+    "dbId" : 5659875,
+    "stId" : "R-ALL-5659875",
+    "displayName" : "iMal [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 75 ],
+    "identifier" : "28189"
+  }, {
+    "dbId" : 188980,
+    "stId" : "R-ALL-188980",
+    "displayName" : "Suc [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 69 ],
+    "identifier" : "17992"
+  }, {
+    "dbId" : 189108,
+    "stId" : "R-ALL-189108",
+    "displayName" : "limit dextrins [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 53 ],
+    "identifier" : "28912"
+  }, {
+    "dbId" : 8878783,
+    "stId" : "R-HSA-8878783",
+    "displayName" : "ALPI [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09923",
+    "geneNames" : [ "ALPI" ],
+    "parents" : [ 8878786 ]
+  }, {
+    "dbId" : 188986,
+    "stId" : "R-ALL-188986",
+    "displayName" : "Mal [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 50 ],
+    "identifier" : "17306"
+  }, {
+    "dbId" : 192442,
+    "stId" : "R-ALL-192442",
+    "displayName" : "CDCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16755",
+    "parents" : [ 192483 ]
+  }, {
+    "dbId" : 6786654,
+    "stId" : "R-ALL-6786654",
+    "displayName" : "CHIT [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 175 ],
+    "identifier" : "84373"
+  }, {
+    "dbId" : 189115,
+    "stId" : "R-HSA-189115",
+    "displayName" : "sucrase-isomaltase [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 189082 ],
+    "children" : [ 189035, 189090 ]
+  }, {
+    "dbId" : 6786396,
+    "stId" : "R-HSA-6786396",
+    "displayName" : "CHIT1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 178 ],
+    "identifier" : "Q13231",
+    "geneNames" : [ "CHIT1" ]
+  }, {
+    "dbId" : 8878780,
+    "stId" : "R-ALL-8878780",
+    "displayName" : "phosphate monoester [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1 ],
+    "identifier" : "7794"
+  }, {
+    "dbId" : 6786395,
+    "stId" : "R-HSA-6786395",
+    "displayName" : "CHIA [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 173 ],
+    "identifier" : "Q9BZP6",
+    "geneNames" : [ "CHIA" ]
+  }, {
+    "dbId" : 8953397,
+    "stId" : "R-ALL-8953397",
+    "displayName" : "quercetin [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 12 ],
+    "identifier" : "16243"
+  }, {
+    "dbId" : 8953399,
+    "stId" : "R-ALL-8953399",
+    "displayName" : "CO [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "17245"
+  }, {
+    "dbId" : 8878776,
+    "stId" : "R-ALL-8878776",
+    "displayName" : "Alcohol [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 5 ],
+    "identifier" : "30879"
+  }, {
+    "dbId" : 188995,
+    "stId" : "R-ALL-188995",
+    "displayName" : "Gal [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 67 ],
+    "identifier" : "17118"
+  }, {
+    "dbId" : 8878786,
+    "stId" : "R-HSA-8878786",
+    "displayName" : "ALPI:2Ca2+:Mg2+ dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ],
+    "children" : [ 140648, 8878783, 109265 ]
+  }, {
+    "dbId" : 171076,
+    "stId" : "R-ALL-171076",
+    "displayName" : "CHEST [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 17 ],
+    "identifier" : "17002"
+  }, {
+    "dbId" : 192452,
+    "stId" : "R-HSA-192452",
+    "displayName" : "CEL:bile salt complex [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 192480 ],
+    "children" : [ 192416, 192483 ]
+  }, {
+    "dbId" : 189000,
+    "stId" : "R-HSA-189000",
+    "displayName" : "N-seryl-glycosylphosphatidylinositolethanolamine-TREH [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 73 ],
+    "identifier" : "O43280",
+    "geneNames" : [ "TREH", "TREA" ]
+  }, {
+    "dbId" : 189001,
+    "stId" : "R-HSA-189001",
+    "displayName" : "AMY1B(16-511) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5T084",
+    "geneNames" : [ "AMY1B", "RP11-508C1.1-003" ],
+    "parents" : [ 189046 ]
+  }, {
+    "dbId" : 109265,
+    "stId" : "R-ALL-109265",
+    "displayName" : "Zn2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 8878786 ]
+  }, {
+    "dbId" : 192466,
+    "stId" : "R-HSA-192466",
+    "displayName" : "PNLIP:CLPS [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 24 ],
+    "children" : [ 192469, 192419 ]
+  }, {
+    "dbId" : 174675,
+    "stId" : "R-ALL-174675",
+    "displayName" : "DAGs [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 23, 28 ],
+    "identifier" : "18035"
+  }, {
+    "dbId" : 192464,
+    "stId" : "R-ALL-192464",
+    "displayName" : "GCCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17687",
+    "parents" : [ 192483 ]
+  }, {
+    "dbId" : 189009,
+    "stId" : "R-HSA-189009",
+    "displayName" : "MGAM dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 58, 62 ],
+    "children" : [ 189014 ]
+  }, {
+    "dbId" : 189014,
+    "stId" : "R-HSA-189014",
+    "displayName" : "MGAM [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43451",
+    "geneNames" : [ "MGAM", "MGA", "MGAML" ],
+    "parents" : [ 189009 ]
+  }, {
+    "dbId" : 426576,
+    "stId" : "R-ALL-426576",
+    "displayName" : "PALM [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 32 ],
+    "identifier" : "15756"
+  }, {
+    "dbId" : 192469,
+    "stId" : "R-HSA-192469",
+    "displayName" : "CLPS [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04118",
+    "geneNames" : [ "CLPS" ],
+    "parents" : [ 192466 ]
+  }, {
+    "dbId" : 192473,
+    "stId" : "R-ALL-192473",
+    "displayName" : "GCDCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "36274",
+    "parents" : [ 192483 ]
+  }, {
+    "dbId" : 109277,
+    "stId" : "R-ALL-109277",
+    "displayName" : "Pi [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 109276,
+    "stId" : "R-ALL-109276",
+    "displayName" : "H2O [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 16, 176, 65, 4, 54, 70, 25, 57, 74, 170, 61, 47 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 189026,
+    "stId" : "R-HSA-189026",
+    "displayName" : "LCT dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 68 ],
+    "children" : [ 189091 ]
+  }, {
+    "dbId" : 6786438,
+    "stId" : "R-ALL-6786438",
+    "displayName" : "chitin [extracellular region]",
+    "schemaClass" : "Polymer",
+    "diagramIds" : [ 169 ],
+    "children" : [ 205688 ]
+  }, {
+    "dbId" : 192483,
+    "stId" : "R-ALL-192483",
+    "displayName" : "bile salts and acids [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 192452 ],
+    "children" : [ 192415, 192431, 192473, 192442, 192421, 192464 ]
+  }, {
+    "dbId" : 70115,
+    "stId" : "R-ALL-70115",
+    "displayName" : "Glc [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 55 ],
+    "identifier" : "17925",
+    "parents" : [ 189075 ]
+  }, {
+    "dbId" : 192480,
+    "stId" : "R-HSA-192480",
+    "displayName" : "dimerized CEL:bile salt complex [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 20 ],
+    "children" : [ 192452 ]
+  }, {
+    "dbId" : 975590,
+    "stId" : "R-ALL-975590",
+    "displayName" : "atROL [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 33 ],
+    "identifier" : "17336"
+  }, {
+    "dbId" : 189035,
+    "stId" : "R-HSA-189035",
+    "displayName" : "SI(1007-1826) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14410",
+    "geneNames" : [ "SI" ],
+    "parents" : [ 189115 ]
+  }, {
+    "dbId" : 975591,
+    "stId" : "R-ALL-975591",
+    "displayName" : "RPALM [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 31 ],
+    "identifier" : "17616"
+  }, {
+    "dbId" : 140648,
+    "stId" : "R-ALL-140648",
+    "displayName" : "Ca2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 8878786 ]
+  }, {
+    "dbId" : 189041,
+    "stId" : "R-HSA-189041",
+    "displayName" : "AMY2A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04746",
+    "geneNames" : [ "AMY2A" ],
+    "parents" : [ 189046 ]
+  }, {
+    "dbId" : 189046,
+    "stId" : "R-HSA-189046",
+    "displayName" : "alpha-amylase [extracellular region]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 51 ],
+    "children" : [ 189041, 189001, 189050, 189057 ]
+  }, {
+    "dbId" : 171126,
+    "stId" : "R-ALL-171126",
+    "displayName" : "TAGs [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 22 ],
+    "identifier" : "17855"
+  }, {
+    "dbId" : 8936191,
+    "stId" : "R-HSA-8936191",
+    "displayName" : "GUCA2A(22-115) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q02747",
+    "geneNames" : [ "GUCA2A", "GUCA2" ],
+    "parents" : [ 8936209 ]
+  }, {
+    "dbId" : 189050,
+    "stId" : "R-HSA-189050",
+    "displayName" : "AMY1A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04745",
+    "geneNames" : [ "AMY1A", "AMY1", "AMY1B", "AMY1", "AMY1C", "AMY1" ],
+    "parents" : [ 189046 ]
+  }, {
+    "dbId" : 205688,
+    "stId" : "R-ALL-205688",
+    "displayName" : "GlcNAc [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17411",
+    "parents" : [ 6786438 ]
+  }, {
+    "dbId" : 189049,
+    "stId" : "R-ALL-189049",
+    "displayName" : "Fru [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 71 ],
+    "identifier" : "15824"
+  }, {
+    "dbId" : 191103,
+    "stId" : "R-ALL-191103",
+    "displayName" : "maltotriose [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 49 ],
+    "identifier" : "27931"
+  } ],
+  "edges" : [ {
+    "dbId" : 192417,
+    "stId" : "R-HSA-192417",
+    "displayName" : "Digestion of cholesterol esters by extracellular CEL (bile salt-dependent lipase)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 171076 ],
+    "outputs" : [ 171149, 174602 ],
+    "catalysts" : [ 192480 ],
+    "efs" : [ ],
+    "diagramIds" : [ 38 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5659861,
+    "stId" : "R-HSA-5659861",
+    "displayName" : "isomaltose + H2O => 2 D-glucose (sucrase-isomaltase)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 5659875 ],
+    "outputs" : [ 70115 ],
+    "catalysts" : [ 189082 ],
+    "efs" : [ ],
+    "diagramIds" : [ 86 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189062,
+    "stId" : "R-HSA-189062",
+    "displayName" : "lactose + H2O => D-glucose + D-galactose",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 188973, 109276 ],
+    "outputs" : [ 70115, 188995 ],
+    "catalysts" : [ 189026 ],
+    "efs" : [ ],
+    "diagramIds" : [ 83 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192422,
+    "stId" : "R-HSA-192422",
+    "displayName" : "Digestion of triacylglycerols by extracellular PTL:colipase",
+    "schemaClass" : "Reaction",
+    "following" : [ 192434 ],
+    "inputs" : [ 109276, 171126 ],
+    "outputs" : [ 174602, 174675 ],
+    "catalysts" : [ 192466 ],
+    "efs" : [ ],
+    "diagramIds" : [ 41 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8878787,
+    "stId" : "R-HSA-8878787",
+    "displayName" : "ALPI dimer hydrolyses phosphate monoesters",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 8878780 ],
+    "outputs" : [ 8878776, 109277 ],
+    "catalysts" : [ 8878786 ],
+    "efs" : [ ],
+    "diagramIds" : [ 35 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 191108,
+    "stId" : "R-HSA-191108",
+    "displayName" : "maltose + H2O => 2 D-glucose (sucrase-isomaltase)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 191101, 189053, 191116, 191114, 188979 ],
+    "inputs" : [ 109276, 188986 ],
+    "outputs" : [ 70115 ],
+    "catalysts" : [ 189082 ],
+    "efs" : [ ],
+    "diagramIds" : [ 82 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 975593,
+    "stId" : "R-HSA-975593",
+    "displayName" : "PNLIP:CLPS hydrolyses RPALM to atROL and PALM",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 975591 ],
+    "outputs" : [ 975590, 426576 ],
+    "catalysts" : [ 192466 ],
+    "efs" : [ ],
+    "diagramIds" : [ 44 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 191114,
+    "stId" : "R-HSA-191114",
+    "displayName" : "Digestion of branched starch (amylopectin) by extracellular amylase",
+    "schemaClass" : "Reaction",
+    "following" : [ 189102, 191108, 191101, 191116, 189053 ],
+    "inputs" : [ 109276, 189071 ],
+    "outputs" : [ 191103, 188986, 189108 ],
+    "catalysts" : [ 189046 ],
+    "efs" : [ ],
+    "diagramIds" : [ 77 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192425,
+    "stId" : "R-HSA-192425",
+    "displayName" : "Digestion of monoacylglycerols by extracellular CEL (bile salt-dependent lipase)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192434 ],
+    "inputs" : [ 109276, 6814795 ],
+    "outputs" : [ 174602, 192438 ],
+    "catalysts" : [ 192480 ],
+    "efs" : [ ],
+    "diagramIds" : [ 39 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189102,
+    "stId" : "R-HSA-189102",
+    "displayName" : "maltose + H2O => 2 D-glucose (maltase-glucoamylase)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 191101, 189053, 191116, 191114, 188979 ],
+    "inputs" : [ 109276, 188986 ],
+    "outputs" : [ 70115 ],
+    "catalysts" : [ 189009 ],
+    "efs" : [ ],
+    "diagramIds" : [ 81 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192430,
+    "stId" : "R-HSA-192430",
+    "displayName" : "Digestion of triacylglycerols by extracellular CEL (bile salt-dependent lipase)",
+    "schemaClass" : "Reaction",
+    "following" : [ 192434 ],
+    "inputs" : [ 109276, 171126 ],
+    "outputs" : [ 174602, 174675 ],
+    "catalysts" : [ 192480 ],
+    "efs" : [ ],
+    "diagramIds" : [ 40 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 191116,
+    "stId" : "R-HSA-191116",
+    "displayName" : "maltotriose + H2O => maltose + D-glucose (maltase-glucoamylase)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189053, 191114, 188979 ],
+    "following" : [ 189102, 191108 ],
+    "inputs" : [ 109276, 191103 ],
+    "outputs" : [ 188986, 70115 ],
+    "catalysts" : [ 189009 ],
+    "efs" : [ ],
+    "diagramIds" : [ 79 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189069,
+    "stId" : "R-HSA-189069",
+    "displayName" : "sucrose + H2O => glucose + fructose",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 188980 ],
+    "outputs" : [ 189049, 70115 ],
+    "catalysts" : [ 189082 ],
+    "efs" : [ ],
+    "diagramIds" : [ 84 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192434,
+    "stId" : "R-HSA-192434",
+    "displayName" : "Digestion of diacylglycerols by extracellular PTL:colipase",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192430, 192422 ],
+    "following" : [ 192425 ],
+    "inputs" : [ 109276, 174675 ],
+    "outputs" : [ 6814795, 174602 ],
+    "catalysts" : [ 192466 ],
+    "efs" : [ ],
+    "diagramIds" : [ 42 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 188979,
+    "stId" : "R-HSA-188979",
+    "displayName" : "Digestion of linear starch (amylose) by extracellular amylase",
+    "schemaClass" : "Reaction",
+    "following" : [ 189102, 191108, 191101, 191116 ],
+    "inputs" : [ 109276, 189075 ],
+    "outputs" : [ 191103, 188986 ],
+    "catalysts" : [ 189046 ],
+    "efs" : [ ],
+    "diagramIds" : [ 76 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6786421,
+    "stId" : "R-HSA-6786421",
+    "displayName" : "CHIA hydrolyses chitin",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 109276, 6786438 ],
+    "outputs" : [ 6786426, 6786428 ],
+    "catalysts" : [ 6786395 ],
+    "efs" : [ ],
+    "diagramIds" : [ 168 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8979996,
+    "stId" : "R-HSA-8979996",
+    "displayName" : "LIPs hydrolyze TG to DAG and LCFA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 171126 ],
+    "outputs" : [ 174602, 174675 ],
+    "catalysts" : [ 8979998 ],
+    "efs" : [ ],
+    "diagramIds" : [ 45 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192475,
+    "stId" : "R-HSA-192475",
+    "displayName" : "Digestion of triacylglycerols by extracellular pancreatic lipase-related protein 2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 171126 ],
+    "outputs" : [ 174602, 174675 ],
+    "catalysts" : [ 3902875 ],
+    "efs" : [ ],
+    "diagramIds" : [ 43 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 188985,
+    "stId" : "R-HSA-188985",
+    "displayName" : "trehalose + H2O => 2 D-glucose",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 189078 ],
+    "outputs" : [ 70115 ],
+    "catalysts" : [ 189000 ],
+    "efs" : [ ],
+    "diagramIds" : [ 85 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6786652,
+    "stId" : "R-HSA-6786652",
+    "displayName" : "CHIT1 hydrolyses CHIT to 3xADGP",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 6786654 ],
+    "outputs" : [ 6786660 ],
+    "catalysts" : [ 6786396 ],
+    "efs" : [ ],
+    "diagramIds" : [ 174 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8953398,
+    "stId" : "R-HSA-8953398",
+    "displayName" : "PIR oxygenates quercetin",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8953397, 113685 ],
+    "outputs" : [ 8953399, 8953383 ],
+    "catalysts" : [ 8953390 ],
+    "efs" : [ ],
+    "diagramIds" : [ 37 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8936214,
+    "stId" : "R-HSA-8936214",
+    "displayName" : "GUCY2C trimer binds GUCA2A,B",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8936213, 8936209 ],
+    "outputs" : [ 8936204 ],
+    "efs" : [ ],
+    "diagramIds" : [ 36 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 191101,
+    "stId" : "R-HSA-191101",
+    "displayName" : "maltotriose + H2O => maltose + D-glucose (sucrase-isomaltase)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189053, 191114, 188979 ],
+    "following" : [ 189102, 191108 ],
+    "inputs" : [ 109276, 191103 ],
+    "outputs" : [ 188986, 70115 ],
+    "catalysts" : [ 189082 ],
+    "efs" : [ ],
+    "diagramIds" : [ 80 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189053,
+    "stId" : "R-HSA-189053",
+    "displayName" : "Digestion of 1-6 linkages of limit dextrins to yield maltose, maltotriose, longer maltosides, and glucose",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 191114 ],
+    "following" : [ 189102, 191108, 191101, 191116 ],
+    "inputs" : [ 109276, 189108 ],
+    "outputs" : [ 191103, 188986, 70115 ],
+    "catalysts" : [ 189082 ],
+    "efs" : [ ],
+    "diagramIds" : [ 78 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 189085,
+    "stId" : "R-HSA-189085",
+    "displayName" : "Digestion of dietary carbohydrate",
+    "events" : [ 5659861, 189062, 191108, 191114, 189102, 191116, 189069, 188979, 6786421, 188985, 6786652, 189053, 191101 ]
+  }, {
+    "dbId" : 192456,
+    "stId" : "R-HSA-192456",
+    "displayName" : "Digestion of dietary lipid",
+    "events" : [ 192434, 192417, 192422, 8979996, 975593, 192475, 192425, 192430 ]
+  } ]
+}

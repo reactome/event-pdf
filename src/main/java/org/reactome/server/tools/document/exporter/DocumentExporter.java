@@ -8,6 +8,7 @@ import com.itextpdf.layout.Document;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.graph.domain.model.Event;
+import org.reactome.server.graph.service.AdvancedDatabaseObjectService;
 import org.reactome.server.graph.service.DatabaseObjectService;
 import org.reactome.server.graph.service.DiagramService;
 import org.reactome.server.graph.service.GeneralService;
@@ -25,7 +26,6 @@ import java.util.Locale;
 
 public class DocumentExporter {
 
-	private static final Long DEFAULT_SPECIES = 48887L;
 	private static final ObjectMapper MAPPER = new ObjectMapper();
 	private final List<Section> SECTIONS = Arrays.asList(
 			new CoverPage(),
@@ -38,38 +38,38 @@ public class DocumentExporter {
 	private DatabaseObjectService databaseObjectService;
 
 
-	public DocumentExporter(String diagramPath, String ehldPath, String analysisPath, String fireworksPath, String svgSummary, DiagramService diagramService, DatabaseObjectService databaseObjectService, GeneralService generalService) {
+	public DocumentExporter(String diagramPath, String ehldPath, String analysisPath, String fireworksPath, String svgSummary, DiagramService diagramService, DatabaseObjectService databaseObjectService, GeneralService generalService, AdvancedDatabaseObjectService advancedDatabaseObjectService) {
 		ImageFactory.setPaths(diagramPath, ehldPath, analysisPath, fireworksPath, svgSummary);
 		Locale.setDefault(Locale.ENGLISH);
 		ImageFactory.setDiagramService(diagramService);
+		ImageFactory.setDatabaseObjectService(databaseObjectService);
+		ImageFactory.setAdvancedDatabaseObjectService(advancedDatabaseObjectService);
 		AnalysisData.setDatabaseObjectService(databaseObjectService);
 		AnalysisData.setGeneralService(generalService);
 		this.databaseObjectService = databaseObjectService;
 	}
 
-	public void export(String stId, AnalysisStoredResult result, OutputStream destination, Long species, String resource) throws DocumentExporterException {
+	public void export(DocumentArgs args, AnalysisStoredResult result, OutputStream destination) throws DocumentExporterException {
 
-		final Event event = databaseObjectService.findById(stId);
-		if (event == null) throw new DocumentExporterException(stId + " is not an event");
+		final Event event = databaseObjectService.findById(args.getStId());
+		if (event == null) throw new DocumentExporterException(args.getStId() + " is not an event");
 
 		final PdfProfile pdfProfile = loadProfile("breathe");
-
-		if (species == null) species = DEFAULT_SPECIES;
 
 		final AnalysisData analysisData;
 		if (result != null) {
 			// if the analysis result not contains the given resource, use the first resource in this analysis.
-			if (!result.getResourceSummary().contains(new ResourceSummary(resource, null)))
-				resource = getDefaultResource(result);
+			if (!result.getResourceSummary().contains(new ResourceSummary(args.getResource(), null)))
+				args.setResource(getDefaultResource(result));
 
-			analysisData = new AnalysisData(result, resource, species, Integer.MAX_VALUE);
+			analysisData = new AnalysisData(result, args.getResource(), args.getSpecies(), Integer.MAX_VALUE);
 		} else analysisData = null;
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
 			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome (%s)", "https://reactome.org"));
 			document.getPdfDocument().getDocumentInfo().setCreator(String.format("Reactome (%s)", "https://reactome.org"));
-			document.getPdfDocument().getDocumentInfo().setTitle("Reactome | " + stId);
-			document.getPdfDocument().getDocumentInfo().setSubject("Reactome | " + stId);
+			document.getPdfDocument().getDocumentInfo().setTitle("Reactome | " + args.getStId());
+			document.getPdfDocument().getDocumentInfo().setSubject("Reactome | " + args.getStId());
 			document.getPdfDocument().getDocumentInfo().setKeywords("pathway,reactome,reaction");
 			document.setFont(pdfProfile.getRegularFont());
 			document.setMargins(pdfProfile.getMargin().getTop(),
@@ -78,7 +78,7 @@ public class DocumentExporter {
 					pdfProfile.getMargin().getLeft());
 			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, "https://reactome.org"));
 			for (Section section : SECTIONS)
-				section.render(document, pdfProfile, analysisData, event);
+				section.render(document, pdfProfile, analysisData, event, args);
 		}
 	}
 

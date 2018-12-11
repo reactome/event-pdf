@@ -11,11 +11,12 @@ import org.reactome.server.analysis.core.result.model.FoundEntities;
 import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.document.exporter.AnalysisData;
+import org.reactome.server.tools.document.exporter.DocumentArgs;
 import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.ApaStyle;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
-import org.reactome.server.tools.document.exporter.util.PdfUtils;
+import org.reactome.server.tools.document.exporter.util.ImageFactory;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -29,54 +30,63 @@ import java.util.stream.Collectors;
  */
 public class PathwaysDetails implements Section {
 
-	private static final String PATHWAY_DETAIL = "/content/detail/";
+	private static final String CONTENT_DETAIL = "/content/detail/";
+	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
 	@Override
-	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event) {
-		document.add(new AreaBreak());
-		document.add(profile.getH1("Pathways details").setDestination("pathway-details"));
-		document.add(profile.getParagraph(PdfUtils.getProperty("pathways.detail")));
-		int i = 1;
-//		for (PathwayData pathwayData : analysisData.getPathways()) {
-//			final Pathway pathway = pathwayData.getPathway();
-//			document.add(getTitle(profile, i, pathway, analysisData));
-//			ImageFactory.insertDiagram(pathway.getStId(), analysisData.getResult(), analysisData.getResource(), document);
-//			addDatabaseObjectList(document, "Cellular compartments", pathway.getCompartment(), profile);
-//			addRelatedDiseases(document, pathway, profile);
-//			addDatabaseObjectList(document, "Inferred from", pathway.getInferredFrom(), profile);
-//
-//			addSummations(document, pathway, profile);
-//			addReferences(document, pathway, profile);
-//
-//			addEditTable(document, pathway, profile);
-//
-//			addFoundElements(document, analysisData, pathway, profile);
-//
-//			if (analysisData.isInteractors()) {
-//				document.add(profile.getParagraph(""));
-//				addFoundInteractors(document, analysisData, pathway, profile);
-//			}
-//
-//			document.add(new AreaBreak());
-//			document.flush();
-//			i += 1;
-//		}
+	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event, DocumentArgs args) {
+		details(document, profile, analysisData, event, args, 1, 0);
 	}
 
-	private List getTitle(PdfProfile profile, int i, Pathway pathway, AnalysisData analysisData) {
+	private void details(Document document, PdfProfile profile, AnalysisData analysisData, Event event, DocumentArgs args, int index, int level) {
+		document.add(new AreaBreak());
+		document.add(getTitle(profile, event, index, level));
+		if (event instanceof Pathway) {
+			ImageFactory.insertDiagram(event.getStId(), analysisData, document);
+		} else if (event instanceof ReactionLikeEvent) {
+			ImageFactory.insertReaction(event.getStId(), analysisData, document);
+		}
+		addDatabaseObjectList(document, "Cellular compartments", event.getCompartment(), profile);
+		addRelatedDiseases(document, event, profile);
+		addDatabaseObjectList(document, "Inferred from", event.getInferredFrom(), profile);
+//
+		addSummations(document, event, profile);
+		addReferences(document, event, profile);
+		addEditTable(document, event, profile);
+
+		if (event instanceof Pathway && level < args.getMaxLevel()) {
+			final Pathway pathway = (Pathway) event;
+			final java.util.List<Event> events = pathway.getHasEvent();
+			events.sort(Comparator.comparingInt(ev -> classOrder.indexOf(ev.getSchemaClass())));
+			for (int i = 0; i < events.size(); i++) {
+				details(document, profile, analysisData, events.get(i), args, i + 1, level + 1);
+			}
+		}
+	}
+
+	private BlockElement getTitle(PdfProfile profile, Event event, int index, int level) {
+		if (level == 0) {
+			return profile.getH3(String.format("[%s] %s", event.getSchemaClass(), event.getDisplayName()))
+					.add(" (")
+					.add(new Text(event.getStId())
+							.setAction(PdfAction.createURI("http://reactome.org" + CONTENT_DETAIL + event.getStId()))
+							.setFontColor(profile.getLinkColor()))
+					.add(")")
+					.setDestination(event.getStId());
+		}
 		final List list = new List(ListNumberingType.DECIMAL)
-				.setItemStartIndex(i)
+				.setItemStartIndex(index)
 				.setFontSize(profile.getFontSize() + 2)
 				.setBold()
 				.setSymbolIndent(10);
 		final ListItem item = new ListItem();
-		final Paragraph paragraph = new Paragraph(pathway.getDisplayName())
+		final Paragraph paragraph = new Paragraph(String.format("[%s] %s", event.getSchemaClass(), event.getDisplayName()))
 				.add(" (")
-				.add(new Text(pathway.getStId())
-						.setAction(PdfAction.createURI(analysisData.getServerName() + PATHWAY_DETAIL + pathway.getStId()))
+				.add(new Text(event.getStId())
+						.setAction(PdfAction.createURI("http://reactome.org" + CONTENT_DETAIL + event.getStId()))
 						.setFontColor(profile.getLinkColor()))
 				.add(")")
-				.setDestination(pathway.getStId());
+				.setDestination(event.getStId());
 		item.add(paragraph);
 		list.add(item);
 		return list;
@@ -117,16 +127,16 @@ public class PathwaysDetails implements Section {
 		document.add(table);
 	}
 
-	private void addSummations(Document document, Pathway pathway, PdfProfile profile) {
-		pathway.getSummation().stream()
+	private void addSummations(Document document, Event event, PdfProfile profile) {
+		event.getSummation().stream()
 				.map(summation -> HtmlParser.parseText(profile, summation.getText()))
 				.flatMap(Collection::stream)
 				.forEach(document::add);
 	}
 
-	private void addRelatedDiseases(Document document, Pathway pathwayDetail, PdfProfile profile) {
-		if (pathwayDetail.getDisease() != null) {
-			final java.util.List<Disease> diseases = pathwayDetail.getDisease().stream()
+	private void addRelatedDiseases(Document document, Event event, PdfProfile profile) {
+		if (event.getDisease() != null) {
+			final java.util.List<Disease> diseases = event.getDisease().stream()
 					.filter(disease -> !disease.getDisplayName().equals("disease"))
 					.collect(Collectors.toList());
 			addDatabaseObjectList(document, "Diseases", diseases, profile);
@@ -146,10 +156,10 @@ public class PathwaysDetails implements Section {
 		}
 	}
 
-	private void addReferences(Document document, Pathway pathwayDetail, PdfProfile profile) {
-		if (pathwayDetail.getLiteratureReference() != null) {
+	private void addReferences(Document document, Event event, PdfProfile profile) {
+		if (event.getLiteratureReference() != null) {
 			document.add(profile.getH3("References"));
-			pathwayDetail.getLiteratureReference().stream()
+			event.getLiteratureReference().stream()
 					.limit(5)
 					.map(publication -> createPublication(publication, profile))
 					.forEach(document::add);
@@ -174,21 +184,21 @@ public class PathwaysDetails implements Section {
 		return paragraph;
 	}
 
-	private void addEditTable(Document document, Pathway pathway, PdfProfile profile) {
+	private void addEditTable(Document document, Event event, PdfProfile profile) {
 		document.add(profile.getH3("Edit history"));
 		final java.util.List<Edition> editions = new LinkedList<>();
-		if (pathway.getCreated() != null)
-			editions.add(new Edition("Created", pathway.getCreated()));
-		if (pathway.getModified() != null)
-			editions.add(new Edition("Modified", pathway.getModified()));
-		if (pathway.getAuthored() != null)
-			pathway.getAuthored().forEach(instanceEdit -> editions.add(new Edition("Authored", instanceEdit)));
-		if (pathway.getEdited() != null)
-			pathway.getEdited().forEach(instanceEdit -> editions.add(new Edition("Edited", instanceEdit)));
-		if (pathway.getReviewed() != null)
-			pathway.getReviewed().forEach(instanceEdit -> editions.add(new Edition("Reviewed", instanceEdit)));
-		if (pathway.getRevised() != null)
-			pathway.getRevised().forEach(instanceEdit -> editions.add(new Edition("Revised", instanceEdit)));
+		if (event.getCreated() != null)
+			editions.add(new Edition("Created", event.getCreated()));
+		if (event.getModified() != null)
+			editions.add(new Edition("Modified", event.getModified()));
+		if (event.getAuthored() != null)
+			event.getAuthored().forEach(instanceEdit -> editions.add(new Edition("Authored", instanceEdit)));
+		if (event.getEdited() != null)
+			event.getEdited().forEach(instanceEdit -> editions.add(new Edition("Edited", instanceEdit)));
+		if (event.getReviewed() != null)
+			event.getReviewed().forEach(instanceEdit -> editions.add(new Edition("Reviewed", instanceEdit)));
+		if (event.getRevised() != null)
+			event.getRevised().forEach(instanceEdit -> editions.add(new Edition("Revised", instanceEdit)));
 
 		// Group by date and type
 		final Map<String, Map<String, java.util.List<Edition>>> edits = editions.stream()

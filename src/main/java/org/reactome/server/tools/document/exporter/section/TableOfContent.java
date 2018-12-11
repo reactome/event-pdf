@@ -6,11 +6,11 @@ import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.property.ListNumberingType;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.Pathway;
-import org.reactome.server.graph.domain.model.ReactionLikeEvent;
 import org.reactome.server.tools.document.exporter.AnalysisData;
+import org.reactome.server.tools.document.exporter.DocumentArgs;
+import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 
 import java.util.Arrays;
@@ -21,28 +21,49 @@ public class TableOfContent implements Section {
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
 	@Override
-	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event) {
+	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event, DocumentArgs args) {
 		document.add(new AreaBreak());
 		document.add(profile.getH1("Table of Contents", false));
 
-		document.add(profile.getH3(String.format("[%s] %s", event.getSchemaClass(), event.getDisplayName())).setAction(PdfAction.createGoTo(event.getStId())).setFontColor(profile.getLinkColor()));
+		addToc(document, profile, event, args.getMaxLevel());
+	}
+
+	private void addToc(Document document, PdfProfile profile, Event event, int maxLevel) {
+		document.add(profile.getH3("")
+				.add(Images.get(event.getSchemaClass()))
+				.add(" ")
+				.add(event.getDisplayName())
+				.setAction(PdfAction.createGoTo(event.getStId()))
+				.setFontColor(profile.getLinkColor()));
 		if (event instanceof Pathway) {
 			final Pathway pathway = (Pathway) event;
-			final java.util.List<Event> events = pathway.getHasEvent();
-			events.sort(Comparator.comparingInt(o -> classOrder.indexOf(o.getSchemaClass())));
-			final List list = new List(ListNumberingType.DECIMAL)
-					.setSymbolIndent(10)
-					.setFontColor(profile.getLinkColor());
-			for (Event ev : events) {
-				final Paragraph paragraph = profile.getParagraph(String.format("[%s] %s", ev.getSchemaClass(), ev.getDisplayName())).setAction(PdfAction.createGoTo(ev.getStId()));
-				final ListItem listItem = new ListItem();
-				listItem.add(paragraph);
-				list.add(listItem);
-			}
+			final List list = getList(profile, pathway, 0, maxLevel);
 			document.add(list);
-		} else if (event instanceof ReactionLikeEvent) {
-			final ReactionLikeEvent reaction = (ReactionLikeEvent) event;
-
 		}
+	}
+
+	private List getList(PdfProfile profile, Pathway pathway, int level, int maxLevel) {
+		final java.util.List<Event> events = pathway.getHasEvent();
+		events.sort(Comparator.comparingInt(o -> classOrder.indexOf(o.getSchemaClass())));
+		final List list = new List()
+				.setSymbolIndent(10)
+				.setListSymbol("")
+				.setFontColor(profile.getLinkColor());
+		for (Event ev : events) {
+			final Paragraph paragraph = profile.getParagraph("")
+					.add(Images.get(ev.getSchemaClass()))
+					.add(" ")
+					.add(ev.getDisplayName())
+					.setAction(PdfAction.createGoTo(ev.getStId()));
+			final ListItem listItem = new ListItem();
+			listItem.add(paragraph);
+			list.add(listItem);
+			if (ev instanceof Pathway && level + 1 < maxLevel) {
+				final ListItem item = new ListItem();
+				item.add(getList(profile, (Pathway) ev, level + 1, maxLevel));
+				listItem.add(item);
+			}
+		}
+		return list;
 	}
 }
