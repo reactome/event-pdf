@@ -8,8 +8,8 @@ import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.Pathway;
-import org.reactome.server.tools.document.exporter.AnalysisData;
 import org.reactome.server.tools.document.exporter.DocumentArgs;
+import org.reactome.server.tools.document.exporter.DocumentProperties;
 import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 
@@ -21,7 +21,10 @@ public class TableOfContent implements Section {
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
 	@Override
-	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event, DocumentArgs args) {
+	public void render(Document document, DocumentProperties properties) {
+		final PdfProfile profile = properties.getPdfProfile();
+		final Event event = properties.getEvent();
+		final DocumentArgs args = properties.getArgs();
 		document.add(new AreaBreak());
 		document.add(profile.getH1("Table of Contents", false));
 

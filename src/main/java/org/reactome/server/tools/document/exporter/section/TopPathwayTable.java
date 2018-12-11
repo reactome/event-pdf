@@ -6,9 +6,8 @@ import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.PathwayBase;
-import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.tools.document.exporter.AnalysisData;
-import org.reactome.server.tools.document.exporter.DocumentArgs;
+import org.reactome.server.tools.document.exporter.DocumentProperties;
 import org.reactome.server.tools.document.exporter.PathwayData;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.PdfUtils;
@@ -32,7 +31,9 @@ public class TopPathwayTable implements Section {
 	);
 
 	@Override
-	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event, DocumentArgs args) {
+	public void render(Document document, DocumentProperties properties) {
+		final AnalysisData analysisData = properties.getAnalysisData();
+		final PdfProfile profile = properties.getPdfProfile();
 		document.add(profile.getH1("Most significant pathways").setDestination("pathway-list"));
 		document.add(profile.getParagraph(PdfUtils.getProperty("most.significant.pathways", analysisData.getPathways().size())));
 		// Let iText decide the width of the columns

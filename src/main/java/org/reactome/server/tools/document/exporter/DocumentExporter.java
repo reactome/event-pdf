@@ -64,6 +64,7 @@ public class DocumentExporter {
 
 			analysisData = new AnalysisData(result, args.getResource(), args.getSpecies(), Integer.MAX_VALUE);
 		} else analysisData = null;
+		final DocumentProperties data = new DocumentProperties(analysisData, pdfProfile, event, args);
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
 			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome (%s)", "https://reactome.org"));
@@ -78,7 +79,7 @@ public class DocumentExporter {
 					pdfProfile.getMargin().getLeft());
 			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, "https://reactome.org"));
 			for (Section section : SECTIONS)
-				section.render(document, pdfProfile, analysisData, event, args);
+				section.render(document, data);
 		}
 	}
 

@@ -11,6 +11,7 @@ import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.document.exporter.AnalysisData;
 import org.reactome.server.tools.document.exporter.DocumentArgs;
+import org.reactome.server.tools.document.exporter.DocumentProperties;
 import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.ApaStyle;
@@ -33,11 +34,16 @@ public class PathwaysDetails implements Section {
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
 	@Override
-	public void render(Document document, PdfProfile profile, AnalysisData analysisData, Event event, DocumentArgs args) {
-		details(document, profile, analysisData, event, args, 1, 0);
+	public void render(Document document, DocumentProperties properties) {
+		details(document, properties, properties.getEvent(), Collections.emptyList(), 1, 0);
+		properties.setNav(null);
 	}
 
-	private void details(Document document, PdfProfile profile, AnalysisData analysisData, Event event, DocumentArgs args, int index, int level) {
+	private void details(Document document, DocumentProperties properties, Event event, java.util.List<Event> nav, int index, int level) {
+		final PdfProfile profile = properties.getPdfProfile();
+		final AnalysisData analysisData = properties.getAnalysisData();
+		final DocumentArgs args = properties.getArgs();
+		properties.setNav(nav);
 		document.add(new AreaBreak());
 		document.add(getTitle(profile, event, index, level));
 		if (event instanceof Pathway) {
@@ -57,8 +63,10 @@ public class PathwaysDetails implements Section {
 			final Pathway pathway = (Pathway) event;
 			final java.util.List<Event> events = pathway.getHasEvent();
 			events.sort(Comparator.comparingInt(ev -> classOrder.indexOf(ev.getSchemaClass())));
+			final ArrayList<Event> nav2 = new ArrayList<>(nav);
+			nav2.add(event);
 			for (int i = 0; i < events.size(); i++) {
-				details(document, profile, analysisData, events.get(i), args, i + 1, level + 1);
+				details(document, properties, events.get(i), nav2, i + 1, level + 1);
 			}
 		}
 	}
