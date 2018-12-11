@@ -42,16 +42,13 @@ public class PathwaysDetails implements Section {
 		final PdfProfile profile = properties.getPdfProfile();
 		final AnalysisData analysisData = properties.getAnalysisData();
 		final DocumentArgs args = properties.getArgs();
-		properties.setNav(nav);
 		document.add(new AreaBreak());
 		document.add(getTitle(profile, event, properties.getServer()));
-		final Paragraph paragraph = createNav(nav, profile);
-		document.add(paragraph);
-		if (event instanceof Pathway) {
-			ImageFactory.insertDiagram(event.getStId(), analysisData, document);
-		} else if (event instanceof ReactionLikeEvent) {
-			ImageFactory.insertReaction(event.getStId(), analysisData, document);
-		}
+		document.add(createNav(nav, profile));
+
+		insertDiagram(document, event, analysisData);
+		insertType(document, event, profile);
+//		insertStId(document, properties, event, profile);
 		addDatabaseObjectList(document, "Cellular compartments", event.getCompartment(), profile);
 		addRelatedDiseases(document, event, profile);
 		addDatabaseObjectList(document, "Inferred from", event.getInferredFrom(), profile);
@@ -66,17 +63,46 @@ public class PathwaysDetails implements Section {
 			events.sort(Comparator.comparingInt(ev -> classOrder.indexOf(ev.getSchemaClass())));
 			final ArrayList<Event> nav2 = new ArrayList<>(nav);
 			nav2.add(event);
-			for (int i = 0; i < events.size(); i++) {
-				details(document, properties, events.get(i), nav2, level + 1);
+			for (Event ev : events) {
+				details(document, properties, ev, nav2, level + 1);
 			}
+		}
+	}
+
+	private void insertStId(Document document, DocumentProperties properties, Event event, PdfProfile profile) {
+		final Paragraph paragraph = profile.getParagraph("")
+				.add(new Text("Stable identifier: ").setFont(profile.getBoldFont()))
+				.add(new Text(event.getStId())
+						.setAction(PdfAction.createURI(properties.getServer() + CONTENT_DETAIL + event.getStId()))
+						.setFontColor(profile.getLinkColor())
+						.setDestination(event.getStId()));
+		document.add(paragraph);
+	}
+
+	private void insertType(Document document, Event event, PdfProfile profile) {
+		String type = event.getSchemaClass();
+		if (event instanceof ReactionLikeEvent) {
+			type = String.format("Reaction [%s]", ((ReactionLikeEvent) event).getCategory());
+		}
+		final Paragraph paragraph = profile.getParagraph("")
+				.add(new Text("Type: ").setFont(profile.getBoldFont()))
+				.add(type);
+		document.add(paragraph);
+	}
+
+	private void insertDiagram(Document document, Event event, AnalysisData analysisData) {
+		if (event instanceof Pathway) {
+			ImageFactory.insertDiagram(event.getStId(), analysisData, document);
+		} else if (event instanceof ReactionLikeEvent) {
+			ImageFactory.insertReaction(event.getStId(), analysisData, document);
 		}
 	}
 
 	private Paragraph createNav(List<Event> nav, PdfProfile profile) {
 		final Paragraph paragraph = profile.getParagraph("");
 		for (int i = 0; i < nav.size(); i++) {
-			if (i > 0) paragraph.add(" > ");
-			Event ev = nav.get(i);
+			if (i > 0) paragraph.add(" > ");  // current font does not support RIGHTARROW'\u2192'
+			final Event ev = nav.get(i);
 			final Text text = new Text(ev.getDisplayName()).setAction(PdfAction.createGoTo(ev.getStId())).setFontColor(profile.getLinkColor());
 			paragraph.add(text);
 		}
@@ -84,7 +110,7 @@ public class PathwaysDetails implements Section {
 	}
 
 	private BlockElement getTitle(PdfProfile profile, Event event, String server) {
-		return profile.getH3(String.format("[%s] %s", event.getSchemaClass(), event.getDisplayName()))
+		return profile.getH3(event.getDisplayName())
 				.add(" (")
 				.add(new Text(event.getStId())
 						.setAction(PdfAction.createURI(server + CONTENT_DETAIL + event.getStId()))
