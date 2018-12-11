@@ -64,11 +64,11 @@ public class DocumentExporter {
 
 			analysisData = new AnalysisData(result, args.getResource(), args.getSpecies(), Integer.MAX_VALUE);
 		} else analysisData = null;
-		final DocumentProperties data = new DocumentProperties(analysisData, pdfProfile, event, args);
+		final DocumentProperties properties = new DocumentProperties(analysisData, pdfProfile, event, args);
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
-			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome (%s)", "https://reactome.org"));
-			document.getPdfDocument().getDocumentInfo().setCreator(String.format("Reactome (%s)", "https://reactome.org"));
+			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome (%s)", properties.getServer()));
+			document.getPdfDocument().getDocumentInfo().setCreator(String.format("Reactome (%s)", properties.getServer()));
 			document.getPdfDocument().getDocumentInfo().setTitle("Reactome | " + args.getStId());
 			document.getPdfDocument().getDocumentInfo().setSubject("Reactome | " + args.getStId());
 			document.getPdfDocument().getDocumentInfo().setKeywords("pathway,reactome,reaction");
@@ -77,9 +77,10 @@ public class DocumentExporter {
 					pdfProfile.getMargin().getRight(),
 					pdfProfile.getMargin().getBottom(),
 					pdfProfile.getMargin().getLeft());
-			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, "https://reactome.org"));
+			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, properties.getServer()));
+//			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new HeaderEventHandler(document, data));
 			for (Section section : SECTIONS)
-				section.render(document, data);
+				section.render(document, properties);
 		}
 	}
 

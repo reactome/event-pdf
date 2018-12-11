@@ -3,9 +3,7 @@ package org.reactome.server.tools.document.exporter.section;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
-import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.element.*;
-import com.itextpdf.layout.property.ListNumberingType;
 import org.reactome.server.analysis.core.result.model.FoundEntities;
 import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.graph.domain.model.*;
@@ -18,6 +16,7 @@ import org.reactome.server.tools.document.exporter.util.ApaStyle;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
 import org.reactome.server.tools.document.exporter.util.ImageFactory;
 
+import java.util.List;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -35,17 +34,19 @@ public class PathwaysDetails implements Section {
 
 	@Override
 	public void render(Document document, DocumentProperties properties) {
-		details(document, properties, properties.getEvent(), Collections.emptyList(), 1, 0);
+		details(document, properties, properties.getEvent(), Collections.emptyList(), 0);
 		properties.setNav(null);
 	}
 
-	private void details(Document document, DocumentProperties properties, Event event, java.util.List<Event> nav, int index, int level) {
+	private void details(Document document, DocumentProperties properties, Event event, java.util.List<Event> nav, int level) {
 		final PdfProfile profile = properties.getPdfProfile();
 		final AnalysisData analysisData = properties.getAnalysisData();
 		final DocumentArgs args = properties.getArgs();
 		properties.setNav(nav);
 		document.add(new AreaBreak());
-		document.add(getTitle(profile, event, index, level));
+		document.add(getTitle(profile, event, properties.getServer()));
+		final Paragraph paragraph = createNav(nav, profile);
+		document.add(paragraph);
 		if (event instanceof Pathway) {
 			ImageFactory.insertDiagram(event.getStId(), analysisData, document);
 		} else if (event instanceof ReactionLikeEvent) {
@@ -66,37 +67,30 @@ public class PathwaysDetails implements Section {
 			final ArrayList<Event> nav2 = new ArrayList<>(nav);
 			nav2.add(event);
 			for (int i = 0; i < events.size(); i++) {
-				details(document, properties, events.get(i), nav2, i + 1, level + 1);
+				details(document, properties, events.get(i), nav2, level + 1);
 			}
 		}
 	}
 
-	private BlockElement getTitle(PdfProfile profile, Event event, int index, int level) {
-		if (level == 0) {
-			return profile.getH3(String.format("[%s] %s", event.getSchemaClass(), event.getDisplayName()))
-					.add(" (")
-					.add(new Text(event.getStId())
-							.setAction(PdfAction.createURI("http://reactome.org" + CONTENT_DETAIL + event.getStId()))
-							.setFontColor(profile.getLinkColor()))
-					.add(")")
-					.setDestination(event.getStId());
+	private Paragraph createNav(List<Event> nav, PdfProfile profile) {
+		final Paragraph paragraph = profile.getParagraph("");
+		for (int i = 0; i < nav.size(); i++) {
+			if (i > 0) paragraph.add(" > ");
+			Event ev = nav.get(i);
+			final Text text = new Text(ev.getDisplayName()).setAction(PdfAction.createGoTo(ev.getStId())).setFontColor(profile.getLinkColor());
+			paragraph.add(text);
 		}
-		final List list = new List(ListNumberingType.DECIMAL)
-				.setItemStartIndex(index)
-				.setFontSize(profile.getFontSize() + 2)
-				.setBold()
-				.setSymbolIndent(10);
-		final ListItem item = new ListItem();
-		final Paragraph paragraph = new Paragraph(String.format("[%s] %s", event.getSchemaClass(), event.getDisplayName()))
+		return paragraph;
+	}
+
+	private BlockElement getTitle(PdfProfile profile, Event event, String server) {
+		return profile.getH3(String.format("[%s] %s", event.getSchemaClass(), event.getDisplayName()))
 				.add(" (")
 				.add(new Text(event.getStId())
-						.setAction(PdfAction.createURI("http://reactome.org" + CONTENT_DETAIL + event.getStId()))
+						.setAction(PdfAction.createURI(server + CONTENT_DETAIL + event.getStId()))
 						.setFontColor(profile.getLinkColor()))
 				.add(")")
 				.setDestination(event.getStId());
-		item.add(paragraph);
-		list.add(item);
-		return list;
 	}
 
 	private void addFoundElements(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {

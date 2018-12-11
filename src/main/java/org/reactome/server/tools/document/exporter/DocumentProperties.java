@@ -11,12 +11,16 @@ public class DocumentProperties {
 	private final Event event;
 	private final DocumentArgs args;
 	private List<Event> nav;
+	private String server;
 
 	public DocumentProperties(AnalysisData analysisData, PdfProfile pdfProfile, Event event, DocumentArgs args) {
 		this.analysisData = analysisData;
 		this.pdfProfile = pdfProfile;
 		this.event = event;
 		this.args = args;
+		this.server = analysisData != null
+				? analysisData.getServerName()
+				: "https://reactome.org";
 	}
 
 
@@ -42,5 +46,13 @@ public class DocumentProperties {
 
 	public DocumentArgs getArgs() {
 		return args;
+	}
+
+	public String getServer() {
+		return server;
+	}
+
+	public void setServer(String server) {
+		this.server = server;
 	}
 }
