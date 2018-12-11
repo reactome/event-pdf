@@ -6,7 +6,6 @@ import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.property.ListNumberingType;
-import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.analysis.core.result.model.FoundEntities;
 import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.graph.domain.model.*;
@@ -199,12 +198,21 @@ public class PathwaysDetails implements Section {
 			event.getReviewed().forEach(instanceEdit -> editions.add(new Edition("Reviewed", instanceEdit)));
 		if (event.getRevised() != null)
 			event.getRevised().forEach(instanceEdit -> editions.add(new Edition("Revised", instanceEdit)));
-
-		// Group by date and type
-		final Map<String, Map<String, java.util.List<Edition>>> edits = editions.stream()
-				.collect(Collectors.groupingBy(Edition::getDate,
-						TreeMap::new,  // forces key sorting
-						Collectors.groupingBy(Edition::getType)));
+		editions.sort(Comparator.comparing(Edition::getDate));
+		final java.util.List<java.util.List<Edition>> edits = new ArrayList<>();
+		ArrayList<Edition> current = new ArrayList<>();
+		current.add(editions.get(0));
+		edits.add(current);
+		for (int i = 1; i < editions.size(); i++) {
+			if (!editions.get(i).getDate().equals(editions.get(i - 1).getDate())
+					|| !editions.get(i).getAuthors().equals(editions.get(i - 1).getAuthors())) {
+				current = new ArrayList<>();
+				current.add(editions.get(i));
+				edits.add(current);
+			} else {
+				current.add(editions.get(i));
+			}
+		}
 
 		final Table table = new Table(new float[]{0.2f, 0.2f, 1f});
 		table.useAllAvailableWidth();
@@ -212,19 +220,14 @@ public class PathwaysDetails implements Section {
 		table.addHeaderCell(profile.getHeaderCell("Date"));
 		table.addHeaderCell(profile.getHeaderCell("Action"));
 		table.addHeaderCell(profile.getHeaderCell("Author"));
-		int row = 0;
-		for (Map.Entry<String, Map<String, java.util.List<Edition>>> dateEntry : edits.entrySet()) {
-			for (Map.Entry<String, java.util.List<Edition>> typeEntry : dateEntry.getValue().entrySet()) {
-				table.addCell(profile.getBodyCell(dateEntry.getKey(), row));
-				table.addCell(profile.getBodyCell(typeEntry.getKey(), row));
-				final Set<Person> authors = typeEntry.getValue().stream()
-						.map(Edition::getAuthors)
-						.filter(Objects::nonNull)
-						.flatMap(Collection::stream)
-						.collect(Collectors.toSet());
-				table.addCell(profile.getBodyCell(asString(authors), row).setTextAlignment(TextAlignment.LEFT).setPadding(5));
-				row += 1;
-			}
+		for (int row = 0; row < edits.size(); row++) {
+			java.util.List<Edition> list = edits.get(row);
+			final String date = list.get(0).getDate();
+			final String action = list.stream().map(Edition::getType).distinct().collect(Collectors.joining(", "));
+			final String authors = asString(list.stream().map(Edition::getAuthors).flatMap(Collection::stream).collect(Collectors.toSet()));
+			table.addCell(profile.getBodyCell(date, row));
+			table.addCell(profile.getBodyCell(action, row));
+			table.addCell(profile.getBodyCell(authors, row));
 		}
 		document.add(table);
 
