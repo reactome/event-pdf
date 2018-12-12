@@ -55,7 +55,8 @@ public class TableOfContent implements Section {
 				.setFontColor(profile.getLinkColor());
 		for (Event ev : events) {
 			final Paragraph paragraph = profile.getParagraph("")
-					.add(Images.get(ev.getSchemaClass()))
+					.setMultipliedLeading(1f)
+					.add(Images.get(ev.getSchemaClass(), profile.getFontSize() - 1))
 					.add(" ")
 					.add(ev.getDisplayName())
 					.setAction(PdfAction.createGoTo(ev.getStId()));
