@@ -23,6 +23,7 @@ public class Introduction implements Section {
 	private static final String INTRODUCTION = PdfUtils.getProperty("introduction");
 	private static final List<Reference> PUBLICATIONS = PdfUtils.getText(Introduction.class.getResourceAsStream("/texts/references.txt"))
 			.stream()
+			.filter(line -> !line.isEmpty())
 			.map(s -> s.split("\t"))
 			.map(line -> new Reference(line[0], line[1]))
 			.collect(Collectors.toList());

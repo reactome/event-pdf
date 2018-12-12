@@ -8,10 +8,7 @@ import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.borders.SolidBorder;
-import com.itextpdf.layout.element.Cell;
-import com.itextpdf.layout.element.List;
-import com.itextpdf.layout.element.ListItem;
-import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.hyphenation.HyphenationConfig;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
@@ -98,13 +95,16 @@ public class PdfProfile {
 	}
 
 	public Paragraph getCitation(String text, String link) {
-		return  getParagraph(text)
+		return getParagraph(text)
 				.setFontSize(fontSize - 1)
 				.setFirstLineIndent(-15)
 				.setPaddingLeft(30)
 				.setMultipliedLeading(1)
 				.add(" ")
-				.add(Images.getLink(link, fontSize - 2f));
+				.add(new Text("link")
+						.setFontColor(LINK_COLOR)
+						.setAction(PdfAction.createURI(link)));
+//				.add(Images.getLink(link, fontSize - 2f));
 	}
 
 	public Paragraph getH1(String text) {

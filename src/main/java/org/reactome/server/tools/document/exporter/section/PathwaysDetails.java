@@ -229,14 +229,14 @@ public class PathwaysDetails implements Section {
 			event.getReviewed().forEach(instanceEdit -> editions.add(new Edition("Reviewed", instanceEdit)));
 		if (event.getRevised() != null)
 			event.getRevised().forEach(instanceEdit -> editions.add(new Edition("Revised", instanceEdit)));
-		editions.sort(Comparator.comparing(Edition::getDate));
+		editions.removeIf(edition -> edition.getDate() == null || edition.getAuthors() == null || edition.getAuthors().isEmpty());
+		editions.sort(Comparator.comparing(Edition::getDate).thenComparing(edition -> edition.getAuthors().get(0).getSurname()));
 		final java.util.List<java.util.List<Edition>> edits = new ArrayList<>();
 		ArrayList<Edition> current = new ArrayList<>();
 		current.add(editions.get(0));
 		edits.add(current);
 		for (int i = 1; i < editions.size(); i++) {
 			final Edition edition = editions.get(i);
-			if (edition.getAuthors() == null || edition.getDate() == null) continue;
 			if (!edition.getDate().equals(editions.get(i - 1).getDate())
 					|| !edition.getAuthors().equals(editions.get(i - 1).getAuthors())) {
 				current = new ArrayList<>();
