@@ -69,8 +69,8 @@ public class DocumentExporter {
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
 			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome (%s)", properties.getServer()));
 			document.getPdfDocument().getDocumentInfo().setCreator(String.format("Reactome (%s)", properties.getServer()));
-			document.getPdfDocument().getDocumentInfo().setTitle("Reactome | " + args.getStId());
-			document.getPdfDocument().getDocumentInfo().setSubject("Reactome | " + args.getStId());
+			document.getPdfDocument().getDocumentInfo().setTitle(String.format("Reactome | %s (%s)", event.getDisplayName(), args.getStId()));
+			document.getPdfDocument().getDocumentInfo().setSubject(String.format("Reactome | %s (%s)", event.getDisplayName(), args.getStId()));
 			document.getPdfDocument().getDocumentInfo().setKeywords("pathway,reactome,reaction");
 			document.setFont(pdfProfile.getRegularFont());
 			document.setMargins(pdfProfile.getMargin().getTop(),
