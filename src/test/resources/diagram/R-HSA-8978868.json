@@ -1,0 +1,274 @@
+{
+  "dbId" : 8978868,
+  "stableId" : "R-HSA-8978868",
+  "displayName" : "Fatty acid metabolism",
+  "nodes" : [ {
+    "id" : 1,
+    "reactomeId" : 75105,
+    "displayName" : "Fatty acyl-CoA biosynthesis",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 146,
+      "y" : 36
+    },
+    "minX" : 68,
+    "maxX" : 224,
+    "minY" : 6,
+    "maxY" : 67,
+    "prop" : {
+      "x" : 68,
+      "y" : 6,
+      "width" : 156,
+      "height" : 61
+    },
+    "textPosition" : {
+      "x" : 94,
+      "y" : 15
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 2142753,
+    "displayName" : "Arachidonic acid metabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 294,
+      "y" : 176
+    },
+    "minX" : 221,
+    "maxX" : 367,
+    "minY" : 144,
+    "maxY" : 209,
+    "prop" : {
+      "x" : 221,
+      "y" : 144,
+      "width" : 146,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 236,
+      "y" : 155
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 2046104,
+    "displayName" : "alpha-linolenic (omega3) and linoleic (omega6) acid metabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 87,
+      "y" : 176
+    },
+    "minX" : 0,
+    "maxX" : 174,
+    "minY" : 139,
+    "maxY" : 213,
+    "prop" : {
+      "x" : 0,
+      "y" : 139,
+      "width" : 174,
+      "height" : 74
+    },
+    "textPosition" : {
+      "x" : 1,
+      "y" : 147
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 200425,
+    "displayName" : "Import of palmitoyl-CoA into the mitochondrial matrix",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 444,
+      "y" : 36
+    },
+    "minX" : 358,
+    "maxX" : 531,
+    "minY" : 0,
+    "maxY" : 72,
+    "prop" : {
+      "x" : 358,
+      "y" : 0,
+      "width" : 173,
+      "height" : 72
+    },
+    "textPosition" : {
+      "x" : 365,
+      "y" : 7
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 77289,
+    "displayName" : "Mitochondrial Fatty Acid Beta-Oxidation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 665,
+      "y" : 36
+    },
+    "minX" : 580,
+    "maxX" : 751,
+    "minY" : 6,
+    "maxY" : 67,
+    "prop" : {
+      "x" : 580,
+      "y" : 6,
+      "width" : 171,
+      "height" : 61
+    },
+    "textPosition" : {
+      "x" : 587,
+      "y" : 15
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 390918,
+    "displayName" : "Peroxisomal lipid metabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 578,
+      "y" : 122
+    },
+    "minX" : 509,
+    "maxX" : 647,
+    "minY" : 87,
+    "maxY" : 157,
+    "prop" : {
+      "x" : 509,
+      "y" : 87,
+      "width" : 138,
+      "height" : 70
+    },
+    "textPosition" : {
+      "x" : 518,
+      "y" : 100
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 14,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 197,
+      "y" : 176
+    },
+    "minX" : 177,
+    "maxX" : 218,
+    "minY" : 170,
+    "maxY" : 182,
+    "segments" : [ {
+      "from" : {
+        "x" : 177,
+        "y" : 176
+      },
+      "to" : {
+        "x" : 218,
+        "y" : 176
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 211,
+        "y" : 180
+      },
+      "b" : {
+        "x" : 218,
+        "y" : 176
+      },
+      "c" : {
+        "x" : 211,
+        "y" : 172
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 191,
+        "y" : 170
+      },
+      "b" : {
+        "x" : 203,
+        "y" : 182
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 3
+    } ],
+    "outputs" : [ {
+      "id" : 2
+    } ]
+  }, {
+    "id" : 15,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 555,
+      "y" : 36
+    },
+    "minX" : 534,
+    "maxX" : 577,
+    "minY" : 30,
+    "maxY" : 42,
+    "segments" : [ {
+      "from" : {
+        "x" : 534,
+        "y" : 36
+      },
+      "to" : {
+        "x" : 577,
+        "y" : 36
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 570,
+        "y" : 40
+      },
+      "b" : {
+        "x" : 577,
+        "y" : 36
+      },
+      "c" : {
+        "x" : 570,
+        "y" : 32
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 549,
+        "y" : 30
+      },
+      "b" : {
+        "x" : 561,
+        "y" : 42
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 4
+    } ],
+    "outputs" : [ {
+      "id" : 5
+    } ]
+  } ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 751,
+  "minY" : 0,
+  "maxY" : 213,
+  "disease" : false
+}

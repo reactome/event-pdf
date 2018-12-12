@@ -50,14 +50,29 @@ public class AppTest extends BaseTest {
 	@Test
 	public void test() {
 		final DocumentExporter documentExporter = new DocumentExporter(DIAGRAM_PATH, EHLD_PATH, ANALYSIS_PATH, FIREWORKS_PATH, SVGSUMMARY, diagramService, databaseObjectService, generalService, advancedDatabaseObjectService);
-//		final String stId = "R-HSA-354192";
-		final String stId = "R-HSA-8963743";  // Circadian clock
+//		final String stId = "R-HSA-354192";   // Integrin alphaIIb beta3 signaling (pathway)
+		final String stId = "R-HSA-8963743";  // Digestion and absorption (small)
+//		final String stId = "R-HSA-1430728";  // Metabolism (large)
 		try {
+			final long start = System.nanoTime();
 			final File file = new File(TEST_DOCS, stId + ".pdf");
 			documentExporter.export(new DocumentArgs(stId).setMaxLevel(15), null, new FileOutputStream(file));
+			final long end = System.nanoTime();
+			System.out.println(formatTime(end - start));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-
 	}
+
+	private static String formatTime(long nanoSeconds) {
+		final long hours = nanoSeconds / 3_600_000_000_000L;
+		nanoSeconds = nanoSeconds - hours * 3_600_000_000_000L;
+		final long minutes = nanoSeconds / 60_000_000_000L;
+		nanoSeconds = nanoSeconds - minutes * 60_000_000_000L;
+		final long seconds = nanoSeconds / 1_000_000_000L;
+		nanoSeconds = nanoSeconds - seconds * 1_000_000_000L;
+		final long millis = nanoSeconds / 1_000_000L;
+		return String.format("%02d:%02d:%02d.%03d", hours, minutes, seconds, millis);
+	}
+
 }

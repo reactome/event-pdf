@@ -1,0 +1,247 @@
+{
+  "dbId" : 8937144,
+  "stId" : "R-HSA-8937144",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 1234098,
+    "stId" : "R-HSA-1234098",
+    "displayName" : "ARNT [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P27540",
+    "geneNames" : [ "ARNT", "BHLHE2" ],
+    "parents" : [ 8936837 ]
+  }, {
+    "dbId" : 8936841,
+    "stId" : "R-HSA-8936841",
+    "displayName" : "AHRR [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2524 ],
+    "identifier" : "A9YTQ3",
+    "geneNames" : [ "AHRR", "BHLHE77", "KIAA1234" ],
+    "parents" : [ 8936835 ]
+  }, {
+    "dbId" : 8936842,
+    "stId" : "R-HSA-8936842",
+    "displayName" : "AHR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35869",
+    "geneNames" : [ "AHR", "BHLHE76" ],
+    "parents" : [ 8936844 ]
+  }, {
+    "dbId" : 8936844,
+    "stId" : "R-HSA-8936844",
+    "displayName" : "AHR:2xHSP90AB1:AIP:PTGES3 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2511 ],
+    "parents" : [ 8936846 ],
+    "children" : [ 8936839, 419617, 8936842, 265269 ]
+  }, {
+    "dbId" : 8936846,
+    "stId" : "R-HSA-8936846",
+    "displayName" : "AHR:TCDD:2xHSP90AB1:AIP:PTGES3 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2513 ],
+    "children" : [ 8936852, 8936844 ]
+  }, {
+    "dbId" : 419617,
+    "stId" : "R-HSA-419617",
+    "displayName" : "HSP90AB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08238",
+    "geneNames" : [ "HSP90AB1", "HSP90B", "HSPC2", "HSPCB" ],
+    "parents" : [ 8936844 ]
+  }, {
+    "dbId" : 8937154,
+    "stId" : "R-HSA-8937154",
+    "displayName" : "AHR:TCDD:2xHSP90AB1:AIP:PTGES3 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2515 ],
+    "children" : [ 8937170, 8937181 ]
+  }, {
+    "dbId" : 8936835,
+    "stId" : "R-HSA-8936835",
+    "displayName" : "AHRR:ARNT [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2525 ],
+    "children" : [ 8936837, 8936841 ]
+  }, {
+    "dbId" : 8937156,
+    "stId" : "R-HSA-8937156",
+    "displayName" : "AIP [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00170",
+    "geneNames" : [ "AIP", "XAP2" ],
+    "parents" : [ 8937201, 8937181 ]
+  }, {
+    "dbId" : 8936837,
+    "stId" : "R-HSA-8936837",
+    "displayName" : "ARNT, ARNT2 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2521 ],
+    "parents" : [ 8936835, 8937203 ],
+    "children" : [ 8936838, 1234098 ]
+  }, {
+    "dbId" : 8937190,
+    "stId" : "R-HSA-8937190",
+    "displayName" : "AHR [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35869",
+    "geneNames" : [ "AHR", "BHLHE76" ],
+    "parents" : [ 8937181, 8937150 ]
+  }, {
+    "dbId" : 8936838,
+    "stId" : "R-HSA-8936838",
+    "displayName" : "ARNT2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HBZ2",
+    "geneNames" : [ "ARNT2", "BHLHE1", "KIAA0307" ],
+    "parents" : [ 8936837 ]
+  }, {
+    "dbId" : 5082403,
+    "stId" : "R-HSA-5082403",
+    "displayName" : "PTGES3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15185",
+    "geneNames" : [ "PTGES3", "P23", "TEBP" ],
+    "parents" : [ 8937201, 8937181 ]
+  }, {
+    "dbId" : 8936839,
+    "stId" : "R-HSA-8936839",
+    "displayName" : "AIP [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00170",
+    "geneNames" : [ "AIP", "XAP2" ],
+    "parents" : [ 8936844 ]
+  }, {
+    "dbId" : 265269,
+    "stId" : "R-HSA-265269",
+    "displayName" : "PTGES3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15185",
+    "geneNames" : [ "PTGES3", "P23", "TEBP" ],
+    "parents" : [ 8936844 ]
+  }, {
+    "dbId" : 5082399,
+    "stId" : "R-HSA-5082399",
+    "displayName" : "HSP90AB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08238",
+    "geneNames" : [ "HSP90AB1", "HSP90B", "HSPC2", "HSPCB" ],
+    "parents" : [ 8937201, 8937181 ]
+  }, {
+    "dbId" : 8937181,
+    "stId" : "R-HSA-8937181",
+    "displayName" : "AHR:2xHSP90AB1:AIP:PTGES3 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8937154 ],
+    "children" : [ 5082403, 8937190, 8937156, 5082399 ]
+  }, {
+    "dbId" : 8937150,
+    "stId" : "R-HSA-8937150",
+    "displayName" : "AHR:TCDD [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2519 ],
+    "parents" : [ 8937203 ],
+    "children" : [ 8937190, 8937170 ]
+  }, {
+    "dbId" : 8937201,
+    "stId" : "R-HSA-8937201",
+    "displayName" : "2xHSP90AB1:AIP:PTGES3 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2518 ],
+    "children" : [ 5082403, 8937156, 5082399 ]
+  }, {
+    "dbId" : 8937170,
+    "stId" : "R-ALL-8937170",
+    "displayName" : "TCDD [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28119",
+    "parents" : [ 8937154, 8937150 ]
+  }, {
+    "dbId" : 8937203,
+    "stId" : "R-HSA-8937203",
+    "displayName" : "AHR:TCDD:ARNT [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2522 ],
+    "children" : [ 8936837, 8937150 ]
+  }, {
+    "dbId" : 8936852,
+    "stId" : "R-ALL-8936852",
+    "displayName" : "TCDD [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2512 ],
+    "identifier" : "28119",
+    "parents" : [ 8936846 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 8937177,
+    "stId" : "R-HSA-8937177",
+    "displayName" : "AHR:TCDD binds ARNT",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8936837, 8937150 ],
+    "outputs" : [ 8937203 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2520 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8937169,
+    "stId" : "R-HSA-8937169",
+    "displayName" : "AHR:TCDD:2xHSP90AB1:AIP:PTGES3 translocates from cytosol to nucleoplasm",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 8936846 ],
+    "outputs" : [ 8937154 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2514 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8936849,
+    "stId" : "R-HSA-8936849",
+    "displayName" : "AHR:2xHSP90:AIP:PTGES3 binds TCDD",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8936852, 8936844 ],
+    "outputs" : [ 8936846 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2510 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8936851,
+    "stId" : "R-HSA-8936851",
+    "displayName" : "AHRR binds ARNT",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8936837, 8936841 ],
+    "outputs" : [ 8936835 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2523 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8937191,
+    "stId" : "R-HSA-8937191",
+    "displayName" : "AHR:TCDD:2xHSP90AB1:AIP:PTGES3 dissociates",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8937154 ],
+    "outputs" : [ 8937201, 8937150 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2517 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

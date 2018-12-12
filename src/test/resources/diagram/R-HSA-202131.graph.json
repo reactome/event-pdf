@@ -1,0 +1,1083 @@
+{
+  "dbId" : 202131,
+  "stId" : "R-HSA-202131",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 202114,
+    "stId" : "R-HSA-202114",
+    "displayName" : "NOS3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 25 ],
+    "identifier" : "P29474",
+    "geneNames" : [ "NOS3" ]
+  }, {
+    "dbId" : 203010,
+    "stId" : "R-HSA-203010",
+    "displayName" : "WASL [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00401",
+    "geneNames" : [ "WASL" ],
+    "parents" : [ 203629 ]
+  }, {
+    "dbId" : 5340240,
+    "stId" : "R-HSA-5340240",
+    "displayName" : "CYGB dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2102 ],
+    "parents" : [ 5340212 ],
+    "children" : [ 8981623 ]
+  }, {
+    "dbId" : 202113,
+    "stId" : "R-HSA-202113",
+    "displayName" : "eNOS:CaM:HSP90:p-AKT1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 56 ],
+    "children" : [ 202105, 199430 ]
+  }, {
+    "dbId" : 203648,
+    "stId" : "R-HSA-203648",
+    "displayName" : "eNOS:Caveolin-1:NOSTRIN:dynamin-2:N-WASP [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 107 ],
+    "children" : [ 535013, 535012, 2029000, 535005 ]
+  }, {
+    "dbId" : 203655,
+    "stId" : "R-HSA-203655",
+    "displayName" : "APT1 homodimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 71 ],
+    "children" : [ 203713 ]
+  }, {
+    "dbId" : 6783970,
+    "stId" : "R-HSA-6783970",
+    "displayName" : "DDAH1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O94760",
+    "geneNames" : [ "DDAH1", "DDAH" ],
+    "parents" : [ 6786641 ]
+  }, {
+    "dbId" : 199430,
+    "stId" : "R-HSA-199430",
+    "displayName" : "p-T308,S473-AKT1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31749",
+    "geneNames" : [ "AKT1", "PKB", "RAC" ],
+    "parents" : [ 202113 ]
+  }, {
+    "dbId" : 202116,
+    "stId" : "R-HSA-202116",
+    "displayName" : "eNOS:Caveolin-1:CaM [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 44 ],
+    "children" : [ 534997, 202128 ]
+  }, {
+    "dbId" : 76168,
+    "stId" : "R-ALL-76168",
+    "displayName" : "PALM [early endosome]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 112 ],
+    "identifier" : "15756"
+  }, {
+    "dbId" : 1222424,
+    "stId" : "R-ALL-1222424",
+    "displayName" : "O2.- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1614 ],
+    "identifier" : "18421"
+  }, {
+    "dbId" : 202121,
+    "stId" : "R-HSA-202121",
+    "displayName" : "p-S1177-eNOS:CaM:HSP90:p-AKT1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 59 ],
+    "parents" : [ 1497830 ],
+    "children" : [ 203564, 74294, 198356, 192864 ]
+  }, {
+    "dbId" : 9016707,
+    "stId" : "R-HSA-9016707",
+    "displayName" : "CALM1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0DP23",
+    "geneNames" : [ "CALM1", "CALM", "CAM", "CAM1" ],
+    "parents" : [ 74294 ]
+  }, {
+    "dbId" : 202124,
+    "stId" : "R-ALL-202124",
+    "displayName" : "NO [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 67 ],
+    "identifier" : "16480"
+  }, {
+    "dbId" : 29968,
+    "stId" : "R-ALL-29968",
+    "displayName" : "L-Cit [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 68 ],
+    "identifier" : "16349"
+  }, {
+    "dbId" : 71185,
+    "stId" : "R-ALL-71185",
+    "displayName" : "heme [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17627",
+    "parents" : [ 535006, 203808, 203564, 203639, 203619, 203969, 8981623 ]
+  }, {
+    "dbId" : 202130,
+    "stId" : "R-HSA-202130",
+    "displayName" : "eNOS:Caveolin-1:CaM:HSP90 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 49 ],
+    "children" : [ 534997, 534996, 202128 ]
+  }, {
+    "dbId" : 201873,
+    "stId" : "R-HSA-201873",
+    "displayName" : "N-WASP [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 100 ],
+    "identifier" : "O00401",
+    "geneNames" : [ "WASL" ]
+  }, {
+    "dbId" : 202128,
+    "stId" : "R-HSA-202128",
+    "displayName" : "eNOS:Caveolin-1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 38 ],
+    "parents" : [ 203758, 202116, 202130 ],
+    "children" : [ 534994, 203639 ]
+  }, {
+    "dbId" : 202134,
+    "stId" : "R-HSA-202134",
+    "displayName" : "NOSTRIN [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IVI9",
+    "geneNames" : [ "NOSTRIN" ],
+    "parents" : [ 203678 ]
+  }, {
+    "dbId" : 1257604,
+    "stId" : "R-HSA-1257604",
+    "displayName" : "PIP3 activates AKT signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2409 ]
+  }, {
+    "dbId" : 1497857,
+    "stId" : "R-ALL-1497857",
+    "displayName" : "BH2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2415 ],
+    "identifier" : "15375",
+    "parents" : [ 1497889 ]
+  }, {
+    "dbId" : 202139,
+    "stId" : "R-HSA-202139",
+    "displayName" : "2xPalmC-MyrG-p-S1177-NOS3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29474",
+    "geneNames" : [ "NOS3" ],
+    "parents" : [ 203564 ]
+  }, {
+    "dbId" : 432031,
+    "stId" : "R-ALL-432031",
+    "displayName" : "NO3- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2584 ],
+    "identifier" : "17632"
+  }, {
+    "dbId" : 29468,
+    "stId" : "R-ALL-29468",
+    "displayName" : "L-Arg [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 65 ],
+    "identifier" : "32682"
+  }, {
+    "dbId" : 203678,
+    "stId" : "R-HSA-203678",
+    "displayName" : "NOSTRIN homotrimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 93 ],
+    "parents" : [ 203696, 203629, 203758 ],
+    "children" : [ 202134 ]
+  }, {
+    "dbId" : 1497782,
+    "stId" : "R-HSA-1497782",
+    "displayName" : "p-S213-SPR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35270",
+    "geneNames" : [ "SPR" ],
+    "parents" : [ 1497817 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 74294 ]
+  }, {
+    "dbId" : 200993,
+    "stId" : "R-ALL-200993",
+    "displayName" : "PALM-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 29 ],
+    "identifier" : "15525"
+  }, {
+    "dbId" : 203808,
+    "stId" : "R-HSA-203808",
+    "displayName" : "palmitoylated, myristoylated eNOS dimer [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 203623 ],
+    "children" : [ 29870, 29386, 203769, 73524, 29426, 71185 ]
+  }, {
+    "dbId" : 2984201,
+    "stId" : "R-HSA-2984201",
+    "displayName" : "DNM2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2100 ],
+    "identifier" : "P50570",
+    "geneNames" : [ "DNM2", "DYN2" ],
+    "parents" : [ 203696, 203629 ]
+  }, {
+    "dbId" : 203687,
+    "stId" : "R-HSA-203687",
+    "displayName" : "MyrG-NOS3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 26 ],
+    "identifier" : "P29474",
+    "geneNames" : [ "NOS3" ],
+    "parents" : [ 203619 ]
+  }, {
+    "dbId" : 6786638,
+    "stId" : "R-HSA-6786638",
+    "displayName" : "DDAH2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95865",
+    "geneNames" : [ "DDAH2", "DDAH", "G6A", "NG30" ],
+    "parents" : [ 6786641 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2405 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 5216099,
+    "stId" : "R-HSA-5216099",
+    "displayName" : "CYGB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WWM9",
+    "geneNames" : [ "CYGB", "STAP" ],
+    "parents" : [ 8981623 ]
+  }, {
+    "dbId" : 29870,
+    "stId" : "R-ALL-29870",
+    "displayName" : "BH4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 120 ],
+    "identifier" : "15372",
+    "parents" : [ 535006, 203808, 203969, 203564, 1497830, 203619 ]
+  }, {
+    "dbId" : 203564,
+    "stId" : "R-HSA-203564",
+    "displayName" : "p-S1177-eNOS dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 202121, 1497889 ],
+    "children" : [ 29870, 29386, 202139, 73524, 29426, 71185 ]
+  }, {
+    "dbId" : 203696,
+    "stId" : "R-HSA-203696",
+    "displayName" : "eNOS:Caveolin-1:NOSTRIN:Dynamin-2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 98 ],
+    "children" : [ 203678, 534994, 2984201, 203639 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2097, 2119, 2583, 63 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 5693410,
+    "stId" : "R-ALL-5693410",
+    "displayName" : "DMA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2406 ],
+    "identifier" : "17170"
+  }, {
+    "dbId" : 163510,
+    "stId" : "R-HSA-163510",
+    "displayName" : "CAV1 [lipid droplet]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 37 ],
+    "identifier" : "Q03135",
+    "geneNames" : [ "CAV1", "CAV" ]
+  }, {
+    "dbId" : 73524,
+    "stId" : "R-ALL-73524",
+    "displayName" : "FMN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17621",
+    "parents" : [ 535006, 203564, 203639, 203619, 203969, 203808 ]
+  }, {
+    "dbId" : 6786641,
+    "stId" : "R-HSA-6786641",
+    "displayName" : "DDAH1,2 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2408 ],
+    "children" : [ 6786638, 6783970 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 66, 2099, 2579, 2117 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 1497889,
+    "stId" : "R-HSA-1497889",
+    "displayName" : "p-S1177-eNOS:CaM:HSP90:p-AKT1:BH2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1615 ],
+    "children" : [ 203564, 1497857, 74294, 198356, 192864 ]
+  }, {
+    "dbId" : 74294,
+    "stId" : "R-HSA-74294",
+    "displayName" : "CALM1:4xCa2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 43 ],
+    "parents" : [ 202121, 1497889 ],
+    "children" : [ 9016707, 74016 ]
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 64, 1617 ],
+    "identifier" : "15379",
+    "parents" : [ 5340212 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 58 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 60 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 9016884,
+    "stId" : "R-HSA-9016884",
+    "displayName" : "CALM1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0DP23",
+    "geneNames" : [ "CALM1", "CALM", "CAM", "CAM1" ],
+    "parents" : [ 534997 ]
+  }, {
+    "dbId" : 203969,
+    "stId" : "R-HSA-203969",
+    "displayName" : "myristoylated eNOS dimer [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 85 ],
+    "children" : [ 29870, 534995, 29386, 73524, 29426, 71185 ]
+  }, {
+    "dbId" : 203713,
+    "stId" : "R-HSA-203713",
+    "displayName" : "LYPLA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75608",
+    "geneNames" : [ "LYPLA1", "APT1", "LPL1" ],
+    "parents" : [ 203655 ]
+  }, {
+    "dbId" : 1222481,
+    "stId" : "R-ALL-1222481",
+    "displayName" : "Peroxynitrite [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1701 ],
+    "identifier" : "25941"
+  }, {
+    "dbId" : 1497811,
+    "stId" : "R-ALL-1497811",
+    "displayName" : "sepiapterin [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2576 ],
+    "identifier" : "16095"
+  }, {
+    "dbId" : 203595,
+    "stId" : "R-HSA-203595",
+    "displayName" : "eNOS:NOSIP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 89 ],
+    "children" : [ 203636, 203639 ]
+  }, {
+    "dbId" : 29386,
+    "stId" : "R-ALL-29386",
+    "displayName" : "FAD [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 535006, 203564, 203639, 203619, 203969, 203808 ]
+  }, {
+    "dbId" : 1497817,
+    "stId" : "R-HSA-1497817",
+    "displayName" : "p-SPR dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2577 ],
+    "children" : [ 1497782 ]
+  }, {
+    "dbId" : 535001,
+    "stId" : "R-HSA-535001",
+    "displayName" : "NOSIP [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y314",
+    "geneNames" : [ "NOSIP", "CGI-25" ],
+    "parents" : [ 203623 ]
+  }, {
+    "dbId" : 535005,
+    "stId" : "R-HSA-535005",
+    "displayName" : "eNOS:Caveolin-1 [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 203648 ],
+    "children" : [ 535009, 535006 ]
+  }, {
+    "dbId" : 2029000,
+    "stId" : "R-HSA-2029000",
+    "displayName" : "DNM2 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50570",
+    "geneNames" : [ "DNM2", "DYN2" ],
+    "parents" : [ 203648 ]
+  }, {
+    "dbId" : 535006,
+    "stId" : "R-HSA-535006",
+    "displayName" : "palmitoylated, myristoylated eNOS dimer [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 535005 ],
+    "children" : [ 29870, 29386, 535007, 73524, 29426, 71185 ]
+  }, {
+    "dbId" : 535007,
+    "stId" : "R-HSA-535007",
+    "displayName" : "2xPalmC-MyrG-NOS3 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29474",
+    "geneNames" : [ "NOS3" ],
+    "parents" : [ 535006 ]
+  }, {
+    "dbId" : 198356,
+    "stId" : "R-HSA-198356",
+    "displayName" : "p-T308,S473-AKT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 55 ],
+    "identifier" : "P31749",
+    "geneNames" : [ "AKT1", "PKB", "RAC" ],
+    "parents" : [ 202121, 1497889 ]
+  }, {
+    "dbId" : 534993,
+    "stId" : "R-HSA-534993",
+    "displayName" : "2xPalmC-MyrG-NOS3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29474",
+    "geneNames" : [ "NOS3" ],
+    "parents" : [ 203639 ]
+  }, {
+    "dbId" : 534994,
+    "stId" : "R-HSA-534994",
+    "displayName" : "CAV1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q03135",
+    "geneNames" : [ "CAV1", "CAV" ],
+    "parents" : [ 203696, 203629, 202128 ]
+  }, {
+    "dbId" : 534995,
+    "stId" : "R-HSA-534995",
+    "displayName" : "MyrG-NOS3 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29474",
+    "geneNames" : [ "NOS3" ],
+    "parents" : [ 203969 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2115, 2581 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 534996,
+    "stId" : "R-HSA-534996",
+    "displayName" : "HSP90AA1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07900",
+    "geneNames" : [ "HSP90AA1", "HSP90A", "HSPC1", "HSPCA" ],
+    "parents" : [ 202130, 202105 ]
+  }, {
+    "dbId" : 534997,
+    "stId" : "R-HSA-534997",
+    "displayName" : "CALM1:4Ca2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 202116, 202130, 202105 ],
+    "children" : [ 9016884, 140648 ]
+  }, {
+    "dbId" : 203619,
+    "stId" : "R-HSA-203619",
+    "displayName" : "myristoylated eNOS dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 70 ],
+    "children" : [ 29870, 29386, 73524, 203687, 29426, 71185 ]
+  }, {
+    "dbId" : 192864,
+    "stId" : "R-HSA-192864",
+    "displayName" : "HSP90AA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 47 ],
+    "identifier" : "P07900",
+    "geneNames" : [ "HSP90AA1", "HSP90A", "HSPC1", "HSPCA" ],
+    "parents" : [ 1497889, 202121 ]
+  }, {
+    "dbId" : 203623,
+    "stId" : "R-HSA-203623",
+    "displayName" : "eNOS:NOSIP [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 91 ],
+    "children" : [ 203808, 535001 ]
+  }, {
+    "dbId" : 5340212,
+    "stId" : "R-HSA-5340212",
+    "displayName" : "CYGB dimer:O2 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2103 ],
+    "children" : [ 29368, 5340240 ]
+  }, {
+    "dbId" : 535009,
+    "stId" : "R-HSA-535009",
+    "displayName" : "CAV1 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q03135",
+    "geneNames" : [ "CAV1", "CAV" ],
+    "parents" : [ 535005 ]
+  }, {
+    "dbId" : 5693375,
+    "stId" : "R-ALL-5693375",
+    "displayName" : "ADMA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2120 ],
+    "identifier" : "25682"
+  }, {
+    "dbId" : 140648,
+    "stId" : "R-ALL-140648",
+    "displayName" : "Ca2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 534997 ]
+  }, {
+    "dbId" : 535012,
+    "stId" : "R-HSA-535012",
+    "displayName" : "WASL [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00401",
+    "geneNames" : [ "WASL" ],
+    "parents" : [ 203648 ]
+  }, {
+    "dbId" : 184174,
+    "stId" : "R-ALL-184174",
+    "displayName" : "MYS-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 24 ],
+    "identifier" : "15532"
+  }, {
+    "dbId" : 203758,
+    "stId" : "R-HSA-203758",
+    "displayName" : "eNOS:Caveolin-1:NOSTRIN complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 94 ],
+    "children" : [ 203678, 202128 ]
+  }, {
+    "dbId" : 535013,
+    "stId" : "R-HSA-535013",
+    "displayName" : "NOSTRIN homotrimer [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 203648 ],
+    "children" : [ 535014 ]
+  }, {
+    "dbId" : 535014,
+    "stId" : "R-HSA-535014",
+    "displayName" : "NOSTRIN [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IVI9",
+    "geneNames" : [ "NOSTRIN" ],
+    "parents" : [ 535013 ]
+  }, {
+    "dbId" : 203757,
+    "stId" : "R-HSA-203757",
+    "displayName" : "ZDHHC21 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 31 ],
+    "identifier" : "Q8IVQ6",
+    "geneNames" : [ "ZDHHC21" ]
+  }, {
+    "dbId" : 203629,
+    "stId" : "R-HSA-203629",
+    "displayName" : "eNOS:Caveolin-1:NOSTRIN:dynamin-2:N-WASP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 101 ],
+    "children" : [ 203678, 534994, 2984201, 203639, 203010 ]
+  }, {
+    "dbId" : 1497830,
+    "stId" : "R-HSA-1497830",
+    "displayName" : "p-S1177-eNOS:CaM:HSP90:p-AKT1:BH4 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 992 ],
+    "children" : [ 29870, 202121 ]
+  }, {
+    "dbId" : 1474151,
+    "stId" : "R-HSA-1474151",
+    "displayName" : "Tetrahydrobiopterin (BH4) synthesis, recycling, salvage and regulation",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2413 ]
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 535006, 203808, 203969, 203619, 203639, 203564 ]
+  }, {
+    "dbId" : 203639,
+    "stId" : "R-HSA-203639",
+    "displayName" : "palmitoylated, myristoylated eNOS dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 34 ],
+    "parents" : [ 203696, 203629, 203595, 202128, 202105 ],
+    "children" : [ 29386, 534993, 73524, 29426, 71185 ]
+  }, {
+    "dbId" : 203636,
+    "stId" : "R-HSA-203636",
+    "displayName" : "NOSIP [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 88 ],
+    "identifier" : "Q9Y314",
+    "geneNames" : [ "NOSIP", "CGI-25" ],
+    "parents" : [ 203595 ]
+  }, {
+    "dbId" : 202105,
+    "stId" : "R-HSA-202105",
+    "displayName" : "eNOS:CaM:HSP90 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 52 ],
+    "parents" : [ 202113 ],
+    "children" : [ 534997, 534996, 203639 ]
+  }, {
+    "dbId" : 203769,
+    "stId" : "R-HSA-203769",
+    "displayName" : "2xPalmC-MyrG-NOS3 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 30 ],
+    "identifier" : "P29474",
+    "geneNames" : [ "NOS3" ],
+    "parents" : [ 203808 ]
+  }, {
+    "dbId" : 8981623,
+    "stId" : "R-HSA-8981623",
+    "displayName" : "CYGB:heme [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5340240 ],
+    "children" : [ 5216099, 71185 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 1497878,
+    "stId" : "R-HSA-1497878",
+    "displayName" : "Superoxide reacts rapidly with NO to form peroxynitrite (ONOO-)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1497810 ],
+    "inputs" : [ 202124, 1222424 ],
+    "outputs" : [ 1222481 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1700 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203712,
+    "stId" : "R-HSA-203712",
+    "displayName" : "eNOS associates with Caveolin-1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 203700 ],
+    "following" : [ 203716, 202110 ],
+    "inputs" : [ 163510, 203639 ],
+    "outputs" : [ 202128 ],
+    "efs" : [ ],
+    "diagramIds" : [ 36 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497810,
+    "stId" : "R-HSA-1497810",
+    "displayName" : "Uncoupled eNOS favours the formation of superoxide",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1497796 ],
+    "following" : [ 1497878 ],
+    "inputs" : [ 29368, 29364 ],
+    "outputs" : [ 1222424, 29366 ],
+    "catalysts" : [ 1497889 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1613 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203716,
+    "stId" : "R-HSA-203716",
+    "displayName" : "eNOS:Caveolin-1 complex binds to Nostrin",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 203712 ],
+    "following" : [ 203662 ],
+    "inputs" : [ 203678, 202128 ],
+    "outputs" : [ 203758 ],
+    "efs" : [ ],
+    "diagramIds" : [ 92 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 202127,
+    "stId" : "R-HSA-202127",
+    "displayName" : "eNOS synthesizes NO",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1497784 ],
+    "inputs" : [ 29468, 29368, 29364 ],
+    "outputs" : [ 202124, 29366, 29968 ],
+    "catalysts" : [ 1497830 ],
+    "efs" : [ ],
+    "inhibitors" : [ 5693375 ],
+    "diagramIds" : [ 62 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203662,
+    "stId" : "R-HSA-203662",
+    "displayName" : "eNOS:Caveolin-1:NOSTRIN complex binds dynamin-2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 203716 ],
+    "following" : [ 203565 ],
+    "inputs" : [ 203758, 2984201 ],
+    "outputs" : [ 203696 ],
+    "efs" : [ ],
+    "diagramIds" : [ 96 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497796,
+    "stId" : "R-HSA-1497796",
+    "displayName" : "BH2 binding can lead to eNOS uncoupling",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1497869 ],
+    "following" : [ 1497810 ],
+    "inputs" : [ 1497857, 1497830 ],
+    "outputs" : [ 29870, 1497889 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2414 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 202129,
+    "stId" : "R-HSA-202129",
+    "displayName" : "HSP90 binds eNOS:Caveolin-1:CaM complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 202110 ],
+    "following" : [ 202144 ],
+    "inputs" : [ 202116, 192864 ],
+    "outputs" : [ 74294, 202130 ],
+    "efs" : [ ],
+    "diagramIds" : [ 46 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5340226,
+    "stId" : "R-HSA-5340226",
+    "displayName" : "CYGB dioxygenates NO",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5340214 ],
+    "inputs" : [ 202124, 70106, 5340212, 29364 ],
+    "outputs" : [ 432031, 29366, 5340240 ],
+    "catalysts" : [ 5340212 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2112 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 202132,
+    "stId" : "R-HSA-202132",
+    "displayName" : "depalmitoylated eNOS translocates from plasma membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 203613 ],
+    "following" : [ 202137, 203567 ],
+    "inputs" : [ 203619 ],
+    "outputs" : [ 203969 ],
+    "efs" : [ ],
+    "diagramIds" : [ 84 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203611,
+    "stId" : "R-HSA-203611",
+    "displayName" : "N-myristoylation of eNOS",
+    "schemaClass" : "Reaction",
+    "following" : [ 203567 ],
+    "inputs" : [ 184174, 202114 ],
+    "outputs" : [ 203687 ],
+    "efs" : [ ],
+    "diagramIds" : [ 23 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 202137,
+    "stId" : "R-HSA-202137",
+    "displayName" : "AKT1 binds eNOS complex via HSP90",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 202132, 202144 ],
+    "following" : [ 202111 ],
+    "inputs" : [ 202105, 198356 ],
+    "outputs" : [ 202113 ],
+    "efs" : [ ],
+    "diagramIds" : [ 54 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497869,
+    "stId" : "R-HSA-1497869",
+    "displayName" : "Salvage - Sepiapterin is reduced to BH2",
+    "schemaClass" : "Reaction",
+    "following" : [ 1497796 ],
+    "inputs" : [ 70106, 1497811, 29364 ],
+    "outputs" : [ 1497857, 29366 ],
+    "catalysts" : [ 1497817 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2575 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203613,
+    "stId" : "R-HSA-203613",
+    "displayName" : "depalmitoylation of eNOS",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 203700 ],
+    "following" : [ 202132 ],
+    "inputs" : [ 203639 ],
+    "outputs" : [ 76168, 203619 ],
+    "catalysts" : [ 203655 ],
+    "efs" : [ ],
+    "diagramIds" : [ 69 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203553,
+    "stId" : "R-HSA-203553",
+    "displayName" : "eNOS binds NOSIP",
+    "schemaClass" : "Reaction",
+    "following" : [ 203680 ],
+    "inputs" : [ 203636, 203639 ],
+    "outputs" : [ 203595 ],
+    "efs" : [ ],
+    "diagramIds" : [ 87 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203680,
+    "stId" : "R-HSA-203680",
+    "displayName" : "eNOS:NOSIP translocation from caveolae to intracellular compartments",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 203553 ],
+    "inputs" : [ 203595 ],
+    "outputs" : [ 203623 ],
+    "efs" : [ ],
+    "diagramIds" : [ 90 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 202144,
+    "stId" : "R-HSA-202144",
+    "displayName" : "Caveolin-1 dissociates from eNOS:CaM:HSP90 complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 202129 ],
+    "following" : [ 202137 ],
+    "inputs" : [ 202130 ],
+    "outputs" : [ 202105, 163510 ],
+    "efs" : [ ],
+    "diagramIds" : [ 51 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5340214,
+    "stId" : "R-HSA-5340214",
+    "displayName" : "CYGB binds O2",
+    "schemaClass" : "Reaction",
+    "following" : [ 5340226 ],
+    "inputs" : [ 29368, 5340240 ],
+    "outputs" : [ 5340212 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2101 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203625,
+    "stId" : "R-HSA-203625",
+    "displayName" : "NOSTRIN mediated translocation of eNOS from plasma membrane",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 203565 ],
+    "inputs" : [ 203629 ],
+    "outputs" : [ 203648 ],
+    "efs" : [ ],
+    "diagramIds" : [ 106 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5693373,
+    "stId" : "R-HSA-5693373",
+    "displayName" : "DDAH1,2 hydrolyses ADMA to DMA and L-Cit",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 5693375 ],
+    "outputs" : [ 5693410, 29968 ],
+    "catalysts" : [ 6786641 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2404 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203567,
+    "stId" : "R-HSA-203567",
+    "displayName" : "palmitoylation of eNOS",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 203611, 202132 ],
+    "following" : [ 203700 ],
+    "inputs" : [ 203687, 200993 ],
+    "outputs" : [ 203769 ],
+    "catalysts" : [ 203757 ],
+    "efs" : [ ],
+    "diagramIds" : [ 28 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203565,
+    "stId" : "R-HSA-203565",
+    "displayName" : "eNOS:Caveolin-1:NOSTRIN:dynamin-2 complex binds N-WASP",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 203662 ],
+    "following" : [ 203625 ],
+    "inputs" : [ 203696, 201873 ],
+    "outputs" : [ 203629 ],
+    "efs" : [ ],
+    "diagramIds" : [ 99 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497784,
+    "stId" : "R-HSA-1497784",
+    "displayName" : "The cofactor BH4 is required for electron transfer in the eNOS catalytic cycle",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 202111 ],
+    "following" : [ 202127 ],
+    "inputs" : [ 29870, 202121 ],
+    "outputs" : [ 1497830 ],
+    "efs" : [ ],
+    "diagramIds" : [ 994 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 203700,
+    "stId" : "R-HSA-203700",
+    "displayName" : "eNOS translocation from Golgi to Caveolae",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 203567 ],
+    "following" : [ 203712, 203613 ],
+    "inputs" : [ 203769 ],
+    "outputs" : [ 203639 ],
+    "efs" : [ ],
+    "diagramIds" : [ 33 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 202111,
+    "stId" : "R-HSA-202111",
+    "displayName" : "AKT1 phosphorylates eNOS",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 202137 ],
+    "following" : [ 1497784 ],
+    "inputs" : [ 113592, 202113 ],
+    "outputs" : [ 29370, 202121 ],
+    "efs" : [ ],
+    "diagramIds" : [ 57 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 202110,
+    "stId" : "R-HSA-202110",
+    "displayName" : "eNOS:Caveolin-1 complex binds to CaM",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 203712 ],
+    "following" : [ 202129 ],
+    "inputs" : [ 74294, 202128 ],
+    "outputs" : [ 202116 ],
+    "efs" : [ ],
+    "diagramIds" : [ 42 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 203754,
+    "stId" : "R-HSA-203754",
+    "displayName" : "NOSIP mediated eNOS trafficking",
+    "events" : [ 203553, 203680 ]
+  }, {
+    "dbId" : 203765,
+    "stId" : "R-HSA-203765",
+    "displayName" : "eNOS activation and regulation",
+    "events" : [ 203553, 203680, 203716, 203625, 203662, 203565, 1497878, 203712, 202144, 1497810, 5340214, 5693373, 203567, 202127, 1497784, 202129, 1497796, 5340226, 203700, 202132, 203611, 202137, 1497869, 202111, 202110, 203613 ]
+  }, {
+    "dbId" : 203615,
+    "stId" : "R-HSA-203615",
+    "displayName" : "eNOS activation",
+    "events" : [ 1497878, 203712, 202144, 1497810, 5340214, 5693373, 203567, 202127, 1497784, 202129, 1497796, 5340226, 203700, 202132, 203611, 202137, 1497869, 202111, 202110, 203613 ]
+  }, {
+    "dbId" : 203641,
+    "stId" : "R-HSA-203641",
+    "displayName" : "NOSTRIN mediated eNOS trafficking",
+    "events" : [ 203716, 203625, 203662, 203565 ]
+  } ]
+}

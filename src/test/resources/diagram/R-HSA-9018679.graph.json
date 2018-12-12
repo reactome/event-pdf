@@ -1,0 +1,603 @@
+{
+  "dbId" : 9018679,
+  "stId" : "R-HSA-9018679",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 111745,
+    "stId" : "R-ALL-111745",
+    "displayName" : "GSSG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 16 ],
+    "identifier" : "17858"
+  }, {
+    "dbId" : 9029001,
+    "stId" : "R-HSA-9029001",
+    "displayName" : "CYP [endoplasmic reticulum membrane]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 12 ]
+  }, {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 91 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 2161824,
+    "stId" : "R-HSA-2161824",
+    "displayName" : "O-acetyl-L-serine-PTGS2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35354",
+    "geneNames" : [ "PTGS2", "COX2" ],
+    "parents" : [ 2314687 ]
+  }, {
+    "dbId" : 29450,
+    "stId" : "R-ALL-29450",
+    "displayName" : "GSH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "16856"
+  }, {
+    "dbId" : 9024003,
+    "stId" : "R-ALL-9024003",
+    "displayName" : "18(S)-RvE2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "137034",
+    "parents" : [ 9029501 ]
+  }, {
+    "dbId" : 9024005,
+    "stId" : "R-ALL-9024005",
+    "displayName" : "18(S)-RvE3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "138477",
+    "parents" : [ 9029501 ]
+  }, {
+    "dbId" : 9023644,
+    "stId" : "R-ALL-9023644",
+    "displayName" : "(18R)-resolvin E3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 27 ],
+    "identifier" : "138542",
+    "parents" : [ 9023979 ]
+  }, {
+    "dbId" : 9020572,
+    "stId" : "R-HSA-9020572",
+    "displayName" : "GPX4-2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 19 ],
+    "identifier" : "P36969-2",
+    "geneNames" : [ "GPX4" ]
+  }, {
+    "dbId" : 2311355,
+    "stId" : "R-ALL-2311355",
+    "displayName" : "heme b [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "26355",
+    "parents" : [ 2314687 ]
+  }, {
+    "dbId" : 2142778,
+    "stId" : "R-HSA-2142778",
+    "displayName" : "HPGD dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 92 ],
+    "children" : [ 2142677 ]
+  }, {
+    "dbId" : 2314687,
+    "stId" : "R-HSA-2314687",
+    "displayName" : "Ac-PTGS2 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ],
+    "children" : [ 2311355, 61605, 2161824 ]
+  }, {
+    "dbId" : 266022,
+    "stId" : "R-HSA-266022",
+    "displayName" : "LTA4H [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09960",
+    "geneNames" : [ "LTA4H", "LTA4" ],
+    "parents" : [ 266038 ]
+  }, {
+    "dbId" : 61605,
+    "stId" : "R-HSA-61605",
+    "displayName" : "PTGS2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35354",
+    "geneNames" : [ "PTGS2", "COX2" ],
+    "parents" : [ 2314687 ]
+  }, {
+    "dbId" : 9023651,
+    "stId" : "R-ALL-9023651",
+    "displayName" : "18(R)-HEPE [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 23 ],
+    "identifier" : "81563"
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18, 66, 22, 62 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 9023653,
+    "stId" : "R-ALL-9023653",
+    "displayName" : "(5Z,8Z,11Z,14Z,16E,18R)-18-hydroperoxyicosapentaenoic acid [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 21 ],
+    "identifier" : "138565",
+    "parents" : [ 9022921 ]
+  }, {
+    "dbId" : 9020583,
+    "stId" : "R-ALL-9020583",
+    "displayName" : "(18S)-hydroperoxyicosapentaenoic acid [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 15 ],
+    "identifier" : "138387",
+    "parents" : [ 9022921 ]
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 89 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 266038,
+    "stId" : "R-HSA-266038",
+    "displayName" : "LTA4H:Zn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 64, 68 ],
+    "children" : [ 29426, 266022 ]
+  }, {
+    "dbId" : 9020474,
+    "stId" : "R-ALL-9020474",
+    "displayName" : "18(S)-HEPE [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 17 ],
+    "identifier" : "132801"
+  }, {
+    "dbId" : 9022650,
+    "stId" : "R-ALL-9022650",
+    "displayName" : "18(S)-RvE2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 45 ],
+    "identifier" : "137034",
+    "parents" : [ 9023985 ]
+  }, {
+    "dbId" : 9020602,
+    "stId" : "R-ALL-9020602",
+    "displayName" : "5(S)-Hp-18(S)-HEPE [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 34 ],
+    "identifier" : "132802"
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 48, 8 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 11, 47 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 9022655,
+    "stId" : "R-ALL-9022655",
+    "displayName" : "5S,6S-epoxy-18(S)-HEPE [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 52 ],
+    "identifier" : "138490"
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2, 37, 54, 42, 58, 29 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 9022921,
+    "stId" : "R-ALL-9022921",
+    "displayName" : "18(S)-HpEPE, 18(R)-HpEPE [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 4 ],
+    "children" : [ 9020583, 9023653 ]
+  }, {
+    "dbId" : 9022670,
+    "stId" : "R-HSA-9022670",
+    "displayName" : "5-HEDH [cytosol]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 46 ]
+  }, {
+    "dbId" : 9022660,
+    "stId" : "R-ALL-9022660",
+    "displayName" : "18(S)-RvE1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 63 ],
+    "identifier" : "137038",
+    "parents" : [ 9023985 ]
+  }, {
+    "dbId" : 9023963,
+    "stId" : "R-ALL-9023963",
+    "displayName" : "18-oxo-RvE1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 90 ],
+    "identifier" : "131617"
+  }, {
+    "dbId" : 429010,
+    "stId" : "R-HSA-429010",
+    "displayName" : "ALOX5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 35, 40 ],
+    "identifier" : "P09917",
+    "geneNames" : [ "ALOX5", "LOG5" ]
+  }, {
+    "dbId" : 9023708,
+    "stId" : "R-ALL-9023708",
+    "displayName" : "5S,6S-epoxy-18(R)-HEPE [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 56 ],
+    "identifier" : "138563"
+  }, {
+    "dbId" : 2142838,
+    "stId" : "R-HSA-2142838",
+    "displayName" : "ALOX15 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "identifier" : "P16050",
+    "geneNames" : [ "ALOX15", "LOG15" ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 7 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 9023700,
+    "stId" : "R-ALL-9023700",
+    "displayName" : "18(R)-RvE2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 50 ],
+    "identifier" : "81560",
+    "parents" : [ 9023979 ]
+  }, {
+    "dbId" : 9022679,
+    "stId" : "R-ALL-9022679",
+    "displayName" : "18(S)-RvE3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 31 ],
+    "identifier" : "138477",
+    "parents" : [ 9023985 ]
+  }, {
+    "dbId" : 9023702,
+    "stId" : "R-ALL-9023702",
+    "displayName" : "5(S)-Hp-18(R)-HEPE [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 39 ],
+    "identifier" : "132908"
+  }, {
+    "dbId" : 9023979,
+    "stId" : "R-ALL-9023979",
+    "displayName" : "18(R)-RvE1,E2,E3 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 76 ],
+    "children" : [ 9023700, 9023712, 9023644 ]
+  }, {
+    "dbId" : 9023981,
+    "stId" : "R-ALL-9023981",
+    "displayName" : "18(R)-RvE1,E2,E3 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 80 ],
+    "children" : [ 9023989, 9023987, 9023984 ]
+  }, {
+    "dbId" : 9023712,
+    "stId" : "R-ALL-9023712",
+    "displayName" : "18(R)-RvE1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 67 ],
+    "identifier" : "81559",
+    "parents" : [ 9023979 ]
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 266038 ]
+  }, {
+    "dbId" : 9029501,
+    "stId" : "R-ALL-9029501",
+    "displayName" : "18(S)-RvE1,E2,E3 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 84 ],
+    "children" : [ 9023991, 9024005, 9024003 ]
+  }, {
+    "dbId" : 2142677,
+    "stId" : "R-HSA-2142677",
+    "displayName" : "HPGD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P15428",
+    "geneNames" : [ "HPGD", "PGDH1", "SDR36C1" ],
+    "parents" : [ 2142778 ]
+  }, {
+    "dbId" : 9023985,
+    "stId" : "R-ALL-9023985",
+    "displayName" : "18(S)-RvE1,E2,E3 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 70 ],
+    "children" : [ 9022679, 9022660, 9022650 ]
+  }, {
+    "dbId" : 9023984,
+    "stId" : "R-ALL-9023984",
+    "displayName" : "18(R)-RvE1 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "81559",
+    "parents" : [ 9023981 ]
+  }, {
+    "dbId" : 9023987,
+    "stId" : "R-ALL-9023987",
+    "displayName" : "(18R)-resolvin E3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "138542",
+    "parents" : [ 9023981 ]
+  }, {
+    "dbId" : 9023989,
+    "stId" : "R-ALL-9023989",
+    "displayName" : "18(R)-RvE2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "81560",
+    "parents" : [ 9023981 ]
+  }, {
+    "dbId" : 9023991,
+    "stId" : "R-ALL-9023991",
+    "displayName" : "18(S)-RvE1 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "137038",
+    "parents" : [ 9029501 ]
+  }, {
+    "dbId" : 2026977,
+    "stId" : "R-ALL-2026977",
+    "displayName" : "EPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "28364"
+  } ],
+  "edges" : [ {
+    "dbId" : 9018859,
+    "stId" : "R-HSA-9018859",
+    "displayName" : "ALOX5 oxidises 5(S)-Hp-18(S)-HEPE to 5S,6S-epoxy-18(S)-HEPE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018858 ],
+    "following" : [ 9018862 ],
+    "inputs" : [ 29368, 9020602 ],
+    "outputs" : [ 9022655 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 51 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018858,
+    "stId" : "R-HSA-9018858",
+    "displayName" : "ALOX5 oxidises 18(S)-HEPE to 5(S)-Hp-18(S)-HEPE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018868 ],
+    "following" : [ 9018867, 9018859 ],
+    "inputs" : [ 29368, 9020474 ],
+    "outputs" : [ 9020602 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 33 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9023980,
+    "stId" : "R-HSA-9023980",
+    "displayName" : "18(S)-RvE1, E2 and E3 translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9018862 ],
+    "inputs" : [ 9023985 ],
+    "outputs" : [ 9029501 ],
+    "efs" : [ ],
+    "diagramIds" : [ 69 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018863,
+    "stId" : "R-HSA-9018863",
+    "displayName" : "ALOX5 oxidises 18(R)-HEPE to 5(S)-Hp-18(R)-HEPE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018895 ],
+    "following" : [ 9018901, 9018894 ],
+    "inputs" : [ 9023651, 29368 ],
+    "outputs" : [ 9023702 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 38 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018895,
+    "stId" : "R-HSA-9018895",
+    "displayName" : "GPX4-2 reduces 18(R)-HpEPE to 18(R)-HEPE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018880 ],
+    "following" : [ 9018907, 9018863 ],
+    "inputs" : [ 9023653, 29450 ],
+    "outputs" : [ 29356, 9023651, 111745 ],
+    "catalysts" : [ 9020572 ],
+    "efs" : [ ],
+    "diagramIds" : [ 20 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9023983,
+    "stId" : "R-HSA-9023983",
+    "displayName" : "18(R)-RvE1, E2 and E3 translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9018877 ],
+    "inputs" : [ 9023979 ],
+    "outputs" : [ 9023981 ],
+    "efs" : [ ],
+    "diagramIds" : [ 75 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018862,
+    "stId" : "R-HSA-9018862",
+    "displayName" : "LTA4H:Zn2+ hydrolyses 5S,6S-epoxy-18(S)-HEPE to 18(S)-RvE1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018859 ],
+    "following" : [ 9023968, 9023980 ],
+    "inputs" : [ 29356, 9022655 ],
+    "outputs" : [ 9022660 ],
+    "catalysts" : [ 266038 ],
+    "efs" : [ ],
+    "diagramIds" : [ 61 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018894,
+    "stId" : "R-HSA-9018894",
+    "displayName" : "ALOX5 oxidises 5(S)-Hp-18(R)-HEPE to 5S,6S-epoxy-18(R)-HEPE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018863 ],
+    "following" : [ 9018877 ],
+    "inputs" : [ 9023702, 29368 ],
+    "outputs" : [ 9023708 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 55 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9023968,
+    "stId" : "R-HSA-9023968",
+    "displayName" : "HPGD dimer oxidises 18(S)-RvE1 to 18-oxo-RvE1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018862 ],
+    "inputs" : [ 9022660, 29360 ],
+    "outputs" : [ 9023963, 73473 ],
+    "catalysts" : [ 2142778 ],
+    "efs" : [ ],
+    "diagramIds" : [ 88 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018880,
+    "stId" : "R-HSA-9018880",
+    "displayName" : "Ac-PTGS2 dimer oxidises EPA to 18(R)-HpEPE or 18(S)-HpEPE",
+    "schemaClass" : "Reaction",
+    "following" : [ 9018895, 9018868 ],
+    "inputs" : [ 2026977, 29368 ],
+    "outputs" : [ 9022921 ],
+    "catalysts" : [ 2314687 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9020610,
+    "stId" : "R-HSA-9020610",
+    "displayName" : "ALOX15 oxidises 18(S)-HEPE to 18(S)-RvE3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018868 ],
+    "inputs" : [ 29368, 9020474 ],
+    "outputs" : [ 9022679 ],
+    "catalysts" : [ 2142838 ],
+    "efs" : [ ],
+    "diagramIds" : [ 30 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018907,
+    "stId" : "R-HSA-9018907",
+    "displayName" : "ALOX15 oxidises 18(R)-HEPE to 18(R)-RvE3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018895 ],
+    "inputs" : [ 9023651, 29368 ],
+    "outputs" : [ 9023644 ],
+    "catalysts" : [ 2142838 ],
+    "efs" : [ ],
+    "diagramIds" : [ 26 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018874,
+    "stId" : "R-HSA-9018874",
+    "displayName" : "CYP monooxygenates EPA to 18(S)-HpEPE",
+    "schemaClass" : "Reaction",
+    "following" : [ 9018868 ],
+    "inputs" : [ 2026977, 70106, 29368, 29364 ],
+    "outputs" : [ 9020583, 29366 ],
+    "catalysts" : [ 9029001 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018877,
+    "stId" : "R-HSA-9018877",
+    "displayName" : "LTA4H:Zn2+ hydrolyses 5S,6S-epoxy-18(R)-HEPE to 18(R)-RvE1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018894 ],
+    "following" : [ 9023983 ],
+    "inputs" : [ 29356, 9023708 ],
+    "outputs" : [ 9023712 ],
+    "catalysts" : [ 266038 ],
+    "efs" : [ ],
+    "diagramIds" : [ 65 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018867,
+    "stId" : "R-HSA-9018867",
+    "displayName" : "5-HEDH dehydrogenates 5(S)-Hp-18(S)-HpEPE to 18(S)-RvE2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018858 ],
+    "inputs" : [ 29364, 9020602 ],
+    "outputs" : [ 29366, 9022650 ],
+    "catalysts" : [ 9022670 ],
+    "efs" : [ ],
+    "diagramIds" : [ 44 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018901,
+    "stId" : "R-HSA-9018901",
+    "displayName" : "5-HEDH dehydrogenates 5(S)-Hp-18(R)-HpEPE to 18(R)-RvE2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018863 ],
+    "inputs" : [ 9023702, 29364 ],
+    "outputs" : [ 9023700, 29366 ],
+    "catalysts" : [ 9022670 ],
+    "efs" : [ ],
+    "diagramIds" : [ 49 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9018868,
+    "stId" : "R-HSA-9018868",
+    "displayName" : "GPX4-2 reduces 18(S)-HpEPE to 18(S)-HEPE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9018880, 9018874 ],
+    "following" : [ 9020610, 9018858 ],
+    "inputs" : [ 9020583, 29450 ],
+    "outputs" : [ 29356, 9020474, 111745 ],
+    "catalysts" : [ 9020572 ],
+    "efs" : [ ],
+    "diagramIds" : [ 13 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 9018896,
+    "stId" : "R-HSA-9018896",
+    "displayName" : "Biosynthesis of E-series 18(S)-resolvins",
+    "events" : [ 9018859, 9018874, 9018858, 9023980, 9018862, 9023968, 9018867, 9020610, 9018868 ]
+  }, {
+    "dbId" : 9023661,
+    "stId" : "R-HSA-9023661",
+    "displayName" : "Biosynthesis of E-series 18(R)-resolvins",
+    "events" : [ 9018907, 9018877, 9018895, 9018863, 9023983, 9018894, 9018901 ]
+  } ]
+}

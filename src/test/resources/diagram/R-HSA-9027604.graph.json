@@ -1,0 +1,575 @@
+{
+  "dbId" : 9027604,
+  "stId" : "R-HSA-9027604",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 2161824,
+    "stId" : "R-HSA-2161824",
+    "displayName" : "O-acetyl-L-serine-PTGS2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35354",
+    "geneNames" : [ "PTGS2", "COX2" ],
+    "parents" : [ 2314687 ]
+  }, {
+    "dbId" : 9032328,
+    "stId" : "R-ALL-9032328",
+    "displayName" : "5-oxo-EPA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 453 ],
+    "identifier" : "140244"
+  }, {
+    "dbId" : 9024011,
+    "stId" : "R-ALL-9024011",
+    "displayName" : "DHA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "28125"
+  }, {
+    "dbId" : 9032321,
+    "stId" : "R-ALL-9032321",
+    "displayName" : "7-oxo-DHA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140252",
+    "parents" : [ 9032322 ]
+  }, {
+    "dbId" : 140491,
+    "stId" : "R-HSA-140491",
+    "displayName" : "PTGS2 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5, 156 ],
+    "children" : [ 2311355, 61605 ]
+  }, {
+    "dbId" : 9028288,
+    "stId" : "R-HSA-9028288",
+    "displayName" : "5-HEDH [endoplasmic reticulum membrane]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 104, 137, 44 ]
+  }, {
+    "dbId" : 9032322,
+    "stId" : "R-ALL-9032322",
+    "displayName" : "oxo-DHAs [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 437 ],
+    "children" : [ 9032326, 9032324, 9032321 ]
+  }, {
+    "dbId" : 9032325,
+    "stId" : "R-ALL-9032325",
+    "displayName" : "oxo-DPAn-3s [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 450 ],
+    "children" : [ 9032316, 9032317, 9032314 ]
+  }, {
+    "dbId" : 9032324,
+    "stId" : "R-ALL-9032324",
+    "displayName" : "13-oxo-DHA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140204",
+    "parents" : [ 9032322 ]
+  }, {
+    "dbId" : 9032326,
+    "stId" : "R-ALL-9032326",
+    "displayName" : "17-oxo-DHA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140238",
+    "parents" : [ 9032322 ]
+  }, {
+    "dbId" : 9028230,
+    "stId" : "R-ALL-9028230",
+    "displayName" : "PGJ3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 159 ],
+    "identifier" : "140267"
+  }, {
+    "dbId" : 9027547,
+    "stId" : "R-ALL-9027547",
+    "displayName" : "13-HDHA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4 ],
+    "identifier" : "72608"
+  }, {
+    "dbId" : 429010,
+    "stId" : "R-HSA-429010",
+    "displayName" : "ALOX5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 66, 133, 11 ],
+    "identifier" : "P09917",
+    "geneNames" : [ "ALOX5", "LOG5" ]
+  }, {
+    "dbId" : 9027614,
+    "stId" : "R-ALL-9027614",
+    "displayName" : "17-HDPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 61 ],
+    "identifier" : "136352"
+  }, {
+    "dbId" : 9027537,
+    "stId" : "R-ALL-9027537",
+    "displayName" : "13-oxo-DHA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 29 ],
+    "identifier" : "140204",
+    "parents" : [ 9032319 ]
+  }, {
+    "dbId" : 9027601,
+    "stId" : "R-ALL-9027601",
+    "displayName" : "17-oxo-DPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 75 ],
+    "identifier" : "140239",
+    "parents" : [ 9032318 ]
+  }, {
+    "dbId" : 2311355,
+    "stId" : "R-ALL-2311355",
+    "displayName" : "heme b [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "26355",
+    "parents" : [ 2314687, 140491 ]
+  }, {
+    "dbId" : 9028240,
+    "stId" : "R-ALL-9028240",
+    "displayName" : "7-HDPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 65 ],
+    "identifier" : "140250"
+  }, {
+    "dbId" : 9027602,
+    "stId" : "R-ALL-9027602",
+    "displayName" : "13-oxo-DPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 88 ],
+    "identifier" : "140205",
+    "parents" : [ 9032318 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 105, 43, 143 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 2314687,
+    "stId" : "R-HSA-2314687",
+    "displayName" : "Ac-PTGS2 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8, 62 ],
+    "children" : [ 2311355, 61605, 2161824 ]
+  }, {
+    "dbId" : 9028265,
+    "stId" : "R-ALL-9028265",
+    "displayName" : "7-oxo-DHA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 42 ],
+    "identifier" : "140252",
+    "parents" : [ 9032319 ]
+  }, {
+    "dbId" : 9027561,
+    "stId" : "R-HSA-9027561",
+    "displayName" : "Dehydrogenase [cytosol]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 90, 76, 30 ]
+  }, {
+    "dbId" : 9028201,
+    "stId" : "R-ALL-9028201",
+    "displayName" : "δ12-PGJ3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 161 ],
+    "identifier" : "140274"
+  }, {
+    "dbId" : 9028200,
+    "stId" : "R-ALL-9028200",
+    "displayName" : "7-oxo-DPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 103 ],
+    "identifier" : "140253",
+    "parents" : [ 9032318 ]
+  }, {
+    "dbId" : 9027626,
+    "stId" : "R-ALL-9027626",
+    "displayName" : "17-oxo-DHA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 33 ],
+    "identifier" : "140238",
+    "parents" : [ 9032319 ]
+  }, {
+    "dbId" : 9028202,
+    "stId" : "R-ALL-9028202",
+    "displayName" : "5-oxo-EPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 135 ],
+    "identifier" : "140244"
+  }, {
+    "dbId" : 61605,
+    "stId" : "R-HSA-61605",
+    "displayName" : "PTGS2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35354",
+    "geneNames" : [ "PTGS2", "COX2" ],
+    "parents" : [ 2314687, 140491 ]
+  }, {
+    "dbId" : 9028207,
+    "stId" : "R-ALL-9028207",
+    "displayName" : "15d-PGJ3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 163 ],
+    "identifier" : "140223"
+  }, {
+    "dbId" : 9026400,
+    "stId" : "R-ALL-9026400",
+    "displayName" : "13(R)-HDPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 87 ],
+    "identifier" : "91274"
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 164, 158 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 9608444,
+    "stId" : "R-ALL-9608444",
+    "displayName" : "DPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 460 ],
+    "identifier" : "53488"
+  }, {
+    "dbId" : 9027622,
+    "stId" : "R-ALL-9027622",
+    "displayName" : "17-HDHA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 7 ],
+    "identifier" : "72637"
+  }, {
+    "dbId" : 9032313,
+    "stId" : "R-ALL-9032313",
+    "displayName" : "15d-PGJ3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 452 ],
+    "identifier" : "140223"
+  }, {
+    "dbId" : 9028280,
+    "stId" : "R-ALL-9028280",
+    "displayName" : "PGH3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 152 ],
+    "identifier" : "134407"
+  }, {
+    "dbId" : 9028283,
+    "stId" : "R-ALL-9028283",
+    "displayName" : "5-HEPE [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 129 ],
+    "identifier" : "72801"
+  }, {
+    "dbId" : 9032314,
+    "stId" : "R-ALL-9032314",
+    "displayName" : "17-oxo-DPAn-3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140239",
+    "parents" : [ 9032325 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 101, 28, 141, 78 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 9032317,
+    "stId" : "R-ALL-9032317",
+    "displayName" : "13-oxo-DPAn-3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140205",
+    "parents" : [ 9032325 ]
+  }, {
+    "dbId" : 9032316,
+    "stId" : "R-ALL-9032316",
+    "displayName" : "7-oxo-DPAn-3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140253",
+    "parents" : [ 9032325 ]
+  }, {
+    "dbId" : 9032319,
+    "stId" : "R-ALL-9032319",
+    "displayName" : "oxo-DHAs [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 433 ],
+    "children" : [ 9027537, 9027626, 9028265 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 27, 139, 92, 77 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 9032318,
+    "stId" : "R-ALL-9032318",
+    "displayName" : "oxo-DPAn-3s [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 446 ],
+    "children" : [ 9027602, 9027601, 9028200 ]
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2, 154, 63 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 9028274,
+    "stId" : "R-ALL-9028274",
+    "displayName" : "7-HDHA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 10 ],
+    "identifier" : "72623"
+  }, {
+    "dbId" : 2026977,
+    "stId" : "R-ALL-2026977",
+    "displayName" : "EPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 128 ],
+    "identifier" : "28364"
+  } ],
+  "edges" : [ {
+    "dbId" : 9027625,
+    "stId" : "R-HSA-9027625",
+    "displayName" : "5-HEDH dehydrogenates 7-HDPAn-3 to 7-oxo-DPAn-3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9027633 ],
+    "inputs" : [ 9028240, 29366 ],
+    "outputs" : [ 70106, 29364, 9028200 ],
+    "catalysts" : [ 9028288 ],
+    "efs" : [ ],
+    "diagramIds" : [ 102 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027624,
+    "stId" : "R-HSA-9027624",
+    "displayName" : "ALOX5 oxidises DHA to 7-HDHA",
+    "schemaClass" : "Reaction",
+    "following" : [ 9027631 ],
+    "inputs" : [ 29368, 9024011 ],
+    "outputs" : [ 9028274 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 9 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027531,
+    "stId" : "R-HSA-9027531",
+    "displayName" : "Dehydrogenase dehydrogenates 13-HDHA to 13-oxo-DHA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9027532 ],
+    "inputs" : [ 29366, 9027547 ],
+    "outputs" : [ 9027537, 29364 ],
+    "catalysts" : [ 9027561 ],
+    "efs" : [ ],
+    "diagramIds" : [ 26 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027627,
+    "stId" : "R-HSA-9027627",
+    "displayName" : "Ac-PTGS2 dimer oxidises DHA to 17-HDHA (macrophages)",
+    "schemaClass" : "Reaction",
+    "following" : [ 9027562 ],
+    "inputs" : [ 29368, 9024011 ],
+    "outputs" : [ 9027622 ],
+    "catalysts" : [ 2314687 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027562,
+    "stId" : "R-HSA-9027562",
+    "displayName" : "Dehydrogenase dehydrogenates 17-HDHA to 17-oxo-DHA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9027627 ],
+    "inputs" : [ 9027622, 29366 ],
+    "outputs" : [ 29364, 9027626 ],
+    "catalysts" : [ 9027561 ],
+    "efs" : [ ],
+    "diagramIds" : [ 31 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027532,
+    "stId" : "R-HSA-9027532",
+    "displayName" : "PTGS2 dimer oxidises DHA to 13-HDHA",
+    "schemaClass" : "Reaction",
+    "following" : [ 9027531 ],
+    "inputs" : [ 29368, 9024011 ],
+    "outputs" : [ 9027547 ],
+    "catalysts" : [ 140491 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027628,
+    "stId" : "R-HSA-9027628",
+    "displayName" : "ALOX5 oxidises EPA to 5-HEPE",
+    "schemaClass" : "Reaction",
+    "following" : [ 9027632 ],
+    "inputs" : [ 2026977, 29368 ],
+    "outputs" : [ 9028283 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 127 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027631,
+    "stId" : "R-HSA-9027631",
+    "displayName" : "5-HEDH dehydrogenates 7-HDHA to 7-oxo-DHA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9027624 ],
+    "inputs" : [ 9028274, 29366 ],
+    "outputs" : [ 70106, 29364, 9028265 ],
+    "catalysts" : [ 9028288 ],
+    "efs" : [ ],
+    "diagramIds" : [ 41 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027598,
+    "stId" : "R-HSA-9027598",
+    "displayName" : "Dehydrogenase dehydrogenates 13(R)-HDPAn-3 to 13-oxo-DPAn-3",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 9026400, 29366 ],
+    "outputs" : [ 9027602, 29364 ],
+    "catalysts" : [ 9027561 ],
+    "efs" : [ ],
+    "diagramIds" : [ 86 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9032323,
+    "stId" : "R-HSA-9032323",
+    "displayName" : "oxo-DPAn-3s translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 9032318 ],
+    "outputs" : [ 9032325 ],
+    "efs" : [ ],
+    "diagramIds" : [ 445 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9028260,
+    "stId" : "R-HSA-9028260",
+    "displayName" : "δ12-PGJ3 spontaneously dehydrates to  15d-PGJ3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9028263 ],
+    "inputs" : [ 9028201 ],
+    "outputs" : [ 29356, 9028207 ],
+    "efs" : [ ],
+    "diagramIds" : [ 162 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9028263,
+    "stId" : "R-HSA-9028263",
+    "displayName" : "PGJ3 isomerises to δ12-PGJ3",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9028273 ],
+    "following" : [ 9028260 ],
+    "inputs" : [ 9028230 ],
+    "outputs" : [ 9028201 ],
+    "efs" : [ ],
+    "diagramIds" : [ 160 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9032327,
+    "stId" : "R-HSA-9032327",
+    "displayName" : "5-oxo-EPA, 15d-PGJ3 translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 9028207, 9028202 ],
+    "outputs" : [ 9032328, 9032313 ],
+    "efs" : [ ],
+    "diagramIds" : [ 451 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9032315,
+    "stId" : "R-HSA-9032315",
+    "displayName" : "oxo-DHAs translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 9032319 ],
+    "outputs" : [ 9032322 ],
+    "efs" : [ ],
+    "diagramIds" : [ 432 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9028255,
+    "stId" : "R-HSA-9028255",
+    "displayName" : "PTGS2 dimer oxidises EPA to PGH3",
+    "schemaClass" : "Reaction",
+    "following" : [ 9028273 ],
+    "inputs" : [ 2026977, 29368 ],
+    "outputs" : [ 9028280 ],
+    "catalysts" : [ 140491 ],
+    "efs" : [ ],
+    "diagramIds" : [ 151 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9028273,
+    "stId" : "R-HSA-9028273",
+    "displayName" : "PGH3 spontaneously dehydrates to PGJ3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9028255 ],
+    "following" : [ 9028263 ],
+    "inputs" : [ 9028280 ],
+    "outputs" : [ 9028230, 29356 ],
+    "efs" : [ ],
+    "diagramIds" : [ 157 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027633,
+    "stId" : "R-HSA-9027633",
+    "displayName" : "ALOX5 oxidises DPAn-3 to 7-HDPAn-3",
+    "schemaClass" : "Reaction",
+    "following" : [ 9027625 ],
+    "inputs" : [ 9608444, 29368 ],
+    "outputs" : [ 9028240 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 64 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027600,
+    "stId" : "R-HSA-9027600",
+    "displayName" : "Dehydrogenase dehydrogenates 17-HDPAn-3 to 17-oxo-DPAn-3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9027607 ],
+    "inputs" : [ 9027614, 29366 ],
+    "outputs" : [ 9027601, 29364 ],
+    "catalysts" : [ 9027561 ],
+    "efs" : [ ],
+    "diagramIds" : [ 74 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027632,
+    "stId" : "R-HSA-9027632",
+    "displayName" : "5-HEDH dehydrogenates 5-HEPE to 5-oxo-EPA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9027628 ],
+    "inputs" : [ 29366, 9028283 ],
+    "outputs" : [ 70106, 29364, 9028202 ],
+    "catalysts" : [ 9028288 ],
+    "efs" : [ ],
+    "diagramIds" : [ 134 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9027607,
+    "stId" : "R-HSA-9027607",
+    "displayName" : "Ac-PTGS2 dimer oxidises DPAn-3 to 17-HDPAn-3",
+    "schemaClass" : "Reaction",
+    "following" : [ 9027600 ],
+    "inputs" : [ 9608444, 29368 ],
+    "outputs" : [ 9027614 ],
+    "catalysts" : [ 2314687 ],
+    "efs" : [ ],
+    "diagramIds" : [ 59 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

@@ -1,0 +1,1183 @@
+{
+  "dbId" : 8956321,
+  "stId" : "R-HSA-8956321",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 49925,
+    "stId" : "R-HSA-49925",
+    "displayName" : "AMPD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23109",
+    "geneNames" : [ "AMPD1" ],
+    "parents" : [ 76595 ]
+  }, {
+    "dbId" : 2161190,
+    "stId" : "R-ALL-2161190",
+    "displayName" : "N6-methyl-AMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 72 ],
+    "identifier" : "40196"
+  }, {
+    "dbId" : 500224,
+    "stId" : "R-ALL-500224",
+    "displayName" : "dA, dG, dI [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 30 ],
+    "children" : [ 109705, 109731, 109729 ]
+  }, {
+    "dbId" : 49927,
+    "stId" : "R-HSA-49927",
+    "displayName" : "AMPD2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01433",
+    "geneNames" : [ "AMPD2" ],
+    "parents" : [ 76586 ]
+  }, {
+    "dbId" : 49929,
+    "stId" : "R-HSA-49929",
+    "displayName" : "AMPD3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01432",
+    "geneNames" : [ "AMPD3" ],
+    "parents" : [ 76601 ]
+  }, {
+    "dbId" : 500235,
+    "stId" : "R-HSA-500235",
+    "displayName" : "AMPD tetramers [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 55 ],
+    "children" : [ 76586, 76601, 76595 ]
+  }, {
+    "dbId" : 977410,
+    "stId" : "R-HSA-977410",
+    "displayName" : "UPP2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95045",
+    "geneNames" : [ "UPP2" ],
+    "parents" : [ 977408 ]
+  }, {
+    "dbId" : 109327,
+    "stId" : "R-ALL-109327",
+    "displayName" : "2'-deoxyguanosine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16192",
+    "parents" : [ 500199 ]
+  }, {
+    "dbId" : 977408,
+    "stId" : "R-HSA-977408",
+    "displayName" : "UPP1, UPP2 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 160 ],
+    "children" : [ 977410, 112267 ]
+  }, {
+    "dbId" : 500759,
+    "stId" : "R-ALL-500759",
+    "displayName" : "Cyt-Rib, Ura-Rib [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 180 ],
+    "children" : [ 83949, 83929 ]
+  }, {
+    "dbId" : 109328,
+    "stId" : "R-ALL-109328",
+    "displayName" : "dG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17172",
+    "parents" : [ 500201, 500245 ]
+  }, {
+    "dbId" : 109331,
+    "stId" : "R-ALL-109331",
+    "displayName" : "dI [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28997",
+    "parents" : [ 500172 ]
+  }, {
+    "dbId" : 500245,
+    "stId" : "R-ALL-500245",
+    "displayName" : "G, dG [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 87 ],
+    "children" : [ 83926, 109328 ]
+  }, {
+    "dbId" : 500244,
+    "stId" : "R-ALL-500244",
+    "displayName" : "R1P, dRibP [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 84, 168 ],
+    "children" : [ 112016, 112032 ]
+  }, {
+    "dbId" : 73501,
+    "stId" : "R-HSA-73501",
+    "displayName" : "TK1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 214 ],
+    "children" : [ 73500 ]
+  }, {
+    "dbId" : 73500,
+    "stId" : "R-HSA-73500",
+    "displayName" : "TK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04183",
+    "geneNames" : [ "TK1" ],
+    "parents" : [ 73501 ]
+  }, {
+    "dbId" : 500761,
+    "stId" : "R-ALL-500761",
+    "displayName" : "CMP, UMP [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 183 ],
+    "children" : [ 109402, 109395 ]
+  }, {
+    "dbId" : 73503,
+    "stId" : "R-HSA-73503",
+    "displayName" : "UCK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HA47",
+    "geneNames" : [ "UCK1", "URK1" ],
+    "parents" : [ 73504 ]
+  }, {
+    "dbId" : 76577,
+    "stId" : "R-ALL-76577",
+    "displayName" : "AMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 52 ],
+    "identifier" : "16027",
+    "parents" : [ 500088 ]
+  }, {
+    "dbId" : 73504,
+    "stId" : "R-HSA-73504",
+    "displayName" : "UCK1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 185 ],
+    "children" : [ 73503 ]
+  }, {
+    "dbId" : 500260,
+    "stId" : "R-ALL-500260",
+    "displayName" : "GMP, IMP [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 109 ],
+    "children" : [ 113578, 29602 ]
+  }, {
+    "dbId" : 500259,
+    "stId" : "R-ALL-500259",
+    "displayName" : "Gua, Hyp [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 106 ],
+    "children" : [ 113599, 83956 ]
+  }, {
+    "dbId" : 49701,
+    "stId" : "R-HSA-49701",
+    "displayName" : "ADA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "identifier" : "P00813",
+    "geneNames" : [ "ADA", "ADA1" ]
+  }, {
+    "dbId" : 514605,
+    "stId" : "R-HSA-514605",
+    "displayName" : "GMPR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36959",
+    "geneNames" : [ "GMPR", "GMPR1" ],
+    "parents" : [ 514628 ]
+  }, {
+    "dbId" : 73515,
+    "stId" : "R-HSA-73515",
+    "displayName" : "DCK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P27707",
+    "geneNames" : [ "DCK" ],
+    "parents" : [ 73516 ]
+  }, {
+    "dbId" : 76586,
+    "stId" : "R-HSA-76586",
+    "displayName" : "AMPD2 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 500235 ],
+    "children" : [ 49927 ]
+  }, {
+    "dbId" : 73516,
+    "stId" : "R-HSA-73516",
+    "displayName" : "DCK dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 242, 42 ],
+    "children" : [ 73515, 29926 ]
+  }, {
+    "dbId" : 76595,
+    "stId" : "R-HSA-76595",
+    "displayName" : "AMPD1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 500235 ],
+    "children" : [ 49925 ]
+  }, {
+    "dbId" : 66871,
+    "stId" : "R-HSA-66871",
+    "displayName" : "UCK 2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZX2",
+    "geneNames" : [ "UCK2", "UMPK" ],
+    "parents" : [ 500801 ]
+  }, {
+    "dbId" : 109366,
+    "stId" : "R-ALL-109366",
+    "displayName" : "TMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 212 ],
+    "identifier" : "17013"
+  }, {
+    "dbId" : 76601,
+    "stId" : "R-HSA-76601",
+    "displayName" : "AMPD3 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 500235 ],
+    "children" : [ 49929 ]
+  }, {
+    "dbId" : 2161177,
+    "stId" : "R-ALL-2161177",
+    "displayName" : "methylamine [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 74 ],
+    "identifier" : "16830"
+  }, {
+    "dbId" : 2161178,
+    "stId" : "R-HSA-2161178",
+    "displayName" : "ADAL:Zn [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 75 ],
+    "children" : [ 2161180, 29426 ]
+  }, {
+    "dbId" : 514620,
+    "stId" : "R-HSA-514620",
+    "displayName" : "GMPR tetramers [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 125 ],
+    "children" : [ 514628, 514630 ]
+  }, {
+    "dbId" : 2161180,
+    "stId" : "R-HSA-2161180",
+    "displayName" : "ADAL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6DHV7",
+    "geneNames" : [ "ADAL" ],
+    "parents" : [ 2161178 ]
+  }, {
+    "dbId" : 49725,
+    "stId" : "R-HSA-49725",
+    "displayName" : "ADK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55263",
+    "geneNames" : [ "ADK" ],
+    "parents" : [ 76542 ]
+  }, {
+    "dbId" : 56639,
+    "stId" : "R-HSA-56639",
+    "displayName" : "HPRT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00492",
+    "geneNames" : [ "HPRT1", "HPRT" ],
+    "parents" : [ 74208 ]
+  }, {
+    "dbId" : 514631,
+    "stId" : "R-HSA-514631",
+    "displayName" : "GMPR2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9P2T1",
+    "geneNames" : [ "GMPR2" ],
+    "parents" : [ 514630 ]
+  }, {
+    "dbId" : 514630,
+    "stId" : "R-HSA-514630",
+    "displayName" : "GMPR2 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 514620 ],
+    "children" : [ 514631 ]
+  }, {
+    "dbId" : 109379,
+    "stId" : "R-ALL-109379",
+    "displayName" : "dC [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15698",
+    "parents" : [ 500829 ]
+  }, {
+    "dbId" : 109378,
+    "stId" : "R-ALL-109378",
+    "displayName" : "2'-deoxycytosine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15918",
+    "parents" : [ 500828 ]
+  }, {
+    "dbId" : 514628,
+    "stId" : "R-HSA-514628",
+    "displayName" : "GMPR tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 514620 ],
+    "children" : [ 514605 ]
+  }, {
+    "dbId" : 53573,
+    "stId" : "R-HSA-53573",
+    "displayName" : "DGUOK [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16854",
+    "geneNames" : [ "DGUOK", "DGK" ],
+    "parents" : [ 74205 ]
+  }, {
+    "dbId" : 109383,
+    "stId" : "R-ALL-109383",
+    "displayName" : "dU [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16450",
+    "parents" : [ 500430, 500444 ]
+  }, {
+    "dbId" : 500801,
+    "stId" : "R-HSA-500801",
+    "displayName" : "UCK2 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 189 ],
+    "children" : [ 66871 ]
+  }, {
+    "dbId" : 109386,
+    "stId" : "R-ALL-109386",
+    "displayName" : "2'-deoxyadenosine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17713",
+    "parents" : [ 500199, 500088 ]
+  }, {
+    "dbId" : 500823,
+    "stId" : "R-ALL-500823",
+    "displayName" : "dCMP, TMP, dUMP [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 219 ],
+    "children" : [ 109758, 109510, 109509 ]
+  }, {
+    "dbId" : 500822,
+    "stId" : "R-ALL-500822",
+    "displayName" : "dC, Thy-dRib, dU [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 216 ],
+    "children" : [ 109757, 109511, 109508 ]
+  }, {
+    "dbId" : 109395,
+    "stId" : "R-ALL-109395",
+    "displayName" : "cytidine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17361",
+    "parents" : [ 500828, 500761 ]
+  }, {
+    "dbId" : 73556,
+    "stId" : "R-HSA-73556",
+    "displayName" : "UPP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16831",
+    "geneNames" : [ "UPP1", "UP" ],
+    "parents" : [ 112267 ]
+  }, {
+    "dbId" : 500829,
+    "stId" : "R-ALL-500829",
+    "displayName" : "Cyt-Rib, dC [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 236 ],
+    "children" : [ 83949, 109379 ]
+  }, {
+    "dbId" : 8954322,
+    "stId" : "R-HSA-8954322",
+    "displayName" : "UCKL1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 200 ],
+    "identifier" : "Q9NWZ5",
+    "geneNames" : [ "UCKL1", "URKL1", "F538" ]
+  }, {
+    "dbId" : 109402,
+    "stId" : "R-ALL-109402",
+    "displayName" : "uridine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16695",
+    "parents" : [ 500761 ]
+  }, {
+    "dbId" : 500828,
+    "stId" : "R-ALL-500828",
+    "displayName" : "(d)CMP [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 239 ],
+    "children" : [ 109378, 109395 ]
+  }, {
+    "dbId" : 73566,
+    "stId" : "R-ALL-73566",
+    "displayName" : "PRPP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 94 ],
+    "identifier" : "17111"
+  }, {
+    "dbId" : 74363,
+    "stId" : "R-HSA-74363",
+    "displayName" : "TYMP dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 178 ],
+    "children" : [ 73610 ]
+  }, {
+    "dbId" : 500088,
+    "stId" : "R-ALL-500088",
+    "displayName" : "(d)AMP [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 19 ],
+    "children" : [ 109386, 76577 ]
+  }, {
+    "dbId" : 109705,
+    "stId" : "R-ALL-109705",
+    "displayName" : "dI [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28997",
+    "parents" : [ 500224 ]
+  }, {
+    "dbId" : 109707,
+    "stId" : "R-ALL-109707",
+    "displayName" : "dIMP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28806",
+    "parents" : [ 500222 ]
+  }, {
+    "dbId" : 112267,
+    "stId" : "R-HSA-112267",
+    "displayName" : "UPP1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 977408 ],
+    "children" : [ 73556 ]
+  }, {
+    "dbId" : 73610,
+    "stId" : "R-HSA-73610",
+    "displayName" : "TYMP [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19971",
+    "geneNames" : [ "TYMP", "ECGF1" ],
+    "parents" : [ 74363 ]
+  }, {
+    "dbId" : 112016,
+    "stId" : "R-ALL-112016",
+    "displayName" : "R1P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "35425",
+    "parents" : [ 500244 ]
+  }, {
+    "dbId" : 31633,
+    "stId" : "R-ALL-31633",
+    "displayName" : "NH4+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 16, 128, 256, 56 ],
+    "identifier" : "28938"
+  }, {
+    "dbId" : 109729,
+    "stId" : "R-ALL-109729",
+    "displayName" : "dG [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17172",
+    "parents" : [ 500224 ]
+  }, {
+    "dbId" : 112032,
+    "stId" : "R-ALL-112032",
+    "displayName" : "dRibP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 173 ],
+    "identifier" : "28542",
+    "parents" : [ 500244 ]
+  }, {
+    "dbId" : 109731,
+    "stId" : "R-ALL-109731",
+    "displayName" : "dA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17256",
+    "parents" : [ 500224 ]
+  }, {
+    "dbId" : 29602,
+    "stId" : "R-ALL-29602",
+    "displayName" : "IMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 54, 126 ],
+    "identifier" : "17202",
+    "parents" : [ 500260 ]
+  }, {
+    "dbId" : 6788292,
+    "stId" : "R-HSA-6788292",
+    "displayName" : "HDHD1:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 268 ],
+    "children" : [ 6788298, 29926 ]
+  }, {
+    "dbId" : 109730,
+    "stId" : "R-ALL-109730",
+    "displayName" : "2'-deoxyguanosine 5'-monophosphate [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16192",
+    "parents" : [ 500222 ]
+  }, {
+    "dbId" : 6788291,
+    "stId" : "R-ALL-6788291",
+    "displayName" : "PURIDP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 265 ],
+    "identifier" : "18116"
+  }, {
+    "dbId" : 109732,
+    "stId" : "R-ALL-109732",
+    "displayName" : "2'-deoxyadenosine 5'-monophosphate [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17713",
+    "parents" : [ 500222 ]
+  }, {
+    "dbId" : 6788290,
+    "stId" : "R-ALL-6788290",
+    "displayName" : "PURID [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 267 ],
+    "identifier" : "17802"
+  }, {
+    "dbId" : 113578,
+    "stId" : "R-ALL-113578",
+    "displayName" : "guanosine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 120 ],
+    "identifier" : "17345",
+    "parents" : [ 500260 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 51, 244, 266, 11 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 113581,
+    "stId" : "R-ALL-113581",
+    "displayName" : "ADP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 32, 218 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 6788298,
+    "stId" : "R-HSA-6788298",
+    "displayName" : "HDHD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08623",
+    "geneNames" : [ "PUDP", "DXF68S1E", "FAM16AX", "GS1", "HDHD1", "HDHD1A" ],
+    "parents" : [ 6788292 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 123 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 124 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 113593,
+    "stId" : "R-ALL-113593",
+    "displayName" : "ATP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 217, 31 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18, 211, 38, 182, 238 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 241, 20, 213, 184, 41 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 109757,
+    "stId" : "R-ALL-109757",
+    "displayName" : "dC [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15698",
+    "parents" : [ 500822 ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 86, 169, 270 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 113599,
+    "stId" : "R-ALL-113599",
+    "displayName" : "Hyp [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 91 ],
+    "identifier" : "17368",
+    "parents" : [ 500259 ]
+  }, {
+    "dbId" : 109758,
+    "stId" : "R-ALL-109758",
+    "displayName" : "2'-deoxycytosine 5'-monophosphate [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15918",
+    "parents" : [ 500823 ]
+  }, {
+    "dbId" : 111294,
+    "stId" : "R-ALL-111294",
+    "displayName" : "PPi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 96 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 83909,
+    "stId" : "R-ALL-83909",
+    "displayName" : "Ade-Rib [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16335",
+    "parents" : [ 500173 ]
+  }, {
+    "dbId" : 109509,
+    "stId" : "R-ALL-109509",
+    "displayName" : "TMP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17013",
+    "parents" : [ 500823 ]
+  }, {
+    "dbId" : 109508,
+    "stId" : "R-ALL-109508",
+    "displayName" : "Thy-dRib [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17748",
+    "parents" : [ 500822 ]
+  }, {
+    "dbId" : 109511,
+    "stId" : "R-ALL-109511",
+    "displayName" : "dU [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16450",
+    "parents" : [ 500822 ]
+  }, {
+    "dbId" : 109510,
+    "stId" : "R-ALL-109510",
+    "displayName" : "dU5MP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17622",
+    "parents" : [ 500823 ]
+  }, {
+    "dbId" : 500430,
+    "stId" : "R-ALL-500430",
+    "displayName" : "(d)Ura [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 247, 159 ],
+    "children" : [ 83929, 109383 ]
+  }, {
+    "dbId" : 500173,
+    "stId" : "R-ALL-500173",
+    "displayName" : "Ade-Rib, dA [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 12 ],
+    "children" : [ 83925, 83909 ]
+  }, {
+    "dbId" : 500172,
+    "stId" : "R-ALL-500172",
+    "displayName" : "Ino, dI [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 92, 13 ],
+    "children" : [ 83927, 109331 ]
+  }, {
+    "dbId" : 500438,
+    "stId" : "R-ALL-500438",
+    "displayName" : "Thy, Ura [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 171 ],
+    "children" : [ 83962, 83960 ]
+  }, {
+    "dbId" : 83925,
+    "stId" : "R-ALL-83925",
+    "displayName" : "dA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17256",
+    "parents" : [ 500201, 500173 ]
+  }, {
+    "dbId" : 83927,
+    "stId" : "R-ALL-83927",
+    "displayName" : "Ino [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17596",
+    "parents" : [ 500172 ]
+  }, {
+    "dbId" : 83926,
+    "stId" : "R-ALL-83926",
+    "displayName" : "Gua-Rib [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16750",
+    "parents" : [ 500245 ]
+  }, {
+    "dbId" : 83929,
+    "stId" : "R-ALL-83929",
+    "displayName" : "Ura-Rib [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16704",
+    "parents" : [ 500430, 500759 ]
+  }, {
+    "dbId" : 83928,
+    "stId" : "R-ALL-83928",
+    "displayName" : "Thy-dRib [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 209 ],
+    "identifier" : "17748",
+    "parents" : [ 500444 ]
+  }, {
+    "dbId" : 500444,
+    "stId" : "R-ALL-500444",
+    "displayName" : "Thy-Rib, dU [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 176 ],
+    "children" : [ 83928, 109383 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 122 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 74205,
+    "stId" : "R-HSA-74205",
+    "displayName" : "DGUOK dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 34 ],
+    "children" : [ 53573 ]
+  }, {
+    "dbId" : 500199,
+    "stId" : "R-ALL-500199",
+    "displayName" : "dAMP, dGMP [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 39 ],
+    "children" : [ 109327, 109386 ]
+  }, {
+    "dbId" : 74208,
+    "stId" : "R-HSA-74208",
+    "displayName" : "HGPRT tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 111 ],
+    "children" : [ 56639, 29926 ]
+  }, {
+    "dbId" : 74211,
+    "stId" : "R-HSA-74211",
+    "displayName" : "APRT dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 97 ],
+    "children" : [ 50171 ]
+  }, {
+    "dbId" : 29926,
+    "stId" : "R-ALL-29926",
+    "displayName" : "Mg2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 6788292, 73516, 74208, 76542 ]
+  }, {
+    "dbId" : 83949,
+    "stId" : "R-ALL-83949",
+    "displayName" : "Cyt-Rib [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17562",
+    "parents" : [ 500829, 500759 ]
+  }, {
+    "dbId" : 61933,
+    "stId" : "R-HSA-61933",
+    "displayName" : "PNP [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00491",
+    "geneNames" : [ "PNP", "NP" ],
+    "parents" : [ 74237 ]
+  }, {
+    "dbId" : 83951,
+    "stId" : "R-ALL-83951",
+    "displayName" : "Ade [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 95 ],
+    "identifier" : "16708"
+  }, {
+    "dbId" : 500201,
+    "stId" : "R-ALL-500201",
+    "displayName" : "dA, dG [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 36 ],
+    "children" : [ 83925, 109328 ]
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 2161178, 73462 ]
+  }, {
+    "dbId" : 73461,
+    "stId" : "R-HSA-73461",
+    "displayName" : "CDA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P32320",
+    "geneNames" : [ "CDA", "CDD" ],
+    "parents" : [ 73462 ]
+  }, {
+    "dbId" : 58100,
+    "stId" : "R-HSA-58100",
+    "displayName" : "TK2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 220 ],
+    "identifier" : "O00142",
+    "geneNames" : [ "TK2" ]
+  }, {
+    "dbId" : 83956,
+    "stId" : "R-ALL-83956",
+    "displayName" : "Gua [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 85 ],
+    "identifier" : "16235",
+    "parents" : [ 500259 ]
+  }, {
+    "dbId" : 73462,
+    "stId" : "R-HSA-73462",
+    "displayName" : "CDA tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 246 ],
+    "children" : [ 73461, 29426 ]
+  }, {
+    "dbId" : 83960,
+    "stId" : "R-ALL-83960",
+    "displayName" : "Thy [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17821",
+    "parents" : [ 500438 ]
+  }, {
+    "dbId" : 500222,
+    "stId" : "R-ALL-500222",
+    "displayName" : "dAMP, dGMP, dIMP [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 33 ],
+    "children" : [ 109707, 109732, 109730 ]
+  }, {
+    "dbId" : 83962,
+    "stId" : "R-ALL-83962",
+    "displayName" : "Ura [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 158 ],
+    "identifier" : "17568",
+    "parents" : [ 500438 ]
+  }, {
+    "dbId" : 50171,
+    "stId" : "R-HSA-50171",
+    "displayName" : "APRT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07741",
+    "geneNames" : [ "APRT" ],
+    "parents" : [ 74211 ]
+  }, {
+    "dbId" : 74237,
+    "stId" : "R-HSA-74237",
+    "displayName" : "NP trimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 89 ],
+    "children" : [ 61933 ]
+  }, {
+    "dbId" : 76542,
+    "stId" : "R-HSA-76542",
+    "displayName" : "ADK [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 21 ],
+    "children" : [ 49725, 29926 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 74241,
+    "stId" : "R-HSA-74241",
+    "displayName" : "(2'-deoxy)adenosine + H2O => (2'-deoxy)inosine + NH4+ (ADA)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 500173 ],
+    "outputs" : [ 500172, 31633 ],
+    "catalysts" : [ 49701 ],
+    "efs" : [ ],
+    "diagramIds" : [ 10 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112033,
+    "stId" : "R-HSA-112033",
+    "displayName" : "hypoxanthine + (deoxy)ribose 1-phosphate <=> (deoxy)inosine + orthophosphate (NP)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113599, 500244 ],
+    "outputs" : [ 29372, 500172 ],
+    "catalysts" : [ 74237 ],
+    "efs" : [ ],
+    "diagramIds" : [ 90 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6788295,
+    "stId" : "R-HSA-6788295",
+    "displayName" : "HDHD1:Mg2+ dephosphorylates PURIDP",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 6788291 ],
+    "outputs" : [ 29372, 6788290 ],
+    "catalysts" : [ 6788292 ],
+    "efs" : [ ],
+    "diagramIds" : [ 264 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 73632,
+    "stId" : "R-HSA-73632",
+    "displayName" : "thymidine + ATP => TMP (deoxythymidine 5'-monophosphate) + ADP [TK1]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 83928 ],
+    "outputs" : [ 29370, 109366 ],
+    "catalysts" : [ 73501 ],
+    "efs" : [ ],
+    "diagramIds" : [ 208 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2161187,
+    "stId" : "R-HSA-2161187",
+    "displayName" : "N6-methyl-AMP + H2O => IMP + methylamine",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 2161190 ],
+    "outputs" : [ 2161177, 29602 ],
+    "catalysts" : [ 2161178 ],
+    "efs" : [ ],
+    "diagramIds" : [ 71 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112034,
+    "stId" : "R-HSA-112034",
+    "displayName" : "guanine + (deoxy)ribose 1-phosphate <=> (deoxy)guanosine + orthophosphate (NP)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 83956, 500244 ],
+    "outputs" : [ 29372, 500245 ],
+    "catalysts" : [ 74237 ],
+    "efs" : [ ],
+    "diagramIds" : [ 83 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 74213,
+    "stId" : "R-HSA-74213",
+    "displayName" : "Adenine + PRPP => AMP + PPi",
+    "schemaClass" : "Reaction",
+    "following" : [ 76590 ],
+    "inputs" : [ 73566, 83951 ],
+    "outputs" : [ 111294, 76577 ],
+    "catalysts" : [ 74211 ],
+    "efs" : [ ],
+    "diagramIds" : [ 93 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 74372,
+    "stId" : "R-HSA-74372",
+    "displayName" : "uracil + (deoxy)ribose 1-phosphate <=> (deoxy)uridine + orthophosphate [UPP]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 83962, 500244 ],
+    "outputs" : [ 29372, 500430 ],
+    "catalysts" : [ 977408 ],
+    "efs" : [ ],
+    "diagramIds" : [ 157 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109671,
+    "stId" : "R-HSA-109671",
+    "displayName" : "deoxyadenosine or deoxyguanosine + ATP => dAMP or dGMP + ADP (DCK)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 500201, 113592 ],
+    "outputs" : [ 29370, 500199 ],
+    "catalysts" : [ 73516 ],
+    "efs" : [ ],
+    "diagramIds" : [ 35 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 74215,
+    "stId" : "R-HSA-74215",
+    "displayName" : "guanine or hypoxanthine + PRPP => GMP or IMP + PPi (HPRT1)",
+    "schemaClass" : "Reaction",
+    "following" : [ 514604 ],
+    "inputs" : [ 73566, 500259 ],
+    "outputs" : [ 111294, 500260 ],
+    "catalysts" : [ 74208 ],
+    "efs" : [ ],
+    "diagramIds" : [ 105 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 73608,
+    "stId" : "R-HSA-73608",
+    "displayName" : "(deoxy)cytidine + H2O => (deoxy)uridine + NH4+ (CDA)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 500829 ],
+    "outputs" : [ 500430, 31633 ],
+    "catalysts" : [ 73462 ],
+    "efs" : [ ],
+    "diagramIds" : [ 243 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112266,
+    "stId" : "R-HSA-112266",
+    "displayName" : "thymine or uracil + 2-deoxy-D-ribose 1-phosphate <=> thymidine or deoxyuridine + orthophosphate [TYMP]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 112032, 500438 ],
+    "outputs" : [ 29372, 500444 ],
+    "catalysts" : [ 74363 ],
+    "efs" : [ ],
+    "diagramIds" : [ 170 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 514604,
+    "stId" : "R-HSA-514604",
+    "displayName" : "GMP + NADPH + H+ => IMP + NADP+ + NH4+ (GMPR,GMPR2)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 74215 ],
+    "inputs" : [ 70106, 113578, 29364 ],
+    "outputs" : [ 29366, 29602, 31633 ],
+    "catalysts" : [ 514620 ],
+    "efs" : [ ],
+    "diagramIds" : [ 119 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109903,
+    "stId" : "R-HSA-109903",
+    "displayName" : "cytidine or uridine + ATP => CMP or UMP + ADP [UCK2]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 500759 ],
+    "outputs" : [ 500761, 29370 ],
+    "catalysts" : [ 500801 ],
+    "efs" : [ ],
+    "diagramIds" : [ 186 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76590,
+    "stId" : "R-HSA-76590",
+    "displayName" : "AMP + H2O => IMP + NH4+ (AMPD)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 74213 ],
+    "inputs" : [ 29356, 76577 ],
+    "outputs" : [ 29602, 31633 ],
+    "catalysts" : [ 500235 ],
+    "efs" : [ ],
+    "diagramIds" : [ 50 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109624,
+    "stId" : "R-HSA-109624",
+    "displayName" : "(2'-deoxy)adenosine + ATP => (d)AMP + ADP (ADK)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 500173, 113592 ],
+    "outputs" : [ 500088, 29370 ],
+    "catalysts" : [ 76542 ],
+    "efs" : [ ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109759,
+    "stId" : "R-HSA-109759",
+    "displayName" : "deoxycytidine, thymidine, or deoxyuridine + ATP => dCMP, TMP, or dUMP + ADP [TK2]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113593, 500822 ],
+    "outputs" : [ 113581, 500823 ],
+    "catalysts" : [ 58100 ],
+    "efs" : [ ],
+    "diagramIds" : [ 215 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 74207,
+    "stId" : "R-HSA-74207",
+    "displayName" : "dA, dG, or dI + ATP => dAMP, dGMP, or dIMP + ADP (DGUOK)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113593, 500224 ],
+    "outputs" : [ 113581, 500222 ],
+    "catalysts" : [ 74205 ],
+    "efs" : [ ],
+    "diagramIds" : [ 29 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 73599,
+    "stId" : "R-HSA-73599",
+    "displayName" : "cytidine or uridine + ATP => CMP or UMP + ADP [UCK1]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 500759 ],
+    "outputs" : [ 500761, 29370 ],
+    "catalysts" : [ 73504 ],
+    "efs" : [ ],
+    "diagramIds" : [ 179 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8954327,
+    "stId" : "R-HSA-8954327",
+    "displayName" : "UCKL1 phosphorylates urindine, cytidine",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 500759 ],
+    "outputs" : [ 500761, 29370 ],
+    "catalysts" : [ 8954322 ],
+    "efs" : [ ],
+    "diagramIds" : [ 197 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 73598,
+    "stId" : "R-HSA-73598",
+    "displayName" : "(2'-deoxy)cytidine + ATP => (d)CMP + ADP (DCK)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 500829, 113592 ],
+    "outputs" : [ 500828, 29370 ],
+    "catalysts" : [ 73516 ],
+    "efs" : [ ],
+    "diagramIds" : [ 235 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 74217,
+    "stId" : "R-HSA-74217",
+    "displayName" : "Purine salvage",
+    "events" : [ 74241, 112033, 2161187, 112034, 74213, 109671, 74215, 109624, 514604, 74207, 76590 ]
+  }, {
+    "dbId" : 73614,
+    "stId" : "R-HSA-73614",
+    "displayName" : "Pyrimidine salvage",
+    "events" : [ 6788295, 73632, 74372, 73608, 112266, 109759, 73599, 109903, 8954327, 73598 ]
+  } ]
+}

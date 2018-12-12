@@ -1,0 +1,357 @@
+{
+  "dbId" : 5652084,
+  "stId" : "R-HSA-5652084",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1124, 2042 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 70339,
+    "stId" : "R-HSA-70339",
+    "displayName" : "ALDOB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05062",
+    "geneNames" : [ "ALDOB", "ALDB" ],
+    "parents" : [ 70340 ]
+  }, {
+    "dbId" : 75970,
+    "stId" : "R-ALL-75970",
+    "displayName" : "DHAP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 108 ],
+    "identifier" : "16108"
+  }, {
+    "dbId" : 70340,
+    "stId" : "R-HSA-70340",
+    "displayName" : "ALDOB tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 560 ],
+    "children" : [ 70339 ]
+  }, {
+    "dbId" : 71689,
+    "stId" : "R-HSA-71689",
+    "displayName" : "ALDH1A1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2038 ],
+    "children" : [ 71688 ]
+  }, {
+    "dbId" : 71688,
+    "stId" : "R-HSA-71688",
+    "displayName" : "ALDH1A1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00352",
+    "geneNames" : [ "ALDH1A1", "ALDC", "ALDH1", "PUMB1" ],
+    "parents" : [ 71689 ]
+  }, {
+    "dbId" : 29578,
+    "stId" : "R-ALL-29578",
+    "displayName" : "GA3P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 109 ],
+    "identifier" : "29052"
+  }, {
+    "dbId" : 3006523,
+    "stId" : "R-HSA-3006523",
+    "displayName" : "KHK dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 925 ],
+    "children" : [ 70329 ]
+  }, {
+    "dbId" : 5662476,
+    "stId" : "R-HSA-5662476",
+    "displayName" : "SORD:Zn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5652211 ],
+    "children" : [ 5652193, 29426 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1120, 1126, 2040, 2111 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 29532,
+    "stId" : "R-ALL-29532",
+    "displayName" : "Fru [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 424, 1130 ],
+    "identifier" : "15824"
+  }, {
+    "dbId" : 196063,
+    "stId" : "R-HSA-196063",
+    "displayName" : "AKR1B1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1114 ],
+    "identifier" : "P15121",
+    "geneNames" : [ "AKR1B1", "ALDR1" ]
+  }, {
+    "dbId" : 70113,
+    "stId" : "R-ALL-70113",
+    "displayName" : "Glc [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 365 ],
+    "identifier" : "17925"
+  }, {
+    "dbId" : 6799493,
+    "stId" : "R-ALL-6799493",
+    "displayName" : "3PDGA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2108 ],
+    "identifier" : "17794"
+  }, {
+    "dbId" : 5652213,
+    "stId" : "R-ALL-5652213",
+    "displayName" : "D-sorbitol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1113 ],
+    "identifier" : "17924"
+  }, {
+    "dbId" : 5652211,
+    "stId" : "R-HSA-5652211",
+    "displayName" : "SORD tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1122 ],
+    "children" : [ 5662476 ]
+  }, {
+    "dbId" : 29926,
+    "stId" : "R-ALL-29926",
+    "displayName" : "Mg2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 5652070 ]
+  }, {
+    "dbId" : 918185,
+    "stId" : "R-HSA-918185",
+    "displayName" : "DAK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q3LXA3",
+    "geneNames" : [ "TKFC", "DAK" ],
+    "parents" : [ 5652070 ]
+  }, {
+    "dbId" : 6799244,
+    "stId" : "R-HSA-6799244",
+    "displayName" : "GLYCTK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2109 ],
+    "identifier" : "Q8IVS8",
+    "geneNames" : [ "GLYCTK", "HBEBP4", "LP5910" ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2036 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 29804,
+    "stId" : "R-ALL-29804",
+    "displayName" : "K+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2112 ],
+    "identifier" : "29103"
+  }, {
+    "dbId" : 6799497,
+    "stId" : "R-ALL-6799497",
+    "displayName" : "DGA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2037 ],
+    "identifier" : "32398"
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1128, 2044 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 5652070,
+    "stId" : "R-HSA-5652070",
+    "displayName" : "DAK dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1111 ],
+    "children" : [ 918185, 29926 ]
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 5662476 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1118 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 31221,
+    "stId" : "R-ALL-31221",
+    "displayName" : "Fru 1-P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 425 ],
+    "identifier" : "18105"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1116 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 5652193,
+    "stId" : "R-HSA-5652193",
+    "displayName" : "SORD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q00796",
+    "geneNames" : [ "SORD" ],
+    "parents" : [ 5662476 ]
+  }, {
+    "dbId" : 70329,
+    "stId" : "R-HSA-70329",
+    "displayName" : "KHK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50053",
+    "geneNames" : [ "KHK" ],
+    "parents" : [ 3006523 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 434, 423, 2106 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 30393,
+    "stId" : "R-ALL-30393",
+    "displayName" : "GA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 432 ],
+    "identifier" : "17378"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 435, 90, 426, 2107 ],
+    "identifier" : "16761"
+  } ],
+  "edges" : [ {
+    "dbId" : 6799495,
+    "stId" : "R-HSA-6799495",
+    "displayName" : "GLYCTK phosphorylates DGA to 3PDGA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6813749 ],
+    "inputs" : [ 6799497, 113592 ],
+    "outputs" : [ 70106, 29370, 6799493 ],
+    "catalysts" : [ 6799244 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2105 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6813749,
+    "stId" : "R-HSA-6813749",
+    "displayName" : "ALDH1A1 oxidises GA to DGA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70342 ],
+    "following" : [ 6799495 ],
+    "inputs" : [ 29356, 30393, 29360 ],
+    "outputs" : [ 6799497, 70106, 73473 ],
+    "catalysts" : [ 71689 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2035 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5652195,
+    "stId" : "R-HSA-5652195",
+    "displayName" : "SORD oxidizes D-sorbitol to Fru",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5652172 ],
+    "inputs" : [ 5652213, 29360 ],
+    "outputs" : [ 29532, 70106, 73473 ],
+    "catalysts" : [ 5652211 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1121 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70342,
+    "stId" : "R-HSA-70342",
+    "displayName" : "ALDOB tetramer cleaves Fru-1-P to GA and DHAP",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70333 ],
+    "following" : [ 6813749, 70349 ],
+    "inputs" : [ 31221 ],
+    "outputs" : [ 30393, 75970 ],
+    "catalysts" : [ 70340 ],
+    "efs" : [ ],
+    "diagramIds" : [ 431 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5652172,
+    "stId" : "R-HSA-5652172",
+    "displayName" : "AKR1B1 reduces Glc to D-sorbitol",
+    "schemaClass" : "Reaction",
+    "following" : [ 5652195 ],
+    "inputs" : [ 70106, 29364, 70113 ],
+    "outputs" : [ 29366, 5652213 ],
+    "catalysts" : [ 196063 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1112 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70333,
+    "stId" : "R-HSA-70333",
+    "displayName" : "KHK dimer phosphorylates Fru to Fru 1-P",
+    "schemaClass" : "Reaction",
+    "following" : [ 70342 ],
+    "inputs" : [ 29532, 113592 ],
+    "outputs" : [ 29370, 31221 ],
+    "catalysts" : [ 3006523 ],
+    "efs" : [ ],
+    "inhibitors" : [ 29370 ],
+    "activators" : [ 29804 ],
+    "diagramIds" : [ 422 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70349,
+    "stId" : "R-HSA-70349",
+    "displayName" : "DAK dimer phosphorylates D-glyceraldehyde to form D-glyceraldehyde 3-phosphate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70342 ],
+    "inputs" : [ 30393, 113592 ],
+    "outputs" : [ 29578, 29370 ],
+    "catalysts" : [ 5652070 ],
+    "efs" : [ ],
+    "diagramIds" : [ 433 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 5652227,
+    "stId" : "R-HSA-5652227",
+    "displayName" : "Fructose biosynthesis",
+    "events" : [ 5652195, 5652172 ]
+  }, {
+    "dbId" : 70350,
+    "stId" : "R-HSA-70350",
+    "displayName" : "Fructose catabolism",
+    "events" : [ 6799495, 6813749, 70342, 70333, 70349 ]
+  } ]
+}

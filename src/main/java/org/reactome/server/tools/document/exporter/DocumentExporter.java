@@ -30,7 +30,7 @@ public class DocumentExporter {
 	private final List<Section> SECTIONS = Arrays.asList(
 			new CoverPage(),
 			new TableOfContent(),
-//			new Introduction(),
+			new Introduction(),
 //			new PropertiesSection(),
 //			new TopPathwayTable(),
 			new PathwaysDetails()

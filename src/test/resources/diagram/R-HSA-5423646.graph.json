@@ -1,0 +1,950 @@
+{
+  "dbId" : 5423646,
+  "stId" : "R-HSA-5423646",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 5490258,
+    "stId" : "R-HSA-5490258",
+    "displayName" : "unknown NAT [cytosol]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 521 ]
+  }, {
+    "dbId" : 1247890,
+    "stId" : "R-HSA-1247890",
+    "displayName" : "GGT7(1-472) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UJ14",
+    "geneNames" : [ "GGT7", "GGTL3", "GGTL5" ],
+    "parents" : [ 1247950 ]
+  }, {
+    "dbId" : 1247889,
+    "stId" : "R-HSA-1247889",
+    "displayName" : "GGT1(1-380) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19440",
+    "geneNames" : [ "GGT1", "GGT" ],
+    "parents" : [ 1247898 ]
+  }, {
+    "dbId" : 5490257,
+    "stId" : "R-ALL-5490257",
+    "displayName" : "AFNBO-C [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78578",
+    "parents" : [ 5490250 ]
+  }, {
+    "dbId" : 5490260,
+    "stId" : "R-HSA-5490260",
+    "displayName" : "GGT3P(381-568) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A6NGU5",
+    "geneNames" : [ "GGT3P", "GGT3" ],
+    "parents" : [ 5490244 ]
+  }, {
+    "dbId" : 5490267,
+    "stId" : "R-HSA-5490267",
+    "displayName" : "GGT3P(1-380) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A6NGU5",
+    "geneNames" : [ "GGT3P", "GGT3" ],
+    "parents" : [ 5490244 ]
+  }, {
+    "dbId" : 1247898,
+    "stId" : "R-HSA-1247898",
+    "displayName" : "GGT1 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1247946 ],
+    "children" : [ 8943263, 1247889 ]
+  }, {
+    "dbId" : 5490266,
+    "stId" : "R-ALL-5490266",
+    "displayName" : "AFXBO-C [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78583",
+    "parents" : [ 5490231 ]
+  }, {
+    "dbId" : 29450,
+    "stId" : "R-ALL-29450",
+    "displayName" : "GSH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 209 ],
+    "identifier" : "16856"
+  }, {
+    "dbId" : 5490265,
+    "stId" : "R-HSA-5490265",
+    "displayName" : "DPEP3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H4B8",
+    "geneNames" : [ "DPEP3", "UNQ834/PRO1772" ],
+    "parents" : [ 5490228 ]
+  }, {
+    "dbId" : 5490264,
+    "stId" : "R-ALL-5490264",
+    "displayName" : "AFXBO-SG [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78587",
+    "parents" : [ 5490253 ]
+  }, {
+    "dbId" : 5490271,
+    "stId" : "R-ALL-5490271",
+    "displayName" : "AFXBO-CG [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78584",
+    "parents" : [ 5490235 ]
+  }, {
+    "dbId" : 5490243,
+    "stId" : "R-ALL-5490243",
+    "displayName" : "AFNBO-SG [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78581",
+    "parents" : [ 5490253 ]
+  }, {
+    "dbId" : 52625,
+    "stId" : "R-HSA-52625",
+    "displayName" : "CYP1A2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 25 ],
+    "identifier" : "P05177",
+    "geneNames" : [ "CYP1A2" ],
+    "parents" : [ 5423625, 5423602 ]
+  }, {
+    "dbId" : 5423680,
+    "stId" : "R-HSA-5423680",
+    "displayName" : "CYP3A4,5 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "children" : [ 211020, 52639 ]
+  }, {
+    "dbId" : 5423681,
+    "stId" : "R-HSA-5423681",
+    "displayName" : "AKR7A2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43488",
+    "geneNames" : [ "AKR7A2", "AFAR", "AFAR1", "AKR7" ],
+    "parents" : [ 5423691 ]
+  }, {
+    "dbId" : 5490246,
+    "stId" : "R-ALL-5490246",
+    "displayName" : "AFNBO-NAC [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78580",
+    "parents" : [ 5490236 ]
+  }, {
+    "dbId" : 76183,
+    "stId" : "R-ALL-76183",
+    "displayName" : "Ac-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 518 ],
+    "identifier" : "15351"
+  }, {
+    "dbId" : 5490245,
+    "stId" : "R-ALL-5490245",
+    "displayName" : "AFNBO-CG [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78579",
+    "parents" : [ 5490235 ]
+  }, {
+    "dbId" : 8943263,
+    "stId" : "R-HSA-8943263",
+    "displayName" : "GGT1(381-569) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19440",
+    "geneNames" : [ "GGT1", "GGT" ],
+    "parents" : [ 1247898 ]
+  }, {
+    "dbId" : 5490244,
+    "stId" : "R-HSA-5490244",
+    "displayName" : "GGT3P dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1247946 ],
+    "children" : [ 5490267, 5490260 ]
+  }, {
+    "dbId" : 5490250,
+    "stId" : "R-ALL-5490250",
+    "displayName" : "AFXBO-C,AFNBO-C [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 511 ],
+    "children" : [ 5490234, 5490257 ]
+  }, {
+    "dbId" : 5423691,
+    "stId" : "R-HSA-5423691",
+    "displayName" : "AKR7A2 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5423668 ],
+    "children" : [ 5423681 ]
+  }, {
+    "dbId" : 5423689,
+    "stId" : "R-HSA-5423689",
+    "displayName" : "AKR7L [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NHP1",
+    "geneNames" : [ "AKR7L", "AFAR3", "AKR7A4" ],
+    "parents" : [ 5423636 ]
+  }, {
+    "dbId" : 5490254,
+    "stId" : "R-ALL-5490254",
+    "displayName" : "AFNBO-C [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78578",
+    "parents" : [ 5490231 ]
+  }, {
+    "dbId" : 5423692,
+    "stId" : "R-ALL-5423692",
+    "displayName" : "AFXBO-SG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78587",
+    "parents" : [ 5423730 ]
+  }, {
+    "dbId" : 5490253,
+    "stId" : "R-ALL-5490253",
+    "displayName" : "AFXBO-SG,AFNBO-SG [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 504 ],
+    "children" : [ 5490264, 5490243 ]
+  }, {
+    "dbId" : 52639,
+    "stId" : "R-HSA-52639",
+    "displayName" : "CYP3A4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08684",
+    "geneNames" : [ "CYP3A4", "CYP3A3" ],
+    "parents" : [ 5423680, 5423625, 5423602 ]
+  }, {
+    "dbId" : 5423730,
+    "stId" : "R-ALL-5423730",
+    "displayName" : "AFXBO-SG,AFNBO-SG [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 210 ],
+    "children" : [ 5423692, 5423724 ]
+  }, {
+    "dbId" : 5423602,
+    "stId" : "R-HSA-5423602",
+    "displayName" : "CYP1A2,3A4,3A5,2A13 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 19 ],
+    "children" : [ 211020, 52639, 211034, 52625 ]
+  }, {
+    "dbId" : 5433075,
+    "stId" : "R-HSA-5433075",
+    "displayName" : "ACY1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q03154",
+    "geneNames" : [ "ACY1" ],
+    "parents" : [ 5433068 ]
+  }, {
+    "dbId" : 76194,
+    "stId" : "R-ALL-76194",
+    "displayName" : "CoA-SH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 565 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 5423729,
+    "stId" : "R-ALL-5423729",
+    "displayName" : "AFBDOH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 283 ],
+    "identifier" : "53108"
+  }, {
+    "dbId" : 5423605,
+    "stId" : "R-ALL-5423605",
+    "displayName" : "AFB1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 38, 10 ],
+    "identifier" : "2504"
+  }, {
+    "dbId" : 176042,
+    "stId" : "R-HSA-176042",
+    "displayName" : "MGST trimers [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 211 ],
+    "children" : [ 176061, 176047, 158548 ]
+  }, {
+    "dbId" : 266029,
+    "stId" : "R-ALL-266029",
+    "displayName" : "Gly [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 563 ],
+    "identifier" : "57305"
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 17, 275, 531, 278, 535, 523, 12 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 176047,
+    "stId" : "R-HSA-176047",
+    "displayName" : "MGST3 trimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 176042 ],
+    "children" : [ 176053 ]
+  }, {
+    "dbId" : 1247906,
+    "stId" : "R-HSA-1247906",
+    "displayName" : "GGT6 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1247946 ],
+    "children" : [ 1247944, 1247936 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 288, 37, 9, 492 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 528, 36, 533, 13, 286 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 176053,
+    "stId" : "R-HSA-176053",
+    "displayName" : "MGST3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14880",
+    "geneNames" : [ "MGST3" ],
+    "parents" : [ 176047 ]
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 496, 34, 8 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 176058,
+    "stId" : "R-HSA-176058",
+    "displayName" : "MGST2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99735",
+    "geneNames" : [ "MGST2", "GST2" ],
+    "parents" : [ 176061 ]
+  }, {
+    "dbId" : 5423723,
+    "stId" : "R-ALL-5423723",
+    "displayName" : "AFXBO,AFNBO [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 206 ],
+    "children" : [ 5423663, 159211 ]
+  }, {
+    "dbId" : 5433065,
+    "stId" : "R-HSA-5433065",
+    "displayName" : "ACY3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96HD9",
+    "geneNames" : [ "ACY3", "ASPA2" ],
+    "parents" : [ 5433069 ]
+  }, {
+    "dbId" : 1247919,
+    "stId" : "R-HSA-1247919",
+    "displayName" : "GGT7(473-662) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UJ14",
+    "geneNames" : [ "GGT7", "GGTL3", "GGTL5" ],
+    "parents" : [ 1247950 ]
+  }, {
+    "dbId" : 5423726,
+    "stId" : "R-ALL-5423726",
+    "displayName" : "AFBDHD [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 276 ],
+    "identifier" : "53106"
+  }, {
+    "dbId" : 5433070,
+    "stId" : "R-HSA-5433070",
+    "displayName" : "ACY1:Zn2+,ACY3:Zn2+ dimers [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 525 ],
+    "children" : [ 5433069, 5433068 ]
+  }, {
+    "dbId" : 5423727,
+    "stId" : "R-ALL-5423727",
+    "displayName" : "AFBDHO [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 279 ],
+    "identifier" : "53107"
+  }, {
+    "dbId" : 5433068,
+    "stId" : "R-HSA-5433068",
+    "displayName" : "ACY1:Zn2+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5433070 ],
+    "children" : [ 29426, 5433075 ]
+  }, {
+    "dbId" : 5423724,
+    "stId" : "R-ALL-5423724",
+    "displayName" : "AFNBO-SG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78581",
+    "parents" : [ 5423730 ]
+  }, {
+    "dbId" : 176061,
+    "stId" : "R-HSA-176061",
+    "displayName" : "MGST2 trimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 176042 ],
+    "children" : [ 176058 ]
+  }, {
+    "dbId" : 5433069,
+    "stId" : "R-HSA-5433069",
+    "displayName" : "ACY3:Zn2+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5433070 ],
+    "children" : [ 5433065, 29426 ]
+  }, {
+    "dbId" : 2142820,
+    "stId" : "R-HSA-2142820",
+    "displayName" : "DPEP1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16444",
+    "geneNames" : [ "DPEP1", "MDP", "RDP" ],
+    "parents" : [ 2142831 ]
+  }, {
+    "dbId" : 2162149,
+    "stId" : "R-HSA-2162149",
+    "displayName" : "DPEP1,2,3 dimers [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 512 ],
+    "children" : [ 2142831, 266059, 5490228 ]
+  }, {
+    "dbId" : 5423636,
+    "stId" : "R-HSA-5423636",
+    "displayName" : "AKR7L dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5423668 ],
+    "children" : [ 5423689 ]
+  }, {
+    "dbId" : 210382,
+    "stId" : "R-ALL-210382",
+    "displayName" : "L-Glu [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 555 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 266059,
+    "stId" : "R-HSA-266059",
+    "displayName" : "DPEP2 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2162149 ],
+    "children" : [ 266067, 29426 ]
+  }, {
+    "dbId" : 2142831,
+    "stId" : "R-HSA-2142831",
+    "displayName" : "DPEP1 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2162149 ],
+    "children" : [ 2142820, 29426 ]
+  }, {
+    "dbId" : 211020,
+    "stId" : "R-HSA-211020",
+    "displayName" : "CYP3A5 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20815",
+    "geneNames" : [ "CYP3A5" ],
+    "parents" : [ 5423680, 5423602 ]
+  }, {
+    "dbId" : 5423618,
+    "stId" : "R-HSA-5423618",
+    "displayName" : "AKR7A3 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5423668 ],
+    "children" : [ 5423652 ]
+  }, {
+    "dbId" : 5423619,
+    "stId" : "R-ALL-5423619",
+    "displayName" : "AFXBO [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 172 ],
+    "identifier" : "30725",
+    "parents" : [ 5423670 ]
+  }, {
+    "dbId" : 1247936,
+    "stId" : "R-HSA-1247936",
+    "displayName" : "GGT6(?-493) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P531",
+    "geneNames" : [ "GGT6" ],
+    "parents" : [ 1247906 ]
+  }, {
+    "dbId" : 158545,
+    "stId" : "R-HSA-158545",
+    "displayName" : "MGST1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10620",
+    "geneNames" : [ "MGST1", "GST12", "MGST" ],
+    "parents" : [ 158548 ]
+  }, {
+    "dbId" : 158548,
+    "stId" : "R-HSA-158548",
+    "displayName" : "MGST1 trimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 176042 ],
+    "children" : [ 158545 ]
+  }, {
+    "dbId" : 266067,
+    "stId" : "R-HSA-266067",
+    "displayName" : "DPEP2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H4A9",
+    "geneNames" : [ "DPEP2", "UNQ284/PRO323" ],
+    "parents" : [ 266059 ]
+  }, {
+    "dbId" : 211034,
+    "stId" : "R-HSA-211034",
+    "displayName" : "CYP2A13 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 30 ],
+    "identifier" : "Q16696",
+    "geneNames" : [ "CYP2A13" ],
+    "parents" : [ 5423602 ]
+  }, {
+    "dbId" : 1247946,
+    "stId" : "R-HSA-1247946",
+    "displayName" : "GGT dimers [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 508 ],
+    "children" : [ 1247898, 1247950, 5490244, 265314, 1247906 ]
+  }, {
+    "dbId" : 1247944,
+    "stId" : "R-HSA-1247944",
+    "displayName" : "GGT6(1-?) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P531",
+    "geneNames" : [ "GGT6" ],
+    "parents" : [ 1247906 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 33, 290, 11, 494 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 5423625,
+    "stId" : "R-HSA-5423625",
+    "displayName" : "CYP1A2,3A4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 165 ],
+    "children" : [ 52639, 52625 ]
+  }, {
+    "dbId" : 109276,
+    "stId" : "R-ALL-109276",
+    "displayName" : "H2O [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 564 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 1247950,
+    "stId" : "R-HSA-1247950",
+    "displayName" : "GGT7 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1247946 ],
+    "children" : [ 1247919, 1247890 ]
+  }, {
+    "dbId" : 5423629,
+    "stId" : "R-ALL-5423629",
+    "displayName" : "AFM1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 23 ],
+    "identifier" : "78576"
+  }, {
+    "dbId" : 5490231,
+    "stId" : "R-ALL-5490231",
+    "displayName" : "AFXBO-C,AFNBO-C [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 515 ],
+    "children" : [ 5490254, 5490266 ]
+  }, {
+    "dbId" : 265312,
+    "stId" : "R-HSA-265312",
+    "displayName" : "GGT5(388-586) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36269",
+    "geneNames" : [ "GGT5", "GGTLA1" ],
+    "parents" : [ 265314 ]
+  }, {
+    "dbId" : 5423670,
+    "stId" : "R-ALL-5423670",
+    "displayName" : "AFXBO:DNA [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "diagramIds" : [ 174 ],
+    "children" : [ 29428, 5423619 ]
+  }, {
+    "dbId" : 265313,
+    "stId" : "R-HSA-265313",
+    "displayName" : "GGT5(1-387) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36269",
+    "geneNames" : [ "GGT5", "GGTLA1" ],
+    "parents" : [ 265314 ]
+  }, {
+    "dbId" : 265314,
+    "stId" : "R-HSA-265314",
+    "displayName" : "GGT5 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1247946 ],
+    "children" : [ 265313, 265312 ]
+  }, {
+    "dbId" : 5423668,
+    "stId" : "R-HSA-5423668",
+    "displayName" : "AKR dimers [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 284 ],
+    "children" : [ 5423691, 5423636, 5423618 ]
+  }, {
+    "dbId" : 5490228,
+    "stId" : "R-HSA-5490228",
+    "displayName" : "DPEP3 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2162149 ],
+    "children" : [ 5490265, 29426 ]
+  }, {
+    "dbId" : 5490235,
+    "stId" : "R-ALL-5490235",
+    "displayName" : "AFXBO-CG,AFNBO-CG [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 507 ],
+    "children" : [ 5490271, 5490245 ]
+  }, {
+    "dbId" : 159211,
+    "stId" : "R-ALL-159211",
+    "displayName" : "AFXBO [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18 ],
+    "identifier" : "30725",
+    "parents" : [ 5423723 ]
+  }, {
+    "dbId" : 5490234,
+    "stId" : "R-ALL-5490234",
+    "displayName" : "AFXBO-C [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78583",
+    "parents" : [ 5490250 ]
+  }, {
+    "dbId" : 5490238,
+    "stId" : "R-ALL-5490238",
+    "displayName" : "AFXBO-NAC [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "78585",
+    "parents" : [ 5490236 ]
+  }, {
+    "dbId" : 5490236,
+    "stId" : "R-ALL-5490236",
+    "displayName" : "AFXBO-NAC,AFNBO-NAC [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 519 ],
+    "children" : [ 5490238, 5490246 ]
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 2142831, 266059, 5490228, 5433069, 5433068 ]
+  }, {
+    "dbId" : 29428,
+    "stId" : "R-ALL-29428",
+    "displayName" : "DNA [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 173 ],
+    "parents" : [ 5423670 ]
+  }, {
+    "dbId" : 2022890,
+    "stId" : "R-ALL-2022890",
+    "displayName" : "CH3COO- [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 524 ],
+    "identifier" : "15366"
+  }, {
+    "dbId" : 5423652,
+    "stId" : "R-HSA-5423652",
+    "displayName" : "AKR7A3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95154",
+    "geneNames" : [ "AKR7A3", "AFAR2" ],
+    "parents" : [ 5423618 ]
+  }, {
+    "dbId" : 5423657,
+    "stId" : "R-ALL-5423657",
+    "displayName" : "AFM1E [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 29 ],
+    "identifier" : "78577"
+  }, {
+    "dbId" : 5423663,
+    "stId" : "R-ALL-5423663",
+    "displayName" : "AFNBO [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 164 ],
+    "identifier" : "78586",
+    "parents" : [ 5423723 ]
+  }, {
+    "dbId" : 5423660,
+    "stId" : "R-ALL-5423660",
+    "displayName" : "AFQ1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "78582"
+  } ],
+  "edges" : [ {
+    "dbId" : 5433074,
+    "stId" : "R-HSA-5433074",
+    "displayName" : "ACY:Zn2+ dimers hydrolyse mercapturic acids",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5433066 ],
+    "inputs" : [ 5490236, 29356 ],
+    "outputs" : [ 2022890, 5490231 ],
+    "catalysts" : [ 5433070 ],
+    "efs" : [ ],
+    "diagramIds" : [ 522 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5423728,
+    "stId" : "R-HSA-5423728",
+    "displayName" : "AFXBO translocates from cytosol to nucleoplasm",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 156526 ],
+    "following" : [ 5423632 ],
+    "inputs" : [ 159211 ],
+    "outputs" : [ 5423619 ],
+    "efs" : [ ],
+    "diagramIds" : [ 343 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5423664,
+    "stId" : "R-HSA-5423664",
+    "displayName" : "CYP3A4,5 hydroxylates AFB1 to AFQ1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 29368, 5423605, 29364 ],
+    "outputs" : [ 5423660, 29356, 29366 ],
+    "catalysts" : [ 5423680 ],
+    "efs" : [ ],
+    "diagramIds" : [ 7 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5423632,
+    "stId" : "R-HSA-5423632",
+    "displayName" : "AFXBO binds DNA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5423728 ],
+    "inputs" : [ 29428, 5423619 ],
+    "outputs" : [ 5423670 ],
+    "efs" : [ ],
+    "diagramIds" : [ 171 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5433072,
+    "stId" : "R-HSA-5433072",
+    "displayName" : "GGTs hydrolyse glutamate from AFXBO-SG, AFNBO-SG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5490230 ],
+    "following" : [ 5433067 ],
+    "inputs" : [ 5490253, 109276 ],
+    "outputs" : [ 210382, 5490235 ],
+    "catalysts" : [ 1247946 ],
+    "efs" : [ ],
+    "diagramIds" : [ 505 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5490230,
+    "stId" : "R-HSA-5490230",
+    "displayName" : "AFXBO-SG, AFNBO-SG translocate from cytosol to extracellular region",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5423653 ],
+    "following" : [ 5433072 ],
+    "inputs" : [ 5423730 ],
+    "outputs" : [ 5490253 ],
+    "efs" : [ ],
+    "diagramIds" : [ 503 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5423637,
+    "stId" : "R-HSA-5423637",
+    "displayName" : "AKR dimers reduce AFBDHO to AFBDOH",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5423694 ],
+    "inputs" : [ 5423727, 70106, 29364 ],
+    "outputs" : [ 29366, 5423729 ],
+    "catalysts" : [ 5423668 ],
+    "efs" : [ ],
+    "diagramIds" : [ 282 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5423672,
+    "stId" : "R-HSA-5423672",
+    "displayName" : "CYP1A2, 3A4 oxidise AFB1 to AFNBO",
+    "schemaClass" : "Reaction",
+    "following" : [ 5423653 ],
+    "inputs" : [ 70106, 29368, 5423605, 29364 ],
+    "outputs" : [ 5423663, 29356, 29366 ],
+    "catalysts" : [ 5423625 ],
+    "efs" : [ ],
+    "diagramIds" : [ 162 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 156526,
+    "stId" : "R-HSA-156526",
+    "displayName" : "CYP1A2,3A4,3A5,2A13 oxidise AFB1 to AFXBO",
+    "schemaClass" : "Reaction",
+    "following" : [ 5423656, 5423728, 5423653 ],
+    "inputs" : [ 70106, 29368, 5423605, 29364 ],
+    "outputs" : [ 29356, 159211, 29366 ],
+    "catalysts" : [ 5423602 ],
+    "efs" : [ ],
+    "diagramIds" : [ 16 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5423678,
+    "stId" : "R-HSA-5423678",
+    "displayName" : "CYP1A2 hydroxylates AFB1 to AFM1",
+    "schemaClass" : "Reaction",
+    "following" : [ 5423647 ],
+    "inputs" : [ 70106, 29368, 5423605, 29364 ],
+    "outputs" : [ 5423629, 29356, 29366 ],
+    "catalysts" : [ 52625 ],
+    "efs" : [ ],
+    "diagramIds" : [ 22 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5423647,
+    "stId" : "R-HSA-5423647",
+    "displayName" : "CYP2A13 oxidises AFM1 to AFM1E",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5423678 ],
+    "inputs" : [ 5423629, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 5423657, 29366 ],
+    "catalysts" : [ 211034 ],
+    "efs" : [ ],
+    "diagramIds" : [ 27 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5490269,
+    "stId" : "R-HSA-5490269",
+    "displayName" : "AFXBO-C, AFNBO-C translocate from extracellular region to cytosol",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 5433067 ],
+    "following" : [ 5433066 ],
+    "inputs" : [ 5490250 ],
+    "outputs" : [ 5490231 ],
+    "efs" : [ ],
+    "diagramIds" : [ 514 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5423653,
+    "stId" : "R-HSA-5423653",
+    "displayName" : "MGST trimers transfer GS from GSH to AFXBO and AFNBO",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 156526, 5423672 ],
+    "following" : [ 5490230 ],
+    "inputs" : [ 29450, 5423723 ],
+    "outputs" : [ 5423730 ],
+    "catalysts" : [ 176042 ],
+    "efs" : [ ],
+    "diagramIds" : [ 205 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5433066,
+    "stId" : "R-HSA-5433066",
+    "displayName" : "Unknown NAT transfers COCH3 to AFXBO-C, AFNBO-C",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 5490269 ],
+    "following" : [ 5433074 ],
+    "inputs" : [ 76183, 5490231 ],
+    "outputs" : [ 5490236, 76194 ],
+    "catalysts" : [ 5490258 ],
+    "efs" : [ ],
+    "diagramIds" : [ 517 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5433067,
+    "stId" : "R-HSA-5433067",
+    "displayName" : "DPEPs hydrolyse glycine from AFXBO-CG, AFNBO-CG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5433072 ],
+    "following" : [ 5490269 ],
+    "inputs" : [ 5490235 ],
+    "outputs" : [ 266029, 5490250 ],
+    "catalysts" : [ 2162149 ],
+    "efs" : [ ],
+    "diagramIds" : [ 509 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5423656,
+    "stId" : "R-HSA-5423656",
+    "displayName" : "AFXBO hydrolyses non-enzymatically to AFBDHD",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 156526 ],
+    "following" : [ 5423694 ],
+    "inputs" : [ 29356, 159211 ],
+    "outputs" : [ 5423726 ],
+    "efs" : [ ],
+    "diagramIds" : [ 274 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5423694,
+    "stId" : "R-HSA-5423694",
+    "displayName" : "AFBDHD hydrolyses non-enzymatically to AFBDHO",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5423656 ],
+    "following" : [ 5423637 ],
+    "inputs" : [ 29356, 5423726 ],
+    "outputs" : [ 5423727 ],
+    "efs" : [ ],
+    "diagramIds" : [ 277 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

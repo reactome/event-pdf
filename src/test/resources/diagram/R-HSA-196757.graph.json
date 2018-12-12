@@ -1,0 +1,911 @@
+{
+  "dbId" : 196757,
+  "stId" : "R-HSA-196757",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 5696852,
+    "stId" : "R-HSA-5696852",
+    "displayName" : "MTHFD1L [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6UB35",
+    "geneNames" : [ "MTHFD1L", "FTHFSDC1" ],
+    "parents" : [ 5696840 ]
+  }, {
+    "dbId" : 73604,
+    "stId" : "R-ALL-73604",
+    "displayName" : "DHF [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 253 ],
+    "identifier" : "15633"
+  }, {
+    "dbId" : 200709,
+    "stId" : "R-ALL-200709",
+    "displayName" : "5-methyl-THF [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 248 ],
+    "identifier" : "15641"
+  }, {
+    "dbId" : 200713,
+    "stId" : "R-HSA-200713",
+    "displayName" : "2xMTHFR [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 330 ],
+    "children" : [ 200663 ]
+  }, {
+    "dbId" : 113548,
+    "stId" : "R-ALL-113548",
+    "displayName" : "Pi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 289, 2786, 2970 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 200716,
+    "stId" : "R-ALL-200716",
+    "displayName" : "FOLA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 241 ],
+    "identifier" : "27470",
+    "parents" : [ 8940118 ]
+  }, {
+    "dbId" : 113552,
+    "stId" : "R-ALL-113552",
+    "displayName" : "L-Glu [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 287 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 29460,
+    "stId" : "R-ALL-29460",
+    "displayName" : "HCOOH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 295 ],
+    "identifier" : "30751"
+  }, {
+    "dbId" : 113563,
+    "stId" : "R-ALL-113563",
+    "displayName" : "NADP+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3275 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 5696840,
+    "stId" : "R-HSA-5696840",
+    "displayName" : "MTHFD1L dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2784 ],
+    "children" : [ 5696852 ]
+  }, {
+    "dbId" : 200739,
+    "stId" : "R-ALL-200739",
+    "displayName" : "5,10-methylene-THFPG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 310 ],
+    "identifier" : "60473"
+  }, {
+    "dbId" : 6801350,
+    "stId" : "R-HSA-6801350",
+    "displayName" : "MTHFD2L [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H903",
+    "geneNames" : [ "MTHFD2L" ],
+    "parents" : [ 6801461 ]
+  }, {
+    "dbId" : 200737,
+    "stId" : "R-HSA-200737",
+    "displayName" : "SLC19A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 250 ],
+    "identifier" : "P41440",
+    "geneNames" : [ "SLC19A1", "FLOT1", "RFC1" ]
+  }, {
+    "dbId" : 200736,
+    "stId" : "R-ALL-200736",
+    "displayName" : "L-Ser [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 320 ],
+    "identifier" : "33384"
+  }, {
+    "dbId" : 6801347,
+    "stId" : "R-HSA-6801347",
+    "displayName" : "MTHFD2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13995",
+    "geneNames" : [ "MTHFD2", "NMDMC" ],
+    "parents" : [ 6801461 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3261, 303 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 113581,
+    "stId" : "R-ALL-113581",
+    "displayName" : "ADP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 290, 2967, 2783 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 29362,
+    "stId" : "R-ALL-29362",
+    "displayName" : "NADH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2914 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 336, 2806, 3272, 2794, 252 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3265, 312, 2792, 332, 255 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 113593,
+    "stId" : "R-ALL-113593",
+    "displayName" : "ATP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 288, 2968 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3234, 294, 267 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3235, 297, 268 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 296, 2984, 270 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 159549,
+    "stId" : "R-ALL-159549",
+    "displayName" : "Gly [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2776 ],
+    "identifier" : "57305"
+  }, {
+    "dbId" : 29376,
+    "stId" : "R-ALL-29376",
+    "displayName" : "CO2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3278 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 113600,
+    "stId" : "R-ALL-113600",
+    "displayName" : "NADPH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3277 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 200641,
+    "stId" : "R-HSA-200641",
+    "displayName" : "MTHFD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11586",
+    "geneNames" : [ "MTHFD1", "MTHFC", "MTHFD" ],
+    "parents" : [ 200667 ]
+  }, {
+    "dbId" : 5694100,
+    "stId" : "R-HSA-5694100",
+    "displayName" : "SHMT2 tetramer [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2778 ],
+    "children" : [ 5694086 ]
+  }, {
+    "dbId" : 200640,
+    "stId" : "R-ALL-200640",
+    "displayName" : "5,10-methenyl-THFPG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 304 ],
+    "identifier" : "65049"
+  }, {
+    "dbId" : 174404,
+    "stId" : "R-ALL-174404",
+    "displayName" : "5-methyl-THFPG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 279 ],
+    "identifier" : "63907"
+  }, {
+    "dbId" : 200645,
+    "stId" : "R-HSA-200645",
+    "displayName" : "SLC25A32 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 282 ],
+    "identifier" : "Q9H2D1",
+    "geneNames" : [ "SLC25A32", "MFT", "MFTC" ]
+  }, {
+    "dbId" : 5389850,
+    "stId" : "R-ALL-5389850",
+    "displayName" : "10-formyl-THF [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2782 ],
+    "identifier" : "15637"
+  }, {
+    "dbId" : 6808495,
+    "stId" : "R-HSA-6808495",
+    "displayName" : "ALDH1L1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3263 ],
+    "children" : [ 6808507 ]
+  }, {
+    "dbId" : 6808493,
+    "stId" : "R-HSA-6808493",
+    "displayName" : "ALDH1L2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q3SY69",
+    "geneNames" : [ "ALDH1L2" ],
+    "parents" : [ 6808504 ]
+  }, {
+    "dbId" : 71243,
+    "stId" : "R-HSA-71243",
+    "displayName" : "SHMT1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 322 ],
+    "children" : [ 71242 ]
+  }, {
+    "dbId" : 71242,
+    "stId" : "R-HSA-71242",
+    "displayName" : "PXLP-SHMT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P34896",
+    "geneNames" : [ "SHMT1" ],
+    "parents" : [ 71243 ]
+  }, {
+    "dbId" : 6801451,
+    "stId" : "R-ALL-6801451",
+    "displayName" : "HCOOH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2787 ],
+    "identifier" : "30751"
+  }, {
+    "dbId" : 197965,
+    "stId" : "R-ALL-197965",
+    "displayName" : "FOLA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 242 ],
+    "identifier" : "27470"
+  }, {
+    "dbId" : 5694086,
+    "stId" : "R-HSA-5694086",
+    "displayName" : "SHMT2 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P34897",
+    "geneNames" : [ "SHMT2" ],
+    "parents" : [ 5694100 ]
+  }, {
+    "dbId" : 379732,
+    "stId" : "R-ALL-379732",
+    "displayName" : "L-Ser [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2777 ],
+    "identifier" : "33384"
+  }, {
+    "dbId" : 6801461,
+    "stId" : "R-HSA-6801461",
+    "displayName" : "MTHFD2, D2L [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2912 ],
+    "children" : [ 6801347, 6801350 ]
+  }, {
+    "dbId" : 197969,
+    "stId" : "R-ALL-197969",
+    "displayName" : "THFPG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3268, 269 ],
+    "identifier" : "28624"
+  }, {
+    "dbId" : 197968,
+    "stId" : "R-HSA-197968",
+    "displayName" : "FPGS-2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 271 ],
+    "identifier" : "Q05932-2",
+    "geneNames" : [ "FPGS" ]
+  }, {
+    "dbId" : 200663,
+    "stId" : "R-HSA-200663",
+    "displayName" : "MTHFR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42898",
+    "geneNames" : [ "MTHFR" ],
+    "parents" : [ 200713 ]
+  }, {
+    "dbId" : 6801331,
+    "stId" : "R-HSA-6801331",
+    "displayName" : "MTHFS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2980 ],
+    "identifier" : "P49914",
+    "geneNames" : [ "MTHFS" ]
+  }, {
+    "dbId" : 6808499,
+    "stId" : "R-ALL-6808499",
+    "displayName" : "10-formyl-THFPG [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3274 ],
+    "identifier" : "28010"
+  }, {
+    "dbId" : 6801458,
+    "stId" : "R-ALL-6801458",
+    "displayName" : "5,10-methenyl-THF [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2915 ],
+    "identifier" : "15638"
+  }, {
+    "dbId" : 200667,
+    "stId" : "R-HSA-200667",
+    "displayName" : "2xMTHFD1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 299 ],
+    "children" : [ 200641 ]
+  }, {
+    "dbId" : 200665,
+    "stId" : "R-ALL-200665",
+    "displayName" : "5-methyl-THF [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 249 ],
+    "identifier" : "15641"
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 257, 2982, 3270, 2808, 2796, 334 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 29404,
+    "stId" : "R-ALL-29404",
+    "displayName" : "L-Glu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 272 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 6808507,
+    "stId" : "R-HSA-6808507",
+    "displayName" : "ALDH1L1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75891",
+    "geneNames" : [ "ALDH1L1", "FTHFD" ],
+    "parents" : [ 6808495 ]
+  }, {
+    "dbId" : 200671,
+    "stId" : "R-ALL-200671",
+    "displayName" : "THF [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 281 ],
+    "identifier" : "15635"
+  }, {
+    "dbId" : 197981,
+    "stId" : "R-HSA-197981",
+    "displayName" : "FPGS-1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 292 ],
+    "identifier" : "Q05932-1",
+    "geneNames" : [ "FPGS" ]
+  }, {
+    "dbId" : 6803257,
+    "stId" : "R-ALL-6803257",
+    "displayName" : "5-formyl-THFPG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3231 ],
+    "identifier" : "63907"
+  }, {
+    "dbId" : 8940118,
+    "stId" : "R-HSA-8940118",
+    "displayName" : "FOLR2:FOLA [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3283 ],
+    "children" : [ 200716, 8940133 ]
+  }, {
+    "dbId" : 6808504,
+    "stId" : "R-HSA-6808504",
+    "displayName" : "ADH1L2 tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3280 ],
+    "children" : [ 6808493 ]
+  }, {
+    "dbId" : 200673,
+    "stId" : "R-HSA-200673",
+    "displayName" : "SLC46A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 243 ],
+    "identifier" : "Q96NT5",
+    "geneNames" : [ "SLC46A1", "HCP1", "PCFT" ]
+  }, {
+    "dbId" : 197984,
+    "stId" : "R-HSA-197984",
+    "displayName" : "DHFR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00374",
+    "geneNames" : [ "DHFR" ],
+    "parents" : [ 2975817 ]
+  }, {
+    "dbId" : 2975817,
+    "stId" : "R-HSA-2975817",
+    "displayName" : "DHFR [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 695 ],
+    "children" : [ 197984, 2975816 ]
+  }, {
+    "dbId" : 200679,
+    "stId" : "R-ALL-200679",
+    "displayName" : "THFPG [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 291 ],
+    "identifier" : "28624"
+  }, {
+    "dbId" : 2975816,
+    "stId" : "R-HSA-2975816",
+    "displayName" : "DHFRL1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86XF0",
+    "geneNames" : [ "DHFR2", "DHFRL1", "DHFRP4" ],
+    "parents" : [ 2975817 ]
+  }, {
+    "dbId" : 8940133,
+    "stId" : "R-HSA-8940133",
+    "displayName" : "FOLR2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3282 ],
+    "identifier" : "P14207",
+    "geneNames" : [ "FOLR2" ],
+    "parents" : [ 8940118 ]
+  }, {
+    "dbId" : 29424,
+    "stId" : "R-ALL-29424",
+    "displayName" : "Gly [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 321 ],
+    "identifier" : "57305"
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2775, 3111, 3276 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 5693984,
+    "stId" : "R-ALL-5693984",
+    "displayName" : "5,10-methylene-THF [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2774 ],
+    "identifier" : "12071"
+  }, {
+    "dbId" : 113526,
+    "stId" : "R-ALL-113526",
+    "displayName" : "NAD+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2916 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 111353,
+    "stId" : "R-ALL-111353",
+    "displayName" : "10-formyl-THFPG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 298 ],
+    "identifier" : "28010"
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3279 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3262 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 111355,
+    "stId" : "R-ALL-111355",
+    "displayName" : "THF [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 263 ],
+    "identifier" : "15635"
+  } ],
+  "edges" : [ {
+    "dbId" : 8942344,
+    "stId" : "R-HSA-8942344",
+    "displayName" : "FOLR2 transports FOLA from extracellular region to cytosol",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 8940134 ],
+    "inputs" : [ 8940118 ],
+    "outputs" : [ 197965, 8940133 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3424 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6808487,
+    "stId" : "R-HSA-6808487",
+    "displayName" : "ALDH1L2 dehydrogenates 10-formyl-THFPG to THFPG",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113563, 6808499, 113521 ],
+    "outputs" : [ 113529, 200679, 113600, 29376 ],
+    "catalysts" : [ 6808504 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3273 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200711,
+    "stId" : "R-HSA-200711",
+    "displayName" : "THF polyglutamate + formate + ATP => 10-formylTHF polyglutamate + ADP + orthophosphate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 197958 ],
+    "following" : [ 6808496, 200661 ],
+    "inputs" : [ 113592, 29460, 197969 ],
+    "outputs" : [ 29372, 29370, 111353 ],
+    "catalysts" : [ 200667 ],
+    "efs" : [ ],
+    "diagramIds" : [ 293 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200646,
+    "stId" : "R-HSA-200646",
+    "displayName" : "Cytosolic folate export across the plasma membrane",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 197965 ],
+    "outputs" : [ 200716 ],
+    "catalysts" : [ 200673 ],
+    "efs" : [ ],
+    "diagramIds" : [ 244 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 197958,
+    "stId" : "R-HSA-197958",
+    "displayName" : "Conversion of cytosolic THF to THF-polyglutamate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 197972 ],
+    "following" : [ 200735, 200711 ],
+    "inputs" : [ 29404, 111355, 113592 ],
+    "outputs" : [ 29372, 29370, 197969 ],
+    "catalysts" : [ 197968 ],
+    "efs" : [ ],
+    "diagramIds" : [ 266 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200644,
+    "stId" : "R-HSA-200644",
+    "displayName" : "5,10-methyleneTHF polyglutamate + NADP+ <=> 5,10-methenylTHF polyglutamate + NADPH + H+",
+    "schemaClass" : "Reaction",
+    "following" : [ 200740 ],
+    "inputs" : [ 29366, 200739 ],
+    "outputs" : [ 70106, 29364, 200640 ],
+    "catalysts" : [ 200667 ],
+    "efs" : [ ],
+    "diagramIds" : [ 342 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200651,
+    "stId" : "R-HSA-200651",
+    "displayName" : "5,10-methyleneTHF polyglutamate + glycine <=> tetrahydrofolate polyglutamate (THF polyglutamate) + serine",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29424, 200739 ],
+    "outputs" : [ 200736, 197969 ],
+    "catalysts" : [ 71243 ],
+    "efs" : [ ],
+    "diagramIds" : [ 339 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 197963,
+    "stId" : "R-HSA-197963",
+    "displayName" : "Folate is reduced to dihydrofolate (DHF)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 200729 ],
+    "following" : [ 197972 ],
+    "inputs" : [ 197965, 70106, 29364 ],
+    "outputs" : [ 29366, 73604 ],
+    "catalysts" : [ 2975817 ],
+    "efs" : [ ],
+    "diagramIds" : [ 251 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200718,
+    "stId" : "R-HSA-200718",
+    "displayName" : "5,10-methenylTHF polyglutamate + NADPH + H+ <=> 5,10-methyleneTHF polyglutamate + NADP+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 200661 ],
+    "following" : [ 200676 ],
+    "inputs" : [ 70106, 29364, 200640 ],
+    "outputs" : [ 29366, 200739 ],
+    "catalysts" : [ 200667 ],
+    "efs" : [ ],
+    "diagramIds" : [ 309 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200652,
+    "stId" : "R-HSA-200652",
+    "displayName" : "Extracellular 5-methyltetrahydrofolate import across the plasma membrane",
+    "schemaClass" : "Reaction",
+    "following" : [ 200681 ],
+    "inputs" : [ 200709 ],
+    "outputs" : [ 200665 ],
+    "catalysts" : [ 200737 ],
+    "efs" : [ ],
+    "diagramIds" : [ 247 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6803255,
+    "stId" : "R-HSA-6803255",
+    "displayName" : "HCOOH translocated from mitochondrial matrix to cytosol",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 6801456 ],
+    "inputs" : [ 6801451 ],
+    "outputs" : [ 29460 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3210 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6801462,
+    "stId" : "R-HSA-6801462",
+    "displayName" : "MTHFD2, D2L oxidise 5,10-methenyl-THF to 10-formyl-THF",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6801328 ],
+    "following" : [ 6801456 ],
+    "inputs" : [ 6801458, 113521 ],
+    "outputs" : [ 5389850 ],
+    "catalysts" : [ 6801461 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2913 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696839,
+    "stId" : "R-HSA-5696839",
+    "displayName" : "MTHFD1L ligates HCOOH to THF to form 10-formyl-THF",
+    "schemaClass" : "Reaction",
+    "following" : [ 6801328 ],
+    "inputs" : [ 6801451, 200671, 113593 ],
+    "outputs" : [ 113548, 113581, 5389850 ],
+    "catalysts" : [ 5696840 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2779 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200720,
+    "stId" : "R-HSA-200720",
+    "displayName" : "Mitochondrial tetrahydrofolate export across the inner mitochondrial membrane",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 200671 ],
+    "outputs" : [ 111355 ],
+    "catalysts" : [ 200645 ],
+    "efs" : [ ],
+    "diagramIds" : [ 283 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200661,
+    "stId" : "R-HSA-200661",
+    "displayName" : "10-formylTHF polyglutamate <=> 5,10-methenylTHF polyglutamate + H2O",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 200711 ],
+    "following" : [ 200718 ],
+    "inputs" : [ 111353 ],
+    "outputs" : [ 29356, 200640 ],
+    "catalysts" : [ 200667 ],
+    "efs" : [ ],
+    "diagramIds" : [ 302 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 197972,
+    "stId" : "R-HSA-197972",
+    "displayName" : "DHF is reduced to tetrahydrofolate (THF)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 197963 ],
+    "following" : [ 200680, 197958 ],
+    "inputs" : [ 70106, 73604, 29364 ],
+    "outputs" : [ 111355, 29366 ],
+    "catalysts" : [ 2975817 ],
+    "efs" : [ ],
+    "diagramIds" : [ 262 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6801456,
+    "stId" : "R-HSA-6801456",
+    "displayName" : "MTHFD1L transforms 10-formyl-THF to HCOOH and THF",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6801462 ],
+    "following" : [ 6803255 ],
+    "inputs" : [ 113548, 113581, 5389850 ],
+    "outputs" : [ 200671, 6801451, 113593 ],
+    "catalysts" : [ 5696840 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2966 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6808496,
+    "stId" : "R-HSA-6808496",
+    "displayName" : "ALDH1L1 dehydrogenates 10-formyl-THFPG to THFPG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 200740, 200711 ],
+    "following" : [ 200735 ],
+    "inputs" : [ 29356, 111353, 29366 ],
+    "outputs" : [ 70106, 113528, 29364, 197969 ],
+    "catalysts" : [ 6808495 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3260 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6801328,
+    "stId" : "R-HSA-6801328",
+    "displayName" : "MTHFD2, D2L oxidise 5,10-methylene-THF to 5,10-methenyl-THF",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5696839 ],
+    "following" : [ 6801462 ],
+    "inputs" : [ 113526, 5693984 ],
+    "outputs" : [ 6801458, 29362 ],
+    "catalysts" : [ 6801461 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2909 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6801342,
+    "stId" : "R-HSA-6801342",
+    "displayName" : "MTHFS transforms 5-formyl-THFPG to 5,10-methenyl-THFPG",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6803257, 113592 ],
+    "outputs" : [ 29372, 70106, 29370, 200640 ],
+    "catalysts" : [ 6801331 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2975 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200729,
+    "stId" : "R-HSA-200729",
+    "displayName" : "Extracellular folate import across the plasma membrane",
+    "schemaClass" : "Reaction",
+    "following" : [ 197963 ],
+    "inputs" : [ 200716 ],
+    "outputs" : [ 197965 ],
+    "catalysts" : [ 200673 ],
+    "efs" : [ ],
+    "diagramIds" : [ 240 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200735,
+    "stId" : "R-HSA-200735",
+    "displayName" : "Tetrahydrofolate polyglutamate (THF polyglutamate) + serine <=> 5,10-methyleneTHF polyglutamate + glycine",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6808496, 197958 ],
+    "following" : [ 200676 ],
+    "inputs" : [ 200736, 197969 ],
+    "outputs" : [ 29424, 200739 ],
+    "catalysts" : [ 71243 ],
+    "efs" : [ ],
+    "diagramIds" : [ 319 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200740,
+    "stId" : "R-HSA-200740",
+    "displayName" : "5,10-methenylTHF polyglutamate + H2O <=> 10-formylTHF polyglutamate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 200644 ],
+    "following" : [ 6808496 ],
+    "inputs" : [ 29356, 200640 ],
+    "outputs" : [ 111353 ],
+    "catalysts" : [ 200667 ],
+    "efs" : [ ],
+    "diagramIds" : [ 343 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200676,
+    "stId" : "R-HSA-200676",
+    "displayName" : "5,10-methyleneTHF polyglutamate + NADPH + H+ => 5-methylTHF polyglutamate + NADP+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 200718, 200735 ],
+    "inputs" : [ 70106, 29364, 200739 ],
+    "outputs" : [ 29366, 174404 ],
+    "catalysts" : [ 200713 ],
+    "efs" : [ ],
+    "diagramIds" : [ 329 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200682,
+    "stId" : "R-HSA-200682",
+    "displayName" : "Conversion of mitochondrial THF to THF-polyglutamate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 200680 ],
+    "inputs" : [ 200671, 113593, 113552 ],
+    "outputs" : [ 113548, 113581, 200679 ],
+    "catalysts" : [ 197981 ],
+    "efs" : [ ],
+    "diagramIds" : [ 286 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200681,
+    "stId" : "R-HSA-200681",
+    "displayName" : "Conversion of cytosolic 5-methyltetrahydrofolate (5-methylTHF) to 5-methylTHF-polyglutamate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 200652 ],
+    "inputs" : [ 29404, 200665, 113592 ],
+    "outputs" : [ 29372, 29370, 174404 ],
+    "catalysts" : [ 197968 ],
+    "efs" : [ ],
+    "diagramIds" : [ 275 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200680,
+    "stId" : "R-HSA-200680",
+    "displayName" : "Cytosolic tetrahydrofolate import across the inner mitochondrial membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 197972 ],
+    "following" : [ 200682 ],
+    "inputs" : [ 111355 ],
+    "outputs" : [ 200671 ],
+    "catalysts" : [ 200645 ],
+    "efs" : [ ],
+    "diagramIds" : [ 280 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8940134,
+    "stId" : "R-HSA-8940134",
+    "displayName" : "FOLR2 binds FOLA",
+    "schemaClass" : "Reaction",
+    "following" : [ 8942344 ],
+    "inputs" : [ 200716, 8940133 ],
+    "outputs" : [ 8940118 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3281 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5694137,
+    "stId" : "R-HSA-5694137",
+    "displayName" : "SHMT2 tetramer transfers CH2OH group from 5,10MTHF to glycine",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 159549, 5693984, 113521 ],
+    "outputs" : [ 200671, 379732 ],
+    "catalysts" : [ 5694100 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2773 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

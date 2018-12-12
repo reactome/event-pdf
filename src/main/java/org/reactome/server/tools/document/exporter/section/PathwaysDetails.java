@@ -44,9 +44,9 @@ public class PathwaysDetails implements Section {
 		final DocumentArgs args = properties.getArgs();
 		document.add(new AreaBreak());
 		document.add(getTitle(profile, event, properties.getServer()));
-		document.add(createNav(nav, profile));
 
 		insertDiagram(document, event, analysisData);
+		createNav(document, nav, profile);
 		insertType(document, event, profile);
 //		insertStId(document, properties, event, profile);
 		addDatabaseObjectList(document, "Cellular compartments", event.getCompartment(), profile);
@@ -98,15 +98,17 @@ public class PathwaysDetails implements Section {
 		}
 	}
 
-	private Paragraph createNav(List<Event> nav, PdfProfile profile) {
-		final Paragraph paragraph = profile.getParagraph("");
+	private void createNav(Document document, List<Event> nav, PdfProfile profile) {
+		if (nav.isEmpty()) return;
+		final Paragraph paragraph = profile.getParagraph("")
+				.add(new Text("Location: ").setFont(profile.getBoldFont()));
 		for (int i = 0; i < nav.size(); i++) {
 			if (i > 0) paragraph.add(" > ");  // current font does not support RIGHTARROW'\u2192'
 			final Event ev = nav.get(i);
 			final Text text = new Text(ev.getDisplayName()).setAction(PdfAction.createGoTo(ev.getStId())).setFontColor(profile.getLinkColor());
 			paragraph.add(text);
 		}
-		return paragraph;
+		document.add(paragraph);
 	}
 
 	private BlockElement getTitle(PdfProfile profile, Event event, String server) {
@@ -184,13 +186,12 @@ public class PathwaysDetails implements Section {
 	}
 
 	private void addReferences(Document document, Event event, PdfProfile profile) {
-		if (event.getLiteratureReference() != null) {
-			document.add(profile.getH3("References"));
-			event.getLiteratureReference().stream()
-					.limit(5)
-					.map(publication -> createPublication(publication, profile))
-					.forEach(document::add);
-		}
+		if (event.getLiteratureReference().isEmpty()) return;
+		document.add(profile.getH3("Literature references"));
+		event.getLiteratureReference().stream()
+				.limit(5)
+				.map(publication -> createPublication(publication, profile))
+				.forEach(document::add);
 	}
 
 	private Paragraph createPublication(Publication publication, PdfProfile profile) {
@@ -232,13 +233,15 @@ public class PathwaysDetails implements Section {
 		current.add(editions.get(0));
 		edits.add(current);
 		for (int i = 1; i < editions.size(); i++) {
-			if (!editions.get(i).getDate().equals(editions.get(i - 1).getDate())
-					|| !editions.get(i).getAuthors().equals(editions.get(i - 1).getAuthors())) {
+			final Edition edition = editions.get(i);
+			if (edition.getAuthors() == null || edition.getDate() == null) continue;
+			if (!edition.getDate().equals(editions.get(i - 1).getDate())
+					|| !edition.getAuthors().equals(editions.get(i - 1).getAuthors())) {
 				current = new ArrayList<>();
-				current.add(editions.get(i));
+				current.add(edition);
 				edits.add(current);
 			} else {
-				current.add(editions.get(i));
+				current.add(edition);
 			}
 		}
 

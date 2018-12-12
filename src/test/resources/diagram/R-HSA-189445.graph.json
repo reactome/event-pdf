@@ -1,0 +1,905 @@
+{
+  "dbId" : 189445,
+  "stId" : "R-HSA-189445",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 189443,
+    "stId" : "R-HSA-189443",
+    "displayName" : "ALAS2 homodimer (pyridoxal phosphate cofactor) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 189429 ],
+    "children" : [ 1022083 ]
+  }, {
+    "dbId" : 189441,
+    "stId" : "R-HSA-189441",
+    "displayName" : "FECH [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22830",
+    "geneNames" : [ "FECH" ],
+    "parents" : [ 189402 ]
+  }, {
+    "dbId" : 189446,
+    "stId" : "R-HSA-189446",
+    "displayName" : "ALAS1 homodimer (pyridoxal phosphate cofactor) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 189429 ],
+    "children" : [ 1022086 ]
+  }, {
+    "dbId" : 189447,
+    "stId" : "R-ALL-189447",
+    "displayName" : "DIPY [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "36319",
+    "parents" : [ 189426 ]
+  }, {
+    "dbId" : 189444,
+    "stId" : "R-ALL-189444",
+    "displayName" : "heme [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 37 ],
+    "identifier" : "17627"
+  }, {
+    "dbId" : 158602,
+    "stId" : "R-ALL-158602",
+    "displayName" : "UDP [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 96 ],
+    "identifier" : "17659"
+  }, {
+    "dbId" : 1022086,
+    "stId" : "R-HSA-1022086",
+    "displayName" : "PXLP-ALAS1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13196",
+    "geneNames" : [ "ALAS1", "ALAS3", "ALASH", "OK/SW-cl.121" ],
+    "parents" : [ 189446 ]
+  }, {
+    "dbId" : 189448,
+    "stId" : "R-HSA-189448",
+    "displayName" : "CPOX(132-454) [mitochondrial intermembrane space]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36551",
+    "geneNames" : [ "CPOX", "CPO", "CPX" ],
+    "parents" : [ 189485 ]
+  }, {
+    "dbId" : 189449,
+    "stId" : "R-ALL-189449",
+    "displayName" : "HMBL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 31 ],
+    "identifier" : "16645"
+  }, {
+    "dbId" : 1022083,
+    "stId" : "R-HSA-1022083",
+    "displayName" : "PXLP-ALAS2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22557",
+    "geneNames" : [ "ALAS2", "ALASE", "ASB" ],
+    "parents" : [ 189443 ]
+  }, {
+    "dbId" : 189454,
+    "stId" : "R-HSA-189454",
+    "displayName" : "2xUROD [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 32 ],
+    "children" : [ 189427 ]
+  }, {
+    "dbId" : 189455,
+    "stId" : "R-ALL-189455",
+    "displayName" : "COPRO3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 22 ],
+    "identifier" : "15439"
+  }, {
+    "dbId" : 189453,
+    "stId" : "R-HSA-189453",
+    "displayName" : "ALAD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13716",
+    "geneNames" : [ "ALAD" ],
+    "parents" : [ 190145, 189400 ]
+  }, {
+    "dbId" : 71185,
+    "stId" : "R-ALL-71185",
+    "displayName" : "heme [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 9 ],
+    "identifier" : "17627"
+  }, {
+    "dbId" : 189463,
+    "stId" : "R-ALL-189463",
+    "displayName" : "PRIN9 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 24 ],
+    "identifier" : "15430"
+  }, {
+    "dbId" : 189461,
+    "stId" : "R-ALL-189461",
+    "displayName" : "O2 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 50, 105 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 189466,
+    "stId" : "R-ALL-189466",
+    "displayName" : "dALA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 53 ],
+    "identifier" : "17549"
+  }, {
+    "dbId" : 71067,
+    "stId" : "R-ALL-71067",
+    "displayName" : "Fe2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 12 ],
+    "identifier" : "18248"
+  }, {
+    "dbId" : 189464,
+    "stId" : "R-ALL-189464",
+    "displayName" : "PBG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 34 ],
+    "identifier" : "17381"
+  }, {
+    "dbId" : 189469,
+    "stId" : "R-HSA-189469",
+    "displayName" : "2xPPOX:FAD [mitochondrial intermembrane space]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 44 ],
+    "children" : [ 189484, 189434 ]
+  }, {
+    "dbId" : 189478,
+    "stId" : "R-ALL-189478",
+    "displayName" : "PPGEN9 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 41 ],
+    "identifier" : "15435"
+  }, {
+    "dbId" : 2995338,
+    "stId" : "R-HSA-2995338",
+    "displayName" : "COX10(?-443) [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 113 ],
+    "identifier" : "Q12887",
+    "geneNames" : [ "COX10" ]
+  }, {
+    "dbId" : 5604991,
+    "stId" : "R-HSA-5604991",
+    "displayName" : "UGT1A1 tetramer,UGT1A4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 121 ],
+    "children" : [ 159157, 159191 ]
+  }, {
+    "dbId" : 189480,
+    "stId" : "R-ALL-189480",
+    "displayName" : "CO2 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 52 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 189481,
+    "stId" : "R-ALL-189481",
+    "displayName" : "H2O2 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 55, 107 ],
+    "identifier" : "16240"
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 82, 84, 7, 89, 91 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 2995328,
+    "stId" : "R-ALL-2995328",
+    "displayName" : "heme O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 112 ],
+    "identifier" : "24480"
+  }, {
+    "dbId" : 159151,
+    "stId" : "R-ALL-159151",
+    "displayName" : "BIL [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "16990"
+  }, {
+    "dbId" : 189487,
+    "stId" : "R-ALL-189487",
+    "displayName" : "PRIN9 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 21 ],
+    "identifier" : "15430"
+  }, {
+    "dbId" : 189484,
+    "stId" : "R-ALL-189484",
+    "displayName" : "FAD [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 189469 ]
+  }, {
+    "dbId" : 70958,
+    "stId" : "R-ALL-70958",
+    "displayName" : "SUCC-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 20 ],
+    "identifier" : "15380"
+  }, {
+    "dbId" : 189485,
+    "stId" : "R-HSA-189485",
+    "displayName" : "2xCPO [mitochondrial intermembrane space]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 47 ],
+    "children" : [ 189448 ]
+  }, {
+    "dbId" : 159149,
+    "stId" : "R-ALL-159149",
+    "displayName" : "BDG [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 103 ],
+    "identifier" : "18392"
+  }, {
+    "dbId" : 190128,
+    "stId" : "R-ALL-190128",
+    "displayName" : "COPRO1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 29 ],
+    "identifier" : "28607"
+  }, {
+    "dbId" : 174384,
+    "stId" : "R-ALL-174384",
+    "displayName" : "UDP-GlcA [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 95 ],
+    "identifier" : "17200"
+  }, {
+    "dbId" : 189489,
+    "stId" : "R-ALL-189489",
+    "displayName" : "dALA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 40 ],
+    "identifier" : "17549"
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 159156,
+    "stId" : "R-HSA-159156",
+    "displayName" : "UGT1A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22309",
+    "geneNames" : [ "UGT1A1", "GNT1", "UGT1" ],
+    "parents" : [ 159191, 5605002 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 159157,
+    "stId" : "R-HSA-159157",
+    "displayName" : "UGT1A4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22310",
+    "geneNames" : [ "UGT1A4", "GNT1", "UGT1" ],
+    "parents" : [ 5604991, 5605002 ]
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 15 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 2995348,
+    "stId" : "R-ALL-2995348",
+    "displayName" : "heme A [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 117 ],
+    "identifier" : "24479"
+  }, {
+    "dbId" : 159160,
+    "stId" : "R-ALL-159160",
+    "displayName" : "BMG [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 97 ],
+    "identifier" : "16427"
+  }, {
+    "dbId" : 2995350,
+    "stId" : "R-HSA-2995350",
+    "displayName" : "COX15 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 118 ],
+    "identifier" : "Q7KZN9",
+    "geneNames" : [ "COX15" ]
+  }, {
+    "dbId" : 29374,
+    "stId" : "R-ALL-29374",
+    "displayName" : "CoA-SH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 19 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 159549,
+    "stId" : "R-ALL-159549",
+    "displayName" : "Gly [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 27 ],
+    "identifier" : "57305"
+  }, {
+    "dbId" : 189378,
+    "stId" : "R-HSA-189378",
+    "displayName" : "Biliverdin reductase A:Zn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 189387 ],
+    "children" : [ 189390, 29426 ]
+  }, {
+    "dbId" : 29376,
+    "stId" : "R-ALL-29376",
+    "displayName" : "CO2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 54 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 190145,
+    "stId" : "R-HSA-190145",
+    "displayName" : "8xALAD:Pb2+:Zn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 49 ],
+    "children" : [ 189453, 190173, 29426 ]
+  }, {
+    "dbId" : 189382,
+    "stId" : "R-HSA-189382",
+    "displayName" : "HMOX1,2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ],
+    "children" : [ 189391, 189395 ]
+  }, {
+    "dbId" : 391232,
+    "stId" : "R-ALL-391232",
+    "displayName" : "Pb2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 45 ],
+    "identifier" : "27889"
+  }, {
+    "dbId" : 29382,
+    "stId" : "R-ALL-29382",
+    "displayName" : "NH3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 43 ],
+    "identifier" : "16134"
+  }, {
+    "dbId" : 189386,
+    "stId" : "R-ALL-189386",
+    "displayName" : "BIL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 11 ],
+    "identifier" : "16990"
+  }, {
+    "dbId" : 189387,
+    "stId" : "R-HSA-189387",
+    "displayName" : "Biliverdin reductase [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "children" : [ 189388, 189378 ]
+  }, {
+    "dbId" : 189385,
+    "stId" : "R-ALL-189385",
+    "displayName" : "CO [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 10 ],
+    "identifier" : "17245"
+  }, {
+    "dbId" : 189390,
+    "stId" : "R-HSA-189390",
+    "displayName" : "BLVRA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P53004",
+    "geneNames" : [ "BLVRA", "BLVR", "BVR" ],
+    "parents" : [ 189378 ]
+  }, {
+    "dbId" : 189391,
+    "stId" : "R-HSA-189391",
+    "displayName" : "HMOX2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30519",
+    "geneNames" : [ "HMOX2", "HO2" ],
+    "parents" : [ 189382 ]
+  }, {
+    "dbId" : 189388,
+    "stId" : "R-HSA-189388",
+    "displayName" : "BLVRB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30043",
+    "geneNames" : [ "BLVRB", "FLR" ],
+    "parents" : [ 189387 ]
+  }, {
+    "dbId" : 190157,
+    "stId" : "R-ALL-190157",
+    "displayName" : "URO1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26 ],
+    "identifier" : "28766"
+  }, {
+    "dbId" : 189395,
+    "stId" : "R-HSA-189395",
+    "displayName" : "HMOX1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09601",
+    "geneNames" : [ "HMOX1", "HO", "HO1" ],
+    "parents" : [ 189382 ]
+  }, {
+    "dbId" : 159191,
+    "stId" : "R-HSA-159191",
+    "displayName" : "UGT1A1 tetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5604991 ],
+    "children" : [ 159156 ]
+  }, {
+    "dbId" : 189396,
+    "stId" : "R-ALL-189396",
+    "displayName" : "BV [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 13 ],
+    "identifier" : "17033"
+  }, {
+    "dbId" : 159450,
+    "stId" : "R-ALL-159450",
+    "displayName" : "PPi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 111 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 189402,
+    "stId" : "R-HSA-189402",
+    "displayName" : "2x(FECH:2Fe-2S cluster) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "children" : [ 189441, 189408 ]
+  }, {
+    "dbId" : 189400,
+    "stId" : "R-HSA-189400",
+    "displayName" : "8x(ALAD:Zn2+) [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 48 ],
+    "children" : [ 189453, 29426 ]
+  }, {
+    "dbId" : 189407,
+    "stId" : "R-ALL-189407",
+    "displayName" : "URO3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 23 ],
+    "identifier" : "15437"
+  }, {
+    "dbId" : 5605002,
+    "stId" : "R-HSA-5605002",
+    "displayName" : "UGT1A1,4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 119 ],
+    "children" : [ 159157, 159156 ]
+  }, {
+    "dbId" : 190173,
+    "stId" : "R-ALL-190173",
+    "displayName" : "Pb2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 46 ],
+    "identifier" : "27889",
+    "parents" : [ 190145 ]
+  }, {
+    "dbId" : 189411,
+    "stId" : "R-ALL-189411",
+    "displayName" : "COPRO3 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 35 ],
+    "identifier" : "15439"
+  }, {
+    "dbId" : 189408,
+    "stId" : "R-ALL-189408",
+    "displayName" : "2Iron-2Sulfur Cluster [mitochondrial matrix]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 189402 ]
+  }, {
+    "dbId" : 3004609,
+    "stId" : "R-HSA-3004609",
+    "displayName" : "HMBS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08397",
+    "geneNames" : [ "HMBS", "PBGD", "UPS" ],
+    "parents" : [ 189426 ]
+  }, {
+    "dbId" : 189426,
+    "stId" : "R-HSA-189426",
+    "displayName" : "HMBS:DIPY [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 51 ],
+    "children" : [ 3004609, 189447 ]
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 110 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 189427,
+    "stId" : "R-HSA-189427",
+    "displayName" : "UROD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P06132",
+    "geneNames" : [ "UROD" ],
+    "parents" : [ 189454 ]
+  }, {
+    "dbId" : 2162257,
+    "stId" : "R-ALL-2162257",
+    "displayName" : "FPP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 109 ],
+    "identifier" : "17407"
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 25 ],
+    "identifier" : "29105",
+    "parents" : [ 190145, 189400, 189378 ]
+  }, {
+    "dbId" : 189430,
+    "stId" : "R-HSA-189430",
+    "displayName" : "UROS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 30 ],
+    "identifier" : "P10746",
+    "geneNames" : [ "UROS" ]
+  }, {
+    "dbId" : 189429,
+    "stId" : "R-HSA-189429",
+    "displayName" : "ALAS1,2 [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 42 ],
+    "children" : [ 189446, 189443 ]
+  }, {
+    "dbId" : 189434,
+    "stId" : "R-HSA-189434",
+    "displayName" : "PPOX [mitochondrial intermembrane space]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50336",
+    "geneNames" : [ "PPOX" ],
+    "parents" : [ 189469 ]
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 39 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 36 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 113531,
+    "stId" : "R-ALL-113531",
+    "displayName" : "Fe2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 38 ],
+    "identifier" : "18248"
+  } ],
+  "edges" : [ {
+    "dbId" : 189442,
+    "stId" : "R-HSA-189442",
+    "displayName" : "ALAS condenses SUCC-CoA and Gly to form dALA",
+    "schemaClass" : "Reaction",
+    "following" : [ 189456 ],
+    "inputs" : [ 159549, 70958 ],
+    "outputs" : [ 29374, 189466, 29376 ],
+    "catalysts" : [ 189429 ],
+    "efs" : [ ],
+    "inhibitors" : [ 189444 ],
+    "diagramIds" : [ 62 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 190182,
+    "stId" : "R-HSA-190182",
+    "displayName" : "UROD decarboxylates URO1 to COPRO1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 190168 ],
+    "inputs" : [ 190157 ],
+    "outputs" : [ 113528, 190128 ],
+    "catalysts" : [ 189454 ],
+    "efs" : [ ],
+    "diagramIds" : [ 64 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189381,
+    "stId" : "R-HSA-189381",
+    "displayName" : "Bilirubin translocates from the cytosol to the ER lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189384 ],
+    "following" : [ 159194 ],
+    "inputs" : [ 189386 ],
+    "outputs" : [ 159151 ],
+    "efs" : [ ],
+    "diagramIds" : [ 16 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 159179,
+    "stId" : "R-HSA-159179",
+    "displayName" : "UGT1A1 tetramer, UGT1A4 transfer GlcA from UDP-GlcA to BMG to form BDG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 159194 ],
+    "inputs" : [ 159160, 174384 ],
+    "outputs" : [ 159149, 158602 ],
+    "catalysts" : [ 5604991 ],
+    "efs" : [ ],
+    "diagramIds" : [ 102 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189384,
+    "stId" : "R-HSA-189384",
+    "displayName" : "Biliverdin is reduced to bilirubin",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189398 ],
+    "following" : [ 189381 ],
+    "inputs" : [ 189396, 29364 ],
+    "outputs" : [ 189386, 29366 ],
+    "catalysts" : [ 189387 ],
+    "efs" : [ ],
+    "diagramIds" : [ 18 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2995334,
+    "stId" : "R-HSA-2995334",
+    "displayName" : "COX15 transforms heme O to heme A",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2995330 ],
+    "inputs" : [ 2995328 ],
+    "outputs" : [ 2995348 ],
+    "catalysts" : [ 2995350 ],
+    "efs" : [ ],
+    "diagramIds" : [ 116 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189423,
+    "stId" : "R-HSA-189423",
+    "displayName" : "PPO oxidises PPGEN9 to PRIN9",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189421 ],
+    "following" : [ 189457 ],
+    "inputs" : [ 189461, 189478 ],
+    "outputs" : [ 189481, 189463 ],
+    "catalysts" : [ 189469 ],
+    "efs" : [ ],
+    "diagramIds" : [ 56 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2995330,
+    "stId" : "R-HSA-2995330",
+    "displayName" : "COX10 transforms heme to heme O",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189465 ],
+    "following" : [ 2995334 ],
+    "inputs" : [ 189444, 2162257, 113521 ],
+    "outputs" : [ 2995328, 159450 ],
+    "catalysts" : [ 2995338 ],
+    "efs" : [ ],
+    "diagramIds" : [ 108 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189421,
+    "stId" : "R-HSA-189421",
+    "displayName" : "CPO transforms COPRO3 to PPGEN9",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189467 ],
+    "following" : [ 189423 ],
+    "inputs" : [ 189461, 189411 ],
+    "outputs" : [ 189481, 189480, 189478 ],
+    "catalysts" : [ 189485 ],
+    "efs" : [ ],
+    "diagramIds" : [ 69 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189456,
+    "stId" : "R-HSA-189456",
+    "displayName" : "Mitochondrial dALA translocates to cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189442 ],
+    "following" : [ 189439 ],
+    "inputs" : [ 189466 ],
+    "outputs" : [ 189489 ],
+    "efs" : [ ],
+    "diagramIds" : [ 60 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189488,
+    "stId" : "R-HSA-189488",
+    "displayName" : "UROS transforms HMB to URO3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189406 ],
+    "following" : [ 189425 ],
+    "inputs" : [ 189449 ],
+    "outputs" : [ 189407, 29356 ],
+    "catalysts" : [ 189430 ],
+    "efs" : [ ],
+    "diagramIds" : [ 65 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189425,
+    "stId" : "R-HSA-189425",
+    "displayName" : "UROD decarboxylates URO3 to COPRO3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189488 ],
+    "following" : [ 189467 ],
+    "inputs" : [ 189407 ],
+    "outputs" : [ 189455, 113528 ],
+    "catalysts" : [ 189454 ],
+    "efs" : [ ],
+    "diagramIds" : [ 58 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189457,
+    "stId" : "R-HSA-189457",
+    "displayName" : "Mitochondrial intermembrane PRIN9 translocates to mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189423 ],
+    "following" : [ 189465 ],
+    "inputs" : [ 189463 ],
+    "outputs" : [ 189487 ],
+    "efs" : [ ],
+    "diagramIds" : [ 68 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189398,
+    "stId" : "R-HSA-189398",
+    "displayName" : "HMOX1,2 cleave heme",
+    "schemaClass" : "Reaction",
+    "following" : [ 189384 ],
+    "inputs" : [ 29368, 29364, 71185 ],
+    "outputs" : [ 29356, 189385, 71067, 189396, 29366 ],
+    "catalysts" : [ 189382 ],
+    "efs" : [ ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 159194,
+    "stId" : "R-HSA-159194",
+    "displayName" : "UGT1A1,4 transfer GlcA from UDP-GlcA to BIL to form BMG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189381 ],
+    "following" : [ 159179 ],
+    "inputs" : [ 159151, 174384 ],
+    "outputs" : [ 159160, 158602 ],
+    "catalysts" : [ 5605002 ],
+    "efs" : [ ],
+    "diagramIds" : [ 94 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189467,
+    "stId" : "R-HSA-189467",
+    "displayName" : "Cytosolic COPRO3 translocates to mitochondrial intermembrane space",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189425 ],
+    "following" : [ 189421 ],
+    "inputs" : [ 189455 ],
+    "outputs" : [ 189411 ],
+    "efs" : [ ],
+    "diagramIds" : [ 63 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 190168,
+    "stId" : "R-HSA-190168",
+    "displayName" : "HMBL spontaneously transforms to URO1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189406 ],
+    "following" : [ 190182 ],
+    "inputs" : [ 189449 ],
+    "outputs" : [ 190157, 29356 ],
+    "efs" : [ ],
+    "diagramIds" : [ 57 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189465,
+    "stId" : "R-HSA-189465",
+    "displayName" : "FECH binds Fe2+ to PRIN9 to form heme",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189457 ],
+    "following" : [ 2995330 ],
+    "inputs" : [ 189487, 113531 ],
+    "outputs" : [ 113529, 189444 ],
+    "catalysts" : [ 189402 ],
+    "efs" : [ ],
+    "inhibitors" : [ 391232 ],
+    "diagramIds" : [ 59 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189406,
+    "stId" : "R-HSA-189406",
+    "displayName" : "4 PBGs bind to form HMB",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189439 ],
+    "following" : [ 189488, 190168 ],
+    "inputs" : [ 29356, 189464 ],
+    "outputs" : [ 189449, 29382 ],
+    "catalysts" : [ 189426 ],
+    "efs" : [ ],
+    "diagramIds" : [ 61 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189439,
+    "stId" : "R-HSA-189439",
+    "displayName" : "ALAD condenses 2 dALAs to form PBG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189456 ],
+    "following" : [ 189406 ],
+    "inputs" : [ 189489 ],
+    "outputs" : [ 29356, 189464 ],
+    "catalysts" : [ 189400 ],
+    "efs" : [ ],
+    "diagramIds" : [ 67 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 190141,
+    "stId" : "R-HSA-190141",
+    "displayName" : "ALAD binds to Pb2+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 190173, 189400 ],
+    "outputs" : [ 190145, 29426 ],
+    "efs" : [ ],
+    "diagramIds" : [ 66 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 189451,
+    "stId" : "R-HSA-189451",
+    "displayName" : "Heme biosynthesis",
+    "events" : [ 189442, 190182, 2995334, 189423, 189421, 2995330, 189456, 189488, 189425, 189457, 189467, 190168, 189465, 189406, 189439, 190141 ]
+  }, {
+    "dbId" : 189483,
+    "stId" : "R-HSA-189483",
+    "displayName" : "Heme degradation",
+    "events" : [ 189398, 189381, 159194, 159179, 189384 ]
+  } ]
+}

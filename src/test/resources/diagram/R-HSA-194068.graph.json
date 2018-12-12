@@ -1,0 +1,2786 @@
+{
+  "dbId" : 194068,
+  "stId" : "R-HSA-194068",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 5340249,
+    "stId" : "R-ALL-5340249",
+    "displayName" : "DCA,CDCA,LCHA [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 881 ],
+    "parents" : [ 5340186 ],
+    "children" : [ 5340204, 4755453, 5340209 ]
+  }, {
+    "dbId" : 194062,
+    "stId" : "R-HSA-194062",
+    "displayName" : "SLCO1A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 609 ],
+    "identifier" : "P46721",
+    "geneNames" : [ "SLCO1A2", "OATP", "OATP1", "OATP1A2", "SLC21A3" ]
+  }, {
+    "dbId" : 176655,
+    "stId" : "R-ALL-176655",
+    "displayName" : "LCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 888 ],
+    "identifier" : "16325",
+    "parents" : [ 8873894 ]
+  }, {
+    "dbId" : 192012,
+    "stId" : "R-HSA-192012",
+    "displayName" : "CYP8B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UNU6",
+    "geneNames" : [ "CYP8B1", "CYP12" ],
+    "parents" : [ 3229177 ]
+  }, {
+    "dbId" : 192013,
+    "stId" : "R-ALL-192013",
+    "displayName" : "THCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 124 ],
+    "identifier" : "18402"
+  }, {
+    "dbId" : 9617026,
+    "stId" : "R-ALL-9617026",
+    "displayName" : "4CHOL7a,12a,27TONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1210 ],
+    "identifier" : "141628"
+  }, {
+    "dbId" : 196114,
+    "stId" : "R-HSA-196114",
+    "displayName" : "STARD5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 889 ],
+    "identifier" : "Q9NSY2",
+    "geneNames" : [ "STARD5" ],
+    "parents" : [ 8873894 ]
+  }, {
+    "dbId" : 2975806,
+    "stId" : "R-HSA-2975806",
+    "displayName" : "Cytochrome P450 (CYP7B1 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 674, 663 ],
+    "children" : [ 192117, 192169 ]
+  }, {
+    "dbId" : 5340228,
+    "stId" : "R-HSA-5340228",
+    "displayName" : "NR1H4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 880 ],
+    "identifier" : "Q96RI1",
+    "geneNames" : [ "NR1H4", "BAR", "FXR", "HRR1", "RIP14" ],
+    "parents" : [ 5340186 ]
+  }, {
+    "dbId" : 141335,
+    "stId" : "R-ALL-141335",
+    "displayName" : "FAD [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 192320 ]
+  }, {
+    "dbId" : 194069,
+    "stId" : "R-ALL-194069",
+    "displayName" : "glycine; taurine [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 639 ],
+    "children" : [ 159420, 29424 ]
+  }, {
+    "dbId" : 194075,
+    "stId" : "R-HSA-194075",
+    "displayName" : "SLCO1B3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 618 ],
+    "identifier" : "Q9NPD5",
+    "geneNames" : [ "SLCO1B3", "LST2", "OATP1B3", "OATP8", "SLC21A8" ]
+  }, {
+    "dbId" : 194073,
+    "stId" : "R-ALL-194073",
+    "displayName" : "choloyl-CoA; chenodeoxycholoyl-CoA [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 625 ],
+    "children" : [ 194126, 194122 ]
+  }, {
+    "dbId" : 192030,
+    "stId" : "R-ALL-192030",
+    "displayName" : "5beta-cholestan-3alpha,7alpha-diol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 68 ],
+    "identifier" : "28047"
+  }, {
+    "dbId" : 141343,
+    "stId" : "R-ALL-141343",
+    "displayName" : "H2O [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 201, 173 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 5340274,
+    "stId" : "R-HSA-5340274",
+    "displayName" : "NCOA1,2:RXRA:NR1H4:DCA,CDCA,LCHA [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 722, 676, 767 ],
+    "children" : [ 376398, 5340186, 442496, 381319 ]
+  }, {
+    "dbId" : 194092,
+    "stId" : "R-ALL-194092",
+    "displayName" : "bile salts and acids (OATP-A) [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 194110 ],
+    "children" : [ 192415, 192431, 192442, 192421, 192464 ]
+  }, {
+    "dbId" : 194096,
+    "stId" : "R-ALL-194096",
+    "displayName" : "cholate; chenodeoxycholate [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 623 ],
+    "children" : [ 194127, 193473 ]
+  }, {
+    "dbId" : 194097,
+    "stId" : "R-ALL-194097",
+    "displayName" : "GCCA, TCCA [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 614 ],
+    "children" : [ 192332, 159435 ]
+  }, {
+    "dbId" : 194104,
+    "stId" : "R-HSA-194104",
+    "displayName" : "ALB:(GCCA, TCCA) [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 613 ],
+    "children" : [ 194117, 194115 ]
+  }, {
+    "dbId" : 194110,
+    "stId" : "R-HSA-194110",
+    "displayName" : "albumin:bile salt and acid (OATP-A) complex [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 607 ],
+    "children" : [ 194092, 194115 ]
+  }, {
+    "dbId" : 192060,
+    "stId" : "R-ALL-192060",
+    "displayName" : "24OH-CHOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 242, 259 ],
+    "identifier" : "34310"
+  }, {
+    "dbId" : 8867527,
+    "stId" : "R-HSA-8867527",
+    "displayName" : "OSBPL2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H1P3",
+    "geneNames" : [ "OSBPL2", "KIAA0772", "ORP2" ],
+    "parents" : [ 8868084 ]
+  }, {
+    "dbId" : 194115,
+    "stId" : "R-HSA-194115",
+    "displayName" : "ALB [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 587 ],
+    "identifier" : "P02768",
+    "geneNames" : [ "ALB", "GIG20", "GIG42", "PRO0903", "PRO1708", "PRO2044", "PRO2619", "PRO2675", "UNQ696/PRO1341" ],
+    "parents" : [ 194104, 194125, 194165, 194110 ]
+  }, {
+    "dbId" : 192064,
+    "stId" : "R-ALL-192064",
+    "displayName" : "5beta-cholesten-7alpha, 12alpha-diol-3-one [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 47 ],
+    "identifier" : "2288"
+  }, {
+    "dbId" : 194116,
+    "stId" : "R-HSA-194116",
+    "displayName" : "SLC10A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 599 ],
+    "identifier" : "Q14973",
+    "geneNames" : [ "SLC10A1", "NTCP", "GIG29" ]
+  }, {
+    "dbId" : 194117,
+    "stId" : "R-ALL-194117",
+    "displayName" : "GCCA, TCCA [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 194104 ],
+    "children" : [ 192421, 192464 ]
+  }, {
+    "dbId" : 194122,
+    "stId" : "R-ALL-194122",
+    "displayName" : "choloyl-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15519",
+    "parents" : [ 194073 ]
+  }, {
+    "dbId" : 8867534,
+    "stId" : "R-HSA-8867534",
+    "displayName" : "OSBPL6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZF3",
+    "geneNames" : [ "OSBPL6", "ORP6" ],
+    "parents" : [ 8868084 ]
+  }, {
+    "dbId" : 376398,
+    "stId" : "R-HSA-376398",
+    "displayName" : "NCOA2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 885 ],
+    "identifier" : "Q15596",
+    "geneNames" : [ "NCOA2", "BHLHE75", "SRC2", "TIF2" ],
+    "parents" : [ 5340274 ]
+  }, {
+    "dbId" : 5340186,
+    "stId" : "R-HSA-5340186",
+    "displayName" : "NR1H4:DCA,CDCA,LCHA [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 882 ],
+    "parents" : [ 5340274 ],
+    "children" : [ 5340249, 5340228 ]
+  }, {
+    "dbId" : 8867532,
+    "stId" : "R-HSA-8867532",
+    "displayName" : "OSBPL3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H4L5",
+    "geneNames" : [ "OSBPL3", "KIAA0704", "ORP3", "OSBP3" ],
+    "parents" : [ 8868084 ]
+  }, {
+    "dbId" : 8867531,
+    "stId" : "R-HSA-8867531",
+    "displayName" : "OSBPL9 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96SU4",
+    "geneNames" : [ "OSBPL9", "ORP9", "OSBP4" ],
+    "parents" : [ 8868084 ]
+  }, {
+    "dbId" : 194126,
+    "stId" : "R-ALL-194126",
+    "displayName" : "chenodeoxycholoyl-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28701",
+    "parents" : [ 194073 ]
+  }, {
+    "dbId" : 192078,
+    "stId" : "R-ALL-192078",
+    "displayName" : "5bCHOL3a,7a,12a-triol [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 71 ],
+    "identifier" : "16496"
+  }, {
+    "dbId" : 8867530,
+    "stId" : "R-HSA-8867530",
+    "displayName" : "OSBPL7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZF2",
+    "geneNames" : [ "OSBPL7", "ORP7" ],
+    "parents" : [ 8868084 ]
+  }, {
+    "dbId" : 194127,
+    "stId" : "R-ALL-194127",
+    "displayName" : "CDCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16755",
+    "parents" : [ 194096, 194156, 194131 ]
+  }, {
+    "dbId" : 194125,
+    "stId" : "R-HSA-194125",
+    "displayName" : "albumin:bile salt complex [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 598 ],
+    "children" : [ 193479, 194115 ]
+  }, {
+    "dbId" : 194131,
+    "stId" : "R-ALL-194131",
+    "displayName" : "bile salts and acids (OATP-A) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 608 ],
+    "children" : [ 192332, 194127, 159422, 159435, 193473 ]
+  }, {
+    "dbId" : 192087,
+    "stId" : "R-ALL-192087",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,12alpha-triol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 59 ],
+    "identifier" : "16496"
+  }, {
+    "dbId" : 194133,
+    "stId" : "R-HSA-194133",
+    "displayName" : "SLCO1B1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 615 ],
+    "identifier" : "Q9Y6L6",
+    "geneNames" : [ "SLCO1B1", "LST1", "OATP1B1", "OATP2", "OATPC", "SLC21A6" ]
+  }, {
+    "dbId" : 5340209,
+    "stId" : "R-ALL-5340209",
+    "displayName" : "LCHA [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16325",
+    "parents" : [ 5340249 ]
+  }, {
+    "dbId" : 192096,
+    "stId" : "R-ALL-192096",
+    "displayName" : "25(R) THCA-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 134 ],
+    "identifier" : "37642"
+  }, {
+    "dbId" : 194158,
+    "stId" : "R-HSA-194158",
+    "displayName" : "FABP6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 579 ],
+    "identifier" : "P51161",
+    "geneNames" : [ "FABP6", "ILBP", "ILLBP" ],
+    "parents" : [ 194191 ]
+  }, {
+    "dbId" : 194156,
+    "stId" : "R-ALL-194156",
+    "displayName" : "bile salts and acids [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 194191 ],
+    "children" : [ 192332, 194127, 159422, 159432, 159435, 193473 ]
+  }, {
+    "dbId" : 192114,
+    "stId" : "R-ALL-192114",
+    "displayName" : "7 alpha-hydroxycholesterol [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26 ],
+    "identifier" : "17500"
+  }, {
+    "dbId" : 192115,
+    "stId" : "R-HSA-192115",
+    "displayName" : "CYP27A1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 112, 385, 449, 82, 98, 362, 349 ],
+    "identifier" : "Q02318",
+    "geneNames" : [ "CYP27A1", "CYP27" ]
+  }, {
+    "dbId" : 8868084,
+    "stId" : "R-HSA-8868084",
+    "displayName" : "OSBPs [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 900 ],
+    "children" : [ 2213214, 8867530, 8867531, 8867532, 8867534, 8867527 ]
+  }, {
+    "dbId" : 192117,
+    "stId" : "R-HSA-192117",
+    "displayName" : "CYP7B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75881",
+    "geneNames" : [ "CYP7B1" ],
+    "parents" : [ 3219435, 2975806 ]
+  }, {
+    "dbId" : 194165,
+    "stId" : "R-HSA-194165",
+    "displayName" : "bile salts and acids complexed with albumin [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 590 ],
+    "children" : [ 192483, 194115 ]
+  }, {
+    "dbId" : 3229259,
+    "stId" : "R-HSA-3229259",
+    "displayName" : "AKR1C2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52895",
+    "geneNames" : [ "AKR1C2", "DDH2" ],
+    "parents" : [ 3229260 ]
+  }, {
+    "dbId" : 5340204,
+    "stId" : "R-ALL-5340204",
+    "displayName" : "DCA [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28834",
+    "parents" : [ 5340249 ]
+  }, {
+    "dbId" : 3229260,
+    "stId" : "R-HSA-3229260",
+    "displayName" : "Aldo-keto reductase family [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 659, 668, 670 ],
+    "children" : [ 192142, 2855253, 3229259, 2142714 ]
+  }, {
+    "dbId" : 194172,
+    "stId" : "R-HSA-194172",
+    "displayName" : "ABCC3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 592 ],
+    "identifier" : "O15438",
+    "geneNames" : [ "ABCC3", "CMOAT2", "MLP2", "MRP3" ]
+  }, {
+    "dbId" : 194173,
+    "stId" : "R-HSA-194173",
+    "displayName" : "SLC10A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 813 ],
+    "identifier" : "Q12908",
+    "geneNames" : [ "SLC10A2", "ASBT", "ISBT", "NTCP2" ]
+  }, {
+    "dbId" : 442496,
+    "stId" : "R-HSA-442496",
+    "displayName" : "NCOA1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 886 ],
+    "identifier" : "Q15788",
+    "geneNames" : [ "NCOA1", "BHLHE74", "SRC1" ],
+    "parents" : [ 5340274 ]
+  }, {
+    "dbId" : 192136,
+    "stId" : "R-ALL-192136",
+    "displayName" : "4CHOL7aOLONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 31 ],
+    "identifier" : "17899"
+  }, {
+    "dbId" : 192142,
+    "stId" : "R-HSA-192142",
+    "displayName" : "AKR1C4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P17516",
+    "geneNames" : [ "AKR1C4", "CHDR" ],
+    "parents" : [ 3229260 ]
+  }, {
+    "dbId" : 194191,
+    "stId" : "R-HSA-194191",
+    "displayName" : "bile salts and acids:FABP6 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 582 ],
+    "children" : [ 194156, 194158 ]
+  }, {
+    "dbId" : 192146,
+    "stId" : "R-HSA-192146",
+    "displayName" : "AMACR [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 159 ],
+    "identifier" : "Q9UHK6",
+    "geneNames" : [ "AMACR" ]
+  }, {
+    "dbId" : 192148,
+    "stId" : "R-ALL-192148",
+    "displayName" : "25OH-CHOL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 545 ],
+    "identifier" : "42977"
+  }, {
+    "dbId" : 429725,
+    "stId" : "R-HSA-429725",
+    "displayName" : "OSBP [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1206 ],
+    "identifier" : "P22059",
+    "geneNames" : [ "OSBP", "OSBP1" ]
+  }, {
+    "dbId" : 159392,
+    "stId" : "R-HSA-159392",
+    "displayName" : "BAAT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 640 ],
+    "identifier" : "Q14032",
+    "geneNames" : [ "BAAT" ]
+  }, {
+    "dbId" : 192161,
+    "stId" : "R-ALL-192161",
+    "displayName" : "THCA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 107 ],
+    "identifier" : "18402"
+  }, {
+    "dbId" : 192166,
+    "stId" : "R-HSA-192166",
+    "displayName" : "CYP39A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 264 ],
+    "identifier" : "Q9NYL5",
+    "geneNames" : [ "CYP39A1" ]
+  }, {
+    "dbId" : 8868399,
+    "stId" : "R-ALL-8868399",
+    "displayName" : "25OH-CHOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 898 ],
+    "identifier" : "42977"
+  }, {
+    "dbId" : 193707,
+    "stId" : "R-ALL-193707",
+    "displayName" : "5beta-cholestan-7alpha,12alpha,24(S)-triol-3-one [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 300 ],
+    "identifier" : "63830"
+  }, {
+    "dbId" : 192169,
+    "stId" : "R-HSA-192169",
+    "displayName" : "CYP7A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22680",
+    "geneNames" : [ "CYP7A1", "CYP7" ],
+    "parents" : [ 3219435, 2975806 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 544, 624, 241, 401, 465, 37, 262, 647, 25, 1211, 558, 287 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 193708,
+    "stId" : "R-ALL-193708",
+    "displayName" : "5bCHOL3a,7a,24(s),27-tetrol [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 354 ],
+    "identifier" : "63833"
+  }, {
+    "dbId" : 8868393,
+    "stId" : "R-ALL-8868393",
+    "displayName" : "25OH-CHOL [Golgi membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1204 ],
+    "identifier" : "42977"
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 482, 282, 30 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 64, 320, 513, 552, 42, 266, 298, 307, 52, 532, 564, 245, 501, 23, 473 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 193716,
+    "stId" : "R-ALL-193716",
+    "displayName" : "3alpha,7alpha,24(S)-trihydroxy-5beta-cholestan-27-al [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 373 ],
+    "identifier" : "63848"
+  }, {
+    "dbId" : 192180,
+    "stId" : "R-HSA-192180",
+    "displayName" : "CH25H (Fe2+ cofactor) [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 546 ],
+    "children" : [ 71067, 191985 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 66, 292, 324, 516, 554, 43, 495, 272, 304, 562, 54, 534, 24, 475, 253 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 193717,
+    "stId" : "R-ALL-193717",
+    "displayName" : "24OH-CHOL [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 256 ],
+    "identifier" : "34310"
+  }, {
+    "dbId" : 8868400,
+    "stId" : "R-ALL-8868400",
+    "displayName" : "25OH-CHOL [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 899 ],
+    "identifier" : "42977"
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 497, 20, 468, 548, 294, 568, 249, 44, 270 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 192184,
+    "stId" : "R-ALL-192184",
+    "displayName" : "CHOL3b,7a,25TRIOL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 559 ],
+    "identifier" : "37623"
+  }, {
+    "dbId" : 193720,
+    "stId" : "R-ALL-193720",
+    "displayName" : "5β-CHOL3α,7α,24(s)-triol [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 332 ],
+    "identifier" : "63831"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 231, 589 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 159422,
+    "stId" : "R-ALL-159422",
+    "displayName" : "TCDCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16525",
+    "parents" : [ 193416, 194156, 194131 ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 230, 591 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 193724,
+    "stId" : "R-ALL-193724",
+    "displayName" : "4CHOL7a,24(S)DONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 275 ],
+    "identifier" : "63838"
+  }, {
+    "dbId" : 159420,
+    "stId" : "R-ALL-159420",
+    "displayName" : "TAU [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15891",
+    "parents" : [ 194069 ]
+  }, {
+    "dbId" : 192189,
+    "stId" : "R-ALL-192189",
+    "displayName" : "CHOL7a,24(S)DIOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 263 ],
+    "identifier" : "37640"
+  }, {
+    "dbId" : 111294,
+    "stId" : "R-ALL-111294",
+    "displayName" : "PPi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 132, 409, 634 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 192194,
+    "stId" : "R-ALL-192194",
+    "displayName" : "Cholest-5-ene-3beta,7alpha,27-triol [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 464 ],
+    "identifier" : "18431"
+  }, {
+    "dbId" : 192195,
+    "stId" : "R-ALL-192195",
+    "displayName" : "4CHOL7a,12aDONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 38 ],
+    "identifier" : "28477"
+  }, {
+    "dbId" : 193728,
+    "stId" : "R-ALL-193728",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,12alpha,24(S)-tetrol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 316 ],
+    "identifier" : "63834"
+  }, {
+    "dbId" : 193732,
+    "stId" : "R-ALL-193732",
+    "displayName" : "3,7,24THCA-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1209, 430 ],
+    "identifier" : "27403"
+  }, {
+    "dbId" : 192202,
+    "stId" : "R-HSA-192202",
+    "displayName" : "CYP46A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 243 ],
+    "identifier" : "Q9Y6A2",
+    "geneNames" : [ "CYP46A1", "CYP46" ]
+  }, {
+    "dbId" : 193739,
+    "stId" : "R-ALL-193739",
+    "displayName" : "3,7,24THCA-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 413 ],
+    "identifier" : "27403"
+  }, {
+    "dbId" : 159435,
+    "stId" : "R-ALL-159435",
+    "displayName" : "GCCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17687",
+    "parents" : [ 194097, 193416, 194156, 194131 ]
+  }, {
+    "dbId" : 159432,
+    "stId" : "R-ALL-159432",
+    "displayName" : "GCDCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "36274",
+    "parents" : [ 193416, 194156 ]
+  }, {
+    "dbId" : 192201,
+    "stId" : "R-ALL-192201",
+    "displayName" : "5bCHOL3a,7a,12a,27-tetrol [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 79 ],
+    "identifier" : "17278"
+  }, {
+    "dbId" : 193741,
+    "stId" : "R-ALL-193741",
+    "displayName" : "25(R) TetraHCA-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 400 ],
+    "identifier" : "27458"
+  }, {
+    "dbId" : 193747,
+    "stId" : "R-ALL-193747",
+    "displayName" : "TetraHCA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 377 ],
+    "identifier" : "63824"
+  }, {
+    "dbId" : 193745,
+    "stId" : "R-ALL-193745",
+    "displayName" : "4CHOL7a,12a,24(S)TONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 288 ],
+    "identifier" : "63839"
+  }, {
+    "dbId" : 193757,
+    "stId" : "R-ALL-193757",
+    "displayName" : "3,7,24THCA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 391 ],
+    "identifier" : "48736"
+  }, {
+    "dbId" : 193762,
+    "stId" : "R-ALL-193762",
+    "displayName" : "TetraHCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 394 ],
+    "identifier" : "63824"
+  }, {
+    "dbId" : 193760,
+    "stId" : "R-ALL-193760",
+    "displayName" : "5beta-cholestan-7alpha,24(S)-diol-3-one [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 312 ],
+    "identifier" : "63829"
+  }, {
+    "dbId" : 193778,
+    "stId" : "R-ALL-193778",
+    "displayName" : "3,7,24THCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 396 ],
+    "identifier" : "48736"
+  }, {
+    "dbId" : 29424,
+    "stId" : "R-ALL-29424",
+    "displayName" : "Gly [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57305",
+    "parents" : [ 194069 ]
+  }, {
+    "dbId" : 193777,
+    "stId" : "R-ALL-193777",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,12alpha,24(S)-tetrol [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 330 ],
+    "identifier" : "63834"
+  }, {
+    "dbId" : 193782,
+    "stId" : "R-ALL-193782",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,12alpha,24(S),27-pentol [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 341 ],
+    "identifier" : "63835"
+  }, {
+    "dbId" : 193785,
+    "stId" : "R-ALL-193785",
+    "displayName" : "3alpha,7alpha,12alpha,24(S)-tetrahydroxy-5beta-cholestan-27-al [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 358 ],
+    "identifier" : "63849"
+  }, {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 32, 484, 280 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 193793,
+    "stId" : "R-ALL-193793",
+    "displayName" : "25(R) TetraHCA-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 428 ],
+    "identifier" : "27458"
+  }, {
+    "dbId" : 193804,
+    "stId" : "R-ALL-193804",
+    "displayName" : "27OH-CHOL [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 459 ],
+    "identifier" : "17703"
+  }, {
+    "dbId" : 76577,
+    "stId" : "R-ALL-76577",
+    "displayName" : "AMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 135, 407, 632 ],
+    "identifier" : "16027"
+  }, {
+    "dbId" : 8873894,
+    "stId" : "R-HSA-8873894",
+    "displayName" : "STARD5:DCA,LCA [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 891 ],
+    "children" : [ 176655, 5357505, 196114 ]
+  }, {
+    "dbId" : 193830,
+    "stId" : "R-ALL-193830",
+    "displayName" : "5beta-cholestan-7alpha,27-diol-3-one [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 519 ],
+    "identifier" : "48778"
+  }, {
+    "dbId" : 213285,
+    "stId" : "R-ALL-213285",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,24(S)-triol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 327 ],
+    "identifier" : "63831"
+  }, {
+    "dbId" : 193829,
+    "stId" : "R-ALL-193829",
+    "displayName" : "5beta-cholestan-7alpha,12alpha,27-triol-3-one [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 507 ],
+    "identifier" : "48834"
+  }, {
+    "dbId" : 193835,
+    "stId" : "R-ALL-193835",
+    "displayName" : "4CHOL7a,27DONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 478 ],
+    "identifier" : "48825"
+  }, {
+    "dbId" : 193842,
+    "stId" : "R-ALL-193842",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,26-triol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 536 ],
+    "identifier" : "28540"
+  }, {
+    "dbId" : 193843,
+    "stId" : "R-ALL-193843",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,12alpha,27-tetrol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 526 ],
+    "identifier" : "17278"
+  }, {
+    "dbId" : 192307,
+    "stId" : "R-ALL-192307",
+    "displayName" : "NAD+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 183 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 193840,
+    "stId" : "R-ALL-193840",
+    "displayName" : "CHOL [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 445 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 192305,
+    "stId" : "R-ALL-192305",
+    "displayName" : "NADH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 184 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 193846,
+    "stId" : "R-ALL-193846",
+    "displayName" : "27OH-CHOL [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 446 ],
+    "identifier" : "17703"
+  }, {
+    "dbId" : 192308,
+    "stId" : "R-ALL-192308",
+    "displayName" : "25(R) THCA-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 153 ],
+    "identifier" : "37642"
+  }, {
+    "dbId" : 192314,
+    "stId" : "R-ALL-192314",
+    "displayName" : "propionyl CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 196 ],
+    "identifier" : "15539"
+  }, {
+    "dbId" : 192316,
+    "stId" : "R-ALL-192316",
+    "displayName" : "25(S) THCA-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 158 ],
+    "identifier" : "37643"
+  }, {
+    "dbId" : 192322,
+    "stId" : "R-HSA-192322",
+    "displayName" : "HSD17B4(1-736) [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51659",
+    "geneNames" : [ "HSD17B4", "EDH17B4", "SDR8C1" ],
+    "parents" : [ 389999 ]
+  }, {
+    "dbId" : 192320,
+    "stId" : "R-HSA-192320",
+    "displayName" : "ACOX2:FAD [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 167 ],
+    "children" : [ 141335, 192321 ]
+  }, {
+    "dbId" : 192321,
+    "stId" : "R-HSA-192321",
+    "displayName" : "ACOX2 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99424",
+    "geneNames" : [ "ACOX2" ],
+    "parents" : [ 192320 ]
+  }, {
+    "dbId" : 192332,
+    "stId" : "R-ALL-192332",
+    "displayName" : "TCCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28865",
+    "parents" : [ 194097, 193416, 194156, 194131 ]
+  }, {
+    "dbId" : 192339,
+    "stId" : "R-ALL-192339",
+    "displayName" : "3alpha,7alpha,12alpha-trihydroxy-5beta-cholest-24-one-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 185 ],
+    "identifier" : "27379"
+  }, {
+    "dbId" : 192342,
+    "stId" : "R-ALL-192342",
+    "displayName" : "THCA-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 166 ],
+    "identifier" : "27505"
+  }, {
+    "dbId" : 176478,
+    "stId" : "R-ALL-176478",
+    "displayName" : "CHOL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 543 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 192348,
+    "stId" : "R-HSA-192348",
+    "displayName" : "SCP2-1 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 197 ],
+    "identifier" : "P22307-1",
+    "geneNames" : [ "SCP2" ]
+  }, {
+    "dbId" : 192356,
+    "stId" : "R-ALL-192356",
+    "displayName" : "choloyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 195 ],
+    "identifier" : "15519"
+  }, {
+    "dbId" : 193386,
+    "stId" : "R-HSA-193386",
+    "displayName" : "SLC27A2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 420, 136 ],
+    "identifier" : "O14975",
+    "geneNames" : [ "SLC27A2", "ACSVL1", "FACVL1", "FATP2", "VLACS" ]
+  }, {
+    "dbId" : 193387,
+    "stId" : "R-ALL-193387",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,26-triol [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 85 ],
+    "identifier" : "28540"
+  }, {
+    "dbId" : 193384,
+    "stId" : "R-ALL-193384",
+    "displayName" : "CHOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 22, 251 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 389999,
+    "stId" : "R-HSA-389999",
+    "displayName" : "HSD17B4 dimer [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 175 ],
+    "children" : [ 192322 ]
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 81, 340, 359, 376, 106, 447 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 116, 453, 345, 76, 381, 366, 95 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 193403,
+    "stId" : "R-ALL-193403",
+    "displayName" : "3alpha,7alpha-dihydroxy-5beta-cholest-24-one-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 188 ],
+    "identifier" : "28533"
+  }, {
+    "dbId" : 113533,
+    "stId" : "R-ALL-113533",
+    "displayName" : "O2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 114, 343, 455, 379, 364, 78 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 113535,
+    "stId" : "R-ALL-113535",
+    "displayName" : "O2 [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 164 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 193404,
+    "stId" : "R-ALL-193404",
+    "displayName" : "cholate bile salts [peroxisomal matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 214 ],
+    "children" : [ 193512, 193483 ]
+  }, {
+    "dbId" : 2855253,
+    "stId" : "R-HSA-2855253",
+    "displayName" : "AKR1C1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q04828",
+    "geneNames" : [ "AKR1C1", "DDH", "DDH1" ],
+    "parents" : [ 3229260 ]
+  }, {
+    "dbId" : 2213214,
+    "stId" : "R-HSA-2213214",
+    "displayName" : "OSBPL1A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BXW6",
+    "geneNames" : [ "OSBPL1A", "ORP1", "OSBP8", "OSBPL1", "OSBPL1B" ],
+    "parents" : [ 8868084 ]
+  }, {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 580, 601 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 1806234,
+    "stId" : "R-ALL-1806234",
+    "displayName" : "PI4P [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1205 ],
+    "identifier" : "17526"
+  }, {
+    "dbId" : 381319,
+    "stId" : "R-HSA-381319",
+    "displayName" : "RXRA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 884 ],
+    "identifier" : "P19793",
+    "geneNames" : [ "RXRA", "NR2B1" ],
+    "parents" : [ 5340274 ]
+  }, {
+    "dbId" : 193416,
+    "stId" : "R-ALL-193416",
+    "displayName" : "bile salts [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 225, 646 ],
+    "children" : [ 192332, 159422, 159432, 159435 ]
+  }, {
+    "dbId" : 193422,
+    "stId" : "R-ALL-193422",
+    "displayName" : "(24R, 25R) 3alpha,7alpha,12alpha,24-tetrahydroxy-5beta-cholestanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 174 ],
+    "identifier" : "52050"
+  }, {
+    "dbId" : 193426,
+    "stId" : "R-HSA-193426",
+    "displayName" : "ACOT8 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 203 ],
+    "identifier" : "O14734",
+    "geneNames" : [ "ACOT8", "ACTEIII", "PTE1", "PTE2" ]
+  }, {
+    "dbId" : 5357505,
+    "stId" : "R-ALL-5357505",
+    "displayName" : "DCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 890 ],
+    "identifier" : "28834",
+    "parents" : [ 8873894 ]
+  }, {
+    "dbId" : 1806217,
+    "stId" : "R-ALL-1806217",
+    "displayName" : "PI4P [Golgi membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1203 ],
+    "identifier" : "17526"
+  }, {
+    "dbId" : 193429,
+    "stId" : "R-ALL-193429",
+    "displayName" : "25(R) DHCA-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 155 ],
+    "identifier" : "15494"
+  }, {
+    "dbId" : 193435,
+    "stId" : "R-ALL-193435",
+    "displayName" : "3alpha,7alpha-dihydroxy-5beta-cholestan-26-al [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 102 ],
+    "identifier" : "27428"
+  }, {
+    "dbId" : 113563,
+    "stId" : "R-ALL-113563",
+    "displayName" : "NADP+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 80, 370, 100, 388, 457, 110, 351 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 71067,
+    "stId" : "R-ALL-71067",
+    "displayName" : "Fe2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 192180 ]
+  }, {
+    "dbId" : 192415,
+    "stId" : "R-ALL-192415",
+    "displayName" : "TCDCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "9407",
+    "parents" : [ 193479, 194092, 192483 ]
+  }, {
+    "dbId" : 193436,
+    "stId" : "R-ALL-193436",
+    "displayName" : "5beta-cholestan-3alpha, 7alpha-diol [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 74 ],
+    "identifier" : "28047"
+  }, {
+    "dbId" : 193442,
+    "stId" : "R-ALL-193442",
+    "displayName" : "25(S) DHCA-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 162 ],
+    "identifier" : "15494"
+  }, {
+    "dbId" : 193440,
+    "stId" : "R-ALL-193440",
+    "displayName" : "DHCA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 121 ],
+    "identifier" : "16577"
+  }, {
+    "dbId" : 76194,
+    "stId" : "R-ALL-76194",
+    "displayName" : "CoA-SH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 642, 131, 628, 405 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 193441,
+    "stId" : "R-HSA-193441",
+    "displayName" : "HSD3B7 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 480, 33, 277 ],
+    "identifier" : "Q9H2F3",
+    "geneNames" : [ "HSD3B7" ]
+  }, {
+    "dbId" : 193446,
+    "stId" : "R-ALL-193446",
+    "displayName" : "Gly [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57305",
+    "parents" : [ 193463 ]
+  }, {
+    "dbId" : 113575,
+    "stId" : "R-ALL-113575",
+    "displayName" : "H2O2 [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 165 ],
+    "identifier" : "16240"
+  }, {
+    "dbId" : 192421,
+    "stId" : "R-ALL-192421",
+    "displayName" : "TCCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28865",
+    "parents" : [ 194117, 193479, 194092, 192483 ]
+  }, {
+    "dbId" : 193451,
+    "stId" : "R-ALL-193451",
+    "displayName" : "cholate [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 202 ],
+    "identifier" : "16359"
+  }, {
+    "dbId" : 193448,
+    "stId" : "R-ALL-193448",
+    "displayName" : "bile salts [peroxisomal matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 224 ],
+    "children" : [ 193484, 193512, 193483, 193530 ]
+  }, {
+    "dbId" : 192431,
+    "stId" : "R-ALL-192431",
+    "displayName" : "CCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16359",
+    "parents" : [ 194092, 192483 ]
+  }, {
+    "dbId" : 193453,
+    "stId" : "R-ALL-193453",
+    "displayName" : "chenodeoxycholate bile salts [peroxisomal matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 219 ],
+    "children" : [ 193484, 193530 ]
+  }, {
+    "dbId" : 193459,
+    "stId" : "R-ALL-193459",
+    "displayName" : "25(S) 3alpha,7alpha-dihydroxy-5beta-cholest-24-enoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 170 ],
+    "identifier" : "27393"
+  }, {
+    "dbId" : 193457,
+    "stId" : "R-ALL-193457",
+    "displayName" : "25(R) DHCA-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 140 ],
+    "identifier" : "15494"
+  }, {
+    "dbId" : 193463,
+    "stId" : "R-ALL-193463",
+    "displayName" : "glycine; taurine [peroxisomal matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 213 ],
+    "children" : [ 193513, 193446 ]
+  }, {
+    "dbId" : 4755453,
+    "stId" : "R-ALL-4755453",
+    "displayName" : "CDCA [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16755",
+    "parents" : [ 5340249 ]
+  }, {
+    "dbId" : 192442,
+    "stId" : "R-ALL-192442",
+    "displayName" : "CDCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16755",
+    "parents" : [ 194092, 192483 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 593, 130, 626, 648, 399 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 193465,
+    "stId" : "R-ALL-193465",
+    "displayName" : "H+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 186 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 113600,
+    "stId" : "R-ALL-113600",
+    "displayName" : "NADPH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 368, 97, 451, 118, 347, 77, 383 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 193472,
+    "stId" : "R-ALL-193472",
+    "displayName" : "chenodeoxycholoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 199 ],
+    "identifier" : "28701"
+  }, {
+    "dbId" : 193473,
+    "stId" : "R-ALL-193473",
+    "displayName" : "CCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 210 ],
+    "identifier" : "16359",
+    "parents" : [ 194096, 194156, 194131 ]
+  }, {
+    "dbId" : 193479,
+    "stId" : "R-ALL-193479",
+    "displayName" : "bile salts [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 229 ],
+    "parents" : [ 194125 ],
+    "children" : [ 192415, 192473, 192421, 192464 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 583, 603 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 3229177,
+    "stId" : "R-HSA-3229177",
+    "displayName" : "Cytochrome P450 (CYP8B1 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 673, 655, 671 ],
+    "children" : [ 192012, 62410 ]
+  }, {
+    "dbId" : 193483,
+    "stId" : "R-ALL-193483",
+    "displayName" : "glycocholate [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17687",
+    "parents" : [ 193404, 193448 ]
+  }, {
+    "dbId" : 62410,
+    "stId" : "R-HSA-62410",
+    "displayName" : "PTGIS [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16647",
+    "geneNames" : [ "PTGIS", "CYP8", "CYP8A1" ],
+    "parents" : [ 3229177 ]
+  }, {
+    "dbId" : 193484,
+    "stId" : "R-ALL-193484",
+    "displayName" : "taurochenodeoxycholate [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16525",
+    "parents" : [ 193453, 193448 ]
+  }, {
+    "dbId" : 192464,
+    "stId" : "R-ALL-192464",
+    "displayName" : "GCCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17687",
+    "parents" : [ 194117, 193479, 194092, 192483 ]
+  }, {
+    "dbId" : 3219435,
+    "stId" : "R-HSA-3219435",
+    "displayName" : "Cytochrome P450 (CYP7A1 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 651 ],
+    "children" : [ 192169, 192117 ]
+  }, {
+    "dbId" : 2142714,
+    "stId" : "R-HSA-2142714",
+    "displayName" : "AKR1C3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42330",
+    "geneNames" : [ "AKR1C3", "DDH1", "HSD17B5", "KIAA0119", "PGFS" ],
+    "parents" : [ 3229260 ]
+  }, {
+    "dbId" : 192473,
+    "stId" : "R-ALL-192473",
+    "displayName" : "GCDCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "36274",
+    "parents" : [ 193479, 192483 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 34, 322, 486, 550, 296, 41, 268, 50, 530, 499, 21, 309, 566, 247, 471, 284, 62, 511 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 192483,
+    "stId" : "R-ALL-192483",
+    "displayName" : "bile salts and acids [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 581 ],
+    "parents" : [ 194165 ],
+    "children" : [ 192415, 192431, 192473, 192442, 192421, 192464 ]
+  }, {
+    "dbId" : 191968,
+    "stId" : "R-ALL-191968",
+    "displayName" : "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-27-al [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 90 ],
+    "identifier" : "16466"
+  }, {
+    "dbId" : 193505,
+    "stId" : "R-ALL-193505",
+    "displayName" : "DHCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 126 ],
+    "identifier" : "16577"
+  }, {
+    "dbId" : 191975,
+    "stId" : "R-HSA-191975",
+    "displayName" : "AKR1D1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 48, 509, 302 ],
+    "identifier" : "P51857",
+    "geneNames" : [ "AKR1D1", "SRD5B1" ]
+  }, {
+    "dbId" : 193509,
+    "stId" : "R-HSA-193509",
+    "displayName" : "ABCB11 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 232 ],
+    "identifier" : "O95342",
+    "geneNames" : [ "ABCB11", "BSEP" ]
+  }, {
+    "dbId" : 193514,
+    "stId" : "R-ALL-193514",
+    "displayName" : "CoA-SH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 194, 205, 222 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 193512,
+    "stId" : "R-ALL-193512",
+    "displayName" : "taurocholate [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28865",
+    "parents" : [ 193404, 193448 ]
+  }, {
+    "dbId" : 193513,
+    "stId" : "R-ALL-193513",
+    "displayName" : "TAU [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15891",
+    "parents" : [ 193463 ]
+  }, {
+    "dbId" : 176617,
+    "stId" : "R-ALL-176617",
+    "displayName" : "27HCHOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 461 ],
+    "identifier" : "17703"
+  }, {
+    "dbId" : 191980,
+    "stId" : "R-ALL-191980",
+    "displayName" : "5beta-cholestan-7alpha-ol-3-one [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 57 ],
+    "identifier" : "2290"
+  }, {
+    "dbId" : 193517,
+    "stId" : "R-HSA-193517",
+    "displayName" : "BAAT [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 215 ],
+    "identifier" : "Q14032",
+    "geneNames" : [ "BAAT" ]
+  }, {
+    "dbId" : 191985,
+    "stId" : "R-HSA-191985",
+    "displayName" : "CH25H [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95992",
+    "geneNames" : [ "CH25H" ],
+    "parents" : [ 192180 ]
+  }, {
+    "dbId" : 191990,
+    "stId" : "R-HSA-191990",
+    "displayName" : "SLC27A5 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 146, 403, 630 ],
+    "identifier" : "Q9Y2P5",
+    "geneNames" : [ "SLC27A5", "ACSB", "ACSVL6", "FACVL3", "FATP5" ]
+  }, {
+    "dbId" : 193530,
+    "stId" : "R-ALL-193530",
+    "displayName" : "glycochenodeoxycholate [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "36274",
+    "parents" : [ 193453, 193448 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 193792,
+    "stId" : "R-HSA-193792",
+    "displayName" : "CYP27A1 27-hydroxylates 5β-CHOL3α,7α,24(s)-triol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193715 ],
+    "following" : [ 193719 ],
+    "inputs" : [ 113533, 193720, 113529, 113600 ],
+    "outputs" : [ 193708, 113563, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 353 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193537,
+    "stId" : "R-HSA-193537",
+    "displayName" : "5beta-cholestan-3alpha, 7alpha-diol is translocated from the cytosol to the mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192160 ],
+    "following" : [ 193393 ],
+    "inputs" : [ 192030 ],
+    "outputs" : [ 193436 ],
+    "efs" : [ ],
+    "diagramIds" : [ 73 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192010,
+    "stId" : "R-HSA-192010",
+    "displayName" : "5beta-cholestan-3alpha, 7alpha, 12alpha-triol is translocated from the cytosol to the mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192036 ],
+    "following" : [ 191999 ],
+    "inputs" : [ 192087 ],
+    "outputs" : [ 192078 ],
+    "efs" : [ ],
+    "diagramIds" : [ 70 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194187,
+    "stId" : "R-HSA-194187",
+    "displayName" : "SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5340195 ],
+    "following" : [ 194153 ],
+    "inputs" : [ 194158, 192483, 74113 ],
+    "outputs" : [ 194191, 83910 ],
+    "catalysts" : [ 194173 ],
+    "efs" : [ ],
+    "activators" : [ 5340274 ],
+    "diagramIds" : [ 578 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193800,
+    "stId" : "R-HSA-193800",
+    "displayName" : "5Beta-cholestan-7alpha,12alpha,27-triol-3-one is reduced to 5beta-cholestan-3alpha,7alpha,12alpha,27-tetrol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193821 ],
+    "following" : [ 193832 ],
+    "inputs" : [ 70106, 193829, 29364 ],
+    "outputs" : [ 29366, 193843 ],
+    "catalysts" : [ 3229260 ],
+    "efs" : [ ],
+    "diagramIds" : [ 525 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5340251,
+    "stId" : "R-HSA-5340251",
+    "displayName" : "NR1H4:DCA,CDCA,LCHA binds RXRA and NCOA1,2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 376398, 5340186, 442496, 381319 ],
+    "outputs" : [ 5340274 ],
+    "efs" : [ ],
+    "diagramIds" : [ 883 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193801,
+    "stId" : "R-HSA-193801",
+    "displayName" : "Influx of 27-hydroxycholesterol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193812 ],
+    "inputs" : [ 193804 ],
+    "outputs" : [ 176617 ],
+    "efs" : [ ],
+    "diagramIds" : [ 460 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192137,
+    "stId" : "R-HSA-192137",
+    "displayName" : "THCA is conjugated with Coenzyme A (SLC27A5 BACS)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 191971 ],
+    "following" : [ 192325 ],
+    "inputs" : [ 192013, 113592, 76194 ],
+    "outputs" : [ 111294, 192096, 76577 ],
+    "catalysts" : [ 191990 ],
+    "efs" : [ ],
+    "diagramIds" : [ 143 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193424,
+    "stId" : "R-HSA-193424",
+    "displayName" : "DHCA is conjugated with Coenzyme A (SLC27A2 VLCS)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193519 ],
+    "following" : [ 193482 ],
+    "inputs" : [ 113592, 76194, 193505 ],
+    "outputs" : [ 111294, 193457, 76577 ],
+    "catalysts" : [ 193386 ],
+    "efs" : [ ],
+    "diagramIds" : [ 137 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193808,
+    "stId" : "R-HSA-193808",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,27-triol is translocated from the cytosol to the mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193841 ],
+    "following" : [ 193497 ],
+    "inputs" : [ 193842 ],
+    "outputs" : [ 193387 ],
+    "efs" : [ ],
+    "diagramIds" : [ 539 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193812,
+    "stId" : "R-HSA-193812",
+    "displayName" : "Efflux of 27-hydroxycholesterol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192123 ],
+    "following" : [ 193801 ],
+    "inputs" : [ 193846 ],
+    "outputs" : [ 193804 ],
+    "efs" : [ ],
+    "diagramIds" : [ 458 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193816,
+    "stId" : "R-HSA-193816",
+    "displayName" : "Cholest-5-ene-3beta,7alpha,27-triol is oxidized and isomerized to 4-cholesten-7alpha,27-diol-3-one",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 191972 ],
+    "following" : [ 193824, 193845 ],
+    "inputs" : [ 29360, 192194 ],
+    "outputs" : [ 70106, 193835, 73473 ],
+    "catalysts" : [ 193441 ],
+    "efs" : [ ],
+    "diagramIds" : [ 477 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194079,
+    "stId" : "R-HSA-194079",
+    "displayName" : "SLCO1B3 transports ALB:(GCCA, TCCA) from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 194153 ],
+    "following" : [ 193362 ],
+    "inputs" : [ 194104 ],
+    "outputs" : [ 194097, 194115 ],
+    "catalysts" : [ 194075 ],
+    "efs" : [ ],
+    "diagramIds" : [ 617 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192157,
+    "stId" : "R-HSA-192157",
+    "displayName" : "CYP8B1 12-hydroxylates 4CHOL7aOLONE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192097 ],
+    "following" : [ 192067 ],
+    "inputs" : [ 70106, 192136, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 192195 ],
+    "catalysts" : [ 3229177 ],
+    "efs" : [ ],
+    "diagramIds" : [ 36 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193821,
+    "stId" : "R-HSA-193821",
+    "displayName" : "4-cholesten-7alpha,12alpha,27-triol-3-one is reduced to 5beta-cholestan-7alpha,12alpha,27-triol-3-one",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193845 ],
+    "following" : [ 193800 ],
+    "inputs" : [ 70106, 29364, 9617026 ],
+    "outputs" : [ 193829, 29366 ],
+    "catalysts" : [ 191975 ],
+    "efs" : [ ],
+    "diagramIds" : [ 506 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194083,
+    "stId" : "R-HSA-194083",
+    "displayName" : "SLCO1B1 transports ALB:(GCCA,TCCA) from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 194153 ],
+    "following" : [ 193362 ],
+    "inputs" : [ 194104 ],
+    "outputs" : [ 194097, 194115 ],
+    "catalysts" : [ 194133 ],
+    "efs" : [ ],
+    "diagramIds" : [ 612 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193824,
+    "stId" : "R-HSA-193824",
+    "displayName" : "4-cholesten-7alpha,27-diol-3-one is reduced to 5beta-cholestan-7alpha,27-diol-3-one",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193816 ],
+    "following" : [ 193841 ],
+    "inputs" : [ 70106, 193835, 29364 ],
+    "outputs" : [ 29366, 193830 ],
+    "catalysts" : [ 191975 ],
+    "efs" : [ ],
+    "diagramIds" : [ 518 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192160,
+    "stId" : "R-HSA-192160",
+    "displayName" : "5beta-cholestan-7alpha-ol-3-one is reduced to 5beta-cholestan-3alpha, 7alpha-diol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192033 ],
+    "following" : [ 193537 ],
+    "inputs" : [ 191980, 70106, 29364 ],
+    "outputs" : [ 192030, 29366 ],
+    "catalysts" : [ 3229260 ],
+    "efs" : [ ],
+    "diagramIds" : [ 67 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192033,
+    "stId" : "R-HSA-192033",
+    "displayName" : "4-cholesten-7alpha-ol-3-one is reduced to 5beta-cholestan-7alpha-ol-3-one",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192097 ],
+    "following" : [ 192160 ],
+    "inputs" : [ 70106, 192136, 29364 ],
+    "outputs" : [ 191980, 29366 ],
+    "catalysts" : [ 191975 ],
+    "efs" : [ ],
+    "diagramIds" : [ 56 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192036,
+    "stId" : "R-HSA-192036",
+    "displayName" : "5Beta-cholesten-7alpha, 12alpha-diol-3-one is reduced to 5beta-cholestan-3alpha, 7alpha, 12alpha-triol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192067 ],
+    "following" : [ 192010 ],
+    "inputs" : [ 70106, 29364, 192064 ],
+    "outputs" : [ 29366, 192087 ],
+    "catalysts" : [ 3229260 ],
+    "efs" : [ ],
+    "diagramIds" : [ 58 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192042,
+    "stId" : "R-HSA-192042",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,12alpha,27-tetrol is oxidized to 3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-27-al",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 191999, 193832 ],
+    "following" : [ 192054 ],
+    "inputs" : [ 192201, 113563 ],
+    "outputs" : [ 113529, 191968, 113600 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 88 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193832,
+    "stId" : "R-HSA-193832",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,12alpha,27-tetrol is translocated from the cytosol to the mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193800 ],
+    "following" : [ 192042 ],
+    "inputs" : [ 193843 ],
+    "outputs" : [ 192201 ],
+    "efs" : [ ],
+    "diagramIds" : [ 538 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193455,
+    "stId" : "R-HSA-193455",
+    "displayName" : "(24R, 25R) 3alpha,7alpha,12alpha,24-tetrahydroxy-5beta-cholestanoyl-CoA is oxidized to 3alpha,7alpha,12alpha-trihydroxy-5beta-cholest-24-one-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192331, 193763 ],
+    "following" : [ 192341 ],
+    "inputs" : [ 193422, 192307 ],
+    "outputs" : [ 193465, 192305, 192339 ],
+    "catalysts" : [ 389999 ],
+    "efs" : [ ],
+    "diagramIds" : [ 182 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193711,
+    "stId" : "R-HSA-193711",
+    "displayName" : "3,7,24THCA is conjugated with Coenzyme A (SLC27A5 BACS)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193786 ],
+    "following" : [ 193753 ],
+    "inputs" : [ 113592, 76194, 193778 ],
+    "outputs" : [ 111294, 29356, 193739, 76577 ],
+    "catalysts" : [ 191990 ],
+    "efs" : [ ],
+    "diagramIds" : [ 410 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193452,
+    "stId" : "R-HSA-193452",
+    "displayName" : "Isomerization of 25(R) DHCA-CoA to 25(S) DHCA-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193482 ],
+    "following" : [ 193369 ],
+    "inputs" : [ 193429 ],
+    "outputs" : [ 193442 ],
+    "catalysts" : [ 192146 ],
+    "efs" : [ ],
+    "diagramIds" : [ 161 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193709,
+    "stId" : "R-HSA-193709",
+    "displayName" : "CYP8B1 12-hydroxylates 4CHOL7a,24(S)DIOL",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193789 ],
+    "following" : [ 193755 ],
+    "inputs" : [ 193724, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 193745 ],
+    "catalysts" : [ 3229177 ],
+    "efs" : [ ],
+    "diagramIds" : [ 286 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192178,
+    "stId" : "R-HSA-192178",
+    "displayName" : "CYP39A1 7-hydroxylates 24OH-CHOL",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193767 ],
+    "following" : [ 193789 ],
+    "inputs" : [ 192060, 70106, 29368, 29364 ],
+    "outputs" : [ 192189, 29356, 29366 ],
+    "catalysts" : [ 192166 ],
+    "efs" : [ ],
+    "diagramIds" : [ 261 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193715,
+    "stId" : "R-HSA-193715",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,24(S)-triol is translocated from the cytosol to the mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193758 ],
+    "following" : [ 193792 ],
+    "inputs" : [ 213285 ],
+    "outputs" : [ 193720 ],
+    "efs" : [ ],
+    "diagramIds" : [ 331 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192051,
+    "stId" : "R-HSA-192051",
+    "displayName" : "CYP7A1 7-hydroxylates CHOL",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5340195 ],
+    "following" : [ 192097 ],
+    "inputs" : [ 70106, 193384, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 192114 ],
+    "catalysts" : [ 3219435 ],
+    "efs" : [ ],
+    "inhibitors" : [ 5340274 ],
+    "diagramIds" : [ 19 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193841,
+    "stId" : "R-HSA-193841",
+    "displayName" : "5beta-cholestan-7alpha,27-diol-3-one is reduced to 5beta-cholestan-3alpha,7alpha,27-triol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193824 ],
+    "following" : [ 193808 ],
+    "inputs" : [ 70106, 29364, 193830 ],
+    "outputs" : [ 29366, 193842 ],
+    "catalysts" : [ 3229260 ],
+    "efs" : [ ],
+    "diagramIds" : [ 535 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193713,
+    "stId" : "R-HSA-193713",
+    "displayName" : "3alpha,7alpha,12alpha,24(S)-tetrahydroxy-5beta-cholestan-27-al is oxidized to 3alpha,7alpha,12alpha,24(S)-tetrahydroxy-5beta-cholestanoate (TetraHCA)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193780 ],
+    "following" : [ 193722 ],
+    "inputs" : [ 113533, 193785, 113529, 113600 ],
+    "outputs" : [ 113563, 193747, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 375 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192054,
+    "stId" : "R-HSA-192054",
+    "displayName" : "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-27-al is oxidized to 3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoate (THCA)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192042 ],
+    "following" : [ 191971 ],
+    "inputs" : [ 113533, 113529, 191968, 113600 ],
+    "outputs" : [ 113563, 192161, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 105 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8868402,
+    "stId" : "R-HSA-8868402",
+    "displayName" : "OSBP exchanges 25OH-CHOL with PI4P from ER membrane to Golgi membrane",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8868399, 1806217 ],
+    "outputs" : [ 8868393, 1806234 ],
+    "catalysts" : [ 429725 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1202 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193719,
+    "stId" : "R-HSA-193719",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,24(S),27-tetrol is oxidized to 3alpha,7alpha,24(S)-trihydroxy-5beta-cholestan-27-al",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193792 ],
+    "following" : [ 193737 ],
+    "inputs" : [ 193708, 113533, 113529, 113600 ],
+    "outputs" : [ 113563, 193716, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 371 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193460,
+    "stId" : "R-HSA-193460",
+    "displayName" : "3alpha, 7alpha-dihydroxy-5beta-cholestan-26-al is oxidized to 3alpha, 7alpha-dihydroxy-5beta-cholestanoate (DHCA)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193497 ],
+    "following" : [ 193519 ],
+    "inputs" : [ 113533, 193435, 113529, 113600 ],
+    "outputs" : [ 113563, 193440, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 120 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193845,
+    "stId" : "R-HSA-193845",
+    "displayName" : "CYP8B1 12-hydroxylates 4CHOL7a,27DONE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193816 ],
+    "following" : [ 193821 ],
+    "inputs" : [ 70106, 193835, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 9617026 ],
+    "catalysts" : [ 3229177 ],
+    "efs" : [ ],
+    "diagramIds" : [ 488 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193722,
+    "stId" : "R-HSA-193722",
+    "displayName" : "TetraHCA is translocated from the mitochondrial matrix to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193713 ],
+    "following" : [ 193727, 193766 ],
+    "inputs" : [ 193747 ],
+    "outputs" : [ 193762 ],
+    "efs" : [ ],
+    "diagramIds" : [ 393 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192315,
+    "stId" : "R-HSA-192315",
+    "displayName" : "Bile salts are translocated from the peroxisomal matrix to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192312, 193491 ],
+    "following" : [ 193362 ],
+    "inputs" : [ 193448 ],
+    "outputs" : [ 193416 ],
+    "efs" : [ ],
+    "diagramIds" : [ 223 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192312,
+    "stId" : "R-HSA-192312",
+    "displayName" : "Choloyl CoA reacts with glycine or taurine to form glycocholate or taurocholate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192341 ],
+    "following" : [ 192315 ],
+    "inputs" : [ 192356, 193463 ],
+    "outputs" : [ 193404, 193514 ],
+    "catalysts" : [ 193517 ],
+    "efs" : [ ],
+    "diagramIds" : [ 212 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192056,
+    "stId" : "R-HSA-192056",
+    "displayName" : "Isomerization of 25(R) THCA-CoA to 25(S) THCA-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192325 ],
+    "following" : [ 192335 ],
+    "inputs" : [ 192308 ],
+    "outputs" : [ 192316 ],
+    "catalysts" : [ 192146 ],
+    "efs" : [ ],
+    "diagramIds" : [ 157 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193727,
+    "stId" : "R-HSA-193727",
+    "displayName" : "TetraHCA is conjugated with Coenzyme A (SLC27A2 VLCS)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193722 ],
+    "following" : [ 193761 ],
+    "inputs" : [ 113592, 76194, 193762 ],
+    "outputs" : [ 111294, 193741, 29356, 76577 ],
+    "catalysts" : [ 193386 ],
+    "efs" : [ ],
+    "diagramIds" : [ 416 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192061,
+    "stId" : "R-HSA-192061",
+    "displayName" : "CYP46A1 24-hydroxylates CHOL",
+    "schemaClass" : "Reaction",
+    "following" : [ 193776 ],
+    "inputs" : [ 70106, 193384, 29368, 29364 ],
+    "outputs" : [ 192060, 29356, 29366 ],
+    "catalysts" : [ 192202 ],
+    "efs" : [ ],
+    "diagramIds" : [ 240 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192067,
+    "stId" : "R-HSA-192067",
+    "displayName" : "4-cholesten-7alpha, 12alpha-diol-3-one is reduced to 5beta-cholesten-7alpha, 12alpha-diol-3-one",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192157 ],
+    "following" : [ 192036 ],
+    "inputs" : [ 70106, 29364, 192195 ],
+    "outputs" : [ 29366, 192064 ],
+    "catalysts" : [ 191975 ],
+    "efs" : [ ],
+    "diagramIds" : [ 46 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 159425,
+    "stId" : "R-HSA-159425",
+    "displayName" : "Cytosolic cholate and chenodeoxycholate are conjugated with Coenzyme A (SLC27A5 BACS)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 194130 ],
+    "following" : [ 159431 ],
+    "inputs" : [ 113592, 76194, 194096 ],
+    "outputs" : [ 111294, 29356, 194073, 76577 ],
+    "catalysts" : [ 191990 ],
+    "efs" : [ ],
+    "diagramIds" : [ 621 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192065,
+    "stId" : "R-HSA-192065",
+    "displayName" : "CYP7B1 7-hydroxylates 25OH-CHOL",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5340195 ],
+    "inputs" : [ 70106, 29368, 192148, 29364 ],
+    "outputs" : [ 29356, 192184, 29366 ],
+    "catalysts" : [ 2975806 ],
+    "efs" : [ ],
+    "inhibitors" : [ 5340274 ],
+    "diagramIds" : [ 557 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 159431,
+    "stId" : "R-HSA-159431",
+    "displayName" : "Cytosolic chenodeoxycholoyl-CoA or choloyl-CoA are conjugated with glycine or taurine",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 159425 ],
+    "following" : [ 193362 ],
+    "inputs" : [ 194073, 194069 ],
+    "outputs" : [ 193416, 76194 ],
+    "catalysts" : [ 159392 ],
+    "efs" : [ ],
+    "diagramIds" : [ 638 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192325,
+    "stId" : "R-HSA-192325",
+    "displayName" : "25(R) THCA-CoA is translocated from the cytosol to the peroxisome",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193401, 192137 ],
+    "following" : [ 192056 ],
+    "inputs" : [ 192096 ],
+    "outputs" : [ 192308 ],
+    "efs" : [ ],
+    "diagramIds" : [ 152 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193482,
+    "stId" : "R-HSA-193482",
+    "displayName" : "25(R) DHCA-CoA is translocated from the cytosol to the peroxisome",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193407, 193424 ],
+    "following" : [ 193452 ],
+    "inputs" : [ 193457 ],
+    "outputs" : [ 193429 ],
+    "efs" : [ ],
+    "diagramIds" : [ 154 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192331,
+    "stId" : "R-HSA-192331",
+    "displayName" : "3alpha,7alpha,12alpha-trihydroxy-5beta-cholest-24-enoyl-CoA (THCA-CoA) is hydrated to (24R, 25R) 3alpha,7alpha,12alpha,24-tetrahydroxy-5beta-cholestanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192335 ],
+    "following" : [ 193455 ],
+    "inputs" : [ 141343, 192342 ],
+    "outputs" : [ 193422 ],
+    "catalysts" : [ 389999 ],
+    "efs" : [ ],
+    "diagramIds" : [ 172 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193736,
+    "stId" : "R-HSA-193736",
+    "displayName" : "Isomerization of 3,7,24THCA-CoA to (24R, 25R) 3alpha,7alpha,24-trihydroxy-5beta-cholestanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193753 ],
+    "following" : [ 193508 ],
+    "inputs" : [ 193732 ],
+    "outputs" : [ 193732 ],
+    "catalysts" : [ 192146 ],
+    "efs" : [ ],
+    "diagramIds" : [ 435 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193737,
+    "stId" : "R-HSA-193737",
+    "displayName" : "3alpha,7alpha,24(S)-trihydroxy-5beta-cholestan-27-al is oxidized to 3alpha,7alpha,24(S)-trihydroxy-5beta-cholestanoate (3,7,24THCA)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193719 ],
+    "following" : [ 193786 ],
+    "inputs" : [ 113533, 113529, 193716, 113600 ],
+    "outputs" : [ 193757, 113563, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 390 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194121,
+    "stId" : "R-HSA-194121",
+    "displayName" : "Co-transport (influx) of bile salts and sodium ions by NTCP",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 194153 ],
+    "following" : [ 193362 ],
+    "inputs" : [ 194125, 74113 ],
+    "outputs" : [ 193416, 83910, 194115 ],
+    "catalysts" : [ 194116 ],
+    "efs" : [ ],
+    "diagramIds" : [ 597 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193743,
+    "stId" : "R-HSA-193743",
+    "displayName" : "3,7,24THCA is conjugated with Coenzyme A (SLC27A2 VLCS)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193786 ],
+    "following" : [ 193753 ],
+    "inputs" : [ 113592, 76194, 193778 ],
+    "outputs" : [ 111294, 29356, 193739, 76577 ],
+    "catalysts" : [ 193386 ],
+    "efs" : [ ],
+    "diagramIds" : [ 423 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192335,
+    "stId" : "R-HSA-192335",
+    "displayName" : "25(S) THCA-CoA is dehydrogenated to 3alpha,7alpha,12alpha-trihydroxy-5beta-cholest-24-enoyl-CoA (THCA-CoA)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192056 ],
+    "following" : [ 192331 ],
+    "inputs" : [ 113535, 192316 ],
+    "outputs" : [ 113575, 192342 ],
+    "catalysts" : [ 192320 ],
+    "efs" : [ ],
+    "diagramIds" : [ 163 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194130,
+    "stId" : "R-HSA-194130",
+    "displayName" : "Transport (influx) of bile salts and acids by OATP-A",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 194153 ],
+    "following" : [ 193362, 159425 ],
+    "inputs" : [ 194110 ],
+    "outputs" : [ 194131, 194115 ],
+    "catalysts" : [ 194062 ],
+    "efs" : [ ],
+    "diagramIds" : [ 606 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193362,
+    "stId" : "R-HSA-193362",
+    "displayName" : "ABCB11 transports bile salts from cytosol to extracellular region",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 194079, 194121, 192315, 159431, 194083, 194130 ],
+    "inputs" : [ 29356, 193416, 113592 ],
+    "outputs" : [ 29372, 29370, 193479 ],
+    "catalysts" : [ 193509 ],
+    "efs" : [ ],
+    "diagramIds" : [ 227 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193746,
+    "stId" : "R-HSA-193746",
+    "displayName" : "4-cholesten-7alpha,24(S)-diol-3-one is reduced to 5beta-cholestan-7alpha,24(S)-diol-3-one",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193789 ],
+    "following" : [ 193758 ],
+    "inputs" : [ 193724, 70106, 29364 ],
+    "outputs" : [ 29366, 193760 ],
+    "catalysts" : [ 191975 ],
+    "efs" : [ ],
+    "diagramIds" : [ 311 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193491,
+    "stId" : "R-HSA-193491",
+    "displayName" : "Chenodeoxycholoyl CoA reacts with glycine or taurine to form glycochenodeoxycholate or taurochenodeoxycholate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193533 ],
+    "following" : [ 192315 ],
+    "inputs" : [ 193463, 193472 ],
+    "outputs" : [ 193453, 193514 ],
+    "catalysts" : [ 193517 ],
+    "efs" : [ ],
+    "diagramIds" : [ 218 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8867667,
+    "stId" : "R-HSA-8867667",
+    "displayName" : "OSBPs transport 25OH-CHOL from ER membrane to plasma membrane",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8868399 ],
+    "outputs" : [ 8868400 ],
+    "catalysts" : [ 8868084 ],
+    "efs" : [ ],
+    "diagramIds" : [ 897 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192341,
+    "stId" : "R-HSA-192341",
+    "displayName" : "Thiolysis of 3alpha,7alpha,12alpha-trihydroxy-5beta-cholan-24-one-CoA yields choloyl-CoA (3alpha,7alpha,12alpha-trihydroxy-5beta-cholan-24-one-CoA) and propionyl CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193455 ],
+    "following" : [ 193385, 192312 ],
+    "inputs" : [ 193514, 192339 ],
+    "outputs" : [ 192314, 192356 ],
+    "catalysts" : [ 192348 ],
+    "efs" : [ ],
+    "diagramIds" : [ 193 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193755,
+    "stId" : "R-HSA-193755",
+    "displayName" : "4-cholesten-7alpha,12alpha,24(S)-triol-3-one is reduced to 5beta-cholestan-7alpha,12alpha,24(S)-triol-3-one",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193709 ],
+    "following" : [ 193781 ],
+    "inputs" : [ 70106, 29364, 193745 ],
+    "outputs" : [ 193707, 29366 ],
+    "catalysts" : [ 191975 ],
+    "efs" : [ ],
+    "diagramIds" : [ 299 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193369,
+    "stId" : "R-HSA-193369",
+    "displayName" : "25(S) DHCA-CoA is dehydrogenated to 25(S) 3alpha,7alpha-dihydroxy-5beta-cholest-24-enoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193452 ],
+    "following" : [ 193535 ],
+    "inputs" : [ 113535, 193442 ],
+    "outputs" : [ 113575, 193459 ],
+    "catalysts" : [ 192320 ],
+    "efs" : [ ],
+    "diagramIds" : [ 169 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193753,
+    "stId" : "R-HSA-193753",
+    "displayName" : "3,7,24THCA-CoA is translocated from the cytosol to the peroxisome",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193711, 193743 ],
+    "following" : [ 193736 ],
+    "inputs" : [ 193739 ],
+    "outputs" : [ 193732 ],
+    "efs" : [ ],
+    "diagramIds" : [ 429 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193497,
+    "stId" : "R-HSA-193497",
+    "displayName" : "5beta-cholestan-3alpha, 7alpha, 26-triol is oxidized to 3alpha, 7alpha-dihydroxy-5beta-cholestan-26-al",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193393, 193808 ],
+    "following" : [ 193460 ],
+    "inputs" : [ 113563, 193387 ],
+    "outputs" : [ 193435, 113529, 113600 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 101 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193758,
+    "stId" : "R-HSA-193758",
+    "displayName" : "5beta-cholestan-7alpha,24(S)-diol-3-one is reduced to 5beta-cholestan-3alpha,7alpha,24(S)-triol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193746 ],
+    "following" : [ 193715 ],
+    "inputs" : [ 70106, 29364, 193760 ],
+    "outputs" : [ 29366, 213285 ],
+    "catalysts" : [ 3229260 ],
+    "efs" : [ ],
+    "diagramIds" : [ 326 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193763,
+    "stId" : "R-HSA-193763",
+    "displayName" : "Isomerization of 25(R) TetraHCA-CoA to (24R, 25R) 3alpha,7alpha,12alpha,24-tetrahydroxy-5beta-cholestanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193761 ],
+    "following" : [ 193455 ],
+    "inputs" : [ 193793 ],
+    "outputs" : [ 193422 ],
+    "catalysts" : [ 192146 ],
+    "efs" : [ ],
+    "diagramIds" : [ 431 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 191971,
+    "stId" : "R-HSA-191971",
+    "displayName" : "THCA is translocated from the mitochondrial matrix to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192054 ],
+    "following" : [ 193401, 192137 ],
+    "inputs" : [ 192161 ],
+    "outputs" : [ 192013 ],
+    "efs" : [ ],
+    "diagramIds" : [ 123 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192097,
+    "stId" : "R-HSA-192097",
+    "displayName" : "7alpha-hydroxycholesterol is oxidized and isomerized to 4-cholesten-7alpha-ol-3-one",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192051 ],
+    "following" : [ 192033, 192157 ],
+    "inputs" : [ 29360, 192114 ],
+    "outputs" : [ 70106, 192136, 73473 ],
+    "catalysts" : [ 193441 ],
+    "efs" : [ ],
+    "diagramIds" : [ 29 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193761,
+    "stId" : "R-HSA-193761",
+    "displayName" : "25(R) TetraHCA-CoA is translocated from the cytosol to the peroxisome",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193727, 193766 ],
+    "following" : [ 193763 ],
+    "inputs" : [ 193741 ],
+    "outputs" : [ 193793 ],
+    "efs" : [ ],
+    "diagramIds" : [ 427 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193766,
+    "stId" : "R-HSA-193766",
+    "displayName" : "TetraHCA is conjugated with Coenzyme A (SLC27A5 BACS)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193722 ],
+    "following" : [ 193761 ],
+    "inputs" : [ 113592, 76194, 193762 ],
+    "outputs" : [ 111294, 193741, 29356, 76577 ],
+    "catalysts" : [ 191990 ],
+    "efs" : [ ],
+    "diagramIds" : [ 398 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193767,
+    "stId" : "R-HSA-193767",
+    "displayName" : "Influx of 24-hydroxycholesterol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193776 ],
+    "following" : [ 192178 ],
+    "inputs" : [ 193717 ],
+    "outputs" : [ 192060 ],
+    "efs" : [ ],
+    "diagramIds" : [ 257 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193508,
+    "stId" : "R-HSA-193508",
+    "displayName" : "(24R, 25R) 3alpha,7alpha,24-trihydroxy-5beta-cholestanoyl-CoA is oxidized to 3alpha,7alpha-dihydroxy-5beta-cholest-24-one-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193535, 193736 ],
+    "following" : [ 193533 ],
+    "inputs" : [ 193732, 192307 ],
+    "outputs" : [ 193465, 193403, 192305 ],
+    "catalysts" : [ 389999 ],
+    "efs" : [ ],
+    "diagramIds" : [ 187 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 191972,
+    "stId" : "R-HSA-191972",
+    "displayName" : "27-hydroxycholesterol is 7alpha-hydroxylated",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5340195 ],
+    "following" : [ 193816 ],
+    "inputs" : [ 70106, 176617, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 192194 ],
+    "catalysts" : [ 2975806 ],
+    "efs" : [ ],
+    "inhibitors" : [ 5340274 ],
+    "diagramIds" : [ 463 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193385,
+    "stId" : "R-HSA-193385",
+    "displayName" : "Hydrolysis of choloyl-CoA to cholate and CoASH",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192341 ],
+    "following" : [ 193399 ],
+    "inputs" : [ 141343, 192356 ],
+    "outputs" : [ 193451, 193514 ],
+    "catalysts" : [ 193426 ],
+    "efs" : [ ],
+    "diagramIds" : [ 200 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194153,
+    "stId" : "R-HSA-194153",
+    "displayName" : "Transport (efflux) of bile salts by ABCC3 (MRP3)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 194187 ],
+    "following" : [ 194079, 194083, 194121, 194130 ],
+    "inputs" : [ 194191, 113592, 194115 ],
+    "outputs" : [ 194158, 29372, 29370, 194165 ],
+    "catalysts" : [ 194172 ],
+    "efs" : [ ],
+    "diagramIds" : [ 585 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193774,
+    "stId" : "R-HSA-193774",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,12alpha,24(S)-tetrol is translocated from the cytosol to the mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193781 ],
+    "following" : [ 193787 ],
+    "inputs" : [ 193728 ],
+    "outputs" : [ 193777 ],
+    "efs" : [ ],
+    "diagramIds" : [ 329 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 191983,
+    "stId" : "R-HSA-191983",
+    "displayName" : "Cholesterol is hydroxylated to 25-hydroxycholesterol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 176478, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 192148, 29366 ],
+    "catalysts" : [ 192180 ],
+    "efs" : [ ],
+    "diagramIds" : [ 542 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193519,
+    "stId" : "R-HSA-193519",
+    "displayName" : "DHCA is translocated from the mitochondrial matrix to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193460 ],
+    "following" : [ 193407, 193424 ],
+    "inputs" : [ 193440 ],
+    "outputs" : [ 193505 ],
+    "efs" : [ ],
+    "diagramIds" : [ 125 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193776,
+    "stId" : "R-HSA-193776",
+    "displayName" : "Efflux of 24-hydroxycholesterol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192061 ],
+    "following" : [ 193767 ],
+    "inputs" : [ 192060 ],
+    "outputs" : [ 193717 ],
+    "efs" : [ ],
+    "diagramIds" : [ 255 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5340195,
+    "stId" : "R-HSA-5340195",
+    "displayName" : "NR1H4 binds DCA, CDCA, LCHA",
+    "schemaClass" : "Reaction",
+    "following" : [ 194187, 191972, 192051, 192065 ],
+    "inputs" : [ 5340249, 5340228 ],
+    "outputs" : [ 5340186 ],
+    "efs" : [ ],
+    "diagramIds" : [ 879 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193393,
+    "stId" : "R-HSA-193393",
+    "displayName" : "5beta-cholestan-3alpha, 7alpha-diol is hydroxylated to 5beta-cholestan-3alpha, 7alpha, 26-triol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193537 ],
+    "following" : [ 193497 ],
+    "inputs" : [ 193436, 113533, 113529, 113600 ],
+    "outputs" : [ 113563, 193387, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 84 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193399,
+    "stId" : "R-HSA-193399",
+    "displayName" : "Cholate is translocated from the peroxisomal matrix to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193385 ],
+    "inputs" : [ 193451 ],
+    "outputs" : [ 193473 ],
+    "efs" : [ ],
+    "diagramIds" : [ 209 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193780,
+    "stId" : "R-HSA-193780",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,12alpha,24(S),27-pentol is oxidized to 3alpha,7alpha,12alpha,24(S)-tetrahydroxy-5beta-cholestan-27-al",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193787 ],
+    "following" : [ 193713 ],
+    "inputs" : [ 113533, 113529, 193782, 113600 ],
+    "outputs" : [ 193785, 113563, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 357 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193781,
+    "stId" : "R-HSA-193781",
+    "displayName" : "5Beta-cholestan-7alpha,12alpha,24(S)-triol-3-one is reduced to 5beta-cholestan-3alpha,7alpha,12alpha,24(S)-tetrol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193755 ],
+    "following" : [ 193774 ],
+    "inputs" : [ 70106, 193707, 29364 ],
+    "outputs" : [ 29366, 193728 ],
+    "catalysts" : [ 3229260 ],
+    "efs" : [ ],
+    "diagramIds" : [ 315 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193786,
+    "stId" : "R-HSA-193786",
+    "displayName" : "3,7,24THCA is translocated from the mitochondrial matrix to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193737 ],
+    "following" : [ 193711, 193743 ],
+    "inputs" : [ 193757 ],
+    "outputs" : [ 193778 ],
+    "efs" : [ ],
+    "diagramIds" : [ 395 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193787,
+    "stId" : "R-HSA-193787",
+    "displayName" : "5beta-cholestan-3alpha,7alpha,12alpha,24(S)-tetrol is hydroxylated to 5beta-cholestan-3alpha,7alpha,12alpha,24(S), 27-pentol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193774 ],
+    "following" : [ 193780 ],
+    "inputs" : [ 113533, 113529, 193777, 113600 ],
+    "outputs" : [ 113563, 193782, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 339 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192123,
+    "stId" : "R-HSA-192123",
+    "displayName" : "CYP27A1 27-hydroxylates CHOL",
+    "schemaClass" : "Reaction",
+    "following" : [ 193812 ],
+    "inputs" : [ 113533, 113529, 193840, 113600 ],
+    "outputs" : [ 113563, 193846, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 444 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193401,
+    "stId" : "R-HSA-193401",
+    "displayName" : "THCA is conjugated with Coenzyme A (SLC27A2 VLCS)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 191971 ],
+    "following" : [ 192325 ],
+    "inputs" : [ 192013, 113592, 76194 ],
+    "outputs" : [ 111294, 192096, 76577 ],
+    "catalysts" : [ 193386 ],
+    "efs" : [ ],
+    "diagramIds" : [ 129 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193535,
+    "stId" : "R-HSA-193535",
+    "displayName" : "25(S) 3alpha,7alpha-dihydroxy-5beta-cholest-24-enoyl-CoA is hydrated to (24R, 25R) 3alpha,7alpha,24-trihydroxy-5beta-cholestanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193369 ],
+    "following" : [ 193508 ],
+    "inputs" : [ 141343, 193459 ],
+    "outputs" : [ 193732 ],
+    "catalysts" : [ 389999 ],
+    "efs" : [ ],
+    "diagramIds" : [ 177 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193407,
+    "stId" : "R-HSA-193407",
+    "displayName" : "DHCA is conjugated with Coenzyme A (SLC27A5 BACS)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193519 ],
+    "following" : [ 193482 ],
+    "inputs" : [ 113592, 193505, 76194 ],
+    "outputs" : [ 111294, 193457, 76577 ],
+    "catalysts" : [ 191990 ],
+    "efs" : [ ],
+    "diagramIds" : [ 147 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 191999,
+    "stId" : "R-HSA-191999",
+    "displayName" : "CYP27A1 27-hydroxylates 5bCHOL3a,7a,12a-triol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192010 ],
+    "following" : [ 192042 ],
+    "inputs" : [ 113533, 192078, 113529, 113600 ],
+    "outputs" : [ 192201, 113563, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 75 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8873850,
+    "stId" : "R-HSA-8873850",
+    "displayName" : "STARD5 binds DCA, LCA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 176655, 5357505, 196114 ],
+    "outputs" : [ 8873894 ],
+    "efs" : [ ],
+    "diagramIds" : [ 887 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193533,
+    "stId" : "R-HSA-193533",
+    "displayName" : "Thiolysis of 3alpha,7alpha-dihydroxy-5beta-cholan-24-one-CoA yields chenodeoxycholoyl-CoA (3alpha,7alpha-dihydroxy-5beta-cholan-24-one-CoA) and propionyl CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193508 ],
+    "following" : [ 193491 ],
+    "inputs" : [ 193403, 193514 ],
+    "outputs" : [ 192314, 193472 ],
+    "catalysts" : [ 192348 ],
+    "efs" : [ ],
+    "diagramIds" : [ 198 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193789,
+    "stId" : "R-HSA-193789",
+    "displayName" : "Cholest-5-ene-3beta,7alpha,24(S)-triol is oxidized and isomerized to 4-cholesten-7alpha,24(S)-diol-3-one",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 192178 ],
+    "following" : [ 193746, 193709 ],
+    "inputs" : [ 192189, 29360 ],
+    "outputs" : [ 193724, 70106, 73473 ],
+    "catalysts" : [ 193441 ],
+    "efs" : [ ],
+    "diagramIds" : [ 274 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 192105,
+    "stId" : "R-HSA-192105",
+    "displayName" : "Synthesis of bile acids and bile salts",
+    "events" : [ 192065, 8867667, 8868402, 193533, 193535, 193407, 191999, 193401, 192312, 192056, 192315, 193460, 193399, 192054, 193393, 192051, 193452, 193455, 193519, 193385, 192042, 193508, 192036, 192033, 192097, 192160, 191971, 192157, 193369, 193497, 192341, 193424, 193491, 193362, 192335, 192137, 192331, 193482, 192010, 192325, 193537, 192067, 193789, 192061, 193727, 193787, 193786, 193722, 193781, 193780, 193719, 193713, 193776, 193715, 192178, 193709, 193711, 193774, 193767, 193766, 193761, 193763, 193758, 193753, 193755, 193746, 193743, 193737, 193736, 193792, 193824, 193808, 193841, 193812, 191972, 193845, 192123, 193816, 193800, 193832, 193801, 193821, 191983 ]
+  }, {
+    "dbId" : 193368,
+    "stId" : "R-HSA-193368",
+    "displayName" : "Synthesis of bile acids and bile salts via 7alpha-hydroxycholesterol",
+    "events" : [ 193533, 193535, 193407, 191999, 193401, 192312, 192056, 192315, 193460, 193399, 192054, 193393, 192051, 193452, 193455, 193519, 193385, 192042, 193508, 192036, 192033, 192097, 192160, 191971, 192157, 193369, 193497, 192341, 193424, 193491, 193362, 192335, 192137, 192331, 193482, 192010, 192325, 193537, 192067 ]
+  }, {
+    "dbId" : 193807,
+    "stId" : "R-HSA-193807",
+    "displayName" : "Synthesis of bile acids and bile salts via 27-hydroxycholesterol",
+    "events" : [ 193824, 193808, 193841, 193812, 191972, 193845, 192123, 193816, 193800, 193832, 193801, 193821 ]
+  }, {
+    "dbId" : 193775,
+    "stId" : "R-HSA-193775",
+    "displayName" : "Synthesis of bile acids and bile salts via 24-hydroxycholesterol",
+    "events" : [ 193789, 192061, 193727, 193787, 193786, 193722, 193781, 193780, 193719, 193713, 193776, 193715, 192178, 193709, 193711, 193774, 193767, 193766, 193761, 193763, 193758, 193753, 193755, 193746, 193743, 193737, 193736, 193792 ]
+  }, {
+    "dbId" : 159418,
+    "stId" : "R-HSA-159418",
+    "displayName" : "Recycling of bile acids and salts",
+    "events" : [ 194130, 193362, 194083, 5340195, 159425, 159431, 194187, 5340251, 194153, 194121, 194079, 8873850 ]
+  } ]
+}

@@ -1,0 +1,606 @@
+{
+  "dbId" : 1474151,
+  "stId" : "R-HSA-1474151",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 1497879,
+    "stId" : "R-HSA-1497879",
+    "displayName" : "PTPS hexamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 277 ],
+    "children" : [ 1475061 ]
+  }, {
+    "dbId" : 202121,
+    "stId" : "R-HSA-202121",
+    "displayName" : "p-S1177-eNOS:CaM:HSP90:p-AKT1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2493 ],
+    "parents" : [ 1497830 ],
+    "children" : [ 203564, 74294, 198356, 192864 ]
+  }, {
+    "dbId" : 9016707,
+    "stId" : "R-HSA-9016707",
+    "displayName" : "CALM1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0DP23",
+    "geneNames" : [ "CALM1", "CALM", "CAM", "CAM1" ],
+    "parents" : [ 74294 ]
+  }, {
+    "dbId" : 202131,
+    "stId" : "R-HSA-202131",
+    "displayName" : "Metabolism of nitric oxide",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2413 ]
+  }, {
+    "dbId" : 71185,
+    "stId" : "R-ALL-71185",
+    "displayName" : "heme [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17627",
+    "parents" : [ 203564 ]
+  }, {
+    "dbId" : 29460,
+    "stId" : "R-ALL-29460",
+    "displayName" : "HCOOH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 116 ],
+    "identifier" : "30751"
+  }, {
+    "dbId" : 1474179,
+    "stId" : "R-ALL-1474179",
+    "displayName" : "PTHP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 134 ],
+    "identifier" : "17804"
+  }, {
+    "dbId" : 1497857,
+    "stId" : "R-ALL-1497857",
+    "displayName" : "BH2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1457 ],
+    "identifier" : "15375",
+    "parents" : [ 1497889 ]
+  }, {
+    "dbId" : 202139,
+    "stId" : "R-HSA-202139",
+    "displayName" : "2xPalmC-MyrG-p-S1177-NOS3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29474",
+    "geneNames" : [ "NOS3" ],
+    "parents" : [ 203564 ]
+  }, {
+    "dbId" : 71067,
+    "stId" : "R-ALL-71067",
+    "displayName" : "Fe2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1259 ],
+    "identifier" : "18248"
+  }, {
+    "dbId" : 1497782,
+    "stId" : "R-HSA-1497782",
+    "displayName" : "p-S213-SPR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35270",
+    "geneNames" : [ "SPR" ],
+    "parents" : [ 1497817 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 74294 ]
+  }, {
+    "dbId" : 198816,
+    "stId" : "R-ALL-198816",
+    "displayName" : "VitC [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1283 ],
+    "identifier" : "29073"
+  }, {
+    "dbId" : 1497791,
+    "stId" : "R-HSA-1497791",
+    "displayName" : "SPR dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 143 ],
+    "children" : [ 1497798 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 114 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 29870,
+    "stId" : "R-ALL-29870",
+    "displayName" : "BH4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 120 ],
+    "identifier" : "15372",
+    "parents" : [ 203564, 1497830 ]
+  }, {
+    "dbId" : 203564,
+    "stId" : "R-HSA-203564",
+    "displayName" : "p-S1177-eNOS dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 202121, 1497889 ],
+    "children" : [ 29870, 29386, 202139, 73524, 29426, 71185 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 145, 1983 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 73524,
+    "stId" : "R-ALL-73524",
+    "displayName" : "FMN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17621",
+    "parents" : [ 203564 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1985, 147, 2094 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 1497889,
+    "stId" : "R-HSA-1497889",
+    "displayName" : "p-S1177-eNOS:CaM:HSP90:p-AKT1:BH2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1615 ],
+    "children" : [ 203564, 1497857, 74294, 198356, 192864 ]
+  }, {
+    "dbId" : 74294,
+    "stId" : "R-HSA-74294",
+    "displayName" : "CALM1:4xCa2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 202121, 1497889 ],
+    "children" : [ 9016707, 74016 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 278, 311 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 262, 313 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 29502,
+    "stId" : "R-ALL-29502",
+    "displayName" : "L-Phe [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 119 ],
+    "identifier" : "58095"
+  }, {
+    "dbId" : 1222481,
+    "stId" : "R-ALL-1222481",
+    "displayName" : "Peroxynitrite [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1701 ],
+    "identifier" : "25941"
+  }, {
+    "dbId" : 1497811,
+    "stId" : "R-ALL-1497811",
+    "displayName" : "sepiapterin [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1981 ],
+    "identifier" : "16095"
+  }, {
+    "dbId" : 1497822,
+    "stId" : "R-HSA-1497822",
+    "displayName" : "DHFR dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2092 ],
+    "children" : [ 197984 ]
+  }, {
+    "dbId" : 1474143,
+    "stId" : "R-HSA-1474143",
+    "displayName" : "GCH1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1474144 ],
+    "children" : [ 1474127 ]
+  }, {
+    "dbId" : 29386,
+    "stId" : "R-ALL-29386",
+    "displayName" : "FAD [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 203564 ]
+  }, {
+    "dbId" : 418377,
+    "stId" : "R-HSA-418377",
+    "displayName" : "PRKG2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 132 ],
+    "identifier" : "Q13237",
+    "geneNames" : [ "PRKG2", "PRKGR2" ]
+  }, {
+    "dbId" : 1497817,
+    "stId" : "R-HSA-1497817",
+    "displayName" : "p-SPR dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 308 ],
+    "children" : [ 1497782 ]
+  }, {
+    "dbId" : 1497798,
+    "stId" : "R-HSA-1497798",
+    "displayName" : "SPR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35270",
+    "geneNames" : [ "SPR" ],
+    "parents" : [ 1497791 ]
+  }, {
+    "dbId" : 1497797,
+    "stId" : "R-ALL-1497797",
+    "displayName" : "BH3. [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1256 ],
+    "identifier" : "62772"
+  }, {
+    "dbId" : 879326,
+    "stId" : "R-ALL-879326",
+    "displayName" : "e- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1257 ],
+    "identifier" : "10545"
+  }, {
+    "dbId" : 198356,
+    "stId" : "R-HSA-198356",
+    "displayName" : "p-T308,S473-AKT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31749",
+    "geneNames" : [ "AKT1", "PKB", "RAC" ],
+    "parents" : [ 202121, 1497889 ]
+  }, {
+    "dbId" : 1474127,
+    "stId" : "R-HSA-1474127",
+    "displayName" : "GCH1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30793",
+    "geneNames" : [ "GCH1", "DYT5", "GCH" ],
+    "parents" : [ 1474143 ]
+  }, {
+    "dbId" : 1474124,
+    "stId" : "R-ALL-1474124",
+    "displayName" : "DHNTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 117 ],
+    "identifier" : "18372"
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1989 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 1497805,
+    "stId" : "R-ALL-1497805",
+    "displayName" : "Ascorbate radical [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1284 ],
+    "identifier" : "59513"
+  }, {
+    "dbId" : 192864,
+    "stId" : "R-HSA-192864",
+    "displayName" : "HSP90AA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07900",
+    "geneNames" : [ "HSP90AA1", "HSP90A", "HSPC1", "HSPCA" ],
+    "parents" : [ 1497889, 202121 ]
+  }, {
+    "dbId" : 197984,
+    "stId" : "R-HSA-197984",
+    "displayName" : "DHFR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00374",
+    "geneNames" : [ "DHFR" ],
+    "parents" : [ 1497822 ]
+  }, {
+    "dbId" : 1475061,
+    "stId" : "R-HSA-1475061",
+    "displayName" : "PTS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q03393",
+    "geneNames" : [ "PTS" ],
+    "parents" : [ 1497879 ]
+  }, {
+    "dbId" : 1475058,
+    "stId" : "R-HSA-1475058",
+    "displayName" : "p-PTPS hexamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 136 ],
+    "children" : [ 1475426, 29426 ]
+  }, {
+    "dbId" : 1497830,
+    "stId" : "R-HSA-1497830",
+    "displayName" : "p-S1177-eNOS:CaM:HSP90:p-AKT1:BH4 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 992 ],
+    "children" : [ 29870, 202121 ]
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 203564, 1475058 ]
+  }, {
+    "dbId" : 1474149,
+    "stId" : "R-HSA-1474149",
+    "displayName" : "2GCHFR:GCH1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 121 ],
+    "children" : [ 1474155, 1474144 ]
+  }, {
+    "dbId" : 1475426,
+    "stId" : "R-HSA-1475426",
+    "displayName" : "p-S19-PTS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q03393",
+    "geneNames" : [ "PTS" ],
+    "parents" : [ 1475058 ]
+  }, {
+    "dbId" : 1474144,
+    "stId" : "R-HSA-1474144",
+    "displayName" : "GCH1 decamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 118 ],
+    "parents" : [ 1474149 ],
+    "children" : [ 1474143 ]
+  }, {
+    "dbId" : 1475054,
+    "stId" : "R-ALL-1475054",
+    "displayName" : "PPP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 135 ],
+    "identifier" : "15266"
+  }, {
+    "dbId" : 111736,
+    "stId" : "R-ALL-111736",
+    "displayName" : "Fe3+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2412 ],
+    "identifier" : "29034"
+  }, {
+    "dbId" : 1474159,
+    "stId" : "R-HSA-1474159",
+    "displayName" : "GCHFR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30047",
+    "geneNames" : [ "GCHFR", "GFRP" ],
+    "parents" : [ 1474155 ]
+  }, {
+    "dbId" : 1474155,
+    "stId" : "R-HSA-1474155",
+    "displayName" : "GCHFR pentamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 125 ],
+    "parents" : [ 1474149 ],
+    "children" : [ 1474159 ]
+  }, {
+    "dbId" : 29438,
+    "stId" : "R-ALL-29438",
+    "displayName" : "GTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 115 ],
+    "identifier" : "15996"
+  } ],
+  "edges" : [ {
+    "dbId" : 1475414,
+    "stId" : "R-HSA-1475414",
+    "displayName" : "PTHP is reduced to BH4 by sepiapterin reductase (SPR)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1474184, 1497883, 1497853 ],
+    "following" : [ 1497866, 1497824 ],
+    "inputs" : [ 1474179, 29364 ],
+    "outputs" : [ 29870, 29366 ],
+    "catalysts" : [ 1497817 ],
+    "efs" : [ ],
+    "diagramIds" : [ 142 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1475422,
+    "stId" : "R-HSA-1475422",
+    "displayName" : "PTPS is phosphorylated by cGMP-dependant protein kinase II",
+    "schemaClass" : "Reaction",
+    "following" : [ 1474184 ],
+    "inputs" : [ 113592, 1497879 ],
+    "outputs" : [ 29370, 1475058 ],
+    "catalysts" : [ 418377 ],
+    "efs" : [ ],
+    "diagramIds" : [ 127 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497855,
+    "stId" : "R-HSA-1497855",
+    "displayName" : "Ascorbate can reduce the BH3 radical back to BH4",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1497824 ],
+    "following" : [ 1497866, 1497824 ],
+    "inputs" : [ 198816, 1497797 ],
+    "outputs" : [ 29870, 1497805 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1282 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497853,
+    "stId" : "R-HSA-1497853",
+    "displayName" : "Sepiapterin reductase (SPR) is phosphorylated by Ca2+/calmodulin-dependent protein kinase II",
+    "schemaClass" : "Reaction",
+    "following" : [ 1475414 ],
+    "inputs" : [ 113592, 1497791 ],
+    "outputs" : [ 1497817, 29370 ],
+    "catalysts" : [ 418377 ],
+    "efs" : [ ],
+    "diagramIds" : [ 137 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497883,
+    "stId" : "R-HSA-1497883",
+    "displayName" : "Ferrous iron reduces the BH3 radical back to BH4",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1497824 ],
+    "following" : [ 1497866, 1497824, 1475414 ],
+    "inputs" : [ 71067, 1497797 ],
+    "outputs" : [ 29870, 111736 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1258 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497784,
+    "stId" : "R-HSA-1497784",
+    "displayName" : "The cofactor BH4 is required for electron transfer in the eNOS catalytic cycle",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29870, 202121 ],
+    "outputs" : [ 1497830 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2492 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497863,
+    "stId" : "R-HSA-1497863",
+    "displayName" : "The BH3 radical can decay to dihydrobiopterin (BH2)",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 1497824 ],
+    "following" : [ 1497796 ],
+    "inputs" : [ 1497797 ],
+    "outputs" : [ 1497857 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1456 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497796,
+    "stId" : "R-HSA-1497796",
+    "displayName" : "BH2 binding can lead to eNOS uncoupling",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1497869, 1497863 ],
+    "inputs" : [ 1497857, 1497830 ],
+    "outputs" : [ 29870, 1497889 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1637 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497794,
+    "stId" : "R-HSA-1497794",
+    "displayName" : "Salvage - BH2 is reduced to BH4 by DHFR",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1497869 ],
+    "inputs" : [ 70106, 1497857, 29364 ],
+    "outputs" : [ 29870, 29366 ],
+    "catalysts" : [ 1497822 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2091 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1474146,
+    "stId" : "R-HSA-1474146",
+    "displayName" : "GCH1 reduces GTP to dihydroneopterin triphosphate",
+    "schemaClass" : "Reaction",
+    "following" : [ 1474184 ],
+    "inputs" : [ 29438, 29356 ],
+    "outputs" : [ 1474124, 29460 ],
+    "catalysts" : [ 1474144 ],
+    "efs" : [ ],
+    "inhibitors" : [ 29870, 1474149 ],
+    "activators" : [ 29502 ],
+    "diagramIds" : [ 113 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497824,
+    "stId" : "R-HSA-1497824",
+    "displayName" : "BH4 is oxidised to the BH3 radical during the eNOS catalytic cycle",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1497883, 1497855, 1475414 ],
+    "following" : [ 1497863, 1497855, 1497883 ],
+    "inputs" : [ 29870 ],
+    "outputs" : [ 879326, 1497797 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1255 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1474158,
+    "stId" : "R-HSA-1474158",
+    "displayName" : "GCHFR binds to GCH1 and negatively regulates its activity",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 1474155, 1474144 ],
+    "outputs" : [ 1474149 ],
+    "efs" : [ ],
+    "diagramIds" : [ 124 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497869,
+    "stId" : "R-HSA-1497869",
+    "displayName" : "Salvage - Sepiapterin is reduced to BH2",
+    "schemaClass" : "Reaction",
+    "following" : [ 1497794, 1497796 ],
+    "inputs" : [ 70106, 1497811, 29364 ],
+    "outputs" : [ 1497857, 29366 ],
+    "catalysts" : [ 1497817 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1980 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1497866,
+    "stId" : "R-HSA-1497866",
+    "displayName" : "Peroxynitrite can oxidise BH4 to the BH3 radical",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1497883, 1497855, 1475414 ],
+    "inputs" : [ 29870, 1222481 ],
+    "outputs" : [ 1497797 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1887 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1474184,
+    "stId" : "R-HSA-1474184",
+    "displayName" : "DHNTP is dephosphorylated by PTPS to PTHP",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1475422, 1474146 ],
+    "following" : [ 1475414 ],
+    "inputs" : [ 1474124 ],
+    "outputs" : [ 1475054, 1474179 ],
+    "catalysts" : [ 1475058 ],
+    "efs" : [ ],
+    "diagramIds" : [ 133 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

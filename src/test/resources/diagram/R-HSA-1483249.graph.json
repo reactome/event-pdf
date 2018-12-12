@@ -1,0 +1,2317 @@
+{
+  "dbId" : 1483249,
+  "stId" : "R-HSA-1483249",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 167682,
+    "stId" : "R-HSA-167682",
+    "displayName" : "PLCG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19174",
+    "geneNames" : [ "PLCG1", "PLC1" ],
+    "parents" : [ 2023858 ]
+  }, {
+    "dbId" : 61697,
+    "stId" : "R-HSA-61697",
+    "displayName" : "PLCB4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15147",
+    "geneNames" : [ "PLCB4" ],
+    "parents" : [ 1604664 ]
+  }, {
+    "dbId" : 199426,
+    "stId" : "R-HSA-199426",
+    "displayName" : "PTEN:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 300 ],
+    "children" : [ 199420, 29926 ]
+  }, {
+    "dbId" : 1604634,
+    "stId" : "R-HSA-1604634",
+    "displayName" : "SYNJ1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43426",
+    "geneNames" : [ "SYNJ1", "KIAA0910" ],
+    "parents" : [ 2024044, 2023888 ]
+  }, {
+    "dbId" : 1604636,
+    "stId" : "R-HSA-1604636",
+    "displayName" : "NUDT11:Mg2+/Mn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023957 ],
+    "children" : [ 1500648, 1604625 ]
+  }, {
+    "dbId" : 1604625,
+    "stId" : "R-HSA-1604625",
+    "displayName" : "NUDT11 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96G61",
+    "geneNames" : [ "NUDT11", "APS1", "DIPP3B" ],
+    "parents" : [ 1604636 ]
+  }, {
+    "dbId" : 1604626,
+    "stId" : "R-HSA-1604626",
+    "displayName" : "NUDT10 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NFP7",
+    "geneNames" : [ "NUDT10", "APS2", "DIPP3A" ],
+    "parents" : [ 1604659 ]
+  }, {
+    "dbId" : 9016707,
+    "stId" : "R-HSA-9016707",
+    "displayName" : "CALM1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0DP23",
+    "geneNames" : [ "CALM1", "CALM", "CAM", "CAM1" ],
+    "parents" : [ 2023849, 2023848, 2023885 ]
+  }, {
+    "dbId" : 2023957,
+    "stId" : "R-HSA-2023957",
+    "displayName" : "NUDT(1) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 580, 647, 553, 682 ],
+    "children" : [ 1604660, 1604659, 1604627, 1604636 ]
+  }, {
+    "dbId" : 1604627,
+    "stId" : "R-HSA-1604627",
+    "displayName" : "NUDT3:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023957 ],
+    "children" : [ 29926, 1604654 ]
+  }, {
+    "dbId" : 1604629,
+    "stId" : "R-HSA-1604629",
+    "displayName" : "PLCZ1:Ca2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023864 ],
+    "children" : [ 1604623, 74016 ]
+  }, {
+    "dbId" : 2023952,
+    "stId" : "R-HSA-2023952",
+    "displayName" : "IP6K1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92551",
+    "geneNames" : [ "IP6K1", "IHPK1", "KIAA0263" ],
+    "parents" : [ 2023924 ]
+  }, {
+    "dbId" : 1604631,
+    "stId" : "R-HSA-1604631",
+    "displayName" : "PPIP5K2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43314",
+    "geneNames" : [ "PPIP5K2", "HISPPD1", "KIAA0433", "VIP2" ],
+    "parents" : [ 2023997 ]
+  }, {
+    "dbId" : 2023951,
+    "stId" : "R-ALL-2023951",
+    "displayName" : "3,5-(PP)2-IP4 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "62924",
+    "parents" : [ 2023936 ]
+  }, {
+    "dbId" : 1604618,
+    "stId" : "R-HSA-1604618",
+    "displayName" : "PLCB3:Ca2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023864 ],
+    "children" : [ 61747, 74016 ]
+  }, {
+    "dbId" : 2023948,
+    "stId" : "R-ALL-2023948",
+    "displayName" : "1,5-(PP)2-IP3 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1064 ],
+    "identifier" : "62931"
+  }, {
+    "dbId" : 2023949,
+    "stId" : "R-HSA-2023949",
+    "displayName" : "IPPK [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 471 ],
+    "identifier" : "Q9H8X2",
+    "geneNames" : [ "IPPK", "C9orf12" ]
+  }, {
+    "dbId" : 1604620,
+    "stId" : "R-HSA-1604620",
+    "displayName" : "PPIP5K1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6PFW1",
+    "geneNames" : [ "PPIP5K1", "HISPPD2A", "IP6K", "IPS1", "KIAA0377", "VIP1" ],
+    "parents" : [ 2023997 ]
+  }, {
+    "dbId" : 2023944,
+    "stId" : "R-ALL-2023944",
+    "displayName" : "1/3-PP-IP5 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 599 ],
+    "children" : [ 2023914, 2023932 ]
+  }, {
+    "dbId" : 1604622,
+    "stId" : "R-HSA-1604622",
+    "displayName" : "PLCB1:Ca2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023864 ],
+    "children" : [ 61693, 74016 ]
+  }, {
+    "dbId" : 1604623,
+    "stId" : "R-HSA-1604623",
+    "displayName" : "PLCZ1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86YW0",
+    "geneNames" : [ "PLCZ1" ],
+    "parents" : [ 1604629 ]
+  }, {
+    "dbId" : 2162232,
+    "stId" : "R-ALL-2162232",
+    "displayName" : "GlcA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1148 ],
+    "identifier" : "15748"
+  }, {
+    "dbId" : 2023943,
+    "stId" : "R-ALL-2023943",
+    "displayName" : "PP-IP4 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 701 ],
+    "children" : [ 1629747, 1629755, 1629736 ]
+  }, {
+    "dbId" : 2023940,
+    "stId" : "R-ALL-2023940",
+    "displayName" : "5-PP-IP5 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 503 ],
+    "identifier" : "30164"
+  }, {
+    "dbId" : 2023941,
+    "stId" : "R-ALL-2023941",
+    "displayName" : "5-PPP-IP5 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 513 ],
+    "identifier" : "62985"
+  }, {
+    "dbId" : 1604613,
+    "stId" : "R-HSA-1604613",
+    "displayName" : "MINPP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 806, 153 ],
+    "identifier" : "Q9UNW1",
+    "geneNames" : [ "MINPP1", "MIPP", "UNQ900/PRO1917" ]
+  }, {
+    "dbId" : 2023936,
+    "stId" : "R-ALL-2023936",
+    "displayName" : "(PP)2-IP4 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 601 ],
+    "children" : [ 2023931, 2023951 ]
+  }, {
+    "dbId" : 1604664,
+    "stId" : "R-HSA-1604664",
+    "displayName" : "PLCB4:Ca2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023864 ],
+    "children" : [ 61697, 74016 ]
+  }, {
+    "dbId" : 1629753,
+    "stId" : "R-ALL-1629753",
+    "displayName" : "I4P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 156 ],
+    "identifier" : "18384"
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 2023849, 2023848, 2023885, 1604629, 1604622, 1604651, 1604664, 1604618 ]
+  }, {
+    "dbId" : 2023997,
+    "stId" : "R-HSA-2023997",
+    "displayName" : "PPIP5K1/2 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 538 ],
+    "children" : [ 1604631, 1604620 ]
+  }, {
+    "dbId" : 1629755,
+    "stId" : "R-ALL-1629755",
+    "displayName" : "5-PP-IP4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1071 ],
+    "identifier" : "62928",
+    "parents" : [ 2023943 ]
+  }, {
+    "dbId" : 1629756,
+    "stId" : "R-ALL-1629756",
+    "displayName" : "Glc6P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 239 ],
+    "identifier" : "4170"
+  }, {
+    "dbId" : 1629759,
+    "stId" : "R-ALL-1629759",
+    "displayName" : "5-PPP-IP5 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 665 ],
+    "identifier" : "62985"
+  }, {
+    "dbId" : 1629746,
+    "stId" : "R-ALL-1629746",
+    "displayName" : "I(3,4)P2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 253 ],
+    "identifier" : "28858"
+  }, {
+    "dbId" : 1629747,
+    "stId" : "R-ALL-1629747",
+    "displayName" : "3-PP-IP4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "62927",
+    "parents" : [ 2023943 ]
+  }, {
+    "dbId" : 1604659,
+    "stId" : "R-HSA-1604659",
+    "displayName" : "NUDT10:Mg2+/Mn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023957 ],
+    "children" : [ 1500648, 1604626 ]
+  }, {
+    "dbId" : 8870316,
+    "stId" : "R-HSA-8870316",
+    "displayName" : "PLCD4:3xCa2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8870313 ],
+    "children" : [ 8870314, 1500625 ]
+  }, {
+    "dbId" : 1604660,
+    "stId" : "R-HSA-1604660",
+    "displayName" : "NUDT4:Mg2+/Mn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 744 ],
+    "parents" : [ 2023957 ],
+    "children" : [ 1500648, 1604676 ]
+  }, {
+    "dbId" : 8870314,
+    "stId" : "R-HSA-8870314",
+    "displayName" : "PLCD4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BRC7",
+    "geneNames" : [ "PLCD4" ],
+    "parents" : [ 8870316 ]
+  }, {
+    "dbId" : 8870313,
+    "stId" : "R-HSA-8870313",
+    "displayName" : "PL(C)D4:3xCa2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1185 ],
+    "children" : [ 8870316, 2023869 ]
+  }, {
+    "dbId" : 1629736,
+    "stId" : "R-ALL-1629736",
+    "displayName" : "1-PP-IP4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1100 ],
+    "identifier" : "62926",
+    "parents" : [ 2023943 ]
+  }, {
+    "dbId" : 1629738,
+    "stId" : "R-ALL-1629738",
+    "displayName" : "1,5-(PP)2-IP3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1106 ],
+    "identifier" : "62931"
+  }, {
+    "dbId" : 1604650,
+    "stId" : "R-HSA-1604650",
+    "displayName" : "MTMR7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1165 ],
+    "identifier" : "Q9Y216",
+    "geneNames" : [ "MTMR7" ],
+    "parents" : [ 6809241 ]
+  }, {
+    "dbId" : 61747,
+    "stId" : "R-HSA-61747",
+    "displayName" : "PLCB3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01970",
+    "geneNames" : [ "PLCB3" ],
+    "parents" : [ 1604618 ]
+  }, {
+    "dbId" : 1604651,
+    "stId" : "R-HSA-1604651",
+    "displayName" : "PLCB2:Ca2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023864 ],
+    "children" : [ 61695, 74016 ]
+  }, {
+    "dbId" : 1629739,
+    "stId" : "R-ALL-1629739",
+    "displayName" : "I(1,4)P2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 180 ],
+    "identifier" : "17816"
+  }, {
+    "dbId" : 1629740,
+    "stId" : "R-ALL-1629740",
+    "displayName" : "1-PP-IP5 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1119 ],
+    "identifier" : "62919",
+    "parents" : [ 2023974 ]
+  }, {
+    "dbId" : 1629741,
+    "stId" : "R-ALL-1629741",
+    "displayName" : "I(3,4,6)P3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 370 ],
+    "identifier" : "62918"
+  }, {
+    "dbId" : 1604654,
+    "stId" : "R-HSA-1604654",
+    "displayName" : "NUDT3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95989",
+    "geneNames" : [ "NUDT3", "DIPP", "DIPP1" ],
+    "parents" : [ 1604627 ]
+  }, {
+    "dbId" : 2023977,
+    "stId" : "R-HSA-2023977",
+    "displayName" : "IP6K1/3 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 657, 550, 712, 760 ],
+    "children" : [ 1604594, 1604591 ]
+  }, {
+    "dbId" : 197940,
+    "stId" : "R-HSA-197940",
+    "displayName" : "INPP5D [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92835",
+    "geneNames" : [ "INPP5D", "SHIP", "SHIP1" ],
+    "parents" : [ 2023888 ]
+  }, {
+    "dbId" : 2023974,
+    "stId" : "R-ALL-2023974",
+    "displayName" : "1/3-PP-IP5 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 548 ],
+    "children" : [ 1629761, 1629740 ]
+  }, {
+    "dbId" : 1629731,
+    "stId" : "R-ALL-1629731",
+    "displayName" : "I3P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 231 ],
+    "identifier" : "18169"
+  }, {
+    "dbId" : 1629732,
+    "stId" : "R-ALL-1629732",
+    "displayName" : "1,5-(PP)2-IP4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1124 ],
+    "identifier" : "62923",
+    "parents" : [ 2023968 ]
+  }, {
+    "dbId" : 2023968,
+    "stId" : "R-ALL-2023968",
+    "displayName" : "(PP)2-IP4 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 536 ],
+    "children" : [ 1629766, 1629732 ]
+  }, {
+    "dbId" : 2024026,
+    "stId" : "R-HSA-2024026",
+    "displayName" : "INPP5A/B [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 186 ],
+    "children" : [ 1604583, 2023845 ]
+  }, {
+    "dbId" : 994123,
+    "stId" : "R-ALL-994123",
+    "displayName" : "I(1,3,4)P3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 256 ],
+    "identifier" : "18228"
+  }, {
+    "dbId" : 2024024,
+    "stId" : "R-HSA-2024024",
+    "displayName" : "IMPA1/2 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 160, 232 ],
+    "children" : [ 2024021, 2024023 ]
+  }, {
+    "dbId" : 2024023,
+    "stId" : "R-HSA-2024023",
+    "displayName" : "IMPA2 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2024024 ],
+    "children" : [ 1604574 ]
+  }, {
+    "dbId" : 2024021,
+    "stId" : "R-HSA-2024021",
+    "displayName" : "IMPA1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2024024 ],
+    "children" : [ 1604570 ]
+  }, {
+    "dbId" : 2024018,
+    "stId" : "R-ALL-2024018",
+    "displayName" : "IP6 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 809 ],
+    "identifier" : "17401"
+  }, {
+    "dbId" : 2024016,
+    "stId" : "R-ALL-2024016",
+    "displayName" : "I(1,4,5)P3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 152 ],
+    "identifier" : "16595"
+  }, {
+    "dbId" : 1629769,
+    "stId" : "R-ALL-1629769",
+    "displayName" : "I(1,3)P2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 273 ],
+    "identifier" : "18225"
+  }, {
+    "dbId" : 1629770,
+    "stId" : "R-ALL-1629770",
+    "displayName" : "IP6 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 521 ],
+    "identifier" : "17401"
+  }, {
+    "dbId" : 994141,
+    "stId" : "R-ALL-994141",
+    "displayName" : "I(1,3,4,5,6)P5 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 699 ],
+    "identifier" : "16322"
+  }, {
+    "dbId" : 2024012,
+    "stId" : "R-ALL-2024012",
+    "displayName" : "I(1,4,5,6)P4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 802 ],
+    "identifier" : "16067"
+  }, {
+    "dbId" : 2024008,
+    "stId" : "R-ALL-2024008",
+    "displayName" : "I(1,3,4,5,6)P5 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 801 ],
+    "identifier" : "16322"
+  }, {
+    "dbId" : 114519,
+    "stId" : "R-ALL-114519",
+    "displayName" : "DAG [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1184 ],
+    "identifier" : "17815"
+  }, {
+    "dbId" : 1629761,
+    "stId" : "R-ALL-1629761",
+    "displayName" : "3-PP-IP5 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "62922",
+    "parents" : [ 2023974 ]
+  }, {
+    "dbId" : 114520,
+    "stId" : "R-ALL-114520",
+    "displayName" : "I(1,4,5)P3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 23 ],
+    "identifier" : "16595"
+  }, {
+    "dbId" : 994132,
+    "stId" : "R-HSA-994132",
+    "displayName" : "ITPK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13572",
+    "geneNames" : [ "ITPK1" ],
+    "parents" : [ 1604601 ]
+  }, {
+    "dbId" : 2024002,
+    "stId" : "R-ALL-2024002",
+    "displayName" : "I(1,3,4,5)P4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 150 ],
+    "identifier" : "16783"
+  }, {
+    "dbId" : 1604676,
+    "stId" : "R-HSA-1604676",
+    "displayName" : "NUDT4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NZJ9",
+    "geneNames" : [ "NUDT4", "DIPP2", "KIAA0487", "HDCMB47P" ],
+    "parents" : [ 1604660 ]
+  }, {
+    "dbId" : 1629765,
+    "stId" : "R-ALL-1629765",
+    "displayName" : "5-PP-IP5 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 523 ],
+    "identifier" : "30164"
+  }, {
+    "dbId" : 1629766,
+    "stId" : "R-ALL-1629766",
+    "displayName" : "3,5-(PP)2-IP4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "62924",
+    "parents" : [ 2023968 ]
+  }, {
+    "dbId" : 2024052,
+    "stId" : "R-HSA-2024052",
+    "displayName" : "ISYNA1:NAD+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 240 ],
+    "children" : [ 1604599, 29360 ]
+  }, {
+    "dbId" : 994149,
+    "stId" : "R-ALL-994149",
+    "displayName" : "I(3,4,5,6)P4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 773 ],
+    "identifier" : "15844"
+  }, {
+    "dbId" : 140648,
+    "stId" : "R-ALL-140648",
+    "displayName" : "Ca2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 2023873, 2023858, 2023879, 2023852, 2023868, 2023865, 2023881 ]
+  }, {
+    "dbId" : 994146,
+    "stId" : "R-ALL-994146",
+    "displayName" : "I(1,3,4,6)P4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 357 ],
+    "identifier" : "16155"
+  }, {
+    "dbId" : 113519,
+    "stId" : "R-ALL-113519",
+    "displayName" : "H2O [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1033, 1037, 1038 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 1806196,
+    "stId" : "R-HSA-1806196",
+    "displayName" : "OCRL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01968",
+    "geneNames" : [ "OCRL", "INPP5F", "OCRL1" ],
+    "parents" : [ 2024044, 2023888 ]
+  }, {
+    "dbId" : 2024044,
+    "stId" : "R-HSA-2024044",
+    "displayName" : "INPP5(4) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 181 ],
+    "children" : [ 1806196, 1604590, 1604634 ]
+  }, {
+    "dbId" : 1489509,
+    "stId" : "R-HSA-1489509",
+    "displayName" : "DAG and IP3 signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 894 ]
+  }, {
+    "dbId" : 1630316,
+    "stId" : "R-HSA-1630316",
+    "displayName" : "Glycosaminoglycan metabolism",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1187 ]
+  }, {
+    "dbId" : 994170,
+    "stId" : "R-ALL-994170",
+    "displayName" : "I(1,3,4,5)P4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 288 ],
+    "identifier" : "16783"
+  }, {
+    "dbId" : 1015687,
+    "stId" : "R-HSA-1015687",
+    "displayName" : "IP6K2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UHH9",
+    "geneNames" : [ "IP6K2", "IHPK2", "TCCCIA00113" ],
+    "parents" : [ 2023924 ]
+  }, {
+    "dbId" : 113551,
+    "stId" : "R-ALL-113551",
+    "displayName" : "Pi [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1040, 1042, 1034 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 179856,
+    "stId" : "R-ALL-179856",
+    "displayName" : "PI(4,5)P2 [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 20 ],
+    "identifier" : "18348"
+  }, {
+    "dbId" : 426910,
+    "stId" : "R-ALL-426910",
+    "displayName" : "Ins [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 159 ],
+    "identifier" : "17268"
+  }, {
+    "dbId" : 71067,
+    "stId" : "R-ALL-71067",
+    "displayName" : "Fe2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 5678326 ]
+  }, {
+    "dbId" : 5678326,
+    "stId" : "R-HSA-5678326",
+    "displayName" : "MIOX:2xFe2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1151 ],
+    "children" : [ 71067, 5678323 ]
+  }, {
+    "dbId" : 2023868,
+    "stId" : "R-HSA-2023868",
+    "displayName" : "PLCH2:Ca2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023861 ],
+    "children" : [ 140648, 2023887 ]
+  }, {
+    "dbId" : 1500596,
+    "stId" : "R-ALL-1500596",
+    "displayName" : "DAG [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 47 ],
+    "identifier" : "17815"
+  }, {
+    "dbId" : 2023869,
+    "stId" : "R-HSA-2023869",
+    "displayName" : "PLD4:Ca2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8870313 ],
+    "children" : [ 2023876, 1500625 ]
+  }, {
+    "dbId" : 2023867,
+    "stId" : "R-HSA-2023867",
+    "displayName" : "ITPKA/B/C [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 292 ],
+    "children" : [ 2023849, 2023848, 2023885 ]
+  }, {
+    "dbId" : 5678323,
+    "stId" : "R-HSA-5678323",
+    "displayName" : "MIOX [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UGB7",
+    "geneNames" : [ "MIOX", "ALDRL6", "KSP32", "RSOR" ],
+    "parents" : [ 5678326 ]
+  }, {
+    "dbId" : 2023864,
+    "stId" : "R-HSA-2023864",
+    "displayName" : "PLCbz [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 32 ],
+    "children" : [ 1604629, 1604622, 1604651, 1604618, 1604664 ]
+  }, {
+    "dbId" : 2023865,
+    "stId" : "R-HSA-2023865",
+    "displayName" : "PLCE1:Ca2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023861 ],
+    "children" : [ 2023890, 140648 ]
+  }, {
+    "dbId" : 2023861,
+    "stId" : "R-HSA-2023861",
+    "displayName" : "PLCdegh [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 24 ],
+    "children" : [ 2023873, 2023858, 2023879, 2023881, 2023865, 2023868, 2023852 ]
+  }, {
+    "dbId" : 2023858,
+    "stId" : "R-HSA-2023858",
+    "displayName" : "PLCG1:Ca2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023861 ],
+    "children" : [ 140648, 167682 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 257, 643, 772, 230, 582, 678, 743, 200, 552, 299, 364, 1164, 272, 304, 177, 369, 179, 21, 157, 221, 1149 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 2023859,
+    "stId" : "R-HSA-2023859",
+    "displayName" : "PLCH1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q4KWH8",
+    "geneNames" : [ "PLCH1", "KIAA1069", "PLCL3" ],
+    "parents" : [ 2023879 ]
+  }, {
+    "dbId" : 2023856,
+    "stId" : "R-ALL-2023856",
+    "displayName" : "PI(4,5)P2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 45 ],
+    "identifier" : "18348"
+  }, {
+    "dbId" : 29358,
+    "stId" : "R-ALL-29358",
+    "displayName" : "ATP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 512, 1089, 468, 421, 502, 1062, 473, 445, 430 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 113582,
+    "stId" : "R-ALL-113582",
+    "displayName" : "ADP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 417, 514, 422, 470, 1094, 504, 1066, 431, 1055 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15846",
+    "parents" : [ 2024052 ]
+  }, {
+    "dbId" : 2023852,
+    "stId" : "R-HSA-2023852",
+    "displayName" : "PLCD3:Ca2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023861 ],
+    "children" : [ 140648, 2023882 ]
+  }, {
+    "dbId" : 2023850,
+    "stId" : "R-HSA-2023850",
+    "displayName" : "ITPKC [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96DU7",
+    "geneNames" : [ "ITPKC", "IP3KC" ],
+    "parents" : [ 2023848 ]
+  }, {
+    "dbId" : 2023848,
+    "stId" : "R-HSA-2023848",
+    "displayName" : "ITPKC:Ca2+:CALM1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023867 ],
+    "children" : [ 9016707, 2023850, 74016 ]
+  }, {
+    "dbId" : 870330,
+    "stId" : "R-ALL-870330",
+    "displayName" : "I1P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1036 ],
+    "identifier" : "18297"
+  }, {
+    "dbId" : 2023849,
+    "stId" : "R-HSA-2023849",
+    "displayName" : "ITPKB:Ca2+:CALM1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023867 ],
+    "children" : [ 9016707, 1604605, 74016 ]
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1147 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1104, 290, 355, 757, 535, 729, 1132, 381, 654, 782 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 291, 356, 341, 1109, 1127, 537, 1097, 666, 730, 780, 382, 655 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 2023845,
+    "stId" : "R-HSA-2023845",
+    "displayName" : "INPP5B(321-993) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P32019",
+    "geneNames" : [ "INPP5B", "OCRL2" ],
+    "parents" : [ 2024026, 3769048 ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 260, 645, 775, 680, 203, 555, 302, 366, 750, 1167, 275, 307, 564, 183, 377, 158, 223 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 1604570,
+    "stId" : "R-HSA-1604570",
+    "displayName" : "IMPA1:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2024021 ],
+    "children" : [ 1604567, 29926 ]
+  }, {
+    "dbId" : 2023901,
+    "stId" : "R-ALL-2023901",
+    "displayName" : "I(1,3,4,5,6)P5 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 418 ],
+    "identifier" : "16322"
+  }, {
+    "dbId" : 2564836,
+    "stId" : "R-ALL-2564836",
+    "displayName" : "I(1,2,4,5,6)P5 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1135 ],
+    "identifier" : "16507"
+  }, {
+    "dbId" : 1604572,
+    "stId" : "R-HSA-1604572",
+    "displayName" : "IMPA2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14732",
+    "geneNames" : [ "IMPA2", "IMP.18P" ],
+    "parents" : [ 1604574 ]
+  }, {
+    "dbId" : 1604574,
+    "stId" : "R-HSA-1604574",
+    "displayName" : "IMPA2:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2024023 ],
+    "children" : [ 29926, 1604572 ]
+  }, {
+    "dbId" : 1604575,
+    "stId" : "R-HSA-1604575",
+    "displayName" : "INPP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P49441",
+    "geneNames" : [ "INPP1" ],
+    "parents" : [ 1604578 ]
+  }, {
+    "dbId" : 913354,
+    "stId" : "R-HSA-913354",
+    "displayName" : "INPPL1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15357",
+    "geneNames" : [ "INPPL1", "SHIP2" ],
+    "parents" : [ 2023888 ]
+  }, {
+    "dbId" : 1500625,
+    "stId" : "R-ALL-1500625",
+    "displayName" : "Ca2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 2023869, 8870316 ]
+  }, {
+    "dbId" : 2023892,
+    "stId" : "R-ALL-2023892",
+    "displayName" : "I(1,3,4,6)P4 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 408 ],
+    "identifier" : "16155"
+  }, {
+    "dbId" : 2023890,
+    "stId" : "R-HSA-2023890",
+    "displayName" : "PLCE1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9P212",
+    "geneNames" : [ "PLCE1", "KIAA1516", "PLCE", "PPLC" ],
+    "parents" : [ 2023865 ]
+  }, {
+    "dbId" : 2023891,
+    "stId" : "R-ALL-2023891",
+    "displayName" : "I(1,3,4,5)P4 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 406 ],
+    "identifier" : "16783"
+  }, {
+    "dbId" : 2023888,
+    "stId" : "R-HSA-2023888",
+    "displayName" : "INPP5(3)/ITPK1 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 305 ],
+    "children" : [ 1806196, 913354, 197940, 1604590, 1604634, 1604601 ]
+  }, {
+    "dbId" : 1604567,
+    "stId" : "R-HSA-1604567",
+    "displayName" : "IMPA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29218",
+    "geneNames" : [ "IMPA1", "IMPA" ],
+    "parents" : [ 1604570 ]
+  }, {
+    "dbId" : 2023887,
+    "stId" : "R-HSA-2023887",
+    "displayName" : "PLCH2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75038",
+    "geneNames" : [ "PLCH2", "KIAA0450", "PLCL4" ],
+    "parents" : [ 2023868 ]
+  }, {
+    "dbId" : 1806281,
+    "stId" : "R-HSA-1806281",
+    "displayName" : "INPP4A/B [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 276, 254 ],
+    "children" : [ 1604582, 1604579 ]
+  }, {
+    "dbId" : 2023885,
+    "stId" : "R-HSA-2023885",
+    "displayName" : "ITPKA:Ca2+:CALM1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023867 ],
+    "children" : [ 9016707, 1604604, 74016 ]
+  }, {
+    "dbId" : 2023882,
+    "stId" : "R-HSA-2023882",
+    "displayName" : "PLCD3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N3E9",
+    "geneNames" : [ "PLCD3", "KIAA1964" ],
+    "parents" : [ 2023852 ]
+  }, {
+    "dbId" : 2023880,
+    "stId" : "R-HSA-2023880",
+    "displayName" : "PLCD1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51178",
+    "geneNames" : [ "PLCD1" ],
+    "parents" : [ 2023873 ]
+  }, {
+    "dbId" : 2023881,
+    "stId" : "R-HSA-2023881",
+    "displayName" : "PLCG2:Ca2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023861 ],
+    "children" : [ 2023875, 140648 ]
+  }, {
+    "dbId" : 2023879,
+    "stId" : "R-HSA-2023879",
+    "displayName" : "PLCH1:Ca2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023861 ],
+    "children" : [ 2023859, 140648 ]
+  }, {
+    "dbId" : 2023876,
+    "stId" : "R-HSA-2023876",
+    "displayName" : "PLD4(1-762) [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96BZ4",
+    "geneNames" : [ "PLD4", "C14orf175", "UNQ2488/PRO5775" ],
+    "parents" : [ 2023869 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1150 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 2023875,
+    "stId" : "R-HSA-2023875",
+    "displayName" : "PLCG2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16885",
+    "geneNames" : [ "PLCG2" ],
+    "parents" : [ 2023881 ]
+  }, {
+    "dbId" : 2023873,
+    "stId" : "R-HSA-2023873",
+    "displayName" : "PLCD1:Ca2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2023861 ],
+    "children" : [ 140648, 2023880 ]
+  }, {
+    "dbId" : 3769049,
+    "stId" : "R-HSA-3769049",
+    "displayName" : "OCRL [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01968",
+    "geneNames" : [ "OCRL", "INPP5F", "OCRL1" ],
+    "parents" : [ 3769048 ]
+  }, {
+    "dbId" : 2023935,
+    "stId" : "R-ALL-2023935",
+    "displayName" : "I(1,4,5,6)P4 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 416 ],
+    "identifier" : "16067"
+  }, {
+    "dbId" : 1604601,
+    "stId" : "R-HSA-1604601",
+    "displayName" : "ITPK1:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 342, 777, 379, 367 ],
+    "parents" : [ 2023888 ],
+    "children" : [ 994132, 29926 ]
+  }, {
+    "dbId" : 3769048,
+    "stId" : "R-HSA-3769048",
+    "displayName" : "Inositol polyphosphate 5-phosphatase [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1136 ],
+    "children" : [ 2023845, 3769049 ]
+  }, {
+    "dbId" : 2023932,
+    "stId" : "R-ALL-2023932",
+    "displayName" : "1-PP-IP5 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1085 ],
+    "identifier" : "62919",
+    "parents" : [ 2023944 ]
+  }, {
+    "dbId" : 1604604,
+    "stId" : "R-HSA-1604604",
+    "displayName" : "ITPKA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23677",
+    "geneNames" : [ "ITPKA" ],
+    "parents" : [ 2023885 ]
+  }, {
+    "dbId" : 2023931,
+    "stId" : "R-ALL-2023931",
+    "displayName" : "1,5-(PP)2-IP4 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1090 ],
+    "identifier" : "62923",
+    "parents" : [ 2023936 ]
+  }, {
+    "dbId" : 1604605,
+    "stId" : "R-HSA-1604605",
+    "displayName" : "ITPKB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P27987",
+    "geneNames" : [ "ITPKB" ],
+    "parents" : [ 2023849 ]
+  }, {
+    "dbId" : 29926,
+    "stId" : "R-ALL-29926",
+    "displayName" : "Mg2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 1500648, 1604578, 1604570, 1604574, 1604627, 1604601, 199426 ]
+  }, {
+    "dbId" : 2023929,
+    "stId" : "R-ALL-2023929",
+    "displayName" : "IP6 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 469 ],
+    "identifier" : "17401"
+  }, {
+    "dbId" : 2023924,
+    "stId" : "R-HSA-2023924",
+    "displayName" : "IP6K1/2 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 611, 505, 476 ],
+    "children" : [ 2023952, 1015687 ]
+  }, {
+    "dbId" : 1604594,
+    "stId" : "R-HSA-1604594",
+    "displayName" : "IP6K3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96PC2",
+    "geneNames" : [ "IP6K3", "IHPK3" ],
+    "parents" : [ 2023977 ]
+  }, {
+    "dbId" : 29418,
+    "stId" : "R-ALL-29418",
+    "displayName" : "Mn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29035",
+    "parents" : [ 1500648 ]
+  }, {
+    "dbId" : 1604596,
+    "stId" : "R-HSA-1604596",
+    "displayName" : "IPMK [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 419, 423, 443 ],
+    "identifier" : "Q8NFU5",
+    "geneNames" : [ "IPMK", "IMPK" ]
+  }, {
+    "dbId" : 2023922,
+    "stId" : "R-ALL-2023922",
+    "displayName" : "5-PP-IP4 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1053 ],
+    "identifier" : "62928"
+  }, {
+    "dbId" : 1604598,
+    "stId" : "R-HSA-1604598",
+    "displayName" : "IPPK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 731 ],
+    "identifier" : "Q9H8X2",
+    "geneNames" : [ "IPPK", "C9orf12" ]
+  }, {
+    "dbId" : 1604599,
+    "stId" : "R-HSA-1604599",
+    "displayName" : "ISYNA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NPH2",
+    "geneNames" : [ "ISYNA1", "INO1" ],
+    "parents" : [ 2024052 ]
+  }, {
+    "dbId" : 6809239,
+    "stId" : "R-HSA-6809239",
+    "displayName" : "MTMR9 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1179 ],
+    "identifier" : "Q96QG7",
+    "geneNames" : [ "MTMR9", "C8orf9", "MTMR8" ],
+    "parents" : [ 6809241 ]
+  }, {
+    "dbId" : 2023914,
+    "stId" : "R-ALL-2023914",
+    "displayName" : "3-PP-IP5 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "62922",
+    "parents" : [ 2023944 ]
+  }, {
+    "dbId" : 1604590,
+    "stId" : "R-HSA-1604590",
+    "displayName" : "INPP5J [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15735",
+    "geneNames" : [ "INPP5J", "PIB5PA", "PIPP" ],
+    "parents" : [ 2024044, 2023888 ]
+  }, {
+    "dbId" : 1604591,
+    "stId" : "R-HSA-1604591",
+    "displayName" : "IP6K1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92551",
+    "geneNames" : [ "IP6K1", "IHPK1", "KIAA0263" ],
+    "parents" : [ 2023977 ]
+  }, {
+    "dbId" : 1604578,
+    "stId" : "R-HSA-1604578",
+    "displayName" : "INPP1:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 258, 201 ],
+    "children" : [ 1604575, 29926 ]
+  }, {
+    "dbId" : 1604579,
+    "stId" : "R-HSA-1604579",
+    "displayName" : "INPP4A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96PE3",
+    "geneNames" : [ "INPP4A" ],
+    "parents" : [ 1806281 ]
+  }, {
+    "dbId" : 61693,
+    "stId" : "R-HSA-61693",
+    "displayName" : "PLCB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NQ66",
+    "geneNames" : [ "PLCB1", "KIAA0581" ],
+    "parents" : [ 1604622 ]
+  }, {
+    "dbId" : 2023907,
+    "stId" : "R-ALL-2023907",
+    "displayName" : "I(1,4,5)P3 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 399 ],
+    "identifier" : "16595"
+  }, {
+    "dbId" : 6809241,
+    "stId" : "R-HSA-6809241",
+    "displayName" : "MTMR7:MTMR9 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1180 ],
+    "children" : [ 1604650, 6809239 ]
+  }, {
+    "dbId" : 1604582,
+    "stId" : "R-HSA-1604582",
+    "displayName" : "INPP4B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15327",
+    "geneNames" : [ "INPP4B" ],
+    "parents" : [ 1806281 ]
+  }, {
+    "dbId" : 1500648,
+    "stId" : "R-ALL-1500648",
+    "displayName" : "Mg2+/Mn2+ [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 1604660, 1604659, 1604636 ],
+    "children" : [ 29418, 29926 ]
+  }, {
+    "dbId" : 199420,
+    "stId" : "R-HSA-199420",
+    "displayName" : "PTEN [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P60484",
+    "geneNames" : [ "PTEN", "MMAC1", "TEP1" ],
+    "parents" : [ 199426 ]
+  }, {
+    "dbId" : 1604583,
+    "stId" : "R-HSA-1604583",
+    "displayName" : "INPP5A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14642",
+    "geneNames" : [ "INPP5A" ],
+    "parents" : [ 2024026 ]
+  }, {
+    "dbId" : 61695,
+    "stId" : "R-HSA-61695",
+    "displayName" : "PLCB2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q00722",
+    "geneNames" : [ "PLCB2" ],
+    "parents" : [ 1604651 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 1855232,
+    "stId" : "R-HSA-1855232",
+    "displayName" : "I(1,3,4)P3 is dephosphorylated to I(3,4)P2 by INPP1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855171, 1855218, 1855213 ],
+    "following" : [ 1855202 ],
+    "inputs" : [ 29356, 994123 ],
+    "outputs" : [ 29372, 1629746 ],
+    "catalysts" : [ 1604578 ],
+    "efs" : [ ],
+    "diagramIds" : [ 255 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855233,
+    "stId" : "R-HSA-1855233",
+    "displayName" : "I(1,4,5)P3 is phosphorylated to I(1,3,4,5)P4 by IPMK in the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855190 ],
+    "following" : [ 1855206 ],
+    "inputs" : [ 29358, 2023907 ],
+    "outputs" : [ 113582, 2023891 ],
+    "catalysts" : [ 1604596 ],
+    "efs" : [ ],
+    "diagramIds" : [ 420 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855164,
+    "stId" : "R-HSA-1855164",
+    "displayName" : "IP6 transports from the cytosol to the ER lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2023971, 1855179, 1855198 ],
+    "following" : [ 1855225 ],
+    "inputs" : [ 1629770 ],
+    "outputs" : [ 2024018 ],
+    "efs" : [ ],
+    "diagramIds" : [ 860 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5678327,
+    "stId" : "R-HSA-5678327",
+    "displayName" : "MIOX oxidises Ins to GlcA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855210 ],
+    "inputs" : [ 29368, 426910 ],
+    "outputs" : [ 29356, 70106, 2162232 ],
+    "catalysts" : [ 5678326 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1146 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855165,
+    "stId" : "R-HSA-1855165",
+    "displayName" : "(PP)2-IP4 is dephosphorylated to 5-PP-IP5 by NUDT(1) in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855220, 1855194, 1855182 ],
+    "following" : [ 1855158, 1855182, 1855198 ],
+    "inputs" : [ 2023968, 29356 ],
+    "outputs" : [ 1629765, 29372 ],
+    "catalysts" : [ 2023957 ],
+    "efs" : [ ],
+    "diagramIds" : [ 551 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855166,
+    "stId" : "R-HSA-1855166",
+    "displayName" : "PP-IP4 is dephosphorylated to I(1,3,4,5,6)P5 by NUDT4 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855223, 1855173 ],
+    "following" : [ 1855179, 1855219, 1855195, 1855223 ],
+    "inputs" : [ 29356, 2023943 ],
+    "outputs" : [ 29372, 994141 ],
+    "catalysts" : [ 1604660 ],
+    "efs" : [ ],
+    "diagramIds" : [ 742 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855160,
+    "stId" : "R-HSA-1855160",
+    "displayName" : "I(1,3,4,5,6)P5 transports from the ER lumen to the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855195, 1855225 ],
+    "following" : [ 1855181, 1855161, 1855176 ],
+    "inputs" : [ 2024008 ],
+    "outputs" : [ 2023901 ],
+    "efs" : [ ],
+    "diagramIds" : [ 888 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855161,
+    "stId" : "R-HSA-1855161",
+    "displayName" : "I(1,3,4,5,6)P5 transports from the nucleus to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855185, 1855206, 1855160, 1855228 ],
+    "following" : [ 1855179, 1855219, 1855223, 1855195 ],
+    "inputs" : [ 2023901 ],
+    "outputs" : [ 994141 ],
+    "efs" : [ ],
+    "diagramIds" : [ 698 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855162,
+    "stId" : "R-HSA-1855162",
+    "displayName" : "I(3,4,5,6)P4 is phosphorylated to I(1,3,4,5,6)P5 by ITPK1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855219 ],
+    "following" : [ 1855179, 1855219, 1855223, 1855195 ],
+    "inputs" : [ 994149, 113592 ],
+    "outputs" : [ 29370, 994141 ],
+    "catalysts" : [ 1604601 ],
+    "efs" : [ ],
+    "diagramIds" : [ 778 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855163,
+    "stId" : "R-HSA-1855163",
+    "displayName" : "I(1,3,4,5,6)P5 is dephosphorylated to I(1,4,5,6)P4 by MINPP1 in the ER lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855195, 1855225 ],
+    "following" : [ 1855189 ],
+    "inputs" : [ 113519, 2024008 ],
+    "outputs" : [ 113551, 2024012 ],
+    "catalysts" : [ 1604613 ],
+    "efs" : [ ],
+    "diagramIds" : [ 799 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855157,
+    "stId" : "R-HSA-1855157",
+    "displayName" : "1-PP-IP5 is phosphorylated to 1,5-(PP)2-IP4 by IP6K1/2 in the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855212 ],
+    "following" : [ 1855220 ],
+    "inputs" : [ 29358, 2023932 ],
+    "outputs" : [ 113582, 2023931 ],
+    "catalysts" : [ 2023924 ],
+    "efs" : [ ],
+    "diagramIds" : [ 607 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855158,
+    "stId" : "R-HSA-1855158",
+    "displayName" : "5-PP-IP5 is phosphorylated to 5-PPP-IP5 by IP6K1/3 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855203, 1855227, 1855165 ],
+    "inputs" : [ 1629765, 113592 ],
+    "outputs" : [ 29370, 1629759 ],
+    "catalysts" : [ 2023977 ],
+    "efs" : [ ],
+    "diagramIds" : [ 663 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855159,
+    "stId" : "R-HSA-1855159",
+    "displayName" : "I(1,3,4,6)P4 is dephosphorylated to I(3,4,6)P3 by ITPK1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855169, 1855197 ],
+    "following" : [ 1855169 ],
+    "inputs" : [ 994146, 29356 ],
+    "outputs" : [ 29372, 1629741 ],
+    "catalysts" : [ 1604601 ],
+    "efs" : [ ],
+    "diagramIds" : [ 368 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855153,
+    "stId" : "R-HSA-1855153",
+    "displayName" : "I(1,4,5)P3 is phosphorylated to I(1,3,4,5)P4 by ITPKA/B/C in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855217, 1855205, 1855221, 1855177, 1855214 ],
+    "following" : [ 1855168, 1855205, 1855218, 1855186, 1855213 ],
+    "inputs" : [ 113592, 114520 ],
+    "outputs" : [ 29370, 994170 ],
+    "catalysts" : [ 2023867 ],
+    "efs" : [ ],
+    "diagramIds" : [ 289 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855154,
+    "stId" : "R-HSA-1855154",
+    "displayName" : "I1P is dephosphorylated to Ins by IMPA1/2 in the cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 870330 ],
+    "outputs" : [ 29372, 426910 ],
+    "catalysts" : [ 2024024 ],
+    "efs" : [ ],
+    "diagramIds" : [ 219 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855155,
+    "stId" : "R-HSA-1855155",
+    "displayName" : "I(1,3,4,5,6)P5 transports from the ER lumen to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855195, 1855225 ],
+    "following" : [ 1855179, 1855219, 1855223, 1855195 ],
+    "inputs" : [ 2024008 ],
+    "outputs" : [ 994141 ],
+    "efs" : [ ],
+    "diagramIds" : [ 853 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6809565,
+    "stId" : "R-HSA-6809565",
+    "displayName" : "I(1,3)P2 is dephosphorylated into I1P by MTMR7:MTMR9",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6809238 ],
+    "inputs" : [ 29356, 1629769 ],
+    "outputs" : [ 29372, 870330 ],
+    "catalysts" : [ 6809241 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1183 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2023973,
+    "stId" : "R-HSA-2023973",
+    "displayName" : "(PP)2-IP4 is dephosphorylated to 1/3-PP-IP5 by NUDT(1) in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855220, 1855194, 1855182 ],
+    "following" : [ 1855212, 2023971, 1855194 ],
+    "inputs" : [ 2023968, 29356 ],
+    "outputs" : [ 29372, 2023974 ],
+    "catalysts" : [ 2023957 ],
+    "efs" : [ ],
+    "diagramIds" : [ 561 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2023971,
+    "stId" : "R-HSA-2023971",
+    "displayName" : "1/3 PP-IP5 is dephosphorylated to IP6 by NUDT(1) in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855216, 2023973 ],
+    "following" : [ 1855227, 1855216, 1855164, 1855188 ],
+    "inputs" : [ 29356, 2023974 ],
+    "outputs" : [ 29372, 1629770 ],
+    "catalysts" : [ 2023957 ],
+    "efs" : [ ],
+    "diagramIds" : [ 677 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6809561,
+    "stId" : "R-HSA-6809561",
+    "displayName" : "I(1,3)P2 is dephosphorylated into I1P by MTMR7",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 1629769 ],
+    "outputs" : [ 29372, 870330 ],
+    "catalysts" : [ 1604650 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1163 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855197,
+    "stId" : "R-HSA-1855197",
+    "displayName" : "I(1,3,4)P3 is phosphorylated to I(1,3,4,6)P4 by ITPK1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855171, 1855218, 1855213 ],
+    "following" : [ 1855201, 1855171, 1855159 ],
+    "inputs" : [ 113592, 994123 ],
+    "outputs" : [ 994146, 29370 ],
+    "catalysts" : [ 1604601 ],
+    "efs" : [ ],
+    "diagramIds" : [ 354 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855198,
+    "stId" : "R-HSA-1855198",
+    "displayName" : "5-PP-IP5 is dephosphorylated to IP6 by NUDT(1) in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855203, 1855227, 1855165 ],
+    "following" : [ 1855227, 1855216, 1855164, 1855188 ],
+    "inputs" : [ 1629765, 29356 ],
+    "outputs" : [ 29372, 1629770 ],
+    "catalysts" : [ 2023957 ],
+    "efs" : [ ],
+    "diagramIds" : [ 642 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855193,
+    "stId" : "R-HSA-1855193",
+    "displayName" : "1-PP-IP4 is phosphorylated to 1,5-(PP)2-IP3 by IP6K1/3 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855223, 1855173 ],
+    "inputs" : [ 113592, 1629736 ],
+    "outputs" : [ 29370, 1629738 ],
+    "catalysts" : [ 2023977 ],
+    "efs" : [ ],
+    "diagramIds" : [ 707 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855194,
+    "stId" : "R-HSA-1855194",
+    "displayName" : "1-PP-IP5 is phosphorylated to 1,5-(PP)2-IP4 by IP6K1/3 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855216, 2023973 ],
+    "following" : [ 2023973, 1855165 ],
+    "inputs" : [ 113592, 1629740 ],
+    "outputs" : [ 1629732, 29370 ],
+    "catalysts" : [ 2023977 ],
+    "efs" : [ ],
+    "diagramIds" : [ 546 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855195,
+    "stId" : "R-HSA-1855195",
+    "displayName" : "I(1,3,4,5,6)P5 transports from the cytosol to the ER lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855155, 1855162, 1855161, 1855166 ],
+    "following" : [ 1855160, 1855163, 1855155 ],
+    "inputs" : [ 994141 ],
+    "outputs" : [ 2024008 ],
+    "efs" : [ ],
+    "diagramIds" : [ 854 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855188,
+    "stId" : "R-HSA-1855188",
+    "displayName" : "IP6 transports from the cytosol to the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2023971, 1855179, 1855198 ],
+    "following" : [ 1855187, 1855207 ],
+    "inputs" : [ 1629770 ],
+    "outputs" : [ 2023929 ],
+    "efs" : [ ],
+    "diagramIds" : [ 520 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855189,
+    "stId" : "R-HSA-1855189",
+    "displayName" : "I(1,4,5,6)P4 transports from the ER lumen to the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855163 ],
+    "following" : [ 1855185 ],
+    "inputs" : [ 2024012 ],
+    "outputs" : [ 2023935 ],
+    "efs" : [ ],
+    "diagramIds" : [ 882 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855190,
+    "stId" : "R-HSA-1855190",
+    "displayName" : "I(1,4,5)P3 transports from the cytosol to the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855217, 1855205, 1855221, 1855177, 1855214 ],
+    "following" : [ 1855233 ],
+    "inputs" : [ 114520 ],
+    "outputs" : [ 2023907 ],
+    "efs" : [ ],
+    "diagramIds" : [ 398 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855185,
+    "stId" : "R-HSA-1855185",
+    "displayName" : "I(1,4,5,6)P4 is phosphorylated to I(1,3,4,5,6)P5 by IPMK in the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855189 ],
+    "following" : [ 1855181, 1855161, 1855176 ],
+    "inputs" : [ 29358, 2023935 ],
+    "outputs" : [ 113582, 2023901 ],
+    "catalysts" : [ 1604596 ],
+    "efs" : [ ],
+    "diagramIds" : [ 414 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855186,
+    "stId" : "R-HSA-1855186",
+    "displayName" : "I(1,3,4,5)P4 transports from the cytosol to the ER lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855153, 1855172 ],
+    "following" : [ 1855200 ],
+    "inputs" : [ 994170 ],
+    "outputs" : [ 2024002 ],
+    "efs" : [ ],
+    "diagramIds" : [ 287 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855187,
+    "stId" : "R-HSA-1855187",
+    "displayName" : "IP6 transports from the nucleus to the ER lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855188, 1855176 ],
+    "following" : [ 1855225 ],
+    "inputs" : [ 2023929 ],
+    "outputs" : [ 2024018 ],
+    "efs" : [ ],
+    "diagramIds" : [ 861 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855180,
+    "stId" : "R-HSA-1855180",
+    "displayName" : "I(1,3,4)P3 is dephosphorylated to I(1,3)P2 by INPP4A/B in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855171, 1855218, 1855213 ],
+    "inputs" : [ 29356, 994123 ],
+    "outputs" : [ 29372, 1629769 ],
+    "catalysts" : [ 1806281 ],
+    "efs" : [ ],
+    "diagramIds" : [ 271 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855181,
+    "stId" : "R-HSA-1855181",
+    "displayName" : "I(1,3,4,5,6)P5 is phosphorylated to 5-PP-IP4 by IP6K1/2 in the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855185, 1855206, 1855160, 1855228 ],
+    "following" : [ 1855230, 1855173 ],
+    "inputs" : [ 29358, 2023901 ],
+    "outputs" : [ 113582, 2023922 ],
+    "catalysts" : [ 2023924 ],
+    "efs" : [ ],
+    "diagramIds" : [ 472 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855182,
+    "stId" : "R-HSA-1855182",
+    "displayName" : "5-PP-IP5 is phosphorylated to 1,5-(PP)2-IP4 by PPIP5K1/2 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855203, 1855227, 1855165 ],
+    "following" : [ 2023973, 1855165 ],
+    "inputs" : [ 1629765, 113592 ],
+    "outputs" : [ 1629732, 29370 ],
+    "catalysts" : [ 2023997 ],
+    "efs" : [ ],
+    "diagramIds" : [ 534 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855176,
+    "stId" : "R-HSA-1855176",
+    "displayName" : "I(1,3,4,5,6)P5 is phosphorylated to IP6 by IPPK (IP5-2K) in the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855185, 1855206, 1855160, 1855228 ],
+    "following" : [ 1855187, 1855207 ],
+    "inputs" : [ 29358, 2023901 ],
+    "outputs" : [ 113582, 2023929 ],
+    "catalysts" : [ 2023949 ],
+    "efs" : [ ],
+    "diagramIds" : [ 467 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855177,
+    "stId" : "R-HSA-1855177",
+    "displayName" : "PI(4,5)P2 is hydrolysed to I(1,4,5)P3 and DAG by cytosolic PLC[2] at the plasma membrane",
+    "schemaClass" : "Reaction",
+    "following" : [ 1855174, 1855222, 1855190, 1855153 ],
+    "inputs" : [ 29356, 179856 ],
+    "outputs" : [ 114520, 114519 ],
+    "catalysts" : [ 2023864 ],
+    "efs" : [ ],
+    "diagramIds" : [ 30 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855178,
+    "stId" : "R-HSA-1855178",
+    "displayName" : "Glc6P is isomerised to I3P by ISYNA1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "following" : [ 1855210 ],
+    "inputs" : [ 1629756 ],
+    "outputs" : [ 1629731 ],
+    "catalysts" : [ 2024052 ],
+    "efs" : [ ],
+    "diagramIds" : [ 238 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855179,
+    "stId" : "R-HSA-1855179",
+    "displayName" : "I(1,3,4,5,6)P5 is phosphorylated to IP6 by IPPK in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855155, 1855162, 1855161, 1855166 ],
+    "following" : [ 1855227, 1855216, 1855164, 1855188 ],
+    "inputs" : [ 113592, 994141 ],
+    "outputs" : [ 29370, 1629770 ],
+    "catalysts" : [ 1604598 ],
+    "efs" : [ ],
+    "diagramIds" : [ 728 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855172,
+    "stId" : "R-HSA-1855172",
+    "displayName" : "I(1,3,4)P3 is phosphorylated to I(1,3,4,5)P4 by ITPK1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855171, 1855218, 1855213 ],
+    "following" : [ 1855168, 1855205, 1855218, 1855186, 1855213 ],
+    "inputs" : [ 113592, 994123 ],
+    "outputs" : [ 29370, 994170 ],
+    "catalysts" : [ 1604601 ],
+    "efs" : [ ],
+    "diagramIds" : [ 339 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855173,
+    "stId" : "R-HSA-1855173",
+    "displayName" : "5-PP-IP4 transports from the nucleus to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855181 ],
+    "following" : [ 1855193, 1855166 ],
+    "inputs" : [ 2023922 ],
+    "outputs" : [ 1629755 ],
+    "efs" : [ ],
+    "diagramIds" : [ 700 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855174,
+    "stId" : "R-HSA-1855174",
+    "displayName" : "I(1,4,5)P3 is dephosphorylated to I(1,4)P2 by INPP5(4) in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855217, 1855205, 1855221, 1855177, 1855214 ],
+    "following" : [ 1855208 ],
+    "inputs" : [ 29356, 114520 ],
+    "outputs" : [ 29372, 1629739 ],
+    "catalysts" : [ 2024044 ],
+    "efs" : [ ],
+    "diagramIds" : [ 178 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855168,
+    "stId" : "R-HSA-1855168",
+    "displayName" : "I(1,3,4,5)P4 transports from the cytosol to the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855153, 1855172 ],
+    "following" : [ 1855206 ],
+    "inputs" : [ 994170 ],
+    "outputs" : [ 2023891 ],
+    "efs" : [ ],
+    "diagramIds" : [ 405 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855169,
+    "stId" : "R-HSA-1855169",
+    "displayName" : "I(3,4,6)P3 is phosphorylated to I(1,3,4,6)P4 by ITPK1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855159 ],
+    "following" : [ 1855201, 1855171, 1855159 ],
+    "inputs" : [ 113592, 1629741 ],
+    "outputs" : [ 994146, 29370 ],
+    "catalysts" : [ 1604601 ],
+    "efs" : [ ],
+    "diagramIds" : [ 380 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855171,
+    "stId" : "R-HSA-1855171",
+    "displayName" : "I(1,3,4,6)P4 is dephosphorylated to I(1,3,4)P3 by ITPK1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855169, 1855197 ],
+    "following" : [ 1855180, 1855232, 1855172, 1855197 ],
+    "inputs" : [ 994146, 29356 ],
+    "outputs" : [ 29372, 994123 ],
+    "catalysts" : [ 1604601 ],
+    "efs" : [ ],
+    "diagramIds" : [ 363 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855228,
+    "stId" : "R-HSA-1855228",
+    "displayName" : "I(1,3,4,6)P4 is phosphorylated to I(1,3,4,5,6)P5 by IPMK in the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855201 ],
+    "following" : [ 1855181, 1855176, 1855161 ],
+    "inputs" : [ 29358, 2023892 ],
+    "outputs" : [ 113582, 2023901 ],
+    "catalysts" : [ 1604596 ],
+    "efs" : [ ],
+    "diagramIds" : [ 444 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855230,
+    "stId" : "R-HSA-1855230",
+    "displayName" : "5-PP-IP4 is phosphorylated to 1,5-(PP)2-IP3 by IP6K1/2 in the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855181 ],
+    "inputs" : [ 29358, 2023922 ],
+    "outputs" : [ 113582, 2023948 ],
+    "catalysts" : [ 2023924 ],
+    "efs" : [ ],
+    "diagramIds" : [ 477 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855224,
+    "stId" : "R-HSA-1855224",
+    "displayName" : "5-PP-IP5 is phosphorylated to 5-PPP-IP5 by IP6K1/2 in the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855207 ],
+    "inputs" : [ 29358, 2023940 ],
+    "outputs" : [ 113582, 2023941 ],
+    "catalysts" : [ 2023924 ],
+    "efs" : [ ],
+    "diagramIds" : [ 511 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855225,
+    "stId" : "R-HSA-1855225",
+    "displayName" : "IP6 is dephosphorylated to I(1,2,4,5,6)P5 by MINPP1 in the ER lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855187, 1855164 ],
+    "following" : [ 1855160, 1855155, 1855163 ],
+    "inputs" : [ 113519, 2024018 ],
+    "outputs" : [ 113551, 2564836 ],
+    "catalysts" : [ 1604613 ],
+    "efs" : [ ],
+    "diagramIds" : [ 807 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855227,
+    "stId" : "R-HSA-1855227",
+    "displayName" : "IP6 is phosphorylated to 5-PP-IP5 by IP6K1/3 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2023971, 1855179, 1855198 ],
+    "following" : [ 1855158, 1855182, 1855198 ],
+    "inputs" : [ 113592, 1629770 ],
+    "outputs" : [ 1629765, 29370 ],
+    "catalysts" : [ 2023977 ],
+    "efs" : [ ],
+    "diagramIds" : [ 653 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855220,
+    "stId" : "R-HSA-1855220",
+    "displayName" : "(PP)2-IP4 transports from the nucleus to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855157 ],
+    "following" : [ 2023973, 1855165 ],
+    "inputs" : [ 2023936 ],
+    "outputs" : [ 2023968 ],
+    "efs" : [ ],
+    "diagramIds" : [ 600 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855221,
+    "stId" : "R-HSA-1855221",
+    "displayName" : "PI(4,5)P2 is hydrolysed to I(1,4,5)P3 and DAG by tethered PLC[1] at the plasma membrane",
+    "schemaClass" : "Reaction",
+    "following" : [ 1855174, 1855222, 1855190, 1855153 ],
+    "inputs" : [ 29356, 179856 ],
+    "outputs" : [ 114520, 114519 ],
+    "catalysts" : [ 2023861 ],
+    "efs" : [ ],
+    "diagramIds" : [ 19 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855222,
+    "stId" : "R-HSA-1855222",
+    "displayName" : "I(1,4,5)P3 is dephosphorylated to I(1,4)P2 by INPP5A/B at the plasma membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855217, 1855205, 1855221, 1855177, 1855214 ],
+    "following" : [ 1855208 ],
+    "inputs" : [ 29356, 114520 ],
+    "outputs" : [ 29372, 1629739 ],
+    "catalysts" : [ 2024026 ],
+    "efs" : [ ],
+    "diagramIds" : [ 184 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855223,
+    "stId" : "R-HSA-1855223",
+    "displayName" : "I(1,3,4,5,6)P5 is phosphorylated to 5-PP-IP4 by IP6K1/3 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855155, 1855162, 1855161, 1855166 ],
+    "following" : [ 1855193, 1855166 ],
+    "inputs" : [ 113592, 994141 ],
+    "outputs" : [ 29370, 1629755 ],
+    "catalysts" : [ 2023977 ],
+    "efs" : [ ],
+    "diagramIds" : [ 756 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855216,
+    "stId" : "R-HSA-1855216",
+    "displayName" : "IP6 is phosphorylated to 1-PP-IP5 by PPIP5K1/2 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2023971, 1855179, 1855198 ],
+    "following" : [ 1855212, 2023971, 1855194 ],
+    "inputs" : [ 113592, 1629770 ],
+    "outputs" : [ 29370, 1629740 ],
+    "catalysts" : [ 2023997 ],
+    "efs" : [ ],
+    "diagramIds" : [ 674 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855217,
+    "stId" : "R-HSA-1855217",
+    "displayName" : "I(1,4,5)P3 transports from the ER lumen to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855200 ],
+    "following" : [ 1855174, 1855222, 1855190, 1855153 ],
+    "inputs" : [ 2024016 ],
+    "outputs" : [ 114520 ],
+    "efs" : [ ],
+    "diagramIds" : [ 154 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855218,
+    "stId" : "R-HSA-1855218",
+    "displayName" : "I(1,3,4,5)P4 is dephosphorylated to I(1,3,4)P3 by INPP5[3]/ITPK1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855153, 1855172 ],
+    "following" : [ 1855180, 1855232, 1855172, 1855197 ],
+    "inputs" : [ 29356, 994170 ],
+    "outputs" : [ 29372, 994123 ],
+    "catalysts" : [ 2023888 ],
+    "efs" : [ ],
+    "diagramIds" : [ 303 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855219,
+    "stId" : "R-HSA-1855219",
+    "displayName" : "I(1,3,4,5,6)P5 is dephosphorylated to I(3,4,5,6)P4 by ITPK1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855155, 1855162, 1855161, 1855166 ],
+    "following" : [ 1855162 ],
+    "inputs" : [ 29356, 994141 ],
+    "outputs" : [ 29372, 994149 ],
+    "catalysts" : [ 1604601 ],
+    "efs" : [ ],
+    "diagramIds" : [ 771 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855212,
+    "stId" : "R-HSA-1855212",
+    "displayName" : "1/3-PP-IP5 transports from the cytosol to the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855216, 2023973 ],
+    "following" : [ 1855157 ],
+    "inputs" : [ 2023974 ],
+    "outputs" : [ 2023944 ],
+    "efs" : [ ],
+    "diagramIds" : [ 598 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6809238,
+    "stId" : "R-HSA-6809238",
+    "displayName" : "MTMR7 binds MTMR9",
+    "schemaClass" : "Reaction",
+    "following" : [ 6809565 ],
+    "inputs" : [ 1604650, 6809239 ],
+    "outputs" : [ 6809241 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1178 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855213,
+    "stId" : "R-HSA-1855213",
+    "displayName" : "I(1,3,4,5)P4 is dephosphorylated to I(1,3,4)P3 by INPP5B at the plasma membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855153, 1855172 ],
+    "following" : [ 1855180, 1855232, 1855172, 1855197 ],
+    "inputs" : [ 29356, 994170 ],
+    "outputs" : [ 29372, 994123 ],
+    "catalysts" : [ 3769048 ],
+    "efs" : [ ],
+    "diagramIds" : [ 313 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855214,
+    "stId" : "R-HSA-1855214",
+    "displayName" : "PL(C)D4:3xCa2+ hydrolse PI(4,5)P2 to I(1,4,5)P3 and DAG at the ER membrane",
+    "schemaClass" : "Reaction",
+    "following" : [ 1855174, 1855222, 1855190, 1855153 ],
+    "inputs" : [ 2023856, 29356 ],
+    "outputs" : [ 114520, 1500596 ],
+    "catalysts" : [ 8870313 ],
+    "efs" : [ ],
+    "diagramIds" : [ 44 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855208,
+    "stId" : "R-HSA-1855208",
+    "displayName" : "I(1,4)P2 is dephosphorylated to I4P by INPP1 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855222, 1855174 ],
+    "following" : [ 1855211 ],
+    "inputs" : [ 29356, 1629739 ],
+    "outputs" : [ 29372, 1629753 ],
+    "catalysts" : [ 1604578 ],
+    "efs" : [ ],
+    "diagramIds" : [ 199 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855210,
+    "stId" : "R-HSA-1855210",
+    "displayName" : "I3P is dephosphorylated to Ins by IMPA1/2 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855202, 1855178 ],
+    "following" : [ 5678327 ],
+    "inputs" : [ 29356, 1629731 ],
+    "outputs" : [ 29372, 426910 ],
+    "catalysts" : [ 2024024 ],
+    "efs" : [ ],
+    "diagramIds" : [ 229 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855211,
+    "stId" : "R-HSA-1855211",
+    "displayName" : "I4P is dephosphorylated to Ins by IMPA1/2 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855208 ],
+    "inputs" : [ 29356, 1629753 ],
+    "outputs" : [ 29372, 426910 ],
+    "catalysts" : [ 2024024 ],
+    "efs" : [ ],
+    "diagramIds" : [ 155 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855205,
+    "stId" : "R-HSA-1855205",
+    "displayName" : "I(1,3,4,5)P4 is dephosphorylated to I(1,4,5)P3 by PTEN in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855153, 1855172 ],
+    "following" : [ 1855174, 1855222, 1855190, 1855153 ],
+    "inputs" : [ 29356, 994170 ],
+    "outputs" : [ 29372, 114520 ],
+    "catalysts" : [ 199426 ],
+    "efs" : [ ],
+    "diagramIds" : [ 298 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855206,
+    "stId" : "R-HSA-1855206",
+    "displayName" : "I(1,3,4,5)P4 is phosphorylated to I(1,3,4,5,6)P5 by IPMK in the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855233, 1855168 ],
+    "following" : [ 1855181, 1855161, 1855176 ],
+    "inputs" : [ 29358, 2023891 ],
+    "outputs" : [ 113582, 2023901 ],
+    "catalysts" : [ 1604596 ],
+    "efs" : [ ],
+    "diagramIds" : [ 429 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855207,
+    "stId" : "R-HSA-1855207",
+    "displayName" : "IP6 is phosphorylated to 5-PP-IP5 by IP6K1/2 in the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855188, 1855176 ],
+    "following" : [ 1855224, 1855203 ],
+    "inputs" : [ 29358, 2023929 ],
+    "outputs" : [ 113582, 2023940 ],
+    "catalysts" : [ 2023924 ],
+    "efs" : [ ],
+    "diagramIds" : [ 501 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855200,
+    "stId" : "R-HSA-1855200",
+    "displayName" : "I(1,3,4,5)P4 is dephosphorylated to I(1,4,5)P3 by MINPP1 in the ER lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855186 ],
+    "following" : [ 1855217 ],
+    "inputs" : [ 113519, 2024002 ],
+    "outputs" : [ 113551, 2024016 ],
+    "catalysts" : [ 1604613 ],
+    "efs" : [ ],
+    "diagramIds" : [ 148 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855201,
+    "stId" : "R-HSA-1855201",
+    "displayName" : "I(1,3,4,6)P4 transports from the cytosol to the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855169, 1855197 ],
+    "following" : [ 1855228 ],
+    "inputs" : [ 994146 ],
+    "outputs" : [ 2023892 ],
+    "efs" : [ ],
+    "diagramIds" : [ 407 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855202,
+    "stId" : "R-HSA-1855202",
+    "displayName" : "I(3,4)P2 is dephosphorylated to I3P by INPP4A/B in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855232 ],
+    "following" : [ 1855210 ],
+    "inputs" : [ 29356, 1629746 ],
+    "outputs" : [ 29372, 1629731 ],
+    "catalysts" : [ 1806281 ],
+    "efs" : [ ],
+    "diagramIds" : [ 251 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1855203,
+    "stId" : "R-HSA-1855203",
+    "displayName" : "5-PP-IP5 transports from the nucleus to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1855207 ],
+    "following" : [ 1855158, 1855182, 1855198 ],
+    "inputs" : [ 2023940 ],
+    "outputs" : [ 1629765 ],
+    "efs" : [ ],
+    "diagramIds" : [ 522 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 1855196,
+    "stId" : "R-HSA-1855196",
+    "displayName" : "IP3 and IP4 transport between cytosol and nucleus",
+    "events" : [ 1855190, 1855168, 1855201 ]
+  }, {
+    "dbId" : 1855215,
+    "stId" : "R-HSA-1855215",
+    "displayName" : "IPs transport between ER lumen and cytosol",
+    "events" : [ 1855217, 1855155 ]
+  }, {
+    "dbId" : 1855229,
+    "stId" : "R-HSA-1855229",
+    "displayName" : "IP6 and IP7 transport between cytosol and nucleus",
+    "events" : [ 1855212, 1855188 ]
+  }, {
+    "dbId" : 1855167,
+    "stId" : "R-HSA-1855167",
+    "displayName" : "Synthesis of pyrophosphates in the cytosol",
+    "events" : [ 2023971, 2023973, 1855179, 1855182, 1855219, 1855216, 1855223, 1855158, 1855227, 1855194, 1855162, 1855193, 1855198, 1855166, 1855165 ]
+  }, {
+    "dbId" : 1855204,
+    "stId" : "R-HSA-1855204",
+    "displayName" : "Synthesis of IP3 and IP4 in the cytosol",
+    "events" : [ 1855213, 1855197, 1855214, 1855177, 1855172, 1855221, 1855205, 1855159, 1855153, 1855169, 1855218, 1855171 ]
+  }, {
+    "dbId" : 1855184,
+    "stId" : "R-HSA-1855184",
+    "displayName" : "IPs transport between cytosol and ER lumen",
+    "events" : [ 1855164, 1855195, 1855186 ]
+  }, {
+    "dbId" : 1855170,
+    "stId" : "R-HSA-1855170",
+    "displayName" : "IPs transport between nucleus and cytosol",
+    "events" : [ 1855161, 1855220, 1855173, 1855203 ]
+  }, {
+    "dbId" : 1855183,
+    "stId" : "R-HSA-1855183",
+    "displayName" : "Synthesis of IP2, IP, and Ins in the cytosol",
+    "events" : [ 5678327, 1855222, 1855154, 1855180, 6809238, 1855208, 1855178, 1855210, 1855211, 1855174, 6809565, 1855232, 1855202, 6809561 ]
+  }, {
+    "dbId" : 1855191,
+    "stId" : "R-HSA-1855191",
+    "displayName" : "Synthesis of IPs in the nucleus",
+    "events" : [ 1855228, 1855181, 1855230, 1855176, 1855224, 1855157, 1855206, 1855207, 1855233, 1855185 ]
+  }, {
+    "dbId" : 1855156,
+    "stId" : "R-HSA-1855156",
+    "displayName" : "IPs transport between ER lumen and nucleus",
+    "events" : [ 1855160, 1855189 ]
+  }, {
+    "dbId" : 1855231,
+    "stId" : "R-HSA-1855231",
+    "displayName" : "Synthesis of IPs in the ER lumen",
+    "events" : [ 1855225, 1855163, 1855200 ]
+  }, {
+    "dbId" : 1855192,
+    "stId" : "R-HSA-1855192",
+    "displayName" : "IPs transport between nucleus and ER lumen",
+    "events" : [ 1855187 ]
+  } ]
+}

@@ -1,0 +1,138 @@
+{
+  "dbId" : 5653890,
+  "stId" : "R-HSA-5653890",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 70113,
+    "stId" : "R-ALL-70113",
+    "displayName" : "Glc [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1142 ],
+    "identifier" : "17925"
+  }, {
+    "dbId" : 528072,
+    "stId" : "R-HSA-528072",
+    "displayName" : "B4GALT1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1150 ],
+    "identifier" : "P15291",
+    "geneNames" : [ "B4GALT1", "GGTB2" ],
+    "parents" : [ 5653885 ]
+  }, {
+    "dbId" : 205687,
+    "stId" : "R-ALL-205687",
+    "displayName" : "UDP [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1159 ],
+    "identifier" : "17659"
+  }, {
+    "dbId" : 964746,
+    "stId" : "R-ALL-964746",
+    "displayName" : "Glc [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1139 ],
+    "identifier" : "17925"
+  }, {
+    "dbId" : 5653875,
+    "stId" : "R-ALL-5653875",
+    "displayName" : "Mn2+ [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1154 ],
+    "identifier" : "29035"
+  }, {
+    "dbId" : 5653870,
+    "stId" : "R-HSA-5653870",
+    "displayName" : "LALBA [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00709",
+    "geneNames" : [ "LALBA", "LYZL7" ],
+    "parents" : [ 5653885 ]
+  }, {
+    "dbId" : 5653871,
+    "stId" : "R-ALL-5653871",
+    "displayName" : "Lac [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1160 ],
+    "identifier" : "36219"
+  }, {
+    "dbId" : 735682,
+    "stId" : "R-ALL-735682",
+    "displayName" : "UDP-Gal [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1153 ],
+    "identifier" : "18307"
+  }, {
+    "dbId" : 5653885,
+    "stId" : "R-HSA-5653885",
+    "displayName" : "B4GALT1:LALBA [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1152 ],
+    "children" : [ 5653870, 528072 ]
+  }, {
+    "dbId" : 5653883,
+    "stId" : "R-HSA-5653883",
+    "displayName" : "SLC2A1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11166",
+    "geneNames" : [ "SLC2A1", "GLUT1" ],
+    "parents" : [ 5653881 ]
+  }, {
+    "dbId" : 5653896,
+    "stId" : "R-HSA-5653896",
+    "displayName" : "LALBA [Golgi lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1151 ],
+    "identifier" : "P00709",
+    "geneNames" : [ "LALBA", "LYZL7" ]
+  }, {
+    "dbId" : 5653881,
+    "stId" : "R-HSA-5653881",
+    "displayName" : "SLC2A1 tetramer [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1140 ],
+    "children" : [ 5653883 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 5653878,
+    "stId" : "R-HSA-5653878",
+    "displayName" : "B4GALT1:LALBA transfers Gal from UDP-Gal to Glc to form Lac",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5653886, 5653873 ],
+    "inputs" : [ 735682, 964746 ],
+    "outputs" : [ 5653871, 205687 ],
+    "catalysts" : [ 5653885 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1158 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5653873,
+    "stId" : "R-HSA-5653873",
+    "displayName" : "SLC2A1 tetramer transports Glc from cytosol to Golgi lumen",
+    "schemaClass" : "Reaction",
+    "following" : [ 5653878 ],
+    "inputs" : [ 70113 ],
+    "outputs" : [ 964746 ],
+    "catalysts" : [ 5653881 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1138 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5653886,
+    "stId" : "R-HSA-5653886",
+    "displayName" : "B4GALT1 binds LALBA",
+    "schemaClass" : "Reaction",
+    "following" : [ 5653878 ],
+    "inputs" : [ 5653896, 528072 ],
+    "outputs" : [ 5653885 ],
+    "efs" : [ ],
+    "activators" : [ 735682, 5653875 ],
+    "diagramIds" : [ 1149 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

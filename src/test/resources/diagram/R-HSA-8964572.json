@@ -1,0 +1,888 @@
+{
+  "dbId" : 8964572,
+  "stableId" : "R-HSA-8964572",
+  "displayName" : "Lipid particle organization",
+  "nodes" : [ {
+    "id" : 4689,
+    "reactomeId" : 8866926,
+    "displayName" : "lipid droplet",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 219,
+      "y" : 172
+    },
+    "minX" : 179,
+    "maxX" : 278,
+    "minY" : 122,
+    "maxY" : 293,
+    "prop" : {
+      "x" : 179,
+      "y" : 161,
+      "width" : 80,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 179,
+      "y" : 162
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 5964,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 231,
+          "y" : 158
+        },
+        "to" : {
+          "x" : 276,
+          "y" : 122
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 5965,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 235,
+          "y" : 186
+        },
+        "to" : {
+          "x" : 278,
+          "y" : 211
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 5966,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 224,
+          "y" : 186
+        },
+        "to" : {
+          "x" : 278,
+          "y" : 293
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4433,
+    "reactomeId" : 8858285,
+    "displayName" : "HILPDA",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 141,
+      "y" : 212
+    },
+    "minX" : 115,
+    "maxX" : 278,
+    "minY" : 194,
+    "maxY" : 224,
+    "prop" : {
+      "x" : 115,
+      "y" : 200,
+      "width" : 52,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 116,
+      "y" : 201
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 167,
+          "y" : 200
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 5965,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 170,
+          "y" : 211
+        },
+        "to" : {
+          "x" : 278,
+          "y" : 211
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4690,
+    "reactomeId" : 549167,
+    "displayName" : "TAG",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 596,
+      "y" : 90
+    },
+    "minX" : 575,
+    "maxX" : 626,
+    "minY" : 74,
+    "maxY" : 136,
+    "prop" : {
+      "x" : 575,
+      "y" : 75,
+      "width" : 42,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 579,
+      "y" : 79
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 612,
+          "y" : 80
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 5967,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 605,
+          "y" : 108
+        },
+        "to" : {
+          "x" : 626,
+          "y" : 136
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4434,
+    "reactomeId" : 8858282,
+    "displayName" : "HILPDA:lipid droplet",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 465,
+      "y" : 213
+    },
+    "minX" : 418,
+    "maxX" : 513,
+    "minY" : 195,
+    "maxY" : 232,
+    "prop" : {
+      "x" : 418,
+      "y" : 195,
+      "width" : 95,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 424,
+      "y" : 197
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 5965,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4455,
+    "reactomeId" : 8862029,
+    "displayName" : "HSD17B13",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 144,
+      "y" : 294
+    },
+    "minX" : 106,
+    "maxX" : 278,
+    "minY" : 277,
+    "maxY" : 306,
+    "prop" : {
+      "x" : 106,
+      "y" : 283,
+      "width" : 77,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 109,
+      "y" : 284
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 183,
+          "y" : 283
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 5966,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 186,
+          "y" : 293
+        },
+        "to" : {
+          "x" : 278,
+          "y" : 293
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4456,
+    "reactomeId" : 8862370,
+    "displayName" : "HSD17B13:lipid droplet",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 466,
+      "y" : 294
+    },
+    "minX" : 412,
+    "maxX" : 520,
+    "minY" : 276,
+    "maxY" : 312,
+    "prop" : {
+      "x" : 412,
+      "y" : 276,
+      "width" : 108,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 414,
+      "y" : 277
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 5966,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4458,
+    "reactomeId" : 8857666,
+    "displayName" : "FITM1,FITM2",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 600,
+      "y" : 178
+    },
+    "minX" : 557,
+    "maxX" : 644,
+    "minY" : 136,
+    "maxY" : 191,
+    "prop" : {
+      "x" : 557,
+      "y" : 166,
+      "width" : 87,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 559,
+      "y" : 168
+    },
+    "connectors" : [ {
+      "edgeId" : 5967,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 607,
+          "y" : 160
+        },
+        "to" : {
+          "x" : 626,
+          "y" : 136
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4460,
+    "reactomeId" : 8857661,
+    "displayName" : "(FITM1,FITM2):TAGs",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 758,
+      "y" : 139
+    },
+    "minX" : 708,
+    "maxX" : 808,
+    "minY" : 121,
+    "maxY" : 157,
+    "prop" : {
+      "x" : 708,
+      "y" : 121,
+      "width" : 100,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 711,
+      "y" : 122
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 5967,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4429,
+    "reactomeId" : 8856629,
+    "displayName" : "CIDEA:CIDEC",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 138,
+      "y" : 123
+    },
+    "minX" : 113,
+    "maxX" : 276,
+    "minY" : 108,
+    "maxY" : 139,
+    "prop" : {
+      "x" : 113,
+      "y" : 108,
+      "width" : 50,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 114,
+      "y" : 104
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 5964,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 166,
+          "y" : 122
+        },
+        "to" : {
+          "x" : 276,
+          "y" : 122
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4431,
+    "reactomeId" : 8856647,
+    "displayName" : "CIDEA:CIDEC:lipid droplet",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 467,
+      "y" : 122
+    },
+    "minX" : 419,
+    "maxX" : 515,
+    "minY" : 104,
+    "maxY" : 141,
+    "prop" : {
+      "x" : 419,
+      "y" : 104,
+      "width" : 96,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 424,
+      "y" : 106
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 5964,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 5964,
+    "reactomeId" : 8856630,
+    "displayName" : "CIDEA:CIDEC binds lipid droplets",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 344,
+      "y" : 122
+    },
+    "minX" : 276,
+    "maxX" : 416,
+    "minY" : 117,
+    "maxY" : 127,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 276,
+        "y" : 122
+      },
+      "to" : {
+        "x" : 344,
+        "y" : 122
+      }
+    }, {
+      "from" : {
+        "x" : 344,
+        "y" : 122
+      },
+      "to" : {
+        "x" : 416,
+        "y" : 122
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 409,
+        "y" : 126
+      },
+      "b" : {
+        "x" : 416,
+        "y" : 122
+      },
+      "c" : {
+        "x" : 409,
+        "y" : 118
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 344,
+        "y" : 122
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 4689,
+      "points" : [ {
+        "x" : 231,
+        "y" : 158
+      } ]
+    }, {
+      "id" : 4429,
+      "points" : [ {
+        "x" : 166,
+        "y" : 122
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 4431
+    } ]
+  }, {
+    "id" : 5965,
+    "reactomeId" : 8858270,
+    "displayName" : "HILPDA binds lipid droplets",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 342,
+      "y" : 211
+    },
+    "minX" : 278,
+    "maxX" : 415,
+    "minY" : 206,
+    "maxY" : 216,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 278,
+        "y" : 211
+      },
+      "to" : {
+        "x" : 342,
+        "y" : 211
+      }
+    }, {
+      "from" : {
+        "x" : 342,
+        "y" : 211
+      },
+      "to" : {
+        "x" : 415,
+        "y" : 212
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 408,
+        "y" : 216
+      },
+      "b" : {
+        "x" : 415,
+        "y" : 212
+      },
+      "c" : {
+        "x" : 408,
+        "y" : 208
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 342,
+        "y" : 211
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 4689,
+      "points" : [ {
+        "x" : 235,
+        "y" : 186
+      } ]
+    }, {
+      "id" : 4433,
+      "points" : [ {
+        "x" : 170,
+        "y" : 211
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 4434
+    } ]
+  }, {
+    "id" : 5966,
+    "reactomeId" : 8862380,
+    "displayName" : "HSD17B13 binds lipid droplets",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 342,
+      "y" : 293
+    },
+    "minX" : 278,
+    "maxX" : 409,
+    "minY" : 288,
+    "maxY" : 298,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 278,
+        "y" : 293
+      },
+      "to" : {
+        "x" : 342,
+        "y" : 293
+      }
+    }, {
+      "from" : {
+        "x" : 342,
+        "y" : 293
+      },
+      "to" : {
+        "x" : 409,
+        "y" : 293
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 402,
+        "y" : 297
+      },
+      "b" : {
+        "x" : 409,
+        "y" : 293
+      },
+      "c" : {
+        "x" : 402,
+        "y" : 289
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 342,
+        "y" : 293
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 4689,
+      "points" : [ {
+        "x" : 224,
+        "y" : 186
+      } ]
+    }, {
+      "id" : 4455,
+      "points" : [ {
+        "x" : 186,
+        "y" : 293
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 4456
+    } ]
+  }, {
+    "id" : 5967,
+    "reactomeId" : 8857686,
+    "displayName" : "FITM1, FITM2 bind TAGs",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 678,
+      "y" : 136
+    },
+    "minX" : 626,
+    "maxX" : 705,
+    "minY" : 131,
+    "maxY" : 141,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 626,
+        "y" : 136
+      },
+      "to" : {
+        "x" : 678,
+        "y" : 136
+      }
+    }, {
+      "from" : {
+        "x" : 678,
+        "y" : 136
+      },
+      "to" : {
+        "x" : 705,
+        "y" : 137
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 698,
+        "y" : 141
+      },
+      "b" : {
+        "x" : 705,
+        "y" : 137
+      },
+      "c" : {
+        "x" : 698,
+        "y" : 133
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 678,
+        "y" : 136
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 4690,
+      "points" : [ {
+        "x" : 605,
+        "y" : 108
+      } ]
+    }, {
+      "id" : 4458,
+      "points" : [ {
+        "x" : 607,
+        "y" : 160
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 4460
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 426,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 425,
+      "y" : 220
+    },
+    "minX" : 0,
+    "maxX" : 851,
+    "minY" : 0,
+    "maxY" : 440,
+    "prop" : {
+      "x" : 0,
+      "y" : 0,
+      "width" : 851,
+      "height" : 440
+    },
+    "textPosition" : {
+      "x" : 747,
+      "y" : 331
+    },
+    "insets" : {
+      "x" : 7,
+      "y" : 9,
+      "width" : 835,
+      "height" : 421
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 4455, 4690, 4429, 4433, 4462, 431 ]
+  }, {
+    "id" : 4462,
+    "reactomeId" : 17957,
+    "displayName" : "endoplasmic reticulum lumen",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 695,
+      "y" : 185
+    },
+    "minX" : 572,
+    "maxX" : 819,
+    "minY" : 135,
+    "maxY" : 235,
+    "prop" : {
+      "x" : 572,
+      "y" : 135,
+      "width" : 247,
+      "height" : 100
+    },
+    "textPosition" : {
+      "x" : 602,
+      "y" : 190
+    },
+    "insets" : {
+      "x" : 582,
+      "y" : 145,
+      "width" : 230,
+      "height" : 81
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 4458, 4460, 5967 ]
+  }, {
+    "id" : 431,
+    "reactomeId" : 13977,
+    "displayName" : "lipid droplet",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 347,
+      "y" : 237
+    },
+    "minX" : 208,
+    "maxX" : 487,
+    "minY" : 70,
+    "maxY" : 404,
+    "prop" : {
+      "x" : 208,
+      "y" : 70,
+      "width" : 279,
+      "height" : 334
+    },
+    "textPosition" : {
+      "x" : 368,
+      "y" : 325
+    },
+    "insets" : {
+      "x" : 218,
+      "y" : 80,
+      "width" : 261,
+      "height" : 324
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 4431, 4434, 4456, 4689, 5964, 5965, 5966 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 851,
+  "minY" : 0,
+  "maxY" : 440,
+  "disease" : false
+}

@@ -1,0 +1,735 @@
+{
+  "dbId" : 71336,
+  "stId" : "R-HSA-71336",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 71297,
+    "stId" : "R-HSA-71297",
+    "displayName" : "PGD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52209",
+    "geneNames" : [ "PGD", "PGDH" ],
+    "parents" : [ 467365 ]
+  }, {
+    "dbId" : 71301,
+    "stId" : "R-HSA-71301",
+    "displayName" : "RPE [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96AT9",
+    "geneNames" : [ "RPE", "HUSSY-17" ],
+    "parents" : [ 8957330 ]
+  }, {
+    "dbId" : 8957327,
+    "stId" : "R-HSA-8957327",
+    "displayName" : "RPEL1:Fe2+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8957329 ],
+    "children" : [ 8957212 ]
+  }, {
+    "dbId" : 71304,
+    "stId" : "R-HSA-71304",
+    "displayName" : "RPIA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 529 ],
+    "identifier" : "P49247",
+    "geneNames" : [ "RPIA", "RPI" ]
+  }, {
+    "dbId" : 29578,
+    "stId" : "R-ALL-29578",
+    "displayName" : "GA3P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 497 ],
+    "identifier" : "29052"
+  }, {
+    "dbId" : 73483,
+    "stId" : "R-HSA-73483",
+    "displayName" : "PRPS1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P60891",
+    "geneNames" : [ "PRPS1" ],
+    "parents" : [ 73485 ]
+  }, {
+    "dbId" : 73485,
+    "stId" : "R-HSA-73485",
+    "displayName" : "PRPS1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2801 ],
+    "parents" : [ 189812 ],
+    "children" : [ 73483 ]
+  }, {
+    "dbId" : 112016,
+    "stId" : "R-ALL-112016",
+    "displayName" : "R1P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2734 ],
+    "identifier" : "35425"
+  }, {
+    "dbId" : 8957212,
+    "stId" : "R-HSA-8957212",
+    "displayName" : "RPEL1:Fe2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8957327 ],
+    "children" : [ 71067, 8957213 ]
+  }, {
+    "dbId" : 5659970,
+    "stId" : "R-HSA-5659970",
+    "displayName" : "TALDO1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1167 ],
+    "children" : [ 71325 ]
+  }, {
+    "dbId" : 8957213,
+    "stId" : "R-HSA-8957213",
+    "displayName" : "RPEL1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q2QD12",
+    "geneNames" : [ "RPEL1" ],
+    "parents" : [ 8957212 ]
+  }, {
+    "dbId" : 453136,
+    "stId" : "R-HSA-453136",
+    "displayName" : "PGM2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96G03",
+    "geneNames" : [ "PGM2", "MSTP006" ],
+    "parents" : [ 453137 ]
+  }, {
+    "dbId" : 453137,
+    "stId" : "R-HSA-453137",
+    "displayName" : "PGM2:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1784, 2895 ],
+    "children" : [ 453136, 29926 ]
+  }, {
+    "dbId" : 71321,
+    "stId" : "R-HSA-71321",
+    "displayName" : "TKT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29401",
+    "geneNames" : [ "TKT" ],
+    "parents" : [ 71322 ]
+  }, {
+    "dbId" : 8957328,
+    "stId" : "R-HSA-8957328",
+    "displayName" : "RPE:Fe2+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8957329 ],
+    "children" : [ 8957330 ]
+  }, {
+    "dbId" : 8957329,
+    "stId" : "R-HSA-8957329",
+    "displayName" : "RPE:Fe2+ dimers [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2612 ],
+    "children" : [ 8957328, 8957327 ]
+  }, {
+    "dbId" : 6787326,
+    "stId" : "R-ALL-6787326",
+    "displayName" : "dR1P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2781 ],
+    "identifier" : "11563"
+  }, {
+    "dbId" : 71067,
+    "stId" : "R-ALL-71067",
+    "displayName" : "Fe2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 8957212, 8957330 ]
+  }, {
+    "dbId" : 8957330,
+    "stId" : "R-HSA-8957330",
+    "displayName" : "RPE:Fe2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8957328 ],
+    "children" : [ 71067, 71301 ]
+  }, {
+    "dbId" : 6787324,
+    "stId" : "R-HSA-6787324",
+    "displayName" : "DERA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1790 ],
+    "identifier" : "Q9Y315",
+    "geneNames" : [ "DERA", "CGI-26" ]
+  }, {
+    "dbId" : 71322,
+    "stId" : "R-HSA-71322",
+    "displayName" : "TKT dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 520, 495 ],
+    "children" : [ 29480, 71321, 29926 ]
+  }, {
+    "dbId" : 71325,
+    "stId" : "R-HSA-71325",
+    "displayName" : "TALDO1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P37837",
+    "geneNames" : [ "TALDO1", "TAL", "TALDO", "TALDOR" ],
+    "parents" : [ 5659970 ]
+  }, {
+    "dbId" : 76577,
+    "stId" : "R-ALL-76577",
+    "displayName" : "AMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2785 ],
+    "identifier" : "16027"
+  }, {
+    "dbId" : 467365,
+    "stId" : "R-HSA-467365",
+    "displayName" : "PGD dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 545 ],
+    "children" : [ 71297 ]
+  }, {
+    "dbId" : 29732,
+    "stId" : "R-ALL-29732",
+    "displayName" : "RU5P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 481 ],
+    "identifier" : "17363"
+  }, {
+    "dbId" : 29480,
+    "stId" : "R-ALL-29480",
+    "displayName" : "ThDP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "9532",
+    "parents" : [ 71322 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 468 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 29996,
+    "stId" : "R-ALL-29996",
+    "displayName" : "PDG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 469 ],
+    "identifier" : "16863"
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2689, 458 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 110644,
+    "stId" : "R-ALL-110644",
+    "displayName" : "dATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2799 ],
+    "identifier" : "16284"
+  }, {
+    "dbId" : 29878,
+    "stId" : "R-ALL-29878",
+    "displayName" : "E4P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 506 ],
+    "identifier" : "16897"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 457, 2687 ],
+    "identifier" : "18009",
+    "parents" : [ 70375, 70373 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2593, 2606, 2783 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 29882,
+    "stId" : "R-ALL-29882",
+    "displayName" : "SH7P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 494 ],
+    "identifier" : "15721"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2674, 2595 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2897 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 8955853,
+    "stId" : "R-ALL-8955853",
+    "displayName" : "D-ribose [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2594 ],
+    "identifier" : "47013"
+  }, {
+    "dbId" : 29510,
+    "stId" : "R-ALL-29510",
+    "displayName" : "CH3CHO [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1789 ],
+    "identifier" : "15343"
+  }, {
+    "dbId" : 29512,
+    "stId" : "R-ALL-29512",
+    "displayName" : "Fru(6)P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 511 ],
+    "identifier" : "15946"
+  }, {
+    "dbId" : 30537,
+    "stId" : "R-ALL-30537",
+    "displayName" : "G6P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 80 ],
+    "identifier" : "17665"
+  }, {
+    "dbId" : 109386,
+    "stId" : "R-ALL-109386",
+    "displayName" : "2'-deoxyadenosine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2800 ],
+    "identifier" : "17713"
+  }, {
+    "dbId" : 464971,
+    "stId" : "R-HSA-464971",
+    "displayName" : "G6PD dimer and tetramer [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 460 ],
+    "children" : [ 70375, 70373 ]
+  }, {
+    "dbId" : 8955847,
+    "stId" : "R-HSA-8955847",
+    "displayName" : "RBKS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2596 ],
+    "identifier" : "Q9H477",
+    "geneNames" : [ "RBKS", "RBSK" ]
+  }, {
+    "dbId" : 8959707,
+    "stId" : "R-ALL-8959707",
+    "displayName" : "Sedo [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2605 ],
+    "identifier" : "16802"
+  }, {
+    "dbId" : 8959710,
+    "stId" : "R-HSA-8959710",
+    "displayName" : "SHPK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2609 ],
+    "identifier" : "Q9UHJ6",
+    "geneNames" : [ "SHPK", "CARKL" ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 464, 2611, 478 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 29790,
+    "stId" : "R-ALL-29790",
+    "displayName" : "XY5P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 487 ],
+    "identifier" : "57737"
+  }, {
+    "dbId" : 73566,
+    "stId" : "R-ALL-73566",
+    "displayName" : "PRPP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2784 ],
+    "identifier" : "17111"
+  }, {
+    "dbId" : 70373,
+    "stId" : "R-HSA-70373",
+    "displayName" : "G6PD dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 464971 ],
+    "children" : [ 29366, 70372 ]
+  }, {
+    "dbId" : 70372,
+    "stId" : "R-HSA-70372",
+    "displayName" : "G6PD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11413",
+    "geneNames" : [ "G6PD" ],
+    "parents" : [ 70375, 70373 ]
+  }, {
+    "dbId" : 29926,
+    "stId" : "R-ALL-29926",
+    "displayName" : "Mg2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2896 ],
+    "identifier" : "18420",
+    "parents" : [ 453137, 71322 ]
+  }, {
+    "dbId" : 70375,
+    "stId" : "R-HSA-70375",
+    "displayName" : "G6PD tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 464971 ],
+    "children" : [ 29366, 70372 ]
+  }, {
+    "dbId" : 6787328,
+    "stId" : "R-ALL-6787328",
+    "displayName" : "dR5P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1787 ],
+    "identifier" : "16132"
+  }, {
+    "dbId" : 73578,
+    "stId" : "R-ALL-73578",
+    "displayName" : "R5P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 493 ],
+    "identifier" : "78679"
+  }, {
+    "dbId" : 31467,
+    "stId" : "R-ALL-31467",
+    "displayName" : "D-Glucono-1,5-lactone 6-phosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 459 ],
+    "identifier" : "16938"
+  }, {
+    "dbId" : 58224,
+    "stId" : "R-HSA-58224",
+    "displayName" : "PRPS2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11908",
+    "geneNames" : [ "PRPS2" ],
+    "parents" : [ 189814 ]
+  }, {
+    "dbId" : 58226,
+    "stId" : "R-HSA-58226",
+    "displayName" : "PRPS1L1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21108",
+    "geneNames" : [ "PRPS1L1", "PRPS3", "PRPSL" ],
+    "parents" : [ 189817 ]
+  }, {
+    "dbId" : 189814,
+    "stId" : "R-HSA-189814",
+    "displayName" : "phosphoriboyl pyrophosphate synthetase 2 putative holoenzyme [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 189812 ],
+    "children" : [ 58224 ]
+  }, {
+    "dbId" : 189812,
+    "stId" : "R-HSA-189812",
+    "displayName" : "PRPS2 dimer, PRPS1L dimer [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2786 ],
+    "children" : [ 73485, 189817, 189814 ]
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 480 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 189817,
+    "stId" : "R-HSA-189817",
+    "displayName" : "phosphoriboyl pyrophosphate synthetase 1-like 1 putative holoenzyme [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 189812 ],
+    "children" : [ 58226 ]
+  }, {
+    "dbId" : 71294,
+    "stId" : "R-HSA-71294",
+    "displayName" : "PGLS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 470 ],
+    "identifier" : "O95336",
+    "geneNames" : [ "PGLS" ]
+  } ],
+  "edges" : [ {
+    "dbId" : 71296,
+    "stId" : "R-HSA-71296",
+    "displayName" : "D-glucono-1,5-lactone 6-phosphate + H2O => 6-phospho-D-gluconate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70377 ],
+    "following" : [ 71299 ],
+    "inputs" : [ 29356, 31467 ],
+    "outputs" : [ 29996 ],
+    "catalysts" : [ 71294 ],
+    "efs" : [ ],
+    "diagramIds" : [ 467 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8982667,
+    "stId" : "R-HSA-8982667",
+    "displayName" : "PGM2:Mg2+ isomerises  dR1P to dR5P",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6787326 ],
+    "outputs" : [ 6787328 ],
+    "catalysts" : [ 453137 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2780 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71299,
+    "stId" : "R-HSA-71299",
+    "displayName" : "6-phospho-D-gluconate + NADP+ => D-ribulose 5-phosphate + CO2 + NADPH + H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71296 ],
+    "following" : [ 71303, 71306 ],
+    "inputs" : [ 29996, 29366 ],
+    "outputs" : [ 70106, 113528, 29364, 29732 ],
+    "catalysts" : [ 467365 ],
+    "efs" : [ ],
+    "diagramIds" : [ 473 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 163751,
+    "stId" : "R-HSA-163751",
+    "displayName" : "D-glyceraldehyde 3-phosphate + D-fructose 6-phosphate   <=> xylulose 5-phosphate + D-erythrose 4-phosphate",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29578, 29512 ],
+    "outputs" : [ 29790, 29878 ],
+    "catalysts" : [ 71322 ],
+    "efs" : [ ],
+    "diagramIds" : [ 523 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71303,
+    "stId" : "R-HSA-71303",
+    "displayName" : "RPE dimers isomerise RU5P to XY5P",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71299 ],
+    "following" : [ 71335, 71324 ],
+    "inputs" : [ 29732 ],
+    "outputs" : [ 29790 ],
+    "catalysts" : [ 8957329 ],
+    "efs" : [ ],
+    "diagramIds" : [ 486 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6787329,
+    "stId" : "R-HSA-6787329",
+    "displayName" : "PGM2:Mg2+ isomerises R1P to R5P",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 112016 ],
+    "outputs" : [ 73578 ],
+    "catalysts" : [ 453137 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1780 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71335,
+    "stId" : "R-HSA-71335",
+    "displayName" : "xylulose 5-phosphate + D-erythrose 4-phosphate <=> D-glyceraldehyde 3-phosphate + D-fructose 6-phosphate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71334, 71303 ],
+    "inputs" : [ 29790, 29878 ],
+    "outputs" : [ 29578, 29512 ],
+    "catalysts" : [ 71322 ],
+    "efs" : [ ],
+    "diagramIds" : [ 519 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71334,
+    "stId" : "R-HSA-71334",
+    "displayName" : "sedoheptulose 7-phosphate + D-glyceraldehyde 3-phosphate <=> D-erythrose 4-phosphate + D-fructose 6-phosphate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71324 ],
+    "following" : [ 71335 ],
+    "inputs" : [ 29578, 29882 ],
+    "outputs" : [ 29512, 29878 ],
+    "catalysts" : [ 5659970 ],
+    "efs" : [ ],
+    "diagramIds" : [ 505 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70377,
+    "stId" : "R-HSA-70377",
+    "displayName" : "alpha-D-glucose 6-phosphate + NADP+ => D-glucono-1,5-lactone 6-phosphate + NADPH + H+",
+    "schemaClass" : "Reaction",
+    "following" : [ 71296 ],
+    "inputs" : [ 30537, 29366 ],
+    "outputs" : [ 70106, 31467, 29364 ],
+    "catalysts" : [ 464971 ],
+    "efs" : [ ],
+    "diagramIds" : [ 456 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71306,
+    "stId" : "R-HSA-71306",
+    "displayName" : "D-ribulose 5-phosphate <=> ribose 5-phosphate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71299 ],
+    "following" : [ 73580, 71324 ],
+    "inputs" : [ 29732 ],
+    "outputs" : [ 73578 ],
+    "catalysts" : [ 71304 ],
+    "efs" : [ ],
+    "diagramIds" : [ 528 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8955844,
+    "stId" : "R-HSA-8955844",
+    "displayName" : "RBKS phosphorylates ribose to R5P",
+    "schemaClass" : "Reaction",
+    "following" : [ 71324 ],
+    "inputs" : [ 113592, 8955853 ],
+    "outputs" : [ 73578, 29370 ],
+    "catalysts" : [ 8955847 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2592 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 73580,
+    "stId" : "R-HSA-73580",
+    "displayName" : "D-ribose 5-phosphate + ATP => 5-phospho-alpha-D-ribose 1-diphosphate (PRPP) + adenosine 5'-monophosphate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71306 ],
+    "inputs" : [ 73578, 113592 ],
+    "outputs" : [ 73566, 76577 ],
+    "catalysts" : [ 189812 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2782 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 111215,
+    "stId" : "R-HSA-111215",
+    "displayName" : "D-ribose 5-phosphate + 2'-deoxyadenosine 5'-triphosphate (dATP) => 5-Phospho-alpha-D-ribose 1-diphosphate (PRPP) + 2'-deoxyadenosine 5'-monophosphate",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 73578, 110644 ],
+    "outputs" : [ 73566, 109386 ],
+    "catalysts" : [ 73485 ],
+    "efs" : [ ],
+    "requirements" : [ 29372, 29926 ],
+    "diagramIds" : [ 2798 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8959719,
+    "stId" : "R-HSA-8959719",
+    "displayName" : "SHPK phosphorylates Sedo to Sedo7P",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 8959707 ],
+    "outputs" : [ 70106, 29370, 29882 ],
+    "catalysts" : [ 8959710 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2604 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 163764,
+    "stId" : "R-HSA-163764",
+    "displayName" : "D-fructose 6-phosphate + D-erythrose 4-phosphate  <=>  sedoheptulose 7-phosphate + D-glyceraldehyde 3-phosphate",
+    "schemaClass" : "Reaction",
+    "following" : [ 163741 ],
+    "inputs" : [ 29512, 29878 ],
+    "outputs" : [ 29578, 29882 ],
+    "catalysts" : [ 5659970 ],
+    "efs" : [ ],
+    "diagramIds" : [ 516 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 199803,
+    "stId" : "R-HSA-199803",
+    "displayName" : "xylulose 5-phosphate <=> D-ribulose 5-phosphate",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29790 ],
+    "outputs" : [ 29732 ],
+    "catalysts" : [ 8957329 ],
+    "efs" : [ ],
+    "diagramIds" : [ 491 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 177784,
+    "stId" : "R-HSA-177784",
+    "displayName" : "ribose 5-phosphate <=> D-ribulose 5-phosphate",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 73578 ],
+    "outputs" : [ 29732 ],
+    "catalysts" : [ 71304 ],
+    "efs" : [ ],
+    "diagramIds" : [ 532 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71324,
+    "stId" : "R-HSA-71324",
+    "displayName" : "ribose 5-phosphate + xylulose 5-phosphate <=> sedoheptulose 7-phosphate + D-glyceraldehyde 3-phosphate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8955844, 71306, 71303 ],
+    "following" : [ 71334 ],
+    "inputs" : [ 29790, 73578 ],
+    "outputs" : [ 29882, 29578 ],
+    "catalysts" : [ 71322 ],
+    "efs" : [ ],
+    "diagramIds" : [ 492 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6787321,
+    "stId" : "R-HSA-6787321",
+    "displayName" : "DERA cleaves dR5P to GA3P and CH3CHO",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6787328 ],
+    "outputs" : [ 29578, 29510 ],
+    "catalysts" : [ 6787324 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1786 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 163741,
+    "stId" : "R-HSA-163741",
+    "displayName" : "D-glyceraldehyde 3-phosphate + sedoheptulose 7-phosphate<=> xylulose 5-phosphate+ribose 5-phosphate ",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 163764 ],
+    "inputs" : [ 29882, 29578 ],
+    "outputs" : [ 29790, 73578 ],
+    "catalysts" : [ 71322 ],
+    "efs" : [ ],
+    "diagramIds" : [ 502 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 73843,
+    "stId" : "R-HSA-73843",
+    "displayName" : "5-Phosphoribose 1-diphosphate biosynthesis",
+    "events" : [ 73580, 111215 ]
+  } ]
+}

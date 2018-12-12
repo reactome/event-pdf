@@ -1,0 +1,2283 @@
+{
+  "dbId" : 6788656,
+  "stId" : "R-HSA-6788656",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 30721,
+    "stId" : "R-ALL-30721",
+    "displayName" : "UCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 280 ],
+    "identifier" : "30817"
+  }, {
+    "dbId" : 71175,
+    "stId" : "R-HSA-71175",
+    "displayName" : "FAH dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 434 ],
+    "children" : [ 71174 ]
+  }, {
+    "dbId" : 29702,
+    "stId" : "R-ALL-29702",
+    "displayName" : "L-Val [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57762",
+    "parents" : [ 352227 ]
+  }, {
+    "dbId" : 71174,
+    "stId" : "R-HSA-71174",
+    "displayName" : "FAH [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16930",
+    "geneNames" : [ "FAH" ],
+    "parents" : [ 71175 ]
+  }, {
+    "dbId" : 70668,
+    "stId" : "R-HSA-70668",
+    "displayName" : "PRODH(1-?) [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 443 ],
+    "identifier" : "O43272",
+    "geneNames" : [ "PRODH", "PIG6", "POX2", "PRODH2" ]
+  }, {
+    "dbId" : 70673,
+    "stId" : "R-HSA-70673",
+    "displayName" : "ALDH4A1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30038",
+    "geneNames" : [ "ALDH4A1", "ALDH4", "P5CDH" ],
+    "parents" : [ 70674 ]
+  }, {
+    "dbId" : 71185,
+    "stId" : "R-ALL-71185",
+    "displayName" : "heme [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17627",
+    "parents" : [ 888612, 71186, 198580 ]
+  }, {
+    "dbId" : 71184,
+    "stId" : "R-HSA-71184",
+    "displayName" : "TDO2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48775",
+    "geneNames" : [ "TDO2", "TDO" ],
+    "parents" : [ 71186 ]
+  }, {
+    "dbId" : 71186,
+    "stId" : "R-HSA-71186",
+    "displayName" : "TDO2 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 468 ],
+    "children" : [ 71184, 71185 ]
+  }, {
+    "dbId" : 70674,
+    "stId" : "R-HSA-70674",
+    "displayName" : "ALDH4A1 dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 447 ],
+    "children" : [ 70673 ]
+  }, {
+    "dbId" : 8876689,
+    "stId" : "R-HSA-8876689",
+    "displayName" : "CARNMT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6379 ],
+    "identifier" : "Q8N4J0",
+    "geneNames" : [ "CARNMT1", "C9orf41" ]
+  }, {
+    "dbId" : 71198,
+    "stId" : "R-HSA-71198",
+    "displayName" : "KMO [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 484 ],
+    "identifier" : "O15229",
+    "geneNames" : [ "KMO" ]
+  }, {
+    "dbId" : 71201,
+    "stId" : "R-HSA-71201",
+    "displayName" : "PXLP-KYNU [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16719",
+    "geneNames" : [ "KYNU" ],
+    "parents" : [ 71202 ]
+  }, {
+    "dbId" : 71202,
+    "stId" : "R-HSA-71202",
+    "displayName" : "KYNU dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 493 ],
+    "children" : [ 71201 ]
+  }, {
+    "dbId" : 34351,
+    "stId" : "R-ALL-34351",
+    "displayName" : "3HKYN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 481 ],
+    "identifier" : "17380"
+  }, {
+    "dbId" : 71221,
+    "stId" : "R-HSA-71221",
+    "displayName" : "ACMSD dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 505 ],
+    "children" : [ 71220 ]
+  }, {
+    "dbId" : 71220,
+    "stId" : "R-HSA-71220",
+    "displayName" : "ACMSD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TDX5",
+    "geneNames" : [ "ACMSD" ],
+    "parents" : [ 71221 ]
+  }, {
+    "dbId" : 352327,
+    "stId" : "R-ALL-352327",
+    "displayName" : "O2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2271 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 71237,
+    "stId" : "R-HSA-71237",
+    "displayName" : "AM-SHDH [cytosol]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 510 ]
+  }, {
+    "dbId" : 164934,
+    "stId" : "R-ALL-164934",
+    "displayName" : "FADH2 [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 442 ],
+    "identifier" : "17877"
+  }, {
+    "dbId" : 5693978,
+    "stId" : "R-ALL-5693978",
+    "displayName" : "NH3 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6308 ],
+    "identifier" : "16134"
+  }, {
+    "dbId" : 8876775,
+    "stId" : "R-ALL-8876775",
+    "displayName" : "Anserine [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6378 ],
+    "identifier" : "18323"
+  }, {
+    "dbId" : 6788610,
+    "stId" : "R-HSA-6788610",
+    "displayName" : "HYKK [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6299 ],
+    "identifier" : "A2RU49",
+    "geneNames" : [ "HYKK", "AGPHD1" ]
+  }, {
+    "dbId" : 31339,
+    "stId" : "R-ALL-31339",
+    "displayName" : "L-Glu5S [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 53 ],
+    "identifier" : "17232"
+  }, {
+    "dbId" : 508531,
+    "stId" : "R-ALL-508531",
+    "displayName" : "2AMA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 336 ],
+    "identifier" : "17082"
+  }, {
+    "dbId" : 71285,
+    "stId" : "R-ALL-71285",
+    "displayName" : "AdoHcy [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6381, 5743 ],
+    "identifier" : "16680"
+  }, {
+    "dbId" : 71284,
+    "stId" : "R-ALL-71284",
+    "displayName" : "AdoMet [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 5745, 6383 ],
+    "identifier" : "15414"
+  }, {
+    "dbId" : 29824,
+    "stId" : "R-ALL-29824",
+    "displayName" : "LIPAM [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17460",
+    "parents" : [ 69995 ]
+  }, {
+    "dbId" : 30337,
+    "stId" : "R-ALL-30337",
+    "displayName" : "HGTA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 418 ],
+    "identifier" : "16169"
+  }, {
+    "dbId" : 31365,
+    "stId" : "R-ALL-31365",
+    "displayName" : "HPPYRA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 408 ],
+    "identifier" : "15999"
+  }, {
+    "dbId" : 508545,
+    "stId" : "R-HSA-508545",
+    "displayName" : "AADAT dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 341, 6376 ],
+    "children" : [ 70943 ]
+  }, {
+    "dbId" : 32913,
+    "stId" : "R-ALL-32913",
+    "displayName" : "2AM [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 509 ],
+    "identifier" : "16886"
+  }, {
+    "dbId" : 893599,
+    "stId" : "R-ALL-893599",
+    "displayName" : "3IN-PYRA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1081 ],
+    "identifier" : "29750"
+  }, {
+    "dbId" : 508564,
+    "stId" : "R-HSA-508564",
+    "displayName" : "ALDH7A1 tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 337 ],
+    "children" : [ 508562 ]
+  }, {
+    "dbId" : 6784242,
+    "stId" : "R-HSA-6784242",
+    "displayName" : "PRODH2 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6520 ],
+    "identifier" : "Q9UF12",
+    "geneNames" : [ "PRODH2", "HSPOX1", "HYPDH" ]
+  }, {
+    "dbId" : 508562,
+    "stId" : "R-HSA-508562",
+    "displayName" : "ALDH7A1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P49419",
+    "geneNames" : [ "ALDH7A1", "ATQ1" ],
+    "parents" : [ 508564 ]
+  }, {
+    "dbId" : 893595,
+    "stId" : "R-HSA-893595",
+    "displayName" : "PXLP-KYAT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16773",
+    "geneNames" : [ "KYAT1", "CCBL1" ],
+    "parents" : [ 893603 ]
+  }, {
+    "dbId" : 893594,
+    "stId" : "R-ALL-893594",
+    "displayName" : "KYNA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1109 ],
+    "identifier" : "18344"
+  }, {
+    "dbId" : 893587,
+    "stId" : "R-ALL-893587",
+    "displayName" : "KYNA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1099 ],
+    "identifier" : "18344"
+  }, {
+    "dbId" : 6786247,
+    "stId" : "R-HSA-6786247",
+    "displayName" : "CARNS1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6182 ],
+    "identifier" : "A5YM72",
+    "geneNames" : [ "CARNS1", "ATPGD1", "KIAA1394" ]
+  }, {
+    "dbId" : 893615,
+    "stId" : "R-ALL-893615",
+    "displayName" : "AP-DOBu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1088 ],
+    "identifier" : "17442"
+  }, {
+    "dbId" : 34979,
+    "stId" : "R-ALL-34979",
+    "displayName" : "4I-5PROA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 285 ],
+    "identifier" : "27384"
+  }, {
+    "dbId" : 893607,
+    "stId" : "R-ALL-893607",
+    "displayName" : "L-KYN [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1102 ],
+    "identifier" : "16946"
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6577, 482, 872, 474, 284, 397, 957, 3357 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 6786250,
+    "stId" : "R-ALL-6786250",
+    "displayName" : "CARN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6180 ],
+    "identifier" : "15727"
+  }, {
+    "dbId" : 893603,
+    "stId" : "R-HSA-893603",
+    "displayName" : "PXLP-KYAT1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2498, 1082 ],
+    "children" : [ 893595 ]
+  }, {
+    "dbId" : 29870,
+    "stId" : "R-ALL-29870",
+    "displayName" : "BH4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 390 ],
+    "identifier" : "15372"
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 403, 876 ],
+    "identifier" : "15846",
+    "parents" : [ 70901 ]
+  }, {
+    "dbId" : 8939576,
+    "stId" : "R-ALL-8939576",
+    "displayName" : "I3LACT, I3PROPA [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 6518 ],
+    "children" : [ 8939580, 8939579 ]
+  }, {
+    "dbId" : 6784215,
+    "stId" : "R-ALL-6784215",
+    "displayName" : "HPRO [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6523 ],
+    "identifier" : "18240"
+  }, {
+    "dbId" : 29362,
+    "stId" : "R-ALL-29362",
+    "displayName" : "NADH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 368, 451, 330, 2444 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 8939579,
+    "stId" : "R-ALL-8939579",
+    "displayName" : "I3LACT [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "55528",
+    "parents" : [ 8939576 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 480 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 8939580,
+    "stId" : "R-ALL-8939580",
+    "displayName" : "I3PROPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "43580",
+    "parents" : [ 8939576 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 483 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 388, 420, 470, 502, 488, 426 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6181 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 36027,
+    "stId" : "R-ALL-36027",
+    "displayName" : "ACS [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 498 ],
+    "identifier" : "29044"
+  }, {
+    "dbId" : 893617,
+    "stId" : "R-ALL-893617",
+    "displayName" : "APDBA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1103 ],
+    "identifier" : "17442"
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6184 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 29374,
+    "stId" : "R-ALL-29374",
+    "displayName" : "CoA-SH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 364 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 29376,
+    "stId" : "R-ALL-29376",
+    "displayName" : "CO2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 370, 378 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 196807,
+    "stId" : "R-HSA-196807",
+    "displayName" : "Nicotinate metabolism",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6384 ]
+  }, {
+    "dbId" : 29390,
+    "stId" : "R-ALL-29390",
+    "displayName" : "PXLP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18405",
+    "parents" : [ 977300, 70908 ]
+  }, {
+    "dbId" : 29398,
+    "stId" : "R-ALL-29398",
+    "displayName" : "PYR [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1092, 1084 ],
+    "identifier" : "32816"
+  }, {
+    "dbId" : 351964,
+    "stId" : "R-ALL-351964",
+    "displayName" : "L-Leu [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57427",
+    "parents" : [ 352229 ]
+  }, {
+    "dbId" : 351966,
+    "stId" : "R-ALL-351966",
+    "displayName" : "L-Met [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57844",
+    "parents" : [ 352229 ]
+  }, {
+    "dbId" : 29404,
+    "stId" : "R-ALL-29404",
+    "displayName" : "L-Glu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 296, 413 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 109276,
+    "stId" : "R-ALL-109276",
+    "displayName" : "H2O [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2273 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 29406,
+    "stId" : "R-ALL-29406",
+    "displayName" : "2OG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2453, 411 ],
+    "identifier" : "30915"
+  }, {
+    "dbId" : 351970,
+    "stId" : "R-ALL-351970",
+    "displayName" : "L-His [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "32513",
+    "parents" : [ 352229 ]
+  }, {
+    "dbId" : 2022135,
+    "stId" : "R-ALL-2022135",
+    "displayName" : "NH3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2274 ],
+    "identifier" : "16134"
+  }, {
+    "dbId" : 70897,
+    "stId" : "R-HSA-70897",
+    "displayName" : "HAL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 281 ],
+    "identifier" : "P42357",
+    "geneNames" : [ "HAL", "HIS" ]
+  }, {
+    "dbId" : 70901,
+    "stId" : "R-HSA-70901",
+    "displayName" : "UROC1:NAD+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 286 ],
+    "children" : [ 70900, 29360 ]
+  }, {
+    "dbId" : 70900,
+    "stId" : "R-HSA-70900",
+    "displayName" : "UROC1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96N76",
+    "geneNames" : [ "UROC1" ],
+    "parents" : [ 70901 ]
+  }, {
+    "dbId" : 29432,
+    "stId" : "R-ALL-29432",
+    "displayName" : "L-Ala [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1090, 1086, 495 ],
+    "identifier" : "57972"
+  }, {
+    "dbId" : 70904,
+    "stId" : "R-HSA-70904",
+    "displayName" : "AMDHD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 290 ],
+    "identifier" : "Q96NU7",
+    "geneNames" : [ "AMDHD1", "HMFT1272" ]
+  }, {
+    "dbId" : 70907,
+    "stId" : "R-HSA-70907",
+    "displayName" : "FTCD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95954",
+    "geneNames" : [ "FTCD" ],
+    "parents" : [ 70908 ]
+  }, {
+    "dbId" : 111355,
+    "stId" : "R-ALL-111355",
+    "displayName" : "THF [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 292 ],
+    "identifier" : "15635"
+  }, {
+    "dbId" : 351993,
+    "stId" : "R-ALL-351993",
+    "displayName" : "L-Phe [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2272 ],
+    "identifier" : "58095",
+    "parents" : [ 352229 ]
+  }, {
+    "dbId" : 351992,
+    "stId" : "R-ALL-351992",
+    "displayName" : "L-Val [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57762",
+    "parents" : [ 352229 ]
+  }, {
+    "dbId" : 70908,
+    "stId" : "R-HSA-70908",
+    "displayName" : "FTCD octamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 294 ],
+    "children" : [ 29390, 70907 ]
+  }, {
+    "dbId" : 372474,
+    "stId" : "R-HSA-372474",
+    "displayName" : "SLC25A21 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 351 ],
+    "identifier" : "Q9BQT8",
+    "geneNames" : [ "SLC25A21", "ODC" ]
+  }, {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 401, 514 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 352006,
+    "stId" : "R-ALL-352006",
+    "displayName" : "L-Trp [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6516 ],
+    "identifier" : "57912",
+    "parents" : [ 352229 ]
+  }, {
+    "dbId" : 352001,
+    "stId" : "R-ALL-352001",
+    "displayName" : "L-Ile [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "58045",
+    "parents" : [ 352229 ]
+  }, {
+    "dbId" : 29444,
+    "stId" : "R-ALL-29444",
+    "displayName" : "L-Lys [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 308 ],
+    "identifier" : "32551"
+  }, {
+    "dbId" : 70919,
+    "stId" : "R-ALL-70919",
+    "displayName" : "FITHF [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 293 ],
+    "identifier" : "15639"
+  }, {
+    "dbId" : 29448,
+    "stId" : "R-ALL-29448",
+    "displayName" : "L-Asp [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 37 ],
+    "identifier" : "29991"
+  }, {
+    "dbId" : 29450,
+    "stId" : "R-ALL-29450",
+    "displayName" : "GSH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16856",
+    "parents" : [ 71166 ]
+  }, {
+    "dbId" : 70925,
+    "stId" : "R-HSA-70925",
+    "displayName" : "AASS tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 311 ],
+    "children" : [ 70924 ]
+  }, {
+    "dbId" : 70924,
+    "stId" : "R-HSA-70924",
+    "displayName" : "AASS [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UDR5",
+    "geneNames" : [ "AASS" ],
+    "parents" : [ 70925 ]
+  }, {
+    "dbId" : 29970,
+    "stId" : "R-ALL-29970",
+    "displayName" : "L-KYN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 476 ],
+    "identifier" : "16946"
+  }, {
+    "dbId" : 29460,
+    "stId" : "R-ALL-29460",
+    "displayName" : "HCOOH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 475 ],
+    "identifier" : "30751"
+  }, {
+    "dbId" : 30487,
+    "stId" : "R-ALL-30487",
+    "displayName" : "3HAA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 492 ],
+    "identifier" : "15793"
+  }, {
+    "dbId" : 352030,
+    "stId" : "R-ALL-352030",
+    "displayName" : "L-Tyr [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "58315",
+    "parents" : [ 352229 ]
+  }, {
+    "dbId" : 70943,
+    "stId" : "R-HSA-70943",
+    "displayName" : "PXLP-AADAT [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N5Z0",
+    "geneNames" : [ "AADAT", "KAT2" ],
+    "parents" : [ 508545 ]
+  }, {
+    "dbId" : 5696373,
+    "stId" : "R-HSA-5696373",
+    "displayName" : "ASRGL1 heterodimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3359 ],
+    "children" : [ 5696381, 5696371 ]
+  }, {
+    "dbId" : 5696371,
+    "stId" : "R-HSA-5696371",
+    "displayName" : "ASRGL1(168-308) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7L266",
+    "geneNames" : [ "ASRGL1", "ALP", "CRASH" ],
+    "parents" : [ 5696373 ]
+  }, {
+    "dbId" : 70951,
+    "stId" : "R-ALL-70951",
+    "displayName" : "aKADA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 340 ],
+    "identifier" : "15753"
+  }, {
+    "dbId" : 888613,
+    "stId" : "R-HSA-888613",
+    "displayName" : "IDO2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6ZQW0",
+    "geneNames" : [ "IDO2", "INDOL1" ],
+    "parents" : [ 888612 ]
+  }, {
+    "dbId" : 452911,
+    "stId" : "R-HSA-452911",
+    "displayName" : "PIPOX [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4430 ],
+    "identifier" : "Q9P0Z9",
+    "geneNames" : [ "PIPOX", "LPIPOX", "PSO" ]
+  }, {
+    "dbId" : 888612,
+    "stId" : "R-HSA-888612",
+    "displayName" : "IDO2 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1008 ],
+    "children" : [ 888613, 71185 ]
+  }, {
+    "dbId" : 5693311,
+    "stId" : "R-ALL-5693311",
+    "displayName" : "P2C [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4371 ],
+    "identifier" : "16187"
+  }, {
+    "dbId" : 70955,
+    "stId" : "R-ALL-70955",
+    "displayName" : "GL-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 359 ],
+    "identifier" : "15524"
+  }, {
+    "dbId" : 5696381,
+    "stId" : "R-HSA-5696381",
+    "displayName" : "ASRGL1(1-167) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7L266",
+    "geneNames" : [ "ASRGL1", "ALP", "CRASH" ],
+    "parents" : [ 5696373 ]
+  }, {
+    "dbId" : 174390,
+    "stId" : "R-ALL-174390",
+    "displayName" : "L-Met [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57844",
+    "parents" : [ 352227 ]
+  }, {
+    "dbId" : 29500,
+    "stId" : "R-ALL-29500",
+    "displayName" : "L-Trp [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 466 ],
+    "identifier" : "57912",
+    "parents" : [ 352227 ]
+  }, {
+    "dbId" : 29502,
+    "stId" : "R-ALL-29502",
+    "displayName" : "L-Phe [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 389, 2204 ],
+    "identifier" : "58095",
+    "parents" : [ 352227 ]
+  }, {
+    "dbId" : 5696361,
+    "stId" : "R-ALL-5696361",
+    "displayName" : "aspartame [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3356 ],
+    "identifier" : "2877"
+  }, {
+    "dbId" : 379717,
+    "stId" : "R-ALL-379717",
+    "displayName" : "L-Pro [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 70 ],
+    "identifier" : "60039"
+  }, {
+    "dbId" : 29506,
+    "stId" : "R-ALL-29506",
+    "displayName" : "L-Tyr [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 393 ],
+    "identifier" : "58315",
+    "parents" : [ 352227 ]
+  }, {
+    "dbId" : 2160485,
+    "stId" : "R-HSA-2160485",
+    "displayName" : "IL4I1:FAD [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2276 ],
+    "children" : [ 2160490, 2160467 ]
+  }, {
+    "dbId" : 2160490,
+    "stId" : "R-ALL-2160490",
+    "displayName" : "FAD [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 2160485 ]
+  }, {
+    "dbId" : 69979,
+    "stId" : "R-HSA-69979",
+    "displayName" : "aKADH E3 [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 69980 ],
+    "children" : [ 113596, 69978 ]
+  }, {
+    "dbId" : 69978,
+    "stId" : "R-HSA-69978",
+    "displayName" : "DLD [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09622",
+    "geneNames" : [ "DLD", "GCSL", "LAD", "PHE3" ],
+    "parents" : [ 69979 ]
+  }, {
+    "dbId" : 69981,
+    "stId" : "R-HSA-69981",
+    "displayName" : "OGDH [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q02218",
+    "geneNames" : [ "OGDH" ],
+    "parents" : [ 69982 ]
+  }, {
+    "dbId" : 69980,
+    "stId" : "R-HSA-69980",
+    "displayName" : "aKADH E3 dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 69996 ],
+    "children" : [ 69979 ]
+  }, {
+    "dbId" : 69982,
+    "stId" : "R-HSA-69982",
+    "displayName" : "alpha-ketoglutarate dehydrogenase E1 holoenzyme [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 69992 ],
+    "children" : [ 69981, 113547 ]
+  }, {
+    "dbId" : 69993,
+    "stId" : "R-HSA-69993",
+    "displayName" : "Lipo-K110-DLST [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36957",
+    "geneNames" : [ "DLST", "DLTS" ],
+    "parents" : [ 69995 ]
+  }, {
+    "dbId" : 69992,
+    "stId" : "R-HSA-69992",
+    "displayName" : "aKGDH E1 dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 69996 ],
+    "children" : [ 69982 ]
+  }, {
+    "dbId" : 69995,
+    "stId" : "R-HSA-69995",
+    "displayName" : "lipo-aKGDH E2 [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 69996 ],
+    "children" : [ 69993, 29824 ]
+  }, {
+    "dbId" : 69996,
+    "stId" : "R-HSA-69996",
+    "displayName" : "lipo-aKGDH [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 360 ],
+    "children" : [ 69980, 69995, 69992 ]
+  }, {
+    "dbId" : 35181,
+    "stId" : "R-ALL-35181",
+    "displayName" : "2AMA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 504 ],
+    "identifier" : "15745"
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1121, 310, 1110, 2328, 955, 6524, 6303 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 2160466,
+    "stId" : "R-ALL-2160466",
+    "displayName" : "kPPV [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2275 ],
+    "identifier" : "18005"
+  }, {
+    "dbId" : 2160467,
+    "stId" : "R-HSA-2160467",
+    "displayName" : "IL4I1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96RQ9",
+    "geneNames" : [ "IL4I1", "FIG1", "UNQ636/PRO1265" ],
+    "parents" : [ 2160485 ]
+  }, {
+    "dbId" : 113525,
+    "stId" : "R-ALL-113525",
+    "displayName" : "GDP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6298 ],
+    "identifier" : "17552"
+  }, {
+    "dbId" : 175991,
+    "stId" : "R-ALL-175991",
+    "displayName" : "MeHist [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 5740 ],
+    "identifier" : "29009"
+  }, {
+    "dbId" : 73590,
+    "stId" : "R-ALL-73590",
+    "displayName" : "b-Ala [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6178 ],
+    "identifier" : "16958"
+  }, {
+    "dbId" : 113526,
+    "stId" : "R-ALL-113526",
+    "displayName" : "NAD+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 449, 1124, 328, 366 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 326, 2442, 60, 316, 6526 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 175994,
+    "stId" : "R-HSA-175994",
+    "displayName" : "HNMT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5741 ],
+    "identifier" : "P50135",
+    "geneNames" : [ "HNMT" ]
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1161, 507, 749 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 175992,
+    "stId" : "R-ALL-175992",
+    "displayName" : "Hist [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1159 ],
+    "identifier" : "18295"
+  }, {
+    "dbId" : 113535,
+    "stId" : "R-ALL-113535",
+    "displayName" : "O2 [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4432 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 71039,
+    "stId" : "R-HSA-71039",
+    "displayName" : "GCDH [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92947",
+    "geneNames" : [ "GCDH" ],
+    "parents" : [ 71040 ]
+  }, {
+    "dbId" : 71040,
+    "stId" : "R-HSA-71040",
+    "displayName" : "GCDH tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 374 ],
+    "children" : [ 71039, 113596 ]
+  }, {
+    "dbId" : 71045,
+    "stId" : "R-ALL-71045",
+    "displayName" : "crotonyl-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 373 ],
+    "identifier" : "15473"
+  }, {
+    "dbId" : 5359061,
+    "stId" : "R-ALL-5359061",
+    "displayName" : "MeOH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3358 ],
+    "identifier" : "17790"
+  }, {
+    "dbId" : 351629,
+    "stId" : "R-ALL-351629",
+    "displayName" : "H2O2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 813 ],
+    "identifier" : "16240"
+  }, {
+    "dbId" : 113547,
+    "stId" : "R-ALL-113547",
+    "displayName" : "TDP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18290",
+    "parents" : [ 69982 ]
+  }, {
+    "dbId" : 113548,
+    "stId" : "R-ALL-113548",
+    "displayName" : "Pi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6306 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 977310,
+    "stId" : "R-HSA-977310",
+    "displayName" : "HDC [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19113",
+    "geneNames" : [ "HDC" ],
+    "parents" : [ 977300 ]
+  }, {
+    "dbId" : 113552,
+    "stId" : "R-ALL-113552",
+    "displayName" : "L-Glu [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 56, 345, 6313, 333 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 31633,
+    "stId" : "R-ALL-31633",
+    "displayName" : "NH4+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 113 ],
+    "identifier" : "28938"
+  }, {
+    "dbId" : 29586,
+    "stId" : "R-ALL-29586",
+    "displayName" : "FUMA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 432 ],
+    "identifier" : "37154"
+  }, {
+    "dbId" : 29588,
+    "stId" : "R-ALL-29588",
+    "displayName" : "L-Leu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57427",
+    "parents" : [ 352227 ]
+  }, {
+    "dbId" : 113556,
+    "stId" : "R-ALL-113556",
+    "displayName" : "2AMAS [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 324 ],
+    "identifier" : "17917"
+  }, {
+    "dbId" : 30102,
+    "stId" : "R-ALL-30102",
+    "displayName" : "L-Ile [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "58045",
+    "parents" : [ 352227 ]
+  }, {
+    "dbId" : 6788606,
+    "stId" : "R-ALL-6788606",
+    "displayName" : "5HLYS [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6296 ],
+    "identifier" : "60175"
+  }, {
+    "dbId" : 977300,
+    "stId" : "R-HSA-977300",
+    "displayName" : "HDC dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1162 ],
+    "children" : [ 29390, 977310 ]
+  }, {
+    "dbId" : 113563,
+    "stId" : "R-ALL-113563",
+    "displayName" : "NADP+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 318 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 71067,
+    "stId" : "R-ALL-71067",
+    "displayName" : "Fe2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 71076, 71161, 71068, 71086 ]
+  }, {
+    "dbId" : 33179,
+    "stId" : "R-ALL-33179",
+    "displayName" : "NFK [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 467 ],
+    "identifier" : "18377"
+  }, {
+    "dbId" : 71066,
+    "stId" : "R-HSA-71066",
+    "displayName" : "PAH [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00439",
+    "geneNames" : [ "PAH" ],
+    "parents" : [ 71068 ]
+  }, {
+    "dbId" : 71068,
+    "stId" : "R-HSA-71068",
+    "displayName" : "PAH tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 394 ],
+    "children" : [ 71066, 71067 ]
+  }, {
+    "dbId" : 31135,
+    "stId" : "R-ALL-31135",
+    "displayName" : "4MAA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 423 ],
+    "identifier" : "17105"
+  }, {
+    "dbId" : 31649,
+    "stId" : "R-ALL-31649",
+    "displayName" : "FADH2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 380 ],
+    "identifier" : "17877"
+  }, {
+    "dbId" : 71075,
+    "stId" : "R-HSA-71075",
+    "displayName" : "HGD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q93099",
+    "geneNames" : [ "HGD", "HGO" ],
+    "parents" : [ 71076 ]
+  }, {
+    "dbId" : 113573,
+    "stId" : "R-ALL-113573",
+    "displayName" : "GTP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6301 ],
+    "identifier" : "15996"
+  }, {
+    "dbId" : 71076,
+    "stId" : "R-HSA-71076",
+    "displayName" : "HGD hexamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 424 ],
+    "children" : [ 71067, 71075 ]
+  }, {
+    "dbId" : 113575,
+    "stId" : "R-ALL-113575",
+    "displayName" : "H2O2 [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4434 ],
+    "identifier" : "16240"
+  }, {
+    "dbId" : 113577,
+    "stId" : "R-ALL-113577",
+    "displayName" : "aKADA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 350 ],
+    "identifier" : "15753"
+  }, {
+    "dbId" : 29612,
+    "stId" : "R-ALL-29612",
+    "displayName" : "L-His [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 279 ],
+    "identifier" : "32513",
+    "parents" : [ 352227 ]
+  }, {
+    "dbId" : 71085,
+    "stId" : "R-HSA-71085",
+    "displayName" : "HAAO [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P46952",
+    "geneNames" : [ "HAAO" ],
+    "parents" : [ 71086 ]
+  }, {
+    "dbId" : 198574,
+    "stId" : "R-HSA-198574",
+    "displayName" : "IDO1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14902",
+    "geneNames" : [ "IDO1", "IDO", "INDO" ],
+    "parents" : [ 198580 ]
+  }, {
+    "dbId" : 71086,
+    "stId" : "R-HSA-71086",
+    "displayName" : "HAAO [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 499 ],
+    "children" : [ 71085, 71067 ]
+  }, {
+    "dbId" : 389556,
+    "stId" : "R-ALL-389556",
+    "displayName" : "NADP+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4379 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 352179,
+    "stId" : "R-HSA-352179",
+    "displayName" : "SLC3A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08195",
+    "geneNames" : [ "SLC3A2", "MDU1" ],
+    "parents" : [ 352221 ]
+  }, {
+    "dbId" : 198580,
+    "stId" : "R-HSA-198580",
+    "displayName" : "IDO1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 730 ],
+    "children" : [ 198574, 71185 ]
+  }, {
+    "dbId" : 113590,
+    "stId" : "R-ALL-113590",
+    "displayName" : "1PYR-5COOH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 68 ],
+    "identifier" : "17388"
+  }, {
+    "dbId" : 178107,
+    "stId" : "R-HSA-178107",
+    "displayName" : "AFMID [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 477 ],
+    "identifier" : "Q63HM1",
+    "geneNames" : [ "AFMID" ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6179 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 113594,
+    "stId" : "R-ALL-113594",
+    "displayName" : "2OG [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 320, 355, 343, 6311 ],
+    "identifier" : "30915"
+  }, {
+    "dbId" : 193465,
+    "stId" : "R-ALL-193465",
+    "displayName" : "H+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4377 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 113597,
+    "stId" : "R-ALL-113597",
+    "displayName" : "FAD [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 439 ],
+    "identifier" : "16238"
+  }, {
+    "dbId" : 113596,
+    "stId" : "R-ALL-113596",
+    "displayName" : "FAD [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 376 ],
+    "identifier" : "16238",
+    "parents" : [ 71040, 69979 ]
+  }, {
+    "dbId" : 113600,
+    "stId" : "R-ALL-113600",
+    "displayName" : "NADPH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 314 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 113602,
+    "stId" : "R-ALL-113602",
+    "displayName" : "NADPH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4375 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 5693333,
+    "stId" : "R-HSA-5693333",
+    "displayName" : "CRYM [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4373 ],
+    "identifier" : "Q14894",
+    "geneNames" : [ "CRYM", "THBP" ]
+  }, {
+    "dbId" : 31175,
+    "stId" : "R-ALL-31175",
+    "displayName" : "4FAA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 428 ],
+    "identifier" : "18034"
+  }, {
+    "dbId" : 71112,
+    "stId" : "R-ALL-71112",
+    "displayName" : "4aOH-BH4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 392 ],
+    "identifier" : "15374"
+  }, {
+    "dbId" : 30158,
+    "stId" : "R-ALL-30158",
+    "displayName" : "NF-Glu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 289 ],
+    "identifier" : "18327"
+  }, {
+    "dbId" : 71119,
+    "stId" : "R-HSA-71119",
+    "displayName" : "QDPR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09417",
+    "geneNames" : [ "QDPR", "DHPR", "SDR33C1" ],
+    "parents" : [ 71120 ]
+  }, {
+    "dbId" : 5696409,
+    "stId" : "R-ALL-5696409",
+    "displayName" : "5PHL [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6297 ],
+    "identifier" : "16752"
+  }, {
+    "dbId" : 71120,
+    "stId" : "R-HSA-71120",
+    "displayName" : "QDPR dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 404 ],
+    "children" : [ 71119 ]
+  }, {
+    "dbId" : 352221,
+    "stId" : "R-HSA-352221",
+    "displayName" : "SLC7A5:SLC3A2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6392 ],
+    "children" : [ 352179, 352224 ]
+  }, {
+    "dbId" : 71129,
+    "stId" : "R-ALL-71129",
+    "displayName" : "qDHB [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 398 ],
+    "identifier" : "20680"
+  }, {
+    "dbId" : 71131,
+    "stId" : "R-HSA-71131",
+    "displayName" : "PCBD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61457",
+    "geneNames" : [ "PCBD1", "DCOH", "PCBD" ],
+    "parents" : [ 71132 ]
+  }, {
+    "dbId" : 5693325,
+    "stId" : "R-ALL-5693325",
+    "displayName" : "PPCA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4372 ],
+    "identifier" : "30913"
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 512, 402, 486, 1006 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 71132,
+    "stId" : "R-HSA-71132",
+    "displayName" : "PCBD1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 399 ],
+    "children" : [ 71131 ]
+  }, {
+    "dbId" : 30176,
+    "stId" : "R-ALL-30176",
+    "displayName" : "SACN [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 309 ],
+    "identifier" : "16927"
+  }, {
+    "dbId" : 352229,
+    "stId" : "R-ALL-352229",
+    "displayName" : "ligands of SLC7A5 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 6390 ],
+    "children" : [ 351992, 351993, 352030, 351966, 351964, 351970, 352001, 352006 ]
+  }, {
+    "dbId" : 901100,
+    "stId" : "R-HSA-901100",
+    "displayName" : "PXLP-CCBL2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6YP21",
+    "geneNames" : [ "KYAT3", "CCBL2", "KAT3" ],
+    "parents" : [ 901094 ]
+  }, {
+    "dbId" : 29666,
+    "stId" : "R-ALL-29666",
+    "displayName" : "ACA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 433 ],
+    "identifier" : "13705"
+  }, {
+    "dbId" : 6783877,
+    "stId" : "R-ALL-6783877",
+    "displayName" : "P6C [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4429 ],
+    "identifier" : "58769"
+  }, {
+    "dbId" : 352224,
+    "stId" : "R-HSA-352224",
+    "displayName" : "SLC7A5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01650",
+    "geneNames" : [ "SLC7A5", "CD98LC", "LAT1", "MPE16" ],
+    "parents" : [ 352221 ]
+  }, {
+    "dbId" : 352227,
+    "stId" : "R-ALL-352227",
+    "displayName" : "ligands of SLC7A5 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 6391 ],
+    "children" : [ 29502, 29500, 29612, 29702, 30102, 174390, 29588, 29506 ]
+  }, {
+    "dbId" : 5216166,
+    "stId" : "R-HSA-5216166",
+    "displayName" : "SLC36A4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6517 ],
+    "identifier" : "Q6YBV0",
+    "geneNames" : [ "SLC36A4", "PAT4" ]
+  }, {
+    "dbId" : 901094,
+    "stId" : "R-HSA-901094",
+    "displayName" : "CCBL2 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1112 ],
+    "children" : [ 901100 ]
+  }, {
+    "dbId" : 71153,
+    "stId" : "R-HSA-71153",
+    "displayName" : "TAT dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 409 ],
+    "children" : [ 71152 ]
+  }, {
+    "dbId" : 71152,
+    "stId" : "R-HSA-71152",
+    "displayName" : "PXLP-TAT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P17735",
+    "geneNames" : [ "TAT" ],
+    "parents" : [ 71153 ]
+  }, {
+    "dbId" : 71159,
+    "stId" : "R-HSA-71159",
+    "displayName" : "HPD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P32754",
+    "geneNames" : [ "HPD", "PPD" ],
+    "parents" : [ 71161 ]
+  }, {
+    "dbId" : 71161,
+    "stId" : "R-HSA-71161",
+    "displayName" : "HPD dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 419 ],
+    "children" : [ 71067, 71159 ]
+  }, {
+    "dbId" : 5696428,
+    "stId" : "R-HSA-5696428",
+    "displayName" : "PHYKPL [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IUZ5",
+    "geneNames" : [ "PHYKPL", "AGXT2L2", "PP9286" ],
+    "parents" : [ 5696429 ]
+  }, {
+    "dbId" : 5696429,
+    "stId" : "R-HSA-5696429",
+    "displayName" : "PHYKPL tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6304 ],
+    "children" : [ 5696428 ]
+  }, {
+    "dbId" : 71165,
+    "stId" : "R-HSA-71165",
+    "displayName" : "GSTZ1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43708",
+    "geneNames" : [ "GSTZ1", "MAAI" ],
+    "parents" : [ 71166 ]
+  }, {
+    "dbId" : 71166,
+    "stId" : "R-HSA-71166",
+    "displayName" : "GSTZ1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 429 ],
+    "children" : [ 71165, 29450 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 893583,
+    "stId" : "R-HSA-893583",
+    "displayName" : "kynurenine + 2-oxoglutarate => 4-(2-aminophenyl)-2,4-dioxobutanoic acid + glutamate",
+    "schemaClass" : "Reaction",
+    "following" : [ 893597 ],
+    "inputs" : [ 113594, 893607 ],
+    "outputs" : [ 893617, 113552 ],
+    "catalysts" : [ 508545 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2520 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71173,
+    "stId" : "R-HSA-71173",
+    "displayName" : "maleylacetoacetate => fumarylacetoacetate",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 31135 ],
+    "outputs" : [ 31175 ],
+    "catalysts" : [ 71166 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6575 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 372480,
+    "stId" : "R-HSA-372480",
+    "displayName" : "2-oxoglutarate [mitochondrial matrix] + 2-oxoadipate [cytosol] <=> 2-oxoglutarate [cytosol] + 2-oxoadipate [mitochondrial matrix]",
+    "schemaClass" : "Reaction",
+    "following" : [ 508561, 71037 ],
+    "inputs" : [ 113594, 113577 ],
+    "outputs" : [ 29406, 70951 ],
+    "catalysts" : [ 372474 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2451 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71046,
+    "stId" : "R-HSA-71046",
+    "displayName" : "glutaryl-CoA + FAD => crotonyl-CoA + FADH2 + CO2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71037 ],
+    "inputs" : [ 113596, 70955 ],
+    "outputs" : [ 71045, 31649, 29376 ],
+    "catalysts" : [ 71040 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2459 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70920,
+    "stId" : "R-HSA-70920",
+    "displayName" : "N-formiminoglutamate + tetrahydrofolate => glutamate + 5-formiminotetrahydrofolate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70906 ],
+    "inputs" : [ 30158, 111355 ],
+    "outputs" : [ 29404, 70919 ],
+    "catalysts" : [ 70908 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2423 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70667,
+    "stId" : "R-HSA-70667",
+    "displayName" : "1PYR-5COOH spontaneously hydrolyses to L-GluSS",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70670, 8955817 ],
+    "following" : [ 70679 ],
+    "inputs" : [ 113590, 113521 ],
+    "outputs" : [ 31339 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2485 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71181,
+    "stId" : "R-HSA-71181",
+    "displayName" : "fumarylacetoacetate => fumarate + acetoacetate",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 31175 ],
+    "outputs" : [ 29666, 29586 ],
+    "catalysts" : [ 71175 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6576 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70670,
+    "stId" : "R-HSA-70670",
+    "displayName" : "PRODH oxidises L-Pro to 1PYR-5COOH",
+    "schemaClass" : "Reaction",
+    "following" : [ 70667 ],
+    "inputs" : [ 113597, 379717 ],
+    "outputs" : [ 113529, 113590, 164934 ],
+    "catalysts" : [ 70668 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2484 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 893597,
+    "stId" : "R-HSA-893597",
+    "displayName" : "4-(2-aminophenyl)-2,4-dioxobutanoate => kynurenic acid + H2O [mitochondrial]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 893583 ],
+    "inputs" : [ 893617 ],
+    "outputs" : [ 893594, 113521 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2521 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 893596,
+    "stId" : "R-HSA-893596",
+    "displayName" : "PXLP-KYAT1 dimer transaminates L-KYN to AP-DOBu",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71189 ],
+    "following" : [ 893609 ],
+    "inputs" : [ 29398, 29970 ],
+    "outputs" : [ 29432, 893615 ],
+    "catalysts" : [ 893603 ],
+    "efs" : [ ],
+    "inhibitors" : [ 29502, 8939576 ],
+    "diagramIds" : [ 2496 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71189,
+    "stId" : "R-HSA-71189",
+    "displayName" : "AFMID hydrolyses NFK to L-KYN",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71188, 198563 ],
+    "following" : [ 901097, 893596, 71200 ],
+    "inputs" : [ 29356, 33179 ],
+    "outputs" : [ 29460, 29970 ],
+    "catalysts" : [ 178107 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2494 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 893593,
+    "stId" : "R-HSA-893593",
+    "displayName" : "phenylalanine + pyruvate => 3-(indol-3-yl)pyruvate + alanine",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29502, 29398 ],
+    "outputs" : [ 29432, 893599 ],
+    "catalysts" : [ 893603 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2462 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71188,
+    "stId" : "R-HSA-71188",
+    "displayName" : "TDO tetramer dioxygenates L-Trp to NFK",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 352232, 8870352 ],
+    "following" : [ 71189 ],
+    "inputs" : [ 29500, 29368 ],
+    "outputs" : [ 33179 ],
+    "catalysts" : [ 71186 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2489 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70679,
+    "stId" : "R-HSA-70679",
+    "displayName" : "ALDH4A1 oxidises L-GluSS to Glu",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70667 ],
+    "inputs" : [ 31339, 113526, 113521 ],
+    "outputs" : [ 113529, 29362, 113552 ],
+    "catalysts" : [ 70674 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2487 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508561,
+    "stId" : "R-HSA-508561",
+    "displayName" : "alpha-ketoadipate + glutamate <=> alpha-aminoadipate + alpha-ketoglutarate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 372480 ],
+    "inputs" : [ 70951, 113552 ],
+    "outputs" : [ 113594, 508531 ],
+    "catalysts" : [ 508545 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2448 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 977301,
+    "stId" : "R-HSA-977301",
+    "displayName" : "Histidine is decarboxylated to histamine",
+    "schemaClass" : "Reaction",
+    "following" : [ 175993 ],
+    "inputs" : [ 29612 ],
+    "outputs" : [ 175992, 113528 ],
+    "catalysts" : [ 977300 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2426 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70938,
+    "stId" : "R-HSA-70938",
+    "displayName" : "lysine + alpha-ketoglutarate +NADPH + H+ => saccharopine + NADP+ + H2O",
+    "schemaClass" : "Reaction",
+    "following" : [ 70940 ],
+    "inputs" : [ 113594, 113529, 29444, 113600 ],
+    "outputs" : [ 113563, 113521, 30176 ],
+    "catalysts" : [ 70925 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2431 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70941,
+    "stId" : "R-HSA-70941",
+    "displayName" : "alpha-aminoadipoate semialdehyde + NAD+ => alpha-aminoadipate + NADH + H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5696408, 70940, 6783883 ],
+    "following" : [ 70952 ],
+    "inputs" : [ 113526, 113556, 113521 ],
+    "outputs" : [ 113529, 508531, 29362 ],
+    "catalysts" : [ 508564 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2437 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70940,
+    "stId" : "R-HSA-70940",
+    "displayName" : "saccharopine + NAD+ + H2O => alpha-aminoadipic semialdehyde + glutamate + NADH + H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70938 ],
+    "following" : [ 70941 ],
+    "inputs" : [ 113526, 113521, 30176 ],
+    "outputs" : [ 113529, 113556, 29362, 113552 ],
+    "catalysts" : [ 70925 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2433 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 198563,
+    "stId" : "R-HSA-198563",
+    "displayName" : "IDO1 dioxygenates L-Trp to NFK",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 352232, 8870352 ],
+    "following" : [ 71189 ],
+    "inputs" : [ 29500, 29368 ],
+    "outputs" : [ 33179 ],
+    "catalysts" : [ 198580 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2490 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71200,
+    "stId" : "R-HSA-71200",
+    "displayName" : "kynurenine + O2 + NADPH + H+ => 3-hydroxykynurenine + NADP+ + H2O",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71189 ],
+    "following" : [ 71217 ],
+    "inputs" : [ 70106, 29368, 29364, 29970 ],
+    "outputs" : [ 34351, 29356, 29366 ],
+    "catalysts" : [ 71198 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2506 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8955817,
+    "stId" : "R-HSA-8955817",
+    "displayName" : "PRODH2 oxidises HPRO to 1PYR-5COOH",
+    "schemaClass" : "Reaction",
+    "following" : [ 70667 ],
+    "inputs" : [ 113597, 6784215 ],
+    "outputs" : [ 113590, 164934, 113521 ],
+    "catalysts" : [ 6784242 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6519 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6786245,
+    "stId" : "R-HSA-6786245",
+    "displayName" : "CARNS1 transforms ATP, L-His, b-Ala to CARN",
+    "schemaClass" : "Reaction",
+    "following" : [ 8876789 ],
+    "inputs" : [ 29612, 113592, 73590 ],
+    "outputs" : [ 6786250, 29372, 29370 ],
+    "catalysts" : [ 6786247 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6177 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 893609,
+    "stId" : "R-HSA-893609",
+    "displayName" : "4-(2-aminophenyl)-2,4-dioxobutanoate => kynurenic acid + H2O [cytosolic]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 901097, 893596 ],
+    "inputs" : [ 893615 ],
+    "outputs" : [ 893587, 29356 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2504 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70952,
+    "stId" : "R-HSA-70952",
+    "displayName" : "alpha-aminoadipate + alpha-ketoglutarate <=> alpha-ketoadipate + glutamate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70941 ],
+    "inputs" : [ 113594, 508531 ],
+    "outputs" : [ 70951, 113552 ],
+    "catalysts" : [ 508545 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2447 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 888614,
+    "stId" : "R-HSA-888614",
+    "displayName" : "IDO2 dioxygenates L-Trp to NFK",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 352232, 8870352 ],
+    "inputs" : [ 29500, 29368 ],
+    "outputs" : [ 33179 ],
+    "catalysts" : [ 888612 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2491 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71217,
+    "stId" : "R-HSA-71217",
+    "displayName" : "3-hydroxykynurenine + H2O => 3-hydroxyanthranilate + alanine",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71200 ],
+    "following" : [ 71218 ],
+    "inputs" : [ 34351, 29356 ],
+    "outputs" : [ 29432, 30487 ],
+    "catalysts" : [ 71202 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2508 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71218,
+    "stId" : "R-HSA-71218",
+    "displayName" : "3-hydroxyanthranilate + O2 => 2-amino-3-carboxymuconate semialdehyde",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71217 ],
+    "following" : [ 71223 ],
+    "inputs" : [ 29368, 30487 ],
+    "outputs" : [ 36027 ],
+    "catalysts" : [ 71086 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2512 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71223,
+    "stId" : "R-HSA-71223",
+    "displayName" : "2-amino-3-carboxymuconate semialdehyde => 2-aminomuconate semialdehyde + CO2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71218 ],
+    "following" : [ 71239 ],
+    "inputs" : [ 36027 ],
+    "outputs" : [ 35181, 113528 ],
+    "catalysts" : [ 71221 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2513 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696365,
+    "stId" : "R-HSA-5696365",
+    "displayName" : "ASRGL1 hydrolyses aspartame to L-Asp, L-Phe",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5696361, 29356 ],
+    "outputs" : [ 29502, 29448, 5359061 ],
+    "catalysts" : [ 5696373 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3355 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 517444,
+    "stId" : "R-HSA-517444",
+    "displayName" : "p-hydroxyphenylpyruvate + glutamate <=> tyrosine + alpha-ketoglutarate",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29404, 31365 ],
+    "outputs" : [ 29406, 29506 ],
+    "catalysts" : [ 71153 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6572 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71239,
+    "stId" : "R-HSA-71239",
+    "displayName" : "2-aminomuconate semialdehyde + NAD+ + H2O => aminomuconate + NADH + H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71223 ],
+    "inputs" : [ 35181, 29356, 29360 ],
+    "outputs" : [ 70106, 32913, 73473 ],
+    "catalysts" : [ 71237 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2516 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2160492,
+    "stId" : "R-HSA-2160492",
+    "displayName" : "IL4I1:FAD oxidises L-Phe to kPPV",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 351993, 352327 ],
+    "outputs" : [ 2022135, 351629, 2160466 ],
+    "catalysts" : [ 2160485 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6570 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696408,
+    "stId" : "R-HSA-5696408",
+    "displayName" : "PHYKPL tetramer hydrolyses 5PHL",
+    "schemaClass" : "Reaction",
+    "following" : [ 70941 ],
+    "inputs" : [ 5696409, 113521 ],
+    "outputs" : [ 113548, 5693978, 113556 ],
+    "catalysts" : [ 5696429 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6302 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71118,
+    "stId" : "R-HSA-71118",
+    "displayName" : "PAH tetramer hydroxylates L-Phe to L-Tyr",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71130 ],
+    "following" : [ 71155, 71146 ],
+    "inputs" : [ 29870, 29502, 29368 ],
+    "outputs" : [ 71112, 29506 ],
+    "catalysts" : [ 71068 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2465 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8870352,
+    "stId" : "R-HSA-8870352",
+    "displayName" : "SLC36A4 transports L-Trp from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "following" : [ 888614, 71188, 198563 ],
+    "inputs" : [ 352006 ],
+    "outputs" : [ 29500 ],
+    "catalysts" : [ 5216166 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6515 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71130,
+    "stId" : "R-HSA-71130",
+    "displayName" : "q-dihydrobiopterin + NADH + H+ => tetrahydrobiopterin + NAD+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71146 ],
+    "following" : [ 71118 ],
+    "inputs" : [ 70106, 71129, 73473 ],
+    "outputs" : [ 29870, 29360 ],
+    "catalysts" : [ 71120 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2468 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 901097,
+    "stId" : "R-HSA-901097",
+    "displayName" : "kynurenine + pyruvate => 4-(2-aminophenyl)-2,4-dioxobutanoic acid + alanine [CCBL2]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71189 ],
+    "following" : [ 893609 ],
+    "inputs" : [ 29398, 29970 ],
+    "outputs" : [ 29432, 893615 ],
+    "catalysts" : [ 901094 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2499 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6788611,
+    "stId" : "R-HSA-6788611",
+    "displayName" : "HYKK phosphorylates 5HLYS",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6788606, 113573 ],
+    "outputs" : [ 5696409, 113525 ],
+    "catalysts" : [ 6788610 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6295 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71146,
+    "stId" : "R-HSA-71146",
+    "displayName" : "4a-hydroxytetrahydrobiopterin => q-dihydrobiopterin + H2O",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71118 ],
+    "following" : [ 71130 ],
+    "inputs" : [ 71112 ],
+    "outputs" : [ 29356, 71129 ],
+    "catalysts" : [ 71132 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2466 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6783883,
+    "stId" : "R-HSA-6783883",
+    "displayName" : "P6C transforms to 2AMAS",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 6783880 ],
+    "following" : [ 70941 ],
+    "inputs" : [ 6783877 ],
+    "outputs" : [ 113556 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4435 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 352232,
+    "stId" : "R-HSA-352232",
+    "displayName" : "SLC7A5:SLC3A2 transports neutral amino acids from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "following" : [ 888614, 71188, 198563 ],
+    "inputs" : [ 352229 ],
+    "outputs" : [ 352227 ],
+    "catalysts" : [ 352221 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6389 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6783880,
+    "stId" : "R-HSA-6783880",
+    "displayName" : "PIPOX oxidises PPCA to P6C",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5693347 ],
+    "following" : [ 6783883 ],
+    "inputs" : [ 113535, 5693325 ],
+    "outputs" : [ 113575, 6783877 ],
+    "catalysts" : [ 452911 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4428 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8876789,
+    "stId" : "R-HSA-8876789",
+    "displayName" : "CARNMT1 methylates CARN to Anserine",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6786245 ],
+    "inputs" : [ 6786250, 71284 ],
+    "outputs" : [ 71285, 8876775 ],
+    "catalysts" : [ 8876689 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6377 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70899,
+    "stId" : "R-HSA-70899",
+    "displayName" : "histidine => urocanate + NH4+",
+    "schemaClass" : "Reaction",
+    "following" : [ 70903 ],
+    "inputs" : [ 29612 ],
+    "outputs" : [ 31633, 30721 ],
+    "catalysts" : [ 70897 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2416 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71155,
+    "stId" : "R-HSA-71155",
+    "displayName" : "tyrosine + alpha-ketoglutarate <=> p-hydroxyphenylpyruvate + glutamate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71118 ],
+    "inputs" : [ 29406, 29506 ],
+    "outputs" : [ 29404, 31365 ],
+    "catalysts" : [ 71153 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6571 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5693347,
+    "stId" : "R-HSA-5693347",
+    "displayName" : "CRYM reduces P2C to PPCA",
+    "schemaClass" : "Reaction",
+    "following" : [ 6783880 ],
+    "inputs" : [ 193465, 5693311, 113602 ],
+    "outputs" : [ 5693325, 389556 ],
+    "catalysts" : [ 5693333 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4370 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70903,
+    "stId" : "R-HSA-70903",
+    "displayName" : "urocanate + H2O => 4-imidazolone-5-propionate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70899 ],
+    "following" : [ 70906 ],
+    "inputs" : [ 29356, 30721 ],
+    "outputs" : [ 34979 ],
+    "catalysts" : [ 70901 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2417 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71163,
+    "stId" : "R-HSA-71163",
+    "displayName" : "p-hydroxyphenylpyruvate + O2 => homogentisate + CO2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29368, 31365 ],
+    "outputs" : [ 113528, 30337 ],
+    "catalysts" : [ 71161 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6573 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70906,
+    "stId" : "R-HSA-70906",
+    "displayName" : "4-imidazolone-5-propionate + H2O => N-formiminoglutamate + 2H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70903 ],
+    "following" : [ 70920 ],
+    "inputs" : [ 29356, 34979 ],
+    "outputs" : [ 30158, 70106 ],
+    "catalysts" : [ 70904 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2419 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 175993,
+    "stId" : "R-HSA-175993",
+    "displayName" : "HNMT transfers CH3 group from AdoMet to Hist",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 977301 ],
+    "inputs" : [ 175992, 71284 ],
+    "outputs" : [ 175991, 71285 ],
+    "catalysts" : [ 175994 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5739 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71037,
+    "stId" : "R-HSA-71037",
+    "displayName" : "alpha-ketoadipate + CoASH + NAD+ => glutaryl-CoA + CO2 + NADH + H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 372480 ],
+    "following" : [ 71046 ],
+    "inputs" : [ 29374, 113526, 70951 ],
+    "outputs" : [ 70955, 29362, 29376 ],
+    "catalysts" : [ 69996 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2456 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71164,
+    "stId" : "R-HSA-71164",
+    "displayName" : "homogentisate + O2 => maleylacetoacetate",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29368, 30337 ],
+    "outputs" : [ 31135 ],
+    "catalysts" : [ 71076 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6574 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 71240,
+    "stId" : "R-HSA-71240",
+    "displayName" : "Tryptophan catabolism",
+    "events" : [ 198563, 71200, 893583, 901097, 893609, 71239, 888614, 352232, 71217, 893597, 893596, 71218, 71189, 71188, 71223, 8870352 ]
+  }, {
+    "dbId" : 71182,
+    "stId" : "R-HSA-71182",
+    "displayName" : "Phenylalanine and tyrosine catabolism",
+    "events" : [ 71155, 517444, 893593, 71173, 71163, 5696365, 71146, 71130, 71181, 2160492, 71164, 71118 ]
+  }, {
+    "dbId" : 70921,
+    "stId" : "R-HSA-70921",
+    "displayName" : "Histidine catabolism",
+    "events" : [ 70899, 6786245, 8876789, 70903, 70920, 70906, 977301, 175993 ]
+  }, {
+    "dbId" : 70688,
+    "stId" : "R-HSA-70688",
+    "displayName" : "Proline catabolism",
+    "events" : [ 8955817, 70679, 70667, 70670 ]
+  }, {
+    "dbId" : 71064,
+    "stId" : "R-HSA-71064",
+    "displayName" : "Lysine catabolism",
+    "events" : [ 6788611, 372480, 71046, 70952, 6783883, 5696408, 6783880, 5693347, 508561, 70938, 70941, 71037, 70940 ]
+  } ]
+}

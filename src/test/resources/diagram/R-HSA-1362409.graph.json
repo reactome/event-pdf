@@ -1,0 +1,438 @@
+{
+  "dbId" : 1362409,
+  "stId" : "R-HSA-1362409",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 1362389,
+    "stId" : "R-HSA-1362389",
+    "displayName" : "SLC25A37 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NYZ2",
+    "geneNames" : [ "SLC25A37", "MFRN", "MSCP", "HT015" ],
+    "parents" : [ 1362399 ]
+  }, {
+    "dbId" : 113600,
+    "stId" : "R-ALL-113600",
+    "displayName" : "NADPH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 22 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 1362390,
+    "stId" : "R-HSA-1362390",
+    "displayName" : "FXN(81-210) [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16595",
+    "geneNames" : [ "FXN", "FRDA", "X25" ],
+    "parents" : [ 1362398, 1362402, 1362404 ]
+  }, {
+    "dbId" : 1362391,
+    "stId" : "R-HSA-1362391",
+    "displayName" : "ISCU-1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H1K1-1",
+    "geneNames" : [ "ISCU", "NIFUN" ],
+    "parents" : [ 1362398, 1362401, 1362404 ]
+  }, {
+    "dbId" : 1362385,
+    "stId" : "R-ALL-1362385",
+    "displayName" : "Fe2+ [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 5 ],
+    "identifier" : "18248"
+  }, {
+    "dbId" : 1362396,
+    "stId" : "R-HSA-1362396",
+    "displayName" : "NFS1-1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y697-1",
+    "geneNames" : [ "NFS1", "NIFS", "HUSSY-08" ],
+    "parents" : [ 2395497 ]
+  }, {
+    "dbId" : 2395500,
+    "stId" : "R-HSA-2395500",
+    "displayName" : "FDX1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10109",
+    "geneNames" : [ "FDX1", "ADX" ],
+    "parents" : [ 2395509, 2395507 ]
+  }, {
+    "dbId" : 2395501,
+    "stId" : "R-ALL-2395501",
+    "displayName" : "(2Fe-2S)2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "33737",
+    "parents" : [ 2395505, 2395509 ]
+  }, {
+    "dbId" : 2395502,
+    "stId" : "R-HSA-2395502",
+    "displayName" : "FDXR:FADH2 [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 25 ],
+    "children" : [ 2395499, 31649 ]
+  }, {
+    "dbId" : 1362398,
+    "stId" : "R-HSA-1362398",
+    "displayName" : "FXN:NFS1:ISD11:ISCU:2Fe-2S Cluster [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "children" : [ 2395497, 1362392, 1362383, 1362391, 1362390 ]
+  }, {
+    "dbId" : 1362399,
+    "stId" : "R-HSA-1362399",
+    "displayName" : "Mitoferrin1,2 [mitochondrial inner membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "children" : [ 1362394, 1362389 ]
+  }, {
+    "dbId" : 8878796,
+    "stId" : "R-HSA-8878796",
+    "displayName" : "ISCA1:ISCA2:4Fe-4S [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 43 ],
+    "children" : [ 8878840, 6793617 ]
+  }, {
+    "dbId" : 2395503,
+    "stId" : "R-HSA-2395503",
+    "displayName" : "FDX1L (red.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408372 ],
+    "children" : [ 2395506, 2395504 ]
+  }, {
+    "dbId" : 1362392,
+    "stId" : "R-HSA-1362392",
+    "displayName" : "LYRM4 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HD34",
+    "geneNames" : [ "LYRM4", "C6orf149", "ISD11", "CGI-203" ],
+    "parents" : [ 1362398, 1362401, 1362404 ]
+  }, {
+    "dbId" : 379721,
+    "stId" : "R-ALL-379721",
+    "displayName" : "L-Cys [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 13 ],
+    "identifier" : "35235"
+  }, {
+    "dbId" : 2395497,
+    "stId" : "R-HSA-2395497",
+    "displayName" : "NFS1:pyridoxal phosphate [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1362398, 1362401, 1362404 ],
+    "children" : [ 113583, 1362396 ]
+  }, {
+    "dbId" : 8878793,
+    "stId" : "R-HSA-8878793",
+    "displayName" : "GLRX5:2Fe-2S [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 40 ],
+    "children" : [ 2564761, 1362383 ]
+  }, {
+    "dbId" : 1362394,
+    "stId" : "R-HSA-1362394",
+    "displayName" : "SLC25A28 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96A46",
+    "geneNames" : [ "SLC25A28", "MFRN2", "NPD016" ],
+    "parents" : [ 1362399 ]
+  }, {
+    "dbId" : 2395499,
+    "stId" : "R-HSA-2395499",
+    "displayName" : "FDXR [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22570",
+    "geneNames" : [ "FDXR", "ADXR" ],
+    "parents" : [ 2395502, 2395508 ]
+  }, {
+    "dbId" : 2395508,
+    "stId" : "R-HSA-2395508",
+    "displayName" : "FDXR:FAD [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 23 ],
+    "children" : [ 2395499, 113596 ]
+  }, {
+    "dbId" : 2408372,
+    "stId" : "R-HSA-2408372",
+    "displayName" : "FDX1,FDX1L (red.) [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 36 ],
+    "children" : [ 2395503, 2395507 ]
+  }, {
+    "dbId" : 5691207,
+    "stId" : "R-HSA-5691207",
+    "displayName" : "ISCA2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86U28",
+    "geneNames" : [ "ISCA2", "HBLD1" ],
+    "parents" : [ 8878840 ]
+  }, {
+    "dbId" : 2395509,
+    "stId" : "R-HSA-2395509",
+    "displayName" : "FDX1 (ox.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408370 ],
+    "children" : [ 2395501, 2395500 ]
+  }, {
+    "dbId" : 2395504,
+    "stId" : "R-ALL-2395504",
+    "displayName" : "(2Fe-2S)(1+) [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "33738",
+    "parents" : [ 2395503, 2395507 ]
+  }, {
+    "dbId" : 2395505,
+    "stId" : "R-HSA-2395505",
+    "displayName" : "FDX1L (ox.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408370 ],
+    "children" : [ 2395501, 2395506 ]
+  }, {
+    "dbId" : 2408370,
+    "stId" : "R-HSA-2408370",
+    "displayName" : "FDX1,FDX1L (ox.) [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 32 ],
+    "children" : [ 2395505, 2395509 ]
+  }, {
+    "dbId" : 2395506,
+    "stId" : "R-HSA-2395506",
+    "displayName" : "FDX1L [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P4F2",
+    "geneNames" : [ "FDX2", "FDX1L" ],
+    "parents" : [ 2395505, 2395503 ]
+  }, {
+    "dbId" : 2395507,
+    "stId" : "R-HSA-2395507",
+    "displayName" : "FDX1 (red.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408372 ],
+    "children" : [ 2395500, 2395504 ]
+  }, {
+    "dbId" : 5691212,
+    "stId" : "R-HSA-5691212",
+    "displayName" : "ISCA1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BUE6",
+    "geneNames" : [ "ISCA1", "HBLD2", "GK004" ],
+    "parents" : [ 8878840 ]
+  }, {
+    "dbId" : 113563,
+    "stId" : "R-ALL-113563",
+    "displayName" : "NADP+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 24 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 1362383,
+    "stId" : "R-ALL-1362383",
+    "displayName" : "2Fe-2S cluster [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "33739",
+    "parents" : [ 1362398, 8878793 ]
+  }, {
+    "dbId" : 31649,
+    "stId" : "R-ALL-31649",
+    "displayName" : "FADH2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17877",
+    "parents" : [ 2395502 ]
+  }, {
+    "dbId" : 113583,
+    "stId" : "R-ALL-113583",
+    "displayName" : "PXLP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18405",
+    "parents" : [ 2395497 ]
+  }, {
+    "dbId" : 1362404,
+    "stId" : "R-HSA-1362404",
+    "displayName" : "FXN:ISD11:NFS1:ISCU [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 10 ],
+    "children" : [ 2395497, 1362392, 1362391, 1362390 ]
+  }, {
+    "dbId" : 379697,
+    "stId" : "R-ALL-379697",
+    "displayName" : "L-Ala [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "57972"
+  }, {
+    "dbId" : 1362401,
+    "stId" : "R-HSA-1362401",
+    "displayName" : "2 Iron:FXN:NFS1:ISD11:ISCU [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 11 ],
+    "children" : [ 2395497, 1362392, 1362402, 1362391 ]
+  }, {
+    "dbId" : 6793617,
+    "stId" : "R-ALL-6793617",
+    "displayName" : "4Fe-4S cluster [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "49883",
+    "parents" : [ 8878796 ]
+  }, {
+    "dbId" : 1362402,
+    "stId" : "R-HSA-1362402",
+    "displayName" : "2 Iron:FXN [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1362401 ],
+    "children" : [ 113531, 1362390 ]
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 21 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 113531,
+    "stId" : "R-ALL-113531",
+    "displayName" : "Fe2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6 ],
+    "identifier" : "18248",
+    "parents" : [ 1362402 ]
+  }, {
+    "dbId" : 1299438,
+    "stId" : "R-HSA-1299438",
+    "displayName" : "HSCB [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 45 ],
+    "identifier" : "Q8IWL3",
+    "geneNames" : [ "HSCB", "DNAJC20", "HSC20" ]
+  }, {
+    "dbId" : 113596,
+    "stId" : "R-ALL-113596",
+    "displayName" : "FAD [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 2395508 ]
+  }, {
+    "dbId" : 2564761,
+    "stId" : "R-HSA-2564761",
+    "displayName" : "GLRX5 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 47 ],
+    "identifier" : "Q86SX6",
+    "geneNames" : [ "GLRX5", "C14orf87" ],
+    "parents" : [ 8878793 ]
+  }, {
+    "dbId" : 8878840,
+    "stId" : "R-HSA-8878840",
+    "displayName" : "ISCA1:ISCA2 [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 42 ],
+    "parents" : [ 8878796 ],
+    "children" : [ 5691212, 5691207 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 1362416,
+    "stId" : "R-HSA-1362416",
+    "displayName" : "Frataxin binds iron",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1362417 ],
+    "following" : [ 1362408 ],
+    "inputs" : [ 113531, 1362404 ],
+    "outputs" : [ 1362401 ],
+    "efs" : [ ],
+    "diagramIds" : [ 9 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1362417,
+    "stId" : "R-HSA-1362417",
+    "displayName" : "Mitoferrin translocates iron from the mitochondrial intermembrane space to the mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "following" : [ 1362416 ],
+    "inputs" : [ 1362385 ],
+    "outputs" : [ 113531 ],
+    "catalysts" : [ 1362399 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8878815,
+    "stId" : "R-HSA-8878815",
+    "displayName" : "Formation of 4Fe-4S cluster on ISCA1:ISCA2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8878840, 8878793 ],
+    "outputs" : [ 2564761, 8878796 ],
+    "efs" : [ ],
+    "requirements" : [ 1299438 ],
+    "diagramIds" : [ 41 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2395517,
+    "stId" : "R-HSA-2395517",
+    "displayName" : "NADPH transfers electrons to FDXR",
+    "schemaClass" : "Reaction",
+    "following" : [ 2395512 ],
+    "inputs" : [ 113529, 113600, 2395508 ],
+    "outputs" : [ 2395502, 113563 ],
+    "efs" : [ ],
+    "diagramIds" : [ 20 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1362408,
+    "stId" : "R-HSA-1362408",
+    "displayName" : "FXN:NFS1:ISD11:ISCU assembles 2Fe-2S iron-sulfur cluster",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 1362416, 2395512 ],
+    "inputs" : [ 2408372, 1362401, 379721 ],
+    "outputs" : [ 379697, 2408370, 1362398 ],
+    "catalysts" : [ 1362401, 2408372 ],
+    "efs" : [ ],
+    "requirements" : [ 2408372 ],
+    "diagramIds" : [ 12 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2395512,
+    "stId" : "R-HSA-2395512",
+    "displayName" : "FDXR transfers electrons to FDX1/1L",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2395517 ],
+    "following" : [ 1362408 ],
+    "inputs" : [ 2395502, 2408370 ],
+    "outputs" : [ 113529, 2408372, 2395508 ],
+    "efs" : [ ],
+    "diagramIds" : [ 27 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 2395516,
+    "stId" : "R-HSA-2395516",
+    "displayName" : "Electron transport from NADPH to Ferredoxin",
+    "events" : [ 2395517, 2395512 ]
+  } ]
+}

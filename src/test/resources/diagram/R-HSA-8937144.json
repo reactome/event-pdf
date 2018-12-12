@@ -1,0 +1,944 @@
+{
+  "dbId" : 8937144,
+  "stableId" : "R-HSA-8937144",
+  "displayName" : "Aryl hydrocarbon receptor signalling",
+  "nodes" : [ {
+    "id" : 2512,
+    "reactomeId" : 8936852,
+    "displayName" : "TCDD",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 157,
+      "y" : 133
+    },
+    "minX" : 136,
+    "maxX" : 268,
+    "minY" : 117,
+    "maxY" : 178,
+    "prop" : {
+      "x" : 136,
+      "y" : 118,
+      "width" : 43,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 136,
+      "y" : 122
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 174,
+          "y" : 123
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2510,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 182,
+          "y" : 141
+        },
+        "to" : {
+          "x" : 268,
+          "y" : 178
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2513,
+    "reactomeId" : 8936846,
+    "displayName" : "AHR:TCDD:2xHSP90AB1:AIP:PTGES3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 363,
+      "y" : 180
+    },
+    "minX" : 315,
+    "maxX" : 412,
+    "minY" : 155,
+    "maxY" : 205,
+    "prop" : {
+      "x" : 315,
+      "y" : 155,
+      "width" : 97,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 319,
+      "y" : 156
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2514,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 2510,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2515,
+    "reactomeId" : 8937154,
+    "displayName" : "AHR:TCDD:2xHSP90AB1:AIP:PTGES3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 548,
+      "y" : 179
+    },
+    "minX" : 501,
+    "maxX" : 596,
+    "minY" : 153,
+    "maxY" : 205,
+    "prop" : {
+      "x" : 501,
+      "y" : 153,
+      "width" : 95,
+      "height" : 52
+    },
+    "textPosition" : {
+      "x" : 504,
+      "y" : 156
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2514,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 2517,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2518,
+    "reactomeId" : 8937201,
+    "displayName" : "2xHSP90AB1:AIP:PTGES3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 723,
+      "y" : 127
+    },
+    "minX" : 678,
+    "maxX" : 768,
+    "minY" : 108,
+    "maxY" : 177,
+    "prop" : {
+      "x" : 679,
+      "y" : 108,
+      "width" : 89,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 679,
+      "y" : 111
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2517,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 705,
+          "y" : 149
+        },
+        "to" : {
+          "x" : 678,
+          "y" : 177
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 703,
+          "y" : 157
+        },
+        "b" : {
+          "x" : 705,
+          "y" : 149
+        },
+        "c" : {
+          "x" : 697,
+          "y" : 151
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 2519,
+    "reactomeId" : 8937150,
+    "displayName" : "AHR:TCDD",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 718,
+      "y" : 215
+    },
+    "minX" : 678,
+    "maxX" : 806,
+    "minY" : 177,
+    "maxY" : 239,
+    "prop" : {
+      "x" : 682,
+      "y" : 204,
+      "width" : 72,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 682,
+      "y" : 205
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2517,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 706,
+          "y" : 201
+        },
+        "to" : {
+          "x" : 678,
+          "y" : 177
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 698,
+          "y" : 200
+        },
+        "b" : {
+          "x" : 706,
+          "y" : 201
+        },
+        "c" : {
+          "x" : 703,
+          "y" : 193
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 2520,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 757,
+          "y" : 224
+        },
+        "to" : {
+          "x" : 806,
+          "y" : 239
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2521,
+    "reactomeId" : 8936837,
+    "displayName" : "ARNT, ARNT2",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 732,
+      "y" : 278
+    },
+    "minX" : 705,
+    "maxX" : 806,
+    "minY" : 239,
+    "maxY" : 323,
+    "prop" : {
+      "x" : 705,
+      "y" : 264,
+      "width" : 55,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 708,
+      "y" : 261
+    },
+    "connectors" : [ {
+      "edgeId" : 2520,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 759,
+          "y" : 258
+        },
+        "to" : {
+          "x" : 806,
+          "y" : 239
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 2523,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 752,
+          "y" : 299
+        },
+        "to" : {
+          "x" : 796,
+          "y" : 323
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2522,
+    "reactomeId" : 8937203,
+    "displayName" : "AHR:TCDD:ARNT",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 889,
+      "y" : 241
+    },
+    "minX" : 851,
+    "maxX" : 927,
+    "minY" : 223,
+    "maxY" : 259,
+    "prop" : {
+      "x" : 851,
+      "y" : 223,
+      "width" : 76,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 851,
+      "y" : 224
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2520,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2524,
+    "reactomeId" : 8936841,
+    "displayName" : "AHRR",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 738,
+      "y" : 354
+    },
+    "minX" : 711,
+    "maxX" : 796,
+    "minY" : 323,
+    "maxY" : 365,
+    "prop" : {
+      "x" : 711,
+      "y" : 343,
+      "width" : 55,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 718,
+      "y" : 343
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 766,
+          "y" : 343
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2523,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 758,
+          "y" : 340
+        },
+        "to" : {
+          "x" : 796,
+          "y" : 323
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2525,
+    "reactomeId" : 8936835,
+    "displayName" : "AHRR:ARNT",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 875,
+      "y" : 325
+    },
+    "minX" : 852,
+    "maxX" : 898,
+    "minY" : 307,
+    "maxY" : 344,
+    "prop" : {
+      "x" : 852,
+      "y" : 307,
+      "width" : 46,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 852,
+      "y" : 309
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2523,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2511,
+    "reactomeId" : 8936844,
+    "displayName" : "AHR:2xHSP90AB1:AIP:PTGES3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 147,
+      "y" : 221
+    },
+    "minX" : 100,
+    "maxX" : 268,
+    "minY" : 178,
+    "maxY" : 246,
+    "prop" : {
+      "x" : 100,
+      "y" : 196,
+      "width" : 94,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 103,
+      "y" : 197
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2510,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 197,
+          "y" : 204
+        },
+        "to" : {
+          "x" : 268,
+          "y" : 178
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 2514,
+    "reactomeId" : 8937169,
+    "displayName" : "AHR:TCDD:2xHSP90AB1:AIP:PTGES3 translocates from cytosol to nucleoplasm",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 452,
+      "y" : 179
+    },
+    "minX" : 415,
+    "maxX" : 498,
+    "minY" : 173,
+    "maxY" : 185,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 415,
+        "y" : 179
+      },
+      "to" : {
+        "x" : 452,
+        "y" : 179
+      }
+    }, {
+      "from" : {
+        "x" : 452,
+        "y" : 179
+      },
+      "to" : {
+        "x" : 498,
+        "y" : 179
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 491,
+        "y" : 183
+      },
+      "b" : {
+        "x" : 498,
+        "y" : 179
+      },
+      "c" : {
+        "x" : 491,
+        "y" : 175
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 446,
+        "y" : 173
+      },
+      "b" : {
+        "x" : 458,
+        "y" : 185
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2513
+    } ],
+    "outputs" : [ {
+      "id" : 2515
+    } ]
+  }, {
+    "id" : 2517,
+    "reactomeId" : 8937191,
+    "displayName" : "AHR:TCDD:2xHSP90AB1:AIP:PTGES3 dissociates",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 633,
+      "y" : 177
+    },
+    "minX" : 599,
+    "maxX" : 678,
+    "minY" : 172,
+    "maxY" : 182,
+    "reactionType" : "Dissociation",
+    "segments" : [ {
+      "from" : {
+        "x" : 599,
+        "y" : 177
+      },
+      "to" : {
+        "x" : 633,
+        "y" : 177
+      }
+    }, {
+      "from" : {
+        "x" : 633,
+        "y" : 177
+      },
+      "to" : {
+        "x" : 678,
+        "y" : 177
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 633,
+        "y" : 177
+      },
+      "r" : 5,
+      "r1" : 3,
+      "type" : "DOUBLE_CIRCLE",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2515
+    } ],
+    "outputs" : [ {
+      "id" : 2518,
+      "points" : [ {
+        "x" : 705,
+        "y" : 149
+      } ]
+    }, {
+      "id" : 2519,
+      "points" : [ {
+        "x" : 706,
+        "y" : 201
+      } ]
+    } ]
+  }, {
+    "id" : 2520,
+    "reactomeId" : 8937177,
+    "displayName" : "AHR:TCDD binds ARNT",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 806,
+      "y" : 241
+    },
+    "minX" : 801,
+    "maxX" : 848,
+    "minY" : 236,
+    "maxY" : 246,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 806,
+        "y" : 239
+      },
+      "to" : {
+        "x" : 806,
+        "y" : 241
+      }
+    }, {
+      "from" : {
+        "x" : 806,
+        "y" : 241
+      },
+      "to" : {
+        "x" : 848,
+        "y" : 241
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 841,
+        "y" : 245
+      },
+      "b" : {
+        "x" : 848,
+        "y" : 241
+      },
+      "c" : {
+        "x" : 841,
+        "y" : 237
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 806,
+        "y" : 241
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 2521,
+      "points" : [ {
+        "x" : 759,
+        "y" : 258
+      } ]
+    }, {
+      "id" : 2519,
+      "points" : [ {
+        "x" : 757,
+        "y" : 224
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 2522
+    } ]
+  }, {
+    "id" : 2523,
+    "reactomeId" : 8936851,
+    "displayName" : "AHRR binds ARNT",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 796,
+      "y" : 324
+    },
+    "minX" : 791,
+    "maxX" : 849,
+    "minY" : 319,
+    "maxY" : 329,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 796,
+        "y" : 323
+      },
+      "to" : {
+        "x" : 796,
+        "y" : 324
+      }
+    }, {
+      "from" : {
+        "x" : 796,
+        "y" : 324
+      },
+      "to" : {
+        "x" : 849,
+        "y" : 324
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 842,
+        "y" : 328
+      },
+      "b" : {
+        "x" : 849,
+        "y" : 324
+      },
+      "c" : {
+        "x" : 842,
+        "y" : 320
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 796,
+        "y" : 324
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 2524,
+      "points" : [ {
+        "x" : 758,
+        "y" : 340
+      } ]
+    }, {
+      "id" : 2521,
+      "points" : [ {
+        "x" : 752,
+        "y" : 299
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 2525
+    } ]
+  }, {
+    "id" : 2510,
+    "reactomeId" : 8936849,
+    "displayName" : "AHR:2xHSP90:AIP:PTGES3 binds TCDD",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 267,
+      "y" : 178
+    },
+    "minX" : 262,
+    "maxX" : 312,
+    "minY" : 173,
+    "maxY" : 183,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 268,
+        "y" : 178
+      },
+      "to" : {
+        "x" : 267,
+        "y" : 178
+      }
+    }, {
+      "from" : {
+        "x" : 267,
+        "y" : 178
+      },
+      "to" : {
+        "x" : 312,
+        "y" : 178
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 305,
+        "y" : 182
+      },
+      "b" : {
+        "x" : 312,
+        "y" : 178
+      },
+      "c" : {
+        "x" : 305,
+        "y" : 174
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 267,
+        "y" : 178
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 2511,
+      "points" : [ {
+        "x" : 197,
+        "y" : 204
+      } ]
+    }, {
+      "id" : 2512,
+      "points" : [ {
+        "x" : 182,
+        "y" : 141
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 2513
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 372,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 569,
+      "y" : 259
+    },
+    "minX" : 0,
+    "maxX" : 1138,
+    "minY" : 0,
+    "maxY" : 519,
+    "prop" : {
+      "x" : 0,
+      "y" : 0,
+      "width" : 1138,
+      "height" : 519
+    },
+    "textPosition" : {
+      "x" : 284,
+      "y" : 382
+    },
+    "insets" : {
+      "x" : 10,
+      "y" : 10,
+      "width" : 1116,
+      "height" : 497
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2510, 2511, 2512, 2516, 2513 ]
+  }, {
+    "id" : 2516,
+    "reactomeId" : 7660,
+    "displayName" : "nucleoplasm",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 704,
+      "y" : 265
+    },
+    "minX" : 442,
+    "maxX" : 966,
+    "minY" : 83,
+    "maxY" : 447,
+    "prop" : {
+      "x" : 442,
+      "y" : 83,
+      "width" : 524,
+      "height" : 364
+    },
+    "textPosition" : {
+      "x" : 461,
+      "y" : 382
+    },
+    "insets" : {
+      "x" : 452,
+      "y" : 92,
+      "width" : 505,
+      "height" : 346
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2514, 2515, 2517, 2518, 2519, 2520, 2521, 2522, 2523, 2524, 2525 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 1138,
+  "minY" : 0,
+  "maxY" : 519,
+  "disease" : false
+}

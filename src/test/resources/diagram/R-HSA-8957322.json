@@ -1,0 +1,357 @@
+{
+  "dbId" : 8957322,
+  "stableId" : "R-HSA-8957322",
+  "displayName" : "Metabolism of steroids",
+  "nodes" : [ {
+    "id" : 1,
+    "reactomeId" : 191273,
+    "displayName" : "Cholesterol biosynthesis",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 88,
+      "y" : 127
+    },
+    "minX" : 31,
+    "maxX" : 146,
+    "minY" : 99,
+    "maxY" : 156,
+    "prop" : {
+      "x" : 31,
+      "y" : 99,
+      "width" : 115,
+      "height" : 57
+    },
+    "textPosition" : {
+      "x" : 45,
+      "y" : 106
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 194068,
+    "displayName" : "Bile acid and bile salt metabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 297,
+      "y" : 27
+    },
+    "minX" : 229,
+    "maxX" : 366,
+    "minY" : 0,
+    "maxY" : 55,
+    "prop" : {
+      "x" : 229,
+      "y" : 0,
+      "width" : 137,
+      "height" : 55
+    },
+    "textPosition" : {
+      "x" : 238,
+      "y" : 6
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 196071,
+    "displayName" : "Metabolism of steroid hormones",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 297,
+      "y" : 127
+    },
+    "minX" : 221,
+    "maxX" : 373,
+    "minY" : 96,
+    "maxY" : 158,
+    "prop" : {
+      "x" : 221,
+      "y" : 96,
+      "width" : 152,
+      "height" : 62
+    },
+    "textPosition" : {
+      "x" : 224,
+      "y" : 105
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 196791,
+    "displayName" : "Vitamin D (calciferol) metabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 297,
+      "y" : 226
+    },
+    "minX" : 222,
+    "maxX" : 372,
+    "minY" : 197,
+    "maxY" : 255,
+    "prop" : {
+      "x" : 222,
+      "y" : 197,
+      "width" : 150,
+      "height" : 58
+    },
+    "textPosition" : {
+      "x" : 227,
+      "y" : 204
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 1655829,
+    "displayName" : "Regulation of cholesterol biosynthesis by SREBP (SREBF)",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 86,
+      "y" : 226
+    },
+    "minX" : 0,
+    "maxX" : 173,
+    "minY" : 193,
+    "maxY" : 260,
+    "prop" : {
+      "x" : 0,
+      "y" : 193,
+      "width" : 173,
+      "height" : 67
+    },
+    "textPosition" : {
+      "x" : 6,
+      "y" : 198
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 5,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 195,
+      "y" : 79
+    },
+    "minX" : 149,
+    "maxX" : 242,
+    "minY" : 58,
+    "maxY" : 101,
+    "segments" : [ {
+      "from" : {
+        "x" : 149,
+        "y" : 101
+      },
+      "to" : {
+        "x" : 242,
+        "y" : 58
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 237,
+        "y" : 65
+      },
+      "b" : {
+        "x" : 242,
+        "y" : 58
+      },
+      "c" : {
+        "x" : 234,
+        "y" : 57
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 189,
+        "y" : 73
+      },
+      "b" : {
+        "x" : 201,
+        "y" : 85
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1
+    } ],
+    "outputs" : [ {
+      "id" : 2
+    } ]
+  }, {
+    "id" : 6,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 183,
+      "y" : 127
+    },
+    "minX" : 149,
+    "maxX" : 218,
+    "minY" : 121,
+    "maxY" : 133,
+    "segments" : [ {
+      "from" : {
+        "x" : 149,
+        "y" : 127
+      },
+      "to" : {
+        "x" : 218,
+        "y" : 127
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 211,
+        "y" : 131
+      },
+      "b" : {
+        "x" : 218,
+        "y" : 127
+      },
+      "c" : {
+        "x" : 211,
+        "y" : 123
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 177,
+        "y" : 121
+      },
+      "b" : {
+        "x" : 189,
+        "y" : 133
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1
+    } ],
+    "outputs" : [ {
+      "id" : 3
+    } ]
+  }, {
+    "id" : 7,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 194,
+      "y" : 173
+    },
+    "minX" : 149,
+    "maxX" : 239,
+    "minY" : 152,
+    "maxY" : 194,
+    "segments" : [ {
+      "from" : {
+        "x" : 149,
+        "y" : 152
+      },
+      "to" : {
+        "x" : 239,
+        "y" : 194
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 231,
+        "y" : 195
+      },
+      "b" : {
+        "x" : 239,
+        "y" : 194
+      },
+      "c" : {
+        "x" : 234,
+        "y" : 187
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 188,
+        "y" : 167
+      },
+      "b" : {
+        "x" : 200,
+        "y" : 179
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1
+    } ],
+    "outputs" : [ {
+      "id" : 4
+    } ]
+  }, {
+    "id" : 10,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 86,
+      "y" : 174
+    },
+    "minX" : 80,
+    "maxX" : 92,
+    "minY" : 159,
+    "maxY" : 190,
+    "segments" : [ {
+      "from" : {
+        "x" : 86,
+        "y" : 190
+      },
+      "to" : {
+        "x" : 87,
+        "y" : 159
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 91,
+        "y" : 166
+      },
+      "b" : {
+        "x" : 87,
+        "y" : 159
+      },
+      "c" : {
+        "x" : 83,
+        "y" : 166
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 80,
+        "y" : 168
+      },
+      "b" : {
+        "x" : 92,
+        "y" : 180
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 8
+    } ],
+    "outputs" : [ {
+      "id" : 1
+    } ]
+  } ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 373,
+  "minY" : 0,
+  "maxY" : 260,
+  "disease" : false
+}

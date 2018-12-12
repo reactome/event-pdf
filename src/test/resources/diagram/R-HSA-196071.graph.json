@@ -1,0 +1,1353 @@
+{
+  "dbId" : 196071,
+  "stId" : "R-HSA-196071",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 61, 127 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 196352,
+    "stId" : "R-HSA-196352",
+    "displayName" : "HSD3B2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P26439",
+    "geneNames" : [ "HSD3B2", "HSDB3B" ],
+    "parents" : [ 196336 ]
+  }, {
+    "dbId" : 5483094,
+    "stId" : "R-HSA-5483094",
+    "displayName" : "BZRAP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95153",
+    "geneNames" : [ "TSPOAP1", "BZRAP1", "KIAA0612", "RBP1", "RIMBP1" ],
+    "parents" : [ 8951857 ]
+  }, {
+    "dbId" : 5696848,
+    "stId" : "R-ALL-5696848",
+    "displayName" : "E1 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 678 ],
+    "identifier" : "17263"
+  }, {
+    "dbId" : 196357,
+    "stId" : "R-HSA-196357",
+    "displayName" : "HSD2B1 or HSD3B2 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 62 ],
+    "children" : [ 196351, 196336 ]
+  }, {
+    "dbId" : 8873870,
+    "stId" : "R-HSA-8873870",
+    "displayName" : "STARD3NL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95772",
+    "geneNames" : [ "STARD3NL", "MENTHO", "UNQ855/PRO1864" ],
+    "parents" : [ 8873881 ]
+  }, {
+    "dbId" : 196366,
+    "stId" : "R-ALL-196366",
+    "displayName" : "pregn-5-ene-3,20-dione-17-ol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 60 ],
+    "identifier" : "63843"
+  }, {
+    "dbId" : 5696834,
+    "stId" : "R-HSA-5696834",
+    "displayName" : "AKR1B15 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 679 ],
+    "identifier" : "C9JRZ8",
+    "geneNames" : [ "AKR1B15" ]
+  }, {
+    "dbId" : 193046,
+    "stId" : "R-ALL-193046",
+    "displayName" : "ISCAL [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 33 ],
+    "identifier" : "17998"
+  }, {
+    "dbId" : 29460,
+    "stId" : "R-ALL-29460",
+    "displayName" : "HCOOH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 176 ],
+    "identifier" : "30751"
+  }, {
+    "dbId" : 5696835,
+    "stId" : "R-ALL-5696835",
+    "displayName" : "EST17b [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 677 ],
+    "identifier" : "16469"
+  }, {
+    "dbId" : 5216089,
+    "stId" : "R-HSA-5216089",
+    "displayName" : "STARD3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14849",
+    "geneNames" : [ "STARD3", "CAB1", "MLN64" ],
+    "parents" : [ 8873881 ]
+  }, {
+    "dbId" : 196120,
+    "stId" : "R-HSA-196120",
+    "displayName" : "STAR [mitochondrial intermembrane space]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "identifier" : "P49675",
+    "geneNames" : [ "STAR", "STARD1" ],
+    "parents" : [ 196090 ]
+  }, {
+    "dbId" : 193055,
+    "stId" : "R-ALL-193055",
+    "displayName" : "P4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 131, 197 ],
+    "identifier" : "17026"
+  }, {
+    "dbId" : 196124,
+    "stId" : "R-HSA-196124",
+    "displayName" : "STARD3:STARD3NL, STARD4,6:CHOL [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6 ],
+    "children" : [ 196094, 176478 ]
+  }, {
+    "dbId" : 8873881,
+    "stId" : "R-HSA-8873881",
+    "displayName" : "STARD3:STARD3NL [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 196094 ],
+    "children" : [ 8873870, 5216089 ]
+  }, {
+    "dbId" : 8862104,
+    "stId" : "R-HSA-8862104",
+    "displayName" : "HSD17B2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 902 ],
+    "identifier" : "P37059",
+    "geneNames" : [ "HSD17B2", "EDH17B2", "SDR9C2" ]
+  }, {
+    "dbId" : 3902489,
+    "stId" : "R-HSA-3902489",
+    "displayName" : "HSD17B3-like Proteins [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 571 ],
+    "children" : [ 192162, 548766 ]
+  }, {
+    "dbId" : 193057,
+    "stId" : "R-ALL-193057",
+    "displayName" : "TEST [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 155 ],
+    "identifier" : "17347"
+  }, {
+    "dbId" : 193066,
+    "stId" : "R-ALL-193066",
+    "displayName" : "E1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 187, 511 ],
+    "identifier" : "17263"
+  }, {
+    "dbId" : 193079,
+    "stId" : "R-ALL-193079",
+    "displayName" : "ANDST [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 124 ],
+    "identifier" : "16422"
+  }, {
+    "dbId" : 193086,
+    "stId" : "R-ALL-193086",
+    "displayName" : "20a,22b-DHCHOL [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26 ],
+    "identifier" : "1294"
+  }, {
+    "dbId" : 193092,
+    "stId" : "R-ALL-193092",
+    "displayName" : "17aHPROG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 66, 133 ],
+    "identifier" : "17252"
+  }, {
+    "dbId" : 29510,
+    "stId" : "R-ALL-29510",
+    "displayName" : "CH3CHO [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 113, 145 ],
+    "identifier" : "15343"
+  }, {
+    "dbId" : 1502544,
+    "stId" : "R-HSA-1502544",
+    "displayName" : "POMC(138-176) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 535, 538, 555, 557, 559 ],
+    "identifier" : "P01189",
+    "geneNames" : [ "POMC" ]
+  }, {
+    "dbId" : 2395500,
+    "stId" : "R-HSA-2395500",
+    "displayName" : "FDX1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10109",
+    "geneNames" : [ "FDX1", "ADX" ],
+    "parents" : [ 2395509, 2395507 ]
+  }, {
+    "dbId" : 2395501,
+    "stId" : "R-ALL-2395501",
+    "displayName" : "(2Fe-2S)2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "33737",
+    "parents" : [ 2395505, 2395509 ]
+  }, {
+    "dbId" : 192072,
+    "stId" : "R-HSA-192072",
+    "displayName" : "HSD3B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14060",
+    "geneNames" : [ "HSD3B1", "3BH", "HSDB3A" ],
+    "parents" : [ 196351 ]
+  }, {
+    "dbId" : 2395503,
+    "stId" : "R-HSA-2395503",
+    "displayName" : "FDX1L (red.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408372 ],
+    "children" : [ 2395506, 2395504 ]
+  }, {
+    "dbId" : 193103,
+    "stId" : "R-ALL-193103",
+    "displayName" : "PREG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 45 ],
+    "identifier" : "16581"
+  }, {
+    "dbId" : 2395499,
+    "stId" : "R-HSA-2395499",
+    "displayName" : "FDXR [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22570",
+    "geneNames" : [ "FDXR", "ADXR" ],
+    "parents" : [ 5580259, 5580249 ]
+  }, {
+    "dbId" : 2395509,
+    "stId" : "R-HSA-2395509",
+    "displayName" : "FDX1 (ox.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408370 ],
+    "children" : [ 2395501, 2395500 ]
+  }, {
+    "dbId" : 378967,
+    "stId" : "R-HSA-378967",
+    "displayName" : "CGA [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01215",
+    "geneNames" : [ "CGA" ],
+    "parents" : [ 378969 ]
+  }, {
+    "dbId" : 2395504,
+    "stId" : "R-ALL-2395504",
+    "displayName" : "(2Fe-2S)(1+) [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "33738",
+    "parents" : [ 2395503, 2395507 ]
+  }, {
+    "dbId" : 2395505,
+    "stId" : "R-HSA-2395505",
+    "displayName" : "FDX1L (ox.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408370 ],
+    "children" : [ 2395501, 2395506 ]
+  }, {
+    "dbId" : 2395506,
+    "stId" : "R-HSA-2395506",
+    "displayName" : "FDX1L [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P4F2",
+    "geneNames" : [ "FDX2", "FDX1L" ],
+    "parents" : [ 2395505, 2395503 ]
+  }, {
+    "dbId" : 2395507,
+    "stId" : "R-HSA-2395507",
+    "displayName" : "FDX1 (red.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408372 ],
+    "children" : [ 2395500, 2395504 ]
+  }, {
+    "dbId" : 176478,
+    "stId" : "R-ALL-176478",
+    "displayName" : "CHOL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16113",
+    "parents" : [ 196124 ]
+  }, {
+    "dbId" : 378969,
+    "stId" : "R-HSA-378969",
+    "displayName" : "glyco-Lutropin [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 517, 526 ],
+    "children" : [ 378982, 378967 ]
+  }, {
+    "dbId" : 193119,
+    "stId" : "R-HSA-193119",
+    "displayName" : "CYP17A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 56 ],
+    "identifier" : "P05093",
+    "geneNames" : [ "CYP17A1", "CYP17", "S17AH" ]
+  }, {
+    "dbId" : 378982,
+    "stId" : "R-HSA-378982",
+    "displayName" : "LHB [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01229",
+    "geneNames" : [ "LHB" ],
+    "parents" : [ 378969 ]
+  }, {
+    "dbId" : 804968,
+    "stId" : "R-HSA-804968",
+    "displayName" : "HSD17B1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14061",
+    "geneNames" : [ "HSD17B1", "E17KSR", "EDH17B1", "EDH17B2", "EDHB17", "SDR28C1" ],
+    "parents" : [ 804966 ]
+  }, {
+    "dbId" : 193124,
+    "stId" : "R-ALL-193124",
+    "displayName" : "17aHPREG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 53 ],
+    "identifier" : "28750"
+  }, {
+    "dbId" : 804966,
+    "stId" : "R-HSA-804966",
+    "displayName" : "HSD17B1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 508 ],
+    "children" : [ 804968 ]
+  }, {
+    "dbId" : 193132,
+    "stId" : "R-ALL-193132",
+    "displayName" : "EST17b [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 175 ],
+    "identifier" : "16469"
+  }, {
+    "dbId" : 2980957,
+    "stId" : "R-HSA-2980957",
+    "displayName" : "TSPO [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30536",
+    "geneNames" : [ "TSPO", "BZRP", "MBR" ],
+    "parents" : [ 8951857 ]
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 227, 20, 84, 25, 574, 223 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 193137,
+    "stId" : "R-HSA-193137",
+    "displayName" : "CYP19A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 177 ],
+    "identifier" : "P11511",
+    "geneNames" : [ "CYP19A1", "ARO1", "CYAR", "CYP19" ]
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 16, 229, 789, 40, 219, 92, 29 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 113533,
+    "stId" : "R-ALL-113533",
+    "displayName" : "O2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 17, 36, 215, 88, 233, 27 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 193148,
+    "stId" : "R-HSA-193148",
+    "displayName" : "CYP11A1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05108",
+    "geneNames" : [ "CYP11A1", "CYP11A" ],
+    "parents" : [ 5580259, 5580249 ]
+  }, {
+    "dbId" : 193156,
+    "stId" : "R-ALL-193156",
+    "displayName" : "CHOL [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 12 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 5580249,
+    "stId" : "R-HSA-5580249",
+    "displayName" : "CYP11A1:FDXR:FDX1,FDX1L (red.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 572 ],
+    "children" : [ 2395499, 193148, 2408372 ]
+  }, {
+    "dbId" : 193164,
+    "stId" : "R-ALL-193164",
+    "displayName" : "PREG [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 32 ],
+    "identifier" : "16581"
+  }, {
+    "dbId" : 2408372,
+    "stId" : "R-HSA-2408372",
+    "displayName" : "FDX1,FDX1L (red.) [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5580249 ],
+    "children" : [ 2395503, 2395507 ]
+  }, {
+    "dbId" : 5693383,
+    "stId" : "R-HSA-5693383",
+    "displayName" : "HSD11B2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P80365",
+    "geneNames" : [ "HSD11B2", "HSD11K", "SDR9C3" ],
+    "parents" : [ 5693385 ]
+  }, {
+    "dbId" : 548766,
+    "stId" : "R-HSA-548766",
+    "displayName" : "HSD17B12 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q53GQ0",
+    "geneNames" : [ "HSD17B12", "SDR12C1" ],
+    "parents" : [ 3902489 ]
+  }, {
+    "dbId" : 2408370,
+    "stId" : "R-HSA-2408370",
+    "displayName" : "FDX1,FDX1L (ox.) [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5580259 ],
+    "children" : [ 2395505, 2395509 ]
+  }, {
+    "dbId" : 469663,
+    "stId" : "R-HSA-469663",
+    "displayName" : "SRD5A3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H8P0",
+    "geneNames" : [ "SRD5A3", "SRD5A2L" ],
+    "parents" : [ 469656 ]
+  }, {
+    "dbId" : 469662,
+    "stId" : "R-ALL-469662",
+    "displayName" : "DHTEST [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 165 ],
+    "identifier" : "16330"
+  }, {
+    "dbId" : 113563,
+    "stId" : "R-ALL-113563",
+    "displayName" : "NADP+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 225, 19, 787, 213, 42, 30, 94 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 469657,
+    "stId" : "R-HSA-469657",
+    "displayName" : "SRD5A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18405",
+    "geneNames" : [ "SRD5A1" ],
+    "parents" : [ 469656 ]
+  }, {
+    "dbId" : 5693385,
+    "stId" : "R-HSA-5693385",
+    "displayName" : "HSD11B2, HSD11B1 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 575 ],
+    "children" : [ 193980, 5693383 ]
+  }, {
+    "dbId" : 469656,
+    "stId" : "R-HSA-469656",
+    "displayName" : "SRD5A1-3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 166 ],
+    "children" : [ 469657, 469663, 469664 ]
+  }, {
+    "dbId" : 192162,
+    "stId" : "R-HSA-192162",
+    "displayName" : "HSD17B3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P37058",
+    "geneNames" : [ "HSD17B3", "EDH17B3", "SDR12C2" ],
+    "parents" : [ 3902489 ]
+  }, {
+    "dbId" : 8951853,
+    "stId" : "R-ALL-8951853",
+    "displayName" : "CHOL [mitochondrial outer membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 911 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 469664,
+    "stId" : "R-HSA-469664",
+    "displayName" : "SRD5A2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31213",
+    "geneNames" : [ "SRD5A2" ],
+    "parents" : [ 469656 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 144, 68, 132, 54, 536, 174 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 193966,
+    "stId" : "R-ALL-193966",
+    "displayName" : "11-deoxycortisol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 69 ],
+    "identifier" : "28324"
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 59, 126 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 6810583,
+    "stId" : "R-HSA-6810583",
+    "displayName" : "HSD17B14 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 881 ],
+    "children" : [ 6810587 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 161, 513, 52, 102, 118, 151, 168, 137, 330, 906, 75 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 193975,
+    "stId" : "R-HSA-193975",
+    "displayName" : "HSD11B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P28845",
+    "geneNames" : [ "HSD11B1", "HSD11", "HSD11L", "SDR26C1" ],
+    "parents" : [ 193980 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 55, 104, 184, 904, 73, 153, 122, 170, 332, 141, 159 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 5580259,
+    "stId" : "R-HSA-5580259",
+    "displayName" : "CYP11A1:FDXR:FDX1,FDX1L (ox.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 573 ],
+    "children" : [ 2395499, 193148, 2408370 ]
+  }, {
+    "dbId" : 193978,
+    "stId" : "R-HSA-193978",
+    "displayName" : "CYP11B1 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P15538",
+    "geneNames" : [ "CYP11B1", "S11BH" ],
+    "parents" : [ 3219421 ]
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 51, 147, 182, 120, 139, 77 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 8951857,
+    "stId" : "R-HSA-8951857",
+    "displayName" : "TSPO:BZRAP1 [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 912 ],
+    "children" : [ 5483094, 2980957 ]
+  }, {
+    "dbId" : 193977,
+    "stId" : "R-ALL-193977",
+    "displayName" : "CORT [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 97 ],
+    "identifier" : "17650"
+  }, {
+    "dbId" : 193982,
+    "stId" : "R-ALL-193982",
+    "displayName" : "ALDO [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 222 ],
+    "identifier" : "27584"
+  }, {
+    "dbId" : 6810587,
+    "stId" : "R-HSA-6810587",
+    "displayName" : "HSD17B14 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BPX1",
+    "geneNames" : [ "HSD17B14", "DHRS10", "SDR3", "SDR47C1", "UNQ502/PRO474" ],
+    "parents" : [ 6810583 ]
+  }, {
+    "dbId" : 193980,
+    "stId" : "R-HSA-193980",
+    "displayName" : "HSD11B1 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5693385 ],
+    "children" : [ 193975 ]
+  }, {
+    "dbId" : 113600,
+    "stId" : "R-ALL-113600",
+    "displayName" : "NADPH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 38, 231, 217, 681, 90, 28, 15 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 193988,
+    "stId" : "R-ALL-193988",
+    "displayName" : "11DCORST [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 204 ],
+    "identifier" : "16973"
+  }, {
+    "dbId" : 193998,
+    "stId" : "R-ALL-193998",
+    "displayName" : "11DCORT [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 82 ],
+    "identifier" : "28324"
+  }, {
+    "dbId" : 194005,
+    "stId" : "R-ALL-194005",
+    "displayName" : "CORST [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 206 ],
+    "identifier" : "16827"
+  }, {
+    "dbId" : 194011,
+    "stId" : "R-ALL-194011",
+    "displayName" : "CORT [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 85 ],
+    "identifier" : "17650"
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 64, 129, 163, 515, 135, 328, 106, 908, 79, 50, 116, 180, 149 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 196063,
+    "stId" : "R-HSA-196063",
+    "displayName" : "AKR1B1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 326 ],
+    "identifier" : "P15121",
+    "geneNames" : [ "AKR1B1", "ALDR1" ]
+  }, {
+    "dbId" : 194012,
+    "stId" : "R-ALL-194012",
+    "displayName" : "18HCORST [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 209 ],
+    "identifier" : "16485"
+  }, {
+    "dbId" : 196066,
+    "stId" : "R-ALL-196066",
+    "displayName" : "MePeOH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 325 ],
+    "identifier" : "63910"
+  }, {
+    "dbId" : 194019,
+    "stId" : "R-HSA-194019",
+    "displayName" : "CYP11B2 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 211 ],
+    "identifier" : "P19099",
+    "geneNames" : [ "CYP11B2" ],
+    "parents" : [ 3219421 ]
+  }, {
+    "dbId" : 176619,
+    "stId" : "R-ALL-176619",
+    "displayName" : "E2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 879 ],
+    "identifier" : "16469"
+  }, {
+    "dbId" : 5693370,
+    "stId" : "R-HSA-5693370",
+    "displayName" : "HSD17B11 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 823 ],
+    "identifier" : "Q8NBQ5",
+    "geneNames" : [ "HSD17B11", "DHRS8", "PAN1B", "SDR16C2", "PSEC0029", "UNQ207/PRO233" ]
+  }, {
+    "dbId" : 3219421,
+    "stId" : "R-HSA-3219421",
+    "displayName" : "Cytochrome P450 (CYP11B1 based) [mitochondrial inner membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 570 ],
+    "children" : [ 193978, 194019 ]
+  }, {
+    "dbId" : 196079,
+    "stId" : "R-HSA-196079",
+    "displayName" : "STARD6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P59095",
+    "geneNames" : [ "STARD6" ],
+    "parents" : [ 196094 ]
+  }, {
+    "dbId" : 194028,
+    "stId" : "R-HSA-194028",
+    "displayName" : "CYP21A2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 70 ],
+    "identifier" : "P08686",
+    "geneNames" : [ "CYP21A2", "CYP21", "CYP21B" ]
+  }, {
+    "dbId" : 176626,
+    "stId" : "R-ALL-176626",
+    "displayName" : "DHEA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 537 ],
+    "identifier" : "28689"
+  }, {
+    "dbId" : 196083,
+    "stId" : "R-HSA-196083",
+    "displayName" : "STARD4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96DR4",
+    "geneNames" : [ "STARD4" ],
+    "parents" : [ 196094 ]
+  }, {
+    "dbId" : 194035,
+    "stId" : "R-ALL-194035",
+    "displayName" : "COR [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 99 ],
+    "identifier" : "16962"
+  }, {
+    "dbId" : 196336,
+    "stId" : "R-HSA-196336",
+    "displayName" : "HSD3B2 homodimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 196357 ],
+    "children" : [ 196352 ]
+  }, {
+    "dbId" : 196084,
+    "stId" : "R-ALL-196084",
+    "displayName" : "cholesterol [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16113",
+    "parents" : [ 196090 ]
+  }, {
+    "dbId" : 194037,
+    "stId" : "R-ALL-194037",
+    "displayName" : "11DCORST [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 200 ],
+    "identifier" : "16973"
+  }, {
+    "dbId" : 196090,
+    "stId" : "R-HSA-196090",
+    "displayName" : "STAR:CHOL [mitochondrial intermembrane space]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "children" : [ 196120, 196084 ]
+  }, {
+    "dbId" : 193019,
+    "stId" : "R-ALL-193019",
+    "displayName" : "22b-HCHOL [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18 ],
+    "identifier" : "1301"
+  }, {
+    "dbId" : 196344,
+    "stId" : "R-ALL-196344",
+    "displayName" : "pregn-5-ene-3,20-dione [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 192 ],
+    "identifier" : "63837"
+  }, {
+    "dbId" : 196094,
+    "stId" : "R-HSA-196094",
+    "displayName" : "STARD3:STARD3NL, STARD4,6 [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "parents" : [ 196124 ],
+    "children" : [ 8873881, 196079, 196083 ]
+  }, {
+    "dbId" : 196351,
+    "stId" : "R-HSA-196351",
+    "displayName" : "HSD3B1 homodimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 196357 ],
+    "children" : [ 192072 ]
+  }, {
+    "dbId" : 196095,
+    "stId" : "R-ALL-196095",
+    "displayName" : "ISCAL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 323 ],
+    "identifier" : "17998"
+  } ],
+  "edges" : [ {
+    "dbId" : 6810594,
+    "stId" : "R-HSA-6810594",
+    "displayName" : "HSD17B14 tetramer oxidises estradiol (E2) to estrone (E1)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 176619, 29366 ],
+    "outputs" : [ 70106, 193066, 29364 ],
+    "catalysts" : [ 6810583 ],
+    "efs" : [ ],
+    "diagramIds" : [ 878 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193995,
+    "stId" : "R-HSA-193995",
+    "displayName" : "CYP11B2 18-hydroxylates CORST to 18HCORST",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 194017 ],
+    "following" : [ 193965 ],
+    "inputs" : [ 113533, 113529, 194005, 113600 ],
+    "outputs" : [ 194012, 113563, 113521 ],
+    "catalysts" : [ 194019 ],
+    "efs" : [ ],
+    "diagramIds" : [ 208 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193099,
+    "stId" : "R-HSA-193099",
+    "displayName" : "CYP17A1 cleaves 17aHPROG to ANDST",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193072 ],
+    "following" : [ 193064, 193060 ],
+    "inputs" : [ 70106, 29368, 193092, 29364 ],
+    "outputs" : [ 29356, 29510, 29366, 193079 ],
+    "catalysts" : [ 193119 ],
+    "efs" : [ ],
+    "diagramIds" : [ 143 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193097,
+    "stId" : "R-HSA-193097",
+    "displayName" : "Pregnenolone translocates from the mitochondrial matrix to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193101 ],
+    "following" : [ 196350, 193068 ],
+    "inputs" : [ 193164 ],
+    "outputs" : [ 193103 ],
+    "efs" : [ ],
+    "diagramIds" : [ 44 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193996,
+    "stId" : "R-HSA-193996",
+    "displayName" : "11DCORST translocates from cytosol to mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193964 ],
+    "following" : [ 194017 ],
+    "inputs" : [ 194037 ],
+    "outputs" : [ 193988 ],
+    "efs" : [ ],
+    "diagramIds" : [ 203 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193101,
+    "stId" : "R-HSA-193101",
+    "displayName" : "CYP11A1 cleaves 20a,22b-DHCHOL",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193065 ],
+    "following" : [ 196125, 193097 ],
+    "inputs" : [ 5580249, 113533, 193086, 113529, 113600 ],
+    "outputs" : [ 193164, 113563, 5580259, 193046, 113521 ],
+    "catalysts" : [ 5580249 ],
+    "efs" : [ ],
+    "diagramIds" : [ 31 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193997,
+    "stId" : "R-HSA-193997",
+    "displayName" : "CYP11B1 oxidises 11DCORT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 194025 ],
+    "following" : [ 194036 ],
+    "inputs" : [ 113533, 193998, 113529, 113600 ],
+    "outputs" : [ 113563, 194011, 113521 ],
+    "catalysts" : [ 3219421 ],
+    "efs" : [ ],
+    "activators" : [ 1502544 ],
+    "diagramIds" : [ 83 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 196372,
+    "stId" : "R-HSA-196372",
+    "displayName" : "17-Hydroxypregnenolone is dehydrogenated to form pregn-5-ene-3,20-dione-17-ol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193068 ],
+    "following" : [ 193961 ],
+    "inputs" : [ 193124, 29360 ],
+    "outputs" : [ 196366, 70106, 73473 ],
+    "catalysts" : [ 196357 ],
+    "efs" : [ ],
+    "diagramIds" : [ 58 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5693390,
+    "stId" : "R-HSA-5693390",
+    "displayName" : "HSD17B11 dehydrogenates EST17b to E1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 193132, 29366 ],
+    "outputs" : [ 70106, 193066, 29364 ],
+    "catalysts" : [ 5693370 ],
+    "efs" : [ ],
+    "diagramIds" : [ 822 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193054,
+    "stId" : "R-HSA-193054",
+    "displayName" : "Oxidation of cholesterol to 22beta-hydroxycholesterol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 196086, 8951850 ],
+    "following" : [ 193065 ],
+    "inputs" : [ 113533, 113529, 193156, 113600 ],
+    "outputs" : [ 113563, 193019, 113521 ],
+    "catalysts" : [ 5580249 ],
+    "efs" : [ ],
+    "diagramIds" : [ 14 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 469659,
+    "stId" : "R-HSA-469659",
+    "displayName" : "Testosterone is converted to 5-alpha-dihydroxytestosterone",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193064 ],
+    "inputs" : [ 70106, 29364, 193057 ],
+    "outputs" : [ 469662, 29366 ],
+    "catalysts" : [ 469656 ],
+    "efs" : [ ],
+    "activators" : [ 1502544 ],
+    "diagramIds" : [ 164 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 196126,
+    "stId" : "R-HSA-196126",
+    "displayName" : "CHOL translocates from cytosol to mitochondrial intermembrane space",
+    "schemaClass" : "Reaction",
+    "following" : [ 196086 ],
+    "inputs" : [ 196124, 196120 ],
+    "outputs" : [ 196094, 196090 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 196060,
+    "stId" : "R-HSA-196060",
+    "displayName" : "Reduction of isocaproaldehyde to 4-methylpentan-1-ol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 196125 ],
+    "inputs" : [ 196095, 70106, 29364 ],
+    "outputs" : [ 29366, 196066 ],
+    "catalysts" : [ 196063 ],
+    "efs" : [ ],
+    "diagramIds" : [ 324 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193052,
+    "stId" : "R-HSA-193052",
+    "displayName" : "Pregn-5-ene-3,20-dione isomerizes to progesterone",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 196350 ],
+    "following" : [ 193964, 193072 ],
+    "inputs" : [ 196344 ],
+    "outputs" : [ 193055 ],
+    "catalysts" : [ 196357 ],
+    "efs" : [ ],
+    "activators" : [ 378969 ],
+    "diagramIds" : [ 196 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 196125,
+    "stId" : "R-HSA-196125",
+    "displayName" : "Translocation of isocaproaldehyde from the mitochondrial matrix to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193101 ],
+    "following" : [ 196060 ],
+    "inputs" : [ 193046 ],
+    "outputs" : [ 196095 ],
+    "efs" : [ ],
+    "diagramIds" : [ 322 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696822,
+    "stId" : "R-HSA-5696822",
+    "displayName" : "AKR1B15 reduces EST17b to E1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113563, 5696835 ],
+    "outputs" : [ 113529, 5696848, 113600 ],
+    "catalysts" : [ 5696834 ],
+    "efs" : [ ],
+    "diagramIds" : [ 676 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8951850,
+    "stId" : "R-HSA-8951850",
+    "displayName" : "TSPO:BZRAP1 transports CHOL from outer mitochondrial membrane to inner mitochondrial membrane",
+    "schemaClass" : "Reaction",
+    "following" : [ 193054 ],
+    "inputs" : [ 8951853 ],
+    "outputs" : [ 193156 ],
+    "catalysts" : [ 8951857 ],
+    "efs" : [ ],
+    "diagramIds" : [ 910 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194017,
+    "stId" : "R-HSA-194017",
+    "displayName" : "CYP11B2 oxidises 11DCORST to CORST",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193996 ],
+    "following" : [ 193995 ],
+    "inputs" : [ 113533, 113529, 193988, 113600 ],
+    "outputs" : [ 113563, 194005, 113521 ],
+    "catalysts" : [ 194019 ],
+    "efs" : [ ],
+    "diagramIds" : [ 205 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 804969,
+    "stId" : "R-HSA-804969",
+    "displayName" : "HSD17B1 hydrogenates E1 to EST17b",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193060 ],
+    "inputs" : [ 70106, 193066, 29364 ],
+    "outputs" : [ 193132, 29366 ],
+    "catalysts" : [ 804966 ],
+    "efs" : [ ],
+    "diagramIds" : [ 507 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194023,
+    "stId" : "R-HSA-194023",
+    "displayName" : "HSD11B2,HSD11B1 dimer oxidise CORT to COR",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 193977, 29366 ],
+    "outputs" : [ 70106, 29364, 194035 ],
+    "catalysts" : [ 5693385 ],
+    "efs" : [ ],
+    "diagramIds" : [ 98 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193060,
+    "stId" : "R-HSA-193060",
+    "displayName" : "CYP19A1 hydroxylates ANDST to E1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193099 ],
+    "following" : [ 804969 ],
+    "inputs" : [ 70106, 29368, 193079, 29364 ],
+    "outputs" : [ 29356, 193066, 29366, 29460 ],
+    "catalysts" : [ 193137 ],
+    "efs" : [ ],
+    "diagramIds" : [ 185 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193064,
+    "stId" : "R-HSA-193064",
+    "displayName" : "Reduction of androstenedione to testosterone",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193099, 193073 ],
+    "following" : [ 193143, 469659 ],
+    "inputs" : [ 70106, 193079, 29364 ],
+    "outputs" : [ 29366, 193057 ],
+    "catalysts" : [ 3902489 ],
+    "efs" : [ ],
+    "activators" : [ 1502544, 378969 ],
+    "diagramIds" : [ 154 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193961,
+    "stId" : "R-HSA-193961",
+    "displayName" : "Pregn-5-ene-3,20-dione-17-ol isomerizes to 17-hydroxyprogesterone",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 196372 ],
+    "following" : [ 193981 ],
+    "inputs" : [ 196366 ],
+    "outputs" : [ 193092 ],
+    "catalysts" : [ 196357 ],
+    "efs" : [ ],
+    "diagramIds" : [ 65 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194025,
+    "stId" : "R-HSA-194025",
+    "displayName" : "11-deoxycortisol translocates to the mitochondrion",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193981 ],
+    "following" : [ 193997 ],
+    "inputs" : [ 193966 ],
+    "outputs" : [ 193998 ],
+    "efs" : [ ],
+    "diagramIds" : [ 81 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193065,
+    "stId" : "R-HSA-193065",
+    "displayName" : "Oxidation of 22beta-hydroxycholesterol to 20alpha,22beta-hydroxycholesterol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193054 ],
+    "following" : [ 193101 ],
+    "inputs" : [ 113533, 193019, 113529, 113600 ],
+    "outputs" : [ 193086, 113563, 113521 ],
+    "catalysts" : [ 5580249 ],
+    "efs" : [ ],
+    "diagramIds" : [ 24 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193070,
+    "stId" : "R-HSA-193070",
+    "displayName" : "Side chain cleavage of 17alpha-hydroxypregnenolone to yield DHA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193068 ],
+    "following" : [ 193073 ],
+    "inputs" : [ 70106, 29368, 193124, 29364 ],
+    "outputs" : [ 29356, 29510, 29366, 176626 ],
+    "catalysts" : [ 193119 ],
+    "efs" : [ ],
+    "activators" : [ 1502544 ],
+    "diagramIds" : [ 111 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193964,
+    "stId" : "R-HSA-193964",
+    "displayName" : "CYP21A2 21-hydroxylates PROG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193052 ],
+    "following" : [ 193996 ],
+    "inputs" : [ 193055, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 194037, 29366 ],
+    "catalysts" : [ 194028 ],
+    "efs" : [ ],
+    "diagramIds" : [ 198 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193068,
+    "stId" : "R-HSA-193068",
+    "displayName" : "CYP17A1 17-hydroxylates PREG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193097 ],
+    "following" : [ 193070, 196372 ],
+    "inputs" : [ 193103, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 193124 ],
+    "catalysts" : [ 193119 ],
+    "efs" : [ ],
+    "diagramIds" : [ 49 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193965,
+    "stId" : "R-HSA-193965",
+    "displayName" : "CYP11B2 oxidises 18HCORST to ALDO",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193995 ],
+    "inputs" : [ 194012, 113533, 113529, 113600 ],
+    "outputs" : [ 193982, 113563, 113521 ],
+    "catalysts" : [ 194019 ],
+    "efs" : [ ],
+    "diagramIds" : [ 221 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193072,
+    "stId" : "R-HSA-193072",
+    "displayName" : "CYP17A1 17-hydroxylates P4",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193052 ],
+    "following" : [ 193099 ],
+    "inputs" : [ 193055, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 193092 ],
+    "catalysts" : [ 193119 ],
+    "efs" : [ ],
+    "diagramIds" : [ 130 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193073,
+    "stId" : "R-HSA-193073",
+    "displayName" : "DHA isomerizes to 4-Androstene3,17-dione",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193070 ],
+    "following" : [ 193064 ],
+    "inputs" : [ 176626, 29360 ],
+    "outputs" : [ 70106, 193079, 73473 ],
+    "catalysts" : [ 196357 ],
+    "efs" : [ ],
+    "activators" : [ 1502544 ],
+    "diagramIds" : [ 123 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 196086,
+    "stId" : "R-HSA-196086",
+    "displayName" : "Cholesterol translocates from mitochondrial intermembrane space to inner mitochondrial membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 196126 ],
+    "following" : [ 193054 ],
+    "inputs" : [ 196090 ],
+    "outputs" : [ 196120, 193156 ],
+    "efs" : [ ],
+    "diagramIds" : [ 11 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193143,
+    "stId" : "R-HSA-193143",
+    "displayName" : "CYP19A1 hydroxylates TEST to EST17b",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193064 ],
+    "inputs" : [ 70106, 29368, 29364, 193057 ],
+    "outputs" : [ 193132, 29356, 29366, 29460 ],
+    "catalysts" : [ 193137 ],
+    "efs" : [ ],
+    "diagramIds" : [ 173 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194036,
+    "stId" : "R-HSA-194036",
+    "displayName" : "Cortisol translocates from the mitochondrial matrix to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193997 ],
+    "inputs" : [ 194011 ],
+    "outputs" : [ 193977 ],
+    "efs" : [ ],
+    "diagramIds" : [ 96 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 196350,
+    "stId" : "R-HSA-196350",
+    "displayName" : "Pregnenolone is dehydrogenated to form pregn-5-ene-3,20-dione",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193097 ],
+    "following" : [ 193052 ],
+    "inputs" : [ 193103, 29360 ],
+    "outputs" : [ 70106, 196344, 73473 ],
+    "catalysts" : [ 196357 ],
+    "efs" : [ ],
+    "diagramIds" : [ 191 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8862137,
+    "stId" : "R-HSA-8862137",
+    "displayName" : "HSD17B2 oxidises estradiol (E2) to estrone (E1)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 176619, 29366 ],
+    "outputs" : [ 70106, 193066, 29364 ],
+    "catalysts" : [ 8862104 ],
+    "efs" : [ ],
+    "diagramIds" : [ 901 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193981,
+    "stId" : "R-HSA-193981",
+    "displayName" : "CYP21A2 oxidises 17HPROG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193961 ],
+    "following" : [ 194025 ],
+    "inputs" : [ 70106, 29368, 193092, 29364 ],
+    "outputs" : [ 29356, 193966, 29366 ],
+    "catalysts" : [ 194028 ],
+    "efs" : [ ],
+    "diagramIds" : [ 67 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 193048,
+    "stId" : "R-HSA-193048",
+    "displayName" : "Androgen biosynthesis",
+    "events" : [ 193072, 193073, 193099, 193064, 193070, 469659, 193068 ]
+  }, {
+    "dbId" : 194002,
+    "stId" : "R-HSA-194002",
+    "displayName" : "Glucocorticoid biosynthesis",
+    "events" : [ 194023, 196372, 194036, 193961, 194025, 193068, 193981, 193997 ]
+  }, {
+    "dbId" : 193993,
+    "stId" : "R-HSA-193993",
+    "displayName" : "Mineralocorticoid biosynthesis",
+    "events" : [ 194017, 193995, 196350, 193052, 193964, 193996, 193965 ]
+  }, {
+    "dbId" : 193144,
+    "stId" : "R-HSA-193144",
+    "displayName" : "Estrogen biosynthesis",
+    "events" : [ 5696822, 193143, 804969, 6810594, 193060, 5693390, 8862137 ]
+  }, {
+    "dbId" : 196108,
+    "stId" : "R-HSA-196108",
+    "displayName" : "Pregnenolone biosynthesis",
+    "events" : [ 8951850, 196086, 193065, 193097, 196126, 193054, 196060, 193101, 196125 ]
+  } ]
+}

@@ -1,0 +1,424 @@
+{
+  "dbId" : 2142789,
+  "stId" : "R-HSA-2142789",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 2162272,
+    "stId" : "R-HSA-2162272",
+    "displayName" : "PDSS1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5T2R2",
+    "geneNames" : [ "PDSS1", "DPS1", "TPRT" ],
+    "parents" : [ 2162274 ]
+  }, {
+    "dbId" : 2162208,
+    "stId" : "R-ALL-2162208",
+    "displayName" : "DMPhOH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 92 ],
+    "identifier" : "50774"
+  }, {
+    "dbId" : 29376,
+    "stId" : "R-ALL-29376",
+    "displayName" : "CO2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 93 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 2162209,
+    "stId" : "R-ALL-2162209",
+    "displayName" : "DHDB [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 46 ],
+    "identifier" : "50775"
+  }, {
+    "dbId" : 113600,
+    "stId" : "R-ALL-113600",
+    "displayName" : "NADPH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 114, 202, 43 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 2162210,
+    "stId" : "R-HSA-2162210",
+    "displayName" : "COQ5 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 148 ],
+    "identifier" : "Q5HYK3",
+    "geneNames" : [ "COQ5" ]
+  }, {
+    "dbId" : 2162274,
+    "stId" : "R-HSA-2162274",
+    "displayName" : "PDSS1:Mg2+ [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2162271 ],
+    "children" : [ 109496, 2162272 ]
+  }, {
+    "dbId" : 8933002,
+    "stId" : "R-HSA-8933002",
+    "displayName" : "COQ9 dimer [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8933003 ],
+    "children" : [ 8932994 ]
+  }, {
+    "dbId" : 8933003,
+    "stId" : "R-HSA-8933003",
+    "displayName" : "COQ9 dimer:COQ7:Fe2+ [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 223 ],
+    "children" : [ 2167852, 8933002 ]
+  }, {
+    "dbId" : 2162212,
+    "stId" : "R-ALL-2162212",
+    "displayName" : "DeMQ10H2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 169 ],
+    "identifier" : "64182"
+  }, {
+    "dbId" : 2162213,
+    "stId" : "R-ALL-2162213",
+    "displayName" : "PHB [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 38 ],
+    "identifier" : "30763"
+  }, {
+    "dbId" : 2162214,
+    "stId" : "R-ALL-2162214",
+    "displayName" : "all-E-10PrP2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 20 ],
+    "identifier" : "61011"
+  }, {
+    "dbId" : 2162215,
+    "stId" : "R-ALL-2162215",
+    "displayName" : "MHDB [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 73 ],
+    "identifier" : "50776"
+  }, {
+    "dbId" : 2167848,
+    "stId" : "R-HSA-2167848",
+    "displayName" : "MHDB decarboxylase [mitochondrial matrix]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 94 ]
+  }, {
+    "dbId" : 8932994,
+    "stId" : "R-HSA-8932994",
+    "displayName" : "COQ9 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75208",
+    "geneNames" : [ "COQ9", "C16orf49", "HSPC326", "PSEC0129" ],
+    "parents" : [ 8933002 ]
+  }, {
+    "dbId" : 2162218,
+    "stId" : "R-HSA-2162218",
+    "displayName" : "COQ7 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99807",
+    "geneNames" : [ "COQ7" ],
+    "parents" : [ 2167852 ]
+  }, {
+    "dbId" : 2167852,
+    "stId" : "R-HSA-2167852",
+    "displayName" : "COQ7:Fe2+ [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8933003 ],
+    "children" : [ 2162218, 352605 ]
+  }, {
+    "dbId" : 159450,
+    "stId" : "R-ALL-159450",
+    "displayName" : "PPi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 21, 41 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 352605,
+    "stId" : "R-ALL-352605",
+    "displayName" : "Fe2+ [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 2167852 ]
+  }, {
+    "dbId" : 113563,
+    "stId" : "R-ALL-113563",
+    "displayName" : "NADP+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 48, 117, 206 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 2162308,
+    "stId" : "R-HSA-2162308",
+    "displayName" : "COQ6:FAD [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 49 ],
+    "children" : [ 113597, 2162200 ]
+  }, {
+    "dbId" : 2162252,
+    "stId" : "R-ALL-2162252",
+    "displayName" : "AdoHcy [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 151, 217, 74 ],
+    "identifier" : "16680"
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 168, 110, 47 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 2162256,
+    "stId" : "R-ALL-2162256",
+    "displayName" : "IPPP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 19 ],
+    "identifier" : "16584"
+  }, {
+    "dbId" : 2162257,
+    "stId" : "R-ALL-2162257",
+    "displayName" : "FPP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18 ],
+    "identifier" : "17407"
+  }, {
+    "dbId" : 2167826,
+    "stId" : "R-HSA-2167826",
+    "displayName" : "DMPhOH monooxygenase [mitochondrial matrix]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 112 ]
+  }, {
+    "dbId" : 2162198,
+    "stId" : "R-ALL-2162198",
+    "displayName" : "Q10H2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 215 ],
+    "identifier" : "64183"
+  }, {
+    "dbId" : 2162264,
+    "stId" : "R-HSA-2162264",
+    "displayName" : "PDSS2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86YH6",
+    "geneNames" : [ "PDSS2", "C6orf210", "DLP1" ],
+    "parents" : [ 2162271 ]
+  }, {
+    "dbId" : 2162200,
+    "stId" : "R-HSA-2162200",
+    "displayName" : "COQ6 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y2Z9",
+    "geneNames" : [ "COQ6", "CGI-10" ],
+    "parents" : [ 2162308 ]
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 116, 150, 76, 204, 220, 45 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 2162265,
+    "stId" : "R-ALL-2162265",
+    "displayName" : "AdoMet [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 72, 152, 222 ],
+    "identifier" : "15414"
+  }, {
+    "dbId" : 109496,
+    "stId" : "R-ALL-109496",
+    "displayName" : "Mg2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 2162274 ]
+  }, {
+    "dbId" : 1299439,
+    "stId" : "R-HSA-1299439",
+    "displayName" : "COQ2 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 40 ],
+    "identifier" : "Q96H96",
+    "geneNames" : [ "COQ2", "CL640" ]
+  }, {
+    "dbId" : 113533,
+    "stId" : "R-ALL-113533",
+    "displayName" : "O2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 113, 200, 44 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 113597,
+    "stId" : "R-ALL-113597",
+    "displayName" : "FAD [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 2162308 ]
+  }, {
+    "dbId" : 2162204,
+    "stId" : "R-ALL-2162204",
+    "displayName" : "DMQ10H2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 147 ],
+    "identifier" : "64181"
+  }, {
+    "dbId" : 2162205,
+    "stId" : "R-ALL-2162205",
+    "displayName" : "MDMQ10H2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 111 ],
+    "identifier" : "64180"
+  }, {
+    "dbId" : 2162206,
+    "stId" : "R-HSA-2162206",
+    "displayName" : "COQ3(?-369) [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 218, 75 ],
+    "identifier" : "Q9NZJ6",
+    "geneNames" : [ "COQ3", "UG0215E05" ]
+  }, {
+    "dbId" : 2162271,
+    "stId" : "R-HSA-2162271",
+    "displayName" : "PDSS1/2 tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 22 ],
+    "children" : [ 2162264, 2162274 ]
+  }, {
+    "dbId" : 2162207,
+    "stId" : "R-ALL-2162207",
+    "displayName" : "DHB [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 39 ],
+    "identifier" : "64136"
+  } ],
+  "edges" : [ {
+    "dbId" : 2162192,
+    "stId" : "R-HSA-2162192",
+    "displayName" : "PHB and all-E-10PrP2 are combined into DHB by COQ2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2162253 ],
+    "following" : [ 2162187 ],
+    "inputs" : [ 2162214, 2162213 ],
+    "outputs" : [ 2162207, 159450 ],
+    "catalysts" : [ 1299439 ],
+    "efs" : [ ],
+    "diagramIds" : [ 37 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2162193,
+    "stId" : "R-HSA-2162193",
+    "displayName" : "DHDB is methylated to MHDB by COQ3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2162187 ],
+    "following" : [ 2162195 ],
+    "inputs" : [ 2162265, 2162209 ],
+    "outputs" : [ 2162252, 113529, 2162215 ],
+    "catalysts" : [ 2162206 ],
+    "efs" : [ ],
+    "diagramIds" : [ 71 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2162194,
+    "stId" : "R-HSA-2162194",
+    "displayName" : "COQ9 dimer:COQ7:Fe2+ hydroxylates DMQ10H2 to DeMQ10H2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2162188 ],
+    "following" : [ 2162186 ],
+    "inputs" : [ 113533, 2162204, 113529, 113600 ],
+    "outputs" : [ 113563, 2162212, 113521 ],
+    "catalysts" : [ 8933003 ],
+    "efs" : [ ],
+    "diagramIds" : [ 167 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2162195,
+    "stId" : "R-HSA-2162195",
+    "displayName" : "MHDB is decarboxylated to DMPhOH by MHDB decarboxylase",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 2162193 ],
+    "following" : [ 2162191 ],
+    "inputs" : [ 2162215 ],
+    "outputs" : [ 29376, 2162208 ],
+    "catalysts" : [ 2167848 ],
+    "efs" : [ ],
+    "diagramIds" : [ 91 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2162186,
+    "stId" : "R-HSA-2162186",
+    "displayName" : "DeMQ10H2 is methylated to Q10H2 by COQ3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2162194 ],
+    "inputs" : [ 2162265, 2162212 ],
+    "outputs" : [ 2162252, 113529, 2162198 ],
+    "catalysts" : [ 2162206 ],
+    "efs" : [ ],
+    "diagramIds" : [ 214 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2162187,
+    "stId" : "R-HSA-2162187",
+    "displayName" : "DHB is hydroxylated to DHDB by COQ6",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2162192 ],
+    "following" : [ 2162193 ],
+    "inputs" : [ 2162207, 113533, 113529, 113600 ],
+    "outputs" : [ 113563, 2162209, 113521 ],
+    "catalysts" : [ 2162308 ],
+    "efs" : [ ],
+    "diagramIds" : [ 42 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2162188,
+    "stId" : "R-HSA-2162188",
+    "displayName" : "MDMQ10H2 is methylated to DMQ10H2 by COQ5",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2162191 ],
+    "following" : [ 2162194 ],
+    "inputs" : [ 2162205, 2162265 ],
+    "outputs" : [ 2162252, 2162204, 113529 ],
+    "catalysts" : [ 2162210 ],
+    "efs" : [ ],
+    "diagramIds" : [ 146 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2162253,
+    "stId" : "R-HSA-2162253",
+    "displayName" : "FPP and IPPP are combined into all-E-10PrP2 by PDSS1/2 tetramer",
+    "schemaClass" : "Reaction",
+    "following" : [ 2162192 ],
+    "inputs" : [ 2162257, 2162256 ],
+    "outputs" : [ 159450, 2162214 ],
+    "catalysts" : [ 2162271 ],
+    "efs" : [ ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2162191,
+    "stId" : "R-HSA-2162191",
+    "displayName" : "DMPhOH is hydroxylated to MDMQ10H2 by DMPhOH monooxygenase",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 2162195 ],
+    "following" : [ 2162188 ],
+    "inputs" : [ 113533, 113529, 113600, 2162208 ],
+    "outputs" : [ 2162205, 113563, 113521 ],
+    "catalysts" : [ 2167826 ],
+    "efs" : [ ],
+    "diagramIds" : [ 109 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

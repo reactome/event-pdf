@@ -1,0 +1,639 @@
+{
+  "dbId" : 1655829,
+  "stId" : "R-HSA-1655829",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 180738,
+    "stId" : "R-HSA-180738",
+    "displayName" : "RAN:GTP [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 81 ],
+    "parents" : [ 180719 ],
+    "children" : [ 165528, 113571 ]
+  }, {
+    "dbId" : 2065556,
+    "stId" : "R-HSA-2065556",
+    "displayName" : "SREBP1A,1C,2:Importin beta-1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 72 ],
+    "children" : [ 180733, 2065548 ]
+  }, {
+    "dbId" : 2065548,
+    "stId" : "R-HSA-2065548",
+    "displayName" : "SREBP1A,1C,2 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 77 ],
+    "parents" : [ 2065556 ],
+    "children" : [ 1655732 ]
+  }, {
+    "dbId" : 2065543,
+    "stId" : "R-HSA-2065543",
+    "displayName" : "SREBP1A,1C,2:Importin beta-1 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 73 ],
+    "children" : [ 1655744, 180714 ]
+  }, {
+    "dbId" : 165528,
+    "stId" : "R-HSA-165528",
+    "displayName" : "RAN [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62826",
+    "geneNames" : [ "RAN", "ARA24", "OK/SW-cl.81" ],
+    "parents" : [ 180738 ]
+  }, {
+    "dbId" : 2426168,
+    "stId" : "R-HSA-2426168",
+    "displayName" : "Activation of gene expression by SREBF (SREBP)",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 193 ]
+  }, {
+    "dbId" : 1655737,
+    "stId" : "R-HSA-1655737",
+    "displayName" : "SCAP tetramer [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 14 ],
+    "parents" : [ 1655742 ],
+    "children" : [ 1655739 ]
+  }, {
+    "dbId" : 1655736,
+    "stId" : "R-HSA-1655736",
+    "displayName" : "INSIG2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y5U4",
+    "geneNames" : [ "INSIG2" ],
+    "parents" : [ 1655749 ]
+  }, {
+    "dbId" : 1655739,
+    "stId" : "R-HSA-1655739",
+    "displayName" : "SCAP [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12770",
+    "geneNames" : [ "SCAP", "KIAA0199", "PSEC0227" ],
+    "parents" : [ 1655737 ]
+  }, {
+    "dbId" : 113571,
+    "stId" : "R-ALL-113571",
+    "displayName" : "GTP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15996",
+    "parents" : [ 180738 ]
+  }, {
+    "dbId" : 1655741,
+    "stId" : "R-HSA-1655741",
+    "displayName" : "SCAP:cholesterol [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1655766 ],
+    "children" : [ 1655748, 193384 ]
+  }, {
+    "dbId" : 1655740,
+    "stId" : "R-HSA-1655740",
+    "displayName" : "SCAP [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12770",
+    "geneNames" : [ "SCAP", "KIAA0199", "PSEC0227" ],
+    "parents" : [ 1655748 ]
+  }, {
+    "dbId" : 1655742,
+    "stId" : "R-HSA-1655742",
+    "displayName" : "SREBP1A,1C,2:SCAP [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 11 ],
+    "children" : [ 1655725, 1655737 ]
+  }, {
+    "dbId" : 1655730,
+    "stId" : "R-HSA-1655730",
+    "displayName" : "SREBF1A,1C,2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 1655766, 2317522, 2317520 ],
+    "children" : [ 1655733, 1655761, 1655757 ]
+  }, {
+    "dbId" : 1655733,
+    "stId" : "R-HSA-1655733",
+    "displayName" : "SREBF2(1-1141) [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12772",
+    "geneNames" : [ "SREBF2", "BHLHD2", "SREBP2" ],
+    "parents" : [ 1655730 ]
+  }, {
+    "dbId" : 1655732,
+    "stId" : "R-HSA-1655732",
+    "displayName" : "SREBF1A,1C,2 cleaved by S2P [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 17 ],
+    "parents" : [ 2065548 ],
+    "children" : [ 1655764, 1655723, 1655721 ]
+  }, {
+    "dbId" : 1655735,
+    "stId" : "R-HSA-1655735",
+    "displayName" : "INSIG1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15503",
+    "geneNames" : [ "INSIG1" ],
+    "parents" : [ 1655749 ]
+  }, {
+    "dbId" : 1655721,
+    "stId" : "R-HSA-1655721",
+    "displayName" : "SREBF1-3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36956-3",
+    "geneNames" : [ "SREBF1", "BHLHD1", "SREBP1" ],
+    "parents" : [ 1655732 ]
+  }, {
+    "dbId" : 1655720,
+    "stId" : "R-HSA-1655720",
+    "displayName" : "SREBF1A,1C,2 cleaved by S2P [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 1655744 ],
+    "children" : [ 1655716, 1655745, 1655755 ]
+  }, {
+    "dbId" : 381108,
+    "stId" : "R-HSA-381108",
+    "displayName" : "MBTPS1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "identifier" : "Q14703",
+    "geneNames" : [ "MBTPS1", "KIAA0091", "S1P", "SKI1" ]
+  }, {
+    "dbId" : 1655723,
+    "stId" : "R-HSA-1655723",
+    "displayName" : "SREBF2(1-484) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12772",
+    "geneNames" : [ "SREBF2", "BHLHD2", "SREBP2" ],
+    "parents" : [ 1655732 ]
+  }, {
+    "dbId" : 1655725,
+    "stId" : "R-HSA-1655725",
+    "displayName" : "SREBF1A,1C,2 [Golgi membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 1655742 ],
+    "children" : [ 1655747, 1655760, 1655753 ]
+  }, {
+    "dbId" : 1655724,
+    "stId" : "R-HSA-1655724",
+    "displayName" : "SREBF1-3 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36956-3",
+    "geneNames" : [ "SREBF1", "BHLHD1", "SREBP1" ],
+    "parents" : [ 1655726 ]
+  }, {
+    "dbId" : 1655726,
+    "stId" : "R-HSA-1655726",
+    "displayName" : "SREBF1A,1C,2 cleaved by S1P [Golgi membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 13 ],
+    "children" : [ 1655718, 1655724, 1655752 ]
+  }, {
+    "dbId" : 1655716,
+    "stId" : "R-HSA-1655716",
+    "displayName" : "SREBF1-3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36956-3",
+    "geneNames" : [ "SREBF1", "BHLHD1", "SREBP1" ],
+    "parents" : [ 1655720 ]
+  }, {
+    "dbId" : 1655718,
+    "stId" : "R-HSA-1655718",
+    "displayName" : "SREBF1-1(1-530) [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36956-1",
+    "geneNames" : [ "SREBF1", "BHLHD1", "SREBP1" ],
+    "parents" : [ 1655726 ]
+  }, {
+    "dbId" : 203974,
+    "stId" : "R-HSA-203974",
+    "displayName" : "SEC24 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 204007 ],
+    "children" : [ 203982, 203992, 204004, 203987 ]
+  }, {
+    "dbId" : 1655761,
+    "stId" : "R-HSA-1655761",
+    "displayName" : "SREBF1-3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36956-3",
+    "geneNames" : [ "SREBF1", "BHLHD1", "SREBP1" ],
+    "parents" : [ 1655730 ]
+  }, {
+    "dbId" : 1655760,
+    "stId" : "R-HSA-1655760",
+    "displayName" : "SREBF1-3 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36956-3",
+    "geneNames" : [ "SREBF1", "BHLHD1", "SREBP1" ],
+    "parents" : [ 1655725 ]
+  }, {
+    "dbId" : 203976,
+    "stId" : "R-HSA-203976",
+    "displayName" : "SEC23A [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15436",
+    "geneNames" : [ "SEC23A" ],
+    "parents" : [ 204007 ]
+  }, {
+    "dbId" : 1655765,
+    "stId" : "R-HSA-1655765",
+    "displayName" : "SREBP1A,1C,2:SCAP:Cop II Coat [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "children" : [ 203997, 2317520 ]
+  }, {
+    "dbId" : 1655764,
+    "stId" : "R-HSA-1655764",
+    "displayName" : "SREBF1-1(1-490) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36956-1",
+    "geneNames" : [ "SREBF1", "BHLHD1", "SREBP1" ],
+    "parents" : [ 1655732 ]
+  }, {
+    "dbId" : 203982,
+    "stId" : "R-HSA-203982",
+    "displayName" : "SEC24B [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95487",
+    "geneNames" : [ "SEC24B" ],
+    "parents" : [ 203974 ]
+  }, {
+    "dbId" : 381131,
+    "stId" : "R-HSA-381131",
+    "displayName" : "MBTPS2 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 18 ],
+    "identifier" : "O43462",
+    "geneNames" : [ "MBTPS2", "S2P" ]
+  }, {
+    "dbId" : 1655766,
+    "stId" : "R-HSA-1655766",
+    "displayName" : "SREBP1A,1C,2:SCAP:cholesterol:INSIG [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 123 ],
+    "children" : [ 1655749, 1655730, 1655741 ]
+  }, {
+    "dbId" : 1655753,
+    "stId" : "R-HSA-1655753",
+    "displayName" : "SREBF1-1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36956-1",
+    "geneNames" : [ "SREBF1", "BHLHD1", "SREBP1" ],
+    "parents" : [ 1655725 ]
+  }, {
+    "dbId" : 203987,
+    "stId" : "R-HSA-203987",
+    "displayName" : "SEC24C [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P53992",
+    "geneNames" : [ "SEC24C", "KIAA0079" ],
+    "parents" : [ 203974 ]
+  }, {
+    "dbId" : 1655752,
+    "stId" : "R-HSA-1655752",
+    "displayName" : "SREBF2(1-522) [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12772",
+    "geneNames" : [ "SREBF2", "BHLHD2", "SREBP2" ],
+    "parents" : [ 1655726 ]
+  }, {
+    "dbId" : 1655755,
+    "stId" : "R-HSA-1655755",
+    "displayName" : "SREBF1-1(1-490) [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36956-1",
+    "geneNames" : [ "SREBF1", "BHLHD1", "SREBP1" ],
+    "parents" : [ 1655720 ]
+  }, {
+    "dbId" : 1655757,
+    "stId" : "R-HSA-1655757",
+    "displayName" : "SREBF1-1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36956-1",
+    "geneNames" : [ "SREBF1", "BHLHD1", "SREBP1" ],
+    "parents" : [ 1655730 ]
+  }, {
+    "dbId" : 1655745,
+    "stId" : "R-HSA-1655745",
+    "displayName" : "SREBF2(1-484) [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12772",
+    "geneNames" : [ "SREBF2", "BHLHD2", "SREBP2" ],
+    "parents" : [ 1655720 ]
+  }, {
+    "dbId" : 203995,
+    "stId" : "R-HSA-203995",
+    "displayName" : "SAR1B [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y6B6",
+    "geneNames" : [ "SAR1B", "SARA2", "SARB" ],
+    "parents" : [ 204003 ]
+  }, {
+    "dbId" : 1655744,
+    "stId" : "R-HSA-1655744",
+    "displayName" : "SREBP1A,1C,2 dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 84 ],
+    "parents" : [ 2065543 ],
+    "children" : [ 1655720 ]
+  }, {
+    "dbId" : 1655747,
+    "stId" : "R-HSA-1655747",
+    "displayName" : "SREBF2(1-1141) [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12772",
+    "geneNames" : [ "SREBF2", "BHLHD2", "SREBP2" ],
+    "parents" : [ 1655725 ]
+  }, {
+    "dbId" : 203992,
+    "stId" : "R-HSA-203992",
+    "displayName" : "SEC24A [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95486",
+    "geneNames" : [ "SEC24A" ],
+    "parents" : [ 203974 ]
+  }, {
+    "dbId" : 1655749,
+    "stId" : "R-HSA-1655749",
+    "displayName" : "INSIG [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 120 ],
+    "parents" : [ 1655766, 2317517 ],
+    "children" : [ 1655735, 1655736 ]
+  }, {
+    "dbId" : 1655748,
+    "stId" : "R-HSA-1655748",
+    "displayName" : "SCAP tetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1655741, 2317522, 2317520 ],
+    "children" : [ 1655740 ]
+  }, {
+    "dbId" : 203997,
+    "stId" : "R-HSA-203997",
+    "displayName" : "SAR1B:GTP:SEC23:SEC24 [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 106 ],
+    "parents" : [ 1655765 ],
+    "children" : [ 204007, 204003 ]
+  }, {
+    "dbId" : 204003,
+    "stId" : "R-HSA-204003",
+    "displayName" : "SAR1B:GTP [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 203997 ],
+    "children" : [ 29438, 203995 ]
+  }, {
+    "dbId" : 204007,
+    "stId" : "R-HSA-204007",
+    "displayName" : "SEC23:SEC24 [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 203997 ],
+    "children" : [ 203976, 203974 ]
+  }, {
+    "dbId" : 204004,
+    "stId" : "R-HSA-204004",
+    "displayName" : "SEC24D [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O94855",
+    "geneNames" : [ "SEC24D", "KIAA0755" ],
+    "parents" : [ 203974 ]
+  }, {
+    "dbId" : 180714,
+    "stId" : "R-HSA-180714",
+    "displayName" : "KPNB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14974",
+    "geneNames" : [ "KPNB1", "NTF97" ],
+    "parents" : [ 2065543, 180719 ]
+  }, {
+    "dbId" : 193384,
+    "stId" : "R-ALL-193384",
+    "displayName" : "CHOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 143 ],
+    "identifier" : "16113",
+    "parents" : [ 1655741 ]
+  }, {
+    "dbId" : 2317518,
+    "stId" : "R-ALL-2317518",
+    "displayName" : "oxysterol [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "53030",
+    "parents" : [ 2317517 ]
+  }, {
+    "dbId" : 180719,
+    "stId" : "R-HSA-180719",
+    "displayName" : "Importin-beta:Ran GTP complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 83 ],
+    "children" : [ 180714, 180738 ]
+  }, {
+    "dbId" : 2317517,
+    "stId" : "R-HSA-2317517",
+    "displayName" : "INSIG:oxysterol [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 125 ],
+    "parents" : [ 2317522 ],
+    "children" : [ 2317518, 1655749 ]
+  }, {
+    "dbId" : 2317522,
+    "stId" : "R-HSA-2317522",
+    "displayName" : "SREBP1A,1C,2:SCAP:INSIG:oxysterol [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 126 ],
+    "children" : [ 2317517, 1655748, 1655730 ]
+  }, {
+    "dbId" : 2317520,
+    "stId" : "R-HSA-2317520",
+    "displayName" : "SREBP1A,1C,2:SCAP [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 141 ],
+    "parents" : [ 1655765 ],
+    "children" : [ 1655748, 1655730 ]
+  }, {
+    "dbId" : 29438,
+    "stId" : "R-ALL-29438",
+    "displayName" : "GTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15996",
+    "parents" : [ 204003 ]
+  }, {
+    "dbId" : 180733,
+    "stId" : "R-HSA-180733",
+    "displayName" : "KPNB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 139 ],
+    "identifier" : "Q14974",
+    "geneNames" : [ "KPNB1", "NTF97" ],
+    "parents" : [ 2065556 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 2065550,
+    "stId" : "R-HSA-2065550",
+    "displayName" : "SREBP1A,1C,2 binds Importin beta-1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2065549 ],
+    "following" : [ 1655831 ],
+    "inputs" : [ 180733, 2065548 ],
+    "outputs" : [ 2065556 ],
+    "efs" : [ ],
+    "diagramIds" : [ 78 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2065549,
+    "stId" : "R-HSA-2065549",
+    "displayName" : "SREBP1A,1C,2 binds SREBP1A,1C,2 forming dimers",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1655851 ],
+    "following" : [ 2065550 ],
+    "inputs" : [ 1655732 ],
+    "outputs" : [ 2065548 ],
+    "efs" : [ ],
+    "diagramIds" : [ 76 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1655851,
+    "stId" : "R-HSA-1655851",
+    "displayName" : "S2P hydrolyzes SREBP1A,1C,2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1655842 ],
+    "following" : [ 2065549 ],
+    "inputs" : [ 1655726 ],
+    "outputs" : [ 1655732 ],
+    "catalysts" : [ 381131 ],
+    "efs" : [ ],
+    "diagramIds" : [ 16 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1655834,
+    "stId" : "R-HSA-1655834",
+    "displayName" : "SREBP1A,1C,2:SCAP translocates to the Golgi",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 1655825 ],
+    "following" : [ 1655842 ],
+    "inputs" : [ 1655765 ],
+    "outputs" : [ 1655742 ],
+    "efs" : [ ],
+    "diagramIds" : [ 10 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2317531,
+    "stId" : "R-HSA-2317531",
+    "displayName" : "SREBP1A,1C,2 binds SCAP:INSIG:oxysterol and is retained in the endoplasmic reticulum",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 2317517, 2317520 ],
+    "outputs" : [ 2317522 ],
+    "efs" : [ ],
+    "diagramIds" : [ 124 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1655825,
+    "stId" : "R-HSA-1655825",
+    "displayName" : "SREBP1A,1C,2:SCAP binds CopII Coat Complex",
+    "schemaClass" : "BlackBoxEvent",
+    "following" : [ 1655834 ],
+    "inputs" : [ 203997, 2317520 ],
+    "outputs" : [ 1655765 ],
+    "efs" : [ ],
+    "diagramIds" : [ 7 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2317530,
+    "stId" : "R-HSA-2317530",
+    "displayName" : "SREBP1A,1C,2 binds SCAP:cholesterol:INSIG and is retained in the endoplasmic reticulum",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 1655749, 193384, 2317520 ],
+    "outputs" : [ 1655766 ],
+    "efs" : [ ],
+    "diagramIds" : [ 119 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1655842,
+    "stId" : "R-HSA-1655842",
+    "displayName" : "S1P hydrolyzes SREBP1A,1C,2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1655834 ],
+    "following" : [ 1655851 ],
+    "inputs" : [ 1655742 ],
+    "outputs" : [ 1655726, 1655737 ],
+    "catalysts" : [ 381108 ],
+    "efs" : [ ],
+    "diagramIds" : [ 12 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2065539,
+    "stId" : "R-HSA-2065539",
+    "displayName" : "SREBP1A,1C,2:Importin beta-1 dissociates",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1655831 ],
+    "inputs" : [ 2065543, 180738 ],
+    "outputs" : [ 180719, 1655744 ],
+    "efs" : [ ],
+    "diagramIds" : [ 80 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1655831,
+    "stId" : "R-HSA-1655831",
+    "displayName" : "SREBP1A,1C,2 translocates to the nucleus",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 2065550 ],
+    "following" : [ 2065539 ],
+    "inputs" : [ 2065556 ],
+    "outputs" : [ 2065543 ],
+    "efs" : [ ],
+    "diagramIds" : [ 19 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

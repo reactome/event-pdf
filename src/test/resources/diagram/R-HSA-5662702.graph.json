@@ -1,0 +1,404 @@
+{
+  "dbId" : 5662702,
+  "stId" : "R-HSA-5662702",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 5668566,
+    "stId" : "R-ALL-5668566",
+    "displayName" : "O2 [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 13, 238 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 5662678,
+    "stId" : "R-HSA-5662678",
+    "displayName" : "Eumelanin [melanosome lumen]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "diagramIds" : [ 36 ],
+    "children" : [ 5662708 ]
+  }, {
+    "dbId" : 5216014,
+    "stId" : "R-HSA-5216014",
+    "displayName" : "OCA2 [melanosome membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 80 ],
+    "identifier" : "Q04671",
+    "geneNames" : [ "OCA2", "D15S12", "P" ]
+  }, {
+    "dbId" : 5668567,
+    "stId" : "R-ALL-5668567",
+    "displayName" : "L-Tyr [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4 ],
+    "identifier" : "58315"
+  }, {
+    "dbId" : 5668565,
+    "stId" : "R-ALL-5668565",
+    "displayName" : "CO2 [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 30 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 5668574,
+    "stId" : "R-ALL-5668574",
+    "displayName" : "H2O [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 16, 234 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 5662685,
+    "stId" : "R-HSA-5662685",
+    "displayName" : "DCT [melanosome membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P40126",
+    "geneNames" : [ "DCT", "TYRP2" ],
+    "parents" : [ 5662858 ]
+  }, {
+    "dbId" : 5668573,
+    "stId" : "R-ALL-5668573",
+    "displayName" : "hydroxyl [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 5 ],
+    "identifier" : "29191"
+  }, {
+    "dbId" : 5668571,
+    "stId" : "R-ALL-5668571",
+    "displayName" : "Zn2+ [melanosome membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 5662858 ]
+  }, {
+    "dbId" : 5617243,
+    "stId" : "R-HSA-5617243",
+    "displayName" : "TYR [melanosome membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14679",
+    "geneNames" : [ "TYR" ],
+    "parents" : [ 5662696 ]
+  }, {
+    "dbId" : 5668568,
+    "stId" : "R-ALL-5668568",
+    "displayName" : "L-Dopa [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 77, 14, 79 ],
+    "identifier" : "15765"
+  }, {
+    "dbId" : 5668569,
+    "stId" : "R-ALL-5668569",
+    "displayName" : "Cu2+ [melanosome membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29036",
+    "parents" : [ 5662696 ]
+  }, {
+    "dbId" : 5672007,
+    "stId" : "R-ALL-5672007",
+    "displayName" : "Leucodopachrome [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 37 ],
+    "identifier" : "60872"
+  }, {
+    "dbId" : 5662670,
+    "stId" : "R-ALL-5662670",
+    "displayName" : "DHICA [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 27 ],
+    "identifier" : "2003",
+    "parents" : [ 5662708 ]
+  }, {
+    "dbId" : 5662858,
+    "stId" : "R-HSA-5662858",
+    "displayName" : "DCT:2xZn2+ [melanosome membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "children" : [ 5668571, 5662685 ]
+  }, {
+    "dbId" : 5662666,
+    "stId" : "R-ALL-5662666",
+    "displayName" : "DHI [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 31 ],
+    "identifier" : "27404",
+    "parents" : [ 5662708 ]
+  }, {
+    "dbId" : 5662665,
+    "stId" : "R-ALL-5662665",
+    "displayName" : "Dopachrome [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 25 ],
+    "identifier" : "49108"
+  }, {
+    "dbId" : 5662708,
+    "stId" : "R-ALL-5662708",
+    "displayName" : "DHI, DHICA [melanosome lumen]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 33 ],
+    "parents" : [ 5662678 ],
+    "children" : [ 5662666, 5662670 ]
+  }, {
+    "dbId" : 8878574,
+    "stId" : "R-HSA-8878574",
+    "displayName" : "TYRP1 [melanosome membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 236 ],
+    "identifier" : "P17643",
+    "geneNames" : [ "TYRP1", "CAS2", "TYRP", "TYRRP" ]
+  }, {
+    "dbId" : 5665848,
+    "stId" : "R-HSA-5665848",
+    "displayName" : "pheomelanin [melanosome lumen]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "diagramIds" : [ 23 ],
+    "children" : [ 5662955 ]
+  }, {
+    "dbId" : 5662695,
+    "stId" : "R-ALL-5662695",
+    "displayName" : "L-Dopaquinone [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6 ],
+    "identifier" : "16852"
+  }, {
+    "dbId" : 5662948,
+    "stId" : "R-ALL-5662948",
+    "displayName" : "2,5-S,S'-dicysteinyldopa [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "84298",
+    "parents" : [ 5662956 ]
+  }, {
+    "dbId" : 5662949,
+    "stId" : "R-ALL-5662949",
+    "displayName" : "5-S-Cysteinyldopa [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "81392",
+    "parents" : [ 5662956 ]
+  }, {
+    "dbId" : 5665829,
+    "stId" : "R-ALL-5665829",
+    "displayName" : "benzothiazole [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "84343",
+    "parents" : [ 5662955 ]
+  }, {
+    "dbId" : 5662946,
+    "stId" : "R-ALL-5662946",
+    "displayName" : "Benzothiazine [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "46899",
+    "parents" : [ 5662955 ]
+  }, {
+    "dbId" : 5668576,
+    "stId" : "R-ALL-5668576",
+    "displayName" : "L-Cys [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18 ],
+    "identifier" : "35235"
+  }, {
+    "dbId" : 5668577,
+    "stId" : "R-ALL-5668577",
+    "displayName" : "H+ [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 7 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 5662958,
+    "stId" : "R-ALL-5662958",
+    "displayName" : "7-(2-amino-2-carboxyethyl)-5-hydroxy-2H-1,4-benzothiazine-3-carboxylic acid [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "84301",
+    "parents" : [ 5662955 ]
+  }, {
+    "dbId" : 5662956,
+    "stId" : "R-ALL-5662956",
+    "displayName" : "Cysteinyldopa isomers [melanosome lumen]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 19 ],
+    "children" : [ 5662957, 5662949, 5662948 ]
+  }, {
+    "dbId" : 5662957,
+    "stId" : "R-ALL-5662957",
+    "displayName" : "2-S-Cysteinyl-DOPA [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "84296",
+    "parents" : [ 5662956 ]
+  }, {
+    "dbId" : 5662955,
+    "stId" : "R-ALL-5662955",
+    "displayName" : "BT, BTCA, BZ, ODHBT [melanosome lumen]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 21 ],
+    "parents" : [ 5665848 ],
+    "children" : [ 5665835, 5662958, 5662946, 5665829 ]
+  }, {
+    "dbId" : 5665835,
+    "stId" : "R-ALL-5665835",
+    "displayName" : "7-(2-amino-2-carboxyethyl)-5-hydroxy-3,4-dihydro-2H-1,4-benzothiazin-3-one [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "84344",
+    "parents" : [ 5662955 ]
+  }, {
+    "dbId" : 8878586,
+    "stId" : "R-ALL-8878586",
+    "displayName" : "IQCA [melanosome lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 235 ],
+    "identifier" : "81394"
+  }, {
+    "dbId" : 5662696,
+    "stId" : "R-HSA-5662696",
+    "displayName" : "TYR:2xCu2+ [melanosome membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "children" : [ 5668569, 5617243 ]
+  }, {
+    "dbId" : 5216112,
+    "stId" : "R-HSA-5216112",
+    "displayName" : "SLC45A2 [melanosome membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 81 ],
+    "identifier" : "Q9UMX9",
+    "geneNames" : [ "SLC45A2", "AIM1", "MATP" ]
+  } ],
+  "edges" : [ {
+    "dbId" : 5662662,
+    "stId" : "R-HSA-5662662",
+    "displayName" : "Tyrosinase oxidises tyrosine to dopaquinone",
+    "schemaClass" : "Reaction",
+    "following" : [ 5672019, 5662669 ],
+    "inputs" : [ 5668573, 5668567 ],
+    "outputs" : [ 5668577, 5662695 ],
+    "catalysts" : [ 5662696 ],
+    "efs" : [ ],
+    "activators" : [ 5216112, 5216014 ],
+    "diagramIds" : [ 3 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5662692,
+    "stId" : "R-HSA-5662692",
+    "displayName" : "Dopa is oxidized to dopaquinone by TYR",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5662669 ],
+    "following" : [ 5662908 ],
+    "inputs" : [ 5668568, 5668566 ],
+    "outputs" : [ 5668574, 5662695 ],
+    "catalysts" : [ 5662696 ],
+    "efs" : [ ],
+    "diagramIds" : [ 12 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5662660,
+    "stId" : "R-HSA-5662660",
+    "displayName" : "Dopachrome is transformed to DHICA by DCT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5672019 ],
+    "following" : [ 5663050, 8878581 ],
+    "inputs" : [ 5662665 ],
+    "outputs" : [ 5662670 ],
+    "catalysts" : [ 5662858 ],
+    "efs" : [ ],
+    "diagramIds" : [ 24 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8878581,
+    "stId" : "R-HSA-8878581",
+    "displayName" : "TYRP1 oxidises DHICA to IQCA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5662660 ],
+    "inputs" : [ 5662670, 5668566 ],
+    "outputs" : [ 8878586, 5668574 ],
+    "catalysts" : [ 8878574 ],
+    "efs" : [ ],
+    "diagramIds" : [ 233 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5662706,
+    "stId" : "R-HSA-5662706",
+    "displayName" : "Dopachrome transforms to DHI",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5662669 ],
+    "following" : [ 5663050 ],
+    "inputs" : [ 5662665 ],
+    "outputs" : [ 5662666, 5668565 ],
+    "efs" : [ ],
+    "diagramIds" : [ 29 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5672019,
+    "stId" : "R-HSA-5672019",
+    "displayName" : "Leucodopachrome, L-Dopaquinone transform to Dopachrome, L-Dopa",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5662669, 5662662 ],
+    "following" : [ 5662660 ],
+    "inputs" : [ 5662695, 5672007 ],
+    "outputs" : [ 5662665, 5668568 ],
+    "efs" : [ ],
+    "diagramIds" : [ 75 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5662908,
+    "stId" : "R-HSA-5662908",
+    "displayName" : "Dopaquinone, cysteine form CD isomers",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5662692 ],
+    "following" : [ 5662904 ],
+    "inputs" : [ 5668576, 5662695 ],
+    "outputs" : [ 5662956 ],
+    "efs" : [ ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5662669,
+    "stId" : "R-HSA-5662669",
+    "displayName" : "Dopaquinone transforms to Leucodopachrome (Cyclodopa)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5662662 ],
+    "following" : [ 5662706, 5672019, 5662692 ],
+    "inputs" : [ 5662695 ],
+    "outputs" : [ 5672007 ],
+    "efs" : [ ],
+    "diagramIds" : [ 10 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5663050,
+    "stId" : "R-HSA-5663050",
+    "displayName" : "DHI and DHICA polymerise forming eumelanin",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 5662706, 5662660 ],
+    "inputs" : [ 5662708, 5662695 ],
+    "outputs" : [ 5668568, 5662678 ],
+    "catalysts" : [ 5662696 ],
+    "efs" : [ ],
+    "diagramIds" : [ 32 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5662891,
+    "stId" : "R-HSA-5662891",
+    "displayName" : "pheomelanin formation",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 5662904 ],
+    "inputs" : [ 5662955 ],
+    "outputs" : [ 5665848 ],
+    "efs" : [ ],
+    "diagramIds" : [ 22 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5662904,
+    "stId" : "R-HSA-5662904",
+    "displayName" : "CD isomers transform to BT, BTCA, BZ, ODHBT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5662908 ],
+    "following" : [ 5662891 ],
+    "inputs" : [ 5662956, 5662695 ],
+    "outputs" : [ 5668568, 5662955 ],
+    "efs" : [ ],
+    "diagramIds" : [ 20 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

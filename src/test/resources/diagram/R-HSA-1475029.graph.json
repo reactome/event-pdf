@@ -1,0 +1,443 @@
+{
+  "dbId" : 1475029,
+  "stId" : "R-HSA-1475029",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 29376,
+    "stId" : "R-ALL-29376",
+    "displayName" : "CO2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 25 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 1237009,
+    "stId" : "R-ALL-1237009",
+    "displayName" : "CO2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 16 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 1237014,
+    "stId" : "R-HSA-1237014",
+    "displayName" : "CA3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07451",
+    "geneNames" : [ "CA3" ],
+    "parents" : [ 1237315 ]
+  }, {
+    "dbId" : 1475027,
+    "stId" : "R-HSA-1475027",
+    "displayName" : "CA4,9,14,12:Zn2+ [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 20 ],
+    "children" : [ 1237324, 1237308, 1237535, 1237323 ]
+  }, {
+    "dbId" : 1237012,
+    "stId" : "R-HSA-1237012",
+    "displayName" : "CA2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00918",
+    "geneNames" : [ "CA2" ],
+    "parents" : [ 1237310 ]
+  }, {
+    "dbId" : 29896,
+    "stId" : "R-ALL-29896",
+    "displayName" : "HCO3- [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26 ],
+    "identifier" : "17544"
+  }, {
+    "dbId" : 1237018,
+    "stId" : "R-HSA-1237018",
+    "displayName" : "CA14 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9ULX7",
+    "geneNames" : [ "CA14", "UNQ690/PRO1335" ],
+    "parents" : [ 1237324 ]
+  }, {
+    "dbId" : 1237016,
+    "stId" : "R-HSA-1237016",
+    "displayName" : "CA6 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23280",
+    "geneNames" : [ "CA6" ],
+    "parents" : [ 1237316 ]
+  }, {
+    "dbId" : 111627,
+    "stId" : "R-ALL-111627",
+    "displayName" : "HCO3- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8 ],
+    "identifier" : "17544"
+  }, {
+    "dbId" : 1475034,
+    "stId" : "R-HSA-1475034",
+    "displayName" : "CA1,2,3,7,13:Zinc [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "children" : [ 1237309, 1237310, 1237321, 1237322, 1237315 ]
+  }, {
+    "dbId" : 1237535,
+    "stId" : "R-HSA-1237535",
+    "displayName" : "CA12:Zn2+ dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475027 ],
+    "children" : [ 1237311 ]
+  }, {
+    "dbId" : 1237023,
+    "stId" : "R-HSA-1237023",
+    "displayName" : "CA5B [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y2D0",
+    "geneNames" : [ "CA5B" ],
+    "parents" : [ 1237319 ]
+  }, {
+    "dbId" : 1237020,
+    "stId" : "R-HSA-1237020",
+    "displayName" : "CA13 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N1Q1",
+    "geneNames" : [ "CA13" ],
+    "parents" : [ 1237321 ]
+  }, {
+    "dbId" : 880067,
+    "stId" : "R-ALL-880067",
+    "displayName" : "Zn2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 1237314, 1237319 ]
+  }, {
+    "dbId" : 1237021,
+    "stId" : "R-HSA-1237021",
+    "displayName" : "CA7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P43166",
+    "geneNames" : [ "CA7" ],
+    "parents" : [ 1237309 ]
+  }, {
+    "dbId" : 351626,
+    "stId" : "R-ALL-351626",
+    "displayName" : "H+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 109265,
+    "stId" : "R-ALL-109265",
+    "displayName" : "Zn2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 1237324, 1237311, 1237323, 1237308 ]
+  }, {
+    "dbId" : 1237314,
+    "stId" : "R-HSA-1237314",
+    "displayName" : "CA5A:Zinc [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475016 ],
+    "children" : [ 880067, 1237028 ]
+  }, {
+    "dbId" : 1237315,
+    "stId" : "R-HSA-1237315",
+    "displayName" : "CA3:Zinc [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475034 ],
+    "children" : [ 1237014, 29426 ]
+  }, {
+    "dbId" : 158417,
+    "stId" : "R-ALL-158417",
+    "displayName" : "Zn2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 1237316 ]
+  }, {
+    "dbId" : 1237319,
+    "stId" : "R-HSA-1237319",
+    "displayName" : "CA5B:Zinc [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475016 ],
+    "children" : [ 880067, 1237023 ]
+  }, {
+    "dbId" : 1237316,
+    "stId" : "R-HSA-1237316",
+    "displayName" : "CA6:Zinc [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 36 ],
+    "children" : [ 1237016, 158417 ]
+  }, {
+    "dbId" : 425425,
+    "stId" : "R-ALL-425425",
+    "displayName" : "HCO3- [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 19 ],
+    "identifier" : "17544"
+  }, {
+    "dbId" : 1237322,
+    "stId" : "R-HSA-1237322",
+    "displayName" : "CA1:Zn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475034 ],
+    "children" : [ 29426, 1237027 ]
+  }, {
+    "dbId" : 1237323,
+    "stId" : "R-HSA-1237323",
+    "displayName" : "CA9:Zn2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475027 ],
+    "children" : [ 1235065, 109265 ]
+  }, {
+    "dbId" : 1237321,
+    "stId" : "R-HSA-1237321",
+    "displayName" : "CA13:Zinc [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475034 ],
+    "children" : [ 1237020, 29426 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 7 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 109276,
+    "stId" : "R-ALL-109276",
+    "displayName" : "H2O [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 17 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 1237324,
+    "stId" : "R-HSA-1237324",
+    "displayName" : "CA14:Zn2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475027 ],
+    "children" : [ 1237018, 109265 ]
+  }, {
+    "dbId" : 1475016,
+    "stId" : "R-HSA-1475016",
+    "displayName" : "CA5A,B:Zinc [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "children" : [ 1237319, 1237314 ]
+  }, {
+    "dbId" : 1235065,
+    "stId" : "R-HSA-1235065",
+    "displayName" : "CA9 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16790",
+    "geneNames" : [ "CA9", "G250", "MN" ],
+    "parents" : [ 1237323 ]
+  }, {
+    "dbId" : 1237310,
+    "stId" : "R-HSA-1237310",
+    "displayName" : "CA2:Zn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475034 ],
+    "children" : [ 1237012, 29426 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 5 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 1237311,
+    "stId" : "R-HSA-1237311",
+    "displayName" : "CA12:Zinc [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1237535 ],
+    "children" : [ 1237032, 109265 ]
+  }, {
+    "dbId" : 1237308,
+    "stId" : "R-HSA-1237308",
+    "displayName" : "CA4:Zn2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475027 ],
+    "children" : [ 1237024, 109265 ]
+  }, {
+    "dbId" : 1237309,
+    "stId" : "R-HSA-1237309",
+    "displayName" : "CA7:Zinc [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1475034 ],
+    "children" : [ 1237021, 29426 ]
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 24 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 1237027,
+    "stId" : "R-HSA-1237027",
+    "displayName" : "CA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00915",
+    "geneNames" : [ "CA1" ],
+    "parents" : [ 1237322 ]
+  }, {
+    "dbId" : 1237024,
+    "stId" : "R-HSA-1237024",
+    "displayName" : "N-seryl-glycosylphosphatidylinositolethanolamine-CA4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22748",
+    "geneNames" : [ "CA4" ],
+    "parents" : [ 1237308 ]
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 1237309, 1237321, 1237315, 1237310, 1237322 ]
+  }, {
+    "dbId" : 1237028,
+    "stId" : "R-HSA-1237028",
+    "displayName" : "CA5A [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35218",
+    "geneNames" : [ "CA5A", "CA5" ],
+    "parents" : [ 1237314 ]
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 27 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 1237032,
+    "stId" : "R-HSA-1237032",
+    "displayName" : "CA12 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43570",
+    "geneNames" : [ "CA12" ],
+    "parents" : [ 1237311 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 1475028,
+    "stId" : "R-HSA-1475028",
+    "displayName" : "Carbonic anhydrase dehydrates bicarbonate (mitochondria)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29896, 113529 ],
+    "outputs" : [ 113521, 29376 ],
+    "catalysts" : [ 1475016 ],
+    "efs" : [ ],
+    "diagramIds" : [ 32 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1475026,
+    "stId" : "R-HSA-1475026",
+    "displayName" : "Carbonic anhydrase hydrates carbon dioxide (cytosol)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113528, 29356 ],
+    "outputs" : [ 111627, 70106 ],
+    "catalysts" : [ 1475034 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1237045,
+    "stId" : "R-HSA-1237045",
+    "displayName" : "Carbonic Anhydrase VI hydrates carbon dioxide to bicarbonate and a proton",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 1237009 ],
+    "outputs" : [ 351626, 425425 ],
+    "catalysts" : [ 1237316 ],
+    "efs" : [ ],
+    "diagramIds" : [ 37 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1475025,
+    "stId" : "R-HSA-1475025",
+    "displayName" : "Carbonic anhydrase hydrates carbon dioxide (plasma membrane)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 1237009 ],
+    "outputs" : [ 351626, 425425 ],
+    "catalysts" : [ 1475027 ],
+    "efs" : [ ],
+    "diagramIds" : [ 15 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1475022,
+    "stId" : "R-HSA-1475022",
+    "displayName" : "Carbonic anhydrase dehydrates bicarbonate (cytosol)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 111627 ],
+    "outputs" : [ 29356, 113528 ],
+    "catalysts" : [ 1475034 ],
+    "efs" : [ ],
+    "diagramIds" : [ 10 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1237081,
+    "stId" : "R-HSA-1237081",
+    "displayName" : "Carbonic anhydrase VI dehydrates bicarbonate to water and carbon dioxide",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 351626, 425425 ],
+    "outputs" : [ 109276, 1237009 ],
+    "catalysts" : [ 1237316 ],
+    "efs" : [ ],
+    "diagramIds" : [ 34 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1475032,
+    "stId" : "R-HSA-1475032",
+    "displayName" : "Carbonic anhydrase hydrates carbon dioxide (mitochondria)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113521, 29376 ],
+    "outputs" : [ 29896, 113529 ],
+    "catalysts" : [ 1475016 ],
+    "efs" : [ ],
+    "diagramIds" : [ 23 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1475017,
+    "stId" : "R-HSA-1475017",
+    "displayName" : "Carbonic anhydrase dehydrates bicarbonate (plasma membrane)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 351626, 425425 ],
+    "outputs" : [ 109276, 1237009 ],
+    "catalysts" : [ 1475027 ],
+    "efs" : [ ],
+    "diagramIds" : [ 21 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

@@ -1,0 +1,1237 @@
+{
+  "dbId" : 70895,
+  "stId" : "R-HSA-70895",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 612 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 29702,
+    "stId" : "R-ALL-29702",
+    "displayName" : "L-Val [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57762",
+    "parents" : [ 508182 ]
+  }, {
+    "dbId" : 31503,
+    "stId" : "R-ALL-31503",
+    "displayName" : "HTMLYS [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 604 ],
+    "identifier" : "15786"
+  }, {
+    "dbId" : 508182,
+    "stId" : "R-ALL-508182",
+    "displayName" : "Leu, Ile, Val [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 140 ],
+    "children" : [ 29702, 30102, 29588 ]
+  }, {
+    "dbId" : 508181,
+    "stId" : "R-ALL-508181",
+    "displayName" : "BCAAs [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 151 ],
+    "children" : [ 113584, 113576, 113598 ]
+  }, {
+    "dbId" : 508190,
+    "stId" : "R-ALL-508190",
+    "displayName" : "Leu, Ile, Val [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 150 ],
+    "children" : [ 113580, 113540, 113537 ]
+  }, {
+    "dbId" : 30235,
+    "stId" : "R-ALL-30235",
+    "displayName" : "CAR [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 618 ],
+    "identifier" : "17126"
+  }, {
+    "dbId" : 508187,
+    "stId" : "R-ALL-508187",
+    "displayName" : "KIC,KMVA,KIV [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 141 ],
+    "children" : [ 70846, 70701, 70721 ]
+  }, {
+    "dbId" : 70699,
+    "stId" : "R-HSA-70699",
+    "displayName" : "BCAT1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 142 ],
+    "children" : [ 70698 ]
+  }, {
+    "dbId" : 70698,
+    "stId" : "R-HSA-70698",
+    "displayName" : "PXLP-BCAT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P54687",
+    "geneNames" : [ "BCAT1", "BCT1", "ECA39" ],
+    "parents" : [ 70699 ]
+  }, {
+    "dbId" : 70701,
+    "stId" : "R-ALL-70701",
+    "displayName" : "KIC [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17865",
+    "parents" : [ 508187 ]
+  }, {
+    "dbId" : 70703,
+    "stId" : "R-HSA-70703",
+    "displayName" : "PXLP-BCAT2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15382",
+    "geneNames" : [ "BCAT2", "BCATM", "BCT2", "ECA40" ],
+    "parents" : [ 70704 ]
+  }, {
+    "dbId" : 70704,
+    "stId" : "R-HSA-70704",
+    "displayName" : "BCAT2 dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 152 ],
+    "children" : [ 70703 ]
+  }, {
+    "dbId" : 30004,
+    "stId" : "R-ALL-30004",
+    "displayName" : "2M3OPROA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 248 ],
+    "identifier" : "16256"
+  }, {
+    "dbId" : 70715,
+    "stId" : "R-ALL-70715",
+    "displayName" : "ISV-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 172 ],
+    "identifier" : "15487",
+    "parents" : [ 508261 ]
+  }, {
+    "dbId" : 70718,
+    "stId" : "R-ALL-70718",
+    "displayName" : "2MBUT-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 196 ],
+    "identifier" : "15477",
+    "parents" : [ 508261 ]
+  }, {
+    "dbId" : 70721,
+    "stId" : "R-ALL-70721",
+    "displayName" : "KMVA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28654",
+    "parents" : [ 508187 ]
+  }, {
+    "dbId" : 35139,
+    "stId" : "R-ALL-35139",
+    "displayName" : "TMLYS [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 595 ],
+    "identifier" : "17311"
+  }, {
+    "dbId" : 70729,
+    "stId" : "R-HSA-70729",
+    "displayName" : "IVD [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P26440",
+    "geneNames" : [ "IVD" ],
+    "parents" : [ 70730 ]
+  }, {
+    "dbId" : 71243,
+    "stId" : "R-HSA-71243",
+    "displayName" : "SHMT1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 607 ],
+    "children" : [ 71242 ]
+  }, {
+    "dbId" : 70730,
+    "stId" : "R-HSA-70730",
+    "displayName" : "IVD tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 175 ],
+    "children" : [ 113596, 70729 ]
+  }, {
+    "dbId" : 71242,
+    "stId" : "R-HSA-71242",
+    "displayName" : "PXLP-SHMT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P34896",
+    "geneNames" : [ "SHMT1" ],
+    "parents" : [ 71243 ]
+  }, {
+    "dbId" : 31311,
+    "stId" : "R-ALL-31311",
+    "displayName" : "TEABL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 606 ],
+    "identifier" : "18020"
+  }, {
+    "dbId" : 71251,
+    "stId" : "R-HSA-71251",
+    "displayName" : "ALDH9A1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P49189",
+    "geneNames" : [ "ALDH9A1", "ALDH4", "ALDH7", "ALDH9" ],
+    "parents" : [ 71258 ]
+  }, {
+    "dbId" : 70744,
+    "stId" : "R-ALL-70744",
+    "displayName" : "bMC-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 173 ],
+    "identifier" : "15486"
+  }, {
+    "dbId" : 69979,
+    "stId" : "R-HSA-69979",
+    "displayName" : "aKADH E3 [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 69980 ],
+    "children" : [ 113596, 69978 ]
+  }, {
+    "dbId" : 69978,
+    "stId" : "R-HSA-69978",
+    "displayName" : "DLD [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09622",
+    "geneNames" : [ "DLD", "GCSL", "LAD", "PHE3" ],
+    "parents" : [ 69979 ]
+  }, {
+    "dbId" : 71258,
+    "stId" : "R-HSA-71258",
+    "displayName" : "ALDH9A1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 610 ],
+    "children" : [ 71251 ]
+  }, {
+    "dbId" : 69980,
+    "stId" : "R-HSA-69980",
+    "displayName" : "aKADH E3 dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5693120, 70019 ],
+    "children" : [ 69979 ]
+  }, {
+    "dbId" : 70748,
+    "stId" : "R-HSA-70748",
+    "displayName" : "Btn-MCCC1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96RQ3",
+    "geneNames" : [ "MCCC1", "MCCA" ],
+    "parents" : [ 70770 ]
+  }, {
+    "dbId" : 508261,
+    "stId" : "R-ALL-508261",
+    "displayName" : "BCAA-CoAs [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 163 ],
+    "children" : [ 70718, 70715, 70851 ]
+  }, {
+    "dbId" : 70769,
+    "stId" : "R-HSA-70769",
+    "displayName" : "MCCC2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HCC0",
+    "geneNames" : [ "MCCC2", "MCCB" ],
+    "parents" : [ 70770 ]
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 242, 179, 2781, 206 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 70770,
+    "stId" : "R-HSA-70770",
+    "displayName" : "6x(Btn-MCCC1:MCCC2) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 182 ],
+    "children" : [ 70748, 70769 ]
+  }, {
+    "dbId" : 70772,
+    "stId" : "R-ALL-70772",
+    "displayName" : "bMC-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 178 ],
+    "identifier" : "15488"
+  }, {
+    "dbId" : 70775,
+    "stId" : "R-HSA-70775",
+    "displayName" : "AUH [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13825",
+    "geneNames" : [ "AUH" ],
+    "parents" : [ 508309 ]
+  }, {
+    "dbId" : 113527,
+    "stId" : "R-ALL-113527",
+    "displayName" : "Mn2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29035",
+    "parents" : [ 5693133 ]
+  }, {
+    "dbId" : 113526,
+    "stId" : "R-ALL-113526",
+    "displayName" : "NAD+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 162, 215, 265, 254 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 272, 213, 252 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 622 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 113531,
+    "stId" : "R-ALL-113531",
+    "displayName" : "Fe2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 71098 ]
+  }, {
+    "dbId" : 113533,
+    "stId" : "R-ALL-113533",
+    "displayName" : "O2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 594 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 70015,
+    "stId" : "R-HSA-70015",
+    "displayName" : "BCKDHB [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21953",
+    "geneNames" : [ "BCKDHB" ],
+    "parents" : [ 70016 ]
+  }, {
+    "dbId" : 164988,
+    "stId" : "R-ALL-164988",
+    "displayName" : "CAR [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2786 ],
+    "identifier" : "17126"
+  }, {
+    "dbId" : 70014,
+    "stId" : "R-HSA-70014",
+    "displayName" : "BCKDHA [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12694",
+    "geneNames" : [ "BCKDHA" ],
+    "parents" : [ 5693147, 70016 ]
+  }, {
+    "dbId" : 70017,
+    "stId" : "R-HSA-70017",
+    "displayName" : "lipo-K44-DBT [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11182",
+    "geneNames" : [ "DBT", "BCATE2" ],
+    "parents" : [ 5693120, 70019 ]
+  }, {
+    "dbId" : 113537,
+    "stId" : "R-ALL-113537",
+    "displayName" : "L-Ile [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "58045",
+    "parents" : [ 508190 ]
+  }, {
+    "dbId" : 113536,
+    "stId" : "R-ALL-113536",
+    "displayName" : "SUCCA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 597 ],
+    "identifier" : "15741"
+  }, {
+    "dbId" : 70784,
+    "stId" : "R-ALL-70784",
+    "displayName" : "bHMG-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 193 ],
+    "identifier" : "15467"
+  }, {
+    "dbId" : 70016,
+    "stId" : "R-HSA-70016",
+    "displayName" : "branched-chain alpha-ketoacid dehydrogenase E1 complex [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 70019 ],
+    "children" : [ 70014, 70015, 113547 ]
+  }, {
+    "dbId" : 70019,
+    "stId" : "R-HSA-70019",
+    "displayName" : "lipo-BCKDH [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 166 ],
+    "children" : [ 69980, 70016, 70017 ]
+  }, {
+    "dbId" : 113540,
+    "stId" : "R-ALL-113540",
+    "displayName" : "L-Val [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57762",
+    "parents" : [ 508190 ]
+  }, {
+    "dbId" : 31369,
+    "stId" : "R-ALL-31369",
+    "displayName" : "TEABT [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 609 ],
+    "identifier" : "16244"
+  }, {
+    "dbId" : 113547,
+    "stId" : "R-ALL-113547",
+    "displayName" : "TDP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18290",
+    "parents" : [ 5693147, 70016 ]
+  }, {
+    "dbId" : 113546,
+    "stId" : "R-ALL-113546",
+    "displayName" : "HTMLYS [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 596 ],
+    "identifier" : "15786"
+  }, {
+    "dbId" : 70797,
+    "stId" : "R-HSA-70797",
+    "displayName" : "ACADSB tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 198 ],
+    "children" : [ 113596, 70796 ]
+  }, {
+    "dbId" : 70796,
+    "stId" : "R-HSA-70796",
+    "displayName" : "ACADSB(52-432) [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P45954",
+    "geneNames" : [ "ACADSB" ],
+    "parents" : [ 70797 ]
+  }, {
+    "dbId" : 113548,
+    "stId" : "R-ALL-113548",
+    "displayName" : "Pi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2784, 180 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 5693147,
+    "stId" : "R-HSA-5693147",
+    "displayName" : "phosphorylated branched-chain alpha-ketoacid dehydrogenase E1 complex [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5693120 ],
+    "children" : [ 70014, 113547, 5693124 ]
+  }, {
+    "dbId" : 70799,
+    "stId" : "R-ALL-70799",
+    "displayName" : "tiglyl-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 197 ],
+    "identifier" : "15478"
+  }, {
+    "dbId" : 5693145,
+    "stId" : "R-HSA-5693145",
+    "displayName" : "PPM1K [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N3J5",
+    "geneNames" : [ "PPM1K", "PP2CM" ],
+    "parents" : [ 5693133 ]
+  }, {
+    "dbId" : 113552,
+    "stId" : "R-ALL-113552",
+    "displayName" : "L-Glu [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 156 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 5693124,
+    "stId" : "R-HSA-5693124",
+    "displayName" : "p-S292-BCKDHB [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21953",
+    "geneNames" : [ "BCKDHB" ],
+    "parents" : [ 5693147 ]
+  }, {
+    "dbId" : 508309,
+    "stId" : "R-HSA-508309",
+    "displayName" : "AUH hexamer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 194 ],
+    "children" : [ 70775 ]
+  }, {
+    "dbId" : 29588,
+    "stId" : "R-ALL-29588",
+    "displayName" : "L-Leu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57427",
+    "parents" : [ 508182 ]
+  }, {
+    "dbId" : 30102,
+    "stId" : "R-ALL-30102",
+    "displayName" : "L-Ile [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "58045",
+    "parents" : [ 508182 ]
+  }, {
+    "dbId" : 5693120,
+    "stId" : "R-HSA-5693120",
+    "displayName" : "p-BCKDH [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2778 ],
+    "children" : [ 5693147, 69980, 70017 ]
+  }, {
+    "dbId" : 113559,
+    "stId" : "R-ALL-113559",
+    "displayName" : "Ac-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 223 ],
+    "identifier" : "15351"
+  }, {
+    "dbId" : 71067,
+    "stId" : "R-ALL-71067",
+    "displayName" : "Fe2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 71107 ]
+  }, {
+    "dbId" : 5693133,
+    "stId" : "R-HSA-5693133",
+    "displayName" : "PPM1K:Mn2+ [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2782 ],
+    "children" : [ 5693145, 113527 ]
+  }, {
+    "dbId" : 165022,
+    "stId" : "R-HSA-165022",
+    "displayName" : "carnitine exporter [plasma membrane]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2787 ]
+  }, {
+    "dbId" : 5693129,
+    "stId" : "R-HSA-5693129",
+    "displayName" : "BCKDK [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2779 ],
+    "identifier" : "O14874",
+    "geneNames" : [ "BCKDK" ]
+  }, {
+    "dbId" : 31649,
+    "stId" : "R-ALL-31649",
+    "displayName" : "FADH2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 200, 236 ],
+    "identifier" : "17877"
+  }, {
+    "dbId" : 71847,
+    "stId" : "R-ALL-71847",
+    "displayName" : "bHIB-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 239 ],
+    "identifier" : "28259"
+  }, {
+    "dbId" : 113576,
+    "stId" : "R-ALL-113576",
+    "displayName" : "KMVA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28654",
+    "parents" : [ 508181 ]
+  }, {
+    "dbId" : 70827,
+    "stId" : "R-HSA-70827",
+    "displayName" : "enoyl-CoA hydratase [mitochondrial matrix]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 208 ]
+  }, {
+    "dbId" : 70829,
+    "stId" : "R-ALL-70829",
+    "displayName" : "aMbHBUT-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 207 ],
+    "identifier" : "15449"
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 957 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 113581,
+    "stId" : "R-ALL-113581",
+    "displayName" : "ADP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 181, 2777 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 113580,
+    "stId" : "R-ALL-113580",
+    "displayName" : "L-Leu [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57427",
+    "parents" : [ 508190 ]
+  }, {
+    "dbId" : 70831,
+    "stId" : "R-HSA-70831",
+    "displayName" : "HSD17B10 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99714",
+    "geneNames" : [ "HSD17B10", "ERAB", "HADH2", "MRPP2", "SCHAD", "SDR5C1", "XH98G2" ],
+    "parents" : [ 508381 ]
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 616 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 113584,
+    "stId" : "R-ALL-113584",
+    "displayName" : "KIV [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16530",
+    "parents" : [ 508181 ]
+  }, {
+    "dbId" : 29362,
+    "stId" : "R-ALL-29362",
+    "displayName" : "NADH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 256, 164, 217, 268 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 70836,
+    "stId" : "R-ALL-70836",
+    "displayName" : "2MACA-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 210 ],
+    "identifier" : "15476"
+  }, {
+    "dbId" : 70839,
+    "stId" : "R-HSA-70839",
+    "displayName" : "ACAT1 tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 224 ],
+    "children" : [ 70838 ]
+  }, {
+    "dbId" : 70838,
+    "stId" : "R-HSA-70838",
+    "displayName" : "ACAT1(35-427) [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24752",
+    "geneNames" : [ "ACAT1", "ACAT", "MAT" ],
+    "parents" : [ 70839 ]
+  }, {
+    "dbId" : 71097,
+    "stId" : "R-HSA-71097",
+    "displayName" : "TMLHE [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NVH6",
+    "geneNames" : [ "TMLHE", "TMLH" ],
+    "parents" : [ 71098 ]
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 626 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 113593,
+    "stId" : "R-ALL-113593",
+    "displayName" : "ATP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 177, 2776 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 70843,
+    "stId" : "R-ALL-70843",
+    "displayName" : "PROP-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 222 ],
+    "identifier" : "15539"
+  }, {
+    "dbId" : 113594,
+    "stId" : "R-ALL-113594",
+    "displayName" : "2OG [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 602 ],
+    "identifier" : "30915"
+  }, {
+    "dbId" : 71098,
+    "stId" : "R-HSA-71098",
+    "displayName" : "TMLHE dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 598 ],
+    "children" : [ 113531, 71097 ]
+  }, {
+    "dbId" : 113596,
+    "stId" : "R-ALL-113596",
+    "displayName" : "FAD [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 202, 234 ],
+    "identifier" : "16238",
+    "parents" : [ 70730, 70856, 69979, 70797 ]
+  }, {
+    "dbId" : 29374,
+    "stId" : "R-ALL-29374",
+    "displayName" : "CoA-SH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 161, 226, 246, 263 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 70846,
+    "stId" : "R-ALL-70846",
+    "displayName" : "KIV [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16530",
+    "parents" : [ 508187 ]
+  }, {
+    "dbId" : 113598,
+    "stId" : "R-ALL-113598",
+    "displayName" : "KIC [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17865",
+    "parents" : [ 508181 ]
+  }, {
+    "dbId" : 29376,
+    "stId" : "R-ALL-29376",
+    "displayName" : "CO2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 165, 600, 270 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 71104,
+    "stId" : "R-HSA-71104",
+    "displayName" : "BBOX1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75936",
+    "geneNames" : [ "BBOX1", "BBH", "BBOX" ],
+    "parents" : [ 71107 ]
+  }, {
+    "dbId" : 70851,
+    "stId" : "R-ALL-70851",
+    "displayName" : "ISB-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 229 ],
+    "identifier" : "15479",
+    "parents" : [ 508261 ]
+  }, {
+    "dbId" : 71107,
+    "stId" : "R-HSA-71107",
+    "displayName" : "BBOX1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 620 ],
+    "children" : [ 71067, 71104 ]
+  }, {
+    "dbId" : 70855,
+    "stId" : "R-HSA-70855",
+    "displayName" : "ACAD8 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UKU7",
+    "geneNames" : [ "ACAD8", "ARC42", "IBD" ],
+    "parents" : [ 70856 ]
+  }, {
+    "dbId" : 29896,
+    "stId" : "R-ALL-29896",
+    "displayName" : "HCO3- [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 898 ],
+    "identifier" : "17544"
+  }, {
+    "dbId" : 70856,
+    "stId" : "R-HSA-70856",
+    "displayName" : "ACAD8 tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 231 ],
+    "children" : [ 113596, 70855 ]
+  }, {
+    "dbId" : 70858,
+    "stId" : "R-ALL-70858",
+    "displayName" : "MACR-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 230 ],
+    "identifier" : "27754"
+  }, {
+    "dbId" : 573404,
+    "stId" : "R-ALL-573404",
+    "displayName" : "bHIBA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 885 ],
+    "identifier" : "11805"
+  }, {
+    "dbId" : 70872,
+    "stId" : "R-HSA-70872",
+    "displayName" : "HIBCH [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 244 ],
+    "identifier" : "Q6NVY1",
+    "geneNames" : [ "HIBCH" ]
+  }, {
+    "dbId" : 508381,
+    "stId" : "R-HSA-508381",
+    "displayName" : "HSD17B10 tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 211 ],
+    "children" : [ 70831 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1006 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 29404,
+    "stId" : "R-ALL-29404",
+    "displayName" : "L-Glu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 144 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 29406,
+    "stId" : "R-ALL-29406",
+    "displayName" : "2OG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 624, 146 ],
+    "identifier" : "30915"
+  }, {
+    "dbId" : 70883,
+    "stId" : "R-HSA-70883",
+    "displayName" : "HIBADH tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 249 ],
+    "children" : [ 70882 ]
+  }, {
+    "dbId" : 70882,
+    "stId" : "R-HSA-70882",
+    "displayName" : "HIBADH [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31937",
+    "geneNames" : [ "HIBADH" ],
+    "parents" : [ 70883 ]
+  }, {
+    "dbId" : 70890,
+    "stId" : "R-HSA-70890",
+    "displayName" : "ALDH6A1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 261 ],
+    "identifier" : "Q02252",
+    "geneNames" : [ "ALDH6A1", "MMSDH" ]
+  }, {
+    "dbId" : 29424,
+    "stId" : "R-ALL-29424",
+    "displayName" : "Gly [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 605 ],
+    "identifier" : "57305"
+  }, {
+    "dbId" : 29434,
+    "stId" : "R-ALL-29434",
+    "displayName" : "SUCCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 619 ],
+    "identifier" : "15741"
+  } ],
+  "edges" : [ {
+    "dbId" : 70785,
+    "stId" : "R-HSA-70785",
+    "displayName" : "beta-methylglutaconyl-CoA + H2O <=> beta-hydroxy-beta-methylglutaryl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70773 ],
+    "inputs" : [ 70772, 113521 ],
+    "outputs" : [ 70784 ],
+    "catalysts" : [ 508309 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2382 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70723,
+    "stId" : "R-HSA-70723",
+    "displayName" : "leu, ile, or val + alpha-ketoglutarate <=> a-ketoisocaproate, a-keto-b-methylvalerate, or a-ketoisovalerate + glutamate [BCAT1]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29406, 508182 ],
+    "outputs" : [ 29404, 508187 ],
+    "catalysts" : [ 70699 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2363 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70724,
+    "stId" : "R-HSA-70724",
+    "displayName" : "leu, ile, or val + alpha-ketoglutarate <=> a-ketoisocaproate, a-keto-b-methylvalerate, or a-ketoisovalerate + glutamate [BCAT2]",
+    "schemaClass" : "Reaction",
+    "following" : [ 70713 ],
+    "inputs" : [ 113594, 508190 ],
+    "outputs" : [ 508181, 113552 ],
+    "catalysts" : [ 70704 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2365 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71241,
+    "stId" : "R-HSA-71241",
+    "displayName" : "TMLHE dimer dioxygenates TMLYS and 2OG to form HTMLYS and SUCCA",
+    "schemaClass" : "Reaction",
+    "following" : [ 71249 ],
+    "inputs" : [ 113533, 113594, 35139 ],
+    "outputs" : [ 113546, 113536, 29376 ],
+    "catalysts" : [ 71098 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2546 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70859,
+    "stId" : "R-HSA-70859",
+    "displayName" : "isobutyryl-CoA + FAD => methacrylyl-CoA + FADH2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70713 ],
+    "following" : [ 70870 ],
+    "inputs" : [ 113596, 70851 ],
+    "outputs" : [ 70858, 31649 ],
+    "catalysts" : [ 70856 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2398 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5693148,
+    "stId" : "R-HSA-5693148",
+    "displayName" : "BCKDK phosphorylates BCKDH",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113593, 70019 ],
+    "outputs" : [ 113581, 5693120 ],
+    "catalysts" : [ 5693129 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2775 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71249,
+    "stId" : "R-HSA-71249",
+    "displayName" : "SHMT1 tetramer cleaves HTMLYS to yield TEABL and Gly",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71241 ],
+    "following" : [ 71260 ],
+    "inputs" : [ 31503 ],
+    "outputs" : [ 31311, 29424 ],
+    "catalysts" : [ 71243 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2549 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70800,
+    "stId" : "R-HSA-70800",
+    "displayName" : "alpha-methylbutyryl-CoA + FAD => tiglyl-CoA + FADH2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70713 ],
+    "following" : [ 70830 ],
+    "inputs" : [ 70718, 113596 ],
+    "outputs" : [ 70799, 31649 ],
+    "catalysts" : [ 70797 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2386 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508308,
+    "stId" : "R-HSA-508308",
+    "displayName" : "beta-methylglutaconyl-CoA + ADP + orthophosphate + H2O <=> beta-methylcrotonyl-CoA + ATP + CO2 [MCCA]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113548, 113581, 70772, 113521 ],
+    "outputs" : [ 70744, 29896, 113593 ],
+    "catalysts" : [ 70770 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2376 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508179,
+    "stId" : "R-HSA-508179",
+    "displayName" : "a-ketoisocaproate, a-keto-b-methylvalerate, or a-ketoisovalerate + glutamate <=> leu, ile, or val + alpha-ketoglutarate [BCAT2]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 508181, 113552 ],
+    "outputs" : [ 113594, 508190 ],
+    "catalysts" : [ 70704 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2366 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508369,
+    "stId" : "R-HSA-508369",
+    "displayName" : "alpha-methylacetoacetyl-CoA + NADH + H+ <=> alpha-methyl-beta-hydroxybutyryl-CoA + NAD+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113529, 70836, 29362 ],
+    "outputs" : [ 70829, 113526 ],
+    "catalysts" : [ 508381 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2392 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70870,
+    "stId" : "R-HSA-70870",
+    "displayName" : "methacrylyl-CoA + H2O <=> beta-hydroxyisobutyryl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70859 ],
+    "following" : [ 70881 ],
+    "inputs" : [ 70858, 113521 ],
+    "outputs" : [ 71847 ],
+    "catalysts" : [ 70827 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2399 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70745,
+    "stId" : "R-HSA-70745",
+    "displayName" : "isovaleryl-CoA + FAD => beta-methylcrotonyl-CoA + FADH2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70713 ],
+    "following" : [ 70773 ],
+    "inputs" : [ 113596, 70715 ],
+    "outputs" : [ 70744, 31649 ],
+    "catalysts" : [ 70730 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2370 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508189,
+    "stId" : "R-HSA-508189",
+    "displayName" : "a-ketoisocaproate, a-keto-b-methylvalerate, or a-ketoisovalerate + glutamate <=> leu, ile, or val + alpha-ketoglutarate [BCAT1]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29404, 508187 ],
+    "outputs" : [ 29406, 508182 ],
+    "catalysts" : [ 70699 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2364 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71261,
+    "stId" : "R-HSA-71261",
+    "displayName" : "BBOX1:Fe2+ dimer dioxygenates TEABT and 2OG to form CAR and SUCCA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71260 ],
+    "following" : [ 164967 ],
+    "inputs" : [ 29406, 31369, 29368 ],
+    "outputs" : [ 30235, 29434, 113528 ],
+    "catalysts" : [ 71107 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2552 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71260,
+    "stId" : "R-HSA-71260",
+    "displayName" : "ALDH9A1 tetramer dehydrogenates TEABL to form TEABT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71249 ],
+    "following" : [ 71261 ],
+    "inputs" : [ 31311, 29356, 29360 ],
+    "outputs" : [ 70106, 31369, 73473 ],
+    "catalysts" : [ 71258 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2550 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70881,
+    "stId" : "R-HSA-70881",
+    "displayName" : "beta-hydroxyisobutyryl-CoA + H2O => beta-hydroxyisobutyrate + CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70870 ],
+    "following" : [ 70885 ],
+    "inputs" : [ 71847, 113521 ],
+    "outputs" : [ 29374, 573404 ],
+    "catalysts" : [ 70872 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2401 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70885,
+    "stId" : "R-HSA-70885",
+    "displayName" : "beta-hydroxyisobutyrate + NAD+ <=> methylmalonyl semialdehyde + NADH + H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70881 ],
+    "following" : [ 70893 ],
+    "inputs" : [ 113526, 573404 ],
+    "outputs" : [ 113529, 30004, 29362 ],
+    "catalysts" : [ 70883 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2405 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 164967,
+    "stId" : "R-HSA-164967",
+    "displayName" : "Unknown carnitine exporter transports CAR from the cytosol to the extracellular space",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 71261 ],
+    "inputs" : [ 30235 ],
+    "outputs" : [ 164988 ],
+    "catalysts" : [ 165022 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2785 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70893,
+    "stId" : "R-HSA-70893",
+    "displayName" : "methylmalonate semialdehyde + NAD+ + CoA => propionyl-CoA + CO2 + NADH + H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70885 ],
+    "inputs" : [ 29374, 113526, 30004 ],
+    "outputs" : [ 70843, 113529, 29362, 29376 ],
+    "catalysts" : [ 70890 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2413 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8949413,
+    "stId" : "R-HSA-8949413",
+    "displayName" : "HTMLYS translocates from the mitochondrial matrix to the cytosol",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 113546 ],
+    "outputs" : [ 31503 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2788 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70830,
+    "stId" : "R-HSA-70830",
+    "displayName" : "tiglyl-CoA + H2O <=> alpha-methyl-beta-hydroxybutyryl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70800 ],
+    "following" : [ 70837 ],
+    "inputs" : [ 70799, 113521 ],
+    "outputs" : [ 70829 ],
+    "catalysts" : [ 70827 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2387 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70773,
+    "stId" : "R-HSA-70773",
+    "displayName" : "beta-methylcrotonyl-CoA + ATP + CO2 <=> beta-methylglutaconyl-CoA + ADP + orthophosphate + H2O [MCCA]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70745 ],
+    "following" : [ 70785 ],
+    "inputs" : [ 70744, 29896, 113593 ],
+    "outputs" : [ 113548, 113581, 70772 ],
+    "catalysts" : [ 70770 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2371 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70837,
+    "stId" : "R-HSA-70837",
+    "displayName" : "alpha-methyl-beta-hydroxybutyryl-CoA + NAD+ <=> alpha-methylacetoacetyl-CoA + NADH + H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70830 ],
+    "following" : [ 70844 ],
+    "inputs" : [ 70829, 113526 ],
+    "outputs" : [ 113529, 70836, 29362 ],
+    "catalysts" : [ 508381 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2391 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5693153,
+    "stId" : "R-HSA-5693153",
+    "displayName" : "PPM1K dephosphorylates p-BCKDH",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5693120, 113521 ],
+    "outputs" : [ 113548, 70019 ],
+    "catalysts" : [ 5693133 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2780 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70713,
+    "stId" : "R-HSA-70713",
+    "displayName" : "BCKDH transfers CoA group from CoA-SH to BCAAs",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70724 ],
+    "following" : [ 70745, 70800, 70859 ],
+    "inputs" : [ 29374, 113526, 508181 ],
+    "outputs" : [ 29362, 508261, 29376 ],
+    "catalysts" : [ 70019 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2369 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70844,
+    "stId" : "R-HSA-70844",
+    "displayName" : "alpha-methyl-acetoacetyl-CoA + CoA => propionyl-CoA + acetyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70837 ],
+    "inputs" : [ 29374, 70836 ],
+    "outputs" : [ 70843, 113559 ],
+    "catalysts" : [ 70839 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2395 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508473,
+    "stId" : "R-HSA-508473",
+    "displayName" : "methylmalonyl semialdehyde + NADH + H+ <=> beta-hydroxyisobutyrate + NAD+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113529, 30004, 29362 ],
+    "outputs" : [ 113526, 573404 ],
+    "catalysts" : [ 70883 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2410 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 71262,
+    "stId" : "R-HSA-71262",
+    "displayName" : "Carnitine synthesis",
+    "events" : [ 71249, 164967, 71241, 71261, 8949413, 71260 ]
+  } ]
+}

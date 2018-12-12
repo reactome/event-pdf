@@ -1,0 +1,221 @@
+{
+  "dbId" : 70370,
+  "stId" : "R-HSA-70370",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 29410,
+    "stId" : "R-ALL-29410",
+    "displayName" : "UDP-Glc [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 318 ],
+    "identifier" : "18066"
+  }, {
+    "dbId" : 29926,
+    "stId" : "R-ALL-29926",
+    "displayName" : "Mg2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 8955670, 70218, 453137 ]
+  }, {
+    "dbId" : 70217,
+    "stId" : "R-HSA-70217",
+    "displayName" : "PGM1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36871",
+    "geneNames" : [ "PGM1" ],
+    "parents" : [ 70218 ]
+  }, {
+    "dbId" : 30537,
+    "stId" : "R-ALL-30537",
+    "displayName" : "G6P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 470 ],
+    "identifier" : "17665"
+  }, {
+    "dbId" : 453132,
+    "stId" : "R-HSA-453132",
+    "displayName" : "PGM:Mg2+ [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 471 ],
+    "children" : [ 8955670, 70218, 453137 ]
+  }, {
+    "dbId" : 70218,
+    "stId" : "R-HSA-70218",
+    "displayName" : "PGM1:Mg++ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 453132 ],
+    "children" : [ 70217, 29926 ]
+  }, {
+    "dbId" : 29452,
+    "stId" : "R-ALL-29452",
+    "displayName" : "UDP-Gal [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 448 ],
+    "identifier" : "18307"
+  }, {
+    "dbId" : 29548,
+    "stId" : "R-ALL-29548",
+    "displayName" : "G1P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 313 ],
+    "identifier" : "16077"
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15846",
+    "parents" : [ 70363 ]
+  }, {
+    "dbId" : 70353,
+    "stId" : "R-HSA-70353",
+    "displayName" : "GALK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 446 ],
+    "identifier" : "P51570",
+    "geneNames" : [ "GALK1", "GALK" ]
+  }, {
+    "dbId" : 70356,
+    "stId" : "R-HSA-70356",
+    "displayName" : "GALT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 449 ],
+    "identifier" : "P07902",
+    "geneNames" : [ "GALT" ]
+  }, {
+    "dbId" : 453136,
+    "stId" : "R-HSA-453136",
+    "displayName" : "PGM2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96G03",
+    "geneNames" : [ "PGM2", "MSTP006" ],
+    "parents" : [ 453137 ]
+  }, {
+    "dbId" : 29590,
+    "stId" : "R-ALL-29590",
+    "displayName" : "Gal [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 443 ],
+    "identifier" : "17118"
+  }, {
+    "dbId" : 453137,
+    "stId" : "R-HSA-453137",
+    "displayName" : "PGM2:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 453132 ],
+    "children" : [ 453136, 29926 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 442 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 30170,
+    "stId" : "R-ALL-30170",
+    "displayName" : "Gal1P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 444 ],
+    "identifier" : "17973"
+  }, {
+    "dbId" : 70363,
+    "stId" : "R-HSA-70363",
+    "displayName" : "GALE:NAD+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 455 ],
+    "children" : [ 70362, 29360 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 445 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 70362,
+    "stId" : "R-HSA-70362",
+    "displayName" : "GALE [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14376",
+    "geneNames" : [ "GALE" ],
+    "parents" : [ 70363 ]
+  }, {
+    "dbId" : 8955670,
+    "stId" : "R-HSA-8955670",
+    "displayName" : "PGM2L1:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 453132 ],
+    "children" : [ 8955671, 29926 ]
+  }, {
+    "dbId" : 8955671,
+    "stId" : "R-HSA-8955671",
+    "displayName" : "PGM2L1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6PCE3",
+    "geneNames" : [ "PGM2L1", "BM32A" ],
+    "parents" : [ 8955670 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 70369,
+    "stId" : "R-HSA-70369",
+    "displayName" : "GALE:NAD+ dimer reversibly epimerises UDP-Gal to UDP-Glc",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70361 ],
+    "following" : [ 70361 ],
+    "inputs" : [ 29452 ],
+    "outputs" : [ 29410 ],
+    "catalysts" : [ 70363 ],
+    "efs" : [ ],
+    "diagramIds" : [ 454 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70355,
+    "stId" : "R-HSA-70355",
+    "displayName" : "GALK1 phosphorylates Gal to Gal1P",
+    "schemaClass" : "Reaction",
+    "following" : [ 70361 ],
+    "inputs" : [ 113592, 29590 ],
+    "outputs" : [ 30170, 29370 ],
+    "catalysts" : [ 70353 ],
+    "efs" : [ ],
+    "diagramIds" : [ 441 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70361,
+    "stId" : "R-HSA-70361",
+    "displayName" : "GALT transfers UMP from UDP-Glc to Gal1P to form UDP-Gal",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70355, 70369 ],
+    "following" : [ 70427, 70369 ],
+    "inputs" : [ 30170, 29410 ],
+    "outputs" : [ 29452, 29548 ],
+    "catalysts" : [ 70356 ],
+    "efs" : [ ],
+    "diagramIds" : [ 447 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70427,
+    "stId" : "R-HSA-70427",
+    "displayName" : "PGM:Mg2+ isomerise G1P to G6P",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70361 ],
+    "inputs" : [ 29548 ],
+    "outputs" : [ 30537 ],
+    "catalysts" : [ 453132 ],
+    "efs" : [ ],
+    "diagramIds" : [ 469 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

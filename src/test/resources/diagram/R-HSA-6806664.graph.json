@@ -1,0 +1,188 @@
+{
+  "dbId" : 6806664,
+  "stId" : "R-HSA-6806664",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 159746,
+    "stId" : "R-HSA-159746",
+    "displayName" : "VKORC1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BQB6",
+    "geneNames" : [ "VKORC1", "VKOR", "MSTP134", "MSTP576", "UNQ308/PRO351" ],
+    "parents" : [ 6806371 ]
+  }, {
+    "dbId" : 163841,
+    "stId" : "R-HSA-163841",
+    "displayName" : "Gamma carboxylation, hypusine formation and arylsulfatase activation",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 21 ]
+  }, {
+    "dbId" : 9035082,
+    "stId" : "R-HSA-9035082",
+    "displayName" : "VKORC1 inhibitors [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 109 ],
+    "parents" : [ 9035037 ],
+    "children" : [ 9035047, 9035044, 9603374, 9035040, 9014945 ]
+  }, {
+    "dbId" : 6806371,
+    "stId" : "R-HSA-6806371",
+    "displayName" : "VKORC1 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 12 ],
+    "parents" : [ 9035037 ],
+    "children" : [ 159746 ]
+  }, {
+    "dbId" : 6806657,
+    "stId" : "R-ALL-6806657",
+    "displayName" : "GGPP [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4 ],
+    "identifier" : "57533"
+  }, {
+    "dbId" : 6806656,
+    "stId" : "R-ALL-6806656",
+    "displayName" : "PPi [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 2980965,
+    "stId" : "R-HSA-2980965",
+    "displayName" : "UBIAD1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "identifier" : "Q9Y5Z9",
+    "geneNames" : [ "UBIAD1", "TERE1" ]
+  }, {
+    "dbId" : 9014945,
+    "stId" : "R-ALL-9014945",
+    "displayName" : "warfarin [cytosol]",
+    "schemaClass" : "ChemicalDrug",
+    "identifier" : "10033",
+    "parents" : [ 9035082 ]
+  }, {
+    "dbId" : 9035040,
+    "stId" : "R-ALL-9035040",
+    "displayName" : "phenprocoumon [cytosol]",
+    "schemaClass" : "ChemicalDrug",
+    "identifier" : "50438",
+    "parents" : [ 9035082 ]
+  }, {
+    "dbId" : 6806891,
+    "stId" : "R-ALL-6806891",
+    "displayName" : "menadione [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 20 ],
+    "identifier" : "28869"
+  }, {
+    "dbId" : 9035044,
+    "stId" : "R-ALL-9035044",
+    "displayName" : "phenindione [cytosol]",
+    "schemaClass" : "ChemicalDrug",
+    "identifier" : "8066",
+    "parents" : [ 9035082 ]
+  }, {
+    "dbId" : 9035047,
+    "stId" : "R-ALL-9035047",
+    "displayName" : "dicumarol [cytosol]",
+    "schemaClass" : "ChemicalDrug",
+    "identifier" : "4513",
+    "parents" : [ 9035082 ]
+  }, {
+    "dbId" : 9035037,
+    "stId" : "R-HSA-9035037",
+    "displayName" : "VKORC1 inhibitors:VKORC1 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 106 ],
+    "children" : [ 6806371, 9035082 ]
+  }, {
+    "dbId" : 6806366,
+    "stId" : "R-ALL-6806366",
+    "displayName" : "MK4 epoxide [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 11 ],
+    "identifier" : "90152"
+  }, {
+    "dbId" : 9603374,
+    "stId" : "R-ALL-9603374",
+    "displayName" : "acenocoumarol [cytosol]",
+    "schemaClass" : "ChemicalDrug",
+    "identifier" : "53766",
+    "parents" : [ 9035082 ]
+  }, {
+    "dbId" : 6806362,
+    "stId" : "R-ALL-6806362",
+    "displayName" : "MK4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 7 ],
+    "identifier" : "78277"
+  }, {
+    "dbId" : 2980944,
+    "stId" : "R-HSA-2980944",
+    "displayName" : "VKORC1L1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 14 ],
+    "identifier" : "Q8N0U8",
+    "geneNames" : [ "VKORC1L1" ]
+  }, {
+    "dbId" : 156540,
+    "stId" : "R-ALL-156540",
+    "displayName" : "H+ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 10 ],
+    "identifier" : "15378"
+  } ],
+  "edges" : [ {
+    "dbId" : 6806647,
+    "stId" : "R-HSA-6806647",
+    "displayName" : "VKORC1L1 reduces vitamin K epoxide to MK4 (vitamin K hydroquinone)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 156540, 6806366 ],
+    "outputs" : [ 6806362 ],
+    "catalysts" : [ 2980944 ],
+    "efs" : [ ],
+    "diagramIds" : [ 13 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6806674,
+    "stId" : "R-HSA-6806674",
+    "displayName" : "UBIA1D prenylates menadione to form MK4 (vitamin K hydroquinone)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6806891, 6806657 ],
+    "outputs" : [ 6806362, 6806656 ],
+    "catalysts" : [ 2980965 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 159790,
+    "stId" : "R-HSA-159790",
+    "displayName" : "VKORC1 reduces vitamin K epoxide to MK4 (vitamin K hydroquinone)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 156540, 6806366 ],
+    "outputs" : [ 6806362 ],
+    "catalysts" : [ 6806371 ],
+    "efs" : [ ],
+    "inhibitors" : [ 9035037 ],
+    "diagramIds" : [ 9 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026967,
+    "stId" : "R-HSA-9026967",
+    "displayName" : "VKORC1 inhibitors binds VKORC1 dimer",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6806371, 9035082 ],
+    "outputs" : [ 9035037 ],
+    "efs" : [ ],
+    "diagramIds" : [ 108 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

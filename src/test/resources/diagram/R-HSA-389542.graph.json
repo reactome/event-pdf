@@ -1,0 +1,169 @@
+{
+  "dbId" : 389542,
+  "stId" : "R-HSA-389542",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 113602,
+    "stId" : "R-ALL-113602",
+    "displayName" : "NADPH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 54 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 389537,
+    "stId" : "R-ALL-389537",
+    "displayName" : "2OG [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 56 ],
+    "identifier" : "30915"
+  }, {
+    "dbId" : 389536,
+    "stId" : "R-ALL-389536",
+    "displayName" : "CO2 [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 55 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 389549,
+    "stId" : "R-HSA-389549",
+    "displayName" : "IDH1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75874",
+    "geneNames" : [ "IDH1", "PICD" ],
+    "parents" : [ 389559 ]
+  }, {
+    "dbId" : 389548,
+    "stId" : "R-ALL-389548",
+    "displayName" : "ISCIT [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 52 ],
+    "identifier" : "151"
+  }, {
+    "dbId" : 389545,
+    "stId" : "R-ALL-389545",
+    "displayName" : "ISCIT [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 239 ],
+    "identifier" : "151"
+  }, {
+    "dbId" : 390344,
+    "stId" : "R-HSA-390344",
+    "displayName" : "isocitrate-oxoglutarate transporter [peroxisomal membrane]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 244 ]
+  }, {
+    "dbId" : 389546,
+    "stId" : "R-HSA-389546",
+    "displayName" : "IDH1 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75874",
+    "geneNames" : [ "IDH1", "PICD" ],
+    "parents" : [ 389557 ]
+  }, {
+    "dbId" : 389557,
+    "stId" : "R-HSA-389557",
+    "displayName" : "IDH1 dimer [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 57 ],
+    "children" : [ 389546 ]
+  }, {
+    "dbId" : 389556,
+    "stId" : "R-ALL-389556",
+    "displayName" : "NADP+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 51 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 389559,
+    "stId" : "R-HSA-389559",
+    "displayName" : "IDH1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 242 ],
+    "children" : [ 389549 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 195 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 196 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 240 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 194 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 193465,
+    "stId" : "R-ALL-193465",
+    "displayName" : "H+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 53 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 29406,
+    "stId" : "R-ALL-29406",
+    "displayName" : "2OG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 241, 428 ],
+    "identifier" : "30915"
+  } ],
+  "edges" : [ {
+    "dbId" : 389540,
+    "stId" : "R-HSA-389540",
+    "displayName" : "isocitrate + NADP+ => 2-oxoglutarate + CO2 + NADPH + H+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 389545, 29366 ],
+    "outputs" : [ 29406, 70106, 113528, 29364 ],
+    "catalysts" : [ 389559 ],
+    "efs" : [ ],
+    "diagramIds" : [ 238 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389550,
+    "stId" : "R-HSA-389550",
+    "displayName" : "isocitrate + NADP+ => 2-oxoglutarate + CO2 + NADPH + H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390347 ],
+    "following" : [ 390347 ],
+    "inputs" : [ 389548, 389556 ],
+    "outputs" : [ 193465, 389536, 389537, 113602 ],
+    "catalysts" : [ 389557 ],
+    "efs" : [ ],
+    "diagramIds" : [ 50 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390347,
+    "stId" : "R-HSA-390347",
+    "displayName" : "Exchange of isocitrate and 2-oxoglutarate across the peroxisomal membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389550 ],
+    "following" : [ 389550 ],
+    "inputs" : [ 389545, 389537 ],
+    "outputs" : [ 29406, 389548 ],
+    "catalysts" : [ 390344 ],
+    "efs" : [ ],
+    "diagramIds" : [ 243 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

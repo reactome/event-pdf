@@ -1,0 +1,381 @@
+{
+  "dbId" : 2142700,
+  "stId" : "R-HSA-2142700",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1563 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 2142690,
+    "stId" : "R-ALL-2142690",
+    "displayName" : "dhk-LXA4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1583 ],
+    "identifier" : "63993"
+  }, {
+    "dbId" : 9037644,
+    "stId" : "R-ALL-9037644",
+    "displayName" : "LXA4/B4 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 2389 ],
+    "children" : [ 9037646, 416384 ]
+  }, {
+    "dbId" : 265281,
+    "stId" : "R-ALL-265281",
+    "displayName" : "LTA4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 547 ],
+    "identifier" : "15651"
+  }, {
+    "dbId" : 416384,
+    "stId" : "R-ALL-416384",
+    "displayName" : "LXA4 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "6498",
+    "parents" : [ 9037644 ]
+  }, {
+    "dbId" : 9037646,
+    "stId" : "R-ALL-9037646",
+    "displayName" : "LXB4 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "6499",
+    "parents" : [ 9037644 ]
+  }, {
+    "dbId" : 2142761,
+    "stId" : "R-ALL-2142761",
+    "displayName" : "15k-LXA4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1561 ],
+    "identifier" : "63992"
+  }, {
+    "dbId" : 2318767,
+    "stId" : "R-ALL-2318767",
+    "displayName" : "Ca2+ [nuclear envelope]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 2318769 ]
+  }, {
+    "dbId" : 2318766,
+    "stId" : "R-ALL-2318766",
+    "displayName" : "Fe2+ [nuclear envelope]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 2318769 ]
+  }, {
+    "dbId" : 2142829,
+    "stId" : "R-ALL-2142829",
+    "displayName" : "15epi-LXA4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "63990",
+    "parents" : [ 2161609 ]
+  }, {
+    "dbId" : 2318765,
+    "stId" : "R-HSA-2318765",
+    "displayName" : "p-S272-ALOX5 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09917",
+    "geneNames" : [ "ALOX5", "LOG5" ],
+    "parents" : [ 2318769 ]
+  }, {
+    "dbId" : 2318764,
+    "stId" : "R-HSA-2318764",
+    "displayName" : "ALOX5:ALOX5AP:LTC4S [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2036 ],
+    "children" : [ 2142729, 2318769, 2318770 ]
+  }, {
+    "dbId" : 2142768,
+    "stId" : "R-HSA-2142768",
+    "displayName" : "ALOX12 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18054",
+    "geneNames" : [ "ALOX12", "12LO", "LOG12" ],
+    "parents" : [ 2142793 ]
+  }, {
+    "dbId" : 2318770,
+    "stId" : "R-HSA-2318770",
+    "displayName" : "ALOX5AP trimer [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2318764 ],
+    "children" : [ 2318768 ]
+  }, {
+    "dbId" : 2318769,
+    "stId" : "R-HSA-2318769",
+    "displayName" : "p-S272-ALOX5:Ca2+:Fe2+ [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2318764 ],
+    "children" : [ 2318765, 2318766, 2318767 ]
+  }, {
+    "dbId" : 2318768,
+    "stId" : "R-HSA-2318768",
+    "displayName" : "ALOX5AP [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20292",
+    "geneNames" : [ "ALOX5AP", "FLAP" ],
+    "parents" : [ 2318770 ]
+  }, {
+    "dbId" : 2142776,
+    "stId" : "R-ALL-2142776",
+    "displayName" : "LXB4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "6499",
+    "parents" : [ 2161856 ]
+  }, {
+    "dbId" : 2142778,
+    "stId" : "R-HSA-2142778",
+    "displayName" : "HPGD dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1567 ],
+    "children" : [ 2142677 ]
+  }, {
+    "dbId" : 71067,
+    "stId" : "R-ALL-71067",
+    "displayName" : "Fe2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 2142793 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1569, 1589 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 2142718,
+    "stId" : "R-ALL-2142718",
+    "displayName" : "15S-HpETE [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1336 ],
+    "identifier" : "15628"
+  }, {
+    "dbId" : 266010,
+    "stId" : "R-ALL-266010",
+    "displayName" : "5S-HpETE [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2131 ],
+    "identifier" : "15632"
+  }, {
+    "dbId" : 2161856,
+    "stId" : "R-ALL-2161856",
+    "displayName" : "LXA4/B4 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 1493, 2142 ],
+    "children" : [ 2161759, 2142776 ]
+  }, {
+    "dbId" : 2142791,
+    "stId" : "R-ALL-2142791",
+    "displayName" : "15epi-LXB4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "63991",
+    "parents" : [ 2161609 ]
+  }, {
+    "dbId" : 2142793,
+    "stId" : "R-HSA-2142793",
+    "displayName" : "ALOX12:Fe2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1494 ],
+    "children" : [ 71067, 2142768 ]
+  }, {
+    "dbId" : 2161609,
+    "stId" : "R-ALL-2161609",
+    "displayName" : "15epi-LXA4/B4 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 1510 ],
+    "children" : [ 2142829, 2142791 ]
+  }, {
+    "dbId" : 2142729,
+    "stId" : "R-HSA-2142729",
+    "displayName" : "LTC4S trimer [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2318764 ],
+    "children" : [ 266025 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2132 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 266025,
+    "stId" : "R-HSA-266025",
+    "displayName" : "LTC4S [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16873",
+    "geneNames" : [ "LTC4S" ],
+    "parents" : [ 2142729 ]
+  }, {
+    "dbId" : 9032038,
+    "stId" : "R-ALL-9032038",
+    "displayName" : "LTA4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2123 ],
+    "identifier" : "15651"
+  }, {
+    "dbId" : 2142671,
+    "stId" : "R-HSA-2142671",
+    "displayName" : "PTGR1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1585 ],
+    "identifier" : "Q14914",
+    "geneNames" : [ "PTGR1", "LTB4DH" ]
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1565 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 2142738,
+    "stId" : "R-ALL-2142738",
+    "displayName" : "15R-HETE [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1307 ],
+    "identifier" : "63989"
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1591 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 2142677,
+    "stId" : "R-HSA-2142677",
+    "displayName" : "HPGD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P15428",
+    "geneNames" : [ "HPGD", "PGDH1", "SDR36C1" ],
+    "parents" : [ 2142778 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1587 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 2161759,
+    "stId" : "R-ALL-2161759",
+    "displayName" : "LXA4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1559 ],
+    "identifier" : "6498",
+    "parents" : [ 2161856 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 2161907,
+    "stId" : "R-HSA-2161907",
+    "displayName" : "15R-HETE is converted to 15epi-LXA4/B4 by ALOX5",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 2142738 ],
+    "outputs" : [ 2161609 ],
+    "catalysts" : [ 2318764 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1509 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2161779,
+    "stId" : "R-HSA-2161779",
+    "displayName" : "LXA4 is oxidised to 15k-LXA4 by HPGD",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2161775, 2161917 ],
+    "following" : [ 2161844 ],
+    "inputs" : [ 2161759, 29360 ],
+    "outputs" : [ 70106, 2142761, 73473 ],
+    "catalysts" : [ 2142778 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1558 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2161844,
+    "stId" : "R-HSA-2161844",
+    "displayName" : "15k-LXA4 is reduced to dhk-LXA4 by PTGR1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2161779 ],
+    "inputs" : [ 70106, 2142761, 29364 ],
+    "outputs" : [ 29366, 2142690 ],
+    "catalysts" : [ 2142671 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1582 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 266051,
+    "stId" : "R-HSA-266051",
+    "displayName" : "5S-HpETE is dehydrated to LTA4 by ALOX5",
+    "schemaClass" : "Reaction",
+    "following" : [ 9032036 ],
+    "inputs" : [ 266010 ],
+    "outputs" : [ 29356, 265281 ],
+    "catalysts" : [ 2318764 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2130 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9032036,
+    "stId" : "R-HSA-9032036",
+    "displayName" : "LTA4 translocates from neutrophil cytosol to platelet cytosol",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 266051 ],
+    "following" : [ 2161775 ],
+    "inputs" : [ 265281 ],
+    "outputs" : [ 9032038 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2139 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2161917,
+    "stId" : "R-HSA-2161917",
+    "displayName" : "15S-HpETE is oxidised to LXA4/B4 by ALOX5",
+    "schemaClass" : "Reaction",
+    "following" : [ 2161779, 9032054 ],
+    "inputs" : [ 2142718 ],
+    "outputs" : [ 2161856 ],
+    "catalysts" : [ 2318764 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1507 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9032054,
+    "stId" : "R-HSA-9032054",
+    "displayName" : "LXA4/B4 translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 2161917 ],
+    "inputs" : [ 2161856 ],
+    "outputs" : [ 9037644 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2387 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2161775,
+    "stId" : "R-HSA-2161775",
+    "displayName" : "LTA4 is converted to LXA4/B4 by ALOX12",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9032036 ],
+    "following" : [ 2161779 ],
+    "inputs" : [ 9032038 ],
+    "outputs" : [ 2161856 ],
+    "catalysts" : [ 2142793 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1492 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

@@ -1,0 +1,1331 @@
+{
+  "dbId" : 390918,
+  "stId" : "R-HSA-390918",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 389893,
+    "stId" : "R-ALL-389893",
+    "displayName" : "(2S) Pristanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 86 ],
+    "identifier" : "64039"
+  }, {
+    "dbId" : 389636,
+    "stId" : "R-ALL-389636",
+    "displayName" : "Pristanal [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 64 ],
+    "identifier" : "49189"
+  }, {
+    "dbId" : 389894,
+    "stId" : "R-ALL-389894",
+    "displayName" : "trans-2,3-dehydropristanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 89 ],
+    "identifier" : "63803"
+  }, {
+    "dbId" : 389634,
+    "stId" : "R-HSA-389634",
+    "displayName" : "PHYH:Fe++ [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 62 ],
+    "children" : [ 389631, 389574 ]
+  }, {
+    "dbId" : 389642,
+    "stId" : "R-HSA-389642",
+    "displayName" : "SLC25A17 [peroxisomal membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 40 ],
+    "identifier" : "O43808",
+    "geneNames" : [ "SLC25A17", "PMP34" ]
+  }, {
+    "dbId" : 389905,
+    "stId" : "R-HSA-389905",
+    "displayName" : "ACOX3:FAD [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 95 ],
+    "children" : [ 389884, 141335 ]
+  }, {
+    "dbId" : 8848531,
+    "stId" : "R-HSA-8848531",
+    "displayName" : "ACOX2:FAD, ACOXL:FAD [peroxisomal matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 426 ],
+    "children" : [ 8848530, 192320 ]
+  }, {
+    "dbId" : 141335,
+    "stId" : "R-ALL-141335",
+    "displayName" : "FAD [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 389905, 8848530, 390237, 192320 ]
+  }, {
+    "dbId" : 8848530,
+    "stId" : "R-HSA-8848530",
+    "displayName" : "ACOXL:FAD [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8848531 ],
+    "children" : [ 8848528, 141335 ]
+  }, {
+    "dbId" : 8848528,
+    "stId" : "R-HSA-8848528",
+    "displayName" : "ACOXL [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NUZ1",
+    "geneNames" : [ "ACOXL" ],
+    "parents" : [ 8848530 ]
+  }, {
+    "dbId" : 6809215,
+    "stId" : "R-HSA-6809215",
+    "displayName" : "NUDT7 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 293 ],
+    "identifier" : "P0C024",
+    "geneNames" : [ "NUDT7" ]
+  }, {
+    "dbId" : 141343,
+    "stId" : "R-ALL-141343",
+    "displayName" : "H2O [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 224, 97, 146, 274, 290, 211, 68, 118, 423, 539 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 400155,
+    "stId" : "R-HSA-400155",
+    "displayName" : "EHHADH [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 267 ],
+    "identifier" : "Q08426",
+    "geneNames" : [ "EHHADH", "ECHD" ]
+  }, {
+    "dbId" : 76577,
+    "stId" : "R-ALL-76577",
+    "displayName" : "AMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 39 ],
+    "identifier" : "16027"
+  }, {
+    "dbId" : 192307,
+    "stId" : "R-ALL-192307",
+    "displayName" : "NAD+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 104, 216, 73, 233, 124 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 192305,
+    "stId" : "R-ALL-192305",
+    "displayName" : "NADH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 106, 122, 75, 235, 269 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 192314,
+    "stId" : "R-ALL-192314",
+    "displayName" : "propionyl CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 111 ],
+    "identifier" : "15539"
+  }, {
+    "dbId" : 192322,
+    "stId" : "R-HSA-192322",
+    "displayName" : "HSD17B4(1-736) [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51659",
+    "geneNames" : [ "HSD17B4", "EDH17B4", "SDR8C1" ],
+    "parents" : [ 389999 ]
+  }, {
+    "dbId" : 192320,
+    "stId" : "R-HSA-192320",
+    "displayName" : "ACOX2:FAD [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8848531 ],
+    "children" : [ 141335, 192321 ]
+  }, {
+    "dbId" : 192321,
+    "stId" : "R-HSA-192321",
+    "displayName" : "ACOX2 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99424",
+    "geneNames" : [ "ACOX2" ],
+    "parents" : [ 192320 ]
+  }, {
+    "dbId" : 390237,
+    "stId" : "R-HSA-390237",
+    "displayName" : "ACOX1:FAD complex [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 390232 ],
+    "children" : [ 141335, 390263 ]
+  }, {
+    "dbId" : 390238,
+    "stId" : "R-HSA-390238",
+    "displayName" : "ACAA1 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 219 ],
+    "identifier" : "P09110",
+    "geneNames" : [ "ACAA1", "ACAA", "PTHIO" ]
+  }, {
+    "dbId" : 389982,
+    "stId" : "R-ALL-389982",
+    "displayName" : "3-hydroxypristanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 98 ],
+    "identifier" : "63914"
+  }, {
+    "dbId" : 390232,
+    "stId" : "R-HSA-390232",
+    "displayName" : "ACOX1 dimer [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 205 ],
+    "children" : [ 390237 ]
+  }, {
+    "dbId" : 192348,
+    "stId" : "R-HSA-192348",
+    "displayName" : "SCP2-1 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 113 ],
+    "identifier" : "P22307-1",
+    "geneNames" : [ "SCP2" ]
+  }, {
+    "dbId" : 191328,
+    "stId" : "R-ALL-191328",
+    "displayName" : "Mg2+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 389627 ]
+  }, {
+    "dbId" : 382566,
+    "stId" : "R-HSA-382566",
+    "displayName" : "ABCD1 [peroxisomal membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P33897",
+    "geneNames" : [ "ABCD1", "ALD" ],
+    "parents" : [ 382579 ]
+  }, {
+    "dbId" : 390246,
+    "stId" : "R-ALL-390246",
+    "displayName" : "tetracosanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 218 ],
+    "identifier" : "52974"
+  }, {
+    "dbId" : 390241,
+    "stId" : "R-ALL-390241",
+    "displayName" : "3-ketohexacosanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 214 ],
+    "identifier" : "52977"
+  }, {
+    "dbId" : 353123,
+    "stId" : "R-ALL-353123",
+    "displayName" : "Ac-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 119, 249, 222 ],
+    "identifier" : "15351"
+  }, {
+    "dbId" : 8866017,
+    "stId" : "R-HSA-8866017",
+    "displayName" : "ACBD4,5:LCFA-CoA, MCFA-CoA [peroxisomal membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 518 ],
+    "children" : [ 5690520, 8848234 ]
+  }, {
+    "dbId" : 6809358,
+    "stId" : "R-ALL-6809358",
+    "displayName" : "PPANT [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 292 ],
+    "identifier" : "16858"
+  }, {
+    "dbId" : 389996,
+    "stId" : "R-ALL-389996",
+    "displayName" : "3-ketopristanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 102 ],
+    "identifier" : "15371"
+  }, {
+    "dbId" : 389999,
+    "stId" : "R-HSA-389999",
+    "displayName" : "HSD17B4 dimer [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 99 ],
+    "children" : [ 192322 ]
+  }, {
+    "dbId" : 390249,
+    "stId" : "R-ALL-390249",
+    "displayName" : "trans-2,3-dehydrohexacosanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 204 ],
+    "identifier" : "52975"
+  }, {
+    "dbId" : 390248,
+    "stId" : "R-ALL-390248",
+    "displayName" : "3-hydroxyhexacosanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 212 ],
+    "identifier" : "64972"
+  }, {
+    "dbId" : 382571,
+    "stId" : "R-ALL-382571",
+    "displayName" : "LCFA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15904",
+    "parents" : [ 5690539 ]
+  }, {
+    "dbId" : 390260,
+    "stId" : "R-ALL-390260",
+    "displayName" : "C26:0 CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 201 ],
+    "identifier" : "52966"
+  }, {
+    "dbId" : 390263,
+    "stId" : "R-HSA-390263",
+    "displayName" : "ACOX1-2 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15067-2",
+    "geneNames" : [ "ACOX1", "ACOX" ],
+    "parents" : [ 390237 ]
+  }, {
+    "dbId" : 382579,
+    "stId" : "R-HSA-382579",
+    "displayName" : "ABCD1 homodimer [peroxisomal membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 202 ],
+    "children" : [ 382566 ]
+  }, {
+    "dbId" : 390002,
+    "stId" : "R-ALL-390002",
+    "displayName" : "4,8,12-trimethyltridecanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 112 ],
+    "identifier" : "15495"
+  }, {
+    "dbId" : 6809360,
+    "stId" : "R-ALL-6809360",
+    "displayName" : "3',5'-ADP [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 291 ],
+    "identifier" : "37240"
+  }, {
+    "dbId" : 390271,
+    "stId" : "R-ALL-390271",
+    "displayName" : "4,8-dimethylnonanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 120 ],
+    "identifier" : "63856"
+  }, {
+    "dbId" : 113535,
+    "stId" : "R-ALL-113535",
+    "displayName" : "O2 [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 256, 231, 59, 93, 126, 207 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 6811623,
+    "stId" : "R-HSA-6811623",
+    "displayName" : "ALDH3A2-2 dimer [peroxisomal membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 260 ],
+    "children" : [ 6811617 ]
+  }, {
+    "dbId" : 6787814,
+    "stId" : "R-ALL-6787814",
+    "displayName" : "2oxo-PALM [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 253 ],
+    "identifier" : "86988"
+  }, {
+    "dbId" : 6787810,
+    "stId" : "R-ALL-6787810",
+    "displayName" : "2OH-PALM [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 252 ],
+    "identifier" : "65101"
+  }, {
+    "dbId" : 6811617,
+    "stId" : "R-HSA-6811617",
+    "displayName" : "ALDH3A2-2 [peroxisomal membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51648-2",
+    "geneNames" : [ "ALDH3A2", "ALDH10", "FALDH" ],
+    "parents" : [ 6811623 ]
+  }, {
+    "dbId" : 6787808,
+    "stId" : "R-HSA-6787808",
+    "displayName" : "HAO2 tetramer [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 254 ],
+    "children" : [ 6787806 ]
+  }, {
+    "dbId" : 390274,
+    "stId" : "R-ALL-390274",
+    "displayName" : "Propionylcarnitine [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 150 ],
+    "identifier" : "28867"
+  }, {
+    "dbId" : 390287,
+    "stId" : "R-ALL-390287",
+    "displayName" : "ACAR [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 141 ],
+    "identifier" : "15960"
+  }, {
+    "dbId" : 5690077,
+    "stId" : "R-HSA-5690077",
+    "displayName" : "ACOT4,6,8 [peroxisomal matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 541 ],
+    "children" : [ 5690060, 193426, 5690054 ]
+  }, {
+    "dbId" : 6809578,
+    "stId" : "R-HSA-6809578",
+    "displayName" : "PECR tetramer [peroxisomal membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 277 ],
+    "children" : [ 6809577 ]
+  }, {
+    "dbId" : 6809577,
+    "stId" : "R-HSA-6809577",
+    "displayName" : "PECR [peroxisomal membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BY49",
+    "geneNames" : [ "PECR", "SDR29C1", "PRO1004" ],
+    "parents" : [ 6809578 ]
+  }, {
+    "dbId" : 193426,
+    "stId" : "R-HSA-193426",
+    "displayName" : "ACOT8 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 148 ],
+    "identifier" : "O14734",
+    "geneNames" : [ "ACOT8", "ACTEIII", "PTE1", "PTE2" ],
+    "parents" : [ 5690077 ]
+  }, {
+    "dbId" : 5690054,
+    "stId" : "R-HSA-5690054",
+    "displayName" : "ACOT4 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N9L9",
+    "geneNames" : [ "ACOT4", "PTE2B", "PTEIB" ],
+    "parents" : [ 5690077 ]
+  }, {
+    "dbId" : 390293,
+    "stId" : "R-HSA-390293",
+    "displayName" : "CRAT [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 142 ],
+    "identifier" : "P43155",
+    "geneNames" : [ "CRAT", "CAT1" ]
+  }, {
+    "dbId" : 192146,
+    "stId" : "R-HSA-192146",
+    "displayName" : "AMACR [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 87 ],
+    "identifier" : "Q9UHK6",
+    "geneNames" : [ "AMACR" ]
+  }, {
+    "dbId" : 390294,
+    "stId" : "R-ALL-390294",
+    "displayName" : "CAR [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 134, 151 ],
+    "identifier" : "17126"
+  }, {
+    "dbId" : 390290,
+    "stId" : "R-ALL-390290",
+    "displayName" : "4,8-dimethylnonanoylcarnitine [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 135 ],
+    "identifier" : "63874"
+  }, {
+    "dbId" : 390303,
+    "stId" : "R-ALL-390303",
+    "displayName" : "Octanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 225 ],
+    "identifier" : "15533"
+  }, {
+    "dbId" : 5690060,
+    "stId" : "R-HSA-5690060",
+    "displayName" : "ACOT6 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q3I5F7",
+    "geneNames" : [ "ACOT6", "C14orf42" ],
+    "parents" : [ 5690077 ]
+  }, {
+    "dbId" : 390296,
+    "stId" : "R-HSA-390296",
+    "displayName" : "CROT [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 136 ],
+    "identifier" : "Q9UKG9",
+    "geneNames" : [ "CROT", "COT" ]
+  }, {
+    "dbId" : 6809799,
+    "stId" : "R-HSA-6809799",
+    "displayName" : "ECI2 trimer [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 288 ],
+    "children" : [ 6809809 ]
+  }, {
+    "dbId" : 390305,
+    "stId" : "R-ALL-390305",
+    "displayName" : "CH3COO- [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 147 ],
+    "identifier" : "15366"
+  }, {
+    "dbId" : 389537,
+    "stId" : "R-ALL-389537",
+    "displayName" : "2OG [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 56 ],
+    "identifier" : "30915"
+  }, {
+    "dbId" : 389536,
+    "stId" : "R-ALL-389536",
+    "displayName" : "CO2 [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 55, 574 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 977323,
+    "stId" : "R-ALL-977323",
+    "displayName" : "Malonyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 246 ],
+    "identifier" : "15531"
+  }, {
+    "dbId" : 113575,
+    "stId" : "R-ALL-113575",
+    "displayName" : "H2O2 [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 209, 258, 132, 90, 237 ],
+    "identifier" : "16240"
+  }, {
+    "dbId" : 6809801,
+    "stId" : "R-ALL-6809801",
+    "displayName" : "3Z-octenoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 286 ],
+    "identifier" : "85939"
+  }, {
+    "dbId" : 6809800,
+    "stId" : "R-ALL-6809800",
+    "displayName" : "2E-octenoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 287 ],
+    "identifier" : "27537"
+  }, {
+    "dbId" : 389556,
+    "stId" : "R-ALL-389556",
+    "displayName" : "NADP+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 281, 572 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 6809811,
+    "stId" : "R-ALL-6809811",
+    "displayName" : "2E-phytenoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 276 ]
+  }, {
+    "dbId" : 6809809,
+    "stId" : "R-HSA-6809809",
+    "displayName" : "ECI2 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75521-2",
+    "geneNames" : [ "ECI2", "DRS1", "HCA88", "PECI" ],
+    "parents" : [ 6809799 ]
+  }, {
+    "dbId" : 6787806,
+    "stId" : "R-HSA-6787806",
+    "displayName" : "HAO2 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NYQ3",
+    "geneNames" : [ "HAO2", "HAOX2", "GIG16" ],
+    "parents" : [ 6787808 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 36 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 6811612,
+    "stId" : "R-ALL-6811612",
+    "displayName" : "pristanate [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 259 ],
+    "identifier" : "77268"
+  }, {
+    "dbId" : 193465,
+    "stId" : "R-ALL-193465",
+    "displayName" : "H+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 128, 229, 568, 283, 108, 77, 271 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 389573,
+    "stId" : "R-ALL-389573",
+    "displayName" : "ATP [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 261, 38 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 2291936,
+    "stId" : "R-HSA-2291936",
+    "displayName" : "MLYCD(40-493) [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 250 ],
+    "identifier" : "O95822-2",
+    "geneNames" : [ "MLYCD" ]
+  }, {
+    "dbId" : 113602,
+    "stId" : "R-ALL-113602",
+    "displayName" : "NADPH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 279, 570 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 389574,
+    "stId" : "R-HSA-389574",
+    "displayName" : "PHYH [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14832",
+    "geneNames" : [ "PHYH", "PAHX" ],
+    "parents" : [ 389634 ]
+  }, {
+    "dbId" : 389569,
+    "stId" : "R-ALL-389569",
+    "displayName" : "(2R) Pristanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 80 ],
+    "identifier" : "51341"
+  }, {
+    "dbId" : 6786723,
+    "stId" : "R-ALL-6786723",
+    "displayName" : "LCtE-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 564 ],
+    "identifier" : "83727"
+  }, {
+    "dbId" : 6810530,
+    "stId" : "R-ALL-6810530",
+    "displayName" : "acyl-PPANT [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 424 ],
+    "identifier" : "47983"
+  }, {
+    "dbId" : 389583,
+    "stId" : "R-ALL-389583",
+    "displayName" : "SUCCA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 61 ],
+    "identifier" : "15741"
+  }, {
+    "dbId" : 5690520,
+    "stId" : "R-ALL-5690520",
+    "displayName" : "MCFA-CoA, LCFA-CoA [peroxisomal matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 544, 515 ],
+    "parents" : [ 8866017 ],
+    "children" : [ 5690529, 5690532 ]
+  }, {
+    "dbId" : 389579,
+    "stId" : "R-HSA-389579",
+    "displayName" : "SLC27A2 [peroxisomal membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 47 ],
+    "identifier" : "O14975",
+    "geneNames" : [ "SLC27A2", "ACSVL1", "FACVL1", "FATP2", "VLACS" ]
+  }, {
+    "dbId" : 389578,
+    "stId" : "R-ALL-389578",
+    "displayName" : "FOR-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 65 ],
+    "identifier" : "15522"
+  }, {
+    "dbId" : 389589,
+    "stId" : "R-ALL-389589",
+    "displayName" : "TPP [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18290",
+    "parents" : [ 389627 ]
+  }, {
+    "dbId" : 389585,
+    "stId" : "R-ALL-389585",
+    "displayName" : "HCOOH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 69 ],
+    "identifier" : "30751"
+  }, {
+    "dbId" : 389596,
+    "stId" : "R-ALL-389596",
+    "displayName" : "Phytanate [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 43 ],
+    "identifier" : "16285"
+  }, {
+    "dbId" : 389593,
+    "stId" : "R-ALL-389593",
+    "displayName" : "PPi [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 83, 46 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 389594,
+    "stId" : "R-ALL-389594",
+    "displayName" : "3S2HPhy-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 60 ],
+    "identifier" : "15475"
+  }, {
+    "dbId" : 6809219,
+    "stId" : "R-HSA-6809219",
+    "displayName" : "NUDT19 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 425 ],
+    "identifier" : "A8MXV4",
+    "geneNames" : [ "NUDT19" ]
+  }, {
+    "dbId" : 389600,
+    "stId" : "R-HSA-389600",
+    "displayName" : "HACL1 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UJ83",
+    "geneNames" : [ "HACL1", "HPCL", "HPCL2", "PHYH2", "HSPC279" ],
+    "parents" : [ 389627 ]
+  }, {
+    "dbId" : 193514,
+    "stId" : "R-ALL-193514",
+    "displayName" : "CoA-SH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 546, 115, 131, 227, 70, 263, 138, 44 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 8848237,
+    "stId" : "R-HSA-8848237",
+    "displayName" : "ACBD4 [peroxisomal membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NC06",
+    "geneNames" : [ "ACBD4", "HMFT0700" ],
+    "parents" : [ 8848234 ]
+  }, {
+    "dbId" : 389615,
+    "stId" : "R-ALL-389615",
+    "displayName" : "Phytanoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 45 ],
+    "identifier" : "15538"
+  }, {
+    "dbId" : 8848235,
+    "stId" : "R-HSA-8848235",
+    "displayName" : "ACBD5 [peroxisomal membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5T8D3",
+    "geneNames" : [ "ACBD5", "KIAA1996" ],
+    "parents" : [ 8848234 ]
+  }, {
+    "dbId" : 8848234,
+    "stId" : "R-HSA-8848234",
+    "displayName" : "ACBD5,(ACBD4) [peroxisomal membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 516 ],
+    "parents" : [ 8866017 ],
+    "children" : [ 8848235, 8848237 ]
+  }, {
+    "dbId" : 389620,
+    "stId" : "R-ALL-389620",
+    "displayName" : "adenosine 5'-monophosphate [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 48, 82, 37 ],
+    "identifier" : "16027"
+  }, {
+    "dbId" : 6786710,
+    "stId" : "R-HSA-6786710",
+    "displayName" : "DECR2 [peroxisomal membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 566 ],
+    "identifier" : "Q9NUI1",
+    "geneNames" : [ "DECR2", "PDCR", "SDR17C1" ]
+  }, {
+    "dbId" : 5690532,
+    "stId" : "R-ALL-5690532",
+    "displayName" : "LCFA-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "33184",
+    "parents" : [ 5690520 ]
+  }, {
+    "dbId" : 5690530,
+    "stId" : "R-ALL-5690530",
+    "displayName" : "MCFA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "59554",
+    "parents" : [ 5690539 ]
+  }, {
+    "dbId" : 389616,
+    "stId" : "R-HSA-389616",
+    "displayName" : "HACL1 tetramer [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 66 ],
+    "children" : [ 389627 ]
+  }, {
+    "dbId" : 5690529,
+    "stId" : "R-ALL-5690529",
+    "displayName" : "MCFA-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "61907",
+    "parents" : [ 5690520 ]
+  }, {
+    "dbId" : 389884,
+    "stId" : "R-HSA-389884",
+    "displayName" : "ACOX3 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15254",
+    "geneNames" : [ "ACOX3", "BRCOX", "PRCOX" ],
+    "parents" : [ 389905 ]
+  }, {
+    "dbId" : 389631,
+    "stId" : "R-ALL-389631",
+    "displayName" : "Fe2+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 389634 ]
+  }, {
+    "dbId" : 6810523,
+    "stId" : "R-ALL-6810523",
+    "displayName" : "FA-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 422 ],
+    "identifier" : "37554"
+  }, {
+    "dbId" : 6786715,
+    "stId" : "R-ALL-6786715",
+    "displayName" : "t3enoyl-CoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 565 ],
+    "identifier" : "27700"
+  }, {
+    "dbId" : 5690539,
+    "stId" : "R-ALL-5690539",
+    "displayName" : "MCFA, LCFA [peroxisomal matrix]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 540 ],
+    "children" : [ 382571, 5690530 ]
+  }, {
+    "dbId" : 389627,
+    "stId" : "R-HSA-389627",
+    "displayName" : "HACL1 holoenzyme monomer [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 389616 ],
+    "children" : [ 389600, 191328, 389589 ]
+  }, {
+    "dbId" : 390394,
+    "stId" : "R-ALL-390394",
+    "displayName" : "C26:0 CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 200 ],
+    "identifier" : "52966"
+  } ],
+  "edges" : [ {
+    "dbId" : 390276,
+    "stId" : "R-HSA-390276",
+    "displayName" : "4,8,12-trimethyltridecanoyl-CoA + 2 O2 + 2 H2O + 2 NAD+ + 2 CoASH => 4,8-dimethylnonanoyl-CoA + 2 H2O2 + 2 NADH + 2 H+ + acetyl-CoA + propionyl-CoA",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 390224 ],
+    "following" : [ 390281, 390284, 390291, 390304 ],
+    "inputs" : [ 113535, 141343, 193514, 390002, 192307 ],
+    "outputs" : [ 193465, 390271, 192314, 113575, 353123, 192305 ],
+    "efs" : [ ],
+    "diagramIds" : [ 117 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389639,
+    "stId" : "R-HSA-389639",
+    "displayName" : "phytanoyl-CoA + 2-oxoglutarate + O2 => 2-hydroxyphytanoyl-CoA + succinate + CO2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6809810, 389622 ],
+    "following" : [ 389611 ],
+    "inputs" : [ 113535, 389615, 389537 ],
+    "outputs" : [ 389594, 389583, 389536 ],
+    "catalysts" : [ 389634 ],
+    "efs" : [ ],
+    "diagramIds" : [ 58 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6787811,
+    "stId" : "R-HSA-6787811",
+    "displayName" : "HAO2 tetramer oxidises 2OH-PALM",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113535, 6787810 ],
+    "outputs" : [ 113575, 6787814 ],
+    "catalysts" : [ 6787808 ],
+    "efs" : [ ],
+    "diagramIds" : [ 251 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389889,
+    "stId" : "R-HSA-389889",
+    "displayName" : "ACOX2:FAD, ACOXL:FAD oxidise (2S)-pristanoyl-CoA to trans-2,3-dehydropristanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389897 ],
+    "following" : [ 389986 ],
+    "inputs" : [ 113535, 389893 ],
+    "outputs" : [ 113575, 389894 ],
+    "catalysts" : [ 8848531 ],
+    "efs" : [ ],
+    "diagramIds" : [ 88 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389632,
+    "stId" : "R-HSA-389632",
+    "displayName" : "pristanate + CoA-SH + ATP => pristanoyl-CoA + AMP + pyrophosphate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389609, 389652 ],
+    "following" : [ 389897 ],
+    "inputs" : [ 6811612, 193514, 389573 ],
+    "outputs" : [ 389593, 389569, 389620 ],
+    "catalysts" : [ 389579 ],
+    "efs" : [ ],
+    "diagramIds" : [ 78 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389891,
+    "stId" : "R-HSA-389891",
+    "displayName" : "(2S)-pristanoyl-CoA + O2 => trans-2,3-dehydropristanoyl-CoA + H2O2 (ACOX3)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389897 ],
+    "following" : [ 389986 ],
+    "inputs" : [ 113535, 389893 ],
+    "outputs" : [ 113575, 389894 ],
+    "catalysts" : [ 389905 ],
+    "efs" : [ ],
+    "diagramIds" : [ 94 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6786720,
+    "stId" : "R-HSA-6786720",
+    "displayName" : "DECR2 reduces LCtE-CoA to t3enoyl-CoA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 193465, 6786723, 113602 ],
+    "outputs" : [ 6786715, 389556 ],
+    "catalysts" : [ 6786710 ],
+    "efs" : [ ],
+    "diagramIds" : [ 563 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6809263,
+    "stId" : "R-HSA-6809263",
+    "displayName" : "EHHADH hydrates trans-2,3-dehydrohexacosanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "following" : [ 390251, 6809264 ],
+    "inputs" : [ 141343, 390249 ],
+    "outputs" : [ 390248 ],
+    "catalysts" : [ 400155 ],
+    "efs" : [ ],
+    "diagramIds" : [ 273 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389580,
+    "stId" : "R-HSA-389580",
+    "displayName" : "formyl-CoA + H2O => formate + CoASH",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389611 ],
+    "inputs" : [ 389578, 141343 ],
+    "outputs" : [ 193514, 389585 ],
+    "efs" : [ ],
+    "diagramIds" : [ 67 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390284,
+    "stId" : "R-HSA-390284",
+    "displayName" : "propionyl-CoA + carnitine => propionylcarnitine + CoASH",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390224, 390276 ],
+    "following" : [ 6809354 ],
+    "inputs" : [ 192314, 390294 ],
+    "outputs" : [ 193514, 390274 ],
+    "catalysts" : [ 390293 ],
+    "efs" : [ ],
+    "diagramIds" : [ 149 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389897,
+    "stId" : "R-HSA-389897",
+    "displayName" : "Isomerization of (2R)-pristanoyl-CoA to (2S)-pristanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389632 ],
+    "following" : [ 389891, 389889 ],
+    "inputs" : [ 389569 ],
+    "outputs" : [ 389893 ],
+    "catalysts" : [ 192146 ],
+    "efs" : [ ],
+    "diagramIds" : [ 85 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390281,
+    "stId" : "R-HSA-390281",
+    "displayName" : "4,8-dimethylnonanoyl-CoA + carnitine => 4,8-dimethylnonanoylcarnitine + CoASH",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390276 ],
+    "following" : [ 6809354 ],
+    "inputs" : [ 390271, 390294 ],
+    "outputs" : [ 193514, 390290 ],
+    "catalysts" : [ 390296 ],
+    "efs" : [ ],
+    "diagramIds" : [ 133 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6810474,
+    "stId" : "R-HSA-6810474",
+    "displayName" : "NUDT19 hydrolyses acyl-CoA to 3',5'-ADP and acyl-PPANT",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 141343, 6810523 ],
+    "outputs" : [ 6809360, 6810530 ],
+    "catalysts" : [ 6809219 ],
+    "efs" : [ ],
+    "diagramIds" : [ 421 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389652,
+    "stId" : "R-HSA-389652",
+    "displayName" : "PMP34-mediated exchange of cytosolic ATP for peroxisomal AMP",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389622 ],
+    "following" : [ 389632, 389622 ],
+    "inputs" : [ 113592, 389620 ],
+    "outputs" : [ 389573, 76577 ],
+    "catalysts" : [ 389642 ],
+    "efs" : [ ],
+    "diagramIds" : [ 35 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390224,
+    "stId" : "R-HSA-390224",
+    "displayName" : "3-ketopristanoyl-CoA + CoASH => 4,8,12-trimethyltridecanoyl-CoA + propionyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389995 ],
+    "following" : [ 390284, 390276 ],
+    "inputs" : [ 389996, 193514 ],
+    "outputs" : [ 192314, 390002 ],
+    "catalysts" : [ 192348 ],
+    "efs" : [ ],
+    "diagramIds" : [ 110 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390291,
+    "stId" : "R-HSA-390291",
+    "displayName" : "acetyl-CoA + carnitine => acetylcarnitine + CoASH",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390250, 390302, 390276 ],
+    "following" : [ 6809354 ],
+    "inputs" : [ 353123, 390294 ],
+    "outputs" : [ 390287, 193514 ],
+    "catalysts" : [ 390293 ],
+    "efs" : [ ],
+    "diagramIds" : [ 140 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6809264,
+    "stId" : "R-HSA-6809264",
+    "displayName" : "EHHADH dehydrogenates 3-hydroxyhexacosanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6809263 ],
+    "following" : [ 390250 ],
+    "inputs" : [ 390248, 192307 ],
+    "outputs" : [ 193465, 390241, 192305 ],
+    "catalysts" : [ 400155 ],
+    "efs" : [ ],
+    "diagramIds" : [ 266 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390302,
+    "stId" : "R-HSA-390302",
+    "displayName" : "tetracosenoyl-CoA + 8 O2 + 8 H2O + 8 NAD+ + 8 CoASH => octanoyl-CoA + 8 H2O2 + 8 NADH + 8 H+ + 8 acetyl-CoA",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 390250 ],
+    "following" : [ 390291, 390304 ],
+    "inputs" : [ 113535, 141343, 193514, 390246, 192307 ],
+    "outputs" : [ 193465, 390303, 113575, 353123, 192305 ],
+    "efs" : [ ],
+    "diagramIds" : [ 223 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390304,
+    "stId" : "R-HSA-390304",
+    "displayName" : "acetyl-CoA + H2O => acetate + CoASH",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390250, 390302, 390276 ],
+    "following" : [ 6809354 ],
+    "inputs" : [ 141343, 353123 ],
+    "outputs" : [ 193514, 390305 ],
+    "catalysts" : [ 193426 ],
+    "efs" : [ ],
+    "diagramIds" : [ 145 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389986,
+    "stId" : "R-HSA-389986",
+    "displayName" : "trans-2,3-dehydropristanoyl-CoA + H2O => 3-hydroxypristanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389891, 389889 ],
+    "following" : [ 389995 ],
+    "inputs" : [ 141343, 389894 ],
+    "outputs" : [ 389982 ],
+    "catalysts" : [ 389999 ],
+    "efs" : [ ],
+    "diagramIds" : [ 96 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390252,
+    "stId" : "R-HSA-390252",
+    "displayName" : "HSD17B4 hydrates trans-2,3-dehydrohexacosanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390256 ],
+    "following" : [ 390251 ],
+    "inputs" : [ 141343, 390249 ],
+    "outputs" : [ 390248 ],
+    "catalysts" : [ 389999 ],
+    "efs" : [ ],
+    "diagramIds" : [ 210 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 977317,
+    "stId" : "R-HSA-977317",
+    "displayName" : "malonyl-CoA is decarboxylated to acetyl-CoA in peroxisome",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 977323 ],
+    "outputs" : [ 353123, 389536 ],
+    "catalysts" : [ 2291936 ],
+    "efs" : [ ],
+    "diagramIds" : [ 245 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389609,
+    "stId" : "R-HSA-389609",
+    "displayName" : "ALDH3A2-2 oxidizes pristanal to pristanate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389611 ],
+    "following" : [ 389632 ],
+    "inputs" : [ 389636, 192307 ],
+    "outputs" : [ 193465, 6811612, 192305 ],
+    "catalysts" : [ 6811623 ],
+    "efs" : [ ],
+    "diagramIds" : [ 72 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5690042,
+    "stId" : "R-HSA-5690042",
+    "displayName" : "Peroxisomal ACOT4,6,8 hydrolyse MCFA-CoA, LCFA-CoA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5690520, 141343 ],
+    "outputs" : [ 5690539, 193514 ],
+    "catalysts" : [ 5690077 ],
+    "efs" : [ ],
+    "diagramIds" : [ 538 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6809354,
+    "stId" : "R-HSA-6809354",
+    "displayName" : "NUDT7 hydrolyses CoA-SH to 3',5'-ADP and PPANT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390281, 390284, 390291, 390304 ],
+    "inputs" : [ 141343, 193514 ],
+    "outputs" : [ 6809358, 6809360 ],
+    "catalysts" : [ 6809215 ],
+    "efs" : [ ],
+    "diagramIds" : [ 289 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389611,
+    "stId" : "R-HSA-389611",
+    "displayName" : "2-hydroxyphytanoyl-CoA => pristanal + formyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389639 ],
+    "following" : [ 389580, 389609 ],
+    "inputs" : [ 389594 ],
+    "outputs" : [ 389578, 389636 ],
+    "catalysts" : [ 389616 ],
+    "efs" : [ ],
+    "diagramIds" : [ 63 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390251,
+    "stId" : "R-HSA-390251",
+    "displayName" : "HSD17B4 dehydrogenates 3-hydroxyhexacosanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390252, 6809263 ],
+    "following" : [ 390250 ],
+    "inputs" : [ 390248, 192307 ],
+    "outputs" : [ 193465, 390241, 192305 ],
+    "catalysts" : [ 389999 ],
+    "efs" : [ ],
+    "diagramIds" : [ 213 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389995,
+    "stId" : "R-HSA-389995",
+    "displayName" : "3-hydroxypristanoyl-CoA + NAD+ => 3-ketoxypristanoyl-CoA + NADH + H+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389986 ],
+    "following" : [ 390224 ],
+    "inputs" : [ 389982, 192307 ],
+    "outputs" : [ 193465, 389996, 192305 ],
+    "catalysts" : [ 389999 ],
+    "efs" : [ ],
+    "diagramIds" : [ 101 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390250,
+    "stId" : "R-HSA-390250",
+    "displayName" : "3-ketohexacosanoyl-CoA + CoASH => tetracosanoyl-CoA + acetyl-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390251, 6809264 ],
+    "following" : [ 390291, 390304, 390302 ],
+    "inputs" : [ 193514, 390241 ],
+    "outputs" : [ 353123, 390246 ],
+    "catalysts" : [ 390238 ],
+    "efs" : [ ],
+    "diagramIds" : [ 217 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8848247,
+    "stId" : "R-HSA-8848247",
+    "displayName" : "ACBD4,5 bind MCFA-CoA and LCFA-CoA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5690520, 8848234 ],
+    "outputs" : [ 8866017 ],
+    "efs" : [ ],
+    "diagramIds" : [ 514 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 389622,
+    "stId" : "R-HSA-389622",
+    "displayName" : "phytanate + CoA-SH + ATP => phytanoyl-CoA + AMP + pyrophosphate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 389652 ],
+    "following" : [ 389639, 389652 ],
+    "inputs" : [ 389596, 193514, 389573 ],
+    "outputs" : [ 389593, 389615, 389620 ],
+    "catalysts" : [ 389579 ],
+    "efs" : [ ],
+    "diagramIds" : [ 41 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390256,
+    "stId" : "R-HSA-390256",
+    "displayName" : "hexacosanoyl-CoA + O2 => trans-2,3-dehydrohexacosanoyl-CoA + H2O2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390393 ],
+    "following" : [ 390252 ],
+    "inputs" : [ 113535, 390260 ],
+    "outputs" : [ 390249, 113575 ],
+    "catalysts" : [ 390232 ],
+    "efs" : [ ],
+    "diagramIds" : [ 203 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6809810,
+    "stId" : "R-HSA-6809810",
+    "displayName" : "PECR reduces 2E-phytenoyl-CoA to phytanoyl-CoA",
+    "schemaClass" : "Reaction",
+    "following" : [ 389639 ],
+    "inputs" : [ 193465, 6809811, 113602 ],
+    "outputs" : [ 389615, 389556 ],
+    "catalysts" : [ 6809578 ],
+    "efs" : [ ],
+    "diagramIds" : [ 275 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6809808,
+    "stId" : "R-HSA-6809808",
+    "displayName" : "ECI2 isomerizes 3Z-enoyl-CoA to 2E-enoyl-CoA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6809801 ],
+    "outputs" : [ 6809800 ],
+    "catalysts" : [ 6809799 ],
+    "efs" : [ ],
+    "diagramIds" : [ 285 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390393,
+    "stId" : "R-HSA-390393",
+    "displayName" : "Peroxisomal uptake of very long-chain fatty acyl CoA",
+    "schemaClass" : "Reaction",
+    "following" : [ 390256 ],
+    "inputs" : [ 390394 ],
+    "outputs" : [ 390260 ],
+    "catalysts" : [ 382579 ],
+    "efs" : [ ],
+    "diagramIds" : [ 199 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 390247,
+    "stId" : "R-HSA-390247",
+    "displayName" : "Beta-oxidation of very long chain fatty acids",
+    "events" : [ 390256, 6809808, 6809264, 6786720, 6809263, 390252, 390302, 977317, 390393, 5690042, 390251, 390250 ]
+  }, {
+    "dbId" : 389887,
+    "stId" : "R-HSA-389887",
+    "displayName" : "Beta-oxidation of pristanoyl-CoA",
+    "events" : [ 390276, 389889, 390224, 390304, 389891, 390291, 389986, 390284, 389897, 390281, 389995 ]
+  }, {
+    "dbId" : 389599,
+    "stId" : "R-HSA-389599",
+    "displayName" : "Alpha-oxidation of phytanate",
+    "events" : [ 389652, 389639, 389622, 6809810, 389632, 389580, 389609, 389611 ]
+  } ]
+}

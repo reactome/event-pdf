@@ -110,6 +110,15 @@ public class PdfProfile {
 				.setTextAlignment(TextAlignment.LEFT);
 	}
 
+	public Paragraph getH2(String text) {
+		return new Paragraph(text)
+				.setFont(BOLD)
+				.setFontSize(H2)
+				.setMultipliedLeading(1.5f)
+				.setHyphenation(HYPHENATION_CONFIG)
+				.setTextAlignment(TextAlignment.LEFT);
+	}
+
 	public Paragraph getH3(String text) {
 		return new Paragraph(text)
 				.setFont(BOLD)

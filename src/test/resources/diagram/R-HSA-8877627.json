@@ -1,0 +1,414 @@
+{
+  "dbId" : 8877627,
+  "stableId" : "R-HSA-8877627",
+  "displayName" : "Vitamin E",
+  "nodes" : [ {
+    "id" : 160,
+    "reactomeId" : 8874714,
+    "displayName" : "TTPA:alpha-TOH",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 259,
+      "y" : 249
+    },
+    "minX" : 205,
+    "maxX" : 314,
+    "minY" : 238,
+    "maxY" : 260,
+    "prop" : {
+      "x" : 205,
+      "y" : 238,
+      "width" : 109,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 205,
+      "y" : 239
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 163,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 165,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 161,
+    "reactomeId" : 8874722,
+    "displayName" : "TTPA:alpha-TOH",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 532,
+      "y" : 248
+    },
+    "minX" : 478,
+    "maxX" : 587,
+    "minY" : 237,
+    "maxY" : 259,
+    "prop" : {
+      "x" : 478,
+      "y" : 237,
+      "width" : 109,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 478,
+      "y" : 238
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 163,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 162,
+    "reactomeId" : 2980979,
+    "displayName" : "TTPA",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 259,
+      "y" : 74
+    },
+    "minX" : 239,
+    "maxX" : 285,
+    "minY" : 57,
+    "maxY" : 145,
+    "prop" : {
+      "x" : 239,
+      "y" : 63,
+      "width" : 40,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 239,
+      "y" : 63
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 279,
+          "y" : 63
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 165,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 259,
+          "y" : 88
+        },
+        "to" : {
+          "x" : 259,
+          "y" : 145
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 164,
+    "reactomeId" : 8874708,
+    "displayName" : "alpha-TOH",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 187,
+      "y" : 129
+    },
+    "minX" : 146,
+    "maxX" : 259,
+    "minY" : 113,
+    "maxY" : 145,
+    "prop" : {
+      "x" : 146,
+      "y" : 114,
+      "width" : 82,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 150,
+      "y" : 118
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 223,
+          "y" : 119
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 165,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 231,
+          "y" : 138
+        },
+        "to" : {
+          "x" : 259,
+          "y" : 145
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 163,
+    "reactomeId" : 8874705,
+    "displayName" : "TTPA transports alpha-TOH from lysosomal membrane to plasma membrane",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 367,
+      "y" : 248
+    },
+    "minX" : 317,
+    "maxX" : 475,
+    "minY" : 242,
+    "maxY" : 254,
+    "segments" : [ {
+      "from" : {
+        "x" : 317,
+        "y" : 248
+      },
+      "to" : {
+        "x" : 367,
+        "y" : 248
+      }
+    }, {
+      "from" : {
+        "x" : 367,
+        "y" : 248
+      },
+      "to" : {
+        "x" : 475,
+        "y" : 248
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 468,
+        "y" : 252
+      },
+      "b" : {
+        "x" : 475,
+        "y" : 248
+      },
+      "c" : {
+        "x" : 468,
+        "y" : 244
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 361,
+        "y" : 242
+      },
+      "b" : {
+        "x" : 373,
+        "y" : 254
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 160
+    } ],
+    "outputs" : [ {
+      "id" : 161
+    } ]
+  }, {
+    "id" : 165,
+    "reactomeId" : 8874718,
+    "displayName" : "TTPA binds alpha-TOH",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 259,
+      "y" : 146
+    },
+    "minX" : 254,
+    "maxX" : 264,
+    "minY" : 141,
+    "maxY" : 235,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 259,
+        "y" : 145
+      },
+      "to" : {
+        "x" : 259,
+        "y" : 146
+      }
+    }, {
+      "from" : {
+        "x" : 259,
+        "y" : 146
+      },
+      "to" : {
+        "x" : 259,
+        "y" : 235
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 255,
+        "y" : 228
+      },
+      "b" : {
+        "x" : 259,
+        "y" : 235
+      },
+      "c" : {
+        "x" : 263,
+        "y" : 228
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 259,
+        "y" : 146
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 162,
+      "points" : [ {
+        "x" : 259,
+        "y" : 88
+      } ]
+    }, {
+      "id" : 164,
+      "points" : [ {
+        "x" : 231,
+        "y" : 138
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 160
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 166,
+    "reactomeId" : 161320,
+    "displayName" : "lysosomal lumen",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 138,
+      "y" : 246
+    },
+    "minX" : 13,
+    "maxX" : 263,
+    "minY" : 121,
+    "maxY" : 371,
+    "prop" : {
+      "x" : 13,
+      "y" : 121,
+      "width" : 250,
+      "height" : 250
+    },
+    "textPosition" : {
+      "x" : 46,
+      "y" : 277
+    },
+    "insets" : {
+      "x" : 23,
+      "y" : 131,
+      "width" : 230,
+      "height" : 230
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 160, 165, 164 ]
+  }, {
+    "id" : 167,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 272,
+      "y" : 224
+    },
+    "minX" : 0,
+    "maxX" : 545,
+    "minY" : 0,
+    "maxY" : 449,
+    "prop" : {
+      "x" : 0,
+      "y" : 0,
+      "width" : 545,
+      "height" : 449
+    },
+    "textPosition" : {
+      "x" : 412,
+      "y" : 111
+    },
+    "insets" : {
+      "x" : 10,
+      "y" : 9,
+      "width" : 526,
+      "height" : 432
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 162, 161, 166, 163 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 587,
+  "minY" : 0,
+  "maxY" : 449,
+  "disease" : false
+}

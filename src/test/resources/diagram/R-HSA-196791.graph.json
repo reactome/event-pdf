@@ -1,0 +1,582 @@
+{
+  "dbId" : 196791,
+  "stId" : "R-HSA-196791",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 8963912,
+    "stId" : "R-ALL-8963912",
+    "displayName" : "1,25(OH)2D [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1223 ],
+    "identifier" : "17823",
+    "parents" : [ 8963916 ]
+  }, {
+    "dbId" : 350085,
+    "stId" : "R-HSA-350085",
+    "displayName" : "CUBN:GC:25(OH)D [lysosomal lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 273 ],
+    "children" : [ 350136, 350088, 350137 ]
+  }, {
+    "dbId" : 3730619,
+    "stId" : "R-HSA-3730619",
+    "displayName" : "SUMO2-C93-UBE2I [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63279",
+    "geneNames" : [ "UBE2I", "UBC9", "UBCE9" ],
+    "parents" : [ 2993778 ]
+  }, {
+    "dbId" : 8963916,
+    "stId" : "R-HSA-8963916",
+    "displayName" : "1,25(OH)2D:VDR [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1227 ],
+    "children" : [ 375512, 8963912 ]
+  }, {
+    "dbId" : 350083,
+    "stId" : "R-HSA-350083",
+    "displayName" : "LRP2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 271 ],
+    "identifier" : "P98164",
+    "geneNames" : [ "LRP2" ]
+  }, {
+    "dbId" : 350092,
+    "stId" : "R-HSA-350092",
+    "displayName" : "CUBN:GC:25(OH)D [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 270 ],
+    "children" : [ 350130, 350162 ]
+  }, {
+    "dbId" : 209929,
+    "stId" : "R-HSA-209929",
+    "displayName" : "GC [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02774",
+    "geneNames" : [ "GC" ],
+    "parents" : [ 350130 ]
+  }, {
+    "dbId" : 350159,
+    "stId" : "R-ALL-350159",
+    "displayName" : "CTA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 296 ],
+    "identifier" : "47828"
+  }, {
+    "dbId" : 209800,
+    "stId" : "R-ALL-209800",
+    "displayName" : "1,25(OH)2D [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 283 ],
+    "identifier" : "17823"
+  }, {
+    "dbId" : 4546376,
+    "stId" : "R-HSA-4546376",
+    "displayName" : "SUMO2-VDR [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1285 ],
+    "identifier" : "P11473",
+    "geneNames" : [ "VDR", "NR1I1" ]
+  }, {
+    "dbId" : 350088,
+    "stId" : "R-HSA-350088",
+    "displayName" : "CUBN [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 275 ],
+    "identifier" : "O60494",
+    "geneNames" : [ "CUBN", "IFCR" ],
+    "parents" : [ 8963847, 350085 ]
+  }, {
+    "dbId" : 209804,
+    "stId" : "R-ALL-209804",
+    "displayName" : "25(OH)D [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1221 ],
+    "identifier" : "17933",
+    "parents" : [ 350130 ]
+  }, {
+    "dbId" : 264843,
+    "stId" : "R-HSA-264843",
+    "displayName" : "CUBN [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 265 ],
+    "identifier" : "O60494",
+    "geneNames" : [ "CUBN", "IFCR" ],
+    "parents" : [ 350115 ]
+  }, {
+    "dbId" : 8963847,
+    "stId" : "R-HSA-8963847",
+    "displayName" : "CUBN:25(OH)D [lysosomal lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 849 ],
+    "children" : [ 350136, 350088 ]
+  }, {
+    "dbId" : 2993789,
+    "stId" : "R-HSA-2993789",
+    "displayName" : "PIAS4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1286 ],
+    "identifier" : "Q8N2W9",
+    "geneNames" : [ "PIAS4", "PIASG" ]
+  }, {
+    "dbId" : 8963870,
+    "stId" : "R-ALL-8963870",
+    "displayName" : "VD3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 772, 381 ],
+    "identifier" : "28940"
+  }, {
+    "dbId" : 209941,
+    "stId" : "R-HSA-209941",
+    "displayName" : "CYP2R1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 250 ],
+    "identifier" : "Q6VVX0",
+    "geneNames" : [ "CYP2R1" ]
+  }, {
+    "dbId" : 352339,
+    "stId" : "R-HSA-352339",
+    "displayName" : "GC:VD3 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 243 ],
+    "children" : [ 209886, 209767 ]
+  }, {
+    "dbId" : 350162,
+    "stId" : "R-HSA-350162",
+    "displayName" : "CUBN [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60494",
+    "geneNames" : [ "CUBN", "IFCR" ],
+    "parents" : [ 350092 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 289, 254, 303 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 209886,
+    "stId" : "R-HSA-209886",
+    "displayName" : "GC [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 242, 786 ],
+    "identifier" : "P02774",
+    "geneNames" : [ "GC" ],
+    "parents" : [ 209892, 352339 ]
+  }, {
+    "dbId" : 375512,
+    "stId" : "R-HSA-375512",
+    "displayName" : "VDR [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1226 ],
+    "identifier" : "P11473",
+    "geneNames" : [ "VDR", "NR1I1" ],
+    "parents" : [ 8963916 ]
+  }, {
+    "dbId" : 2993778,
+    "stId" : "R-HSA-2993778",
+    "displayName" : "SUMO2:UBE2I [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1283 ],
+    "children" : [ 3730625, 3730619 ]
+  }, {
+    "dbId" : 209767,
+    "stId" : "R-ALL-209767",
+    "displayName" : "VD3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 776, 444 ],
+    "identifier" : "28940",
+    "parents" : [ 352339 ]
+  }, {
+    "dbId" : 350115,
+    "stId" : "R-HSA-350115",
+    "displayName" : "CUBN:GC:25(OH)D [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 266 ],
+    "children" : [ 264843, 209892 ]
+  }, {
+    "dbId" : 209892,
+    "stId" : "R-HSA-209892",
+    "displayName" : "GC:25(OH)D [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 261 ],
+    "parents" : [ 350115 ],
+    "children" : [ 209886, 209906 ]
+  }, {
+    "dbId" : 191273,
+    "stId" : "R-HSA-191273",
+    "displayName" : "Cholesterol biosynthesis",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 881 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1217, 297, 282 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 912481,
+    "stId" : "R-HSA-912481",
+    "displayName" : "UBE2I [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1284 ],
+    "identifier" : "P63279",
+    "geneNames" : [ "UBE2I", "UBC9", "UBCE9" ]
+  }, {
+    "dbId" : 8963879,
+    "stId" : "R-ALL-8963879",
+    "displayName" : "25(OH)D [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1216 ],
+    "identifier" : "17933"
+  }, {
+    "dbId" : 209906,
+    "stId" : "R-ALL-209906",
+    "displayName" : "25(OH)D [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 379 ],
+    "identifier" : "17933",
+    "parents" : [ 209892 ]
+  }, {
+    "dbId" : 209969,
+    "stId" : "R-HSA-209969",
+    "displayName" : "CYP24A1 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 298 ],
+    "identifier" : "Q07973",
+    "geneNames" : [ "CYP24A1", "CYP24" ]
+  }, {
+    "dbId" : 350135,
+    "stId" : "R-HSA-350135",
+    "displayName" : "LGMN [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 277 ],
+    "identifier" : "Q99538",
+    "geneNames" : [ "LGMN", "PRSC1" ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 305, 291, 252 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 6807057,
+    "stId" : "R-ALL-6807057",
+    "displayName" : "7-dehydroCHOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 380 ],
+    "identifier" : "17759"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 259, 307, 287 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 350130,
+    "stId" : "R-HSA-350130",
+    "displayName" : "GC:CDL [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 350092 ],
+    "children" : [ 209804, 209929 ]
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 257, 293, 301 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 209979,
+    "stId" : "R-HSA-209979",
+    "displayName" : "CYP27B1(?-508) [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 284 ],
+    "identifier" : "O15528",
+    "geneNames" : [ "CYP27B1", "CYP1ALPHA", "CYP27B" ]
+  }, {
+    "dbId" : 3730625,
+    "stId" : "R-HSA-3730625",
+    "displayName" : "UBE2I-G93-SUMO2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61956",
+    "geneNames" : [ "SUMO2", "SMT3B", "SMT3H2" ],
+    "parents" : [ 2993778 ]
+  }, {
+    "dbId" : 350137,
+    "stId" : "R-HSA-350137",
+    "displayName" : "GC [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02774",
+    "geneNames" : [ "GC" ],
+    "parents" : [ 350085 ]
+  }, {
+    "dbId" : 350136,
+    "stId" : "R-ALL-350136",
+    "displayName" : "25(OH)D [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 276 ],
+    "identifier" : "17933",
+    "parents" : [ 8963847, 350085 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 8963913,
+    "stId" : "R-HSA-8963913",
+    "displayName" : "1,25(OH)2D translocates from cytosol to nucleoplasm",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 209868 ],
+    "following" : [ 8963915 ],
+    "inputs" : [ 209800 ],
+    "outputs" : [ 8963912 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1222 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 209760,
+    "stId" : "R-HSA-209760",
+    "displayName" : "CUBN:GC:25(OH)D translocates from cytosol to lysosomal lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 350168 ],
+    "following" : [ 350158 ],
+    "inputs" : [ 350092 ],
+    "outputs" : [ 350085 ],
+    "efs" : [ ],
+    "diagramIds" : [ 272 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8963915,
+    "stId" : "R-HSA-8963915",
+    "displayName" : "1,25(OH)2D binds VDR",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8963913 ],
+    "inputs" : [ 375512, 8963912 ],
+    "outputs" : [ 8963916 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1225 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8963851,
+    "stId" : "R-HSA-8963851",
+    "displayName" : "VD3 dissociates from GC",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 209738 ],
+    "following" : [ 350147 ],
+    "inputs" : [ 352339 ],
+    "outputs" : [ 209886, 209767 ],
+    "efs" : [ ],
+    "diagramIds" : [ 773 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 209766,
+    "stId" : "R-HSA-209766",
+    "displayName" : "25(OH)D translocates from lysosomal lumen to cytosol",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 350158 ],
+    "following" : [ 209868 ],
+    "inputs" : [ 350136 ],
+    "outputs" : [ 209804 ],
+    "efs" : [ ],
+    "diagramIds" : [ 279 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 350147,
+    "stId" : "R-HSA-350147",
+    "displayName" : "VD3 translocates from extracellular region to ER membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8963851 ],
+    "following" : [ 209845 ],
+    "inputs" : [ 209767 ],
+    "outputs" : [ 8963870 ],
+    "efs" : [ ],
+    "diagramIds" : [ 245 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 209765,
+    "stId" : "R-HSA-209765",
+    "displayName" : "CYP24A1 hydroxylates 1,25(OH)2D, inactivating it",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 209868 ],
+    "inputs" : [ 70106, 209800, 29368, 29364 ],
+    "outputs" : [ 29356, 350159, 29366 ],
+    "catalysts" : [ 209969 ],
+    "efs" : [ ],
+    "diagramIds" : [ 295 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8963872,
+    "stId" : "R-HSA-8963872",
+    "displayName" : "VD3 translocates from ER membrane to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 209754 ],
+    "following" : [ 209738 ],
+    "inputs" : [ 8963870 ],
+    "outputs" : [ 209767 ],
+    "efs" : [ ],
+    "diagramIds" : [ 518 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 209738,
+    "stId" : "R-HSA-209738",
+    "displayName" : "VD3 binds GC",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8963872 ],
+    "following" : [ 8963851 ],
+    "inputs" : [ 209886, 209767 ],
+    "outputs" : [ 352339 ],
+    "efs" : [ ],
+    "diagramIds" : [ 241 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 350158,
+    "stId" : "R-HSA-350158",
+    "displayName" : "LGMN degrades GC",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 209760 ],
+    "following" : [ 8963864, 209766 ],
+    "inputs" : [ 350085 ],
+    "outputs" : [ 8963847 ],
+    "catalysts" : [ 350135 ],
+    "efs" : [ ],
+    "diagramIds" : [ 274 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6807242,
+    "stId" : "R-HSA-6807242",
+    "displayName" : "25(OH)D translocates from ER membrane to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 209845 ],
+    "following" : [ 209944 ],
+    "inputs" : [ 8963879 ],
+    "outputs" : [ 209906 ],
+    "efs" : [ ],
+    "diagramIds" : [ 378 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 350186,
+    "stId" : "R-HSA-350186",
+    "displayName" : "CUBN binds GC:25(OH)D",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 209944 ],
+    "following" : [ 350168 ],
+    "inputs" : [ 264843, 209892 ],
+    "outputs" : [ 350115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 264 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 209868,
+    "stId" : "R-HSA-209868",
+    "displayName" : "CYP27B1 hydroxylates 25(OH)D to 1,25(OH)2D",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 209845, 209766 ],
+    "following" : [ 209765, 8963913 ],
+    "inputs" : [ 209804, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 209800, 29366 ],
+    "catalysts" : [ 209979 ],
+    "efs" : [ ],
+    "diagramIds" : [ 281 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8963864,
+    "stId" : "R-HSA-8963864",
+    "displayName" : "CUBN dissociates from 25(OH)D",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 350158 ],
+    "inputs" : [ 8963847 ],
+    "outputs" : [ 350088, 350136 ],
+    "efs" : [ ],
+    "diagramIds" : [ 848 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 209845,
+    "stId" : "R-HSA-209845",
+    "displayName" : "CYP2R1 25-hydroxylates VD3 to 25(OH)D",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 350147 ],
+    "following" : [ 209868, 6807242 ],
+    "inputs" : [ 70106, 29368, 8963870, 29364 ],
+    "outputs" : [ 8963879, 29356, 29366 ],
+    "catalysts" : [ 209941 ],
+    "efs" : [ ],
+    "diagramIds" : [ 247 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 4546387,
+    "stId" : "R-HSA-4546387",
+    "displayName" : "PIAS4 SUMOylates VDR with SUMO2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 2993778, 375512 ],
+    "outputs" : [ 4546376, 912481 ],
+    "catalysts" : [ 2993789 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1282 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 209754,
+    "stId" : "R-HSA-209754",
+    "displayName" : "Photolytic cleavage and thermal isomerization of 7-dehydroCHOL",
+    "schemaClass" : "BlackBoxEvent",
+    "following" : [ 8963872 ],
+    "inputs" : [ 6807057 ],
+    "outputs" : [ 8963870 ],
+    "efs" : [ ],
+    "diagramIds" : [ 238 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 209944,
+    "stId" : "R-HSA-209944",
+    "displayName" : "25(OH)D binds GC",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6807242 ],
+    "following" : [ 350186 ],
+    "inputs" : [ 209886, 209906 ],
+    "outputs" : [ 209892 ],
+    "efs" : [ ],
+    "diagramIds" : [ 260 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 350168,
+    "stId" : "R-HSA-350168",
+    "displayName" : "LRP2 transports CUBN:GC:25(OH)D from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 350186 ],
+    "following" : [ 209760 ],
+    "inputs" : [ 350115 ],
+    "outputs" : [ 350092 ],
+    "catalysts" : [ 350083 ],
+    "efs" : [ ],
+    "diagramIds" : [ 269 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

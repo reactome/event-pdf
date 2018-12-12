@@ -1,0 +1,279 @@
+{
+  "dbId" : 5661270,
+  "stId" : "R-HSA-5661270",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 5660054,
+    "stId" : "R-HSA-5660054",
+    "displayName" : "DCXR [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7Z4W1",
+    "geneNames" : [ "DCXR", "SDR20C1" ],
+    "parents" : [ 5660027 ]
+  }, {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1185, 1214 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 5661268,
+    "stId" : "R-ALL-5661268",
+    "displayName" : "L-gulonate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1207 ],
+    "identifier" : "13115"
+  }, {
+    "dbId" : 5661266,
+    "stId" : "R-HSA-5661266",
+    "displayName" : "KGPDC [cytosol]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1203 ]
+  }, {
+    "dbId" : 5661264,
+    "stId" : "R-ALL-5661264",
+    "displayName" : "D-glucuronate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1225 ],
+    "identifier" : "15748"
+  }, {
+    "dbId" : 5661279,
+    "stId" : "R-HSA-5661279",
+    "displayName" : "CRYL1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y2S2",
+    "geneNames" : [ "CRYL1", "CRY" ],
+    "parents" : [ 5661289 ]
+  }, {
+    "dbId" : 5660036,
+    "stId" : "R-ALL-5660036",
+    "displayName" : "L-xylulose [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1187 ],
+    "identifier" : "17399"
+  }, {
+    "dbId" : 5661253,
+    "stId" : "R-HSA-5661253",
+    "displayName" : "AKR1A1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1226 ],
+    "identifier" : "P14550",
+    "geneNames" : [ "AKR1A1", "ALDR1", "ALR" ]
+  }, {
+    "dbId" : 5660033,
+    "stId" : "R-ALL-5660033",
+    "displayName" : "xylitol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1177 ],
+    "identifier" : "17151"
+  }, {
+    "dbId" : 5661262,
+    "stId" : "R-ALL-5661262",
+    "displayName" : "3-dehydro-L-gulonate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1202 ],
+    "identifier" : "57655"
+  }, {
+    "dbId" : 5662476,
+    "stId" : "R-HSA-5662476",
+    "displayName" : "SORD:Zn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5652211 ],
+    "children" : [ 5652193, 29426 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1232, 1212, 1197, 1183 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 29790,
+    "stId" : "R-ALL-29790",
+    "displayName" : "XY5P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 487 ],
+    "identifier" : "57737"
+  }, {
+    "dbId" : 5652211,
+    "stId" : "R-HSA-5652211",
+    "displayName" : "SORD tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1179 ],
+    "children" : [ 5662476 ]
+  }, {
+    "dbId" : 5660027,
+    "stId" : "R-HSA-5660027",
+    "displayName" : "DCXR tetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1188 ],
+    "children" : [ 5660054 ]
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1210, 1181 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 5661286,
+    "stId" : "R-HSA-5661286",
+    "displayName" : "XYLB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1172 ],
+    "identifier" : "O75191",
+    "geneNames" : [ "XYLB" ]
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 5662476 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1192, 1230 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1190, 1228 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 5661281,
+    "stId" : "R-ALL-5661281",
+    "displayName" : "D-xylulose [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1170 ],
+    "identifier" : "17140"
+  }, {
+    "dbId" : 5652193,
+    "stId" : "R-HSA-5652193",
+    "displayName" : "SORD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q00796",
+    "geneNames" : [ "SORD" ],
+    "parents" : [ 5662476 ]
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1205 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1169 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1171 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 5661289,
+    "stId" : "R-HSA-5661289",
+    "displayName" : "CRYL1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1208 ],
+    "children" : [ 5661279 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 5662471,
+    "stId" : "R-HSA-5662471",
+    "displayName" : "SORD tetramer oxidizes xylitol to D-xylulose",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5661240 ],
+    "following" : [ 5662466 ],
+    "inputs" : [ 5660033, 29360 ],
+    "outputs" : [ 70106, 5661281, 73473 ],
+    "catalysts" : [ 5652211 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1176 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5662466,
+    "stId" : "R-HSA-5662466",
+    "displayName" : "XYLB phosphorylates D-xylulose",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5662471 ],
+    "inputs" : [ 113592, 5661281 ],
+    "outputs" : [ 29790, 29370 ],
+    "catalysts" : [ 5661286 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1168 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5661290,
+    "stId" : "R-HSA-5661290",
+    "displayName" : "CRYL1 dimer dehydrogenates L-gulonate to 3-dehydro-L-gulonate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5661256 ],
+    "following" : [ 5662473 ],
+    "inputs" : [ 5661268, 29360 ],
+    "outputs" : [ 70106, 5661262, 73473 ],
+    "catalysts" : [ 5661289 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1206 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5661240,
+    "stId" : "R-HSA-5661240",
+    "displayName" : "DCXR tetramer reduces L-xylulose to xylitol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5662473 ],
+    "following" : [ 5662471 ],
+    "inputs" : [ 70106, 29364, 5660036 ],
+    "outputs" : [ 5660033, 29366 ],
+    "catalysts" : [ 5660027 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1186 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5661256,
+    "stId" : "R-HSA-5661256",
+    "displayName" : "AKR1A1 reduces D-glucuronate to L-gulonate",
+    "schemaClass" : "Reaction",
+    "following" : [ 5661290 ],
+    "inputs" : [ 70106, 5661264, 29364 ],
+    "outputs" : [ 29366, 5661268 ],
+    "catalysts" : [ 5661253 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1224 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5662473,
+    "stId" : "R-HSA-5662473",
+    "displayName" : "KGPDC decarboxylates 3-dehydro-L-gulonate to L-xylulose",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5661290 ],
+    "following" : [ 5661240 ],
+    "inputs" : [ 5661262 ],
+    "outputs" : [ 113528, 5660036 ],
+    "catalysts" : [ 5661266 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1201 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

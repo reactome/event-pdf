@@ -1,0 +1,361 @@
+{
+  "dbId" : 2564830,
+  "stId" : "R-HSA-2564830",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 2564775,
+    "stId" : "R-HSA-2564775",
+    "displayName" : "NUBP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P53384",
+    "geneNames" : [ "NUBP1", "NBP", "NBP1" ],
+    "parents" : [ 2564799 ]
+  }, {
+    "dbId" : 2161121,
+    "stId" : "R-HSA-2161121",
+    "displayName" : "MMS19 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96T76",
+    "geneNames" : [ "MMS19", "MMS19L" ],
+    "parents" : [ 2564814 ]
+  }, {
+    "dbId" : 2161124,
+    "stId" : "R-HSA-2161124",
+    "displayName" : "FAM96B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y3D0",
+    "geneNames" : [ "FAM96B", "MIP18", "CGI-128", "HSPC118" ],
+    "parents" : [ 2564814 ]
+  }, {
+    "dbId" : 2564770,
+    "stId" : "R-HSA-2564770",
+    "displayName" : "ERCC2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18074",
+    "geneNames" : [ "ERCC2", "XPD", "XPDC" ],
+    "parents" : [ 2564794, 2564793 ]
+  }, {
+    "dbId" : 1369041,
+    "stId" : "R-HSA-1369041",
+    "displayName" : "ABC7 dimer [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 20 ],
+    "children" : [ 1368993 ]
+  }, {
+    "dbId" : 2564769,
+    "stId" : "R-HSA-2564769",
+    "displayName" : "RTEL1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NZ71",
+    "geneNames" : [ "RTEL1", "C20orf41", "KIAA1088", "NHL" ],
+    "parents" : [ 2564797, 2564793 ]
+  }, {
+    "dbId" : 2161126,
+    "stId" : "R-HSA-2161126",
+    "displayName" : "CIAO1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O76071",
+    "geneNames" : [ "CIAO1", "WDR39" ],
+    "parents" : [ 2564814 ]
+  }, {
+    "dbId" : 29386,
+    "stId" : "R-ALL-29386",
+    "displayName" : "FAD [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 2564809 ]
+  }, {
+    "dbId" : 2564781,
+    "stId" : "R-HSA-2564781",
+    "displayName" : "BRIP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BX63",
+    "geneNames" : [ "BRIP1", "BACH1", "FANCJ" ],
+    "parents" : [ 2564789, 2564793 ]
+  }, {
+    "dbId" : 2564778,
+    "stId" : "R-HSA-2564778",
+    "displayName" : "NARFL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H6Q4",
+    "geneNames" : [ "NARFL", "PRN" ],
+    "parents" : [ 2564815 ]
+  }, {
+    "dbId" : 2564776,
+    "stId" : "R-HSA-2564776",
+    "displayName" : "NDOR1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UHB4",
+    "geneNames" : [ "NDOR1", "NR1" ],
+    "parents" : [ 2564809 ]
+  }, {
+    "dbId" : 2564791,
+    "stId" : "R-HSA-2564791",
+    "displayName" : "Holoprotein Containing 4Fe-4S Cluster [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ],
+    "children" : [ 2564794, 2564797, 2564786, 2564789 ]
+  }, {
+    "dbId" : 2564789,
+    "stId" : "R-HSA-2564789",
+    "displayName" : "holo-BRIP1 (holo-FANCJ) [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2564791 ],
+    "children" : [ 2564781, 2564758 ]
+  }, {
+    "dbId" : 2564786,
+    "stId" : "R-HSA-2564786",
+    "displayName" : "holo-POLD1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2564791 ],
+    "children" : [ 2564763, 2564758 ]
+  }, {
+    "dbId" : 2566513,
+    "stId" : "R-ALL-2566513",
+    "displayName" : "S [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 23 ],
+    "identifier" : "26833"
+  }, {
+    "dbId" : 2564799,
+    "stId" : "R-HSA-2564799",
+    "displayName" : "NUBP1:4Fe-4S [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "parents" : [ 2564798 ],
+    "children" : [ 2564758, 2564775 ]
+  }, {
+    "dbId" : 2564798,
+    "stId" : "R-HSA-2564798",
+    "displayName" : "NUBP2:4Fe-4S:NUBP1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 12 ],
+    "children" : [ 2564799, 2564767, 2564758 ]
+  }, {
+    "dbId" : 2564797,
+    "stId" : "R-HSA-2564797",
+    "displayName" : "holo-RTEL1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2564791 ],
+    "children" : [ 2564769, 2564758 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 19 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 2564794,
+    "stId" : "R-HSA-2564794",
+    "displayName" : "holo-XPD [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2564791 ],
+    "children" : [ 2564770, 2564758 ]
+  }, {
+    "dbId" : 2564793,
+    "stId" : "R-HSA-2564793",
+    "displayName" : "Apoprotein Lacking 4Fe-4S Cluster [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "children" : [ 2564763, 2564781, 2564769, 2564770 ]
+  }, {
+    "dbId" : 2564806,
+    "stId" : "R-HSA-2564806",
+    "displayName" : "CIAPIN1:4Fe-4S:2Fe-2S reduced [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2564805 ],
+    "children" : [ 2564765, 2564757, 2564758 ]
+  }, {
+    "dbId" : 2564805,
+    "stId" : "R-HSA-2564805",
+    "displayName" : "NDOR1:CIAPIN1 reduced [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "children" : [ 2564809, 2564806 ]
+  }, {
+    "dbId" : 2564804,
+    "stId" : "R-HSA-2564804",
+    "displayName" : "NDOR1:CIAPIN1 oxidized [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 13 ],
+    "children" : [ 2564809, 2564800 ]
+  }, {
+    "dbId" : 2564800,
+    "stId" : "R-HSA-2564800",
+    "displayName" : "CIAPIN1:4Fe-4S:2Fe-2S oxidized [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2564804 ],
+    "children" : [ 2564765, 2564758, 2564759 ]
+  }, {
+    "dbId" : 2564815,
+    "stId" : "R-HSA-2564815",
+    "displayName" : "NARFL:4Fe-4S [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2564814 ],
+    "children" : [ 2564778, 2564758 ]
+  }, {
+    "dbId" : 2564814,
+    "stId" : "R-HSA-2564814",
+    "displayName" : "NARFL:CIAO1:FAM96B:MMS19 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "children" : [ 2564815, 2161126, 2161124, 2161121 ]
+  }, {
+    "dbId" : 2564809,
+    "stId" : "R-HSA-2564809",
+    "displayName" : "NDOR1:FAD:FMN [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2564804, 2564805 ],
+    "children" : [ 2564776, 29386, 73524 ]
+  }, {
+    "dbId" : 2564759,
+    "stId" : "R-ALL-2564759",
+    "displayName" : "(2Fe-2S)(2+) [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "33737",
+    "parents" : [ 2564800 ]
+  }, {
+    "dbId" : 2564758,
+    "stId" : "R-ALL-2564758",
+    "displayName" : "4Fe-4S cluster [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "49883",
+    "parents" : [ 2564800, 2564806, 2564794, 2564797, 2564786, 2564789, 2564799, 2564798, 2564815 ]
+  }, {
+    "dbId" : 2564757,
+    "stId" : "R-ALL-2564757",
+    "displayName" : "(2Fe-2S)(1+) [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "33738",
+    "parents" : [ 2564806 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 11 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 1368993,
+    "stId" : "R-HSA-1368993",
+    "displayName" : "ABCB7(23-752) [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75027",
+    "geneNames" : [ "ABCB7", "ABC7" ],
+    "parents" : [ 1369041 ]
+  }, {
+    "dbId" : 73524,
+    "stId" : "R-ALL-73524",
+    "displayName" : "FMN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17621",
+    "parents" : [ 2564809 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 2564767,
+    "stId" : "R-HSA-2564767",
+    "displayName" : "NUBP2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6 ],
+    "identifier" : "Q9Y5Y2",
+    "geneNames" : [ "NUBP2" ],
+    "parents" : [ 2564798 ]
+  }, {
+    "dbId" : 71160,
+    "stId" : "R-ALL-71160",
+    "displayName" : "Fe [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 22 ],
+    "identifier" : "18248"
+  }, {
+    "dbId" : 2564765,
+    "stId" : "R-HSA-2564765",
+    "displayName" : "CIAPIN1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6FI81",
+    "geneNames" : [ "CIAPIN1", "CUA001", "PRO0915" ],
+    "parents" : [ 2564800, 2564806 ]
+  }, {
+    "dbId" : 2564763,
+    "stId" : "R-HSA-2564763",
+    "displayName" : "POLD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P28340",
+    "geneNames" : [ "POLD1", "POLD" ],
+    "parents" : [ 2564786, 2564793 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 2564828,
+    "stId" : "R-HSA-2564828",
+    "displayName" : "CIA Targeting Complex transfers 4Fe-4S cluster to apoproteins",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 2564826 ],
+    "inputs" : [ 2564793, 2564798 ],
+    "outputs" : [ 2564799, 2564767, 2564791 ],
+    "catalysts" : [ 2564814 ],
+    "efs" : [ ],
+    "diagramIds" : [ 10 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2564826,
+    "stId" : "R-HSA-2564826",
+    "displayName" : "4Fe-4S cluster assembles on NUBP2:NUBP1 scaffold",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 2564824 ],
+    "following" : [ 2564828 ],
+    "inputs" : [ 71160, 2564799, 2564767, 2566513 ],
+    "outputs" : [ 2564798 ],
+    "catalysts" : [ 2564805 ],
+    "efs" : [ ],
+    "requirements" : [ 1369041 ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2564824,
+    "stId" : "R-HSA-2564824",
+    "displayName" : "NADPH reduces NDOR1:CIAPIN1",
+    "schemaClass" : "Reaction",
+    "following" : [ 2564826 ],
+    "inputs" : [ 29364, 2564804 ],
+    "outputs" : [ 70106, 29366, 2564805 ],
+    "efs" : [ ],
+    "diagramIds" : [ 16 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

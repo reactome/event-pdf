@@ -1,0 +1,352 @@
+{
+  "dbId" : 977347,
+  "stId" : "R-HSA-977347",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 380 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 29382,
+    "stId" : "R-ALL-29382",
+    "displayName" : "NH3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 430 ],
+    "identifier" : "16134"
+  }, {
+    "dbId" : 9017153,
+    "stId" : "R-HSA-9017153",
+    "displayName" : "SRR dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9014747 ],
+    "children" : [ 9014764 ]
+  }, {
+    "dbId" : 977346,
+    "stId" : "R-HSA-977346",
+    "displayName" : "PHGHD tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 392 ],
+    "children" : [ 977340 ]
+  }, {
+    "dbId" : 936706,
+    "stId" : "R-ALL-936706",
+    "displayName" : "O-P-Ser [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 375 ],
+    "identifier" : "15811"
+  }, {
+    "dbId" : 29390,
+    "stId" : "R-ALL-29390",
+    "displayName" : "PXLP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18405",
+    "parents" : [ 9014747, 977345 ]
+  }, {
+    "dbId" : 977344,
+    "stId" : "R-HSA-977344",
+    "displayName" : "PSPH:Mg++ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 390 ],
+    "children" : [ 977331, 29926 ]
+  }, {
+    "dbId" : 977345,
+    "stId" : "R-HSA-977345",
+    "displayName" : "PSAT1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 382 ],
+    "children" : [ 29390, 977330 ]
+  }, {
+    "dbId" : 9014747,
+    "stId" : "R-HSA-9014747",
+    "displayName" : "SRR dimer:PXLP [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 428 ],
+    "children" : [ 29390, 9017153 ]
+  }, {
+    "dbId" : 5215963,
+    "stId" : "R-HSA-5215963",
+    "displayName" : "SERINC1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NRX5",
+    "geneNames" : [ "SERINC1", "KIAA1253", "TDE1L", "TDE2", "UNQ396/PRO732" ],
+    "parents" : [ 8932973 ]
+  }, {
+    "dbId" : 29398,
+    "stId" : "R-ALL-29398",
+    "displayName" : "PYR [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 431 ],
+    "identifier" : "32816"
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 377 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 29404,
+    "stId" : "R-ALL-29404",
+    "displayName" : "L-Glu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 385 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 29406,
+    "stId" : "R-ALL-29406",
+    "displayName" : "2OG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 381 ],
+    "identifier" : "30915"
+  }, {
+    "dbId" : 29728,
+    "stId" : "R-ALL-29728",
+    "displayName" : "3PG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 384 ],
+    "identifier" : "17794"
+  }, {
+    "dbId" : 200736,
+    "stId" : "R-ALL-200736",
+    "displayName" : "L-Ser [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 378 ],
+    "identifier" : "33384"
+  }, {
+    "dbId" : 9014764,
+    "stId" : "R-HSA-9014764",
+    "displayName" : "SRR [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9GZT4",
+    "geneNames" : [ "SRR" ],
+    "parents" : [ 9017153 ]
+  }, {
+    "dbId" : 8932973,
+    "stId" : "R-HSA-8932973",
+    "displayName" : "SERINC3,5,(1,2,4) [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 379 ],
+    "children" : [ 8932967, 8932965, 8932966, 8932964, 5215963 ]
+  }, {
+    "dbId" : 29926,
+    "stId" : "R-ALL-29926",
+    "displayName" : "Mg2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 499 ],
+    "identifier" : "18420",
+    "parents" : [ 977344 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 376, 440 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 8932964,
+    "stId" : "R-HSA-8932964",
+    "displayName" : "SERINC2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96SA4",
+    "geneNames" : [ "SERINC2", "TDE2L", "FKSG84", "UNQ263/PRO300" ],
+    "parents" : [ 8932973 ]
+  }, {
+    "dbId" : 8932965,
+    "stId" : "R-HSA-8932965",
+    "displayName" : "SERINC3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13530",
+    "geneNames" : [ "SERINC3", "DIFF33", "TDE1", "SBBI99" ],
+    "parents" : [ 8932973 ]
+  }, {
+    "dbId" : 8932966,
+    "stId" : "R-HSA-8932966",
+    "displayName" : "SERINC4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A6NH21",
+    "geneNames" : [ "SERINC4" ],
+    "parents" : [ 8932973 ]
+  }, {
+    "dbId" : 8932967,
+    "stId" : "R-HSA-8932967",
+    "displayName" : "SERINC5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86VE9",
+    "geneNames" : [ "SERINC5", "C5orf12" ],
+    "parents" : [ 8932973 ]
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 374 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 977340,
+    "stId" : "R-HSA-977340",
+    "displayName" : "PHGDH [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43175",
+    "geneNames" : [ "PHGDH", "PGDH3" ],
+    "parents" : [ 977346 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 500, 501 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 8932979,
+    "stId" : "R-ALL-8932979",
+    "displayName" : "L-Ser [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 389 ],
+    "identifier" : "33384"
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 373 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 977330,
+    "stId" : "R-HSA-977330",
+    "displayName" : "PSAT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y617",
+    "geneNames" : [ "PSAT1", "PSA" ],
+    "parents" : [ 977345 ]
+  }, {
+    "dbId" : 977331,
+    "stId" : "R-HSA-977331",
+    "displayName" : "PSPH [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P78330",
+    "geneNames" : [ "PSPH" ],
+    "parents" : [ 977344 ]
+  }, {
+    "dbId" : 977329,
+    "stId" : "R-ALL-977329",
+    "displayName" : "3POPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 391 ],
+    "identifier" : "30933"
+  }, {
+    "dbId" : 376186,
+    "stId" : "R-ALL-376186",
+    "displayName" : "D-Ser [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 427 ],
+    "identifier" : "16523"
+  } ],
+  "edges" : [ {
+    "dbId" : 977324,
+    "stId" : "R-HSA-977324",
+    "displayName" : "phosphoserine is dephosphorylated",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 977333 ],
+    "following" : [ 8932980, 9014766 ],
+    "inputs" : [ 29356, 936706 ],
+    "outputs" : [ 29372, 200736 ],
+    "catalysts" : [ 977344 ],
+    "efs" : [ ],
+    "diagramIds" : [ 383 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9034539,
+    "stId" : "R-HSA-9034539",
+    "displayName" : "SRR dimer:PXLP deaminates L-Ser",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9014766 ],
+    "inputs" : [ 200736 ],
+    "outputs" : [ 29356, 29382, 29398 ],
+    "catalysts" : [ 9014747 ],
+    "efs" : [ ],
+    "diagramIds" : [ 502 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9014766,
+    "stId" : "R-HSA-9014766",
+    "displayName" : "SRR dimer:PXLP isomerises L-Ser to D-Ser",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 977324 ],
+    "following" : [ 9014741, 9034539 ],
+    "inputs" : [ 200736 ],
+    "outputs" : [ 376186 ],
+    "catalysts" : [ 9014747 ],
+    "efs" : [ ],
+    "activators" : [ 113592, 29926 ],
+    "diagramIds" : [ 426 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 977348,
+    "stId" : "R-HSA-977348",
+    "displayName" : "3-phosphoglycerate is dehydrogenated",
+    "schemaClass" : "Reaction",
+    "following" : [ 977333 ],
+    "inputs" : [ 29360, 29728 ],
+    "outputs" : [ 977329, 70106, 73473 ],
+    "catalysts" : [ 977346 ],
+    "efs" : [ ],
+    "diagramIds" : [ 386 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 977333,
+    "stId" : "R-HSA-977333",
+    "displayName" : "3-phosphonooxypyruvic acid + L-glutamate = O-phospho-L-serine + 2-oxoglutarate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 977348 ],
+    "following" : [ 977324 ],
+    "inputs" : [ 977329, 29404 ],
+    "outputs" : [ 29406, 936706 ],
+    "catalysts" : [ 977345 ],
+    "efs" : [ ],
+    "diagramIds" : [ 387 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9014741,
+    "stId" : "R-HSA-9014741",
+    "displayName" : "SRR dimer:PXLP deaminates D-Ser",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9014766 ],
+    "inputs" : [ 376186 ],
+    "outputs" : [ 29356, 29382, 29398 ],
+    "catalysts" : [ 9014747 ],
+    "efs" : [ ],
+    "activators" : [ 29926, 113592 ],
+    "diagramIds" : [ 429 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8932980,
+    "stId" : "R-HSA-8932980",
+    "displayName" : "SERINC3,5,(1,2,4) transport L-Ser from cytosol to plasma membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 977324 ],
+    "inputs" : [ 200736 ],
+    "outputs" : [ 8932979 ],
+    "catalysts" : [ 8932973 ],
+    "efs" : [ ],
+    "diagramIds" : [ 388 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

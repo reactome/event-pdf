@@ -1,0 +1,4350 @@
+{
+  "dbId" : 211945,
+  "stId" : "R-HSA-211945",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 2980908,
+    "stId" : "R-HSA-2980908",
+    "displayName" : "NQO2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16083",
+    "geneNames" : [ "NQO2", "NMOR2" ],
+    "parents" : [ 8936809 ]
+  }, {
+    "dbId" : 29702,
+    "stId" : "R-ALL-29702",
+    "displayName" : "L-Val [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1879 ],
+    "identifier" : "57762"
+  }, {
+    "dbId" : 211973,
+    "stId" : "R-ALL-211973",
+    "displayName" : "4OH-EST17b [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 47 ],
+    "identifier" : "62845"
+  }, {
+    "dbId" : 71689,
+    "stId" : "R-HSA-71689",
+    "displayName" : "ALDH1A1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 571 ],
+    "children" : [ 71688 ]
+  }, {
+    "dbId" : 5340249,
+    "stId" : "R-ALL-5340249",
+    "displayName" : "DCA,CDCA,LCHA [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 5340186 ],
+    "children" : [ 5340204, 4755453, 5340209 ]
+  }, {
+    "dbId" : 71688,
+    "stId" : "R-HSA-71688",
+    "displayName" : "ALDH1A1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00352",
+    "geneNames" : [ "ALDH1A1", "ALDC", "ALDH1", "PUMB1" ],
+    "parents" : [ 71689 ]
+  }, {
+    "dbId" : 141323,
+    "stId" : "R-ALL-141323",
+    "displayName" : "NASPN [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 469 ],
+    "identifier" : "17312"
+  }, {
+    "dbId" : 211977,
+    "stId" : "R-ALL-211977",
+    "displayName" : "CPM [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 199 ],
+    "identifier" : "4026"
+  }, {
+    "dbId" : 71693,
+    "stId" : "R-HSA-71693",
+    "displayName" : "ADH1A:2Zn2+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 449883 ],
+    "children" : [ 71692, 29426 ]
+  }, {
+    "dbId" : 141326,
+    "stId" : "R-HSA-141326",
+    "displayName" : "MAOB:FAD [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 448 ],
+    "children" : [ 141707, 141194 ]
+  }, {
+    "dbId" : 141327,
+    "stId" : "R-ALL-141327",
+    "displayName" : "3AAPNAL [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 480, 470 ],
+    "identifier" : "30322"
+  }, {
+    "dbId" : 71692,
+    "stId" : "R-HSA-71692",
+    "displayName" : "ADH1A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07327",
+    "geneNames" : [ "ADH1A", "ADH1" ],
+    "parents" : [ 71693, 71701, 71696 ]
+  }, {
+    "dbId" : 209934,
+    "stId" : "R-ALL-209934",
+    "displayName" : "MLT [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2542 ],
+    "identifier" : "16796"
+  }, {
+    "dbId" : 71695,
+    "stId" : "R-HSA-71695",
+    "displayName" : "ADH1B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00325",
+    "geneNames" : [ "ADH1B", "ADH2" ],
+    "parents" : [ 71703, 71698, 71696 ]
+  }, {
+    "dbId" : 141324,
+    "stId" : "R-ALL-141324",
+    "displayName" : "SPM [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 483, 477 ],
+    "identifier" : "16610"
+  }, {
+    "dbId" : 71696,
+    "stId" : "R-HSA-71696",
+    "displayName" : "alcohol dehydrogenase 1 (class I), alpha/beta dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 449883 ],
+    "children" : [ 71695, 71692, 29426 ]
+  }, {
+    "dbId" : 215058,
+    "stId" : "R-ALL-215058",
+    "displayName" : "11,12-EET [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "34130",
+    "parents" : [ 215062 ]
+  }, {
+    "dbId" : 141328,
+    "stId" : "R-ALL-141328",
+    "displayName" : "3APAL [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 472 ],
+    "identifier" : "18090"
+  }, {
+    "dbId" : 71698,
+    "stId" : "R-HSA-71698",
+    "displayName" : "ADH1B:2Zn2+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 449883 ],
+    "children" : [ 71695, 29426 ]
+  }, {
+    "dbId" : 2975806,
+    "stId" : "R-HSA-2975806",
+    "displayName" : "Cytochrome P450 (CYP7B1 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 660 ],
+    "children" : [ 192117, 192169 ]
+  }, {
+    "dbId" : 71701,
+    "stId" : "R-HSA-71701",
+    "displayName" : "alcohol dehydrogenase 1 (class I), alpha/gamma dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 449883 ],
+    "children" : [ 71692, 71700, 29426 ]
+  }, {
+    "dbId" : 71700,
+    "stId" : "R-HSA-71700",
+    "displayName" : "ADH1C [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00326",
+    "geneNames" : [ "ADH1C", "ADH3" ],
+    "parents" : [ 71705, 71703, 71701 ]
+  }, {
+    "dbId" : 215062,
+    "stId" : "R-ALL-215062",
+    "displayName" : "cis-EET [endoplasmic reticulum lumen]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 157 ],
+    "children" : [ 215100, 215087, 215064, 215058 ]
+  }, {
+    "dbId" : 5340228,
+    "stId" : "R-HSA-5340228",
+    "displayName" : "NR1H4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96RI1",
+    "geneNames" : [ "NR1H4", "BAR", "FXR", "HRR1", "RIP14" ],
+    "parents" : [ 5340186 ]
+  }, {
+    "dbId" : 141335,
+    "stId" : "R-ALL-141335",
+    "displayName" : "FAD [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 141346 ]
+  }, {
+    "dbId" : 141332,
+    "stId" : "R-HSA-141332",
+    "displayName" : "MAOA:FAD [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 447 ],
+    "children" : [ 141183, 141707 ]
+  }, {
+    "dbId" : 209941,
+    "stId" : "R-HSA-209941",
+    "displayName" : "CYP2R1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 340 ],
+    "identifier" : "Q6VVX0",
+    "geneNames" : [ "CYP2R1" ]
+  }, {
+    "dbId" : 71703,
+    "stId" : "R-HSA-71703",
+    "displayName" : "alcohol dehydrogenase 1 (class I), beta/gamma dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 449883 ],
+    "children" : [ 71695, 71700, 29426 ]
+  }, {
+    "dbId" : 6786175,
+    "stId" : "R-ALL-6786175",
+    "displayName" : "OM [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1881 ],
+    "identifier" : "31932"
+  }, {
+    "dbId" : 71705,
+    "stId" : "R-HSA-71705",
+    "displayName" : "ADH1C:2Zn2+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 449883 ],
+    "children" : [ 71700, 29426 ]
+  }, {
+    "dbId" : 211993,
+    "stId" : "R-ALL-211993",
+    "displayName" : "DSQ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 200 ],
+    "identifier" : "34665"
+  }, {
+    "dbId" : 215064,
+    "stId" : "R-ALL-215064",
+    "displayName" : "14,15-EET [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "34157",
+    "parents" : [ 215062 ]
+  }, {
+    "dbId" : 141342,
+    "stId" : "R-ALL-141342",
+    "displayName" : "SPN [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 471 ],
+    "identifier" : "15746"
+  }, {
+    "dbId" : 141343,
+    "stId" : "R-ALL-141343",
+    "displayName" : "H2O [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 484, 485, 476 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 215075,
+    "stId" : "R-ALL-215075",
+    "displayName" : "12-HETE [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 168 ],
+    "identifier" : "19138"
+  }, {
+    "dbId" : 141346,
+    "stId" : "R-HSA-141346",
+    "displayName" : "PAOX:FAD [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 478 ],
+    "children" : [ 141335, 141345 ]
+  }, {
+    "dbId" : 71713,
+    "stId" : "R-HSA-71713",
+    "displayName" : "ADH4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08319",
+    "geneNames" : [ "ADH4" ],
+    "parents" : [ 71714 ]
+  }, {
+    "dbId" : 71714,
+    "stId" : "R-HSA-71714",
+    "displayName" : "ADH4:2Zn2+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 449883 ],
+    "children" : [ 29426, 71713 ]
+  }, {
+    "dbId" : 5340274,
+    "stId" : "R-HSA-5340274",
+    "displayName" : "NCOA1,2:RXRA:NR1H4:DCA,CDCA,LCHA [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1036 ],
+    "children" : [ 376398, 5340186, 442496, 381319 ]
+  }, {
+    "dbId" : 141345,
+    "stId" : "R-HSA-141345",
+    "displayName" : "PAOX [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6QHF9",
+    "geneNames" : [ "PAOX", "PAO", "UNQ1923/PRO4398" ],
+    "parents" : [ 141346 ]
+  }, {
+    "dbId" : 141350,
+    "stId" : "R-ALL-141350",
+    "displayName" : "PTCN [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 474 ],
+    "identifier" : "17148"
+  }, {
+    "dbId" : 71718,
+    "stId" : "R-HSA-71718",
+    "displayName" : "ALDH2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05091",
+    "geneNames" : [ "ALDH2", "ALDM" ],
+    "parents" : [ 71721 ]
+  }, {
+    "dbId" : 141349,
+    "stId" : "R-ALL-141349",
+    "displayName" : "NASPM [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 467 ],
+    "identifier" : "17927"
+  }, {
+    "dbId" : 71721,
+    "stId" : "R-HSA-71721",
+    "displayName" : "ALDH2 tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 566 ],
+    "children" : [ 71718 ]
+  }, {
+    "dbId" : 215087,
+    "stId" : "R-ALL-215087",
+    "displayName" : "5,6-EET [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "34450",
+    "parents" : [ 215062 ]
+  }, {
+    "dbId" : 209969,
+    "stId" : "R-HSA-209969",
+    "displayName" : "CYP24A1 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 348 ],
+    "identifier" : "Q07973",
+    "geneNames" : [ "CYP24A1", "CYP24" ]
+  }, {
+    "dbId" : 71733,
+    "stId" : "R-HSA-71733",
+    "displayName" : "ACSS2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 570 ],
+    "identifier" : "Q9NR19",
+    "geneNames" : [ "ACSS2", "ACAS2" ]
+  }, {
+    "dbId" : 209979,
+    "stId" : "R-HSA-209979",
+    "displayName" : "CYP27B1(?-508) [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 350 ],
+    "identifier" : "O15528",
+    "geneNames" : [ "CYP27B1", "CYP1ALPHA", "CYP27B" ]
+  }, {
+    "dbId" : 352318,
+    "stId" : "R-ALL-352318",
+    "displayName" : "18OH-ARA [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 171 ],
+    "identifier" : "63590"
+  }, {
+    "dbId" : 215100,
+    "stId" : "R-ALL-215100",
+    "displayName" : "8,9-EET [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "34490",
+    "parents" : [ 215062 ]
+  }, {
+    "dbId" : 211010,
+    "stId" : "R-HSA-211010",
+    "displayName" : "CYP2B6 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20813",
+    "geneNames" : [ "CYP2B6" ],
+    "parents" : [ 2990860, 3222363, 3219414, 3219427, 3222449, 3222321, 3215460, 3222379 ]
+  }, {
+    "dbId" : 352327,
+    "stId" : "R-ALL-352327",
+    "displayName" : "O2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1798, 1800, 1721 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 211009,
+    "stId" : "R-HSA-211009",
+    "displayName" : "CYP2C8 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10632",
+    "geneNames" : [ "CYP2C8" ],
+    "parents" : [ 3215460, 2990860, 3222363, 3219414, 3219427, 3222449, 3219409, 3222327, 3222321 ]
+  }, {
+    "dbId" : 71747,
+    "stId" : "R-HSA-71747",
+    "displayName" : "ADH6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P28332",
+    "geneNames" : [ "ADH6" ],
+    "parents" : [ 71748 ]
+  }, {
+    "dbId" : 211015,
+    "stId" : "R-HSA-211015",
+    "displayName" : "CYP4F12 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HCS2",
+    "geneNames" : [ "CYP4F12", "UNQ568/PRO1129" ],
+    "parents" : [ 3229155, 3222393 ]
+  }, {
+    "dbId" : 71748,
+    "stId" : "R-HSA-71748",
+    "displayName" : "alcohol dehydrogenase 6 (class V) complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 449883 ],
+    "children" : [ 29426, 71747 ]
+  }, {
+    "dbId" : 211013,
+    "stId" : "R-HSA-211013",
+    "displayName" : "CYP4B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13584",
+    "geneNames" : [ "CYP4B1" ],
+    "parents" : [ 3219417, 3222396, 3222400, 2161611, 3229083 ]
+  }, {
+    "dbId" : 140356,
+    "stId" : "R-ALL-140356",
+    "displayName" : "ARA [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 155, 395, 444 ],
+    "identifier" : "15843"
+  }, {
+    "dbId" : 5692433,
+    "stId" : "R-ALL-5692433",
+    "displayName" : "CXPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1304 ],
+    "identifier" : "3410"
+  }, {
+    "dbId" : 140357,
+    "stId" : "R-ALL-140357",
+    "displayName" : "PGG2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 441 ],
+    "identifier" : "27647"
+  }, {
+    "dbId" : 194634,
+    "stId" : "R-ALL-194634",
+    "displayName" : "LNSOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 32 ],
+    "identifier" : "16521"
+  }, {
+    "dbId" : 71753,
+    "stId" : "R-HSA-71753",
+    "displayName" : "ADH7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P40394",
+    "geneNames" : [ "ADH7" ],
+    "parents" : [ 71754 ]
+  }, {
+    "dbId" : 34889,
+    "stId" : "R-ALL-34889",
+    "displayName" : "NHABP [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 288 ],
+    "identifier" : "16580"
+  }, {
+    "dbId" : 38985,
+    "stId" : "R-ALL-38985",
+    "displayName" : "C2H4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 201 ],
+    "identifier" : "18153"
+  }, {
+    "dbId" : 211017,
+    "stId" : "R-HSA-211017",
+    "displayName" : "CYP2C9 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11712",
+    "geneNames" : [ "CYP2C9", "CYP2C10" ],
+    "parents" : [ 3219414, 2990860, 3222363, 3219427, 3222449, 3219409, 3222327, 3222321, 3215460 ]
+  }, {
+    "dbId" : 38987,
+    "stId" : "R-ALL-38987",
+    "displayName" : "EtO [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 208 ],
+    "identifier" : "27561"
+  }, {
+    "dbId" : 71754,
+    "stId" : "R-HSA-71754",
+    "displayName" : "ADH7:2Zn2+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 449883 ],
+    "children" : [ 71753, 29426 ]
+  }, {
+    "dbId" : 5340186,
+    "stId" : "R-HSA-5340186",
+    "displayName" : "NR1H4:DCA,CDCA,LCHA [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5340274 ],
+    "children" : [ 5340249, 5340228 ]
+  }, {
+    "dbId" : 211016,
+    "stId" : "R-HSA-211016",
+    "displayName" : "CYP4F2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P78329",
+    "geneNames" : [ "CYP4F2" ],
+    "parents" : [ 2161611, 3219417, 3229155, 3222396, 3222393, 3222400, 3229083 ]
+  }, {
+    "dbId" : 211022,
+    "stId" : "R-HSA-211022",
+    "displayName" : "CYP2J2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51589",
+    "geneNames" : [ "CYP2J2" ],
+    "parents" : [ 3222379, 3219427, 3222449, 3219409, 3222321 ]
+  }, {
+    "dbId" : 211021,
+    "stId" : "R-HSA-211021",
+    "displayName" : "CYP1B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 58 ],
+    "identifier" : "Q16678",
+    "geneNames" : [ "CYP1B1" ]
+  }, {
+    "dbId" : 211020,
+    "stId" : "R-HSA-211020",
+    "displayName" : "CYP3A5 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20815",
+    "geneNames" : [ "CYP3A5" ],
+    "parents" : [ 3219430, 3229233, 3219438 ]
+  }, {
+    "dbId" : 113745,
+    "stId" : "R-ALL-113745",
+    "displayName" : "CH3CHO [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 301 ],
+    "identifier" : "15343"
+  }, {
+    "dbId" : 211025,
+    "stId" : "R-HSA-211025",
+    "displayName" : "CYP26C1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1120 ],
+    "identifier" : "Q6V0L0",
+    "geneNames" : [ "CYP26C1" ],
+    "parents" : [ 5362528 ]
+  }, {
+    "dbId" : 211030,
+    "stId" : "R-HSA-211030",
+    "displayName" : "CYP3A7 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24462",
+    "geneNames" : [ "CYP3A7" ],
+    "parents" : [ 3219438, 3219430, 3229233 ]
+  }, {
+    "dbId" : 3215460,
+    "stId" : "R-HSA-3215460",
+    "displayName" : "Cytochrome P450 (CYP2C8 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 686 ],
+    "children" : [ 211009, 211054, 2980785, 211055, 211017, 211034, 52681, 211035, 52679, 211042, 211010 ]
+  }, {
+    "dbId" : 113748,
+    "stId" : "R-ALL-113748",
+    "displayName" : "EtOH [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 315 ],
+    "identifier" : "16236"
+  }, {
+    "dbId" : 194644,
+    "stId" : "R-ALL-194644",
+    "displayName" : "4,4DMCHtOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 36 ],
+    "identifier" : "17813"
+  }, {
+    "dbId" : 211035,
+    "stId" : "R-HSA-211035",
+    "displayName" : "CYP2C18 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P33260",
+    "geneNames" : [ "CYP2C18" ],
+    "parents" : [ 3222363, 3219414, 3222327, 3215460 ]
+  }, {
+    "dbId" : 211034,
+    "stId" : "R-HSA-211034",
+    "displayName" : "CYP2A13 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16696",
+    "geneNames" : [ "CYP2A13" ],
+    "parents" : [ 2990860, 3222363, 3219414, 3219427, 3222449, 3222321, 3215460, 3219412, 3222379 ]
+  }, {
+    "dbId" : 211032,
+    "stId" : "R-HSA-211032",
+    "displayName" : "CYP2W1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TAV3",
+    "geneNames" : [ "CYP2W1" ],
+    "parents" : [ 3219409, 3229080 ]
+  }, {
+    "dbId" : 211039,
+    "stId" : "R-HSA-211039",
+    "displayName" : "CYP26A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43174",
+    "geneNames" : [ "CYP26A1", "CYP26", "P450RAI1" ],
+    "parents" : [ 5362528 ]
+  }, {
+    "dbId" : 211037,
+    "stId" : "R-HSA-211037",
+    "displayName" : "CYP4F3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08477",
+    "geneNames" : [ "CYP4F3", "LTB4H" ],
+    "parents" : [ 3222400, 2161611, 3219417, 3222396, 3229083 ]
+  }, {
+    "dbId" : 5340209,
+    "stId" : "R-ALL-5340209",
+    "displayName" : "LCHA [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16325",
+    "parents" : [ 5340249 ]
+  }, {
+    "dbId" : 211042,
+    "stId" : "R-HSA-211042",
+    "displayName" : "CYP2A7 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20853",
+    "geneNames" : [ "CYP2A7" ],
+    "parents" : [ 2990860, 3222363, 3219414, 3219427, 3222449, 3222321, 3215460, 3219412, 3222379 ]
+  }, {
+    "dbId" : 211045,
+    "stId" : "R-HSA-211045",
+    "displayName" : "CYP26B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NR63",
+    "geneNames" : [ "CYP26B1", "CYP26A2", "P450RAI2" ],
+    "parents" : [ 5362528 ]
+  }, {
+    "dbId" : 211051,
+    "stId" : "R-HSA-211051",
+    "displayName" : "CYP4F11 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HBI6",
+    "geneNames" : [ "CYP4F11" ],
+    "parents" : [ 3229083, 3219417, 3222396, 3222400, 2161611 ]
+  }, {
+    "dbId" : 211050,
+    "stId" : "R-HSA-211050",
+    "displayName" : "CYP4F8 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P98187",
+    "geneNames" : [ "CYP4F8" ],
+    "parents" : [ 3222393, 3229155, 2161611 ]
+  }, {
+    "dbId" : 211055,
+    "stId" : "R-HSA-211055",
+    "displayName" : "CYP2C19 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P33261",
+    "geneNames" : [ "CYP2C19" ],
+    "parents" : [ 3222363, 2990860, 3219414, 3219427, 3222449, 3219409, 3222327, 3222321, 3215460 ]
+  }, {
+    "dbId" : 211054,
+    "stId" : "R-HSA-211054",
+    "displayName" : "CYP2F1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24903",
+    "geneNames" : [ "CYP2F1" ],
+    "parents" : [ 2990860, 3222363, 3219414, 3219427, 3222449, 3222321, 3215460, 3219412, 3222379 ]
+  }, {
+    "dbId" : 32879,
+    "stId" : "R-ALL-32879",
+    "displayName" : "TXA2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 7 ],
+    "identifier" : "15627"
+  }, {
+    "dbId" : 198771,
+    "stId" : "R-HSA-198771",
+    "displayName" : "MyrG-CYB5R3(2-301) [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00387",
+    "geneNames" : [ "CYB5R3", "DIA1" ],
+    "parents" : [ 8936430 ]
+  }, {
+    "dbId" : 211056,
+    "stId" : "R-HSA-211056",
+    "displayName" : "CYP4F22 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1268 ],
+    "identifier" : "Q6NT55",
+    "geneNames" : [ "CYP4F22" ],
+    "parents" : [ 3219417, 3222396, 3222400, 2161611, 3229083 ]
+  }, {
+    "dbId" : 5340204,
+    "stId" : "R-ALL-5340204",
+    "displayName" : "DCA [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28834",
+    "parents" : [ 5340249 ]
+  }, {
+    "dbId" : 442496,
+    "stId" : "R-HSA-442496",
+    "displayName" : "NCOA1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15788",
+    "geneNames" : [ "NCOA1", "BHLHE74", "SRC1" ],
+    "parents" : [ 5340274 ]
+  }, {
+    "dbId" : 143501,
+    "stId" : "R-ALL-143501",
+    "displayName" : "CH2O [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 618, 286 ],
+    "identifier" : "16842"
+  }, {
+    "dbId" : 2311355,
+    "stId" : "R-ALL-2311355",
+    "displayName" : "heme b [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "26355",
+    "parents" : [ 428986 ]
+  }, {
+    "dbId" : 213144,
+    "stId" : "R-ALL-213144",
+    "displayName" : "6BHT [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 394, 189 ],
+    "identifier" : "34477"
+  }, {
+    "dbId" : 213151,
+    "stId" : "R-ALL-213151",
+    "displayName" : "N-demethylated loperamide [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 188 ],
+    "identifier" : "64043"
+  }, {
+    "dbId" : 1234098,
+    "stId" : "R-HSA-1234098",
+    "displayName" : "ARNT [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P27540",
+    "geneNames" : [ "ARNT", "BHLHE2" ],
+    "parents" : [ 8936837 ]
+  }, {
+    "dbId" : 213155,
+    "stId" : "R-ALL-213155",
+    "displayName" : "LPAM [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 216 ],
+    "identifier" : "6532"
+  }, {
+    "dbId" : 194721,
+    "stId" : "R-HSA-194721",
+    "displayName" : "CYP51A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 45 ],
+    "identifier" : "Q16850",
+    "geneNames" : [ "CYP51A1", "CYP51" ]
+  }, {
+    "dbId" : 217259,
+    "stId" : "R-ALL-217259",
+    "displayName" : "FAD [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 217317, 217261, 217276 ]
+  }, {
+    "dbId" : 213163,
+    "stId" : "R-ALL-213163",
+    "displayName" : "3MEIN [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 215 ],
+    "identifier" : "63905"
+  }, {
+    "dbId" : 213162,
+    "stId" : "R-ALL-213162",
+    "displayName" : "MIND [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 207 ],
+    "identifier" : "9171"
+  }, {
+    "dbId" : 5693688,
+    "stId" : "R-HSA-5693688",
+    "displayName" : "CES1 trimer, CES2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1317 ],
+    "children" : [ 5693713, 5693667 ]
+  }, {
+    "dbId" : 217261,
+    "stId" : "R-HSA-217261",
+    "displayName" : "FMO1:FAD [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 429 ],
+    "children" : [ 217259, 217270 ]
+  }, {
+    "dbId" : 8936507,
+    "stId" : "R-ALL-8936507",
+    "displayName" : "hydroquinone [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2465 ],
+    "identifier" : "17594"
+  }, {
+    "dbId" : 217270,
+    "stId" : "R-HSA-217270",
+    "displayName" : "FMO1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01740",
+    "geneNames" : [ "FMO1" ],
+    "parents" : [ 217261 ]
+  }, {
+    "dbId" : 5693667,
+    "stId" : "R-HSA-5693667",
+    "displayName" : "CES1 trimer [endoplasmic reticulum lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5693688 ],
+    "children" : [ 2429659 ]
+  }, {
+    "dbId" : 217269,
+    "stId" : "R-ALL-217269",
+    "displayName" : "TAMO [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 420 ],
+    "identifier" : "63825"
+  }, {
+    "dbId" : 193724,
+    "stId" : "R-ALL-193724",
+    "displayName" : "4CHOL7a,24(S)DONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 125 ],
+    "identifier" : "63838"
+  }, {
+    "dbId" : 217276,
+    "stId" : "R-HSA-217276",
+    "displayName" : "FMO3:FAD [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 424 ],
+    "children" : [ 217259, 54929 ]
+  }, {
+    "dbId" : 8936520,
+    "stId" : "R-ALL-8936520",
+    "displayName" : "quinone [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2463 ],
+    "identifier" : "36141"
+  }, {
+    "dbId" : 6786215,
+    "stId" : "R-HSA-6786215",
+    "displayName" : "CYP4V2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2392 ],
+    "identifier" : "Q6ZWL3",
+    "geneNames" : [ "CYP4V2" ]
+  }, {
+    "dbId" : 8936514,
+    "stId" : "R-ALL-8936514",
+    "displayName" : "RFNA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2464 ],
+    "identifier" : "15927"
+  }, {
+    "dbId" : 6786220,
+    "stId" : "R-ALL-6786220",
+    "displayName" : "DHA [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2389 ],
+    "identifier" : "36005"
+  }, {
+    "dbId" : 8936516,
+    "stId" : "R-ALL-8936516",
+    "displayName" : "RFDHN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2462 ],
+    "identifier" : "55458"
+  }, {
+    "dbId" : 193745,
+    "stId" : "R-ALL-193745",
+    "displayName" : "4CHOL7a,12a,24(S)TONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 122 ],
+    "identifier" : "63839"
+  }, {
+    "dbId" : 6786225,
+    "stId" : "R-ALL-6786225",
+    "displayName" : "hydroxydocosahexaenoic acid [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2390 ],
+    "identifier" : "72790"
+  }, {
+    "dbId" : 8936530,
+    "stId" : "R-HSA-8936530",
+    "displayName" : "NQO2:FAD dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2466 ],
+    "children" : [ 8936809 ]
+  }, {
+    "dbId" : 217315,
+    "stId" : "R-ALL-217315",
+    "displayName" : "MTZ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 417 ],
+    "identifier" : "50673"
+  }, {
+    "dbId" : 217314,
+    "stId" : "R-ALL-217314",
+    "displayName" : "Mg2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 217317 ]
+  }, {
+    "dbId" : 217319,
+    "stId" : "R-HSA-217319",
+    "displayName" : "FMO2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99518",
+    "geneNames" : [ "FMO2" ],
+    "parents" : [ 217317 ]
+  }, {
+    "dbId" : 6786179,
+    "stId" : "R-ALL-6786179",
+    "displayName" : "diketone [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1883 ],
+    "identifier" : "46640"
+  }, {
+    "dbId" : 217317,
+    "stId" : "R-HSA-217317",
+    "displayName" : "FMO2:FAD:Mg2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 426 ],
+    "children" : [ 217259, 217319, 217314 ]
+  }, {
+    "dbId" : 217320,
+    "stId" : "R-ALL-217320",
+    "displayName" : "MTZ-SOX [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 425 ],
+    "identifier" : "63828"
+  }, {
+    "dbId" : 6786194,
+    "stId" : "R-ALL-6786194",
+    "displayName" : "OLMS [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1884 ],
+    "identifier" : "48416"
+  }, {
+    "dbId" : 6786204,
+    "stId" : "R-HSA-6786204",
+    "displayName" : "CMBL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1885 ],
+    "identifier" : "Q96DG6",
+    "geneNames" : [ "CMBL" ]
+  }, {
+    "dbId" : 8936837,
+    "stId" : "R-HSA-8936837",
+    "displayName" : "ARNT, ARNT2 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 8937203 ],
+    "children" : [ 8936838, 1234098 ]
+  }, {
+    "dbId" : 8936838,
+    "stId" : "R-HSA-8936838",
+    "displayName" : "ARNT2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HBZ2",
+    "geneNames" : [ "ARNT2", "BHLHE1", "KIAA0307" ],
+    "parents" : [ 8936837 ]
+  }, {
+    "dbId" : 8957352,
+    "stId" : "R-ALL-8957352",
+    "displayName" : "Fe3+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29034",
+    "parents" : [ 8957351 ]
+  }, {
+    "dbId" : 8957354,
+    "stId" : "R-HSA-8957354",
+    "displayName" : "CYP450:Fe2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2562 ],
+    "children" : [ 8957350, 1981115 ]
+  }, {
+    "dbId" : 193835,
+    "stId" : "R-ALL-193835",
+    "displayName" : "4CHOL7a,27DONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 127 ],
+    "identifier" : "48825"
+  }, {
+    "dbId" : 8957350,
+    "stId" : "R-HSA-8957350",
+    "displayName" : "CYP4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "parents" : [ 8957354, 8957351 ]
+  }, {
+    "dbId" : 8957351,
+    "stId" : "R-HSA-8957351",
+    "displayName" : "CYP450:Fe3+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2561 ],
+    "children" : [ 8957350, 8957352 ]
+  }, {
+    "dbId" : 193840,
+    "stId" : "R-ALL-193840",
+    "displayName" : "CHOL [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 43 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 193846,
+    "stId" : "R-ALL-193846",
+    "displayName" : "27OH-CHOL [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 71 ],
+    "identifier" : "17703"
+  }, {
+    "dbId" : 1502544,
+    "stId" : "R-HSA-1502544",
+    "displayName" : "POMC(138-176) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 630 ],
+    "identifier" : "P01189",
+    "geneNames" : [ "POMC" ]
+  }, {
+    "dbId" : 5693712,
+    "stId" : "R-ALL-5693712",
+    "displayName" : "BEG [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1316 ],
+    "identifier" : "41001"
+  }, {
+    "dbId" : 5693713,
+    "stId" : "R-HSA-5693713",
+    "displayName" : "CES2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00748",
+    "geneNames" : [ "CES2", "ICE" ],
+    "parents" : [ 5693688 ]
+  }, {
+    "dbId" : 2395500,
+    "stId" : "R-HSA-2395500",
+    "displayName" : "FDX1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10109",
+    "geneNames" : [ "FDX1", "ADX" ],
+    "parents" : [ 2395509, 2395507 ]
+  }, {
+    "dbId" : 2395501,
+    "stId" : "R-ALL-2395501",
+    "displayName" : "(2Fe-2S)2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "33737",
+    "parents" : [ 2395505, 2395509 ]
+  }, {
+    "dbId" : 2395503,
+    "stId" : "R-HSA-2395503",
+    "displayName" : "FDX1L (red.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408372 ],
+    "children" : [ 2395506, 2395504 ]
+  }, {
+    "dbId" : 2395499,
+    "stId" : "R-HSA-2395499",
+    "displayName" : "FDXR [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22570",
+    "geneNames" : [ "FDXR", "ADXR" ],
+    "parents" : [ 5580259, 5580249 ]
+  }, {
+    "dbId" : 5693702,
+    "stId" : "R-ALL-5693702",
+    "displayName" : "COCN [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1313 ],
+    "identifier" : "27958"
+  }, {
+    "dbId" : 2395509,
+    "stId" : "R-HSA-2395509",
+    "displayName" : "FDX1 (ox.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408370 ],
+    "children" : [ 2395501, 2395500 ]
+  }, {
+    "dbId" : 2395504,
+    "stId" : "R-ALL-2395504",
+    "displayName" : "(2Fe-2S)(1+) [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "33738",
+    "parents" : [ 2395503, 2395507 ]
+  }, {
+    "dbId" : 2395505,
+    "stId" : "R-HSA-2395505",
+    "displayName" : "FDX1L (ox.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408370 ],
+    "children" : [ 2395501, 2395506 ]
+  }, {
+    "dbId" : 2395506,
+    "stId" : "R-HSA-2395506",
+    "displayName" : "FDX1L [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P4F2",
+    "geneNames" : [ "FDX2", "FDX1L" ],
+    "parents" : [ 2395505, 2395503 ]
+  }, {
+    "dbId" : 2395507,
+    "stId" : "R-HSA-2395507",
+    "displayName" : "FDX1 (red.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2408372 ],
+    "children" : [ 2395500, 2395504 ]
+  }, {
+    "dbId" : 5693711,
+    "stId" : "R-ALL-5693711",
+    "displayName" : "MeOH [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1315 ],
+    "identifier" : "17790"
+  }, {
+    "dbId" : 449883,
+    "stId" : "R-HSA-449883",
+    "displayName" : "alcohol dehydrogenase complex [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 579 ],
+    "children" : [ 71693, 71754, 71705, 71703, 71748, 71701, 71714, 71698, 71696 ]
+  }, {
+    "dbId" : 140648,
+    "stId" : "R-ALL-140648",
+    "displayName" : "Ca2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 5696130, 5696173 ]
+  }, {
+    "dbId" : 2889048,
+    "stId" : "R-HSA-2889048",
+    "displayName" : "AOC1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19801",
+    "geneNames" : [ "AOC1", "ABP1", "DAO1" ],
+    "parents" : [ 5696130 ]
+  }, {
+    "dbId" : 449914,
+    "stId" : "R-HSA-449914",
+    "displayName" : "ACSS1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 580 ],
+    "identifier" : "Q9NUB1",
+    "geneNames" : [ "ACSS1", "ACAS2L", "KIAA1846" ]
+  }, {
+    "dbId" : 381319,
+    "stId" : "R-HSA-381319",
+    "displayName" : "RXRA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19793",
+    "geneNames" : [ "RXRA", "NR2B1" ],
+    "parents" : [ 5340274 ]
+  }, {
+    "dbId" : 42373,
+    "stId" : "R-ALL-42373",
+    "displayName" : "12OH-DDCX [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 164 ],
+    "identifier" : "39567"
+  }, {
+    "dbId" : 351629,
+    "stId" : "R-ALL-351629",
+    "displayName" : "H2O2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1792, 1725, 1790 ],
+    "identifier" : "16240"
+  }, {
+    "dbId" : 141707,
+    "stId" : "R-ALL-141707",
+    "displayName" : "FAD [mitochondrial outer membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 141326, 141332 ]
+  }, {
+    "dbId" : 5580249,
+    "stId" : "R-HSA-5580249",
+    "displayName" : "CYP11A1:FDXR:FDX1,FDX1L (red.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1134 ],
+    "children" : [ 2395499, 193148, 2408372 ]
+  }, {
+    "dbId" : 52623,
+    "stId" : "R-HSA-52623",
+    "displayName" : "CYP1A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 192 ],
+    "identifier" : "P04798",
+    "geneNames" : [ "CYP1A1" ]
+  }, {
+    "dbId" : 351626,
+    "stId" : "R-ALL-351626",
+    "displayName" : "H+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1802, 1788, 1726 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 52625,
+    "stId" : "R-HSA-52625",
+    "displayName" : "CYP1A2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 292 ],
+    "identifier" : "P05177",
+    "geneNames" : [ "CYP1A2" ]
+  }, {
+    "dbId" : 76183,
+    "stId" : "R-ALL-76183",
+    "displayName" : "Ac-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 565 ],
+    "identifier" : "15351"
+  }, {
+    "dbId" : 52639,
+    "stId" : "R-HSA-52639",
+    "displayName" : "CYP3A4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08684",
+    "geneNames" : [ "CYP3A4", "CYP3A3" ],
+    "parents" : [ 3229233, 3219430, 3219438 ]
+  }, {
+    "dbId" : 76194,
+    "stId" : "R-ALL-76194",
+    "displayName" : "CoA-SH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 564 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 3229080,
+    "stId" : "R-HSA-3229080",
+    "displayName" : "Cytochrome P450 (CYP2W1 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 988 ],
+    "children" : [ 211032, 52679 ]
+  }, {
+    "dbId" : 52649,
+    "stId" : "R-HSA-52649",
+    "displayName" : "CYP4A11 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q02928",
+    "geneNames" : [ "CYP4A11", "CYP4A2" ],
+    "parents" : [ 3222396, 3219417, 3222400, 2161611, 3229083 ]
+  }, {
+    "dbId" : 3229083,
+    "stId" : "R-HSA-3229083",
+    "displayName" : "Cytochrome P450 (CYP4F11 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1003 ],
+    "children" : [ 211051, 211037, 211016, 52649, 211013, 211056, 400116 ]
+  }, {
+    "dbId" : 1130942,
+    "stId" : "R-ALL-1130942",
+    "displayName" : "resveratrol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2541 ],
+    "identifier" : "27881"
+  }, {
+    "dbId" : 159154,
+    "stId" : "R-ALL-159154",
+    "displayName" : "TAM [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 423 ],
+    "identifier" : "41774"
+  }, {
+    "dbId" : 52659,
+    "stId" : "R-HSA-52659",
+    "displayName" : "CYP2A6 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11509",
+    "geneNames" : [ "CYP2A6", "CYP2A3" ],
+    "parents" : [ 2990860, 3222449, 3222321, 3219412 ]
+  }, {
+    "dbId" : 5580259,
+    "stId" : "R-HSA-5580259",
+    "displayName" : "CYP11A1:FDXR:FDX1,FDX1L (ox.) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1135 ],
+    "children" : [ 2395499, 193148, 2408370 ]
+  }, {
+    "dbId" : 193978,
+    "stId" : "R-HSA-193978",
+    "displayName" : "CYP11B1 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P15538",
+    "geneNames" : [ "CYP11B1", "S11BH" ],
+    "parents" : [ 3219421 ]
+  }, {
+    "dbId" : 65976,
+    "stId" : "R-HSA-65976",
+    "displayName" : "TBXAS1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 11 ],
+    "identifier" : "P24557",
+    "geneNames" : [ "TBXAS1", "CYP5", "CYP5A1" ]
+  }, {
+    "dbId" : 30138,
+    "stId" : "R-ALL-30138",
+    "displayName" : "PGH2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 9, 636 ],
+    "identifier" : "15554"
+  }, {
+    "dbId" : 193982,
+    "stId" : "R-ALL-193982",
+    "displayName" : "ALDO [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1197 ],
+    "identifier" : "27584"
+  }, {
+    "dbId" : 193988,
+    "stId" : "R-ALL-193988",
+    "displayName" : "11DCORST [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1162 ],
+    "identifier" : "16973"
+  }, {
+    "dbId" : 52679,
+    "stId" : "R-HSA-52679",
+    "displayName" : "CYP2D6 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10635",
+    "geneNames" : [ "CYP2D6", "CYP2DL1" ],
+    "parents" : [ 2990860, 3222363, 3219414, 3219409, 3215460, 3222379, 3229080 ]
+  }, {
+    "dbId" : 3229177,
+    "stId" : "R-HSA-3229177",
+    "displayName" : "Cytochrome P450 (CYP8B1 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1027 ],
+    "children" : [ 192012, 62410 ]
+  }, {
+    "dbId" : 52681,
+    "stId" : "R-HSA-52681",
+    "displayName" : "CYP2E1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05181",
+    "geneNames" : [ "CYP2E1", "CYP2E" ],
+    "parents" : [ 2990860, 3222363, 3219414, 3219427, 3222449, 3219409, 3222321, 3215460, 3219412 ]
+  }, {
+    "dbId" : 193998,
+    "stId" : "R-ALL-193998",
+    "displayName" : "11DCORT [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 67 ],
+    "identifier" : "28324"
+  }, {
+    "dbId" : 3229155,
+    "stId" : "R-HSA-3229155",
+    "displayName" : "Cytochrome P450 (CYP4F12 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1014 ],
+    "children" : [ 211015, 211016, 211050 ]
+  }, {
+    "dbId" : 194005,
+    "stId" : "R-ALL-194005",
+    "displayName" : "CORST [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1163 ],
+    "identifier" : "16827"
+  }, {
+    "dbId" : 194011,
+    "stId" : "R-ALL-194011",
+    "displayName" : "CORT [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 38 ],
+    "identifier" : "17650"
+  }, {
+    "dbId" : 2142713,
+    "stId" : "R-ALL-2142713",
+    "displayName" : "TrXA3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1265 ],
+    "identifier" : "15630"
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 96, 130, 131, 1287, 1128, 657, 562, 595, 341, 373, 2454, 89, 121, 90, 2394, 91, 1307, 92, 93, 30, 94, 95, 1279 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 194012,
+    "stId" : "R-ALL-194012",
+    "displayName" : "18HCORST [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1180 ],
+    "identifier" : "16485"
+  }, {
+    "dbId" : 216547,
+    "stId" : "R-ALL-216547",
+    "displayName" : "INDOL [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 383 ],
+    "identifier" : "16881"
+  }, {
+    "dbId" : 8936809,
+    "stId" : "R-HSA-8936809",
+    "displayName" : "NQO2:FAD [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8936530 ],
+    "children" : [ 29386, 2980908 ]
+  }, {
+    "dbId" : 194019,
+    "stId" : "R-HSA-194019",
+    "displayName" : "CYP11B2 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1173 ],
+    "identifier" : "P19099",
+    "geneNames" : [ "CYP11B2" ],
+    "parents" : [ 3219421 ]
+  }, {
+    "dbId" : 194028,
+    "stId" : "R-HSA-194028",
+    "displayName" : "CYP21A2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 68 ],
+    "identifier" : "P08686",
+    "geneNames" : [ "CYP21A2", "CYP21", "CYP21B" ]
+  }, {
+    "dbId" : 194037,
+    "stId" : "R-ALL-194037",
+    "displayName" : "11DCORST [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26 ],
+    "identifier" : "16973"
+  }, {
+    "dbId" : 39417,
+    "stId" : "R-ALL-39417",
+    "displayName" : "VC [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 311 ],
+    "identifier" : "28509"
+  }, {
+    "dbId" : 215545,
+    "stId" : "R-ALL-215545",
+    "displayName" : "19OH-PGH2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "63912"
+  }, {
+    "dbId" : 30203,
+    "stId" : "R-ALL-30203",
+    "displayName" : "EtOH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 574 ],
+    "identifier" : "16236"
+  }, {
+    "dbId" : 5696086,
+    "stId" : "R-HSA-5696086",
+    "displayName" : "ALDH1B1 tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1853 ],
+    "children" : [ 5696097 ]
+  }, {
+    "dbId" : 3229233,
+    "stId" : "R-HSA-3229233",
+    "displayName" : "Cytochrome P450 (CYPIIIA4 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1035 ],
+    "children" : [ 52639, 211020, 211030, 2980797 ]
+  }, {
+    "dbId" : 5688919,
+    "stId" : "R-HSA-5688919",
+    "displayName" : "AADAC [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1866 ],
+    "identifier" : "P22760",
+    "geneNames" : [ "AADAC", "DAC" ]
+  }, {
+    "dbId" : 39427,
+    "stId" : "R-ALL-39427",
+    "displayName" : "Acetaminophen (TN TYLENOL) [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 300 ],
+    "identifier" : "46195"
+  }, {
+    "dbId" : 215557,
+    "stId" : "R-ALL-215557",
+    "displayName" : "LTB4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1234 ],
+    "identifier" : "15647"
+  }, {
+    "dbId" : 192012,
+    "stId" : "R-HSA-192012",
+    "displayName" : "CYP8B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UNU6",
+    "geneNames" : [ "CYP8B1", "CYP12" ],
+    "parents" : [ 3229177, 3222410 ]
+  }, {
+    "dbId" : 9617026,
+    "stId" : "R-ALL-9617026",
+    "displayName" : "4CHOL7a,12a,27TONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2566 ],
+    "identifier" : "141628"
+  }, {
+    "dbId" : 193046,
+    "stId" : "R-ALL-193046",
+    "displayName" : "ISCAL [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 70 ],
+    "identifier" : "17998"
+  }, {
+    "dbId" : 216598,
+    "stId" : "R-ALL-216598",
+    "displayName" : "Oxindole [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 385 ],
+    "identifier" : "31697"
+  }, {
+    "dbId" : 215573,
+    "stId" : "R-ALL-215573",
+    "displayName" : "atRA [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 355 ],
+    "identifier" : "15367"
+  }, {
+    "dbId" : 193055,
+    "stId" : "R-ALL-193055",
+    "displayName" : "P4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 35 ],
+    "identifier" : "17026"
+  }, {
+    "dbId" : 215584,
+    "stId" : "R-ALL-215584",
+    "displayName" : "4OH-atRA [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 356 ],
+    "identifier" : "63795"
+  }, {
+    "dbId" : 216612,
+    "stId" : "R-ALL-216612",
+    "displayName" : "3,16DOH-PALM [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 390 ],
+    "identifier" : "63904"
+  }, {
+    "dbId" : 193066,
+    "stId" : "R-ALL-193066",
+    "displayName" : "E1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 25 ],
+    "identifier" : "17263"
+  }, {
+    "dbId" : 76328,
+    "stId" : "R-ALL-76328",
+    "displayName" : "COUM [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 206 ],
+    "identifier" : "28794"
+  }, {
+    "dbId" : 216621,
+    "stId" : "R-ALL-216621",
+    "displayName" : "3OH-PALM [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 389 ],
+    "identifier" : "37248"
+  }, {
+    "dbId" : 216620,
+    "stId" : "R-ALL-216620",
+    "displayName" : "19HETE [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 381 ],
+    "identifier" : "63998"
+  }, {
+    "dbId" : 8937144,
+    "stId" : "R-HSA-8937144",
+    "displayName" : "Aryl hydrocarbon receptor signalling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2547 ]
+  }, {
+    "dbId" : 215607,
+    "stId" : "R-ALL-215607",
+    "displayName" : "CTL [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 345 ],
+    "identifier" : "17823"
+  }, {
+    "dbId" : 193079,
+    "stId" : "R-ALL-193079",
+    "displayName" : "ANDST [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 63 ],
+    "identifier" : "16422"
+  }, {
+    "dbId" : 8937150,
+    "stId" : "R-HSA-8937150",
+    "displayName" : "AHR:TCDD [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8937203 ],
+    "children" : [ 8937190, 8937170 ]
+  }, {
+    "dbId" : 5696097,
+    "stId" : "R-HSA-5696097",
+    "displayName" : "ALDH1B1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30837",
+    "geneNames" : [ "ALDH1B1", "ALDH5", "ALDHX" ],
+    "parents" : [ 5696086 ]
+  }, {
+    "dbId" : 76342,
+    "stId" : "R-ALL-76342",
+    "displayName" : "e- [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 10 ],
+    "identifier" : "10545"
+  }, {
+    "dbId" : 193086,
+    "stId" : "R-ALL-193086",
+    "displayName" : "20a,22b-DHCHOL [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 37 ],
+    "identifier" : "1294"
+  }, {
+    "dbId" : 8876730,
+    "stId" : "R-ALL-8876730",
+    "displayName" : "LCFA(-) [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2546 ],
+    "identifier" : "57560"
+  }, {
+    "dbId" : 192060,
+    "stId" : "R-ALL-192060",
+    "displayName" : "24OH-CHOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 42, 154 ],
+    "identifier" : "34310"
+  }, {
+    "dbId" : 215622,
+    "stId" : "R-ALL-215622",
+    "displayName" : "CTLA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 347 ],
+    "identifier" : "63911"
+  }, {
+    "dbId" : 47687,
+    "stId" : "R-ALL-47687",
+    "displayName" : "ABPH [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 291 ],
+    "identifier" : "1784"
+  }, {
+    "dbId" : 376398,
+    "stId" : "R-HSA-376398",
+    "displayName" : "NCOA2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15596",
+    "geneNames" : [ "NCOA2", "BHLHE75", "SRC2", "TIF2" ],
+    "parents" : [ 5340274 ]
+  }, {
+    "dbId" : 193103,
+    "stId" : "R-ALL-193103",
+    "displayName" : "PREG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 60 ],
+    "identifier" : "16581"
+  }, {
+    "dbId" : 59988,
+    "stId" : "R-HSA-59988",
+    "displayName" : "POR [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2404 ],
+    "identifier" : "P16435",
+    "geneNames" : [ "POR", "CYPOR" ]
+  }, {
+    "dbId" : 8937170,
+    "stId" : "R-ALL-8937170",
+    "displayName" : "TCDD [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28119",
+    "parents" : [ 8937150 ]
+  }, {
+    "dbId" : 193119,
+    "stId" : "R-HSA-193119",
+    "displayName" : "CYP17A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 34 ],
+    "identifier" : "P05093",
+    "geneNames" : [ "CYP17A1", "CYP17", "S17AH" ]
+  }, {
+    "dbId" : 193124,
+    "stId" : "R-ALL-193124",
+    "displayName" : "17aHPREG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 56 ],
+    "identifier" : "28750"
+  }, {
+    "dbId" : 76396,
+    "stId" : "R-ALL-76396",
+    "displayName" : "NABQI [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 316 ],
+    "identifier" : "29132"
+  }, {
+    "dbId" : 8937190,
+    "stId" : "R-HSA-8937190",
+    "displayName" : "AHR [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35869",
+    "geneNames" : [ "AHR", "BHLHE76" ],
+    "parents" : [ 8937150 ]
+  }, {
+    "dbId" : 193132,
+    "stId" : "R-ALL-193132",
+    "displayName" : "EST17b [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 46 ],
+    "identifier" : "16469"
+  }, {
+    "dbId" : 192114,
+    "stId" : "R-ALL-192114",
+    "displayName" : "7 alpha-hydroxycholesterol [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 52 ],
+    "identifier" : "17500"
+  }, {
+    "dbId" : 192115,
+    "stId" : "R-HSA-192115",
+    "displayName" : "CYP27A1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 61 ],
+    "identifier" : "Q02318",
+    "geneNames" : [ "CYP27A1", "CYP27" ]
+  }, {
+    "dbId" : 30321,
+    "stId" : "R-ALL-30321",
+    "displayName" : "TES [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 393, 186 ],
+    "identifier" : "17347"
+  }, {
+    "dbId" : 2142802,
+    "stId" : "R-HSA-2142802",
+    "displayName" : "CYP2U1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 697 ],
+    "identifier" : "Q7Z449",
+    "geneNames" : [ "CYP2U1" ]
+  }, {
+    "dbId" : 193137,
+    "stId" : "R-HSA-193137",
+    "displayName" : "CYP19A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 62 ],
+    "identifier" : "P11511",
+    "geneNames" : [ "CYP19A1", "ARO1", "CYAR", "CYP19" ]
+  }, {
+    "dbId" : 192117,
+    "stId" : "R-HSA-192117",
+    "displayName" : "CYP7B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75881",
+    "geneNames" : [ "CYP7B1" ],
+    "parents" : [ 3219435, 2975806 ]
+  }, {
+    "dbId" : 904823,
+    "stId" : "R-ALL-904823",
+    "displayName" : "Cu2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28694",
+    "parents" : [ 5696130, 5696173 ]
+  }, {
+    "dbId" : 8937203,
+    "stId" : "R-HSA-8937203",
+    "displayName" : "AHR:TCDD:ARNT [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2522 ],
+    "children" : [ 8936837, 8937150 ]
+  }, {
+    "dbId" : 193148,
+    "stId" : "R-HSA-193148",
+    "displayName" : "CYP11A1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05108",
+    "geneNames" : [ "CYP11A1", "CYP11A" ],
+    "parents" : [ 5580259, 5580249 ]
+  }, {
+    "dbId" : 76424,
+    "stId" : "R-ALL-76424",
+    "displayName" : "Paraxanthine [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 285 ],
+    "identifier" : "25858"
+  }, {
+    "dbId" : 192136,
+    "stId" : "R-ALL-192136",
+    "displayName" : "4CHOL7aOLONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 124 ],
+    "identifier" : "17899"
+  }, {
+    "dbId" : 193164,
+    "stId" : "R-ALL-193164",
+    "displayName" : "PREG [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 40 ],
+    "identifier" : "16581"
+  }, {
+    "dbId" : 76433,
+    "stId" : "R-ALL-76433",
+    "displayName" : "Trichloromethyl radical [endoplasmic reticulum lumen]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 307 ]
+  }, {
+    "dbId" : 54929,
+    "stId" : "R-HSA-54929",
+    "displayName" : "FMO3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31513",
+    "geneNames" : [ "FMO3" ],
+    "parents" : [ 217276 ]
+  }, {
+    "dbId" : 192148,
+    "stId" : "R-ALL-192148",
+    "displayName" : "25OH-CHOL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 27 ],
+    "identifier" : "42977"
+  }, {
+    "dbId" : 140963,
+    "stId" : "R-ALL-140963",
+    "displayName" : "TMAO [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 419 ],
+    "identifier" : "15724"
+  }, {
+    "dbId" : 192166,
+    "stId" : "R-HSA-192166",
+    "displayName" : "CYP39A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 66 ],
+    "identifier" : "Q9NYL5",
+    "geneNames" : [ "CYP39A1" ]
+  }, {
+    "dbId" : 30373,
+    "stId" : "R-ALL-30373",
+    "displayName" : "TMA [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 421 ],
+    "identifier" : "18139"
+  }, {
+    "dbId" : 76452,
+    "stId" : "R-ALL-76452",
+    "displayName" : "HCOU [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 222 ],
+    "identifier" : "27510"
+  }, {
+    "dbId" : 1981115,
+    "stId" : "R-ALL-1981115",
+    "displayName" : "Fe2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 8957354 ]
+  }, {
+    "dbId" : 76455,
+    "stId" : "R-ALL-76455",
+    "displayName" : "DEXT [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 616 ],
+    "identifier" : "29133"
+  }, {
+    "dbId" : 192169,
+    "stId" : "R-HSA-192169",
+    "displayName" : "CYP7A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22680",
+    "geneNames" : [ "CYP7A1", "CYP7" ],
+    "parents" : [ 3219435, 2975806 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2560, 577, 1219, 2565, 454, 1862, 136, 73, 137, 74, 75, 77, 461, 78, 79, 80, 1874, 2450, 1303, 2391, 1882, 1118, 1322, 2543, 49, 625, 1266, 118, 376 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 563, 2456, 1291, 591 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 29362,
+    "stId" : "R-ALL-29362",
+    "displayName" : "NADH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 560 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 97, 98, 99, 100, 132, 2532, 101, 133, 102, 2406, 103, 104, 1130, 655, 116, 342, 374, 24, 2396, 1277, 1309 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2400, 65, 1281, 134, 1126, 2534, 135, 2408, 81, 82, 83, 659, 84, 85, 86, 87, 119, 88, 344, 377, 1311 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 128, 129, 449, 105, 106, 107, 459, 108, 1132, 109, 653, 110, 111, 112, 343, 375, 123, 1275, 2398, 31 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 76473,
+    "stId" : "R-ALL-76473",
+    "displayName" : "TFAC [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 302 ],
+    "identifier" : "29138"
+  }, {
+    "dbId" : 216762,
+    "stId" : "R-ALL-216762",
+    "displayName" : "CHOL [transport vesicle membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2545 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 192184,
+    "stId" : "R-ALL-192184",
+    "displayName" : "CHOL3b,7a,25TRIOL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 29 ],
+    "identifier" : "37623"
+  }, {
+    "dbId" : 76474,
+    "stId" : "R-ALL-76474",
+    "displayName" : "HBr [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 312 ],
+    "identifier" : "47266"
+  }, {
+    "dbId" : 29374,
+    "stId" : "R-ALL-29374",
+    "displayName" : "CoA-SH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 575 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 192189,
+    "stId" : "R-ALL-192189",
+    "displayName" : "CHOL7a,24(S)DIOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 53 ],
+    "identifier" : "37640"
+  }, {
+    "dbId" : 111294,
+    "stId" : "R-ALL-111294",
+    "displayName" : "PPi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 581 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 5696150,
+    "stId" : "R-HSA-5696150",
+    "displayName" : "AOC2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1733 ],
+    "identifier" : "O75106",
+    "geneNames" : [ "AOC2" ]
+  }, {
+    "dbId" : 5696151,
+    "stId" : "R-HSA-5696151",
+    "displayName" : "AOC3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16853",
+    "geneNames" : [ "AOC3", "VAP1" ],
+    "parents" : [ 5696156 ]
+  }, {
+    "dbId" : 192195,
+    "stId" : "R-ALL-192195",
+    "displayName" : "4CHOL7a,12aDONE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 120 ],
+    "identifier" : "28477"
+  }, {
+    "dbId" : 5696148,
+    "stId" : "R-ALL-5696148",
+    "displayName" : "BZAM [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1736 ],
+    "identifier" : "40538"
+  }, {
+    "dbId" : 29382,
+    "stId" : "R-ALL-29382",
+    "displayName" : "NH3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 450, 455, 456 ],
+    "identifier" : "16134"
+  }, {
+    "dbId" : 192202,
+    "stId" : "R-HSA-192202",
+    "displayName" : "CYP46A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 69 ],
+    "identifier" : "Q9Y6A2",
+    "geneNames" : [ "CYP46A1", "CYP46" ]
+  }, {
+    "dbId" : 29386,
+    "stId" : "R-ALL-29386",
+    "displayName" : "FAD [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 8936809 ]
+  }, {
+    "dbId" : 5696156,
+    "stId" : "R-HSA-5696156",
+    "displayName" : "AOC3 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5696173 ],
+    "children" : [ 5696151 ]
+  }, {
+    "dbId" : 5696154,
+    "stId" : "R-ALL-5696154",
+    "displayName" : "BZAL [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1737 ],
+    "identifier" : "17169"
+  }, {
+    "dbId" : 5696130,
+    "stId" : "R-HSA-5696130",
+    "displayName" : "AOC1 dimer:2xCu2+:4xCa2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1728 ],
+    "children" : [ 904823, 140648, 2889048 ]
+  }, {
+    "dbId" : 5696128,
+    "stId" : "R-ALL-5696128",
+    "displayName" : "I4AH [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1727 ],
+    "identifier" : "27398"
+  }, {
+    "dbId" : 5694080,
+    "stId" : "R-ALL-5694080",
+    "displayName" : "BaP4,5O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1321 ],
+    "identifier" : "34560"
+  }, {
+    "dbId" : 159450,
+    "stId" : "R-ALL-159450",
+    "displayName" : "PPi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 576 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 159448,
+    "stId" : "R-ALL-159448",
+    "displayName" : "adenosine 5'-monophosphate [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 583 ],
+    "identifier" : "16027"
+  }, {
+    "dbId" : 5694091,
+    "stId" : "R-ALL-5694091",
+    "displayName" : "BaP4,5-DHD [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1323 ],
+    "identifier" : "81621"
+  }, {
+    "dbId" : 109276,
+    "stId" : "R-ALL-109276",
+    "displayName" : "H2O [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1731, 1735, 1722 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 29408,
+    "stId" : "R-ALL-29408",
+    "displayName" : "H2O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 451, 457, 458 ],
+    "identifier" : "16240"
+  }, {
+    "dbId" : 5694132,
+    "stId" : "R-HSA-5694132",
+    "displayName" : "EPHX1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1324 ],
+    "identifier" : "P07099",
+    "geneNames" : [ "EPHX1", "EPHX", "EPOX" ]
+  }, {
+    "dbId" : 5696181,
+    "stId" : "R-ALL-5696181",
+    "displayName" : "TYR [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1730 ],
+    "identifier" : "15760"
+  }, {
+    "dbId" : 5696178,
+    "stId" : "R-ALL-5696178",
+    "displayName" : "4HPAA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1732 ],
+    "identifier" : "15621"
+  }, {
+    "dbId" : 29416,
+    "stId" : "R-ALL-29416",
+    "displayName" : "CH3COO- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 573 ],
+    "identifier" : "15366"
+  }, {
+    "dbId" : 2022135,
+    "stId" : "R-ALL-2022135",
+    "displayName" : "NH3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1794, 1796, 1724 ],
+    "identifier" : "16134"
+  }, {
+    "dbId" : 400116,
+    "stId" : "R-HSA-400116",
+    "displayName" : "CYP4A22 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5TCH4",
+    "geneNames" : [ "CYP4A22" ],
+    "parents" : [ 3219417, 3222396, 3222400, 2161611, 3229083 ]
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 5692218, 71693, 71754, 71705, 71703, 71748, 71701, 71714, 71698, 71696 ]
+  }, {
+    "dbId" : 5688995,
+    "stId" : "R-ALL-5688995",
+    "displayName" : "4-ethoxyaniline [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1865 ],
+    "identifier" : "85505"
+  }, {
+    "dbId" : 390899,
+    "stId" : "R-ALL-390899",
+    "displayName" : "Hist [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1723 ],
+    "identifier" : "18295"
+  }, {
+    "dbId" : 5689006,
+    "stId" : "R-ALL-5689006",
+    "displayName" : "PHEN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1863 ],
+    "identifier" : "8050"
+  }, {
+    "dbId" : 163579,
+    "stId" : "R-ALL-163579",
+    "displayName" : "CHEST [lipid droplet]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2544 ],
+    "identifier" : "17002"
+  }, {
+    "dbId" : 5696173,
+    "stId" : "R-HSA-5696173",
+    "displayName" : "AOC3 dimer:2xCu2+:4xCa2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1738 ],
+    "children" : [ 904823, 140648, 5696156 ]
+  }, {
+    "dbId" : 2429659,
+    "stId" : "R-HSA-2429659",
+    "displayName" : "CES1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23141",
+    "geneNames" : [ "CES1", "CES2", "SES1" ],
+    "parents" : [ 5693667 ]
+  }, {
+    "dbId" : 5689001,
+    "stId" : "R-ALL-5689001",
+    "displayName" : "acetyl group [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1864 ],
+    "identifier" : "40574"
+  }, {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 593, 567, 1289, 2458 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 3222321,
+    "stId" : "R-HSA-3222321",
+    "displayName" : "Cytochrome P450 (CYP2F1 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 839 ],
+    "children" : [ 211054, 211022, 2980785, 211055, 211017, 52681, 211034, 52659, 211009, 211042, 211010 ]
+  }, {
+    "dbId" : 3222327,
+    "stId" : "R-HSA-3222327",
+    "displayName" : "Cytochrome P450 (CYP2C18 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 857 ],
+    "children" : [ 211035, 211055, 2980785, 211017, 211009 ]
+  }, {
+    "dbId" : 5362520,
+    "stId" : "R-ALL-5362520",
+    "displayName" : "9cRA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1117 ],
+    "identifier" : "50648"
+  }, {
+    "dbId" : 5362524,
+    "stId" : "R-ALL-5362524",
+    "displayName" : "4OH-9cRA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1119 ],
+    "identifier" : "63802"
+  }, {
+    "dbId" : 33549,
+    "stId" : "R-ALL-33549",
+    "displayName" : "DDCX [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 163 ],
+    "identifier" : "30805"
+  }, {
+    "dbId" : 5692249,
+    "stId" : "R-ALL-5692249",
+    "displayName" : "S-FGSH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1284 ],
+    "identifier" : "16225"
+  }, {
+    "dbId" : 5692229,
+    "stId" : "R-HSA-5692229",
+    "displayName" : "ADH5:2xZn2+ dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1285 ],
+    "children" : [ 5692218 ]
+  }, {
+    "dbId" : 29460,
+    "stId" : "R-ALL-29460",
+    "displayName" : "HCOOH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 57, 153 ],
+    "identifier" : "30751"
+  }, {
+    "dbId" : 40727,
+    "stId" : "R-ALL-40727",
+    "displayName" : "CAF [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 290 ],
+    "identifier" : "27732"
+  }, {
+    "dbId" : 39703,
+    "stId" : "R-ALL-39703",
+    "displayName" : "DEXM [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 614 ],
+    "identifier" : "4470"
+  }, {
+    "dbId" : 29468,
+    "stId" : "R-ALL-29468",
+    "displayName" : "L-Arg [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2451 ],
+    "identifier" : "32682"
+  }, {
+    "dbId" : 5692235,
+    "stId" : "R-HSA-5692235",
+    "displayName" : "ADH5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11766",
+    "geneNames" : [ "ADH5", "ADHX", "FDH" ],
+    "parents" : [ 5692218 ]
+  }, {
+    "dbId" : 76577,
+    "stId" : "R-ALL-76577",
+    "displayName" : "AMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 557 ],
+    "identifier" : "16027"
+  }, {
+    "dbId" : 2990860,
+    "stId" : "R-HSA-2990860",
+    "displayName" : "Cytochrome P450 (CYP2E1 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 663 ],
+    "children" : [ 52681, 211054, 2980785, 211055, 211017, 211034, 52679, 52659, 211009, 211042, 211010 ]
+  }, {
+    "dbId" : 5362528,
+    "stId" : "R-HSA-5362528",
+    "displayName" : "CYP26A1,B1,C1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1041 ],
+    "children" : [ 211039, 211045, 211025 ]
+  }, {
+    "dbId" : 8937418,
+    "stId" : "R-ALL-8937418",
+    "displayName" : "DOXOL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2528 ],
+    "identifier" : "133817"
+  }, {
+    "dbId" : 29510,
+    "stId" : "R-ALL-29510",
+    "displayName" : "CH3CHO [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 556 ],
+    "identifier" : "15343"
+  }, {
+    "dbId" : 3222393,
+    "stId" : "R-HSA-3222393",
+    "displayName" : "Cytochrome P450 (CYP4F8 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 926 ],
+    "children" : [ 211050, 211016, 211015 ]
+  }, {
+    "dbId" : 8937409,
+    "stId" : "R-HSA-8937409",
+    "displayName" : "CBR3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2529 ],
+    "identifier" : "O75828",
+    "geneNames" : [ "CBR3" ]
+  }, {
+    "dbId" : 5603102,
+    "stId" : "R-HSA-5603102",
+    "displayName" : "SMOX-3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1220 ],
+    "identifier" : "Q9NWM0-3",
+    "geneNames" : [ "SMOX", "C20orf16", "SMO", "UNQ3039/PRO9854" ]
+  }, {
+    "dbId" : 266056,
+    "stId" : "R-ALL-266056",
+    "displayName" : "LTB4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 624 ],
+    "identifier" : "15647"
+  }, {
+    "dbId" : 3222396,
+    "stId" : "R-HSA-3222396",
+    "displayName" : "Cytochrome P450 (CYP4A11 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 937 ],
+    "children" : [ 52649, 211037, 211016, 211051, 211013, 211056, 400116 ]
+  }, {
+    "dbId" : 8937424,
+    "stId" : "R-ALL-8937424",
+    "displayName" : "DOX [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2527 ],
+    "identifier" : "28748"
+  }, {
+    "dbId" : 3222379,
+    "stId" : "R-HSA-3222379",
+    "displayName" : "Cytochrome P450 (CYP2J2 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 893 ],
+    "children" : [ 211022, 211054, 211034, 52679, 211010, 211042 ]
+  }, {
+    "dbId" : 40795,
+    "stId" : "R-ALL-40795",
+    "displayName" : "HALO [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 298 ],
+    "identifier" : "5615"
+  }, {
+    "dbId" : 8936424,
+    "stId" : "R-HSA-8936424",
+    "displayName" : "MARC2:Mo-MPT [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8936430 ],
+    "children" : [ 8936438, 8936418 ]
+  }, {
+    "dbId" : 8936425,
+    "stId" : "R-HSA-8936425",
+    "displayName" : "MARC1:Mo-MPT [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8936430 ],
+    "children" : [ 8936438, 8936417 ]
+  }, {
+    "dbId" : 8936430,
+    "stId" : "R-HSA-8936430",
+    "displayName" : "MARC1:Mo-MPT:MARC2:Mo-MPT:CYB5B:CYB5R3 [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2452 ],
+    "children" : [ 8943390, 8936425, 198771, 8936424 ]
+  }, {
+    "dbId" : 156522,
+    "stId" : "R-ALL-156522",
+    "displayName" : "AFB1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 212 ],
+    "identifier" : "2504"
+  }, {
+    "dbId" : 31593,
+    "stId" : "R-ALL-31593",
+    "displayName" : "PGI2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "15552"
+  }, {
+    "dbId" : 8936417,
+    "stId" : "R-HSA-8936417",
+    "displayName" : "MARC1 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5VT66",
+    "geneNames" : [ "MARC1", "MOSC1" ],
+    "parents" : [ 8936425 ]
+  }, {
+    "dbId" : 8937441,
+    "stId" : "R-HSA-8937441",
+    "displayName" : "CES3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2540 ],
+    "identifier" : "Q6UWW8",
+    "geneNames" : [ "CES3", "UNQ869/PRO1887" ]
+  }, {
+    "dbId" : 156523,
+    "stId" : "R-ALL-156523",
+    "displayName" : "AFXBO [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 226 ],
+    "identifier" : "30725"
+  }, {
+    "dbId" : 193384,
+    "stId" : "R-ALL-193384",
+    "displayName" : "CHOL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 115, 59 ],
+    "identifier" : "16113"
+  }, {
+    "dbId" : 3222363,
+    "stId" : "R-HSA-3222363",
+    "displayName" : "Cytochrome P450 (CYP2C19 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 874 ],
+    "children" : [ 211055, 211054, 2980785, 211017, 211034, 52681, 211035, 52679, 211009, 211010, 211042 ]
+  }, {
+    "dbId" : 8936418,
+    "stId" : "R-HSA-8936418",
+    "displayName" : "MARC2 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q969Z3",
+    "geneNames" : [ "MARC2", "MOSC2" ],
+    "parents" : [ 8936424 ]
+  }, {
+    "dbId" : 5692221,
+    "stId" : "R-ALL-5692221",
+    "displayName" : "S-HMGSH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1283 ],
+    "identifier" : "48926"
+  }, {
+    "dbId" : 5692218,
+    "stId" : "R-HSA-5692218",
+    "displayName" : "ADH5:2xZn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5692229 ],
+    "children" : [ 5692235, 29426 ]
+  }, {
+    "dbId" : 156524,
+    "stId" : "R-ALL-156524",
+    "displayName" : "2CEO [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 299 ],
+    "identifier" : "29129"
+  }, {
+    "dbId" : 113519,
+    "stId" : "R-ALL-113519",
+    "displayName" : "H2O [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 384, 387, 260, 261, 262, 263, 327, 391, 264, 328, 265, 329, 266, 267, 268, 13, 269, 270, 209, 1235, 156, 287, 1314, 165, 293, 357, 167, 680, 170, 427, 303, 436, 437, 631, 378, 380 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 561, 148, 149, 1221, 346, 1164, 1198 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 8936443,
+    "stId" : "R-ALL-8936443",
+    "displayName" : "NOHA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2449 ],
+    "identifier" : "47823"
+  }, {
+    "dbId" : 113526,
+    "stId" : "R-ALL-113526",
+    "displayName" : "NAD+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 558 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 500607,
+    "stId" : "R-ALL-500607",
+    "displayName" : "Phenylacetaldehyde [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 464 ],
+    "identifier" : "16424"
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1232, 1170, 1202, 582, 363, 141, 142, 1214 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 500606,
+    "stId" : "R-ALL-500606",
+    "displayName" : "TYR [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 452 ],
+    "identifier" : "15760"
+  }, {
+    "dbId" : 500605,
+    "stId" : "R-ALL-500605",
+    "displayName" : "PEA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 463 ],
+    "identifier" : "18397"
+  }, {
+    "dbId" : 500604,
+    "stId" : "R-ALL-500604",
+    "displayName" : "5HIALD [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 462 ],
+    "identifier" : "50157"
+  }, {
+    "dbId" : 113533,
+    "stId" : "R-ALL-113533",
+    "displayName" : "O2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 144, 1168, 1200, 145, 50, 1218, 361 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 141183,
+    "stId" : "R-HSA-141183",
+    "displayName" : "MAOA [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21397",
+    "geneNames" : [ "MAOA" ],
+    "parents" : [ 141332 ]
+  }, {
+    "dbId" : 113532,
+    "stId" : "R-ALL-113532",
+    "displayName" : "CH3CHO [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 578 ],
+    "identifier" : "15343"
+  }, {
+    "dbId" : 113535,
+    "stId" : "R-ALL-113535",
+    "displayName" : "O2 [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 486, 487, 475 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 8936438,
+    "stId" : "R-ALL-8936438",
+    "displayName" : "Mo-MPT [mitochondrial outer membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "21437",
+    "parents" : [ 8936425, 8936424 ]
+  }, {
+    "dbId" : 156540,
+    "stId" : "R-ALL-156540",
+    "displayName" : "H+ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 256, 257, 194, 258, 259, 334, 335, 336, 20, 406, 407, 408, 409, 410, 283, 159, 1248, 1319, 297, 428, 432, 433, 370, 308, 182, 183, 184, 249, 250, 634, 251, 252, 253, 254, 255 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 113534,
+    "stId" : "R-ALL-113534",
+    "displayName" : "O2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 320, 321, 2, 396, 397, 398, 399, 400, 218, 282, 416, 161, 227, 228, 1252, 229, 230, 231, 232, 296, 233, 234, 235, 236, 364, 173, 237, 174, 430, 622, 175, 431, 306, 440, 319 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 3222449,
+    "stId" : "R-HSA-3222449",
+    "displayName" : "Cytochrome P450 (CYP2A13 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 968 ],
+    "children" : [ 211034, 211022, 211054, 211055, 211017, 52681, 52659, 211009, 211010, 211042 ]
+  }, {
+    "dbId" : 113539,
+    "stId" : "R-ALL-113539",
+    "displayName" : "CH3COO- [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 569 ],
+    "identifier" : "30089"
+  }, {
+    "dbId" : 29572,
+    "stId" : "R-ALL-29572",
+    "displayName" : "Cl- [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 305 ],
+    "identifier" : "17996"
+  }, {
+    "dbId" : 428931,
+    "stId" : "R-HSA-428931",
+    "displayName" : "PTGS1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23219",
+    "geneNames" : [ "PTGS1", "COX1" ],
+    "parents" : [ 428986 ]
+  }, {
+    "dbId" : 500608,
+    "stId" : "R-ALL-500608",
+    "displayName" : "HPHAC [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 453 ],
+    "identifier" : "15621"
+  }, {
+    "dbId" : 141194,
+    "stId" : "R-HSA-141194",
+    "displayName" : "MAOB [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P27338",
+    "geneNames" : [ "MAOB" ],
+    "parents" : [ 141326 ]
+  }, {
+    "dbId" : 209800,
+    "stId" : "R-ALL-209800",
+    "displayName" : "1,25(OH)2D [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 349 ],
+    "identifier" : "17823"
+  }, {
+    "dbId" : 211855,
+    "stId" : "R-ALL-211855",
+    "displayName" : "TBM [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 193 ],
+    "identifier" : "27999"
+  }, {
+    "dbId" : 209804,
+    "stId" : "R-ALL-209804",
+    "displayName" : "25(OH)D [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 339 ],
+    "identifier" : "17933"
+  }, {
+    "dbId" : 2408372,
+    "stId" : "R-HSA-2408372",
+    "displayName" : "FDX1,FDX1L (red.) [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5580249 ],
+    "children" : [ 2395503, 2395507 ]
+  }, {
+    "dbId" : 2980797,
+    "stId" : "R-HSA-2980797",
+    "displayName" : "CYP3A43 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 678 ],
+    "identifier" : "Q9HB55",
+    "geneNames" : [ "CYP3A43" ],
+    "parents" : [ 3219430, 3229233, 3219438 ]
+  }, {
+    "dbId" : 113555,
+    "stId" : "R-ALL-113555",
+    "displayName" : "H2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 309 ],
+    "identifier" : "18276"
+  }, {
+    "dbId" : 561052,
+    "stId" : "R-ALL-561052",
+    "displayName" : "ACV [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1876 ],
+    "identifier" : "2453"
+  }, {
+    "dbId" : 8963870,
+    "stId" : "R-ALL-8963870",
+    "displayName" : "VD3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2563 ],
+    "identifier" : "28940"
+  }, {
+    "dbId" : 2408370,
+    "stId" : "R-HSA-2408370",
+    "displayName" : "FDX1,FDX1L (ox.) [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5580259 ],
+    "children" : [ 2395505, 2395509 ]
+  }, {
+    "dbId" : 8943390,
+    "stId" : "R-HSA-8943390",
+    "displayName" : "CYB5B [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43169",
+    "geneNames" : [ "CYB5B", "CYB5M", "OMB5" ],
+    "parents" : [ 8936430 ]
+  }, {
+    "dbId" : 113559,
+    "stId" : "R-ALL-113559",
+    "displayName" : "Ac-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 568 ],
+    "identifier" : "15351"
+  }, {
+    "dbId" : 113563,
+    "stId" : "R-ALL-113563",
+    "displayName" : "NADP+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 150, 1206, 151, 360, 1225, 1166 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 2980785,
+    "stId" : "R-HSA-2980785",
+    "displayName" : "CYP2S1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 676 ],
+    "identifier" : "Q96SQ9",
+    "geneNames" : [ "CYP2S1", "UNQ891/PRO1906" ],
+    "parents" : [ 2990860, 3222363, 3219414, 3219427, 3222327, 3222321, 3215460 ]
+  }, {
+    "dbId" : 113564,
+    "stId" : "R-ALL-113564",
+    "displayName" : "NADP+ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 330, 332, 333, 271, 272, 273, 401, 274, 402, 19, 275, 403, 276, 404, 277, 405, 278, 279, 280, 281, 284, 221, 1246, 162, 294, 422, 685, 366, 176, 177, 178, 310, 438, 439 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 6784964,
+    "stId" : "R-ALL-6784964",
+    "displayName" : "VACV [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1875 ],
+    "identifier" : "35854"
+  }, {
+    "dbId" : 113575,
+    "stId" : "R-ALL-113575",
+    "displayName" : "H2O2 [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 481, 482, 473 ],
+    "identifier" : "16240"
+  }, {
+    "dbId" : 5692409,
+    "stId" : "R-ALL-5692409",
+    "displayName" : "4HPCP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1302 ],
+    "identifier" : "196991"
+  }, {
+    "dbId" : 6784968,
+    "stId" : "R-HSA-6784968",
+    "displayName" : "BPHL [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1877 ],
+    "identifier" : "Q86WA6",
+    "geneNames" : [ "BPHL", "MCNAA" ]
+  }, {
+    "dbId" : 8963879,
+    "stId" : "R-ALL-8963879",
+    "displayName" : "25(OH)D [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2564 ],
+    "identifier" : "17933"
+  }, {
+    "dbId" : 3222400,
+    "stId" : "R-HSA-3222400",
+    "displayName" : "Cytochrome P450 (CYP4F3 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1237 ],
+    "children" : [ 211037, 211016, 52649, 211051, 211013, 211056, 400116 ]
+  }, {
+    "dbId" : 4755453,
+    "stId" : "R-ALL-4755453",
+    "displayName" : "CDCA [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16755",
+    "parents" : [ 5340249 ]
+  }, {
+    "dbId" : 211894,
+    "stId" : "R-ALL-211894",
+    "displayName" : "HPTXL [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 198 ],
+    "identifier" : "63859"
+  }, {
+    "dbId" : 211892,
+    "stId" : "R-ALL-211892",
+    "displayName" : "Losec [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 210 ],
+    "identifier" : "7772"
+  }, {
+    "dbId" : 40887,
+    "stId" : "R-ALL-40887",
+    "displayName" : "CCl4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 304 ],
+    "identifier" : "27385"
+  }, {
+    "dbId" : 113593,
+    "stId" : "R-ALL-113593",
+    "displayName" : "ATP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 572 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 559 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 571314,
+    "stId" : "R-ALL-571314",
+    "displayName" : "20OH-LTB4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1236 ],
+    "identifier" : "15646"
+  }, {
+    "dbId" : 3222410,
+    "stId" : "R-HSA-3222410",
+    "displayName" : "PTGIS,CYP8B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 954 ],
+    "children" : [ 62410, 192012 ]
+  }, {
+    "dbId" : 5602281,
+    "stId" : "R-ALL-5602281",
+    "displayName" : "20OH-TrXA3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1267 ],
+    "identifier" : "83782"
+  }, {
+    "dbId" : 428986,
+    "stId" : "R-HSA-428986",
+    "displayName" : "PTGS1 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 632 ],
+    "children" : [ 2311355, 428931 ]
+  }, {
+    "dbId" : 29630,
+    "stId" : "R-ALL-29630",
+    "displayName" : "PhOH [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 314 ],
+    "identifier" : "15882"
+  }, {
+    "dbId" : 113601,
+    "stId" : "R-ALL-113601",
+    "displayName" : "NADPH [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 322, 323, 324, 325, 204, 22, 411, 412, 413, 414, 415, 160, 289, 418, 1250, 295, 238, 239, 240, 368, 241, 242, 434, 179, 243, 435, 180, 244, 181, 245, 246, 247, 248, 318 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 211906,
+    "stId" : "R-ALL-211906",
+    "displayName" : "PTXL [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 223 ],
+    "identifier" : "45863"
+  }, {
+    "dbId" : 113600,
+    "stId" : "R-ALL-113600",
+    "displayName" : "NADPH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1216, 1172, 1204, 1223, 138, 362, 139 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 2161636,
+    "stId" : "R-ALL-2161636",
+    "displayName" : "20OH-LTB4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 626 ],
+    "identifier" : "15646"
+  }, {
+    "dbId" : 62410,
+    "stId" : "R-HSA-62410",
+    "displayName" : "PTGIS [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16647",
+    "geneNames" : [ "PTGIS", "CYP8", "CYP8A1" ],
+    "parents" : [ 3229177, 3222410 ]
+  }, {
+    "dbId" : 3219427,
+    "stId" : "R-HSA-3219427",
+    "displayName" : "Cytochrome P450 (CYP2B6 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 793 ],
+    "children" : [ 211010, 211022, 211054, 2980785, 211055, 211017, 211034, 52681, 211009, 211042 ]
+  }, {
+    "dbId" : 211927,
+    "stId" : "R-ALL-211927",
+    "displayName" : "HPHT [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 225 ],
+    "identifier" : "63804"
+  }, {
+    "dbId" : 5692291,
+    "stId" : "R-HSA-5692291",
+    "displayName" : "ALDH3A1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1305 ],
+    "identifier" : "P30838",
+    "geneNames" : [ "ALDH3A1", "ALDH3" ]
+  }, {
+    "dbId" : 3219430,
+    "stId" : "R-HSA-3219430",
+    "displayName" : "Cytochrome P450 (CYP3A5 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 812 ],
+    "children" : [ 211020, 52639, 211030, 2980797 ]
+  }, {
+    "dbId" : 3219435,
+    "stId" : "R-HSA-3219435",
+    "displayName" : "Cytochrome P450 (CYP7A1 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 829 ],
+    "children" : [ 192169, 192117 ]
+  }, {
+    "dbId" : 3219438,
+    "stId" : "R-HSA-3219438",
+    "displayName" : "Cytochrome P450 (CYP3A7 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 838 ],
+    "children" : [ 211030, 211020, 52639, 2980797 ]
+  }, {
+    "dbId" : 31711,
+    "stId" : "R-ALL-31711",
+    "displayName" : "C6H6 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 313 ],
+    "identifier" : "16716"
+  }, {
+    "dbId" : 3219409,
+    "stId" : "R-HSA-3219409",
+    "displayName" : "Cytochrome P450 (CYP2D6 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 706 ],
+    "children" : [ 52679, 211022, 211055, 211032, 211017, 52681, 211009 ]
+  }, {
+    "dbId" : 211939,
+    "stId" : "R-ALL-211939",
+    "displayName" : "Phenytoin [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 213 ],
+    "identifier" : "8107"
+  }, {
+    "dbId" : 211937,
+    "stId" : "R-ALL-211937",
+    "displayName" : "HTOLB [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 185 ],
+    "identifier" : "63799"
+  }, {
+    "dbId" : 3219412,
+    "stId" : "R-HSA-3219412",
+    "displayName" : "Cytochrome P450 (CYP2A3 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 724 ],
+    "children" : [ 52659, 211054, 52681, 211034, 211042 ]
+  }, {
+    "dbId" : 3219414,
+    "stId" : "R-HSA-3219414",
+    "displayName" : "Cytochrome P450 (CYP2C9 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 740 ],
+    "children" : [ 211017, 211054, 2980785, 211055, 211034, 52681, 211035, 52679, 211009, 211010, 211042 ]
+  }, {
+    "dbId" : 3219417,
+    "stId" : "R-HSA-3219417",
+    "displayName" : "Cytochrome P450 (CYP4B1 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 759 ],
+    "children" : [ 211013, 211037, 211016, 52649, 211051, 211056, 400116 ]
+  }, {
+    "dbId" : 211944,
+    "stId" : "R-ALL-211944",
+    "displayName" : "HOMZ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 220 ],
+    "identifier" : "63840"
+  }, {
+    "dbId" : 2161611,
+    "stId" : "R-HSA-2161611",
+    "displayName" : "Cytochrome P450 (CYP4F2/4F3 based) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 912 ],
+    "children" : [ 211037, 211016, 211050, 52649, 211051, 211013, 211056, 400116 ]
+  }, {
+    "dbId" : 3219421,
+    "stId" : "R-HSA-3219421",
+    "displayName" : "Cytochrome P450 (CYP11B1 based) [mitochondrial inner membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 771 ],
+    "children" : [ 193978, 194019 ]
+  }, {
+    "dbId" : 211952,
+    "stId" : "R-ALL-211952",
+    "displayName" : "HDBQ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 197 ],
+    "identifier" : "63800"
+  }, {
+    "dbId" : 209914,
+    "stId" : "R-ALL-209914",
+    "displayName" : "5HT [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 460 ],
+    "identifier" : "28790"
+  }, {
+    "dbId" : 211967,
+    "stId" : "R-ALL-211967",
+    "displayName" : "HCPM [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 191 ],
+    "identifier" : "1864"
+  } ],
+  "edges" : [ {
+    "dbId" : 141186,
+    "stId" : "R-HSA-141186",
+    "displayName" : "MAOA:FAD oxidatively deaminates of 5HT",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 209914, 29368 ],
+    "outputs" : [ 500604, 29382, 29408 ],
+    "catalysts" : [ 141332 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2559 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76416,
+    "stId" : "R-HSA-76416",
+    "displayName" : "Benzene is hydroxylated to phenol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 31711, 156540, 113601 ],
+    "outputs" : [ 113519, 29630, 113564 ],
+    "catalysts" : [ 2990860 ],
+    "efs" : [ ],
+    "diagramIds" : [ 530 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211968,
+    "stId" : "R-HSA-211968",
+    "displayName" : "CYP2W1 oxidises INDOL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 113601, 216547 ],
+    "outputs" : [ 113519, 113564, 216598 ],
+    "catalysts" : [ 3229080 ],
+    "efs" : [ ],
+    "diagramIds" : [ 542 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71691,
+    "stId" : "R-HSA-71691",
+    "displayName" : "acetaldehyde + NAD+ => acetate + NADH + H+ [cytosolic]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71707 ],
+    "following" : [ 71735 ],
+    "inputs" : [ 29356, 29510, 29360 ],
+    "outputs" : [ 70106, 29416, 73473 ],
+    "catalysts" : [ 71689 ],
+    "efs" : [ ],
+    "diagramIds" : [ 584 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76426,
+    "stId" : "R-HSA-76426",
+    "displayName" : "N-atom dealkylation of caffeine",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 40727, 113601 ],
+    "outputs" : [ 143501, 113519, 113564, 76424 ],
+    "catalysts" : [ 52625 ],
+    "efs" : [ ],
+    "diagramIds" : [ 526 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211983,
+    "stId" : "R-HSA-211983",
+    "displayName" : "CYP2J2 oxidises ARA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 140356, 113601 ],
+    "outputs" : [ 113519, 113564, 215062 ],
+    "catalysts" : [ 3222379 ],
+    "efs" : [ ],
+    "diagramIds" : [ 509 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696091,
+    "stId" : "R-HSA-5696091",
+    "displayName" : "ALDH1B1 tetramer oxidises CH3CHO to CH3COOH",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113532, 113526, 113521 ],
+    "outputs" : [ 113529, 29362, 113539 ],
+    "catalysts" : [ 5696086 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1851 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 141202,
+    "stId" : "R-HSA-141202",
+    "displayName" : "MAOB:FAD oxidatively deaminates TYR",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 500606, 29368 ],
+    "outputs" : [ 500608, 29382, 29408 ],
+    "catalysts" : [ 141326 ],
+    "efs" : [ ],
+    "diagramIds" : [ 552 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 141200,
+    "stId" : "R-HSA-141200",
+    "displayName" : "MAOB:FAD oxidatively deaminates of PEA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 500605, 29368 ],
+    "outputs" : [ 500607, 29382, 29408 ],
+    "catalysts" : [ 141326 ],
+    "efs" : [ ],
+    "diagramIds" : [ 550 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76434,
+    "stId" : "R-HSA-76434",
+    "displayName" : "Dehalogenation of carbon tetrachloride to form a free radical",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 40887 ],
+    "outputs" : [ 29572, 76433 ],
+    "catalysts" : [ 2990860 ],
+    "efs" : [ ],
+    "diagramIds" : [ 533 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211991,
+    "stId" : "R-HSA-211991",
+    "displayName" : "Cyclophosphamide is 4-hydroxylated by CYP2B6",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 211977, 113601 ],
+    "outputs" : [ 113519, 113564, 211967 ],
+    "catalysts" : [ 3219427 ],
+    "efs" : [ ],
+    "diagramIds" : [ 517 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211988,
+    "stId" : "R-HSA-211988",
+    "displayName" : "CYP2C9 inactivates tolbutamide by 4methyl-hydroxylation",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 211855, 113601 ],
+    "outputs" : [ 113519, 113564, 211937 ],
+    "catalysts" : [ 3219414 ],
+    "efs" : [ ],
+    "diagramIds" : [ 523 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71707,
+    "stId" : "R-HSA-71707",
+    "displayName" : "ethanol + NAD+ => acetaldehyde + NADH + H+",
+    "schemaClass" : "Reaction",
+    "following" : [ 71691, 449872 ],
+    "inputs" : [ 30203, 29360 ],
+    "outputs" : [ 70106, 29510, 73473 ],
+    "catalysts" : [ 449883 ],
+    "efs" : [ ],
+    "diagramIds" : [ 588 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5692237,
+    "stId" : "R-HSA-5692237",
+    "displayName" : "ADH5 oxidises S-HMGSH to S-FGSH",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5692221, 29360 ],
+    "outputs" : [ 5692249, 70106, 73473 ],
+    "catalysts" : [ 5692229 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1282 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 141341,
+    "stId" : "R-HSA-141341",
+    "displayName" : "SMOX-3 oxidises SPN to SPM",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113535, 141343, 141342 ],
+    "outputs" : [ 141324, 113575, 141328 ],
+    "catalysts" : [ 5603102 ],
+    "efs" : [ ],
+    "diagramIds" : [ 554 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192157,
+    "stId" : "R-HSA-192157",
+    "displayName" : "CYP8B1 12-hydroxylates 4CHOL7aOLONE",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 192136, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 192195 ],
+    "catalysts" : [ 3229177 ],
+    "efs" : [ ],
+    "diagramIds" : [ 508 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211874,
+    "stId" : "R-HSA-211874",
+    "displayName" : "CYP2S1 4-hydroxylates atRA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 215573, 113601 ],
+    "outputs" : [ 113519, 113564, 215584 ],
+    "catalysts" : [ 2980785 ],
+    "efs" : [ ],
+    "diagramIds" : [ 540 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211873,
+    "stId" : "R-HSA-211873",
+    "displayName" : "CYP4F2, 4F3 20-hydroxylate LTB4",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 266056, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 2161636 ],
+    "catalysts" : [ 2161611 ],
+    "efs" : [ ],
+    "diagramIds" : [ 491 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5602295,
+    "stId" : "R-HSA-5602295",
+    "displayName" : "CYP4F22 20-hydroxylates TrXA3",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 2142713, 29368, 29364 ],
+    "outputs" : [ 5602281, 29356, 29366 ],
+    "catalysts" : [ 211056 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1264 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 212007,
+    "stId" : "R-HSA-212007",
+    "displayName" : "CYP26A1,B1 4-hydroxylate atRA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 215573, 113601 ],
+    "outputs" : [ 113519, 113564, 215584 ],
+    "catalysts" : [ 5362528 ],
+    "efs" : [ ],
+    "diagramIds" : [ 539 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76453,
+    "stId" : "R-HSA-76453",
+    "displayName" : "Coumarin is 7-hydroxylated by CYP2A6",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 76328, 113601 ],
+    "outputs" : [ 113519, 113564, 76452 ],
+    "catalysts" : [ 3219412 ],
+    "efs" : [ ],
+    "diagramIds" : [ 522 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 217255,
+    "stId" : "R-HSA-217255",
+    "displayName" : "FMO1:FAD N-oxidises TAM",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 113601, 159154 ],
+    "outputs" : [ 113519, 113564, 217269 ],
+    "catalysts" : [ 217261 ],
+    "efs" : [ ],
+    "diagramIds" : [ 545 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 141351,
+    "stId" : "R-HSA-141351",
+    "displayName" : "PAOX:FAD oxidises NASPN to SPM",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113535, 141343, 141323 ],
+    "outputs" : [ 141324, 141327, 113575 ],
+    "catalysts" : [ 141346 ],
+    "efs" : [ ],
+    "diagramIds" : [ 553 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193060,
+    "stId" : "R-HSA-193060",
+    "displayName" : "CYP19A1 hydroxylates ANDST to E1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 29368, 193079, 29364 ],
+    "outputs" : [ 29356, 193066, 29366, 29460 ],
+    "catalysts" : [ 193137 ],
+    "efs" : [ ],
+    "diagramIds" : [ 505 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 141348,
+    "stId" : "R-HSA-141348",
+    "displayName" : "PAO:FAD oxidises NASPM to PTCN",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113535, 141343, 141349 ],
+    "outputs" : [ 141327, 113575, 141350 ],
+    "catalysts" : [ 141346 ],
+    "efs" : [ ],
+    "diagramIds" : [ 555 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 212005,
+    "stId" : "R-HSA-212005",
+    "displayName" : "CYP2F1 dehydrogenates 3-methylindole",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 213162, 113601 ],
+    "outputs" : [ 113519, 113564, 213163 ],
+    "catalysts" : [ 3222321 ],
+    "efs" : [ ],
+    "diagramIds" : [ 516 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 212004,
+    "stId" : "R-HSA-212004",
+    "displayName" : "CYP2C18 initiates bioactivation of phenytoin by 4-hydroxylation",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 113601, 211939 ],
+    "outputs" : [ 113519, 113564, 211927 ],
+    "catalysts" : [ 3222327 ],
+    "efs" : [ ],
+    "diagramIds" : [ 519 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 217258,
+    "stId" : "R-HSA-217258",
+    "displayName" : "FMO2:FAD:Mg2+ S-oxidises MTZ",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 113601, 217315 ],
+    "outputs" : [ 113519, 113564, 217320 ],
+    "catalysts" : [ 217317 ],
+    "efs" : [ ],
+    "diagramIds" : [ 546 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211882,
+    "stId" : "R-HSA-211882",
+    "displayName" : "CYP3A7 can 6beta-hydroxylate testosterone",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 30321, 113601 ],
+    "outputs" : [ 113519, 113564, 213144 ],
+    "catalysts" : [ 3219438 ],
+    "efs" : [ ],
+    "diagramIds" : [ 521 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76456,
+    "stId" : "R-HSA-76456",
+    "displayName" : "O-atom dealkylation of dextromethorphan",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 39703, 113601 ],
+    "outputs" : [ 143501, 113519, 113564, 76455 ],
+    "catalysts" : [ 3219409 ],
+    "efs" : [ ],
+    "diagramIds" : [ 613 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71723,
+    "stId" : "R-HSA-71723",
+    "displayName" : "acetaldehyde + NAD+ => acetate + NADH + H+ [mitochondrial]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 449872 ],
+    "following" : [ 449911 ],
+    "inputs" : [ 113532, 113526, 113521 ],
+    "outputs" : [ 113529, 29362, 113539 ],
+    "catalysts" : [ 71721 ],
+    "efs" : [ ],
+    "diagramIds" : [ 586 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211881,
+    "stId" : "R-HSA-211881",
+    "displayName" : "Coumarin is 7-hydroxylated by CYP2A13",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 76328, 113601 ],
+    "outputs" : [ 113519, 113564, 76452 ],
+    "catalysts" : [ 3222449 ],
+    "efs" : [ ],
+    "diagramIds" : [ 524 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5694077,
+    "stId" : "R-HSA-5694077",
+    "displayName" : "EPHX1 hydrates BaP4,5O to BaP4,5-DHD",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 5694080 ],
+    "outputs" : [ 5694091 ],
+    "catalysts" : [ 5694132 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1320 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5693691,
+    "stId" : "R-HSA-5693691",
+    "displayName" : "CES1 trimer.CES2 hydrolyse COCN to BEG",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113519, 5693702 ],
+    "outputs" : [ 156540, 5693711, 5693712 ],
+    "catalysts" : [ 5693688 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1312 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5692283,
+    "stId" : "R-HSA-5692283",
+    "displayName" : "ALD3A1 oxidises 4HPCP to CXPA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5692409, 29356, 29366 ],
+    "outputs" : [ 70106, 5692433, 29364 ],
+    "catalysts" : [ 5692291 ],
+    "efs" : [ ],
+    "activators" : [ 8937203 ],
+    "diagramIds" : [ 1301 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193964,
+    "stId" : "R-HSA-193964",
+    "displayName" : "CYP21A2 21-hydroxylates PROG",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 193055, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 194037, 29366 ],
+    "catalysts" : [ 194028 ],
+    "efs" : [ ],
+    "diagramIds" : [ 496 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193068,
+    "stId" : "R-HSA-193068",
+    "displayName" : "CYP17A1 17-hydroxylates PREG",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 193103, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 193124 ],
+    "catalysts" : [ 193119 ],
+    "efs" : [ ],
+    "diagramIds" : [ 504 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193709,
+    "stId" : "R-HSA-193709",
+    "displayName" : "CYP8B1 12-hydroxylates 4CHOL7a,24(S)DIOL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 193724, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 193745 ],
+    "catalysts" : [ 3229177 ],
+    "efs" : [ ],
+    "diagramIds" : [ 507 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193965,
+    "stId" : "R-HSA-193965",
+    "displayName" : "CYP11B2 oxidises 18HCORST to ALDO",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 193995 ],
+    "inputs" : [ 194012, 113533, 113529, 113600 ],
+    "outputs" : [ 193982, 113563, 113521 ],
+    "catalysts" : [ 194019 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1196 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192178,
+    "stId" : "R-HSA-192178",
+    "displayName" : "CYP39A1 7-hydroxylates 24OH-CHOL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 192060, 70106, 29368, 29364 ],
+    "outputs" : [ 192189, 29356, 29366 ],
+    "catalysts" : [ 192166 ],
+    "efs" : [ ],
+    "diagramIds" : [ 497 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192051,
+    "stId" : "R-HSA-192051",
+    "displayName" : "CYP7A1 7-hydroxylates CHOL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 193384, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 192114 ],
+    "catalysts" : [ 3219435 ],
+    "efs" : [ ],
+    "inhibitors" : [ 5340274 ],
+    "diagramIds" : [ 495 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76466,
+    "stId" : "R-HSA-76466",
+    "displayName" : "CYP4A11 12-hydroxylates DDCX",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 33549, 113601 ],
+    "outputs" : [ 113519, 113564, 42373 ],
+    "catalysts" : [ 3222396 ],
+    "efs" : [ ],
+    "diagramIds" : [ 510 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 213175,
+    "stId" : "R-HSA-213175",
+    "displayName" : "CYP3A4,5 oxidise AFB1 to AFXBO",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 156522, 113601 ],
+    "outputs" : [ 113519, 113564, 156523 ],
+    "catalysts" : [ 3219430 ],
+    "efs" : [ ],
+    "diagramIds" : [ 515 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 71735,
+    "stId" : "R-HSA-71735",
+    "displayName" : "acetate + CoA + ATP => acetyl-CoA + AMP + pyrophosphate [cytosolic]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71691 ],
+    "inputs" : [ 113592, 29416, 76194 ],
+    "outputs" : [ 111294, 76183, 76577 ],
+    "catalysts" : [ 71733 ],
+    "efs" : [ ],
+    "diagramIds" : [ 585 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 209845,
+    "stId" : "R-HSA-209845",
+    "displayName" : "CYP2R1 25-hydroxylates VD3 to 25(OH)D",
+    "schemaClass" : "Reaction",
+    "following" : [ 209868 ],
+    "inputs" : [ 70106, 29368, 8963870, 29364 ],
+    "outputs" : [ 8963879, 29356, 29366 ],
+    "catalysts" : [ 209941 ],
+    "efs" : [ ],
+    "diagramIds" : [ 534 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193845,
+    "stId" : "R-HSA-193845",
+    "displayName" : "CYP8B1 12-hydroxylates 4CHOL7a,27DONE",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 193835, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 9617026 ],
+    "catalysts" : [ 3229177 ],
+    "efs" : [ ],
+    "diagramIds" : [ 506 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76472,
+    "stId" : "R-HSA-76472",
+    "displayName" : "Ethylene is oxidized to Ethylene oxide by CYP1A1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 38985, 113601 ],
+    "outputs" : [ 113519, 113564, 38987 ],
+    "catalysts" : [ 52623 ],
+    "efs" : [ ],
+    "activators" : [ 8937203 ],
+    "diagramIds" : [ 518 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76475,
+    "stId" : "R-HSA-76475",
+    "displayName" : "Dehalogenation of the poly-halogenated hydrocarbon Halothane to form the acylhalide Trifluoroacetlychloride and  hydrogen bromide",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 40795, 113601 ],
+    "outputs" : [ 113519, 113564, 76474, 76473 ],
+    "catalysts" : [ 2990860 ],
+    "efs" : [ ],
+    "diagramIds" : [ 532 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192061,
+    "stId" : "R-HSA-192061",
+    "displayName" : "CYP46A1 24-hydroxylates CHOL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 193384, 29368, 29364 ],
+    "outputs" : [ 192060, 29356, 29366 ],
+    "catalysts" : [ 192202 ],
+    "efs" : [ ],
+    "diagramIds" : [ 493 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139970,
+    "stId" : "R-HSA-139970",
+    "displayName" : "FMO3:FAD N-oxidises TMA to TMAO",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 30373, 113601 ],
+    "outputs" : [ 113519, 113564, 140963 ],
+    "catalysts" : [ 217276 ],
+    "efs" : [ ],
+    "diagramIds" : [ 547 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 140355,
+    "stId" : "R-HSA-140355",
+    "displayName" : "Arachidonic acid is oxidised to PGG2 by PTGS1",
+    "schemaClass" : "Reaction",
+    "following" : [ 140359 ],
+    "inputs" : [ 113534, 140356 ],
+    "outputs" : [ 140357 ],
+    "catalysts" : [ 428986 ],
+    "efs" : [ ],
+    "diagramIds" : [ 549 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76354,
+    "stId" : "R-HSA-76354",
+    "displayName" : "Vinyl chloride is oxidized to 2-Chloroethylene oxide",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 39417, 113601 ],
+    "outputs" : [ 156524, 113519, 113564 ],
+    "catalysts" : [ 2990860 ],
+    "efs" : [ ],
+    "diagramIds" : [ 528 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192065,
+    "stId" : "R-HSA-192065",
+    "displayName" : "CYP7B1 7-hydroxylates 25OH-CHOL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 29368, 192148, 29364 ],
+    "outputs" : [ 29356, 192184, 29366 ],
+    "catalysts" : [ 2975806 ],
+    "efs" : [ ],
+    "inhibitors" : [ 5340274 ],
+    "diagramIds" : [ 499 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211904,
+    "stId" : "R-HSA-211904",
+    "displayName" : "CYP4F12 18-hydroxylates ARA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 140356, 113601 ],
+    "outputs" : [ 113519, 113564, 352318 ],
+    "catalysts" : [ 3229155 ],
+    "efs" : [ ],
+    "diagramIds" : [ 512 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8937419,
+    "stId" : "R-HSA-8937419",
+    "displayName" : "CBR3 reduces DOX to DOXOL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8937424, 29364 ],
+    "outputs" : [ 29366, 8937418 ],
+    "catalysts" : [ 8937409 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2526 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696146,
+    "stId" : "R-HSA-5696146",
+    "displayName" : "AOC2 deaminates TYR",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 5696181, 352327 ],
+    "outputs" : [ 351626, 2022135, 351629, 5696178 ],
+    "catalysts" : [ 5696150 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1729 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211910,
+    "stId" : "R-HSA-211910",
+    "displayName" : "CYP2C8 inactivates paclitaxel by 6alpha-hydroxylation",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 211906, 113601 ],
+    "outputs" : [ 113519, 113564, 211894 ],
+    "catalysts" : [ 3215460 ],
+    "efs" : [ ],
+    "diagramIds" : [ 513 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 140359,
+    "stId" : "R-HSA-140359",
+    "displayName" : "PGG2 is reduced to PGH2 by PTGS1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 140355 ],
+    "following" : [ 76500, 76496 ],
+    "inputs" : [ 156540, 76342, 140357 ],
+    "outputs" : [ 113519, 30138 ],
+    "catalysts" : [ 428986 ],
+    "efs" : [ ],
+    "diagramIds" : [ 548 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193995,
+    "stId" : "R-HSA-193995",
+    "displayName" : "CYP11B2 18-hydroxylates CORST to 18HCORST",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 194017 ],
+    "following" : [ 193965 ],
+    "inputs" : [ 113533, 113529, 194005, 113600 ],
+    "outputs" : [ 194012, 113563, 113521 ],
+    "catalysts" : [ 194019 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1211 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211919,
+    "stId" : "R-HSA-211919",
+    "displayName" : "CYP4F8 19-hydroxylates PGH2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 30138, 113601 ],
+    "outputs" : [ 113519, 113564, 215545 ],
+    "catalysts" : [ 3222393 ],
+    "efs" : [ ],
+    "diagramIds" : [ 488 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193101,
+    "stId" : "R-HSA-193101",
+    "displayName" : "CYP11A1 cleaves 20a,22b-DHCHOL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5580249, 113533, 193086, 113529, 113600 ],
+    "outputs" : [ 193164, 113563, 5580259, 193046, 113521 ],
+    "catalysts" : [ 5580249 ],
+    "efs" : [ ],
+    "diagramIds" : [ 502 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8936519,
+    "stId" : "R-HSA-8936519",
+    "displayName" : "NQO2:FAD dimer reduces quinones to hydroquinones",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8936516, 8936520 ],
+    "outputs" : [ 8936514, 8936507 ],
+    "catalysts" : [ 8936530 ],
+    "efs" : [ ],
+    "inhibitors" : [ 209934, 1130942 ],
+    "diagramIds" : [ 2461 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 209868,
+    "stId" : "R-HSA-209868",
+    "displayName" : "CYP27B1 hydroxylates 25(OH)D to 1,25(OH)2D",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 209845 ],
+    "inputs" : [ 209804, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 209800, 29366 ],
+    "catalysts" : [ 209979 ],
+    "efs" : [ ],
+    "diagramIds" : [ 536 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76494,
+    "stId" : "R-HSA-76494",
+    "displayName" : "POR reduces CYP450:Fe3+ to CYP450:Fe2+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8957351, 29364 ],
+    "outputs" : [ 29366, 8957354 ],
+    "catalysts" : [ 59988 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2401 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 193997,
+    "stId" : "R-HSA-193997",
+    "displayName" : "CYP11B1 oxidises 11DCORT",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113533, 193998, 113529, 113600 ],
+    "outputs" : [ 113563, 194011, 113521 ],
+    "catalysts" : [ 3219421 ],
+    "efs" : [ ],
+    "activators" : [ 1502544 ],
+    "diagramIds" : [ 494 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211923,
+    "stId" : "R-HSA-211923",
+    "displayName" : "CYP26C1 4-hydroxylates 9cRA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 5362520, 29368, 29364 ],
+    "outputs" : [ 5362524, 29356, 29366 ],
+    "catalysts" : [ 211025 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1116 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76496,
+    "stId" : "R-HSA-76496",
+    "displayName" : "PTGIS, CYP8A1 isomerise PGH2 to PGI2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 140359 ],
+    "inputs" : [ 30138 ],
+    "outputs" : [ 31593 ],
+    "catalysts" : [ 3222410 ],
+    "efs" : [ ],
+    "diagramIds" : [ 489 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76373,
+    "stId" : "R-HSA-76373",
+    "displayName" : "N-hydroxylation of 4-aminobiphenyl",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 47687, 113601 ],
+    "outputs" : [ 113519, 113564, 34889 ],
+    "catalysts" : [ 52625 ],
+    "efs" : [ ],
+    "diagramIds" : [ 527 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696131,
+    "stId" : "R-HSA-5696131",
+    "displayName" : "AOC1 deaminates Hist",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 390899, 352327 ],
+    "outputs" : [ 351626, 2022135, 351629, 5696128 ],
+    "catalysts" : [ 5696130 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1720 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76500,
+    "stId" : "R-HSA-76500",
+    "displayName" : "TBXAS1 isomerises PGH2 to TXA2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 140359 ],
+    "inputs" : [ 30138 ],
+    "outputs" : [ 32879 ],
+    "catalysts" : [ 65976 ],
+    "efs" : [ ],
+    "diagramIds" : [ 490 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 449872,
+    "stId" : "R-HSA-449872",
+    "displayName" : "acetaldehyde [cytosolic] => acetaldehyde [mitochondrial]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71707 ],
+    "following" : [ 71723 ],
+    "inputs" : [ 29510 ],
+    "outputs" : [ 113532 ],
+    "efs" : [ ],
+    "diagramIds" : [ 589 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211924,
+    "stId" : "R-HSA-211924",
+    "displayName" : "CYP4B1 12-hydroxylates ARA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 140356, 113601 ],
+    "outputs" : [ 113519, 113564, 215075 ],
+    "catalysts" : [ 3219417 ],
+    "efs" : [ ],
+    "diagramIds" : [ 511 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6784959,
+    "stId" : "R-HSA-6784959",
+    "displayName" : "BPHL hydrolyses VACV to ACV",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 6784964 ],
+    "outputs" : [ 29702, 561052 ],
+    "catalysts" : [ 6784968 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1873 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6786239,
+    "stId" : "R-HSA-6786239",
+    "displayName" : "CYP4V2 omega-hydroxylates DHA to HDoHE",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 6786220, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 6786225 ],
+    "catalysts" : [ 6786215 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2388 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211929,
+    "stId" : "R-HSA-211929",
+    "displayName" : "CYP2C19 5-hydroxylates omeprazole",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 211892, 113601 ],
+    "outputs" : [ 113519, 113564, 211944 ],
+    "catalysts" : [ 3222363 ],
+    "efs" : [ ],
+    "diagramIds" : [ 520 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696183,
+    "stId" : "R-HSA-5696183",
+    "displayName" : "AOC3 deaminates BZAM",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 352327, 5696148 ],
+    "outputs" : [ 351626, 5696154, 2022135, 351629 ],
+    "catalysts" : [ 5696173 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1734 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194017,
+    "stId" : "R-HSA-194017",
+    "displayName" : "CYP11B2 oxidises 11DCORST to CORST",
+    "schemaClass" : "Reaction",
+    "following" : [ 193995 ],
+    "inputs" : [ 113533, 113529, 193988, 113600 ],
+    "outputs" : [ 113563, 194005, 113521 ],
+    "catalysts" : [ 194019 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1161 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 215526,
+    "stId" : "R-HSA-215526",
+    "displayName" : "CYP4F3 20-hydroxylates LTB4",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 215557, 113601 ],
+    "outputs" : [ 113519, 113564, 571314 ],
+    "catalysts" : [ 3222400 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1233 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6786190,
+    "stId" : "R-HSA-6786190",
+    "displayName" : "CMBL hydrolyses OM to OLMS",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 6786175 ],
+    "outputs" : [ 6786194, 6786179 ],
+    "catalysts" : [ 6786204 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1880 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8937442,
+    "stId" : "R-HSA-8937442",
+    "displayName" : "CES3 hydrolyses CHEST to CHOL and LCFA(-)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 163579 ],
+    "outputs" : [ 8876730, 216762 ],
+    "catalysts" : [ 8937441 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2535 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76397,
+    "stId" : "R-HSA-76397",
+    "displayName" : "Acetaminophen oxidised to N-acetylbenzoquinoneimine (NAPQI)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 113564, 39427, 113555 ],
+    "outputs" : [ 113519, 76396, 113601 ],
+    "catalysts" : [ 2990860 ],
+    "efs" : [ ],
+    "diagramIds" : [ 529 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211951,
+    "stId" : "R-HSA-211951",
+    "displayName" : "CYP1B1 4-hydroxylates EST17b",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 193132, 70106, 29368, 29364 ],
+    "outputs" : [ 29356, 29366, 211973 ],
+    "catalysts" : [ 211021 ],
+    "efs" : [ ],
+    "activators" : [ 8937203 ],
+    "diagramIds" : [ 498 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211950,
+    "stId" : "R-HSA-211950",
+    "displayName" : "CYP24A1 24-hydroxylates CTL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113533, 113529, 215607, 113600 ],
+    "outputs" : [ 113563, 215622, 113521 ],
+    "catalysts" : [ 209969 ],
+    "efs" : [ ],
+    "diagramIds" : [ 535 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 143468,
+    "stId" : "R-HSA-143468",
+    "displayName" : "MEOS oxidizes ethanol to acetaldehyde",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 113748, 113601 ],
+    "outputs" : [ 113519, 113564, 113745 ],
+    "catalysts" : [ 2990860 ],
+    "efs" : [ ],
+    "diagramIds" : [ 531 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211948,
+    "stId" : "R-HSA-211948",
+    "displayName" : "CYP3A4 can N-demethylate loperamide",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 113601, 213155 ],
+    "outputs" : [ 113519, 113564, 213151 ],
+    "catalysts" : [ 3229233 ],
+    "efs" : [ ],
+    "diagramIds" : [ 525 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 449911,
+    "stId" : "R-HSA-449911",
+    "displayName" : "acetate + CoA + ATP => acetyl-CoA + AMP + pyrophosphate [mitochondrial]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71723 ],
+    "inputs" : [ 29374, 113593, 113539 ],
+    "outputs" : [ 159448, 159450, 113559 ],
+    "catalysts" : [ 449914 ],
+    "efs" : [ ],
+    "diagramIds" : [ 587 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8936442,
+    "stId" : "R-HSA-8936442",
+    "displayName" : "MARC1,MARC2 reduce N-hydroxylated compounds",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 8936443, 73473 ],
+    "outputs" : [ 29356, 29468, 29360 ],
+    "catalysts" : [ 8936430 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2448 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194678,
+    "stId" : "R-HSA-194678",
+    "displayName" : "CYP51A1 demethylates LNSOL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 70106, 29368, 194634, 29364 ],
+    "outputs" : [ 29356, 29366, 194644, 29460 ],
+    "catalysts" : [ 194721 ],
+    "efs" : [ ],
+    "diagramIds" : [ 500 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211959,
+    "stId" : "R-HSA-211959",
+    "displayName" : "CYP3A43 6b-hydroxylates TEST",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 30321, 113601 ],
+    "outputs" : [ 113519, 113564, 213144 ],
+    "catalysts" : [ 2980797 ],
+    "efs" : [ ],
+    "diagramIds" : [ 543 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 192123,
+    "stId" : "R-HSA-192123",
+    "displayName" : "CYP27A1 27-hydroxylates CHOL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113533, 113529, 193840, 113600 ],
+    "outputs" : [ 113563, 193846, 113521 ],
+    "catalysts" : [ 192115 ],
+    "efs" : [ ],
+    "diagramIds" : [ 501 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211962,
+    "stId" : "R-HSA-211962",
+    "displayName" : "CYP4F11 16-hydroxylates 3OH-PALM",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 216621, 113601 ],
+    "outputs" : [ 113519, 113564, 216612 ],
+    "catalysts" : [ 3229083 ],
+    "efs" : [ ],
+    "diagramIds" : [ 544 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211960,
+    "stId" : "R-HSA-211960",
+    "displayName" : "CYP2U1 19-hydroxylates ARA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 140356, 113601 ],
+    "outputs" : [ 216620, 113519, 113564 ],
+    "catalysts" : [ 2142802 ],
+    "efs" : [ ],
+    "diagramIds" : [ 541 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 211966,
+    "stId" : "R-HSA-211966",
+    "displayName" : "CYP2D6 4-hydroxylates debrisoquine",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113534, 156540, 211993, 113601 ],
+    "outputs" : [ 113519, 113564, 211952 ],
+    "catalysts" : [ 3219409 ],
+    "efs" : [ ],
+    "diagramIds" : [ 514 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5689000,
+    "stId" : "R-HSA-5689000",
+    "displayName" : "AADAC deacetylates PHEN",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 5689006 ],
+    "outputs" : [ 5689001, 5688995 ],
+    "catalysts" : [ 5688919 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1861 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 211999,
+    "stId" : "R-HSA-211999",
+    "displayName" : "CYP2E1 reactions",
+    "events" : [ 76416, 76434, 76354, 76475, 76397, 143468 ]
+  }, {
+    "dbId" : 217271,
+    "stId" : "R-HSA-217271",
+    "displayName" : "FMO oxidises nucleophiles",
+    "events" : [ 139970, 217255, 217258 ]
+  }, {
+    "dbId" : 211935,
+    "stId" : "R-HSA-211935",
+    "displayName" : "Fatty acids",
+    "events" : [ 76466, 211904, 211924, 211983 ]
+  }, {
+    "dbId" : 211976,
+    "stId" : "R-HSA-211976",
+    "displayName" : "Endogenous sterols",
+    "events" : [ 192061, 192123, 193845, 193709, 192157, 6786239, 194678, 192051, 192178, 193965, 193997, 193101, 193964, 193068, 211951, 193995, 193060, 194017, 192065 ]
+  }, {
+    "dbId" : 140180,
+    "stId" : "R-HSA-140180",
+    "displayName" : "COX reactions",
+    "events" : [ 140355, 140359 ]
+  }, {
+    "dbId" : 211981,
+    "stId" : "R-HSA-211981",
+    "displayName" : "Xenobiotics",
+    "events" : [ 76453, 211910, 212005, 212004, 76456, 211882, 211881, 211948, 211991, 213175, 76373, 76426, 211988, 76472, 211929, 76416, 76434, 76354, 76475, 76397, 143468, 211966 ]
+  }, {
+    "dbId" : 211979,
+    "stId" : "R-HSA-211979",
+    "displayName" : "Eicosanoids",
+    "events" : [ 76496, 211873, 5602295, 215526, 76500, 211919 ]
+  }, {
+    "dbId" : 71384,
+    "stId" : "R-HSA-71384",
+    "displayName" : "Ethanol oxidation",
+    "events" : [ 449911, 449872, 71735, 71707, 71723, 71691, 5692237, 5696091 ]
+  }, {
+    "dbId" : 211897,
+    "stId" : "R-HSA-211897",
+    "displayName" : "Cytochrome P450 - arranged by substrate type",
+    "events" : [ 211874, 211968, 211959, 211962, 211960, 76496, 211873, 5602295, 215526, 76500, 211919, 192061, 192123, 193845, 193709, 192157, 6786239, 194678, 192051, 192178, 193965, 193997, 193101, 193964, 193068, 211951, 193995, 193060, 194017, 192065, 76466, 211904, 211924, 211983, 76453, 211910, 212005, 212004, 76456, 211882, 211881, 211948, 211991, 213175, 76373, 76426, 211988, 76472, 211929, 76416, 76434, 76354, 76475, 76397, 143468, 211966, 76494, 211923, 212007, 209845, 211950, 209868 ]
+  }, {
+    "dbId" : 141334,
+    "stId" : "R-HSA-141334",
+    "displayName" : "PAOs oxidise polyamines to amines",
+    "events" : [ 141351, 141348, 141341 ]
+  }, {
+    "dbId" : 211994,
+    "stId" : "R-HSA-211994",
+    "displayName" : "Sterols are 12-hydroxylated by CYP8B1",
+    "events" : [ 193845, 193709, 192157 ]
+  }, {
+    "dbId" : 140179,
+    "stId" : "R-HSA-140179",
+    "displayName" : "Amine Oxidase reactions",
+    "events" : [ 141351, 141348, 141341, 141202, 141186, 141200 ]
+  }, {
+    "dbId" : 211957,
+    "stId" : "R-HSA-211957",
+    "displayName" : "Aromatic amines can be N-hydroxylated or N-dealkylated by CYP1A2",
+    "events" : [ 76373, 76426 ]
+  }, {
+    "dbId" : 211958,
+    "stId" : "R-HSA-211958",
+    "displayName" : "Miscellaneous substrates",
+    "events" : [ 211874, 211968, 211959, 211962, 211960 ]
+  }, {
+    "dbId" : 211916,
+    "stId" : "R-HSA-211916",
+    "displayName" : "Vitamins",
+    "events" : [ 211923, 212007, 209845, 211950, 209868 ]
+  }, {
+    "dbId" : 141333,
+    "stId" : "R-HSA-141333",
+    "displayName" : "Biogenic amines are oxidatively deaminated to aldehydes by MAOA and MAOB",
+    "events" : [ 141202, 141186, 141200 ]
+  } ]
+}

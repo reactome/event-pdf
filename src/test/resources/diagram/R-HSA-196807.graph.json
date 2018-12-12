@@ -1,0 +1,1409 @@
+{
+  "dbId" : 196807,
+  "stId" : "R-HSA-196807",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 8878982,
+    "stId" : "R-ALL-8878982",
+    "displayName" : "ATP(4-) [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3679 ],
+    "identifier" : "30616"
+  }, {
+    "dbId" : 8878981,
+    "stId" : "R-ALL-8878981",
+    "displayName" : "PPi(3-) [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3680 ],
+    "identifier" : "33019"
+  }, {
+    "dbId" : 389377,
+    "stId" : "R-HSA-389377",
+    "displayName" : "NAPRT1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 228 ],
+    "children" : [ 197227 ]
+  }, {
+    "dbId" : 29708,
+    "stId" : "R-ALL-29708",
+    "displayName" : "LACT [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "422",
+    "parents" : [ 429748 ]
+  }, {
+    "dbId" : 192012,
+    "stId" : "R-HSA-192012",
+    "displayName" : "CYP8B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UNU6",
+    "geneNames" : [ "CYP8B1", "CYP12" ],
+    "parents" : [ 3222410 ]
+  }, {
+    "dbId" : 200475,
+    "stId" : "R-HSA-200475",
+    "displayName" : "NMNAT3 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96T66",
+    "geneNames" : [ "NMNAT3", "FKSG76" ],
+    "parents" : [ 200487 ]
+  }, {
+    "dbId" : 141343,
+    "stId" : "R-ALL-141343",
+    "displayName" : "H2O [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3604 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 8955031,
+    "stId" : "R-HSA-8955031",
+    "displayName" : "NADK2 dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4783 ],
+    "children" : [ 8933311 ]
+  }, {
+    "dbId" : 76577,
+    "stId" : "R-ALL-76577",
+    "displayName" : "AMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 201 ],
+    "identifier" : "16027"
+  }, {
+    "dbId" : 29472,
+    "stId" : "R-ALL-29472",
+    "displayName" : "L-Gln [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 194 ],
+    "identifier" : "58359"
+  }, {
+    "dbId" : 200487,
+    "stId" : "R-HSA-200487",
+    "displayName" : "4xNMNAT3:4xMg2+ [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 191 ],
+    "children" : [ 109496, 200475 ]
+  }, {
+    "dbId" : 1132084,
+    "stId" : "R-ALL-1132084",
+    "displayName" : "PPi(3-) [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3682, 4511 ],
+    "identifier" : "33019"
+  }, {
+    "dbId" : 200484,
+    "stId" : "R-HSA-200484",
+    "displayName" : "NMNAT1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HAN9",
+    "geneNames" : [ "NMNAT1", "NMNAT" ],
+    "parents" : [ 200489 ]
+  }, {
+    "dbId" : 49191,
+    "stId" : "R-HSA-49191",
+    "displayName" : "NT5E [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21589",
+    "geneNames" : [ "NT5E", "NT5", "NTE" ],
+    "parents" : [ 109266 ]
+  }, {
+    "dbId" : 200489,
+    "stId" : "R-HSA-200489",
+    "displayName" : "6xNMNAT1:6xZn2+ [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 180 ],
+    "children" : [ 200493, 200484 ]
+  }, {
+    "dbId" : 200493,
+    "stId" : "R-ALL-200493",
+    "displayName" : "Zn2+ [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 200489 ]
+  }, {
+    "dbId" : 200492,
+    "stId" : "R-ALL-200492",
+    "displayName" : "NAMN [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 177 ],
+    "identifier" : "15763"
+  }, {
+    "dbId" : 200499,
+    "stId" : "R-ALL-200499",
+    "displayName" : "NAAD [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 179 ],
+    "identifier" : "18304"
+  }, {
+    "dbId" : 192305,
+    "stId" : "R-ALL-192305",
+    "displayName" : "NADH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3598 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 200503,
+    "stId" : "R-ALL-200503",
+    "displayName" : "Mg2+ [Golgi membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 197266 ]
+  }, {
+    "dbId" : 76342,
+    "stId" : "R-ALL-76342",
+    "displayName" : "e- [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2577 ],
+    "identifier" : "10545"
+  }, {
+    "dbId" : 8933311,
+    "stId" : "R-HSA-8933311",
+    "displayName" : "NADK2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q4G0N4",
+    "geneNames" : [ "NADK2", "C5orf33", "MNADK", "NADKD1" ],
+    "parents" : [ 8955031 ]
+  }, {
+    "dbId" : 372540,
+    "stId" : "R-ALL-372540",
+    "displayName" : "CH3COO- [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15366",
+    "parents" : [ 429739 ]
+  }, {
+    "dbId" : 8870343,
+    "stId" : "R-ALL-8870343",
+    "displayName" : "NAM [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4766 ],
+    "identifier" : "17154"
+  }, {
+    "dbId" : 8870342,
+    "stId" : "R-ALL-8870342",
+    "displayName" : "ADP-ribose [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4768 ],
+    "identifier" : "57967"
+  }, {
+    "dbId" : 352327,
+    "stId" : "R-ALL-352327",
+    "displayName" : "O2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4811 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 197188,
+    "stId" : "R-HSA-197188",
+    "displayName" : "NAMPT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 222 ],
+    "identifier" : "P43490",
+    "geneNames" : [ "NAMPT", "PBEF", "PBEF1" ]
+  }, {
+    "dbId" : 140357,
+    "stId" : "R-ALL-140357",
+    "displayName" : "PGG2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2575 ],
+    "identifier" : "27647"
+  }, {
+    "dbId" : 2160490,
+    "stId" : "R-ALL-2160490",
+    "displayName" : "FAD [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 8956472 ]
+  }, {
+    "dbId" : 197192,
+    "stId" : "R-HSA-197192",
+    "displayName" : "NADSYN1 hexamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 197 ],
+    "children" : [ 197231 ]
+  }, {
+    "dbId" : 8870344,
+    "stId" : "R-HSA-8870344",
+    "displayName" : "BST1 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4769 ],
+    "children" : [ 6806296 ]
+  }, {
+    "dbId" : 352330,
+    "stId" : "R-ALL-352330",
+    "displayName" : "NAD+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4750 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 197202,
+    "stId" : "R-HSA-197202",
+    "displayName" : "NMNAT2 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZQ4",
+    "geneNames" : [ "NMNAT2", "C1orf15", "KIAA0479" ],
+    "parents" : [ 197266 ]
+  }, {
+    "dbId" : 6788656,
+    "stId" : "R-HSA-6788656",
+    "displayName" : "Histidine, lysine, phenylalanine, tyrosine, proline and tryptophan catabolism",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3906 ]
+  }, {
+    "dbId" : 197212,
+    "stId" : "R-HSA-197212",
+    "displayName" : "QPRT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 170 ],
+    "identifier" : "Q15274",
+    "geneNames" : [ "QPRT" ]
+  }, {
+    "dbId" : 73566,
+    "stId" : "R-ALL-73566",
+    "displayName" : "PRPP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 231, 168, 223 ],
+    "identifier" : "17111"
+  }, {
+    "dbId" : 373863,
+    "stId" : "R-ALL-373863",
+    "displayName" : "LACT [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "422",
+    "parents" : [ 429739 ]
+  }, {
+    "dbId" : 8869604,
+    "stId" : "R-ALL-8869604",
+    "displayName" : "NCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4294 ],
+    "identifier" : "32544",
+    "parents" : [ 429739 ]
+  }, {
+    "dbId" : 197222,
+    "stId" : "R-HSA-197222",
+    "displayName" : "NADK:Zn2+ tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 208 ],
+    "children" : [ 29426, 197282 ]
+  }, {
+    "dbId" : 197220,
+    "stId" : "R-ALL-197220",
+    "displayName" : "NAMN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 169 ],
+    "identifier" : "15763"
+  }, {
+    "dbId" : 197227,
+    "stId" : "R-HSA-197227",
+    "displayName" : "NAPRT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6XQN6",
+    "geneNames" : [ "NAPRT", "FHIP", "NAPRT1" ],
+    "parents" : [ 389377 ]
+  }, {
+    "dbId" : 31593,
+    "stId" : "R-ALL-31593",
+    "displayName" : "PGI2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2626 ],
+    "identifier" : "15552"
+  }, {
+    "dbId" : 197231,
+    "stId" : "R-HSA-197231",
+    "displayName" : "NADSYN1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6IA69",
+    "geneNames" : [ "NADSYN1" ],
+    "parents" : [ 197192 ]
+  }, {
+    "dbId" : 197230,
+    "stId" : "R-ALL-197230",
+    "displayName" : "NCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 218 ],
+    "identifier" : "15940",
+    "parents" : [ 429748 ]
+  }, {
+    "dbId" : 113519,
+    "stId" : "R-ALL-113519",
+    "displayName" : "H2O [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2579 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 8869353,
+    "stId" : "R-ALL-8869353",
+    "displayName" : "NMN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4507 ],
+    "identifier" : "14649"
+  }, {
+    "dbId" : 8869365,
+    "stId" : "R-ALL-8869365",
+    "displayName" : "NAR [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4478 ],
+    "identifier" : "58527"
+  }, {
+    "dbId" : 8869620,
+    "stId" : "R-HSA-8869620",
+    "displayName" : "NMRK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4501, 4524 ],
+    "identifier" : "Q9NPI5",
+    "geneNames" : [ "NMRK2", "ITGB1BP3", "NRK2" ]
+  }, {
+    "dbId" : 8869363,
+    "stId" : "R-ALL-8869363",
+    "displayName" : "ATP(4-) [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3681, 4521, 4509 ],
+    "identifier" : "30616"
+  }, {
+    "dbId" : 71285,
+    "stId" : "R-ALL-71285",
+    "displayName" : "AdoHcy [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2455 ],
+    "identifier" : "16680"
+  }, {
+    "dbId" : 71284,
+    "stId" : "R-ALL-71284",
+    "displayName" : "AdoMet [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3606 ],
+    "identifier" : "15414"
+  }, {
+    "dbId" : 197238,
+    "stId" : "R-ALL-197238",
+    "displayName" : "QUIN [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 166 ],
+    "identifier" : "46828"
+  }, {
+    "dbId" : 113526,
+    "stId" : "R-ALL-113526",
+    "displayName" : "NAD+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4779 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 8869360,
+    "stId" : "R-ALL-8869360",
+    "displayName" : "ADP(3-) [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4480, 4517 ],
+    "identifier" : "456216"
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3329 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 174 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 8869628,
+    "stId" : "R-HSA-8869628",
+    "displayName" : "NMRK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4515 ],
+    "identifier" : "Q9NWW6",
+    "geneNames" : [ "NMRK1", "C9orf95", "NRK1" ]
+  }, {
+    "dbId" : 159359,
+    "stId" : "R-HSA-159359",
+    "displayName" : "NNMT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2453 ],
+    "identifier" : "P40261",
+    "geneNames" : [ "NNMT" ]
+  }, {
+    "dbId" : 156540,
+    "stId" : "R-ALL-156540",
+    "displayName" : "H+ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2576 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 6806296,
+    "stId" : "R-HSA-6806296",
+    "displayName" : "BST1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q10588",
+    "geneNames" : [ "BST1" ],
+    "parents" : [ 8870344 ]
+  }, {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4297 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 8869377,
+    "stId" : "R-ALL-8869377",
+    "displayName" : "NR [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4513 ],
+    "identifier" : "15927"
+  }, {
+    "dbId" : 351629,
+    "stId" : "R-ALL-351629",
+    "displayName" : "H2O2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4812 ],
+    "identifier" : "16240"
+  }, {
+    "dbId" : 197256,
+    "stId" : "R-ALL-197256",
+    "displayName" : "NAAD [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 185 ],
+    "identifier" : "18304"
+  }, {
+    "dbId" : 113548,
+    "stId" : "R-ALL-113548",
+    "displayName" : "Pi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3324 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 351626,
+    "stId" : "R-ALL-351626",
+    "displayName" : "H+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4767, 4815 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 197266,
+    "stId" : "R-HSA-197266",
+    "displayName" : "NMNAT2:Mg2+ [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 186 ],
+    "children" : [ 200503, 197202 ]
+  }, {
+    "dbId" : 76179,
+    "stId" : "R-ALL-76179",
+    "displayName" : "BUT [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "30772",
+    "parents" : [ 429748 ]
+  }, {
+    "dbId" : 2311355,
+    "stId" : "R-ALL-2311355",
+    "displayName" : "heme b [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "26355",
+    "parents" : [ 140491 ]
+  }, {
+    "dbId" : 8938258,
+    "stId" : "R-HSA-8938258",
+    "displayName" : "PARP9 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IXQ6",
+    "geneNames" : [ "PARP9", "BAL", "BAL1" ],
+    "parents" : [ 8938273 ]
+  }, {
+    "dbId" : 113563,
+    "stId" : "R-ALL-113563",
+    "displayName" : "NADP+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4781 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 8938259,
+    "stId" : "R-HSA-8938259",
+    "displayName" : "PARP16 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N5Y8",
+    "geneNames" : [ "PARP16", "ARTD15", "C15orf30" ],
+    "parents" : [ 8938273 ]
+  }, {
+    "dbId" : 8938261,
+    "stId" : "R-HSA-8938261",
+    "displayName" : "PARP14 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q460N5",
+    "geneNames" : [ "PARP14", "BAL2", "KIAA1268" ],
+    "parents" : [ 8938273 ]
+  }, {
+    "dbId" : 197277,
+    "stId" : "R-ALL-197277",
+    "displayName" : "NAM [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 217 ],
+    "identifier" : "17154"
+  }, {
+    "dbId" : 8938262,
+    "stId" : "R-HSA-8938262",
+    "displayName" : "PARP8 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N3A8",
+    "geneNames" : [ "PARP8" ],
+    "parents" : [ 8938273 ]
+  }, {
+    "dbId" : 197282,
+    "stId" : "R-HSA-197282",
+    "displayName" : "NADK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95544",
+    "geneNames" : [ "NADK" ],
+    "parents" : [ 197222 ]
+  }, {
+    "dbId" : 8938282,
+    "stId" : "R-ALL-8938282",
+    "displayName" : "(ADP-D-ribosyl)(n+1)-acceptor [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3904 ],
+    "identifier" : "133203"
+  }, {
+    "dbId" : 8940077,
+    "stId" : "R-ALL-8940077",
+    "displayName" : "NRNAM [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4756 ],
+    "identifier" : "15927"
+  }, {
+    "dbId" : 61605,
+    "stId" : "R-HSA-61605",
+    "displayName" : "PTGS2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35354",
+    "geneNames" : [ "PTGS2", "COX2" ],
+    "parents" : [ 140491 ]
+  }, {
+    "dbId" : 8938272,
+    "stId" : "R-HSA-8938272",
+    "displayName" : "PARP10 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q53GL7",
+    "geneNames" : [ "PARP10" ],
+    "parents" : [ 8938273 ]
+  }, {
+    "dbId" : 8938273,
+    "stId" : "R-HSA-8938273",
+    "displayName" : "PARPs [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3905 ],
+    "children" : [ 8938259, 8938258, 8938272, 8938279, 8938262, 8938277, 8938261 ]
+  }, {
+    "dbId" : 549282,
+    "stId" : "R-ALL-549282",
+    "displayName" : "MNA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2452 ],
+    "identifier" : "16797"
+  }, {
+    "dbId" : 8940067,
+    "stId" : "R-ALL-8940067",
+    "displayName" : "NMN [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4751 ],
+    "identifier" : "14649"
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 193, 165 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 8938276,
+    "stId" : "R-ALL-8938276",
+    "displayName" : "(ADP-D-ribosyl)(n)-acceptor [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3903 ],
+    "identifier" : "133202"
+  }, {
+    "dbId" : 113581,
+    "stId" : "R-ALL-113581",
+    "displayName" : "ADP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3325 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 8938277,
+    "stId" : "R-HSA-8938277",
+    "displayName" : "PARP6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q2NL67",
+    "geneNames" : [ "PARP6" ],
+    "parents" : [ 8938273 ]
+  }, {
+    "dbId" : 429739,
+    "stId" : "R-ALL-429739",
+    "displayName" : "monocarboxylates transported by SLC5A8 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 4298 ],
+    "children" : [ 429737, 372540, 429760, 8869604, 373863, 429750 ]
+  }, {
+    "dbId" : 6809289,
+    "stId" : "R-ALL-6809289",
+    "displayName" : "NMNH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3600 ],
+    "identifier" : "74452"
+  }, {
+    "dbId" : 8938279,
+    "stId" : "R-HSA-8938279",
+    "displayName" : "PARP4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UKK3",
+    "geneNames" : [ "PARP4", "ADPRTL1", "KIAA0177", "PARPL" ],
+    "parents" : [ 8938273 ]
+  }, {
+    "dbId" : 429737,
+    "stId" : "R-ALL-429737",
+    "displayName" : "EtCOO- or C2H5COO- [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "30768",
+    "parents" : [ 429739 ]
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 199 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 8956472,
+    "stId" : "R-HSA-8956472",
+    "displayName" : "RNLS:FAD [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4813 ],
+    "children" : [ 8956471, 2160490 ]
+  }, {
+    "dbId" : 429750,
+    "stId" : "R-ALL-429750",
+    "displayName" : "PYR [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "32816",
+    "parents" : [ 429739 ]
+  }, {
+    "dbId" : 8956473,
+    "stId" : "R-ALL-8956473",
+    "displayName" : "dh-beta-NAD [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 4810 ],
+    "children" : [ 8956466, 8956476 ]
+  }, {
+    "dbId" : 429748,
+    "stId" : "R-ALL-429748",
+    "displayName" : "monocarboxylates transported by SLC5A8 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 4301 ],
+    "children" : [ 197230, 429754, 29708, 29416, 29398, 76179 ]
+  }, {
+    "dbId" : 8956476,
+    "stId" : "R-ALL-8956476",
+    "displayName" : "1,6-dh-beta-NAD [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "90174",
+    "parents" : [ 8956473 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 206 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 113593,
+    "stId" : "R-ALL-113593",
+    "displayName" : "ATP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3323, 4780 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 109496,
+    "stId" : "R-ALL-109496",
+    "displayName" : "Mg2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 200487 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 195, 205 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 30138,
+    "stId" : "R-ALL-30138",
+    "displayName" : "PGH2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2578 ],
+    "identifier" : "15554"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 207 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 8956466,
+    "stId" : "R-ALL-8956466",
+    "displayName" : "1,2-dh-beta-NAD [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "90171",
+    "parents" : [ 8956473 ]
+  }, {
+    "dbId" : 36027,
+    "stId" : "R-ALL-36027",
+    "displayName" : "ACS [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 164 ],
+    "identifier" : "29044"
+  }, {
+    "dbId" : 3222410,
+    "stId" : "R-HSA-3222410",
+    "displayName" : "PTGIS,CYP8B1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2627 ],
+    "children" : [ 62410, 192012 ]
+  }, {
+    "dbId" : 193465,
+    "stId" : "R-ALL-193465",
+    "displayName" : "H+ [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3601 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 429754,
+    "stId" : "R-ALL-429754",
+    "displayName" : "EtCOO- or C2H5COO- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "30768",
+    "parents" : [ 429748 ]
+  }, {
+    "dbId" : 111294,
+    "stId" : "R-ALL-111294",
+    "displayName" : "PPi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 225, 203, 235, 172 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 8956471,
+    "stId" : "R-HSA-8956471",
+    "displayName" : "RNLS [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5VYX0",
+    "geneNames" : [ "RNLS", "C10orf59" ],
+    "parents" : [ 8956472 ]
+  }, {
+    "dbId" : 113600,
+    "stId" : "R-ALL-113600",
+    "displayName" : "NADPH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3326 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 429760,
+    "stId" : "R-ALL-429760",
+    "displayName" : "BUT [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "30772",
+    "parents" : [ 429739 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4300 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 140491,
+    "stId" : "R-HSA-140491",
+    "displayName" : "PTGS2 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2580 ],
+    "children" : [ 2311355, 61605 ]
+  }, {
+    "dbId" : 62410,
+    "stId" : "R-HSA-62410",
+    "displayName" : "PTGIS [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16647",
+    "geneNames" : [ "PTGIS", "CYP8", "CYP8A1" ],
+    "parents" : [ 3222410 ]
+  }, {
+    "dbId" : 429769,
+    "stId" : "R-HSA-429769",
+    "displayName" : "SLC5A8 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4303 ],
+    "identifier" : "Q8N695",
+    "geneNames" : [ "SLC5A8", "AIT", "SMCT", "SMCT1" ]
+  }, {
+    "dbId" : 109265,
+    "stId" : "R-ALL-109265",
+    "displayName" : "Zn2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 109266 ]
+  }, {
+    "dbId" : 6807477,
+    "stId" : "R-ALL-6807477",
+    "displayName" : "S-NADPHX [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3320 ],
+    "identifier" : "64084"
+  }, {
+    "dbId" : 109266,
+    "stId" : "R-HSA-109266",
+    "displayName" : "NT5E:Zn2+ dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4753 ],
+    "children" : [ 49191, 109265 ]
+  }, {
+    "dbId" : 8938078,
+    "stId" : "R-ALL-8938078",
+    "displayName" : "PPi(3-) [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3795 ],
+    "identifier" : "33019"
+  }, {
+    "dbId" : 29398,
+    "stId" : "R-ALL-29398",
+    "displayName" : "PYR [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "32816",
+    "parents" : [ 429748 ]
+  }, {
+    "dbId" : 6807473,
+    "stId" : "R-ALL-6807473",
+    "displayName" : "R-NADPHX [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3319 ],
+    "identifier" : "64085"
+  }, {
+    "dbId" : 6807487,
+    "stId" : "R-HSA-6807487",
+    "displayName" : "APOA1BP dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3321 ],
+    "children" : [ 6806968 ]
+  }, {
+    "dbId" : 561106,
+    "stId" : "R-HSA-561106",
+    "displayName" : "SLC22A13 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4295 ],
+    "identifier" : "Q9Y226",
+    "geneNames" : [ "SLC22A13", "OCTL1", "ORCTL3" ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4499, 359, 4519, 345 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 29404,
+    "stId" : "R-ALL-29404",
+    "displayName" : "L-Glu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 196 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 109277,
+    "stId" : "R-ALL-109277",
+    "displayName" : "Pi [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4752, 4758 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 109276,
+    "stId" : "R-ALL-109276",
+    "displayName" : "H2O [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4755, 4749, 4765 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 6806970,
+    "stId" : "R-HSA-6806970",
+    "displayName" : "CARKD [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3327 ],
+    "identifier" : "Q8IW45",
+    "geneNames" : [ "NAXD", "CARKD" ]
+  }, {
+    "dbId" : 6806968,
+    "stId" : "R-HSA-6806968",
+    "displayName" : "APOA1BP [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NCW5",
+    "geneNames" : [ "NAXE", "AIBP", "APOA1BP", "YJEFN1" ],
+    "parents" : [ 6807487 ]
+  }, {
+    "dbId" : 6809221,
+    "stId" : "R-HSA-6809221",
+    "displayName" : "NUDT12 [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3602 ],
+    "identifier" : "Q9BQG2",
+    "geneNames" : [ "NUDT12" ]
+  }, {
+    "dbId" : 8938090,
+    "stId" : "R-ALL-8938090",
+    "displayName" : "NAAD [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3796 ],
+    "identifier" : "18304"
+  }, {
+    "dbId" : 29926,
+    "stId" : "R-ALL-29926",
+    "displayName" : "Mg2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 229 ],
+    "identifier" : "18420"
+  }, {
+    "dbId" : 29416,
+    "stId" : "R-ALL-29416",
+    "displayName" : "CH3COO- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15366",
+    "parents" : [ 429748 ]
+  }, {
+    "dbId" : 8938080,
+    "stId" : "R-HSA-8938080",
+    "displayName" : "CD38 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3901 ],
+    "identifier" : "P28907",
+    "geneNames" : [ "CD38" ]
+  }, {
+    "dbId" : 8938081,
+    "stId" : "R-ALL-8938081",
+    "displayName" : "ATP(4-) [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3794 ],
+    "identifier" : "30616"
+  }, {
+    "dbId" : 8938083,
+    "stId" : "R-ALL-8938083",
+    "displayName" : "NAMN [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3793 ],
+    "identifier" : "15763"
+  }, {
+    "dbId" : 389620,
+    "stId" : "R-ALL-389620",
+    "displayName" : "adenosine 5'-monophosphate [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3603 ],
+    "identifier" : "16027"
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 197222 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 197187,
+    "stId" : "R-HSA-197187",
+    "displayName" : "ACS transforms to QUIN non-enzymatically",
+    "schemaClass" : "Reaction",
+    "following" : [ 197268 ],
+    "inputs" : [ 36027 ],
+    "outputs" : [ 29356, 197238 ],
+    "efs" : [ ],
+    "diagramIds" : [ 163 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 197186,
+    "stId" : "R-HSA-197186",
+    "displayName" : "NAPRT1 dimer transfers PRIB to NCA to form NAMN",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8869603, 429749 ],
+    "inputs" : [ 73566, 197230, 70106 ],
+    "outputs" : [ 111294, 197220 ],
+    "catalysts" : [ 389377 ],
+    "efs" : [ ],
+    "requirements" : [ 29926 ],
+    "diagramIds" : [ 227 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 197250,
+    "stId" : "R-HSA-197250",
+    "displayName" : "NAMPT transfers PRIB to NAM to form NAMN",
+    "schemaClass" : "Reaction",
+    "following" : [ 200474, 197235, 200512 ],
+    "inputs" : [ 73566, 197277 ],
+    "outputs" : [ 111294, 197220 ],
+    "catalysts" : [ 197188 ],
+    "efs" : [ ],
+    "diagramIds" : [ 221 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200512,
+    "stId" : "R-HSA-200512",
+    "displayName" : "NMNAT1 transfers an adenylyl group from ATP to NAMN to yield NAAD",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 197268, 8869606, 197250, 8869607 ],
+    "inputs" : [ 200492, 8878982 ],
+    "outputs" : [ 8878981, 200499 ],
+    "catalysts" : [ 200489 ],
+    "efs" : [ ],
+    "diagramIds" : [ 175 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8869633,
+    "stId" : "R-HSA-8869633",
+    "displayName" : "NMRK1 phosphorylates NR to yield NMN",
+    "schemaClass" : "Reaction",
+    "following" : [ 8939959 ],
+    "inputs" : [ 8869377, 8869363 ],
+    "outputs" : [ 8869353, 70106, 8869360 ],
+    "catalysts" : [ 8869628 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4512 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5359451,
+    "stId" : "R-HSA-5359451",
+    "displayName" : "NNMT transfers CH3 from SAM to NAM to form MNA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 197277, 71284 ],
+    "outputs" : [ 549282, 71285 ],
+    "catalysts" : [ 159359 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2451 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 197198,
+    "stId" : "R-HSA-197198",
+    "displayName" : "NADK:Zn2+ tetramer phosphorylates NAD+ to NADP+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 197271 ],
+    "inputs" : [ 113592, 29360 ],
+    "outputs" : [ 29370, 29366 ],
+    "catalysts" : [ 197222 ],
+    "efs" : [ ],
+    "diagramIds" : [ 204 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8870346,
+    "stId" : "R-HSA-8870346",
+    "displayName" : "BST1 hydrolyzes NAD+ to yield NAM and ADP-ribose",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 352330, 109276 ],
+    "outputs" : [ 351626, 8870342, 8870343 ],
+    "catalysts" : [ 8870344 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4764 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6806967,
+    "stId" : "R-HSA-6806967",
+    "displayName" : "CARKD dehydrates S-NAD(P)HX to NADPH",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806966 ],
+    "inputs" : [ 113593, 6807477 ],
+    "outputs" : [ 113548, 113581, 113529, 113600 ],
+    "catalysts" : [ 6806970 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3322 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8938073,
+    "stId" : "R-HSA-8938073",
+    "displayName" : "PARPs transfer ADP-D-ribose to proteins (poly(ADP-ribosyl)ation)",
+    "schemaClass" : "Polymerisation",
+    "inputs" : [ 8938276, 29360 ],
+    "outputs" : [ 197277, 8938282 ],
+    "catalysts" : [ 8938273 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3902 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6806966,
+    "stId" : "R-HSA-6806966",
+    "displayName" : "APOA1BP dimer epimerises R-NAD(P)HX to S-NAD(P)HX",
+    "schemaClass" : "Reaction",
+    "following" : [ 6806967 ],
+    "inputs" : [ 6807473 ],
+    "outputs" : [ 6807477 ],
+    "catalysts" : [ 6807487 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3318 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76496,
+    "stId" : "R-HSA-76496",
+    "displayName" : "PTGIS, CYP8A1 isomerise PGH2 to PGI2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2309773 ],
+    "inputs" : [ 30138 ],
+    "outputs" : [ 31593 ],
+    "catalysts" : [ 3222410 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2625 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 197271,
+    "stId" : "R-HSA-197271",
+    "displayName" : "NADSYN1 hexamer amidates NAAD to NAD+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 197235 ],
+    "following" : [ 197198 ],
+    "inputs" : [ 29356, 197256, 113592, 29472 ],
+    "outputs" : [ 111294, 29404, 76577, 29360 ],
+    "catalysts" : [ 197192 ],
+    "efs" : [ ],
+    "diagramIds" : [ 192 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8938076,
+    "stId" : "R-HSA-8938076",
+    "displayName" : "CD38 hydrolyses NAD+ to NAM and ADP-ribose",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 352330, 109276 ],
+    "outputs" : [ 351626, 8870342, 8870343 ],
+    "catalysts" : [ 8938080 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3898 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 197268,
+    "stId" : "R-HSA-197268",
+    "displayName" : "QPRT transfers PRIB to QUIN to form NAMN",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 197187 ],
+    "following" : [ 200474, 197235, 200512 ],
+    "inputs" : [ 73566, 70106, 197238 ],
+    "outputs" : [ 111294, 113528, 197220 ],
+    "catalysts" : [ 197212 ],
+    "efs" : [ ],
+    "diagramIds" : [ 167 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200474,
+    "stId" : "R-HSA-200474",
+    "displayName" : "NMNAT3 transfers an adenylyl group from ATP to NAMN to yield NAAD",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 197268, 8869606, 197250, 8869607 ],
+    "inputs" : [ 8938083, 8938081 ],
+    "outputs" : [ 8938078, 8938090 ],
+    "catalysts" : [ 200487 ],
+    "efs" : [ ],
+    "diagramIds" : [ 189 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8955030,
+    "stId" : "R-HSA-8955030",
+    "displayName" : "NADK2 dimer phosphorylates NAD+ to NADP+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113593, 113526 ],
+    "outputs" : [ 113581, 113563, 113529 ],
+    "catalysts" : [ 8955031 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4778 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8869607,
+    "stId" : "R-HSA-8869607",
+    "displayName" : "NMRK2 phosphorylates NAR to yield NAMN",
+    "schemaClass" : "Reaction",
+    "following" : [ 200474, 197235, 200512 ],
+    "inputs" : [ 8869363, 8869365 ],
+    "outputs" : [ 70106, 8869360, 197220 ],
+    "catalysts" : [ 8869620 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4500 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6809287,
+    "stId" : "R-HSA-6809287",
+    "displayName" : "NUDT12 hydrolyses NADH to NMNH",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 141343, 192305, 389620 ],
+    "outputs" : [ 6809289, 193465 ],
+    "catalysts" : [ 6809221 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3597 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8869606,
+    "stId" : "R-HSA-8869606",
+    "displayName" : "NMRK1 phosphorylates NAR to yield NAMN",
+    "schemaClass" : "Reaction",
+    "following" : [ 200474, 197235, 200512 ],
+    "inputs" : [ 8869363, 8869365 ],
+    "outputs" : [ 70106, 8869360, 197220 ],
+    "catalysts" : [ 8869628 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4770 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8956458,
+    "stId" : "R-HSA-8956458",
+    "displayName" : "RNLS:FAD oxidises dh-beta-NAD to NAD+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 351626, 352327, 8956473 ],
+    "outputs" : [ 352330, 351629 ],
+    "catalysts" : [ 8956472 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4809 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8940074,
+    "stId" : "R-HSA-8940074",
+    "displayName" : "NT5E:Zn2+ hydrolyses NMN",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8940070 ],
+    "inputs" : [ 109276, 8940067 ],
+    "outputs" : [ 109277, 8940077 ],
+    "catalysts" : [ 109266 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4754 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8869603,
+    "stId" : "R-HSA-8869603",
+    "displayName" : "SLC22A13 transports NCA from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "following" : [ 197186 ],
+    "inputs" : [ 8869604 ],
+    "outputs" : [ 197230 ],
+    "catalysts" : [ 561106 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4293 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8940070,
+    "stId" : "R-HSA-8940070",
+    "displayName" : "NT5E:Zn2+ hydrolyses NAD+",
+    "schemaClass" : "Reaction",
+    "following" : [ 8940074 ],
+    "inputs" : [ 352330, 109276 ],
+    "outputs" : [ 109277, 8940067 ],
+    "catalysts" : [ 109266 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4748 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2309773,
+    "stId" : "R-HSA-2309773",
+    "displayName" : "PGG2 is reduced to PGH2 by PTGS2",
+    "schemaClass" : "Reaction",
+    "following" : [ 76496 ],
+    "inputs" : [ 156540, 76342, 140357 ],
+    "outputs" : [ 113519, 30138 ],
+    "catalysts" : [ 140491 ],
+    "efs" : [ ],
+    "activators" : [ 549282 ],
+    "diagramIds" : [ 2574 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 197235,
+    "stId" : "R-HSA-197235",
+    "displayName" : "NMNAT2 transfers an adenylyl group from ATP to NAMN to yield NAAD",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 197268, 8869606, 197250, 8869607 ],
+    "following" : [ 197271 ],
+    "inputs" : [ 197220, 8869363 ],
+    "outputs" : [ 197256, 1132084 ],
+    "catalysts" : [ 197266 ],
+    "efs" : [ ],
+    "diagramIds" : [ 183 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 429749,
+    "stId" : "R-HSA-429749",
+    "displayName" : "SLC5A8 transports monocarboxylates from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "following" : [ 197186 ],
+    "inputs" : [ 429739, 74113 ],
+    "outputs" : [ 83910, 429748 ],
+    "catalysts" : [ 429769 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4296 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8869627,
+    "stId" : "R-HSA-8869627",
+    "displayName" : "NMRK2 phosphorylates NR to yield NMN",
+    "schemaClass" : "Reaction",
+    "following" : [ 8939959 ],
+    "inputs" : [ 8869377, 8869363 ],
+    "outputs" : [ 8869353, 70106, 8869360 ],
+    "catalysts" : [ 8869620 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4522 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8939959,
+    "stId" : "R-HSA-8939959",
+    "displayName" : "NMNAT2 transfers an adenylyl group from ATP to NMN to yield NAD+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8869627, 8869633 ],
+    "inputs" : [ 8869353, 8869363 ],
+    "outputs" : [ 1132084, 29360 ],
+    "catalysts" : [ 197266 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4506 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 197264,
+    "stId" : "R-HSA-197264",
+    "displayName" : "Nicotinamide salvaging",
+    "events" : [ 6806967, 6809287, 8938073, 197250, 197186, 76496, 6806966, 8956458, 429749, 8869603, 5359451, 2309773 ]
+  } ]
+}

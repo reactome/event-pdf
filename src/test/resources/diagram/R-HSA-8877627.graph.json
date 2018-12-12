@@ -1,0 +1,68 @@
+{
+  "dbId" : 8877627,
+  "stId" : "R-HSA-8877627",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 8874708,
+    "stId" : "R-ALL-8874708",
+    "displayName" : "alpha-TOH [lysosomal membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 164 ],
+    "identifier" : "18145",
+    "parents" : [ 8874714 ]
+  }, {
+    "dbId" : 8874706,
+    "stId" : "R-ALL-8874706",
+    "displayName" : "alpha-TOH [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18145",
+    "parents" : [ 8874722 ]
+  }, {
+    "dbId" : 8874722,
+    "stId" : "R-HSA-8874722",
+    "displayName" : "TTPA:alpha-TOH [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 161 ],
+    "children" : [ 2980979, 8874706 ]
+  }, {
+    "dbId" : 8874714,
+    "stId" : "R-HSA-8874714",
+    "displayName" : "TTPA:alpha-TOH [lysosomal membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 160 ],
+    "children" : [ 2980979, 8874708 ]
+  }, {
+    "dbId" : 2980979,
+    "stId" : "R-HSA-2980979",
+    "displayName" : "TTPA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 162 ],
+    "identifier" : "P49638",
+    "geneNames" : [ "TTPA", "TPP1" ],
+    "parents" : [ 8874722, 8874714 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 8874705,
+    "stId" : "R-HSA-8874705",
+    "displayName" : "TTPA transports alpha-TOH from lysosomal membrane to plasma membrane",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8874714 ],
+    "outputs" : [ 8874722 ],
+    "efs" : [ ],
+    "diagramIds" : [ 163 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8874718,
+    "stId" : "R-HSA-8874718",
+    "displayName" : "TTPA binds alpha-TOH",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 2980979, 8874708 ],
+    "outputs" : [ 8874714 ],
+    "efs" : [ ],
+    "diagramIds" : [ 165 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

@@ -1,0 +1,799 @@
+{
+  "dbId" : 9018683,
+  "stId" : "R-HSA-9018683",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 9024779,
+    "stId" : "R-HSA-9024779",
+    "displayName" : "Hydroperoxy reductase [cytosol]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 83 ]
+  }, {
+    "dbId" : 9026319,
+    "stId" : "R-ALL-9026319",
+    "displayName" : "MaR1n-3 DPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140256",
+    "parents" : [ 9026321 ]
+  }, {
+    "dbId" : 9025025,
+    "stId" : "R-HSA-9025025",
+    "displayName" : "Epoxide hydrolase [cytosol]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 63 ]
+  }, {
+    "dbId" : 9025155,
+    "stId" : "R-ALL-9025155",
+    "displayName" : "DPAn-6 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "65136"
+  }, {
+    "dbId" : 9026307,
+    "stId" : "R-ALL-9026307",
+    "displayName" : "13,14(S)-epoxy-DPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 34 ],
+    "identifier" : "140200"
+  }, {
+    "dbId" : 9025154,
+    "stId" : "R-ALL-9025154",
+    "displayName" : "(4Z,7Z,10Z,13Z,15E,17S)-17-hydroxydocosapentaenoic acid [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "138673",
+    "parents" : [ 9025151, 9031904 ]
+  }, {
+    "dbId" : 9026050,
+    "stId" : "R-ALL-9026050",
+    "displayName" : "7,8-epoxy,17-HDPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 89 ],
+    "identifier" : "140234"
+  }, {
+    "dbId" : 9026055,
+    "stId" : "R-ALL-9026055",
+    "displayName" : "PD2n-3DPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140266",
+    "parents" : [ 9026023 ]
+  }, {
+    "dbId" : 9026311,
+    "stId" : "R-ALL-9026311",
+    "displayName" : "MaR3n-3 DPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 42 ],
+    "identifier" : "140258",
+    "parents" : [ 9031885 ]
+  }, {
+    "dbId" : 2142768,
+    "stId" : "R-HSA-2142768",
+    "displayName" : "ALOX12 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18054",
+    "geneNames" : [ "ALOX12", "12LO", "LOG12" ],
+    "parents" : [ 2142793 ]
+  }, {
+    "dbId" : 9026321,
+    "stId" : "R-ALL-9026321",
+    "displayName" : "MaR1n-3 DPA, MaR2n-3 DPA [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 62 ],
+    "parents" : [ 9031885 ],
+    "children" : [ 9026322, 9026319 ]
+  }, {
+    "dbId" : 2311355,
+    "stId" : "R-ALL-2311355",
+    "displayName" : "heme b [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "26355",
+    "parents" : [ 140491 ]
+  }, {
+    "dbId" : 71067,
+    "stId" : "R-ALL-71067",
+    "displayName" : "Fe2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 2142793 ]
+  }, {
+    "dbId" : 9026322,
+    "stId" : "R-ALL-9026322",
+    "displayName" : "MaR2n-3 DPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140257",
+    "parents" : [ 9026321 ]
+  }, {
+    "dbId" : 9025960,
+    "stId" : "R-ALL-9025960",
+    "displayName" : "14(S)-HDPAn-6 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 7 ],
+    "identifier" : "140218",
+    "parents" : [ 9031904 ]
+  }, {
+    "dbId" : 61605,
+    "stId" : "R-HSA-61605",
+    "displayName" : "PTGS2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35354",
+    "geneNames" : [ "PTGS2", "COX2" ],
+    "parents" : [ 140491 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 99, 69, 61 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 36, 91, 30 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 35, 28, 93 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 17, 2, 54, 44, 78 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 9031883,
+    "stId" : "R-ALL-9031883",
+    "displayName" : "14(S)-HDPAn-6 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140218",
+    "parents" : [ 9031892 ]
+  }, {
+    "dbId" : 9031882,
+    "stId" : "R-ALL-9031882",
+    "displayName" : "MaR2n-3 DPA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140257",
+    "parents" : [ 9031887 ]
+  }, {
+    "dbId" : 9031885,
+    "stId" : "R-ALL-9031885",
+    "displayName" : "DPAn-3 maresins [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 262 ],
+    "children" : [ 9026311, 9026321 ]
+  }, {
+    "dbId" : 9031887,
+    "stId" : "R-ALL-9031887",
+    "displayName" : "MaR1n-3 DPA, MaR2n-3 DPA [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 9031900 ],
+    "children" : [ 9031882, 9031898 ]
+  }, {
+    "dbId" : 9031886,
+    "stId" : "R-ALL-9031886",
+    "displayName" : "MaR3n-3 DPA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140258",
+    "parents" : [ 9031900 ]
+  }, {
+    "dbId" : 140491,
+    "stId" : "R-HSA-140491",
+    "displayName" : "PTGS2 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 16 ],
+    "children" : [ 2311355, 61605 ]
+  }, {
+    "dbId" : 9032024,
+    "stId" : "R-ALL-9032024",
+    "displayName" : "RvT4 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "137020",
+    "parents" : [ 9032020 ]
+  }, {
+    "dbId" : 9031899,
+    "stId" : "R-ALL-9031899",
+    "displayName" : "PD1n-3DPA,PD2n-3DPA [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 362 ],
+    "children" : [ 9031893, 9031901 ]
+  }, {
+    "dbId" : 9031898,
+    "stId" : "R-ALL-9031898",
+    "displayName" : "MaR1n-3 DPA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140256",
+    "parents" : [ 9031887 ]
+  }, {
+    "dbId" : 9026394,
+    "stId" : "R-ALL-9026394",
+    "displayName" : "RvT1-4 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 52 ],
+    "children" : [ 9026419, 9026401, 9026417, 9026398 ]
+  }, {
+    "dbId" : 429010,
+    "stId" : "R-HSA-429010",
+    "displayName" : "ALOX5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 55, 31 ],
+    "identifier" : "P09917",
+    "geneNames" : [ "ALOX5", "LOG5" ]
+  }, {
+    "dbId" : 9031901,
+    "stId" : "R-ALL-9031901",
+    "displayName" : "PD2n-3DPA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140266",
+    "parents" : [ 9031899 ]
+  }, {
+    "dbId" : 9031900,
+    "stId" : "R-ALL-9031900",
+    "displayName" : "DPAn-3 maresins [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 265 ],
+    "children" : [ 9031886, 9031887 ]
+  }, {
+    "dbId" : 9031903,
+    "stId" : "R-ALL-9031903",
+    "displayName" : "10(S),17(S)-diHDPAn-6 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "138674",
+    "parents" : [ 9031892 ]
+  }, {
+    "dbId" : 2142838,
+    "stId" : "R-HSA-2142838",
+    "displayName" : "ALOX15 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 20, 5 ],
+    "identifier" : "P16050",
+    "geneNames" : [ "ALOX15", "LOG15" ]
+  }, {
+    "dbId" : 9026398,
+    "stId" : "R-ALL-9026398",
+    "displayName" : "RvT4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "137020",
+    "parents" : [ 9026394 ]
+  }, {
+    "dbId" : 9031902,
+    "stId" : "R-ALL-9031902",
+    "displayName" : "RvD1n-3DPA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140271",
+    "parents" : [ 9031890 ]
+  }, {
+    "dbId" : 9031889,
+    "stId" : "R-ALL-9031889",
+    "displayName" : "DPAn-3 resolvins [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 423 ],
+    "children" : [ 9026036, 9026288, 9026289 ]
+  }, {
+    "dbId" : 9031888,
+    "stId" : "R-ALL-9031888",
+    "displayName" : "RvD5n-3DPA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140273",
+    "parents" : [ 9031890 ]
+  }, {
+    "dbId" : 9031891,
+    "stId" : "R-ALL-9031891",
+    "displayName" : "RvD2n-3DPA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140272",
+    "parents" : [ 9031890 ]
+  }, {
+    "dbId" : 9032019,
+    "stId" : "R-ALL-9032019",
+    "displayName" : "RvT3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "137019",
+    "parents" : [ 9032020 ]
+  }, {
+    "dbId" : 9031890,
+    "stId" : "R-ALL-9031890",
+    "displayName" : "DPAn-3 resolvins [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 426 ],
+    "children" : [ 9031891, 9031888, 9031902 ]
+  }, {
+    "dbId" : 9032018,
+    "stId" : "R-ALL-9032018",
+    "displayName" : "RvT2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "137018",
+    "parents" : [ 9032020 ]
+  }, {
+    "dbId" : 9031893,
+    "stId" : "R-ALL-9031893",
+    "displayName" : "PD1n-3DPA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140265",
+    "parents" : [ 9031899 ]
+  }, {
+    "dbId" : 9032020,
+    "stId" : "R-ALL-9032020",
+    "displayName" : "RvT1-4 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 459 ],
+    "children" : [ 9032023, 9032018, 9032019, 9032024 ]
+  }, {
+    "dbId" : 9031892,
+    "stId" : "R-ALL-9031892",
+    "displayName" : "DPAn-6 SPMs [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 198 ],
+    "children" : [ 9031895, 9031903, 9031883 ]
+  }, {
+    "dbId" : 9032023,
+    "stId" : "R-ALL-9032023",
+    "displayName" : "RvT1 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "137011",
+    "parents" : [ 9032020 ]
+  }, {
+    "dbId" : 9031895,
+    "stId" : "R-ALL-9031895",
+    "displayName" : "17(S)-HDPAn-6 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "138673",
+    "parents" : [ 9031892 ]
+  }, {
+    "dbId" : 9026024,
+    "stId" : "R-ALL-9026024",
+    "displayName" : "PD1n-3DPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140265",
+    "parents" : [ 9026023 ]
+  }, {
+    "dbId" : 9026401,
+    "stId" : "R-ALL-9026401",
+    "displayName" : "RvT2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "137018",
+    "parents" : [ 9026394 ]
+  }, {
+    "dbId" : 9031904,
+    "stId" : "R-ALL-9031904",
+    "displayName" : "DPAn-6 SPMs [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 195 ],
+    "children" : [ 9025154, 9025147, 9025960 ]
+  }, {
+    "dbId" : 2142793,
+    "stId" : "R-HSA-2142793",
+    "displayName" : "ALOX12:Fe2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "children" : [ 71067, 2142768 ]
+  }, {
+    "dbId" : 9026400,
+    "stId" : "R-ALL-9026400",
+    "displayName" : "13(R)-HDPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 50 ],
+    "identifier" : "91274"
+  }, {
+    "dbId" : 9608444,
+    "stId" : "R-ALL-9608444",
+    "displayName" : "DPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 461 ],
+    "identifier" : "53488"
+  }, {
+    "dbId" : 9026023,
+    "stId" : "R-ALL-9026023",
+    "displayName" : "PD1n-3DPA,PD2n-3DPA [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 70 ],
+    "children" : [ 9026055, 9026024 ]
+  }, {
+    "dbId" : 9026407,
+    "stId" : "R-ALL-9026407",
+    "displayName" : "13(R)-HDPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 15 ],
+    "identifier" : "91274"
+  }, {
+    "dbId" : 9025147,
+    "stId" : "R-ALL-9025147",
+    "displayName" : "10(S),17(S)-dihydroxy-omega 6-docosapentaenoic acid [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "138674",
+    "parents" : [ 9025151, 9031904 ]
+  }, {
+    "dbId" : 9024637,
+    "stId" : "R-ALL-9024637",
+    "displayName" : "oxidised acceptor [cytosol]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 82 ]
+  }, {
+    "dbId" : 9026047,
+    "stId" : "R-ALL-9026047",
+    "displayName" : "17(S)-Hp-DPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 19 ],
+    "identifier" : "140226"
+  }, {
+    "dbId" : 9025151,
+    "stId" : "R-ALL-9025151",
+    "displayName" : "17(S)-HDPAn-6, 10(S),17(S)-diHDPAn-6 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 4 ],
+    "children" : [ 9025154, 9025147 ]
+  }, {
+    "dbId" : 9026046,
+    "stId" : "R-ALL-9026046",
+    "displayName" : "16(S),17(S)-epoxy-DPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 29 ],
+    "identifier" : "140224"
+  }, {
+    "dbId" : 9026417,
+    "stId" : "R-ALL-9026417",
+    "displayName" : "RvT1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "137011",
+    "parents" : [ 9026394 ]
+  }, {
+    "dbId" : 9026289,
+    "stId" : "R-ALL-9026289",
+    "displayName" : "RvD2n-3DPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140272",
+    "parents" : [ 9026291, 9031889 ]
+  }, {
+    "dbId" : 9026288,
+    "stId" : "R-ALL-9026288",
+    "displayName" : "RvD1n-3DPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "140271",
+    "parents" : [ 9026291, 9031889 ]
+  }, {
+    "dbId" : 5359016,
+    "stId" : "R-ALL-5359016",
+    "displayName" : "reduced acceptor [cytosol]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 80 ]
+  }, {
+    "dbId" : 9026291,
+    "stId" : "R-ALL-9026291",
+    "displayName" : "RvD1n-3DPA, RvD2n-3DPA [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 100 ],
+    "children" : [ 9026288, 9026289 ]
+  }, {
+    "dbId" : 9026419,
+    "stId" : "R-ALL-9026419",
+    "displayName" : "RvT3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "137019",
+    "parents" : [ 9026394 ]
+  }, {
+    "dbId" : 9026034,
+    "stId" : "R-ALL-9026034",
+    "displayName" : "7,17-diHp-DPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 76 ],
+    "identifier" : "140248"
+  }, {
+    "dbId" : 9026293,
+    "stId" : "R-ALL-9026293",
+    "displayName" : "14(S)-Hp-DPAn-3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 22 ],
+    "identifier" : "140222"
+  }, {
+    "dbId" : 9025012,
+    "stId" : "R-ALL-9025012",
+    "displayName" : "14(S)-Hp-DHA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 33 ],
+    "identifier" : "140220"
+  }, {
+    "dbId" : 9026036,
+    "stId" : "R-ALL-9026036",
+    "displayName" : "RvD5n-3DPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 81 ],
+    "identifier" : "140273",
+    "parents" : [ 9031889 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 9031881,
+    "stId" : "R-HSA-9031881",
+    "displayName" : "DPAn-3 resolvins translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9026001, 9026008 ],
+    "inputs" : [ 9031889 ],
+    "outputs" : [ 9031890 ],
+    "efs" : [ ],
+    "diagramIds" : [ 422 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026408,
+    "stId" : "R-HSA-9026408",
+    "displayName" : "PTGS2 dimer oxidises DPAn-3 to 13(R)-HDPAn-3",
+    "schemaClass" : "Reaction",
+    "following" : [ 9026411 ],
+    "inputs" : [ 9608444, 29368 ],
+    "outputs" : [ 9026407 ],
+    "catalysts" : [ 140491 ],
+    "efs" : [ ],
+    "diagramIds" : [ 13 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026411,
+    "stId" : "R-HSA-9026411",
+    "displayName" : "13(R)-HDPAn-3 translocates from endothelial cell to neutrophil",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9026408 ],
+    "following" : [ 9026405 ],
+    "inputs" : [ 9026407 ],
+    "outputs" : [ 9026400 ],
+    "efs" : [ ],
+    "diagramIds" : [ 49 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9025995,
+    "stId" : "R-HSA-9025995",
+    "displayName" : "ALOX5 dehydrogenates 7,17-diHp-DPAn-3 to 7,8-epoxy,17-HDPAn-3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9025996 ],
+    "following" : [ 9026008 ],
+    "inputs" : [ 9026034, 29366 ],
+    "outputs" : [ 9026050, 29364 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 88 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9025996,
+    "stId" : "R-HSA-9025996",
+    "displayName" : "ALOX5 oxidises 17(S)-Hp-DPAn-3 to 7,17-diHp-DPAn-3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9026003 ],
+    "following" : [ 9026001, 9025995 ],
+    "inputs" : [ 29368, 9026047 ],
+    "outputs" : [ 9026034 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 75 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9031884,
+    "stId" : "R-HSA-9031884",
+    "displayName" : "DPAn-6 SPMs translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9025957, 9025152 ],
+    "inputs" : [ 9031904 ],
+    "outputs" : [ 9031892 ],
+    "efs" : [ ],
+    "diagramIds" : [ 194 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9025999,
+    "stId" : "R-HSA-9025999",
+    "displayName" : "ALOX5 dehydrogenates 17(S)-Hp-DPAn-3 to 16(S),17(S)-epoxy-DPAn-3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9026003 ],
+    "following" : [ 9026000 ],
+    "inputs" : [ 29366, 9026047 ],
+    "outputs" : [ 9026046, 29364 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 27 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9025998,
+    "stId" : "R-HSA-9025998",
+    "displayName" : "Epoxide hydrolase hydrolyses 13,14-epoxy-DPAn-3 to MaR1n-3 DPA or MaR2n-3 DPA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9026007 ],
+    "following" : [ 9031894 ],
+    "inputs" : [ 29356, 9026307 ],
+    "outputs" : [ 9026321 ],
+    "catalysts" : [ 9025025 ],
+    "efs" : [ ],
+    "diagramIds" : [ 60 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9025152,
+    "stId" : "R-HSA-9025152",
+    "displayName" : "ALOX15 oxidises DPAn-6 to 17(S)-HDPAn-6 and 10(S),17(S)-diHDPAn-6",
+    "schemaClass" : "Reaction",
+    "following" : [ 9031884 ],
+    "inputs" : [ 9025155, 29368 ],
+    "outputs" : [ 9025151 ],
+    "catalysts" : [ 2142838 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9025957,
+    "stId" : "R-HSA-9025957",
+    "displayName" : "ALOX12:Fe2+ oxidises DPAn-6 to 14(S)-HDPAn-6",
+    "schemaClass" : "Reaction",
+    "following" : [ 9031884 ],
+    "inputs" : [ 9025155, 29368 ],
+    "outputs" : [ 9025960 ],
+    "catalysts" : [ 2142793 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026405,
+    "stId" : "R-HSA-9026405",
+    "displayName" : "ALOX5 oxidises 13(R)-HDPAn-3 to RvT1-4",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9026411 ],
+    "following" : [ 9032021 ],
+    "inputs" : [ 9026400, 29368 ],
+    "outputs" : [ 9026394 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 51 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026008,
+    "stId" : "R-HSA-9026008",
+    "displayName" : "Epoxide hydrolase hydrolyses 7,8-epoxy-HDPAn-3 to RvD1n-3DPA or RvD2n-3DPA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9025995 ],
+    "following" : [ 9031881 ],
+    "inputs" : [ 29356, 9026050 ],
+    "outputs" : [ 9026291 ],
+    "catalysts" : [ 9025025 ],
+    "efs" : [ ],
+    "diagramIds" : [ 98 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9031896,
+    "stId" : "R-HSA-9031896",
+    "displayName" : "PD1n-3, PD2n-3 translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9026000 ],
+    "inputs" : [ 9026023 ],
+    "outputs" : [ 9031899 ],
+    "efs" : [ ],
+    "diagramIds" : [ 355 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026001,
+    "stId" : "R-HSA-9026001",
+    "displayName" : "Hydroperoxy reductase reduces 7,17-diHp-DPAn-3 to RvD5n-3DPA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9025996 ],
+    "following" : [ 9031881 ],
+    "inputs" : [ 9026034, 5359016 ],
+    "outputs" : [ 9026036, 9024637 ],
+    "catalysts" : [ 9024779 ],
+    "efs" : [ ],
+    "diagramIds" : [ 79 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026000,
+    "stId" : "R-HSA-9026000",
+    "displayName" : "Epoxide hydrolase hydrolyses 16(S),17(S)-epoxy-DPAn-3 to PD1n-3DPA or PD2n-3DPA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9025999 ],
+    "following" : [ 9031896 ],
+    "inputs" : [ 29356, 9026046 ],
+    "outputs" : [ 9026023 ],
+    "catalysts" : [ 9025025 ],
+    "efs" : [ ],
+    "diagramIds" : [ 68 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026003,
+    "stId" : "R-HSA-9026003",
+    "displayName" : "ALOX15 oxidises DPAn-3 to 17(S)-Hp-DPAn-3",
+    "schemaClass" : "Reaction",
+    "following" : [ 9025999, 9025996 ],
+    "inputs" : [ 9608444, 29368 ],
+    "outputs" : [ 9026047 ],
+    "catalysts" : [ 2142838 ],
+    "efs" : [ ],
+    "diagramIds" : [ 18 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026005,
+    "stId" : "R-HSA-9026005",
+    "displayName" : "ALOX5 oxidises 14(S)-Hp-DPAn-3 to MaR3n-3 DPA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9026007 ],
+    "following" : [ 9031894 ],
+    "inputs" : [ 9026293, 29368 ],
+    "outputs" : [ 9026311 ],
+    "catalysts" : [ 429010 ],
+    "efs" : [ ],
+    "diagramIds" : [ 41 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9032021,
+    "stId" : "R-HSA-9032021",
+    "displayName" : "RvT1-4 translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9026405 ],
+    "inputs" : [ 9026394 ],
+    "outputs" : [ 9032020 ],
+    "efs" : [ ],
+    "diagramIds" : [ 458 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026007,
+    "stId" : "R-HSA-9026007",
+    "displayName" : "ALOX12:Fe2+ dehydrogenates 14(S)-Hp-DPAn-3 to 13,14-epoxy-DPAn-3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9026006 ],
+    "following" : [ 9026005, 9025998 ],
+    "inputs" : [ 9025012, 29366 ],
+    "outputs" : [ 9026307, 29364 ],
+    "catalysts" : [ 2142793 ],
+    "efs" : [ ],
+    "diagramIds" : [ 32 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9031894,
+    "stId" : "R-HSA-9031894",
+    "displayName" : "DPAn-3 maresins translocate from cytosol to extracellular region",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9026005, 9025998 ],
+    "inputs" : [ 9031885 ],
+    "outputs" : [ 9031900 ],
+    "efs" : [ ],
+    "diagramIds" : [ 261 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9026006,
+    "stId" : "R-HSA-9026006",
+    "displayName" : "ALOX12:Fe2+ oxidises DPAn-3 to 14(S)-Hp-DPAn-3",
+    "schemaClass" : "Reaction",
+    "following" : [ 9026007 ],
+    "inputs" : [ 9608444, 29368 ],
+    "outputs" : [ 9026293 ],
+    "catalysts" : [ 2142793 ],
+    "efs" : [ ],
+    "diagramIds" : [ 21 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 9025094,
+    "stId" : "R-HSA-9025094",
+    "displayName" : "Biosynthesis of DPAn-3 SPMs",
+    "events" : [ 9026408, 9031881, 9026008, 9031896, 9025995, 9025996, 9025999, 9026001, 9026000, 9026003, 9026411, 9026405, 9032021, 9025998, 9026005, 9026007, 9026006, 9031894 ]
+  }, {
+    "dbId" : 9026403,
+    "stId" : "R-HSA-9026403",
+    "displayName" : "Biosynthesis of DPAn-3-derived 13-series resolvins",
+    "events" : [ 9026411, 9026405, 9032021 ]
+  }, {
+    "dbId" : 9026286,
+    "stId" : "R-HSA-9026286",
+    "displayName" : "Biosynthesis of DPAn-3-derived protectins and resolvins",
+    "events" : [ 9031881, 9026008, 9031896, 9025995, 9025996, 9025999, 9026001, 9026000, 9026003 ]
+  }, {
+    "dbId" : 9026290,
+    "stId" : "R-HSA-9026290",
+    "displayName" : "Biosynthesis of DPAn-3-derived maresins",
+    "events" : [ 9025998, 9026005, 9026007, 9026006, 9031894 ]
+  }, {
+    "dbId" : 9025106,
+    "stId" : "R-HSA-9025106",
+    "displayName" : "Biosynthesis of DPAn-6 SPMs",
+    "events" : [ 9031884, 9025152, 9025957 ]
+  } ]
+}

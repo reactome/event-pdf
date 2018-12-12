@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 public class Introduction implements Section {
 
 	private static final String INTRODUCTION = PdfUtils.getProperty("introduction");
-	private static final List<Reference> PUBLICATIONS = PdfUtils.getText(Introduction.class.getResourceAsStream("references.txt"))
+	private static final List<Reference> PUBLICATIONS = PdfUtils.getText(Introduction.class.getResourceAsStream("/texts/references.txt"))
 			.stream()
 			.map(s -> s.split("\t"))
 			.map(line -> new Reference(line[0], line[1]))
@@ -32,7 +32,7 @@ public class Introduction implements Section {
 	public void render(Document document, DocumentProperties properties) {
 		final PdfProfile profile = properties.getPdfProfile();
 		document.add(new AreaBreak());
-		document.add(profile.getH1("Introduction").setDestination("introduction"));
+		document.add(profile.getH2("Introduction").setDestination("introduction"));
 		final Collection<Paragraph> intro = HtmlParser.parseText(profile, INTRODUCTION);
 		intro.forEach(document::add);
 

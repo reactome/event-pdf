@@ -1,0 +1,2061 @@
+{
+  "dbId" : 1655829,
+  "stableId" : "R-HSA-1655829",
+  "displayName" : "Regulation of cholesterol biosynthesis by SREBP (SREBF)",
+  "nodes" : [ {
+    "id" : 193,
+    "reactomeId" : 2426168,
+    "displayName" : "Activation of gene expression by SREBF (SREBP)",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 278,
+      "y" : 628
+    },
+    "minX" : 107,
+    "maxX" : 450,
+    "minY" : 591,
+    "maxY" : 666,
+    "prop" : {
+      "x" : 107,
+      "y" : 591,
+      "width" : 343,
+      "height" : 75
+    },
+    "textPosition" : {
+      "x" : 134,
+      "y" : 614
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 72,
+    "reactomeId" : 2065556,
+    "displayName" : "SREBP1A,1C,2:Importin beta-1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1050,
+      "y" : 633
+    },
+    "minX" : 942,
+    "maxX" : 1158,
+    "minY" : 621,
+    "maxY" : 646,
+    "prop" : {
+      "x" : 942,
+      "y" : 621,
+      "width" : 216,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 956,
+      "y" : 625
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 19,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 78,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 1655765,
+    "displayName" : "SREBP1A,1C,2:SCAP:Cop II Coat",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 612,
+      "y" : 96
+    },
+    "minX" : 507,
+    "maxX" : 718,
+    "minY" : 84,
+    "maxY" : 108,
+    "prop" : {
+      "x" : 507,
+      "y" : 84,
+      "width" : 211,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 517,
+      "y" : 87
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 73,
+    "reactomeId" : 2065543,
+    "displayName" : "SREBP1A,1C,2:Importin beta-1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 465,
+      "y" : 466
+    },
+    "minX" : 359,
+    "maxX" : 571,
+    "minY" : 454,
+    "maxY" : 519,
+    "prop" : {
+      "x" : 359,
+      "y" : 454,
+      "width" : 212,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 371,
+      "y" : 457
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 80,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 484,
+          "y" : 481
+        },
+        "to" : {
+          "x" : 553,
+          "y" : 519
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 19,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 106,
+    "reactomeId" : 203997,
+    "displayName" : "SAR1B:GTP:SEC23:SEC24",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 373,
+      "y" : 87
+    },
+    "minX" : 276,
+    "maxX" : 470,
+    "minY" : 46,
+    "maxY" : 101,
+    "prop" : {
+      "x" : 276,
+      "y" : 74,
+      "width" : 194,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 295,
+      "y" : 80
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 395,
+          "y" : 71
+        },
+        "to" : {
+          "x" : 441,
+          "y" : 46
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 1655742,
+    "displayName" : "SREBP1A,1C,2:SCAP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 966,
+      "y" : 63
+    },
+    "minX" : 889,
+    "maxX" : 1043,
+    "minY" : 52,
+    "maxY" : 74,
+    "prop" : {
+      "x" : 889,
+      "y" : 52,
+      "width" : 154,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 904,
+      "y" : 53
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 12,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 139,
+    "reactomeId" : 180733,
+    "displayName" : "KPNB1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 896,
+      "y" : 535
+    },
+    "minX" : 838,
+    "maxX" : 1020,
+    "minY" : 517,
+    "maxY" : 552,
+    "prop" : {
+      "x" : 838,
+      "y" : 523,
+      "width" : 116,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 872,
+      "y" : 524
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 954,
+          "y" : 523
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 78,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 957,
+          "y" : 542
+        },
+        "to" : {
+          "x" : 1020,
+          "y" : 552
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 141,
+    "reactomeId" : 2317520,
+    "displayName" : "SREBP1A,1C,2:SCAP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 207,
+      "y" : 47
+    },
+    "minX" : 133,
+    "maxX" : 441,
+    "minY" : 33,
+    "maxY" : 205,
+    "prop" : {
+      "x" : 133,
+      "y" : 33,
+      "width" : 149,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 145,
+      "y" : 40
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 285,
+          "y" : 46
+        },
+        "to" : {
+          "x" : 441,
+          "y" : 46
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 119,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 217,
+          "y" : 64
+        },
+        "to" : {
+          "x" : 325,
+          "y" : 205
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 124,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 205,
+          "y" : 64
+        },
+        "to" : {
+          "x" : 186,
+          "y" : 197
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 77,
+    "reactomeId" : 2065548,
+    "displayName" : "SREBP1A,1C,2 dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1135,
+      "y" : 532
+    },
+    "minX" : 1020,
+    "maxX" : 1214,
+    "minY" : 520,
+    "maxY" : 552,
+    "prop" : {
+      "x" : 1057,
+      "y" : 520,
+      "width" : 157,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 1071,
+      "y" : 523
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 76,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 78,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1066,
+          "y" : 547
+        },
+        "to" : {
+          "x" : 1020,
+          "y" : 552
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 1655726,
+    "displayName" : "SREBF1A,1C,2 cleaved by S1P",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 967,
+      "y" : 263
+    },
+    "minX" : 866,
+    "maxX" : 1068,
+    "minY" : 176,
+    "maxY" : 277,
+    "prop" : {
+      "x" : 866,
+      "y" : 250,
+      "width" : 202,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 876,
+      "y" : 253
+    },
+    "connectors" : [ {
+      "edgeId" : 16,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 12,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 965,
+          "y" : 244
+        },
+        "to" : {
+          "x" : 958,
+          "y" : 176
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 955,
+            "y" : 204
+          },
+          "b" : {
+            "x" : 967,
+            "y" : 216
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 960,
+          "y" : 238
+        },
+        "b" : {
+          "x" : 965,
+          "y" : 244
+        },
+        "c" : {
+          "x" : 968,
+          "y" : 237
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 1655737,
+    "displayName" : "SCAP tetramer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1093,
+      "y" : 202
+    },
+    "minX" : 958,
+    "maxX" : 1153,
+    "minY" : 176,
+    "maxY" : 215,
+    "prop" : {
+      "x" : 1033,
+      "y" : 190,
+      "width" : 120,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 1047,
+      "y" : 194
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 12,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1030,
+          "y" : 190
+        },
+        "to" : {
+          "x" : 958,
+          "y" : 176
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1022,
+          "y" : 193
+        },
+        "b" : {
+          "x" : 1030,
+          "y" : 190
+        },
+        "c" : {
+          "x" : 1024,
+          "y" : 185
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 143,
+    "reactomeId" : 193384,
+    "displayName" : "CHOL",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 405,
+      "y" : 161
+    },
+    "minX" : 325,
+    "maxX" : 447,
+    "minY" : 145,
+    "maxY" : 205,
+    "prop" : {
+      "x" : 365,
+      "y" : 146,
+      "width" : 81,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 385,
+      "y" : 150
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 441,
+          "y" : 151
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 119,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 377,
+          "y" : 179
+        },
+        "to" : {
+          "x" : 325,
+          "y" : 205
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 345,
+            "y" : 186
+          },
+          "b" : {
+            "x" : 357,
+            "y" : 198
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 381108,
+    "displayName" : "MBTPS1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1068,
+      "y" : 126
+    },
+    "minX" : 968,
+    "maxX" : 1108,
+    "minY" : 108,
+    "maxY" : 138,
+    "prop" : {
+      "x" : 1034,
+      "y" : 114,
+      "width" : 68,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 1041,
+      "y" : 115
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1102,
+          "y" : 114
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 12,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1031,
+          "y" : 125
+        },
+        "to" : {
+          "x" : 976,
+          "y" : 125
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 972,
+          "y" : 125
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 81,
+    "reactomeId" : 180738,
+    "displayName" : "RAN:GTP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 652,
+      "y" : 503
+    },
+    "minX" : 553,
+    "maxX" : 693,
+    "minY" : 492,
+    "maxY" : 519,
+    "prop" : {
+      "x" : 611,
+      "y" : 492,
+      "width" : 82,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 621,
+      "y" : 493
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 80,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 608,
+          "y" : 509
+        },
+        "to" : {
+          "x" : 553,
+          "y" : 519
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 1655732,
+    "displayName" : "SREBF1A,1C,2 cleaved by S2P",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1002,
+      "y" : 425
+    },
+    "minX" : 897,
+    "maxX" : 1108,
+    "minY" : 410,
+    "maxY" : 476,
+    "prop" : {
+      "x" : 897,
+      "y" : 410,
+      "width" : 211,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 912,
+      "y" : 415
+    },
+    "connectors" : [ {
+      "edgeId" : 16,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 76,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 1013,
+            "y" : 464
+          },
+          "b" : {
+            "x" : 1025,
+            "y" : 476
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 381131,
+    "displayName" : "MBTPS2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1081,
+      "y" : 326
+    },
+    "minX" : 990,
+    "maxX" : 1115,
+    "minY" : 309,
+    "maxY" : 337,
+    "prop" : {
+      "x" : 1054,
+      "y" : 315,
+      "width" : 55,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1054,
+      "y" : 315
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1109,
+          "y" : 315
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 16,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1051,
+          "y" : 326
+        },
+        "to" : {
+          "x" : 998,
+          "y" : 327
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 994,
+          "y" : 327
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 83,
+    "reactomeId" : 180719,
+    "displayName" : "Importin-beta:Ran GTP complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 596,
+      "y" : 615
+    },
+    "minX" : 487,
+    "maxX" : 705,
+    "minY" : 573,
+    "maxY" : 627,
+    "prop" : {
+      "x" : 487,
+      "y" : 604,
+      "width" : 218,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 498,
+      "y" : 606
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 80,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 584,
+          "y" : 601
+        },
+        "to" : {
+          "x" : 555,
+          "y" : 573
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 576,
+          "y" : 599
+        },
+        "b" : {
+          "x" : 584,
+          "y" : 601
+        },
+        "c" : {
+          "x" : 582,
+          "y" : 593
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 84,
+    "reactomeId" : 1655744,
+    "displayName" : "SREBP1A,1C,2 dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 357,
+      "y" : 568
+    },
+    "minX" : 278,
+    "maxX" : 555,
+    "minY" : 556,
+    "maxY" : 581,
+    "prop" : {
+      "x" : 278,
+      "y" : 556,
+      "width" : 159,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 293,
+      "y" : 560
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 80,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 440,
+          "y" : 570
+        },
+        "to" : {
+          "x" : 555,
+          "y" : 573
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 447,
+          "y" : 566
+        },
+        "b" : {
+          "x" : 440,
+          "y" : 570
+        },
+        "c" : {
+          "x" : 447,
+          "y" : 574
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 120,
+    "reactomeId" : 1655749,
+    "displayName" : "INSIG",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 430,
+      "y" : 201
+    },
+    "minX" : 325,
+    "maxX" : 460,
+    "minY" : 190,
+    "maxY" : 213,
+    "prop" : {
+      "x" : 400,
+      "y" : 190,
+      "width" : 60,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 411,
+      "y" : 191
+    },
+    "connectors" : [ {
+      "edgeId" : 119,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 394,
+          "y" : 202
+        },
+        "to" : {
+          "x" : 325,
+          "y" : 205
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 353,
+            "y" : 197
+          },
+          "b" : {
+            "x" : 365,
+            "y" : 209
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 123,
+    "reactomeId" : 1655766,
+    "displayName" : "SREBP1A,1C,2:SCAP:cholesterol:INSIG",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 433,
+      "y" : 322
+    },
+    "minX" : 305,
+    "maxX" : 561,
+    "minY" : 309,
+    "maxY" : 336,
+    "prop" : {
+      "x" : 305,
+      "y" : 309,
+      "width" : 256,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 321,
+      "y" : 315
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 119,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 125,
+    "reactomeId" : 2317517,
+    "displayName" : "INSIG:oxysterol",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 90,
+      "y" : 122
+    },
+    "minX" : 33,
+    "maxX" : 186,
+    "minY" : 111,
+    "maxY" : 197,
+    "prop" : {
+      "x" : 33,
+      "y" : 111,
+      "width" : 115,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 43,
+      "y" : 113
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 124,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 104,
+          "y" : 137
+        },
+        "to" : {
+          "x" : 186,
+          "y" : 197
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 139,
+            "y" : 161
+          },
+          "b" : {
+            "x" : 151,
+            "y" : 173
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 126,
+    "reactomeId" : 2317522,
+    "displayName" : "SREBP1A,1C,2:SCAP:INSIG:oxysterol",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 156,
+      "y" : 322
+    },
+    "minX" : 32,
+    "maxX" : 281,
+    "minY" : 309,
+    "maxY" : 335,
+    "prop" : {
+      "x" : 32,
+      "y" : 309,
+      "width" : 249,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 49,
+      "y" : 314
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 124,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 16,
+    "reactomeId" : 1655851,
+    "displayName" : "S2P hydrolyzes SREBP1A,1C,2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 982,
+      "y" : 327
+    },
+    "minX" : 970,
+    "maxX" : 998,
+    "minY" : 283,
+    "maxY" : 404,
+    "segments" : [ {
+      "from" : {
+        "x" : 970,
+        "y" : 283
+      },
+      "to" : {
+        "x" : 982,
+        "y" : 327
+      }
+    }, {
+      "from" : {
+        "x" : 982,
+        "y" : 327
+      },
+      "to" : {
+        "x" : 998,
+        "y" : 404
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 993,
+        "y" : 398
+      },
+      "b" : {
+        "x" : 998,
+        "y" : 404
+      },
+      "c" : {
+        "x" : 1001,
+        "y" : 396
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 976,
+        "y" : 321
+      },
+      "b" : {
+        "x" : 988,
+        "y" : 333
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 13
+    } ],
+    "outputs" : [ {
+      "id" : 17
+    } ],
+    "catalysts" : [ {
+      "id" : 18,
+      "points" : [ {
+        "x" : 1051,
+        "y" : 326
+      } ]
+    } ]
+  }, {
+    "id" : 80,
+    "reactomeId" : 2065539,
+    "displayName" : "SREBP1A,1C,2:Importin beta-1 dissociates",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 553,
+      "y" : 547
+    },
+    "minX" : 547,
+    "maxX" : 559,
+    "minY" : 519,
+    "maxY" : 573,
+    "segments" : [ {
+      "from" : {
+        "x" : 553,
+        "y" : 519
+      },
+      "to" : {
+        "x" : 553,
+        "y" : 547
+      }
+    }, {
+      "from" : {
+        "x" : 553,
+        "y" : 547
+      },
+      "to" : {
+        "x" : 555,
+        "y" : 573
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 547,
+        "y" : 541
+      },
+      "b" : {
+        "x" : 559,
+        "y" : 553
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 81,
+      "points" : [ {
+        "x" : 608,
+        "y" : 509
+      } ]
+    }, {
+      "id" : 73,
+      "points" : [ {
+        "x" : 484,
+        "y" : 481
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 83,
+      "points" : [ {
+        "x" : 584,
+        "y" : 601
+      } ]
+    }, {
+      "id" : 84,
+      "points" : [ {
+        "x" : 440,
+        "y" : 570
+      } ]
+    } ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 1655831,
+    "displayName" : "SREBP1A,1C,2 translocates to the nucleus",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 751,
+      "y" : 474
+    },
+    "minX" : 574,
+    "maxX" : 939,
+    "minY" : 468,
+    "maxY" : 631,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 939,
+        "y" : 631
+      },
+      "to" : {
+        "x" : 803,
+        "y" : 630
+      }
+    }, {
+      "from" : {
+        "x" : 803,
+        "y" : 630
+      },
+      "to" : {
+        "x" : 751,
+        "y" : 474
+      }
+    }, {
+      "from" : {
+        "x" : 751,
+        "y" : 474
+      },
+      "to" : {
+        "x" : 574,
+        "y" : 468
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 581,
+        "y" : 464
+      },
+      "b" : {
+        "x" : 574,
+        "y" : 468
+      },
+      "c" : {
+        "x" : 581,
+        "y" : 472
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 745,
+        "y" : 468
+      },
+      "b" : {
+        "x" : 757,
+        "y" : 480
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 72
+    } ],
+    "outputs" : [ {
+      "id" : 73
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 1655825,
+    "displayName" : "SREBP1A,1C,2:SCAP binds CopII Coat Complex",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 509,
+      "y" : 47
+    },
+    "minX" : 441,
+    "maxX" : 586,
+    "minY" : 41,
+    "maxY" : 81,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 441,
+        "y" : 46
+      },
+      "to" : {
+        "x" : 509,
+        "y" : 47
+      }
+    }, {
+      "from" : {
+        "x" : 509,
+        "y" : 47
+      },
+      "to" : {
+        "x" : 586,
+        "y" : 81
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 578,
+        "y" : 82
+      },
+      "b" : {
+        "x" : 586,
+        "y" : 81
+      },
+      "c" : {
+        "x" : 581,
+        "y" : 75
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 503,
+        "y" : 41
+      },
+      "b" : {
+        "x" : 515,
+        "y" : 53
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 106,
+      "points" : [ {
+        "x" : 395,
+        "y" : 71
+      } ]
+    }, {
+      "id" : 141,
+      "points" : [ {
+        "x" : 285,
+        "y" : 46
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 9
+    } ]
+  }, {
+    "id" : 119,
+    "reactomeId" : 2317530,
+    "displayName" : "SREBP1A,1C,2 binds SCAP:cholesterol:INSIG and is retained in the endoplasmic reticulum",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 372,
+      "y" : 254
+    },
+    "minX" : 325,
+    "maxX" : 420,
+    "minY" : 205,
+    "maxY" : 306,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 325,
+        "y" : 205
+      },
+      "to" : {
+        "x" : 372,
+        "y" : 254
+      }
+    }, {
+      "from" : {
+        "x" : 372,
+        "y" : 254
+      },
+      "to" : {
+        "x" : 420,
+        "y" : 306
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 412,
+        "y" : 304
+      },
+      "b" : {
+        "x" : 420,
+        "y" : 306
+      },
+      "c" : {
+        "x" : 418,
+        "y" : 298
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 366,
+        "y" : 248
+      },
+      "b" : {
+        "x" : 378,
+        "y" : 260
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 143,
+      "points" : [ {
+        "x" : 377,
+        "y" : 179
+      } ],
+      "stoichiometry" : 4
+    }, {
+      "id" : 120,
+      "points" : [ {
+        "x" : 394,
+        "y" : 202
+      } ],
+      "stoichiometry" : 4
+    }, {
+      "id" : 141,
+      "points" : [ {
+        "x" : 217,
+        "y" : 64
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 123
+    } ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 1655834,
+    "displayName" : "SREBP1A,1C,2:SCAP translocates to the Golgi",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 758,
+      "y" : 90
+    },
+    "minX" : 721,
+    "maxX" : 886,
+    "minY" : 72,
+    "maxY" : 96,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 721,
+        "y" : 91
+      },
+      "to" : {
+        "x" : 758,
+        "y" : 90
+      }
+    }, {
+      "from" : {
+        "x" : 758,
+        "y" : 90
+      },
+      "to" : {
+        "x" : 886,
+        "y" : 72
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 880,
+        "y" : 77
+      },
+      "b" : {
+        "x" : 886,
+        "y" : 72
+      },
+      "c" : {
+        "x" : 879,
+        "y" : 69
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 752,
+        "y" : 84
+      },
+      "b" : {
+        "x" : 764,
+        "y" : 96
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 9
+    } ],
+    "outputs" : [ {
+      "id" : 11
+    } ]
+  }, {
+    "id" : 76,
+    "reactomeId" : 2065549,
+    "displayName" : "SREBP1A,1C,2 binds SREBP1A,1C,2 forming dimers",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1030,
+      "y" : 493
+    },
+    "minX" : 1008,
+    "maxX" : 1102,
+    "minY" : 447,
+    "maxY" : 517,
+    "segments" : [ {
+      "from" : {
+        "x" : 1008,
+        "y" : 447
+      },
+      "to" : {
+        "x" : 1030,
+        "y" : 493
+      }
+    }, {
+      "from" : {
+        "x" : 1030,
+        "y" : 493
+      },
+      "to" : {
+        "x" : 1102,
+        "y" : 517
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1094,
+        "y" : 519
+      },
+      "b" : {
+        "x" : 1102,
+        "y" : 517
+      },
+      "c" : {
+        "x" : 1097,
+        "y" : 511
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1024,
+        "y" : 487
+      },
+      "b" : {
+        "x" : 1036,
+        "y" : 499
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 17,
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 77
+    } ]
+  }, {
+    "id" : 124,
+    "reactomeId" : 2317531,
+    "displayName" : "SREBP1A,1C,2 binds SCAP:INSIG:oxysterol and is retained in the endoplasmic reticulum",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 171,
+      "y" : 254
+    },
+    "minX" : 158,
+    "maxX" : 186,
+    "minY" : 197,
+    "maxY" : 306,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 186,
+        "y" : 197
+      },
+      "to" : {
+        "x" : 171,
+        "y" : 254
+      }
+    }, {
+      "from" : {
+        "x" : 171,
+        "y" : 254
+      },
+      "to" : {
+        "x" : 158,
+        "y" : 306
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 156,
+        "y" : 298
+      },
+      "b" : {
+        "x" : 158,
+        "y" : 306
+      },
+      "c" : {
+        "x" : 164,
+        "y" : 300
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 165,
+        "y" : 248
+      },
+      "b" : {
+        "x" : 177,
+        "y" : 260
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 125,
+      "points" : [ {
+        "x" : 104,
+        "y" : 137
+      } ],
+      "stoichiometry" : 4
+    }, {
+      "id" : 141,
+      "points" : [ {
+        "x" : 205,
+        "y" : 64
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 126
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 1655842,
+    "displayName" : "S1P hydrolyzes SREBP1A,1C,2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 960,
+      "y" : 125
+    },
+    "minX" : 954,
+    "maxX" : 966,
+    "minY" : 77,
+    "maxY" : 176,
+    "segments" : [ {
+      "from" : {
+        "x" : 964,
+        "y" : 77
+      },
+      "to" : {
+        "x" : 960,
+        "y" : 125
+      }
+    }, {
+      "from" : {
+        "x" : 960,
+        "y" : 125
+      },
+      "to" : {
+        "x" : 958,
+        "y" : 176
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 954,
+        "y" : 119
+      },
+      "b" : {
+        "x" : 966,
+        "y" : 131
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 11
+    } ],
+    "outputs" : [ {
+      "id" : 13,
+      "points" : [ {
+        "x" : 965,
+        "y" : 244
+      } ],
+      "stoichiometry" : 4
+    }, {
+      "id" : 14,
+      "points" : [ {
+        "x" : 1030,
+        "y" : 190
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 15,
+      "points" : [ {
+        "x" : 1031,
+        "y" : 125
+      } ]
+    } ]
+  }, {
+    "id" : 78,
+    "reactomeId" : 2065550,
+    "displayName" : "SREBP1A,1C,2 binds Importin beta-1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1021,
+      "y" : 584
+    },
+    "minX" : 1015,
+    "maxX" : 1042,
+    "minY" : 552,
+    "maxY" : 618,
+    "segments" : [ {
+      "from" : {
+        "x" : 1020,
+        "y" : 552
+      },
+      "to" : {
+        "x" : 1021,
+        "y" : 584
+      }
+    }, {
+      "from" : {
+        "x" : 1021,
+        "y" : 584
+      },
+      "to" : {
+        "x" : 1042,
+        "y" : 618
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1035,
+        "y" : 614
+      },
+      "b" : {
+        "x" : 1042,
+        "y" : 618
+      },
+      "c" : {
+        "x" : 1042,
+        "y" : 610
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1015,
+        "y" : 578
+      },
+      "b" : {
+        "x" : 1027,
+        "y" : 590
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 139,
+      "points" : [ {
+        "x" : 957,
+        "y" : 542
+      } ]
+    }, {
+      "id" : 77,
+      "points" : [ {
+        "x" : 1066,
+        "y" : 547
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 72
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 1,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 632,
+      "y" : 384
+    },
+    "minX" : 0,
+    "maxX" : 1264,
+    "minY" : 0,
+    "maxY" : 769,
+    "prop" : {
+      "x" : 0,
+      "y" : 0,
+      "width" : 1264,
+      "height" : 769
+    },
+    "textPosition" : {
+      "x" : 29,
+      "y" : 721
+    },
+    "insets" : {
+      "x" : 10,
+      "y" : 10,
+      "width" : 1235,
+      "height" : 747
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2, 3, 5, 72, 76, 77, 78, 17, 139, 19, 10 ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 7660,
+    "displayName" : "nucleoplasm",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 402,
+      "y" : 574
+    },
+    "minX" : 78,
+    "maxX" : 727,
+    "minY" : 430,
+    "maxY" : 719,
+    "prop" : {
+      "x" : 78,
+      "y" : 430,
+      "width" : 649,
+      "height" : 289
+    },
+    "textPosition" : {
+      "x" : 98,
+      "y" : 671
+    },
+    "insets" : {
+      "x" : 91,
+      "y" : 442,
+      "width" : 622,
+      "height" : 265
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 73, 81, 80, 83, 84, 193 ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 12045,
+    "displayName" : "endoplasmic reticulum membrane",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 378,
+      "y" : 205
+    },
+    "minX" : 19,
+    "maxX" : 737,
+    "minY" : 18,
+    "maxY" : 392,
+    "prop" : {
+      "x" : 19,
+      "y" : 18,
+      "width" : 718,
+      "height" : 374
+    },
+    "textPosition" : {
+      "x" : 26,
+      "y" : 349
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 9, 7, 106, 119, 120, 123, 124, 125, 126, 141, 143 ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 20699,
+    "displayName" : "Golgi membrane",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 971,
+      "y" : 203
+    },
+    "minX" : 780,
+    "maxX" : 1163,
+    "minY" : 27,
+    "maxY" : 379,
+    "prop" : {
+      "x" : 780,
+      "y" : 27,
+      "width" : 383,
+      "height" : 352
+    },
+    "textPosition" : {
+      "x" : 783,
+      "y" : 341
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 11, 12, 13, 14, 15, 16, 18 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 1264,
+  "minY" : 0,
+  "maxY" : 769,
+  "disease" : false
+}

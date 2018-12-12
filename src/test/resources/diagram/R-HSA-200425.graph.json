@@ -1,0 +1,488 @@
+{
+  "dbId" : 200425,
+  "stId" : "R-HSA-200425",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 9131 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 381319,
+    "stId" : "R-HSA-381319",
+    "displayName" : "RXRA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19793",
+    "geneNames" : [ "RXRA", "NR2B1" ],
+    "parents" : [ 5422941 ]
+  }, {
+    "dbId" : 29508,
+    "stId" : "R-ALL-29508",
+    "displayName" : "Mal-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 29 ],
+    "identifier" : "15531"
+  }, {
+    "dbId" : 5334804,
+    "stId" : "R-ALL-5334804",
+    "displayName" : "atRA [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15367",
+    "parents" : [ 5634107 ]
+  }, {
+    "dbId" : 8867329,
+    "stId" : "R-HSA-8867329",
+    "displayName" : "MID1IP1:THRSP [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6102 ],
+    "children" : [ 8867326, 8867328 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 9132 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 8867328,
+    "stId" : "R-HSA-8867328",
+    "displayName" : "MID1IP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7385 ],
+    "identifier" : "Q9NPA3",
+    "geneNames" : [ "MID1IP1", "MIG12" ],
+    "parents" : [ 8867329 ]
+  }, {
+    "dbId" : 2993829,
+    "stId" : "R-HSA-2993829",
+    "displayName" : "Btn-ACACB:2Mn2+ [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8867341 ],
+    "children" : [ 2993858, 29418 ]
+  }, {
+    "dbId" : 201034,
+    "stId" : "R-ALL-201034",
+    "displayName" : "L-PCARN [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 119 ],
+    "identifier" : "17490"
+  }, {
+    "dbId" : 111627,
+    "stId" : "R-ALL-111627",
+    "displayName" : "HCO3- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 297 ],
+    "identifier" : "17544"
+  }, {
+    "dbId" : 8867341,
+    "stId" : "R-HSA-8867341",
+    "displayName" : "Btn-ACACB:2Mn2+ polymer [mitochondrial outer membrane]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6025 ],
+    "children" : [ 2993829 ]
+  }, {
+    "dbId" : 5422941,
+    "stId" : "R-HSA-5422941",
+    "displayName" : "RXRA:PPARD [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5634107 ],
+    "children" : [ 446176, 381319 ]
+  }, {
+    "dbId" : 549319,
+    "stId" : "R-HSA-549319",
+    "displayName" : "SLC22A5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9144 ],
+    "identifier" : "O76082",
+    "geneNames" : [ "SLC22A5", "OCTN2" ]
+  }, {
+    "dbId" : 8876883,
+    "stId" : "R-HSA-8876883",
+    "displayName" : "Btn-ACACA:2Mn2+ polymer [cytosol]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6024 ],
+    "children" : [ 2993815 ]
+  }, {
+    "dbId" : 76183,
+    "stId" : "R-ALL-76183",
+    "displayName" : "Ac-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 296 ],
+    "identifier" : "15351"
+  }, {
+    "dbId" : 200411,
+    "stId" : "R-HSA-200411",
+    "displayName" : "PRKAB2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43741",
+    "geneNames" : [ "PRKAB2" ],
+    "parents" : [ 200408 ]
+  }, {
+    "dbId" : 201050,
+    "stId" : "R-ALL-201050",
+    "displayName" : "L-PCARN [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 123 ],
+    "identifier" : "17490"
+  }, {
+    "dbId" : 8876893,
+    "stId" : "R-HSA-8876893",
+    "displayName" : "Btn-p-S79-ACACB:2Mn2+ polymer [mitochondrial outer membrane]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6028 ],
+    "children" : [ 8876901 ]
+  }, {
+    "dbId" : 200408,
+    "stId" : "R-HSA-200408",
+    "displayName" : "AMPK heterotrimer (active) [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 299 ],
+    "children" : [ 200411, 200416, 200417 ]
+  }, {
+    "dbId" : 30235,
+    "stId" : "R-ALL-30235",
+    "displayName" : "CAR [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 9133 ],
+    "identifier" : "17126"
+  }, {
+    "dbId" : 8876892,
+    "stId" : "R-HSA-8876892",
+    "displayName" : "Btn-p-S79-ACACB [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00763",
+    "geneNames" : [ "ACACB", "ACC2", "ACCB" ],
+    "parents" : [ 8876901 ]
+  }, {
+    "dbId" : 549205,
+    "stId" : "R-HSA-549205",
+    "displayName" : "CPT1A,B [mitochondrial outer membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 120 ],
+    "children" : [ 201020, 400161 ]
+  }, {
+    "dbId" : 549207,
+    "stId" : "R-ALL-549207",
+    "displayName" : "CAR [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 9138 ],
+    "identifier" : "17126"
+  }, {
+    "dbId" : 76190,
+    "stId" : "R-ALL-76190",
+    "displayName" : "CIT [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6031 ],
+    "identifier" : "30769"
+  }, {
+    "dbId" : 77281,
+    "stId" : "R-ALL-77281",
+    "displayName" : "PalmCoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 126 ],
+    "identifier" : "15525"
+  }, {
+    "dbId" : 200994,
+    "stId" : "R-HSA-200994",
+    "displayName" : "CPT2 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 127 ],
+    "identifier" : "P23786",
+    "geneNames" : [ "CPT2", "CPT1" ]
+  }, {
+    "dbId" : 8876901,
+    "stId" : "R-HSA-8876901",
+    "displayName" : "Btn-p-S79-ACACB:2Mn2+ [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876893 ],
+    "children" : [ 8876892, 29418 ]
+  }, {
+    "dbId" : 200993,
+    "stId" : "R-ALL-200993",
+    "displayName" : "PALM-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 44 ],
+    "identifier" : "15525"
+  }, {
+    "dbId" : 200417,
+    "stId" : "R-HSA-200417",
+    "displayName" : "p-T172-PRKAA2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P54646",
+    "geneNames" : [ "PRKAA2", "AMPK", "AMPK2" ],
+    "parents" : [ 200408 ]
+  }, {
+    "dbId" : 200416,
+    "stId" : "R-HSA-200416",
+    "displayName" : "PRKAG2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UGJ0",
+    "geneNames" : [ "PRKAG2" ],
+    "parents" : [ 200408 ]
+  }, {
+    "dbId" : 76194,
+    "stId" : "R-ALL-76194",
+    "displayName" : "CoA-SH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 121 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 446176,
+    "stId" : "R-HSA-446176",
+    "displayName" : "PPARD [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q03181",
+    "geneNames" : [ "PPARD", "NR1C2", "PPARB" ],
+    "parents" : [ 5422941 ]
+  }, {
+    "dbId" : 400161,
+    "stId" : "R-HSA-400161",
+    "displayName" : "CPT1A [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50416",
+    "geneNames" : [ "CPT1A", "CPT1" ],
+    "parents" : [ 549205 ]
+  }, {
+    "dbId" : 29418,
+    "stId" : "R-ALL-29418",
+    "displayName" : "Mn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29035",
+    "parents" : [ 8876901, 2993829, 2993815 ]
+  }, {
+    "dbId" : 200557,
+    "stId" : "R-HSA-200557",
+    "displayName" : "SLC25A20 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 124 ],
+    "identifier" : "O43772",
+    "geneNames" : [ "SLC25A20", "CAC", "CACT" ]
+  }, {
+    "dbId" : 5634107,
+    "stId" : "R-HSA-5634107",
+    "displayName" : "RXRA:PPARD:atRA [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 405 ],
+    "children" : [ 5422941, 5334804 ]
+  }, {
+    "dbId" : 2993858,
+    "stId" : "R-HSA-2993858",
+    "displayName" : "Btn-ACACB [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00763",
+    "geneNames" : [ "ACACB", "ACC2", "ACCB" ],
+    "parents" : [ 2993829 ]
+  }, {
+    "dbId" : 2976730,
+    "stId" : "R-HSA-2976730",
+    "displayName" : "Btn-ACACA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13085",
+    "geneNames" : [ "ACACA", "ACAC", "ACC1", "ACCA" ],
+    "parents" : [ 2993815 ]
+  }, {
+    "dbId" : 8867326,
+    "stId" : "R-HSA-8867326",
+    "displayName" : "THRSP [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7386 ],
+    "identifier" : "Q92748",
+    "geneNames" : [ "THRSP" ],
+    "parents" : [ 8867329 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 292, 6026 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 2993815,
+    "stId" : "R-HSA-2993815",
+    "displayName" : "Btn-ACACA:2Mn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876883 ],
+    "children" : [ 29418, 2976730 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 293, 6027 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 201023,
+    "stId" : "R-ALL-201023",
+    "displayName" : "CAR [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 122 ],
+    "identifier" : "17126"
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 294 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 29374,
+    "stId" : "R-ALL-29374",
+    "displayName" : "CoA-SH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 125 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 164988,
+    "stId" : "R-ALL-164988",
+    "displayName" : "CAR [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 9130 ],
+    "identifier" : "17126"
+  }, {
+    "dbId" : 201020,
+    "stId" : "R-HSA-201020",
+    "displayName" : "CPT1B [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92523",
+    "geneNames" : [ "CPT1B", "KIAA1670" ],
+    "parents" : [ 549205 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 165026,
+    "stId" : "R-HSA-165026",
+    "displayName" : "OCTN2 / SLC22A5 transports CAR from extracellular space to cytosol",
+    "schemaClass" : "Reaction",
+    "following" : [ 8949399 ],
+    "inputs" : [ 164988, 74113 ],
+    "outputs" : [ 30235, 83910 ],
+    "catalysts" : [ 549319 ],
+    "efs" : [ ],
+    "diagramIds" : [ 9129 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200423,
+    "stId" : "R-HSA-200423",
+    "displayName" : "pAMPK inactivates ACACB, inhibiting malonyl-CoA synthesis",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8867341, 113592 ],
+    "outputs" : [ 29370, 8876893 ],
+    "catalysts" : [ 200408 ],
+    "efs" : [ ],
+    "diagramIds" : [ 378 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200406,
+    "stId" : "R-HSA-200406",
+    "displayName" : "CPT1A,B transfers PALM to CAR",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8949399 ],
+    "following" : [ 200424 ],
+    "inputs" : [ 549207, 200993 ],
+    "outputs" : [ 201034, 76194 ],
+    "catalysts" : [ 549205 ],
+    "efs" : [ ],
+    "inhibitors" : [ 29508 ],
+    "activators" : [ 5634107 ],
+    "diagramIds" : [ 330 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200410,
+    "stId" : "R-HSA-200410",
+    "displayName" : "palmitoylcarnitine + CoASH => palmitoyl-CoA + carnitine",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 200424 ],
+    "inputs" : [ 29374, 201050 ],
+    "outputs" : [ 201023, 77281 ],
+    "catalysts" : [ 200994 ],
+    "efs" : [ ],
+    "diagramIds" : [ 332 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8866941,
+    "stId" : "R-HSA-8866941",
+    "displayName" : "MID1IP1 binds THRSP",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8867326, 8867328 ],
+    "outputs" : [ 8867329 ],
+    "efs" : [ ],
+    "diagramIds" : [ 7384 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75851,
+    "stId" : "R-HSA-75851",
+    "displayName" : "Btn-ACACA:2Mn2+ polymer carboxylates Ac-CoA to form Mal-CoA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 111627, 113592, 76183 ],
+    "outputs" : [ 29372, 29370, 29508 ],
+    "catalysts" : [ 8876883 ],
+    "efs" : [ ],
+    "activators" : [ 8867329, 76190 ],
+    "diagramIds" : [ 377 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 200424,
+    "stId" : "R-HSA-200424",
+    "displayName" : "Exchange of palmitoylcarnitine and carnitine across the inner mitochondrial membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 200406 ],
+    "following" : [ 200410 ],
+    "inputs" : [ 201023, 201034 ],
+    "outputs" : [ 549207, 201050 ],
+    "catalysts" : [ 200557 ],
+    "efs" : [ ],
+    "diagramIds" : [ 331 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8876889,
+    "stId" : "R-HSA-8876889",
+    "displayName" : "Btn-ACACB:2Mn2+ polymer carboxylates Ac-CoA to form Mal-CoA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 111627, 113592, 76183 ],
+    "outputs" : [ 29372, 29370, 29508 ],
+    "catalysts" : [ 8867341 ],
+    "efs" : [ ],
+    "activators" : [ 8867329, 76190 ],
+    "diagramIds" : [ 6103 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8949399,
+    "stId" : "R-HSA-8949399",
+    "displayName" : "CAR translocates from the cytosol to the mitochondrial intermembrane space",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 165026 ],
+    "following" : [ 200406 ],
+    "inputs" : [ 30235 ],
+    "outputs" : [ 549207 ],
+    "efs" : [ ],
+    "diagramIds" : [ 9143 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

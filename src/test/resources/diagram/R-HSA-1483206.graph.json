@@ -1,0 +1,5033 @@
+{
+  "dbId" : 1483206,
+  "stId" : "R-HSA-1483206",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 110614,
+    "stId" : "R-ALL-110614",
+    "displayName" : "CTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 258, 206 ],
+    "identifier" : "17677"
+  }, {
+    "dbId" : 444443,
+    "stId" : "R-HSA-444443",
+    "displayName" : "SLC44A3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N4M1",
+    "geneNames" : [ "SLC44A3", "CTL3", "UNQ558/PRO1115" ],
+    "parents" : [ 444452 ]
+  }, {
+    "dbId" : 5694582,
+    "stId" : "R-HSA-5694582",
+    "displayName" : "ABHD4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1268 ],
+    "identifier" : "Q8TB40",
+    "geneNames" : [ "ABHD4" ]
+  }, {
+    "dbId" : 188451,
+    "stId" : "R-ALL-188451",
+    "displayName" : "DHAP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3204 ],
+    "identifier" : "16108"
+  }, {
+    "dbId" : 5694580,
+    "stId" : "R-ALL-5694580",
+    "displayName" : "GPAEA [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1267 ],
+    "identifier" : "52571"
+  }, {
+    "dbId" : 444452,
+    "stId" : "R-HSA-444452",
+    "displayName" : "CTL1-5 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 853 ],
+    "children" : [ 444456, 444459, 444443, 444467, 444451 ]
+  }, {
+    "dbId" : 200736,
+    "stId" : "R-ALL-200736",
+    "displayName" : "L-Ser [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 304, 290 ],
+    "identifier" : "33384"
+  }, {
+    "dbId" : 444451,
+    "stId" : "R-HSA-444451",
+    "displayName" : "SLC44A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IWA5",
+    "geneNames" : [ "SLC44A2", "CTL2", "PSEC0210" ],
+    "parents" : [ 444452 ]
+  }, {
+    "dbId" : 3446802,
+    "stId" : "R-HSA-3446802",
+    "displayName" : "PTPMT1 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1215 ],
+    "identifier" : "Q8WUK0",
+    "geneNames" : [ "PTPMT1", "MOSP", "PLIP", "PNAS-129" ]
+  }, {
+    "dbId" : 188458,
+    "stId" : "R-ALL-188458",
+    "displayName" : "G3P [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 325 ],
+    "identifier" : "15978"
+  }, {
+    "dbId" : 444459,
+    "stId" : "R-HSA-444459",
+    "displayName" : "SLC44A5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NCS7",
+    "geneNames" : [ "SLC44A5", "CTL5" ],
+    "parents" : [ 444452 ]
+  }, {
+    "dbId" : 444456,
+    "stId" : "R-HSA-444456",
+    "displayName" : "SLC44A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WWI5",
+    "geneNames" : [ "SLC44A1", "CD92", "CDW92", "CTL1" ],
+    "parents" : [ 444452 ]
+  }, {
+    "dbId" : 5694567,
+    "stId" : "R-ALL-5694567",
+    "displayName" : "acyl group [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1266 ],
+    "identifier" : "22221"
+  }, {
+    "dbId" : 444467,
+    "stId" : "R-HSA-444467",
+    "displayName" : "SLC44A4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q53GD3",
+    "geneNames" : [ "SLC44A4", "C6orf29", "CTL4", "NG22", "UNQ441/PRO874", "TPPT1" ],
+    "parents" : [ 444452 ]
+  }, {
+    "dbId" : 188469,
+    "stId" : "R-HSA-188469",
+    "displayName" : "GPD2 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3203 ],
+    "identifier" : "P43304",
+    "geneNames" : [ "GPD2" ]
+  }, {
+    "dbId" : 5694568,
+    "stId" : "R-ALL-5694568",
+    "displayName" : "NAPE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1265 ],
+    "identifier" : "61232"
+  }, {
+    "dbId" : 8848588,
+    "stId" : "R-HSA-8848588",
+    "displayName" : "DGAT2L6 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6ZPD8",
+    "geneNames" : [ "DGAT2L6", "DC3" ],
+    "parents" : [ 8933132 ]
+  }, {
+    "dbId" : 5694478,
+    "stId" : "R-HSA-5694478",
+    "displayName" : "ABHD3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1261 ],
+    "identifier" : "Q8WU67",
+    "geneNames" : [ "ABHD3" ]
+  }, {
+    "dbId" : 1861754,
+    "stId" : "R-ALL-1861754",
+    "displayName" : "RCOOH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1260 ],
+    "identifier" : "33575"
+  }, {
+    "dbId" : 5694502,
+    "stId" : "R-ALL-5694502",
+    "displayName" : "LPC(14:0) [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1257 ],
+    "identifier" : "64483"
+  }, {
+    "dbId" : 171142,
+    "stId" : "R-ALL-171142",
+    "displayName" : "PL [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1219 ],
+    "identifier" : "16247",
+    "parents" : [ 5333679 ]
+  }, {
+    "dbId" : 8934414,
+    "stId" : "R-ALL-8934414",
+    "displayName" : "1-MMG [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3075 ],
+    "identifier" : "75562"
+  }, {
+    "dbId" : 6782195,
+    "stId" : "R-ALL-6782195",
+    "displayName" : "Acyl-CoA [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1270 ],
+    "identifier" : "17984"
+  }, {
+    "dbId" : 8867857,
+    "stId" : "R-HSA-8867857",
+    "displayName" : "OSBPL5,8,10 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1995 ],
+    "children" : [ 8867529, 8867870, 8867856 ]
+  }, {
+    "dbId" : 8867856,
+    "stId" : "R-HSA-8867856",
+    "displayName" : "OSBPL5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H0X9",
+    "geneNames" : [ "OSBPL5", "KIAA1534", "OBPH1", "ORP5" ],
+    "parents" : [ 8867857 ]
+  }, {
+    "dbId" : 6792447,
+    "stId" : "R-HSA-6792447",
+    "displayName" : "LIPH, I [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3197 ],
+    "children" : [ 6792457, 6792451 ]
+  }, {
+    "dbId" : 8867870,
+    "stId" : "R-HSA-8867870",
+    "displayName" : "OSBPL8 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZF1",
+    "geneNames" : [ "OSBPL8", "KIAA1451", "ORP8", "OSBP10" ],
+    "parents" : [ 8867857 ]
+  }, {
+    "dbId" : 75970,
+    "stId" : "R-ALL-75970",
+    "displayName" : "DHAP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "16108"
+  }, {
+    "dbId" : 75973,
+    "stId" : "R-ALL-75973",
+    "displayName" : "GO3P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 20 ],
+    "identifier" : "17197"
+  }, {
+    "dbId" : 549076,
+    "stId" : "R-HSA-549076",
+    "displayName" : "GPAT2 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6NUI2",
+    "geneNames" : [ "GPAT2" ],
+    "parents" : [ 1500606 ]
+  }, {
+    "dbId" : 217314,
+    "stId" : "R-ALL-217314",
+    "displayName" : "Mg2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 1500591, 1500637, 1500651, 1500641, 1500638 ]
+  }, {
+    "dbId" : 549099,
+    "stId" : "R-HSA-549099",
+    "displayName" : "AGPAT6 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1202 ],
+    "identifier" : "Q86UL3",
+    "geneNames" : [ "GPAT4", "AGPAT6", "UNQ551/PRO1108" ],
+    "parents" : [ 1500583 ]
+  }, {
+    "dbId" : 392417,
+    "stId" : "R-ALL-392417",
+    "displayName" : "PI4P [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1993 ],
+    "identifier" : "17526"
+  }, {
+    "dbId" : 29926,
+    "stId" : "R-ALL-29926",
+    "displayName" : "Mg2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 1500633 ]
+  }, {
+    "dbId" : 549109,
+    "stId" : "R-HSA-549109",
+    "displayName" : "AGPAT9 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q53EU6",
+    "geneNames" : [ "GPAT3", "AGPAT9", "MAG1", "HMFN0839", "UNQ2753/PRO6492" ],
+    "parents" : [ 1500583 ]
+  }, {
+    "dbId" : 8848506,
+    "stId" : "R-HSA-8848506",
+    "displayName" : "AWAT2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1964 ],
+    "identifier" : "Q6E213",
+    "geneNames" : [ "AWAT2", "DC4", "DGAT2L4", "MFAT", "WS" ]
+  }, {
+    "dbId" : 1524023,
+    "stId" : "R-ALL-1524023",
+    "displayName" : "GPETA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 546 ],
+    "identifier" : "16929"
+  }, {
+    "dbId" : 549160,
+    "stId" : "R-HSA-549160",
+    "displayName" : "LPIN3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BQK8",
+    "geneNames" : [ "LPIN3", "LIPN3L" ],
+    "parents" : [ 1500638 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1221 ],
+    "identifier" : "29108",
+    "parents" : [ 1500626 ]
+  }, {
+    "dbId" : 1524021,
+    "stId" : "R-ALL-1524021",
+    "displayName" : "LCFA(-) [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 448, 576, 601, 810, 427, 28, 492, 668, 765, 638, 686 ],
+    "identifier" : "57560"
+  }, {
+    "dbId" : 549165,
+    "stId" : "R-HSA-549165",
+    "displayName" : "LPIN2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92539",
+    "geneNames" : [ "LPIN2", "KIAA0249" ],
+    "parents" : [ 1500641 ]
+  }, {
+    "dbId" : 1524029,
+    "stId" : "R-HSA-1524029",
+    "displayName" : "LPCAT [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 587, 863 ],
+    "children" : [ 1498768, 1498770, 428994, 1498786, 1498772 ]
+  }, {
+    "dbId" : 1524028,
+    "stId" : "R-ALL-1524028",
+    "displayName" : "1-acyl LPC [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 571 ],
+    "identifier" : "17504"
+  }, {
+    "dbId" : 1524027,
+    "stId" : "R-ALL-1524027",
+    "displayName" : "1-acyl LPG [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 704 ],
+    "identifier" : "62747"
+  }, {
+    "dbId" : 549157,
+    "stId" : "R-HSA-549157",
+    "displayName" : "LPIN1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14693",
+    "geneNames" : [ "LPIN1", "KIAA0188" ],
+    "parents" : [ 1500637 ]
+  }, {
+    "dbId" : 1524026,
+    "stId" : "R-HSA-1524026",
+    "displayName" : "LPGAT [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 690, 923 ],
+    "children" : [ 1498782, 1498768, 1498772 ]
+  }, {
+    "dbId" : 8952253,
+    "stId" : "R-ALL-8952253",
+    "displayName" : "GPCho [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3123 ],
+    "identifier" : "16870"
+  }, {
+    "dbId" : 8874439,
+    "stId" : "R-ALL-8874439",
+    "displayName" : "GPCHO [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "36313",
+    "parents" : [ 8874450 ]
+  }, {
+    "dbId" : 8874438,
+    "stId" : "R-ALL-8874438",
+    "displayName" : "PMCHO [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17810",
+    "parents" : [ 8874447 ]
+  }, {
+    "dbId" : 1524050,
+    "stId" : "R-HSA-1524050",
+    "displayName" : "ACHE [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22303",
+    "geneNames" : [ "ACHE" ],
+    "parents" : [ 3640837 ]
+  }, {
+    "dbId" : 8874447,
+    "stId" : "R-ALL-8874447",
+    "displayName" : "PMCHO, PMETAM [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 3013 ],
+    "children" : [ 8874442, 8874438 ]
+  }, {
+    "dbId" : 1524060,
+    "stId" : "R-ALL-1524060",
+    "displayName" : "CDP-Cho [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 200 ],
+    "identifier" : "16436"
+  }, {
+    "dbId" : 8874444,
+    "stId" : "R-ALL-8874444",
+    "displayName" : "GPETAM [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "36314",
+    "parents" : [ 8874450 ]
+  }, {
+    "dbId" : 53579,
+    "stId" : "R-HSA-53579",
+    "displayName" : "DGAT1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75907",
+    "geneNames" : [ "DGAT1", "AGRP1", "DGAT" ],
+    "parents" : [ 200109 ]
+  }, {
+    "dbId" : 8874443,
+    "stId" : "R-HSA-8874443",
+    "displayName" : "TMEM86B [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3016 ],
+    "identifier" : "Q8N661",
+    "geneNames" : [ "TMEM86B" ]
+  }, {
+    "dbId" : 1524059,
+    "stId" : "R-ALL-1524059",
+    "displayName" : "PGP [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 326 ],
+    "identifier" : "37393"
+  }, {
+    "dbId" : 549188,
+    "stId" : "R-HSA-549188",
+    "displayName" : "DGAT2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96PD7",
+    "geneNames" : [ "DGAT2", "HMFN1045", "UNQ738/PRO1433" ],
+    "parents" : [ 1500588 ]
+  }, {
+    "dbId" : 8874442,
+    "stId" : "R-ALL-8874442",
+    "displayName" : "PMETAM [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17476",
+    "parents" : [ 8874447 ]
+  }, {
+    "dbId" : 1524057,
+    "stId" : "R-ALL-1524057",
+    "displayName" : "DAG [Golgi membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 217 ],
+    "identifier" : "17815"
+  }, {
+    "dbId" : 1524038,
+    "stId" : "R-ALL-1524038",
+    "displayName" : "acyl-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 371, 727 ],
+    "identifier" : "17984"
+  }, {
+    "dbId" : 1524037,
+    "stId" : "R-HSA-1524037",
+    "displayName" : "LPSAT [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 787, 937 ],
+    "children" : [ 1498766, 1498768, 428994 ]
+  }, {
+    "dbId" : 76114,
+    "stId" : "R-ALL-76114",
+    "displayName" : "G3P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 16, 564, 92 ],
+    "identifier" : "15978"
+  }, {
+    "dbId" : 1524035,
+    "stId" : "R-HSA-1524035",
+    "displayName" : "LPEAT [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 501, 891 ],
+    "children" : [ 1498766, 1498768, 428994, 1498770 ]
+  }, {
+    "dbId" : 76117,
+    "stId" : "R-HSA-76117",
+    "displayName" : "GPD1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1500610 ],
+    "children" : [ 55875 ]
+  }, {
+    "dbId" : 1524034,
+    "stId" : "R-HSA-1524034",
+    "displayName" : "PLBD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P4A8",
+    "geneNames" : [ "PLBD1" ],
+    "parents" : [ 1524040, 1524137, 1524151, 1524120 ]
+  }, {
+    "dbId" : 8874450,
+    "stId" : "R-ALL-8874450",
+    "displayName" : "GPCHO, GPETAM [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 3014 ],
+    "children" : [ 8874444, 8874439 ]
+  }, {
+    "dbId" : 76116,
+    "stId" : "R-ALL-76116",
+    "displayName" : "Glycerol [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 464, 342, 470, 457 ],
+    "identifier" : "17754"
+  }, {
+    "dbId" : 1524047,
+    "stId" : "R-ALL-1524047",
+    "displayName" : "2-acyl LPG [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 714 ],
+    "identifier" : "27923"
+  }, {
+    "dbId" : 1524044,
+    "stId" : "R-ALL-1524044",
+    "displayName" : "acetate [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 844 ],
+    "identifier" : "30089"
+  }, {
+    "dbId" : 1524042,
+    "stId" : "R-ALL-1524042",
+    "displayName" : "PG [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 707, 331 ],
+    "identifier" : "17517"
+  }, {
+    "dbId" : 1524040,
+    "stId" : "R-HSA-1524040",
+    "displayName" : "PLA2(8) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 883, 639 ],
+    "children" : [ 1498792, 535541, 1498797, 1524034, 1500626, 1498788 ]
+  }, {
+    "dbId" : 1524087,
+    "stId" : "R-ALL-1524087",
+    "displayName" : "Mg2+/Mn2+ [Golgi membrane]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 1500652 ],
+    "children" : [ 1524074, 200503 ]
+  }, {
+    "dbId" : 1524085,
+    "stId" : "R-ALL-1524085",
+    "displayName" : "LCFA(-) [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 354, 711, 397 ],
+    "identifier" : "57560"
+  }, {
+    "dbId" : 6792451,
+    "stId" : "R-HSA-6792451",
+    "displayName" : "LIPI [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6XZB0",
+    "geneNames" : [ "LIPI", "LPDL", "PRED5" ],
+    "parents" : [ 6792447 ]
+  }, {
+    "dbId" : 1524083,
+    "stId" : "R-ALL-1524083",
+    "displayName" : "PE [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 379, 172 ],
+    "identifier" : "16038"
+  }, {
+    "dbId" : 1524081,
+    "stId" : "R-ALL-1524081",
+    "displayName" : "CL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 403 ],
+    "identifier" : "28494"
+  }, {
+    "dbId" : 1524080,
+    "stId" : "R-ALL-1524080",
+    "displayName" : "DLCL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 415 ],
+    "identifier" : "60431"
+  }, {
+    "dbId" : 1524095,
+    "stId" : "R-HSA-1524095",
+    "displayName" : "PLA2G4A:Ca2+ [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 396 ],
+    "children" : [ 1524099, 1524102 ]
+  }, {
+    "dbId" : 140648,
+    "stId" : "R-ALL-140648",
+    "displayName" : "Ca2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 8878786 ]
+  }, {
+    "dbId" : 61803,
+    "stId" : "R-HSA-61803",
+    "displayName" : "AGPAT1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99943",
+    "geneNames" : [ "AGPAT1", "G15" ],
+    "parents" : [ 1500583 ]
+  }, {
+    "dbId" : 61805,
+    "stId" : "R-HSA-61805",
+    "displayName" : "AGPAT2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15120",
+    "geneNames" : [ "AGPAT2" ],
+    "parents" : [ 1500583 ]
+  }, {
+    "dbId" : 6792457,
+    "stId" : "R-HSA-6792457",
+    "displayName" : "LIPH [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WWY8",
+    "geneNames" : [ "LIPH", "LPDLR", "MPAPLA1", "PLA1B" ],
+    "parents" : [ 6792447 ]
+  }, {
+    "dbId" : 1524089,
+    "stId" : "R-ALL-1524089",
+    "displayName" : "1-acyl LPE [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 377 ],
+    "identifier" : "29017"
+  }, {
+    "dbId" : 61807,
+    "stId" : "R-HSA-61807",
+    "displayName" : "AGPAT3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NRZ7",
+    "geneNames" : [ "AGPAT3", "LPAAT3", "UNQ759/PRO1490" ],
+    "parents" : [ 1500583 ]
+  }, {
+    "dbId" : 1524071,
+    "stId" : "R-ALL-1524071",
+    "displayName" : "PCho [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 189 ],
+    "identifier" : "36700"
+  }, {
+    "dbId" : 61809,
+    "stId" : "R-HSA-61809",
+    "displayName" : "AGPAT4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NRZ5",
+    "geneNames" : [ "AGPAT4", "UNQ499/PRO1016" ],
+    "parents" : [ 1500583 ]
+  }, {
+    "dbId" : 1524069,
+    "stId" : "R-ALL-1524069",
+    "displayName" : "MLCL [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 401 ],
+    "identifier" : "60430"
+  }, {
+    "dbId" : 61811,
+    "stId" : "R-HSA-61811",
+    "displayName" : "AGPAT5 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NUQ2",
+    "geneNames" : [ "AGPAT5" ],
+    "parents" : [ 1500583 ]
+  }, {
+    "dbId" : 1524067,
+    "stId" : "R-ALL-1524067",
+    "displayName" : "cytidine 5'-monophosphate [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 340, 327 ],
+    "identifier" : "17361"
+  }, {
+    "dbId" : 1524064,
+    "stId" : "R-ALL-1524064",
+    "displayName" : "CDP-DAG [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 318 ],
+    "identifier" : "17962"
+  }, {
+    "dbId" : 1524079,
+    "stId" : "R-ALL-1524079",
+    "displayName" : "1-acyl LPC [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 359 ],
+    "identifier" : "17504"
+  }, {
+    "dbId" : 1524078,
+    "stId" : "R-HSA-1524078",
+    "displayName" : "CHK dimer [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 191 ],
+    "children" : [ 1500617, 1500611, 1500612 ]
+  }, {
+    "dbId" : 1524076,
+    "stId" : "R-HSA-1524076",
+    "displayName" : "PLA2G6 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 356 ],
+    "identifier" : "O60733",
+    "geneNames" : [ "PLA2G6", "PLPLA9" ]
+  }, {
+    "dbId" : 1524075,
+    "stId" : "R-ALL-1524075",
+    "displayName" : "PC [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 358 ],
+    "identifier" : "16110"
+  }, {
+    "dbId" : 1524074,
+    "stId" : "R-ALL-1524074",
+    "displayName" : "Mn2+ [Golgi membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29035",
+    "parents" : [ 1524087 ]
+  }, {
+    "dbId" : 6792472,
+    "stId" : "R-ALL-6792472",
+    "displayName" : "2-acyl LPA [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3196 ],
+    "identifier" : "17936"
+  }, {
+    "dbId" : 1524072,
+    "stId" : "R-ALL-1524072",
+    "displayName" : "cardiolipin [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 338 ],
+    "identifier" : "28494"
+  }, {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1987 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 74112,
+    "stId" : "R-ALL-74112",
+    "displayName" : "Ca2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 1500668, 1602386, 1602352, 1602383, 1602365, 1602411, 1602425, 1602360, 1602363 ]
+  }, {
+    "dbId" : 1524117,
+    "stId" : "R-HSA-1524117",
+    "displayName" : "PI:PITPNB [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 230 ],
+    "children" : [ 1524106, 426639 ]
+  }, {
+    "dbId" : 1524113,
+    "stId" : "R-HSA-1524113",
+    "displayName" : "PITPNB [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48739",
+    "geneNames" : [ "PITPNB" ],
+    "parents" : [ 1524122, 1524150 ]
+  }, {
+    "dbId" : 1524112,
+    "stId" : "R-HSA-1524112",
+    "displayName" : "PLA2(7) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 599 ],
+    "children" : [ 1498792, 535541, 1498797, 1500626, 1498788 ]
+  }, {
+    "dbId" : 1524126,
+    "stId" : "R-HSA-1524126",
+    "displayName" : "PLD1-4/6 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 344 ],
+    "children" : [ 1498811, 1498795, 1498794, 1498798, 1498791 ]
+  }, {
+    "dbId" : 1524125,
+    "stId" : "R-HSA-1524125",
+    "displayName" : "PCYT1 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 201 ],
+    "children" : [ 1524108, 1524111 ]
+  }, {
+    "dbId" : 1524122,
+    "stId" : "R-HSA-1524122",
+    "displayName" : "PC:PITPNB [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 233 ],
+    "children" : [ 429785, 1524113 ]
+  }, {
+    "dbId" : 1524120,
+    "stId" : "R-HSA-1524120",
+    "displayName" : "PLA2(5) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 572 ],
+    "children" : [ 201596, 1498792, 535541, 1498797, 1524034, 1498803, 1500626 ]
+  }, {
+    "dbId" : 1524103,
+    "stId" : "R-ALL-1524103",
+    "displayName" : "LCFA(-) [mitochondrial outer membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 106 ],
+    "identifier" : "57560"
+  }, {
+    "dbId" : 1524102,
+    "stId" : "R-ALL-1524102",
+    "displayName" : "Ca2+ [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 1524095 ]
+  }, {
+    "dbId" : 1524101,
+    "stId" : "R-ALL-1524101",
+    "displayName" : "PA [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 310 ],
+    "identifier" : "16337"
+  }, {
+    "dbId" : 1524100,
+    "stId" : "R-HSA-1524100",
+    "displayName" : "HADH octamer [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 373 ],
+    "children" : [ 77266, 77264 ]
+  }, {
+    "dbId" : 1524099,
+    "stId" : "R-HSA-1524099",
+    "displayName" : "PLA2G4A [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P47712",
+    "geneNames" : [ "PLA2G4A", "CPLA2", "PLA2G4" ],
+    "parents" : [ 1524095 ]
+  }, {
+    "dbId" : 76183,
+    "stId" : "R-ALL-76183",
+    "displayName" : "Ac-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 857 ],
+    "identifier" : "15351"
+  }, {
+    "dbId" : 8954142,
+    "stId" : "R-ALL-8954142",
+    "displayName" : "LCFA(-) [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3124 ],
+    "identifier" : "57560"
+  }, {
+    "dbId" : 1524111,
+    "stId" : "R-HSA-1524111",
+    "displayName" : "PCYT1B dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1524125 ],
+    "children" : [ 1498785 ]
+  }, {
+    "dbId" : 1524110,
+    "stId" : "R-HSA-1524110",
+    "displayName" : "PC:PITPNB [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 240 ],
+    "children" : [ 1524106, 426925 ]
+  }, {
+    "dbId" : 1524108,
+    "stId" : "R-HSA-1524108",
+    "displayName" : "PCYT1A dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1524125 ],
+    "children" : [ 1498771 ]
+  }, {
+    "dbId" : 1524107,
+    "stId" : "R-HSA-1524107",
+    "displayName" : "PLA2(6) [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 581 ],
+    "children" : [ 1498799, 1498819, 1500630 ]
+  }, {
+    "dbId" : 1524106,
+    "stId" : "R-HSA-1524106",
+    "displayName" : "PITPNB [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48739",
+    "geneNames" : [ "PITPNB" ],
+    "parents" : [ 1524110, 1524117 ]
+  }, {
+    "dbId" : 61855,
+    "stId" : "R-HSA-61855",
+    "displayName" : "GPAM(1-828) [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HCL2",
+    "geneNames" : [ "GPAM", "GPAT1", "KIAA1560" ],
+    "parents" : [ 1500606 ]
+  }, {
+    "dbId" : 1524151,
+    "stId" : "R-HSA-1524151",
+    "displayName" : "PLA2(11) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 806 ],
+    "children" : [ 1498792, 1498797, 1524034, 1498803, 1500626 ]
+  }, {
+    "dbId" : 1524150,
+    "stId" : "R-HSA-1524150",
+    "displayName" : "PI:PITPNB [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 231 ],
+    "children" : [ 1524113, 1524146 ]
+  }, {
+    "dbId" : 1500596,
+    "stId" : "R-ALL-1500596",
+    "displayName" : "DAG [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 150, 429 ],
+    "identifier" : "17815"
+  }, {
+    "dbId" : 76194,
+    "stId" : "R-ALL-76194",
+    "displayName" : "CoA-SH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 99, 419, 590, 436, 21, 693, 54, 790, 407, 88, 504, 1275, 861, 830 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 1500594,
+    "stId" : "R-ALL-1500594",
+    "displayName" : "TAG [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 423 ],
+    "identifier" : "17855"
+  }, {
+    "dbId" : 1524146,
+    "stId" : "R-ALL-1524146",
+    "displayName" : "PI [Golgi membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 234 ],
+    "identifier" : "16749",
+    "parents" : [ 1524150 ]
+  }, {
+    "dbId" : 1500595,
+    "stId" : "R-ALL-1500595",
+    "displayName" : "Mn2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29035",
+    "parents" : [ 1500591 ]
+  }, {
+    "dbId" : 5083624,
+    "stId" : "R-HSA-5083624",
+    "displayName" : "CSNK2(A1:A1/A1:A2/A2:A2) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 201711 ],
+    "children" : [ 5083623, 5083620, 5083621 ]
+  }, {
+    "dbId" : 1500592,
+    "stId" : "R-HSA-1500592",
+    "displayName" : "CEPT1/EPT1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 153 ],
+    "children" : [ 1500584, 1500587 ]
+  }, {
+    "dbId" : 1500593,
+    "stId" : "R-ALL-1500593",
+    "displayName" : "fatty acid [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 467 ],
+    "identifier" : "35366"
+  }, {
+    "dbId" : 5083621,
+    "stId" : "R-HSA-5083621",
+    "displayName" : "CSNK2A1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5083624 ],
+    "children" : [ 201713 ]
+  }, {
+    "dbId" : 1500606,
+    "stId" : "R-HSA-1500606",
+    "displayName" : "GPAM/GPAT2 [mitochondrial outer membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 86 ],
+    "children" : [ 61855, 549076 ]
+  }, {
+    "dbId" : 5083620,
+    "stId" : "R-HSA-5083620",
+    "displayName" : "CSNK2A2 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5083624 ],
+    "children" : [ 201721 ]
+  }, {
+    "dbId" : 1524157,
+    "stId" : "R-HSA-1524157",
+    "displayName" : "PLA2(9) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 761 ],
+    "children" : [ 1498792, 535541, 1498797, 1498803, 1500626, 1498788 ]
+  }, {
+    "dbId" : 1500604,
+    "stId" : "R-ALL-1500604",
+    "displayName" : "1-acyl LPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 29 ],
+    "identifier" : "16975"
+  }, {
+    "dbId" : 5083623,
+    "stId" : "R-HSA-5083623",
+    "displayName" : "CSNK2A1:CSNK2A2 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5083624 ],
+    "children" : [ 201721, 201713 ]
+  }, {
+    "dbId" : 1500605,
+    "stId" : "R-HSA-1500605",
+    "displayName" : "GNPAT [peroxisomal membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 22 ],
+    "identifier" : "O15228",
+    "geneNames" : [ "GNPAT", "DAPAT", "DHAPAT" ]
+  }, {
+    "dbId" : 264616,
+    "stId" : "R-HSA-264616",
+    "displayName" : "CHAT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 859 ],
+    "identifier" : "P28329",
+    "geneNames" : [ "CHAT" ]
+  }, {
+    "dbId" : 1524155,
+    "stId" : "R-HSA-1524155",
+    "displayName" : "PLA2(10) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 775 ],
+    "children" : [ 1498792, 1498797, 1500626 ]
+  }, {
+    "dbId" : 1500603,
+    "stId" : "R-ALL-1500603",
+    "displayName" : "CDP-ETA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 139 ],
+    "identifier" : "16732"
+  }, {
+    "dbId" : 264618,
+    "stId" : "R-ALL-264618",
+    "displayName" : "Cho [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 657, 293, 346, 188, 284 ],
+    "identifier" : "15354"
+  }, {
+    "dbId" : 200109,
+    "stId" : "R-HSA-200109",
+    "displayName" : "DGAT1 tetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1500588 ],
+    "children" : [ 53579 ]
+  }, {
+    "dbId" : 1500601,
+    "stId" : "R-HSA-1500601",
+    "displayName" : "MGLL dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 468 ],
+    "children" : [ 1500589 ]
+  }, {
+    "dbId" : 1524135,
+    "stId" : "R-HSA-1524135",
+    "displayName" : "PLA2(4) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 513 ],
+    "children" : [ 1498792, 1498797, 1500626, 1498788 ]
+  }, {
+    "dbId" : 1500583,
+    "stId" : "R-HSA-1500583",
+    "displayName" : "AGPAT [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 50 ],
+    "children" : [ 61807, 549109, 61805, 61803, 1498783, 1498768, 549099, 61811, 1498772, 61809 ]
+  }, {
+    "dbId" : 1500580,
+    "stId" : "R-ALL-1500580",
+    "displayName" : "1-acyl LPA [mitochondrial outer membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 85 ],
+    "identifier" : "16975"
+  }, {
+    "dbId" : 1500581,
+    "stId" : "R-ALL-1500581",
+    "displayName" : "PE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 151, 494 ],
+    "identifier" : "16038"
+  }, {
+    "dbId" : 1500578,
+    "stId" : "R-ALL-1500578",
+    "displayName" : "acyl-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 867, 420, 103, 591, 19, 437, 694, 791, 408, 505, 893, 925, 62, 831 ],
+    "identifier" : "17984"
+  }, {
+    "dbId" : 1500579,
+    "stId" : "R-HSA-1500579",
+    "displayName" : "PNPLA2/3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 425 ],
+    "children" : [ 1498814, 1498816 ]
+  }, {
+    "dbId" : 1524130,
+    "stId" : "R-HSA-1524130",
+    "displayName" : "PLA2G4B [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0C869",
+    "geneNames" : [ "PLA2G4B" ],
+    "parents" : [ 3215272 ]
+  }, {
+    "dbId" : 1524128,
+    "stId" : "R-HSA-1524128",
+    "displayName" : "PLA2(3) [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 497 ],
+    "children" : [ 1498819, 1500630 ]
+  }, {
+    "dbId" : 1524143,
+    "stId" : "R-HSA-1524143",
+    "displayName" : "PLA2(13) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 816 ],
+    "children" : [ 1498792, 1498788 ]
+  }, {
+    "dbId" : 1500590,
+    "stId" : "R-ALL-1500590",
+    "displayName" : "PA [mitochondrial outer membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 96 ],
+    "identifier" : "16337"
+  }, {
+    "dbId" : 1500591,
+    "stId" : "R-ALL-1500591",
+    "displayName" : "Mg2+/Mn2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 1500647, 1500587, 1500584 ],
+    "children" : [ 217314, 1500595 ]
+  }, {
+    "dbId" : 1524142,
+    "stId" : "R-HSA-1524142",
+    "displayName" : "PLA2(14) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 684 ],
+    "children" : [ 1498792, 1498797 ]
+  }, {
+    "dbId" : 1500588,
+    "stId" : "R-HSA-1500588",
+    "displayName" : "DGAT1/2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 433 ],
+    "children" : [ 200109, 549188 ]
+  }, {
+    "dbId" : 264638,
+    "stId" : "R-ALL-264638",
+    "displayName" : "Cho [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 843 ],
+    "identifier" : "15354"
+  }, {
+    "dbId" : 1524141,
+    "stId" : "R-HSA-1524141",
+    "displayName" : "PLA2(12) [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 823 ],
+    "children" : [ 1498799, 1500630 ]
+  }, {
+    "dbId" : 1500589,
+    "stId" : "R-HSA-1500589",
+    "displayName" : "MGLL [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99685",
+    "geneNames" : [ "MGLL" ],
+    "parents" : [ 1500601 ]
+  }, {
+    "dbId" : 1524139,
+    "stId" : "R-ALL-1524139",
+    "displayName" : "PG [late endosome membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 472 ],
+    "identifier" : "17517"
+  }, {
+    "dbId" : 1500587,
+    "stId" : "R-HSA-1500587",
+    "displayName" : "CEPT1:Mg2+/Mn2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 210 ],
+    "parents" : [ 1500592 ],
+    "children" : [ 1498763, 1500591 ]
+  }, {
+    "dbId" : 1500584,
+    "stId" : "R-HSA-1500584",
+    "displayName" : "EPT1:Mg2+/Mn2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1500592 ],
+    "children" : [ 1498764, 1500591 ]
+  }, {
+    "dbId" : 1524137,
+    "stId" : "R-HSA-1524137",
+    "displayName" : "PLA2(2) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 490 ],
+    "children" : [ 201596, 1498792, 535541, 1498797, 1524034, 1498803, 1500626, 1498788 ]
+  }, {
+    "dbId" : 1500585,
+    "stId" : "R-HSA-1500585",
+    "displayName" : "AGPAT5 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 97 ],
+    "identifier" : "Q9NUQ2",
+    "geneNames" : [ "AGPAT5" ]
+  }, {
+    "dbId" : 1500630,
+    "stId" : "R-HSA-1500630",
+    "displayName" : "PLA2G2A:Ca2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 678, 781, 30 ],
+    "parents" : [ 1524128, 1524141, 1524107 ],
+    "children" : [ 1500625, 1498802 ]
+  }, {
+    "dbId" : 1500626,
+    "stId" : "R-HSA-1500626",
+    "displayName" : "PLA2G4A:Ca2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1524040, 1524157, 1524155, 1524137, 1524135, 1524151, 1524120, 1500634, 1524112 ],
+    "children" : [ 378502, 74016 ]
+  }, {
+    "dbId" : 264643,
+    "stId" : "R-ALL-264643",
+    "displayName" : "AcCho [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 858 ],
+    "identifier" : "15355"
+  }, {
+    "dbId" : 1500625,
+    "stId" : "R-ALL-1500625",
+    "displayName" : "Ca2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 1500630 ]
+  }, {
+    "dbId" : 1500638,
+    "stId" : "R-HSA-1500638",
+    "displayName" : "LPIN3:Mg2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1500636 ],
+    "children" : [ 217314, 549160 ]
+  }, {
+    "dbId" : 1500639,
+    "stId" : "R-HSA-1500639",
+    "displayName" : "PLD1/2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 282 ],
+    "children" : [ 1498795, 1498791 ]
+  }, {
+    "dbId" : 1500636,
+    "stId" : "R-HSA-1500636",
+    "displayName" : "LPIN [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 156 ],
+    "children" : [ 1500637, 1500638, 1500641 ]
+  }, {
+    "dbId" : 1500637,
+    "stId" : "R-HSA-1500637",
+    "displayName" : "LPIN1:Mg2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1500636 ],
+    "children" : [ 549157, 217314 ]
+  }, {
+    "dbId" : 1500634,
+    "stId" : "R-HSA-1500634",
+    "displayName" : "PLA2(1) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 114, 38, 670 ],
+    "children" : [ 1498792, 535541, 1498796, 1500626 ]
+  }, {
+    "dbId" : 1500633,
+    "stId" : "R-HSA-1500633",
+    "displayName" : "PHOSPHO1:Mg2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 132 ],
+    "children" : [ 1498779, 29926 ]
+  }, {
+    "dbId" : 77264,
+    "stId" : "R-HSA-77264",
+    "displayName" : "HADHA [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P40939",
+    "geneNames" : [ "HADHA", "HADH" ],
+    "parents" : [ 1524100 ]
+  }, {
+    "dbId" : 1500615,
+    "stId" : "R-HSA-1500615",
+    "displayName" : "GPD1L dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1500610 ],
+    "children" : [ 1498784 ]
+  }, {
+    "dbId" : 1500612,
+    "stId" : "R-HSA-1500612",
+    "displayName" : "CHKA:CHKA [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1500619, 1524078 ],
+    "children" : [ 1498761 ]
+  }, {
+    "dbId" : 77266,
+    "stId" : "R-HSA-77266",
+    "displayName" : "HADHB [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55084",
+    "geneNames" : [ "HADHB", "MSTP029" ],
+    "parents" : [ 1524100 ]
+  }, {
+    "dbId" : 1500610,
+    "stId" : "R-HSA-1500610",
+    "displayName" : "GPD1/GPD1L homodimer [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 17 ],
+    "children" : [ 76117, 1500615 ]
+  }, {
+    "dbId" : 1524163,
+    "stId" : "R-ALL-1524163",
+    "displayName" : "PC [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2377 ],
+    "identifier" : "16110",
+    "parents" : [ 8873866 ]
+  }, {
+    "dbId" : 1500611,
+    "stId" : "R-HSA-1500611",
+    "displayName" : "CHKB:CHKB [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1500619, 1524078 ],
+    "children" : [ 1498757 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 12 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 1500619,
+    "stId" : "R-HSA-1500619",
+    "displayName" : "CHK/ETNK [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 128 ],
+    "children" : [ 1500617, 1498765, 1500611, 1500612, 1498759 ]
+  }, {
+    "dbId" : 1500617,
+    "stId" : "R-HSA-1500617",
+    "displayName" : "CHKA:CHKB [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1500619, 1524078 ],
+    "children" : [ 1498761, 1498757 ]
+  }, {
+    "dbId" : 1500661,
+    "stId" : "R-ALL-1500661",
+    "displayName" : "Pyruvoyl [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "45360",
+    "parents" : [ 1500656 ]
+  }, {
+    "dbId" : 1500656,
+    "stId" : "R-HSA-1500656",
+    "displayName" : "PISD:Pyruvoyl [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 173 ],
+    "children" : [ 1500671, 1500670, 1500661 ]
+  }, {
+    "dbId" : 1500670,
+    "stId" : "R-HSA-1500670",
+    "displayName" : "PISD(378-409) [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UG56",
+    "geneNames" : [ "PISD" ],
+    "parents" : [ 1500656 ]
+  }, {
+    "dbId" : 1500671,
+    "stId" : "R-HSA-1500671",
+    "displayName" : "PISD(1-377) [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UG56",
+    "geneNames" : [ "PISD" ],
+    "parents" : [ 1500656 ]
+  }, {
+    "dbId" : 8869230,
+    "stId" : "R-HSA-8869230",
+    "displayName" : "PITPNM2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZ72",
+    "geneNames" : [ "PITPNM2", "KIAA1457", "NIR3" ],
+    "parents" : [ 8869240 ]
+  }, {
+    "dbId" : 1500668,
+    "stId" : "R-HSA-1500668",
+    "displayName" : "PLA2G5:Ca2+ [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1602359, 1602354 ],
+    "children" : [ 61213, 74112 ]
+  }, {
+    "dbId" : 1483256,
+    "stId" : "R-ALL-1483256",
+    "displayName" : "PG [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 343, 666 ],
+    "identifier" : "17517"
+  }, {
+    "dbId" : 1500646,
+    "stId" : "R-ALL-1500646",
+    "displayName" : "PS [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 168, 763 ],
+    "identifier" : "18303"
+  }, {
+    "dbId" : 1500647,
+    "stId" : "R-HSA-1500647",
+    "displayName" : "CDIPT:Mg2+/Mn2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 273 ],
+    "children" : [ 1498749, 1500591 ]
+  }, {
+    "dbId" : 1500644,
+    "stId" : "R-ALL-1500644",
+    "displayName" : "PS [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 169 ],
+    "identifier" : "18303"
+  }, {
+    "dbId" : 1500642,
+    "stId" : "R-HSA-1500642",
+    "displayName" : "PCYT2 dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 140 ],
+    "children" : [ 1498781 ]
+  }, {
+    "dbId" : 1500641,
+    "stId" : "R-HSA-1500641",
+    "displayName" : "LPIN2:Mg2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1500636 ],
+    "children" : [ 549165, 217314 ]
+  }, {
+    "dbId" : 1500655,
+    "stId" : "R-HSA-1500655",
+    "displayName" : "PLA2G1B [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04054",
+    "geneNames" : [ "PLA2G1B", "PLA2", "PLA2A", "PPLA2" ],
+    "parents" : [ 1602365 ]
+  }, {
+    "dbId" : 1500652,
+    "stId" : "R-HSA-1500652",
+    "displayName" : "CHPT1:Mg2+/Mn2+ [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 219 ],
+    "children" : [ 1498754, 1524087 ]
+  }, {
+    "dbId" : 1500651,
+    "stId" : "R-HSA-1500651",
+    "displayName" : "CDS1:Mg2+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 248 ],
+    "children" : [ 1498762, 217314 ]
+  }, {
+    "dbId" : 8869240,
+    "stId" : "R-HSA-8869240",
+    "displayName" : "PITPNM1,2,3 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2072 ],
+    "children" : [ 8869230, 5216006, 5216217 ]
+  }, {
+    "dbId" : 5696070,
+    "stId" : "R-ALL-5696070",
+    "displayName" : "PA [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16337",
+    "parents" : [ 5696037 ]
+  }, {
+    "dbId" : 5696069,
+    "stId" : "R-ALL-5696069",
+    "displayName" : "ATP [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3184 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 5696066,
+    "stId" : "R-ALL-5696066",
+    "displayName" : "MAG,DAG [mitochondrial intermembrane space]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 3183 ],
+    "children" : [ 5696059, 5696065 ]
+  }, {
+    "dbId" : 5696065,
+    "stId" : "R-ALL-5696065",
+    "displayName" : "MAG [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17408",
+    "parents" : [ 5696066 ]
+  }, {
+    "dbId" : 5696116,
+    "stId" : "R-ALL-5696116",
+    "displayName" : "fatty aldehyde [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3015 ],
+    "identifier" : "35746"
+  }, {
+    "dbId" : 6786636,
+    "stId" : "R-HSA-6786636",
+    "displayName" : "DDHD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NEL9",
+    "geneNames" : [ "DDHD1", "KIAA1705" ],
+    "parents" : [ 6786649 ]
+  }, {
+    "dbId" : 6786635,
+    "stId" : "R-HSA-6786635",
+    "displayName" : "DDHD2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O94830",
+    "geneNames" : [ "DDHD2", "KIAA0725", "SAMWD1" ],
+    "parents" : [ 6786649 ]
+  }, {
+    "dbId" : 3640837,
+    "stId" : "R-HSA-3640837",
+    "displayName" : "Cholinesterase [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1216 ],
+    "children" : [ 1524050, 3640835 ]
+  }, {
+    "dbId" : 3640835,
+    "stId" : "R-HSA-3640835",
+    "displayName" : "BCHE [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P06276",
+    "geneNames" : [ "BCHE", "CHE1" ],
+    "parents" : [ 3640837 ]
+  }, {
+    "dbId" : 8878783,
+    "stId" : "R-HSA-8878783",
+    "displayName" : "ALPI [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09923",
+    "geneNames" : [ "ALPI" ],
+    "parents" : [ 8878786 ]
+  }, {
+    "dbId" : 8878780,
+    "stId" : "R-ALL-8878780",
+    "displayName" : "phosphate monoester [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3103 ],
+    "identifier" : "7794"
+  }, {
+    "dbId" : 6786649,
+    "stId" : "R-HSA-6786649",
+    "displayName" : "DDHD1,2 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1414 ],
+    "children" : [ 6786635, 6786636 ]
+  }, {
+    "dbId" : 5601898,
+    "stId" : "R-HSA-5601898",
+    "displayName" : "PLD6 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N2A8",
+    "geneNames" : [ "PLD6" ],
+    "parents" : [ 5601921 ]
+  }, {
+    "dbId" : 8878776,
+    "stId" : "R-ALL-8878776",
+    "displayName" : "Alcohol [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3105 ],
+    "identifier" : "30879"
+  }, {
+    "dbId" : 55875,
+    "stId" : "R-HSA-55875",
+    "displayName" : "GPD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21695",
+    "geneNames" : [ "GPD1" ],
+    "parents" : [ 76117 ]
+  }, {
+    "dbId" : 8878786,
+    "stId" : "R-HSA-8878786",
+    "displayName" : "ALPI:2Ca2+:Mg2+ dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3106 ],
+    "children" : [ 140648, 8878783, 109265 ]
+  }, {
+    "dbId" : 6814253,
+    "stId" : "R-ALL-6814253",
+    "displayName" : "LysoPtdCho [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1969 ],
+    "identifier" : "58168"
+  }, {
+    "dbId" : 5696026,
+    "stId" : "R-ALL-5696026",
+    "displayName" : "ADP [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3186 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 5693978,
+    "stId" : "R-ALL-5693978",
+    "displayName" : "NH3 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1279 ],
+    "identifier" : "16134"
+  }, {
+    "dbId" : 5696027,
+    "stId" : "R-HSA-5696027",
+    "displayName" : "AGK [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q53H12",
+    "geneNames" : [ "AGK", "MULK" ],
+    "parents" : [ 5696053 ]
+  }, {
+    "dbId" : 8867529,
+    "stId" : "R-HSA-8867529",
+    "displayName" : "OSBPL10 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BXB5",
+    "geneNames" : [ "OSBPL10", "ORP10", "OSBP9" ],
+    "parents" : [ 8867857 ]
+  }, {
+    "dbId" : 5696025,
+    "stId" : "R-ALL-5696025",
+    "displayName" : "Mg2+ [mitochondrial outer membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 5696053 ]
+  }, {
+    "dbId" : 1498740,
+    "stId" : "R-ALL-1498740",
+    "displayName" : "1-acyl LPG [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 664 ],
+    "identifier" : "62747"
+  }, {
+    "dbId" : 5696053,
+    "stId" : "R-HSA-5696053",
+    "displayName" : "AGK:Mg2+ [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3187 ],
+    "children" : [ 5696025, 5696027 ]
+  }, {
+    "dbId" : 1498738,
+    "stId" : "R-ALL-1498738",
+    "displayName" : "1-acyl LPE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 489 ],
+    "identifier" : "29017"
+  }, {
+    "dbId" : 1498737,
+    "stId" : "R-ALL-1498737",
+    "displayName" : "2-acyl LPI [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 815 ],
+    "identifier" : "62746"
+  }, {
+    "dbId" : 1498750,
+    "stId" : "R-ALL-1498750",
+    "displayName" : "GPCho [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 615 ],
+    "identifier" : "16870"
+  }, {
+    "dbId" : 1498751,
+    "stId" : "R-ALL-1498751",
+    "displayName" : "ETA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 562, 125, 301 ],
+    "identifier" : "16000"
+  }, {
+    "dbId" : 1498749,
+    "stId" : "R-HSA-1498749",
+    "displayName" : "CDIPT [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14735",
+    "geneNames" : [ "CDIPT", "PIS", "PIS1" ],
+    "parents" : [ 1500647 ]
+  }, {
+    "dbId" : 5696061,
+    "stId" : "R-ALL-5696061",
+    "displayName" : "LPA [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "52288",
+    "parents" : [ 5696037 ]
+  }, {
+    "dbId" : 1498747,
+    "stId" : "R-HSA-1498747",
+    "displayName" : "GPCPD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 560 ],
+    "identifier" : "Q9NPB8",
+    "geneNames" : [ "GPCPD1", "GDE5", "KIAA1434" ]
+  }, {
+    "dbId" : 5696059,
+    "stId" : "R-ALL-5696059",
+    "displayName" : "DAG [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17815",
+    "parents" : [ 5696066 ]
+  }, {
+    "dbId" : 1498724,
+    "stId" : "R-ALL-1498724",
+    "displayName" : "1-acyl LPS [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 760 ],
+    "identifier" : "52603"
+  }, {
+    "dbId" : 5696037,
+    "stId" : "R-ALL-5696037",
+    "displayName" : "LPA,PA [mitochondrial intermembrane space]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 3185 ],
+    "children" : [ 5696061, 5696070 ]
+  }, {
+    "dbId" : 1498722,
+    "stId" : "R-ALL-1498722",
+    "displayName" : "2-acyl LPS [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 774 ],
+    "identifier" : "37646"
+  }, {
+    "dbId" : 71285,
+    "stId" : "R-ALL-71285",
+    "displayName" : "AdoHcy [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 182 ],
+    "identifier" : "16680"
+  }, {
+    "dbId" : 71284,
+    "stId" : "R-ALL-71284",
+    "displayName" : "AdoMet [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 180 ],
+    "identifier" : "15414"
+  }, {
+    "dbId" : 1498732,
+    "stId" : "R-ALL-1498732",
+    "displayName" : "BMP [late endosome membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 474 ],
+    "identifier" : "60815"
+  }, {
+    "dbId" : 1498733,
+    "stId" : "R-ALL-1498733",
+    "displayName" : "1-acyl LPI [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 805 ],
+    "identifier" : "28914"
+  }, {
+    "dbId" : 1498730,
+    "stId" : "R-ALL-1498730",
+    "displayName" : "2-acyl LPG [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 683 ],
+    "identifier" : "27923"
+  }, {
+    "dbId" : 1498728,
+    "stId" : "R-ALL-1498728",
+    "displayName" : "2-MAG [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 444 ],
+    "identifier" : "17389"
+  }, {
+    "dbId" : 1498729,
+    "stId" : "R-ALL-1498729",
+    "displayName" : "2-acyl LPE [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 512 ],
+    "identifier" : "28936"
+  }, {
+    "dbId" : 1498775,
+    "stId" : "R-HSA-1498775",
+    "displayName" : "PGS1 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 328 ],
+    "identifier" : "Q32NB8",
+    "geneNames" : [ "PGS1" ]
+  }, {
+    "dbId" : 1498772,
+    "stId" : "R-HSA-1498772",
+    "displayName" : "LPCAT1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2864 ],
+    "identifier" : "Q8NF37",
+    "geneNames" : [ "LPCAT1", "AYTL2", "PFAAP3" ],
+    "parents" : [ 1524026, 8873921, 1500583, 1524029 ]
+  }, {
+    "dbId" : 1498773,
+    "stId" : "R-ALL-1498773",
+    "displayName" : "MLCL [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 355 ],
+    "identifier" : "60430"
+  }, {
+    "dbId" : 378502,
+    "stId" : "R-HSA-378502",
+    "displayName" : "PLA2G4A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P47712",
+    "geneNames" : [ "PLA2G4A", "CPLA2", "PLA2G4" ],
+    "parents" : [ 1500626 ]
+  }, {
+    "dbId" : 1498770,
+    "stId" : "R-HSA-1498770",
+    "displayName" : "MBOAT2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6ZWT7",
+    "geneNames" : [ "MBOAT2", "OACT2" ],
+    "parents" : [ 1524035, 1524029 ]
+  }, {
+    "dbId" : 1498771,
+    "stId" : "R-HSA-1498771",
+    "displayName" : "PCYT1A [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P49585",
+    "geneNames" : [ "PCYT1A", "CTPCT", "PCYT1" ],
+    "parents" : [ 1524108 ]
+  }, {
+    "dbId" : 1498768,
+    "stId" : "R-HSA-1498768",
+    "displayName" : "LPCAT4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q643R3",
+    "geneNames" : [ "LPCAT4", "AGPAT7", "AYTL3", "LPEAT2" ],
+    "parents" : [ 1524026, 1524037, 1524035, 1500583, 1524029 ]
+  }, {
+    "dbId" : 1498782,
+    "stId" : "R-HSA-1498782",
+    "displayName" : "LPGAT1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92604",
+    "geneNames" : [ "LPGAT1", "FAM34A", "KIAA0205" ],
+    "parents" : [ 1524026 ]
+  }, {
+    "dbId" : 428686,
+    "stId" : "R-ALL-428686",
+    "displayName" : "PETA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 126 ],
+    "identifier" : "17553"
+  }, {
+    "dbId" : 1498783,
+    "stId" : "R-HSA-1498783",
+    "displayName" : "LCLAT1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 404 ],
+    "identifier" : "Q6UWP7",
+    "geneNames" : [ "LCLAT1", "AGPAT8", "ALCAT1", "LYCAT", "UNQ1849/PRO3579" ],
+    "parents" : [ 1500583 ]
+  }, {
+    "dbId" : 426639,
+    "stId" : "R-ALL-426639",
+    "displayName" : "PI [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 242, 808 ],
+    "identifier" : "16749",
+    "parents" : [ 1524117 ]
+  }, {
+    "dbId" : 8864270,
+    "stId" : "R-HSA-8864270",
+    "displayName" : "PLA2R1(21-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1971 ],
+    "identifier" : "Q13018",
+    "geneNames" : [ "PLA2R1", "CLEC13C" ]
+  }, {
+    "dbId" : 1498781,
+    "stId" : "R-HSA-1498781",
+    "displayName" : "PCYT2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99447",
+    "geneNames" : [ "PCYT2" ],
+    "parents" : [ 1500642 ]
+  }, {
+    "dbId" : 1498778,
+    "stId" : "R-HSA-1498778",
+    "displayName" : "MBOAT7 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 945, 827 ],
+    "identifier" : "Q96N66",
+    "geneNames" : [ "MBOAT7", "BB1", "LENG4", "OACT7" ]
+  }, {
+    "dbId" : 1498779,
+    "stId" : "R-HSA-1498779",
+    "displayName" : "PHOSPHO1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TCT1",
+    "geneNames" : [ "PHOSPHO1" ],
+    "parents" : [ 1500633 ]
+  }, {
+    "dbId" : 1498759,
+    "stId" : "R-HSA-1498759",
+    "displayName" : "ETNK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NVF9",
+    "geneNames" : [ "ETNK2", "EKI2", "HMFT1716" ],
+    "parents" : [ 1500619 ]
+  }, {
+    "dbId" : 5333699,
+    "stId" : "R-HSA-5333699",
+    "displayName" : "CPNEs [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1218 ],
+    "parents" : [ 5333679 ],
+    "children" : [ 400312, 5215957, 5215918, 5215998 ]
+  }, {
+    "dbId" : 1498757,
+    "stId" : "R-HSA-1498757",
+    "displayName" : "CHKB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y259",
+    "geneNames" : [ "CHKB", "CHETK", "CHKL" ],
+    "parents" : [ 1500617, 1500611 ]
+  }, {
+    "dbId" : 1498754,
+    "stId" : "R-HSA-1498754",
+    "displayName" : "CHPT1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WUD6",
+    "geneNames" : [ "CHPT1", "CPT1", "MSTP022" ],
+    "parents" : [ 1500652 ]
+  }, {
+    "dbId" : 8954397,
+    "stId" : "R-HSA-8954397",
+    "displayName" : "MIGA1 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NAN2",
+    "geneNames" : [ "MIGA1", "FAM73A" ],
+    "parents" : [ 8954406, 8954404 ]
+  }, {
+    "dbId" : 1498755,
+    "stId" : "R-HSA-1498755",
+    "displayName" : "CDS2 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 319 ],
+    "identifier" : "O95674",
+    "geneNames" : [ "CDS2" ]
+  }, {
+    "dbId" : 8954399,
+    "stId" : "R-HSA-8954399",
+    "displayName" : "MIGA complexes [mitochondrial outer membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3171 ],
+    "children" : [ 8954406, 8954405, 8954404 ]
+  }, {
+    "dbId" : 1498753,
+    "stId" : "R-ALL-1498753",
+    "displayName" : "DLCL [mitochondrial inner membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 395 ],
+    "identifier" : "60431"
+  }, {
+    "dbId" : 1498766,
+    "stId" : "R-HSA-1498766",
+    "displayName" : "MBOAT1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6ZNC8",
+    "geneNames" : [ "MBOAT1", "OACT1" ],
+    "parents" : [ 1524037, 1524035 ]
+  }, {
+    "dbId" : 1498767,
+    "stId" : "R-HSA-1498767",
+    "displayName" : "PEMT [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 183 ],
+    "identifier" : "Q9UBM1",
+    "geneNames" : [ "PEMT", "PEMPT", "PNMT" ]
+  }, {
+    "dbId" : 1498764,
+    "stId" : "R-HSA-1498764",
+    "displayName" : "EPT1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9C0D9",
+    "geneNames" : [ "SELENOI", "EPT1", "KIAA1724", "SELI" ],
+    "parents" : [ 1500584 ]
+  }, {
+    "dbId" : 5215957,
+    "stId" : "R-HSA-5215957",
+    "displayName" : "CPNE6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95741",
+    "geneNames" : [ "CPNE6" ],
+    "parents" : [ 5333699 ]
+  }, {
+    "dbId" : 1498765,
+    "stId" : "R-HSA-1498765",
+    "displayName" : "ETNK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HBU6",
+    "geneNames" : [ "ETNK1", "EKI1" ],
+    "parents" : [ 1500619 ]
+  }, {
+    "dbId" : 1498762,
+    "stId" : "R-HSA-1498762",
+    "displayName" : "CDS1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92903",
+    "geneNames" : [ "CDS1", "CDS" ],
+    "parents" : [ 1500651 ]
+  }, {
+    "dbId" : 1498763,
+    "stId" : "R-HSA-1498763",
+    "displayName" : "CEPT1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y6K0",
+    "geneNames" : [ "CEPT1", "PRO1101" ],
+    "parents" : [ 1500587 ]
+  }, {
+    "dbId" : 1498760,
+    "stId" : "R-HSA-1498760",
+    "displayName" : "CRLS1 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 339, 723 ],
+    "identifier" : "Q9UJA2",
+    "geneNames" : [ "CRLS1", "C20orf155", "CLS1" ]
+  }, {
+    "dbId" : 1498761,
+    "stId" : "R-HSA-1498761",
+    "displayName" : "CHKA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35790",
+    "geneNames" : [ "CHKA", "CHK", "CKI" ],
+    "parents" : [ 1500617, 1500612 ]
+  }, {
+    "dbId" : 1498806,
+    "stId" : "R-HSA-1498806",
+    "displayName" : "PTDSS1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 291 ],
+    "identifier" : "P48651",
+    "geneNames" : [ "PTDSS1", "KIAA0024", "PSSA" ]
+  }, {
+    "dbId" : 1498804,
+    "stId" : "R-HSA-1498804",
+    "displayName" : "PLA2G2D [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UNK4",
+    "geneNames" : [ "PLA2G2D", "SPLASH" ],
+    "parents" : [ 1602360 ]
+  }, {
+    "dbId" : 1498802,
+    "stId" : "R-HSA-1498802",
+    "displayName" : "PLA2G2A [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14555",
+    "geneNames" : [ "PLA2G2A", "PLA2B", "PLA2L", "RASF-A" ],
+    "parents" : [ 1500630 ]
+  }, {
+    "dbId" : 426658,
+    "stId" : "R-ALL-426658",
+    "displayName" : "PI [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1026, 2074 ],
+    "identifier" : "16749"
+  }, {
+    "dbId" : 1498803,
+    "stId" : "R-HSA-1498803",
+    "displayName" : "PLA2G16 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P53816",
+    "geneNames" : [ "PLA2G16", "HRASLS3", "HREV107" ],
+    "parents" : [ 8858540, 1524157, 1524137, 1524151, 1524120 ]
+  }, {
+    "dbId" : 1498800,
+    "stId" : "R-HSA-1498800",
+    "displayName" : "PLA2G2E [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NZK7",
+    "geneNames" : [ "PLA2G2E" ],
+    "parents" : [ 1602386 ]
+  }, {
+    "dbId" : 1498814,
+    "stId" : "R-HSA-1498814",
+    "displayName" : "PNPLA2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96AD5",
+    "geneNames" : [ "PNPLA2", "ATGL", "FP17548" ],
+    "parents" : [ 1500579 ]
+  }, {
+    "dbId" : 8869422,
+    "stId" : "R-HSA-8869422",
+    "displayName" : "PLA1A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2373 ],
+    "identifier" : "Q53H76",
+    "geneNames" : [ "PLA1A", "NMD", "PSPLA1" ]
+  }, {
+    "dbId" : 8954401,
+    "stId" : "R-ALL-8954401",
+    "displayName" : "PG [mitochondrial outer membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3169 ],
+    "identifier" : "17517"
+  }, {
+    "dbId" : 8954402,
+    "stId" : "R-HSA-8954402",
+    "displayName" : "MIGA2 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7L4E1",
+    "geneNames" : [ "MIGA2", "C9orf54", "FAM73B", "PSEC0112" ],
+    "parents" : [ 8954406, 8954405 ]
+  }, {
+    "dbId" : 8954404,
+    "stId" : "R-HSA-8954404",
+    "displayName" : "MIGA1 dimer [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8954399 ],
+    "children" : [ 8954397 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 545, 130, 804, 3012, 1413, 424, 488, 105, 682, 1258, 814, 655, 2063, 624, 1264, 466, 597, 759, 281, 155, 443 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 1498811,
+    "stId" : "R-HSA-1498811",
+    "displayName" : "PLD6 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N2A8",
+    "geneNames" : [ "PLD6" ],
+    "parents" : [ 1524126 ]
+  }, {
+    "dbId" : 8954405,
+    "stId" : "R-HSA-8954405",
+    "displayName" : "MIGA2 dimer [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8954399 ],
+    "children" : [ 8954402 ]
+  }, {
+    "dbId" : 8954406,
+    "stId" : "R-HSA-8954406",
+    "displayName" : "MIGA1:MIGA2 [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8954399 ],
+    "children" : [ 8954402, 8954397 ]
+  }, {
+    "dbId" : 1498790,
+    "stId" : "R-HSA-1498790",
+    "displayName" : "PLA2G12A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZM1",
+    "geneNames" : [ "PLA2G12A", "PLA2G12", "FKSG38", "UNQ2519/PRO6012" ],
+    "parents" : [ 1602352 ]
+  }, {
+    "dbId" : 29360,
+    "stId" : "R-ALL-29360",
+    "displayName" : "NAD+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 15 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 5215998,
+    "stId" : "R-HSA-5215998",
+    "displayName" : "CPNE1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99829",
+    "geneNames" : [ "CPNE1", "CPN1" ],
+    "parents" : [ 5333699 ]
+  }, {
+    "dbId" : 1498791,
+    "stId" : "R-HSA-1498791",
+    "displayName" : "PLD2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14939",
+    "geneNames" : [ "PLD2" ],
+    "parents" : [ 1524126, 1500639 ]
+  }, {
+    "dbId" : 1498788,
+    "stId" : "R-HSA-1498788",
+    "displayName" : "PLA2G4E [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q3MJ16",
+    "geneNames" : [ "PLA2G4E" ],
+    "parents" : [ 1524040, 1524157, 1524137, 1524135, 1524143, 1524112 ]
+  }, {
+    "dbId" : 8878644,
+    "stId" : "R-HSA-8878644",
+    "displayName" : "ACP6 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3072 ],
+    "identifier" : "Q9NPH0",
+    "geneNames" : [ "ACP6", "ACPL1", "LPAP", "UNQ205/PRO231" ]
+  }, {
+    "dbId" : 8869427,
+    "stId" : "R-ALL-8869427",
+    "displayName" : "2-acyl LPS [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2372 ],
+    "identifier" : "37646"
+  }, {
+    "dbId" : 1498786,
+    "stId" : "R-HSA-1498786",
+    "displayName" : "LPCAT2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7L5N7",
+    "geneNames" : [ "LPCAT2", "AGPAT11", "AYTL1" ],
+    "parents" : [ 1524029 ]
+  }, {
+    "dbId" : 1498787,
+    "stId" : "R-HSA-1498787",
+    "displayName" : "PLA2G3 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NZ20",
+    "geneNames" : [ "PLA2G3" ],
+    "parents" : [ 1602411 ]
+  }, {
+    "dbId" : 1498784,
+    "stId" : "R-HSA-1498784",
+    "displayName" : "GPD1L [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N335",
+    "geneNames" : [ "GPD1L", "KIAA0089" ],
+    "parents" : [ 1500615 ]
+  }, {
+    "dbId" : 1498785,
+    "stId" : "R-HSA-1498785",
+    "displayName" : "PCYT1B [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y5K3",
+    "geneNames" : [ "PCYT1B", "CCTB" ],
+    "parents" : [ 1524111 ]
+  }, {
+    "dbId" : 1498798,
+    "stId" : "R-HSA-1498798",
+    "displayName" : "PLD3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IV08",
+    "geneNames" : [ "PLD3" ],
+    "parents" : [ 1524126 ]
+  }, {
+    "dbId" : 1498799,
+    "stId" : "R-HSA-1498799",
+    "displayName" : "PLA2G4C [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 626, 551, 889, 877, 607 ],
+    "identifier" : "Q9UP65",
+    "geneNames" : [ "PLA2G4C" ],
+    "parents" : [ 1524141, 1524107 ]
+  }, {
+    "dbId" : 5215990,
+    "stId" : "R-HSA-5215990",
+    "displayName" : "PCTP [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2378 ],
+    "identifier" : "Q9UKL6",
+    "geneNames" : [ "PCTP", "STARD2" ],
+    "parents" : [ 8873866 ]
+  }, {
+    "dbId" : 1498796,
+    "stId" : "R-HSA-1498796",
+    "displayName" : "PLA2G2F [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZM2",
+    "geneNames" : [ "PLA2G2F" ],
+    "parents" : [ 1500634 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3009, 190, 127 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 8954419,
+    "stId" : "R-ALL-8954419",
+    "displayName" : "cardiolipin [mitochondrial outer membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3180 ],
+    "identifier" : "28494"
+  }, {
+    "dbId" : 1498797,
+    "stId" : "R-HSA-1498797",
+    "displayName" : "PLA2G4F [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q68DD2",
+    "geneNames" : [ "PLA2G4F" ],
+    "parents" : [ 1524142, 1524040, 1524157, 1524155, 1524137, 1524135, 1524151, 1524120, 1524112 ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 131, 158 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 1498794,
+    "stId" : "R-HSA-1498794",
+    "displayName" : "PLD4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96BZ4",
+    "geneNames" : [ "PLD4", "C14orf175", "UNQ2488/PRO5775" ],
+    "parents" : [ 1524126 ]
+  }, {
+    "dbId" : 1498795,
+    "stId" : "R-HSA-1498795",
+    "displayName" : "PLD1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13393",
+    "geneNames" : [ "PLD1" ],
+    "parents" : [ 1524126, 1500639 ]
+  }, {
+    "dbId" : 29374,
+    "stId" : "R-ALL-29374",
+    "displayName" : "CoA-SH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 372, 726 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 8878649,
+    "stId" : "R-ALL-8878649",
+    "displayName" : "MYS-LPA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3070 ],
+    "identifier" : "62833"
+  }, {
+    "dbId" : 1498792,
+    "stId" : "R-HSA-1498792",
+    "displayName" : "PLA2G4D [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86XP0",
+    "geneNames" : [ "PLA2G4D" ],
+    "parents" : [ 1524142, 1524040, 1524157, 1524155, 1524137, 1524135, 1524143, 1524151, 1524120, 1500634, 1524112 ]
+  }, {
+    "dbId" : 1498793,
+    "stId" : "R-HSA-1498793",
+    "displayName" : "PLA2G10 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15496",
+    "geneNames" : [ "PLA2G10" ],
+    "parents" : [ 1602425 ]
+  }, {
+    "dbId" : 111294,
+    "stId" : "R-ALL-111294",
+    "displayName" : "PPi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 976, 247, 974 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 29376,
+    "stId" : "R-ALL-29376",
+    "displayName" : "CO2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 171 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 109265,
+    "stId" : "R-ALL-109265",
+    "displayName" : "Zn2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 8878786 ]
+  }, {
+    "dbId" : 5601921,
+    "stId" : "R-HSA-5601921",
+    "displayName" : "PLD6 dimer [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3170 ],
+    "children" : [ 5601898 ]
+  }, {
+    "dbId" : 1498819,
+    "stId" : "R-HSA-1498819",
+    "displayName" : "PNPLA8 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NP80",
+    "geneNames" : [ "PNPLA8", "IPLA22", "IPLA2G", "BM-043" ],
+    "parents" : [ 1524128, 1524107 ]
+  }, {
+    "dbId" : 1498816,
+    "stId" : "R-HSA-1498816",
+    "displayName" : "PNPLA3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NST1",
+    "geneNames" : [ "PNPLA3", "ADPN", "C22orf20" ],
+    "parents" : [ 1500579 ]
+  }, {
+    "dbId" : 1498817,
+    "stId" : "R-HSA-1498817",
+    "displayName" : "PTDSS2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 299 ],
+    "identifier" : "Q9BVG9",
+    "geneNames" : [ "PTDSS2", "PSS2" ]
+  }, {
+    "dbId" : 159450,
+    "stId" : "R-ALL-159450",
+    "displayName" : "PPi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 317 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 109277,
+    "stId" : "R-ALL-109277",
+    "displayName" : "Pi [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3104 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 109276,
+    "stId" : "R-ALL-109276",
+    "displayName" : "H2O [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3122, 1027, 980, 998, 3206, 3207, 842, 988, 1037, 3102 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 429785,
+    "stId" : "R-ALL-429785",
+    "displayName" : "PC [Golgi membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 218 ],
+    "identifier" : "16110",
+    "parents" : [ 1524122 ]
+  }, {
+    "dbId" : 5215918,
+    "stId" : "R-HSA-5215918",
+    "displayName" : "CPNE3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75131",
+    "geneNames" : [ "CPNE3", "CPN3", "KIAA0636" ],
+    "parents" : [ 5333699 ]
+  }, {
+    "dbId" : 429802,
+    "stId" : "R-ALL-429802",
+    "displayName" : "PC [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 997 ],
+    "identifier" : "16110"
+  }, {
+    "dbId" : 975614,
+    "stId" : "R-ALL-975614",
+    "displayName" : "2-acyl LPC [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 598 ],
+    "identifier" : "16728"
+  }, {
+    "dbId" : 5333679,
+    "stId" : "R-HSA-5333679",
+    "displayName" : "CPNEs:PL [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1220 ],
+    "children" : [ 171142, 5333699 ]
+  }, {
+    "dbId" : 8873863,
+    "stId" : "R-HSA-8873863",
+    "displayName" : "STARD10:PC [lamellar body membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2939 ],
+    "children" : [ 8873832, 8873867 ]
+  }, {
+    "dbId" : 73473,
+    "stId" : "R-ALL-73473",
+    "displayName" : "NADH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 13 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 426755,
+    "stId" : "R-ALL-426755",
+    "displayName" : "PA [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 27 ],
+    "identifier" : "16337"
+  }, {
+    "dbId" : 975621,
+    "stId" : "R-HSA-975621",
+    "displayName" : "PLB1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1008 ],
+    "identifier" : "Q6P1J6",
+    "geneNames" : [ "PLB1", "PLB" ]
+  }, {
+    "dbId" : 8873867,
+    "stId" : "R-HSA-8873867",
+    "displayName" : "STARD10 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2870 ],
+    "identifier" : "Q9Y365",
+    "geneNames" : [ "STARD10", "SDCCAG28", "CGI-52" ],
+    "parents" : [ 8873863, 8873921 ]
+  }, {
+    "dbId" : 8873866,
+    "stId" : "R-HSA-8873866",
+    "displayName" : "PCTP:PC [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2379 ],
+    "children" : [ 5215990, 1524163 ]
+  }, {
+    "dbId" : 61213,
+    "stId" : "R-HSA-61213",
+    "displayName" : "PLA2G5 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P39877",
+    "geneNames" : [ "PLA2G5" ],
+    "parents" : [ 1500668 ]
+  }, {
+    "dbId" : 1602360,
+    "stId" : "R-HSA-1602360",
+    "displayName" : "PLA2G2D:Ca2+ [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1602359, 1602354 ],
+    "children" : [ 1498804, 74112 ]
+  }, {
+    "dbId" : 8858534,
+    "stId" : "R-HSA-8858534",
+    "displayName" : "HRASLS5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96KN8",
+    "geneNames" : [ "HRASLS5", "HRLP5" ],
+    "parents" : [ 8858540 ]
+  }, {
+    "dbId" : 1602363,
+    "stId" : "R-HSA-1602363",
+    "displayName" : "PLA2G2A:Ca2+ [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1602359, 1602354 ],
+    "children" : [ 1602364, 74112 ]
+  }, {
+    "dbId" : 1602364,
+    "stId" : "R-HSA-1602364",
+    "displayName" : "PLA2G2A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14555",
+    "geneNames" : [ "PLA2G2A", "PLA2B", "PLA2L", "RASF-A" ],
+    "parents" : [ 1602363 ]
+  }, {
+    "dbId" : 1602365,
+    "stId" : "R-HSA-1602365",
+    "displayName" : "PLA2G1B:Ca2+ [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1602359, 1602354 ],
+    "children" : [ 1500655, 74112 ]
+  }, {
+    "dbId" : 1602366,
+    "stId" : "R-ALL-1602366",
+    "displayName" : "LCFA(-) [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1040, 993, 982, 2375, 1022 ],
+    "identifier" : "57560"
+  }, {
+    "dbId" : 1602352,
+    "stId" : "R-HSA-1602352",
+    "displayName" : "PLA2G12A:Ca2+ [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1602359, 1602354 ],
+    "children" : [ 74112, 1498790 ]
+  }, {
+    "dbId" : 1602354,
+    "stId" : "R-HSA-1602354",
+    "displayName" : "PLA2(16) [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1042, 991 ],
+    "children" : [ 1500668, 1602386, 1602352, 1602383, 1602365, 1602411, 1602363, 1602425, 1602360 ]
+  }, {
+    "dbId" : 8858541,
+    "stId" : "R-HSA-8858541",
+    "displayName" : "RARRES3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UL19",
+    "geneNames" : [ "RARRES3", "RIG1", "TIG3" ],
+    "parents" : [ 8858540 ]
+  }, {
+    "dbId" : 8858540,
+    "stId" : "R-HSA-8858540",
+    "displayName" : "HRASLS [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1970 ],
+    "children" : [ 8858536, 8858541, 1498803, 8858537, 8858534 ]
+  }, {
+    "dbId" : 1602357,
+    "stId" : "R-HSA-1602357",
+    "displayName" : "PLA2G2F [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZM2",
+    "geneNames" : [ "PLA2G2F" ],
+    "parents" : [ 1602383 ]
+  }, {
+    "dbId" : 8873897,
+    "stId" : "R-HSA-8873897",
+    "displayName" : "STARD7:PC [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2381 ],
+    "children" : [ 426925, 8873841 ]
+  }, {
+    "dbId" : 8858537,
+    "stId" : "R-HSA-8858537",
+    "displayName" : "HRASLS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HDD0",
+    "geneNames" : [ "HRASLS" ],
+    "parents" : [ 8858540 ]
+  }, {
+    "dbId" : 8873896,
+    "stId" : "R-HSA-8873896",
+    "displayName" : "STARD7:PC [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2382 ],
+    "children" : [ 8873803, 8873841 ]
+  }, {
+    "dbId" : 8858536,
+    "stId" : "R-HSA-8858536",
+    "displayName" : "HRASLS2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NWW9",
+    "geneNames" : [ "HRASLS2" ],
+    "parents" : [ 8858540 ]
+  }, {
+    "dbId" : 1602359,
+    "stId" : "R-HSA-1602359",
+    "displayName" : "PLA2(15) [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 984, 1018 ],
+    "children" : [ 1500668, 1602386, 1602352, 1602383, 1602365, 1602363, 1602425, 1602360 ]
+  }, {
+    "dbId" : 372533,
+    "stId" : "R-ALL-372533",
+    "displayName" : "AcCho [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 841 ],
+    "identifier" : "15355"
+  }, {
+    "dbId" : 200503,
+    "stId" : "R-ALL-200503",
+    "displayName" : "Mg2+ [Golgi membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 1524087 ]
+  }, {
+    "dbId" : 8873921,
+    "stId" : "R-HSA-8873921",
+    "displayName" : "STARD10:LPCAT1:PC [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2871 ],
+    "children" : [ 8873867, 426925, 1498772 ]
+  }, {
+    "dbId" : 8933312,
+    "stId" : "R-HSA-8933312",
+    "displayName" : "PLA2G15 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3125 ],
+    "identifier" : "Q8NCC3",
+    "geneNames" : [ "PLA2G15", "LYPLA3", "UNQ341/PRO540" ]
+  }, {
+    "dbId" : 5216006,
+    "stId" : "R-HSA-5216006",
+    "displayName" : "PITPNM1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00562",
+    "geneNames" : [ "PITPNM1", "DRES9", "NIR2", "PITPNM" ],
+    "parents" : [ 8869240 ]
+  }, {
+    "dbId" : 1602386,
+    "stId" : "R-HSA-1602386",
+    "displayName" : "PLA2G2E:Ca2+ [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1602359, 1602354 ],
+    "children" : [ 1498800, 74112 ]
+  }, {
+    "dbId" : 8873930,
+    "stId" : "R-HSA-8873930",
+    "displayName" : "p-S284-STARD10 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2940 ],
+    "identifier" : "Q9Y365",
+    "geneNames" : [ "STARD10", "SDCCAG28", "CGI-52" ]
+  }, {
+    "dbId" : 1602390,
+    "stId" : "R-ALL-1602390",
+    "displayName" : "1-acyl LPC [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 999 ],
+    "identifier" : "17504"
+  }, {
+    "dbId" : 109395,
+    "stId" : "R-ALL-109395",
+    "displayName" : "cytidine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 211, 275, 279, 152 ],
+    "identifier" : "17361"
+  }, {
+    "dbId" : 1602383,
+    "stId" : "R-HSA-1602383",
+    "displayName" : "PLA2G2F:Ca2+ [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1602359, 1602354 ],
+    "children" : [ 1602357, 74112 ]
+  }, {
+    "dbId" : 33625,
+    "stId" : "R-ALL-33625",
+    "displayName" : "PS [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3205 ],
+    "identifier" : "18303"
+  }, {
+    "dbId" : 1602372,
+    "stId" : "R-ALL-1602372",
+    "displayName" : "1-acyl LPE [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 990 ],
+    "identifier" : "29017"
+  }, {
+    "dbId" : 1602375,
+    "stId" : "R-ALL-1602375",
+    "displayName" : "PE [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 989 ],
+    "identifier" : "16038"
+  }, {
+    "dbId" : 1602425,
+    "stId" : "R-HSA-1602425",
+    "displayName" : "PLA2G10:Ca2+ [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1602359, 1602354 ],
+    "children" : [ 1498793, 74112 ]
+  }, {
+    "dbId" : 2173763,
+    "stId" : "R-ALL-2173763",
+    "displayName" : "lysoPC [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3121 ],
+    "identifier" : "60479"
+  }, {
+    "dbId" : 1602419,
+    "stId" : "R-ALL-1602419",
+    "displayName" : "1-acyl LPS [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1020 ],
+    "identifier" : "52603"
+  }, {
+    "dbId" : 1602420,
+    "stId" : "R-ALL-1602420",
+    "displayName" : "1-acyl LPI [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1028 ],
+    "identifier" : "28914"
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 353, 330, 394, 3069, 1278, 703 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 1602411,
+    "stId" : "R-HSA-1602411",
+    "displayName" : "PLA2G3:Ca2+ [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1602354 ],
+    "children" : [ 1498787, 74112 ]
+  }, {
+    "dbId" : 1602415,
+    "stId" : "R-ALL-1602415",
+    "displayName" : "1-acyl LPG [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1038 ],
+    "identifier" : "62747"
+  }, {
+    "dbId" : 1602402,
+    "stId" : "R-ALL-1602402",
+    "displayName" : "PG [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1036 ],
+    "identifier" : "17517"
+  }, {
+    "dbId" : 113532,
+    "stId" : "R-ALL-113532",
+    "displayName" : "CH3CHO [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1280 ],
+    "identifier" : "15343"
+  }, {
+    "dbId" : 201596,
+    "stId" : "R-HSA-201596",
+    "displayName" : "PLA2G6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60733",
+    "geneNames" : [ "PLA2G6", "PLPLA9" ],
+    "parents" : [ 1524137, 1524120 ]
+  }, {
+    "dbId" : 1806234,
+    "stId" : "R-ALL-1806234",
+    "displayName" : "PI4P [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1994 ],
+    "identifier" : "17526"
+  }, {
+    "dbId" : 8933132,
+    "stId" : "R-HSA-8933132",
+    "displayName" : "DGAT2L6,L7P [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3017 ],
+    "children" : [ 8933127, 8848588 ]
+  }, {
+    "dbId" : 5216203,
+    "stId" : "R-HSA-5216203",
+    "displayName" : "MFSD2A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1991 ],
+    "identifier" : "Q8NA29",
+    "geneNames" : [ "MFSD2A", "MFSD2", "NLS1", "HMFN0656", "PP9177", "UNQ300/PRO341" ]
+  }, {
+    "dbId" : 1602448,
+    "stId" : "R-ALL-1602448",
+    "displayName" : "PA [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 981 ],
+    "identifier" : "16337"
+  }, {
+    "dbId" : 113548,
+    "stId" : "R-ALL-113548",
+    "displayName" : "Pi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1331, 332 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 8933127,
+    "stId" : "R-HSA-8933127",
+    "displayName" : "DGAT2L7P [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6IED9",
+    "geneNames" : [ "DGAT2L7P" ],
+    "parents" : [ 8933132 ]
+  }, {
+    "dbId" : 5216217,
+    "stId" : "R-HSA-5216217",
+    "displayName" : "PITPNM3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZ71",
+    "geneNames" : [ "PITPNM3", "NIR1" ],
+    "parents" : [ 8869240 ]
+  }, {
+    "dbId" : 5696449,
+    "stId" : "R-ALL-5696449",
+    "displayName" : "MAG [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1271 ],
+    "identifier" : "17408"
+  }, {
+    "dbId" : 1602447,
+    "stId" : "R-ALL-1602447",
+    "displayName" : "1-acyl LPA [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 983 ],
+    "identifier" : "16975"
+  }, {
+    "dbId" : 426910,
+    "stId" : "R-ALL-426910",
+    "displayName" : "Ins [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 272 ],
+    "identifier" : "17268"
+  }, {
+    "dbId" : 3215273,
+    "stId" : "R-HSA-3215273",
+    "displayName" : "PLA2G4F [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q68DD2",
+    "geneNames" : [ "PLA2G4F" ],
+    "parents" : [ 3215272 ]
+  }, {
+    "dbId" : 3215272,
+    "stId" : "R-HSA-3215272",
+    "displayName" : "PLA2G [mitochondrial inner membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1204 ],
+    "children" : [ 1524130, 3215274, 3215273 ]
+  }, {
+    "dbId" : 3215274,
+    "stId" : "R-HSA-3215274",
+    "displayName" : "PLA2G4D [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86XP0",
+    "geneNames" : [ "PLA2G4D" ],
+    "parents" : [ 3215272 ]
+  }, {
+    "dbId" : 31649,
+    "stId" : "R-ALL-31649",
+    "displayName" : "FADH2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3202 ],
+    "identifier" : "17877"
+  }, {
+    "dbId" : 426925,
+    "stId" : "R-ALL-426925",
+    "displayName" : "PC [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 181, 574 ],
+    "identifier" : "16110",
+    "parents" : [ 8873921, 8873897, 1524110 ]
+  }, {
+    "dbId" : 5694457,
+    "stId" : "R-ALL-5694457",
+    "displayName" : "1AGPC [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1259 ],
+    "identifier" : "11230"
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3008, 187, 124 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 113596,
+    "stId" : "R-ALL-113596",
+    "displayName" : "FAD [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3201 ],
+    "identifier" : "16238"
+  }, {
+    "dbId" : 400312,
+    "stId" : "R-HSA-400312",
+    "displayName" : "CPNE7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UBL6",
+    "geneNames" : [ "CPNE7" ],
+    "parents" : [ 5333699 ]
+  }, {
+    "dbId" : 428994,
+    "stId" : "R-HSA-428994",
+    "displayName" : "LPCAT3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P1A2",
+    "geneNames" : [ "LPCAT3", "MBOAT5", "OACT5" ],
+    "parents" : [ 1524037, 1524035, 1524029 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1989 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 5696414,
+    "stId" : "R-ALL-5696414",
+    "displayName" : "PETA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1277 ],
+    "identifier" : "17553"
+  }, {
+    "dbId" : 5696413,
+    "stId" : "R-HSA-5696413",
+    "displayName" : "ETNPPL tetramer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1281 ],
+    "children" : [ 5696419 ]
+  }, {
+    "dbId" : 8873803,
+    "stId" : "R-ALL-8873803",
+    "displayName" : "PC [mitochondrial outer membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16110",
+    "parents" : [ 8873896 ]
+  }, {
+    "dbId" : 426955,
+    "stId" : "R-ALL-426955",
+    "displayName" : "CDP-DAG [endoplasmic reticulum membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 246 ],
+    "identifier" : "17962"
+  }, {
+    "dbId" : 8865629,
+    "stId" : "R-ALL-8865629",
+    "displayName" : "LPC (22:6) [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1990 ],
+    "identifier" : "64567"
+  }, {
+    "dbId" : 201693,
+    "stId" : "R-HSA-201693",
+    "displayName" : "CSNK2B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P67870",
+    "geneNames" : [ "CSNK2B", "CK2N", "G5A" ],
+    "parents" : [ 201711 ]
+  }, {
+    "dbId" : 189422,
+    "stId" : "R-ALL-189422",
+    "displayName" : "H2O [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3181 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 201711,
+    "stId" : "R-HSA-201711",
+    "displayName" : "Casein kinase II [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3010 ],
+    "children" : [ 201693, 5083624 ]
+  }, {
+    "dbId" : 8865642,
+    "stId" : "R-ALL-8865642",
+    "displayName" : "LPC (22:6) [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1988 ],
+    "identifier" : "64567"
+  }, {
+    "dbId" : 8873832,
+    "stId" : "R-ALL-8873832",
+    "displayName" : "PC [lamellar body membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16110",
+    "parents" : [ 8873863 ]
+  }, {
+    "dbId" : 110577,
+    "stId" : "R-ALL-110577",
+    "displayName" : "CTP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 316 ],
+    "identifier" : "17677"
+  }, {
+    "dbId" : 201713,
+    "stId" : "R-HSA-201713",
+    "displayName" : "CSNK2A1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P68400",
+    "geneNames" : [ "CSNK2A1", "CK2A1" ],
+    "parents" : [ 5083623, 5083621 ]
+  }, {
+    "dbId" : 5696419,
+    "stId" : "R-HSA-5696419",
+    "displayName" : "ETNPPL [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TBG4",
+    "geneNames" : [ "ETNPPL", "AGXT2L1" ],
+    "parents" : [ 5696413 ]
+  }, {
+    "dbId" : 8873841,
+    "stId" : "R-HSA-8873841",
+    "displayName" : "STARD7 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2862 ],
+    "identifier" : "Q9NQZ5",
+    "geneNames" : [ "STARD7", "GTT1" ],
+    "parents" : [ 8873896, 8873897 ]
+  }, {
+    "dbId" : 1299435,
+    "stId" : "R-HSA-1299435",
+    "displayName" : "TAZ [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 360 ],
+    "identifier" : "Q16635",
+    "geneNames" : [ "TAZ", "EFE2", "G4.5" ]
+  }, {
+    "dbId" : 201721,
+    "stId" : "R-HSA-201721",
+    "displayName" : "CSNK2A2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19784",
+    "geneNames" : [ "CSNK2A2", "CK2A2" ],
+    "parents" : [ 5083623, 5083620 ]
+  }, {
+    "dbId" : 535541,
+    "stId" : "R-HSA-535541",
+    "displayName" : "PLA2G4B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0C869",
+    "geneNames" : [ "PLA2G4B" ],
+    "parents" : [ 1524040, 1524157, 1524137, 1524120, 1500634, 1524112 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 1482775,
+    "stId" : "R-HSA-1482775",
+    "displayName" : "MLCL is acylated to CL by HADH (IM)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482794, 1482778, 1482894 ],
+    "following" : [ 1482894, 1482778, 1482794 ],
+    "inputs" : [ 1498773, 1524038 ],
+    "outputs" : [ 1524072, 29374 ],
+    "catalysts" : [ 1524100 ],
+    "efs" : [ ],
+    "diagramIds" : [ 370 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482773,
+    "stId" : "R-HSA-1482773",
+    "displayName" : "MLCL transports from the IM to the ER",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482794, 1482778, 1482894 ],
+    "following" : [ 1482861 ],
+    "inputs" : [ 1498773 ],
+    "outputs" : [ 1524069 ],
+    "efs" : [ ],
+    "diagramIds" : [ 400 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482771,
+    "stId" : "R-HSA-1482771",
+    "displayName" : "PS is hydrolyzed to 1-acyl LPS by PLA2[9]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482636, 1483089, 1482691, 1483186 ],
+    "following" : [ 1482636 ],
+    "inputs" : [ 29356, 1500646 ],
+    "outputs" : [ 1524021, 1498724 ],
+    "catalysts" : [ 1524157 ],
+    "efs" : [ ],
+    "diagramIds" : [ 758 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482781,
+    "stId" : "R-HSA-1482781",
+    "displayName" : "MLCL and PC are converted to CL and 1-acyl LPC by TAZ (IM) (Reversible)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482778 ],
+    "following" : [ 1482894, 1482778, 1482794 ],
+    "inputs" : [ 1524075, 1498773 ],
+    "outputs" : [ 1524072, 1524079 ],
+    "catalysts" : [ 1299435 ],
+    "efs" : [ ],
+    "diagramIds" : [ 357 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482778,
+    "stId" : "R-HSA-1482778",
+    "displayName" : "CL is hydrolyzed to MLCL by PLA2G6 (IM)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482857, 1482781, 1482850, 1482775, 1483063 ],
+    "following" : [ 1482850, 1482775, 1482781, 1482773, 1482759 ],
+    "inputs" : [ 1524072, 113521 ],
+    "outputs" : [ 1498773, 1524085 ],
+    "catalysts" : [ 1524076 ],
+    "efs" : [ ],
+    "diagramIds" : [ 352 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482776,
+    "stId" : "R-HSA-1482776",
+    "displayName" : "PS is hydrolyzed to 1-acyl LPS by PLA2G2A",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482636, 1483089, 1482691, 1483186 ],
+    "following" : [ 1482636 ],
+    "inputs" : [ 29356, 1500646 ],
+    "outputs" : [ 1524021, 1498724 ],
+    "catalysts" : [ 1500630 ],
+    "efs" : [ ],
+    "diagramIds" : [ 778 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482777,
+    "stId" : "R-HSA-1482777",
+    "displayName" : "TAG is hydrolyzed to DAG by PNPLA2/3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482889, 1482647 ],
+    "following" : [ 1482961, 1482962, 1482647, 1482811, 1482889 ],
+    "inputs" : [ 29356, 1500594 ],
+    "outputs" : [ 1524021, 1500596 ],
+    "catalysts" : [ 1500579 ],
+    "efs" : [ ],
+    "diagramIds" : [ 422 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482759,
+    "stId" : "R-HSA-1482759",
+    "displayName" : "MLCL is hydrolyzed to DLCL by PLA2G4A (IM)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482794, 1482778, 1482894 ],
+    "following" : [ 1482860 ],
+    "inputs" : [ 1498773, 113521 ],
+    "outputs" : [ 1498753, 1524085 ],
+    "catalysts" : [ 1524095 ],
+    "efs" : [ ],
+    "diagramIds" : [ 393 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 444433,
+    "stId" : "R-HSA-444433",
+    "displayName" : "Cho transports from the extracellular space to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 372519 ],
+    "following" : [ 264622, 1483004 ],
+    "inputs" : [ 264638 ],
+    "outputs" : [ 264618 ],
+    "catalysts" : [ 444452 ],
+    "efs" : [ ],
+    "diagramIds" : [ 969 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696074,
+    "stId" : "R-HSA-5696074",
+    "displayName" : "AGK:Mg2+ phosphorylates MAG, DAG",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5696066, 5696069 ],
+    "outputs" : [ 5696026, 5696037 ],
+    "catalysts" : [ 5696053 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3192 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483063,
+    "stId" : "R-HSA-1483063",
+    "displayName" : "PG and CDP-DAG are converted to CL by CRLS1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483165, 1483197 ],
+    "following" : [ 1482894, 1482794, 1482778 ],
+    "inputs" : [ 1524042, 1524064 ],
+    "outputs" : [ 1524072, 1524067 ],
+    "catalysts" : [ 1498760 ],
+    "efs" : [ ],
+    "diagramIds" : [ 337 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5694583,
+    "stId" : "R-HSA-5694583",
+    "displayName" : "ABHD4 hydrolyses NAPE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8858298 ],
+    "inputs" : [ 5694568, 29356 ],
+    "outputs" : [ 5694580, 5694567 ],
+    "catalysts" : [ 5694582 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1263 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 372519,
+    "stId" : "R-HSA-372519",
+    "displayName" : "AcCho is hydrolyzed to Cho and acetate by ACHE",
+    "schemaClass" : "Reaction",
+    "following" : [ 444433 ],
+    "inputs" : [ 109276, 372533 ],
+    "outputs" : [ 1524044, 264638 ],
+    "catalysts" : [ 3640837 ],
+    "efs" : [ ],
+    "diagramIds" : [ 955 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482548,
+    "stId" : "R-HSA-1482548",
+    "displayName" : "1-acyl LPA is acylated to PA by AGPAT5 (OM)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482604, 1482695 ],
+    "following" : [ 1483099, 1482604 ],
+    "inputs" : [ 1500578, 1500580 ],
+    "outputs" : [ 1500590, 76194 ],
+    "catalysts" : [ 1500585 ],
+    "efs" : [ ],
+    "diagramIds" : [ 95 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482546,
+    "stId" : "R-HSA-1482546",
+    "displayName" : "2-acyl LPG is acylated to PG by CRLS1 (IM)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482847 ],
+    "following" : [ 1482847, 1482745 ],
+    "inputs" : [ 1524047, 1524038 ],
+    "outputs" : [ 29374, 1524042 ],
+    "catalysts" : [ 1498760 ],
+    "efs" : [ ],
+    "diagramIds" : [ 730 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482547,
+    "stId" : "R-HSA-1482547",
+    "displayName" : "1-acyl LPC is acylated to PC by LPCAT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482856, 1482816 ],
+    "following" : [ 1483142, 1483182, 1482862, 1482856, 1482816, 1483186, 1482827 ],
+    "inputs" : [ 1524028, 1500578 ],
+    "outputs" : [ 426925, 76194 ],
+    "catalysts" : [ 1524029 ],
+    "efs" : [ ],
+    "diagramIds" : [ 586 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482545,
+    "stId" : "R-HSA-1482545",
+    "displayName" : "2-acyl LPE is hydrolyzed to GPETA by PLA2G4C",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482892, 1482828 ],
+    "following" : [ 1483107 ],
+    "inputs" : [ 1498729, 29356 ],
+    "outputs" : [ 1524021, 1524023 ],
+    "catalysts" : [ 1498799 ],
+    "efs" : [ ],
+    "diagramIds" : [ 554 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482811,
+    "stId" : "R-HSA-1482811",
+    "displayName" : "DAG is hydrolyzed to 2-MAG by PNPLA2/3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482777, 1482654, 5696448 ],
+    "following" : [ 1482543, 1482647, 1482654 ],
+    "inputs" : [ 29356, 1500596 ],
+    "outputs" : [ 1498728, 1524021 ],
+    "catalysts" : [ 1500579 ],
+    "efs" : [ ],
+    "diagramIds" : [ 442 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 188467,
+    "stId" : "R-HSA-188467",
+    "displayName" : "Gly-3-P+FAD->DHAP+FADH2 (catalyzed by mitochondrial Gly-Phos dehydrogenase)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113596, 188458 ],
+    "outputs" : [ 31649, 188451 ],
+    "catalysts" : [ 188469 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3200 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8952251,
+    "stId" : "R-HSA-8952251",
+    "displayName" : "PLA2G15 hydrolyses LPC to GPCho and LCFA(-)",
+    "schemaClass" : "Reaction",
+    "following" : [ 1483116 ],
+    "inputs" : [ 109276, 2173763 ],
+    "outputs" : [ 8954142, 8952253 ],
+    "catalysts" : [ 8933312 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3120 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482533,
+    "stId" : "R-HSA-1482533",
+    "displayName" : "2-acyl LPC is acylated to PC by LPCAT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482827, 1482862 ],
+    "following" : [ 1483142, 1483182, 1482862, 1482856, 1482816, 1483186, 1482827 ],
+    "inputs" : [ 1500578, 975614 ],
+    "outputs" : [ 426925, 76194 ],
+    "catalysts" : [ 1524029 ],
+    "efs" : [ ],
+    "diagramIds" : [ 610 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482543,
+    "stId" : "R-HSA-1482543",
+    "displayName" : "2-MAG is hydrolyzed to fatty acid and glycerol by MGLL",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482811 ],
+    "inputs" : [ 1498728, 29356 ],
+    "outputs" : [ 1500593, 76116 ],
+    "catalysts" : [ 1500601 ],
+    "efs" : [ ],
+    "diagramIds" : [ 465 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482794,
+    "stId" : "R-HSA-1482794",
+    "displayName" : "CL and 1-acyl LPC are converted to MLCL and PC by TAZ (IM) (Reversible)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482857, 1482781, 1482850, 1483063, 1482775 ],
+    "following" : [ 1482775, 1482773, 1482759 ],
+    "inputs" : [ 1524072, 1524079 ],
+    "outputs" : [ 1524075, 1498773 ],
+    "catalysts" : [ 1299435 ],
+    "efs" : [ ],
+    "diagramIds" : [ 363 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6786650,
+    "stId" : "R-HSA-6786650",
+    "displayName" : "DDHD1,2 hydrolyse PA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 1602448 ],
+    "outputs" : [ 1602447, 1602366 ],
+    "catalysts" : [ 6786649 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1412 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482539,
+    "stId" : "R-HSA-1482539",
+    "displayName" : "1-acyl LPG is acylated to PG by LPGAT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482907, 1482900 ],
+    "following" : [ 1483218, 1482900, 1482920, 1482907 ],
+    "inputs" : [ 1500578, 1498740 ],
+    "outputs" : [ 1483256, 76194 ],
+    "catalysts" : [ 1524026 ],
+    "efs" : [ ],
+    "diagramIds" : [ 689 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8858298,
+    "stId" : "R-HSA-8858298",
+    "displayName" : "HRASLS transfer acyl group from PC to PE to form NAPE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482961, 1483077 ],
+    "following" : [ 5694583 ],
+    "inputs" : [ 426925, 1500581 ],
+    "outputs" : [ 5694568, 6814253 ],
+    "catalysts" : [ 8858540 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1967 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5694485,
+    "stId" : "R-HSA-5694485",
+    "displayName" : "ABHD3 hydrolyses LPC(14:0) to 1AGPC",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 5694502 ],
+    "outputs" : [ 5694457, 1861754 ],
+    "catalysts" : [ 5694478 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1256 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8848580,
+    "stId" : "R-HSA-8848580",
+    "displayName" : "DGAT2L6,L7P transfer acyl group from acyl-CoA to DAG, forming TAG",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 1500578, 1500596 ],
+    "outputs" : [ 1500594, 76194 ],
+    "catalysts" : [ 8933132 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1965 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8874435,
+    "stId" : "R-HSA-8874435",
+    "displayName" : "THEM86B hydrolyses PMCHO, PMETAM",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29356, 8874447 ],
+    "outputs" : [ 8874450, 5696116 ],
+    "catalysts" : [ 8874443 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3011 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8878787,
+    "stId" : "R-HSA-8878787",
+    "displayName" : "ALPI dimer hydrolyses phosphate monoesters",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 8878780 ],
+    "outputs" : [ 8878776, 109277 ],
+    "catalysts" : [ 8878786 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3101 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8873923,
+    "stId" : "R-HSA-8873923",
+    "displayName" : "STARD10 binds LPCAT1 and PC",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8873867, 426925, 1498772 ],
+    "outputs" : [ 8873921 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2863 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1602398,
+    "stId" : "R-HSA-1602398",
+    "displayName" : "PE is hydrolyzed to 1-acyl LPE by PLA2[16]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 1602375, 109276 ],
+    "outputs" : [ 1602372, 1602366 ],
+    "catalysts" : [ 1602354 ],
+    "efs" : [ ],
+    "inhibitors" : [ 8864270 ],
+    "diagramIds" : [ 987 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483089,
+    "stId" : "R-HSA-1483089",
+    "displayName" : "PE is converted to PS by PTDSS2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482667, 1482962, 1483077, 1482646 ],
+    "following" : [ 1483170, 1482897, 1482776, 1482771 ],
+    "inputs" : [ 200736, 1500581 ],
+    "outputs" : [ 1498751, 1500646 ],
+    "catalysts" : [ 1498817 ],
+    "efs" : [ ],
+    "diagramIds" : [ 298 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1602399,
+    "stId" : "R-HSA-1602399",
+    "displayName" : "PC is hydrolyzed to 1-acyl LPC by PLB1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 429802 ],
+    "outputs" : [ 1602390, 1602366 ],
+    "catalysts" : [ 975621 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1006 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482847,
+    "stId" : "R-HSA-1482847",
+    "displayName" : "PG is hydrolysed to 2-acyl LPG by PLA2G4B (IM)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483197, 1482689, 1482546 ],
+    "following" : [ 1482546 ],
+    "inputs" : [ 1524042, 113521 ],
+    "outputs" : [ 1524047, 1524085 ],
+    "catalysts" : [ 3215272 ],
+    "efs" : [ ],
+    "diagramIds" : [ 712 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483099,
+    "stId" : "R-HSA-1483099",
+    "displayName" : "PA translocates from the outer to the inner mitochondrial membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8954398, 1482548 ],
+    "following" : [ 1483165 ],
+    "inputs" : [ 1500590 ],
+    "outputs" : [ 1524101 ],
+    "efs" : [ ],
+    "diagramIds" : [ 309 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8873929,
+    "stId" : "R-HSA-8873929",
+    "displayName" : "Casein kinase II phosphorylates STARD10",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8873867, 113592 ],
+    "outputs" : [ 8873930, 29370 ],
+    "catalysts" : [ 201711 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3007 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483096,
+    "stId" : "R-HSA-1483096",
+    "displayName" : "PETA is dephosphorylated to ETA by PHOSPHO1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483222 ],
+    "following" : [ 1483222 ],
+    "inputs" : [ 29356, 428686 ],
+    "outputs" : [ 29372, 1498751 ],
+    "catalysts" : [ 1500633 ],
+    "efs" : [ ],
+    "diagramIds" : [ 129 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1602377,
+    "stId" : "R-HSA-1602377",
+    "displayName" : "PI is hydrolyzed to 1-acyl LPI by PLA2[15]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 426658 ],
+    "outputs" : [ 1602420, 1602366 ],
+    "catalysts" : [ 1602359 ],
+    "efs" : [ ],
+    "inhibitors" : [ 8864270 ],
+    "diagramIds" : [ 1025 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483077,
+    "stId" : "R-HSA-1483077",
+    "displayName" : "PE transports from the mitochondrial membrane to the ER",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483212, 1482894 ],
+    "following" : [ 1483174, 8858298, 1482892, 1482828, 1482884, 1482887, 1483089 ],
+    "inputs" : [ 1524083 ],
+    "outputs" : [ 1500581 ],
+    "efs" : [ ],
+    "diagramIds" : [ 174 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482816,
+    "stId" : "R-HSA-1482816",
+    "displayName" : "PC is hydrolyzed to 1-acyl LPC by PLA2[6]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482961, 1482547, 1483219, 1482533 ],
+    "following" : [ 1482547, 1482696, 1482685 ],
+    "inputs" : [ 29356, 426925 ],
+    "outputs" : [ 1524028, 1524021 ],
+    "catalysts" : [ 1524107 ],
+    "efs" : [ ],
+    "diagramIds" : [ 579 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1602368,
+    "stId" : "R-HSA-1602368",
+    "displayName" : "PG is hydrolyzed to 1-acyl LPG by PLA2[16]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 1602402 ],
+    "outputs" : [ 1602415, 1602366 ],
+    "catalysts" : [ 1602354 ],
+    "efs" : [ ],
+    "inhibitors" : [ 8864270 ],
+    "diagramIds" : [ 1035 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483087,
+    "stId" : "R-HSA-1483087",
+    "displayName" : "PI is exchanged with PC by PITPNB",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482973, 1483229 ],
+    "following" : [ 1483211 ],
+    "inputs" : [ 429785, 1524150 ],
+    "outputs" : [ 1524122, 1524146 ],
+    "efs" : [ ],
+    "diagramIds" : [ 232 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482828,
+    "stId" : "R-HSA-1482828",
+    "displayName" : "PE is hydrolyzed to 2-acyl LPE by PLA2[4]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482667, 1482962, 1483077, 1482646 ],
+    "following" : [ 1482545, 1482646 ],
+    "inputs" : [ 29356, 1500581 ],
+    "outputs" : [ 1498729, 1524021 ],
+    "catalysts" : [ 1524135 ],
+    "efs" : [ ],
+    "diagramIds" : [ 510 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482571,
+    "stId" : "R-HSA-1482571",
+    "displayName" : "1-acyl LPE is hydrolyzed to GPETA by PLA2G4C",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482884, 1482887 ],
+    "following" : [ 1483107 ],
+    "inputs" : [ 29356, 1498738 ],
+    "outputs" : [ 1524021, 1524023 ],
+    "catalysts" : [ 1498799 ],
+    "efs" : [ ],
+    "diagramIds" : [ 544 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482827,
+    "stId" : "R-HSA-1482827",
+    "displayName" : "PC is hydrolyzed to 2-acyl LPC by PLA2G4C",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482961, 1482547, 1483219, 1482533 ],
+    "following" : [ 1482533, 1482629, 1482612 ],
+    "inputs" : [ 29356, 426925 ],
+    "outputs" : [ 1524021, 975614 ],
+    "catalysts" : [ 1498799 ],
+    "efs" : [ ],
+    "diagramIds" : [ 602 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1602374,
+    "stId" : "R-HSA-1602374",
+    "displayName" : "PS is hydrolyzed to 1-acyl LPS by PLA2[15]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 33625 ],
+    "outputs" : [ 1602419, 1602366 ],
+    "catalysts" : [ 1602359 ],
+    "efs" : [ ],
+    "inhibitors" : [ 8864270 ],
+    "diagramIds" : [ 1013 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482825,
+    "stId" : "R-HSA-1482825",
+    "displayName" : "PI is hydrolyzed to 1-acyl LPI by PLA2[11]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482976, 1482626, 1482598 ],
+    "following" : [ 1482598 ],
+    "inputs" : [ 29356, 426639 ],
+    "outputs" : [ 1498733, 1524021 ],
+    "catalysts" : [ 1524151 ],
+    "efs" : [ ],
+    "diagramIds" : [ 803 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483081,
+    "stId" : "R-HSA-1483081",
+    "displayName" : "PCho and CTP are condensed to CDP-Cho by PCYT1 dimer",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483004 ],
+    "following" : [ 1482961, 1482973 ],
+    "inputs" : [ 110614, 1524071 ],
+    "outputs" : [ 111294, 1524060 ],
+    "catalysts" : [ 1524125 ],
+    "efs" : [ ],
+    "diagramIds" : [ 954 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482612,
+    "stId" : "R-HSA-1482612",
+    "displayName" : "2-acyl LPC is hydrolyzed to GPCho by PLA2[8]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482827, 1482862 ],
+    "following" : [ 1483116 ],
+    "inputs" : [ 29356, 975614 ],
+    "outputs" : [ 1498750, 1524021 ],
+    "catalysts" : [ 1524040 ],
+    "efs" : [ ],
+    "diagramIds" : [ 635 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482868,
+    "stId" : "R-HSA-1482868",
+    "displayName" : "PI is hydrolyzed to 1-acyl LPI by PLA2[12]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482976, 1482626, 1482598 ],
+    "following" : [ 1482598 ],
+    "inputs" : [ 29356, 426639 ],
+    "outputs" : [ 1498733, 1524021 ],
+    "catalysts" : [ 1524141 ],
+    "efs" : [ ],
+    "diagramIds" : [ 821 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482867,
+    "stId" : "R-HSA-1482867",
+    "displayName" : "DLCL is acylated to MLCL by LCLAT1 (ER)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482860 ],
+    "following" : [ 1482861 ],
+    "inputs" : [ 1524080, 1500578 ],
+    "outputs" : [ 76194, 1524069 ],
+    "catalysts" : [ 1498783 ],
+    "efs" : [ ],
+    "diagramIds" : [ 416 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483121,
+    "stId" : "R-HSA-1483121",
+    "displayName" : "PA is converted to CDP-DAG by CDS1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75885, 1483182 ],
+    "following" : [ 1482976 ],
+    "inputs" : [ 110614, 426755 ],
+    "outputs" : [ 111294, 426955 ],
+    "catalysts" : [ 1500651 ],
+    "efs" : [ ],
+    "diagramIds" : [ 245 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1602417,
+    "stId" : "R-HSA-1602417",
+    "displayName" : "PC is hydrolyzed to 1-acyl LPC by PLA2[16]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 429802 ],
+    "outputs" : [ 1602390, 1602366 ],
+    "catalysts" : [ 1602354 ],
+    "efs" : [ ],
+    "inhibitors" : [ 8864270 ],
+    "diagramIds" : [ 996 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75885,
+    "stId" : "R-HSA-75885",
+    "displayName" : "1-acyl LPA is acylated to PA by AGPAT (LPAAT)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482656, 1482679, 549112 ],
+    "following" : [ 1483121, 1483203, 1482679, 1482656 ],
+    "inputs" : [ 1500604, 1500578 ],
+    "outputs" : [ 426755, 76194 ],
+    "catalysts" : [ 1500583 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1072 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75889,
+    "stId" : "R-HSA-75889",
+    "displayName" : "DHAP is converted to G3P by GPD1/GPD1L",
+    "schemaClass" : "Reaction",
+    "following" : [ 1482695, 549112 ],
+    "inputs" : [ 70106, 75970, 73473 ],
+    "outputs" : [ 76114, 29360 ],
+    "catalysts" : [ 1500610 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1070 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482598,
+    "stId" : "R-HSA-1482598",
+    "displayName" : "1-acyl LPI is acylated to PI by MBOAT7",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482825, 1482868 ],
+    "following" : [ 1483219, 1482825, 1482868, 1482932 ],
+    "inputs" : [ 1498733, 1500578 ],
+    "outputs" : [ 426639, 76194 ],
+    "catalysts" : [ 1498778 ],
+    "efs" : [ ],
+    "diagramIds" : [ 826 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482850,
+    "stId" : "R-HSA-1482850",
+    "displayName" : "MLCL and PE are converted to CL and 1-acyl LPE by TAZ (IM) (Reversible)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482778, 1483212 ],
+    "following" : [ 1482894, 1482778, 1482794 ],
+    "inputs" : [ 1524083, 1498773 ],
+    "outputs" : [ 1524072, 1524089 ],
+    "catalysts" : [ 1299435 ],
+    "efs" : [ ],
+    "diagramIds" : [ 376 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483107,
+    "stId" : "R-HSA-1483107",
+    "displayName" : "GPETA is hydrolyzed to ETA and G3P by GPCPD1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482571, 1482545 ],
+    "following" : [ 549112, 1482695, 1483222 ],
+    "inputs" : [ 29356, 1524023 ],
+    "outputs" : [ 1498751, 76114 ],
+    "catalysts" : [ 1498747 ],
+    "efs" : [ ],
+    "diagramIds" : [ 558 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482862,
+    "stId" : "R-HSA-1482862",
+    "displayName" : "PC is hydrolysed to 2-acyl LPC by PLA2[7]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482961, 1482547, 1483219, 1482533 ],
+    "following" : [ 1482533, 1482629, 1482612 ],
+    "inputs" : [ 29356, 426925 ],
+    "outputs" : [ 1524021, 975614 ],
+    "catalysts" : [ 1524112 ],
+    "efs" : [ ],
+    "diagramIds" : [ 596 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482604,
+    "stId" : "R-HSA-1482604",
+    "displayName" : "PA is hydrolyzed to 1-acyl LPA by PLA2[1] (OM)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482548 ],
+    "following" : [ 1482548 ],
+    "inputs" : [ 29356, 1500590 ],
+    "outputs" : [ 1500580, 1524103 ],
+    "catalysts" : [ 1500634 ],
+    "efs" : [ ],
+    "diagramIds" : [ 104 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483116,
+    "stId" : "R-HSA-1483116",
+    "displayName" : "GPCho is hydrolyzed to Cho and G3P by GPCPD1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482696, 1482685, 8952251, 1482629, 1482612 ],
+    "following" : [ 264622, 1483004, 549112, 1482695 ],
+    "inputs" : [ 29356, 1498750 ],
+    "outputs" : [ 264618, 76114 ],
+    "catalysts" : [ 1498747 ],
+    "efs" : [ ],
+    "diagramIds" : [ 654 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482860,
+    "stId" : "R-HSA-1482860",
+    "displayName" : "DLCL transports from the IM to the ER",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482759 ],
+    "following" : [ 1482867 ],
+    "inputs" : [ 1498753 ],
+    "outputs" : [ 1524080 ],
+    "efs" : [ ],
+    "diagramIds" : [ 414 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482861,
+    "stId" : "R-HSA-1482861",
+    "displayName" : "MLCL is acylated to CL by LCLAT1 (ER)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482867, 1482773 ],
+    "following" : [ 1482857 ],
+    "inputs" : [ 1500578, 1524069 ],
+    "outputs" : [ 1524081, 76194 ],
+    "catalysts" : [ 1498783 ],
+    "efs" : [ ],
+    "diagramIds" : [ 402 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482856,
+    "stId" : "R-HSA-1482856",
+    "displayName" : "PC is hydrolyzed to 1-acyl LPC by PLA2[5]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482961, 1482547, 1483219, 1482533 ],
+    "following" : [ 1482547, 1482696, 1482685 ],
+    "inputs" : [ 29356, 426925 ],
+    "outputs" : [ 1524028, 1524021 ],
+    "catalysts" : [ 1524120 ],
+    "efs" : [ ],
+    "diagramIds" : [ 569 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482857,
+    "stId" : "R-HSA-1482857",
+    "displayName" : "CL transports from the ER to the IM",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482861 ],
+    "following" : [ 1482894, 1482778, 1482794 ],
+    "inputs" : [ 1524081 ],
+    "outputs" : [ 1524072 ],
+    "efs" : [ ],
+    "diagramIds" : [ 413 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482646,
+    "stId" : "R-HSA-1482646",
+    "displayName" : "2-acyl LPE is acylated to PE by LPEAT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482892, 1482828 ],
+    "following" : [ 1483174, 1482892, 1482828, 1482884, 1483089, 1482887 ],
+    "inputs" : [ 1498729, 1500578 ],
+    "outputs" : [ 76194, 1500581 ],
+    "catalysts" : [ 1524035 ],
+    "efs" : [ ],
+    "diagramIds" : [ 533 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482647,
+    "stId" : "R-HSA-1482647",
+    "displayName" : "2-MAG and DAG are transacylated to TAG by PNPLA2/3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482777, 1482811, 1482654 ],
+    "following" : [ 1482777 ],
+    "inputs" : [ 1498728, 1500596 ],
+    "outputs" : [ 76116, 1500594 ],
+    "catalysts" : [ 1500579 ],
+    "efs" : [ ],
+    "diagramIds" : [ 460 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483159,
+    "stId" : "R-HSA-1483159",
+    "displayName" : "PCho is dephosphorylated to Cho by PHOSPHO1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483004 ],
+    "following" : [ 264622, 1483004 ],
+    "inputs" : [ 29356, 1524071 ],
+    "outputs" : [ 264618, 29372 ],
+    "catalysts" : [ 1500633 ],
+    "efs" : [ ],
+    "diagramIds" : [ 192 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482900,
+    "stId" : "R-HSA-1482900",
+    "displayName" : "PG is hydrolyzed to 1-acyl LPG by PLA2[1]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482635, 1482539, 1483142 ],
+    "following" : [ 1482539 ],
+    "inputs" : [ 1483256, 29356 ],
+    "outputs" : [ 1524021, 1498740 ],
+    "catalysts" : [ 1500634 ],
+    "efs" : [ ],
+    "diagramIds" : [ 662 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482897,
+    "stId" : "R-HSA-1482897",
+    "displayName" : "PS is hydrolyzed to 2-acyl LPS by PLA2[10]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482636, 1483089, 1482691, 1483186 ],
+    "following" : [ 1482691 ],
+    "inputs" : [ 29356, 1500646 ],
+    "outputs" : [ 1498722, 1524021 ],
+    "catalysts" : [ 1524155 ],
+    "efs" : [ ],
+    "diagramIds" : [ 772 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482654,
+    "stId" : "R-HSA-1482654",
+    "displayName" : "2-MAG is transacylated to DAG by PNPLA2/3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482811 ],
+    "following" : [ 1482961, 1482962, 1482647, 1482811, 1482889 ],
+    "inputs" : [ 1498728 ],
+    "outputs" : [ 76116, 1500596 ],
+    "catalysts" : [ 1500579 ],
+    "efs" : [ ],
+    "diagramIds" : [ 449 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483165,
+    "stId" : "R-HSA-1483165",
+    "displayName" : "PA is converted to CDP-DAG by CDS2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483099 ],
+    "following" : [ 1483063, 1482939 ],
+    "inputs" : [ 1524101, 110577 ],
+    "outputs" : [ 159450, 1524064 ],
+    "catalysts" : [ 1498755 ],
+    "efs" : [ ],
+    "diagramIds" : [ 315 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482907,
+    "stId" : "R-HSA-1482907",
+    "displayName" : "PG is hydrolyzed to 1-acyl LPG by PLA2G2A",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482635, 1482539, 1483142 ],
+    "following" : [ 1482539 ],
+    "inputs" : [ 1483256, 29356 ],
+    "outputs" : [ 1524021, 1498740 ],
+    "catalysts" : [ 1500630 ],
+    "efs" : [ ],
+    "diagramIds" : [ 675 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483142,
+    "stId" : "R-HSA-1483142",
+    "displayName" : "PC is transphosphatidylated to PG by PLD1-4/6",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482961, 1482547, 1483219, 1482533 ],
+    "following" : [ 1482900, 1482920, 1482907, 1483218 ],
+    "inputs" : [ 426925, 76116 ],
+    "outputs" : [ 264618, 1483256 ],
+    "catalysts" : [ 1524126 ],
+    "efs" : [ ],
+    "diagramIds" : [ 341 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482887,
+    "stId" : "R-HSA-1482887",
+    "displayName" : "PE is hydrolyzed to 1-acyl LPE by PLA2[3]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482667, 1482962, 1483077, 1482646 ],
+    "following" : [ 1482571, 1482667 ],
+    "inputs" : [ 29356, 1500581 ],
+    "outputs" : [ 1498738, 1524021 ],
+    "catalysts" : [ 1524128 ],
+    "efs" : [ ],
+    "diagramIds" : [ 495 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482884,
+    "stId" : "R-HSA-1482884",
+    "displayName" : "PE is hydrolyzed to 1-acyl LPE by PLA2[2]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482667, 1482962, 1483077, 1482646 ],
+    "following" : [ 1482571, 1482667 ],
+    "inputs" : [ 29356, 1500581 ],
+    "outputs" : [ 1498738, 1524021 ],
+    "catalysts" : [ 1524137 ],
+    "efs" : [ ],
+    "diagramIds" : [ 487 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482629,
+    "stId" : "R-HSA-1482629",
+    "displayName" : "2-acyl LPC is hydrolyzed to GPCho by PLA2G4C",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482827, 1482862 ],
+    "following" : [ 1483116 ],
+    "inputs" : [ 29356, 975614 ],
+    "outputs" : [ 1498750, 1524021 ],
+    "catalysts" : [ 1498799 ],
+    "efs" : [ ],
+    "diagramIds" : [ 644 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482626,
+    "stId" : "R-HSA-1482626",
+    "displayName" : "2-acyl LPI is acylated to PI by MBOAT7",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482932 ],
+    "following" : [ 1483219, 1482825, 1482868, 1482932 ],
+    "inputs" : [ 1498737, 1500578 ],
+    "outputs" : [ 426639, 76194 ],
+    "catalysts" : [ 1498778 ],
+    "efs" : [ ],
+    "diagramIds" : [ 836 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696448,
+    "stId" : "R-HSA-5696448",
+    "displayName" : "AWAT2 transfers acyl group from acyl-CoA to MAG, forming DAG",
+    "schemaClass" : "Reaction",
+    "following" : [ 1482811, 1482889 ],
+    "inputs" : [ 5696449, 6782195 ],
+    "outputs" : [ 76194, 1500596 ],
+    "catalysts" : [ 8848506 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1269 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8954398,
+    "stId" : "R-HSA-8954398",
+    "displayName" : "PLD6 dimer hydrolyses cardiolipin to PA and PG",
+    "schemaClass" : "Reaction",
+    "following" : [ 1483099 ],
+    "inputs" : [ 189422, 8954419 ],
+    "outputs" : [ 8954401, 1500590 ],
+    "catalysts" : [ 5601921 ],
+    "efs" : [ ],
+    "activators" : [ 8954399 ],
+    "diagramIds" : [ 3167 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1602446,
+    "stId" : "R-HSA-1602446",
+    "displayName" : "PA is hydrolyzed to 1-acyl LPA by PLA2[15]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 1602448 ],
+    "outputs" : [ 1602447, 1602366 ],
+    "catalysts" : [ 1602359 ],
+    "efs" : [ ],
+    "inhibitors" : [ 8864270 ],
+    "diagramIds" : [ 979 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482894,
+    "stId" : "R-HSA-1482894",
+    "displayName" : "CL and 1-acyl LPE are converted to MLCL and PE by TAZ (IM) (Reversible)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482857, 1482781, 1482850, 1482775, 1483063 ],
+    "following" : [ 1483077, 1482775, 1482773, 1482759 ],
+    "inputs" : [ 1524072, 1524089 ],
+    "outputs" : [ 1524083, 1498773 ],
+    "catalysts" : [ 1299435 ],
+    "efs" : [ ],
+    "diagramIds" : [ 382 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6792445,
+    "stId" : "R-HSA-6792445",
+    "displayName" : "LIPH, I hydrolyse PA to 2-acyl LPA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 1602448 ],
+    "outputs" : [ 6792472, 1602366 ],
+    "catalysts" : [ 6792447 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3194 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482636,
+    "stId" : "R-HSA-1482636",
+    "displayName" : "1-acyl LPS is acylated to PS by LPSAT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482776, 1482771 ],
+    "following" : [ 1483170, 1482897, 1482776, 1482771 ],
+    "inputs" : [ 1500578, 1498724 ],
+    "outputs" : [ 76194, 1500646 ],
+    "catalysts" : [ 1524037 ],
+    "efs" : [ ],
+    "diagramIds" : [ 786 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482892,
+    "stId" : "R-HSA-1482892",
+    "displayName" : "PE is hydrolyzed to 2-acyl LPE by PLA2G4C",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482667, 1482962, 1483077, 1482646 ],
+    "following" : [ 1482545, 1482646 ],
+    "inputs" : [ 29356, 1500581 ],
+    "outputs" : [ 1498729, 1524021 ],
+    "catalysts" : [ 1498799 ],
+    "efs" : [ ],
+    "diagramIds" : [ 520 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482635,
+    "stId" : "R-HSA-1482635",
+    "displayName" : "2-acyl LPG is acylated to PG by LPGAT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482920 ],
+    "following" : [ 1483218, 1482900, 1482920, 1482907 ],
+    "inputs" : [ 1498730, 1500578 ],
+    "outputs" : [ 1483256, 76194 ],
+    "catalysts" : [ 1524026 ],
+    "efs" : [ ],
+    "diagramIds" : [ 699 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482889,
+    "stId" : "R-HSA-1482889",
+    "displayName" : "DAG is acylated to TAG by DGAT1/2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482777, 1482654, 5696448 ],
+    "following" : [ 1482777 ],
+    "inputs" : [ 1500578, 1500596 ],
+    "outputs" : [ 1500594, 76194 ],
+    "catalysts" : [ 1500588 ],
+    "efs" : [ ],
+    "diagramIds" : [ 432 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483190,
+    "stId" : "R-HSA-1483190",
+    "displayName" : "PETA and CTP are condensed to CDP-ETA by PCY2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483222 ],
+    "following" : [ 1482962 ],
+    "inputs" : [ 428686, 110614 ],
+    "outputs" : [ 111294, 1500603 ],
+    "catalysts" : [ 1500642 ],
+    "efs" : [ ],
+    "diagramIds" : [ 137 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482679,
+    "stId" : "R-HSA-1482679",
+    "displayName" : "PA is hydrolysed to 1-acyl LPA by PLA2G2A",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75885, 1483182 ],
+    "following" : [ 75885 ],
+    "inputs" : [ 29356, 426755 ],
+    "outputs" : [ 1500604, 1524021 ],
+    "catalysts" : [ 1500630 ],
+    "efs" : [ ],
+    "diagramIds" : [ 25 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482932,
+    "stId" : "R-HSA-1482932",
+    "displayName" : "PI is hydrolyzed to 2-acyl LPI by PLA2[13]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482976, 1482626, 1482598 ],
+    "following" : [ 1482626 ],
+    "inputs" : [ 29356, 426639 ],
+    "outputs" : [ 1498737, 1524021 ],
+    "catalysts" : [ 1524143 ],
+    "efs" : [ ],
+    "diagramIds" : [ 813 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8867876,
+    "stId" : "R-HSA-8867876",
+    "displayName" : "OSBPL5,8,10 exchange PS with PI4P from ER membrane to plasma membrane",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 392417, 1500646 ],
+    "outputs" : [ 33625, 1806234 ],
+    "catalysts" : [ 8867857 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1992 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483186,
+    "stId" : "R-HSA-1483186",
+    "displayName" : "PC is converted to PS by PTDSS1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482961, 1482547, 1483219, 1482533 ],
+    "following" : [ 1482897, 1482776, 1482771, 1483170 ],
+    "inputs" : [ 426925, 200736 ],
+    "outputs" : [ 264618, 1500646 ],
+    "catalysts" : [ 1498806 ],
+    "efs" : [ ],
+    "diagramIds" : [ 289 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 264622,
+    "stId" : "R-HSA-264622",
+    "displayName" : "Cho is acetylated to AcCho by CHAT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483116, 1483182, 444433, 1483159 ],
+    "inputs" : [ 264618, 76183 ],
+    "outputs" : [ 264643, 76194 ],
+    "catalysts" : [ 264616 ],
+    "efs" : [ ],
+    "diagramIds" : [ 972 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482685,
+    "stId" : "R-HSA-1482685",
+    "displayName" : "1-acyl LPC is hydrolyzed to GPCho by PLA2[8]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482856, 1482816 ],
+    "following" : [ 1483116 ],
+    "inputs" : [ 29356, 1524028 ],
+    "outputs" : [ 1498750, 1524021 ],
+    "catalysts" : [ 1524040 ],
+    "efs" : [ ],
+    "diagramIds" : [ 613 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483197,
+    "stId" : "R-HSA-1483197",
+    "displayName" : "PTPMT1 dephosphorylates PGP to PG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482939 ],
+    "following" : [ 1482847, 1482745, 1483063 ],
+    "inputs" : [ 1524059, 113521 ],
+    "outputs" : [ 113548, 1524042 ],
+    "catalysts" : [ 3446802 ],
+    "efs" : [ ],
+    "diagramIds" : [ 329 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482939,
+    "stId" : "R-HSA-1482939",
+    "displayName" : "CDP-DAG is converted to PGP by PGS1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483165 ],
+    "following" : [ 1483197 ],
+    "inputs" : [ 188458, 1524064 ],
+    "outputs" : [ 1524059, 1524067 ],
+    "catalysts" : [ 1498775 ],
+    "efs" : [ ],
+    "diagramIds" : [ 324 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483174,
+    "stId" : "R-HSA-1483174",
+    "displayName" : "PE is methylated to PC by PEMT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482667, 1482962, 1483077, 1482646 ],
+    "inputs" : [ 71284, 1500581 ],
+    "outputs" : [ 426925, 71285 ],
+    "catalysts" : [ 1498767 ],
+    "efs" : [ ],
+    "diagramIds" : [ 179 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483170,
+    "stId" : "R-HSA-1483170",
+    "displayName" : "PS transports from the ER membrane to the IM membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482636, 1483089, 1482691, 1483186 ],
+    "following" : [ 1483212 ],
+    "inputs" : [ 1500646 ],
+    "outputs" : [ 1500644 ],
+    "efs" : [ ],
+    "diagramIds" : [ 167 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8869425,
+    "stId" : "R-HSA-8869425",
+    "displayName" : "PLA1A hydrolyses PS to 2-acyl LPS",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109276, 33625 ],
+    "outputs" : [ 1602366, 8869427 ],
+    "catalysts" : [ 8869422 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2370 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482656,
+    "stId" : "R-HSA-1482656",
+    "displayName" : "PA is hydrolysed to 1-acyl LPA by PLA2[1]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75885, 1483182 ],
+    "following" : [ 75885 ],
+    "inputs" : [ 29356, 426755 ],
+    "outputs" : [ 1500604, 1524021 ],
+    "catalysts" : [ 1500634 ],
+    "efs" : [ ],
+    "diagramIds" : [ 36 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483182,
+    "stId" : "R-HSA-1483182",
+    "displayName" : "PC is hydrolyzed to PA and choline by PLD1/2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482961, 1482547, 1483219, 1482533 ],
+    "following" : [ 264622, 1483121, 1483004, 1483203, 1482679, 1482656 ],
+    "inputs" : [ 29356, 426925 ],
+    "outputs" : [ 264618, 426755 ],
+    "catalysts" : [ 1500639 ],
+    "efs" : [ ],
+    "diagramIds" : [ 280 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8878654,
+    "stId" : "R-HSA-8878654",
+    "displayName" : "ACP6 hydrolyses MYS-LPA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8878649, 113521 ],
+    "outputs" : [ 113548, 8934414 ],
+    "catalysts" : [ 8878644 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3068 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482667,
+    "stId" : "R-HSA-1482667",
+    "displayName" : "1-acyl LPE is acylated to PE by LPEAT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482884, 1482887 ],
+    "following" : [ 1483174, 1482892, 1482828, 1482884, 1482887, 1483089 ],
+    "inputs" : [ 1500578, 1498738 ],
+    "outputs" : [ 76194, 1500581 ],
+    "catalysts" : [ 1524035 ],
+    "efs" : [ ],
+    "diagramIds" : [ 500 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482920,
+    "stId" : "R-HSA-1482920",
+    "displayName" : "PG is hydrolyzed to 2-acyl LPG by PLA2[14]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482635, 1482539, 1483142 ],
+    "following" : [ 1482635 ],
+    "inputs" : [ 1483256, 29356 ],
+    "outputs" : [ 1498730, 1524021 ],
+    "catalysts" : [ 1524142 ],
+    "efs" : [ ],
+    "diagramIds" : [ 681 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483222,
+    "stId" : "R-HSA-1483222",
+    "displayName" : "ETA is phosphorylated to PETA by CHK/ETNK",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483096, 1483107 ],
+    "following" : [ 5696415, 1483190, 1483096 ],
+    "inputs" : [ 113592, 1498751 ],
+    "outputs" : [ 29370, 428686 ],
+    "catalysts" : [ 1500619 ],
+    "efs" : [ ],
+    "diagramIds" : [ 123 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483218,
+    "stId" : "R-HSA-1483218",
+    "displayName" : "PG transports from the ER membrane to the late endosome membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482635, 1482539, 1483142 ],
+    "following" : [ 1483209 ],
+    "inputs" : [ 1483256 ],
+    "outputs" : [ 1524139 ],
+    "efs" : [ ],
+    "diagramIds" : [ 471 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482962,
+    "stId" : "R-HSA-1482962",
+    "displayName" : "CDP-ETA and DAG are converted to PE by CEPT1/EPT1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482777, 1482654, 1483203, 1483190 ],
+    "following" : [ 1483174, 1482892, 1482828, 1482884, 1482887, 1483089 ],
+    "inputs" : [ 1500603, 1500596 ],
+    "outputs" : [ 1500581, 109395 ],
+    "catalysts" : [ 1500592 ],
+    "efs" : [ ],
+    "diagramIds" : [ 149 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8873794,
+    "stId" : "R-HSA-8873794",
+    "displayName" : "PCTP binds PC",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 5215990, 1524163 ],
+    "outputs" : [ 8873866 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2376 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483219,
+    "stId" : "R-HSA-1483219",
+    "displayName" : "PC is exchanged with PI by PITPNB",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483211, 1482976, 1482626, 1482598 ],
+    "following" : [ 1483142, 1483229, 1483182, 1482862, 1482856, 1482816, 1483186, 1482827 ],
+    "inputs" : [ 426639, 1524110 ],
+    "outputs" : [ 426925, 1524117 ],
+    "efs" : [ ],
+    "diagramIds" : [ 241 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482961,
+    "stId" : "R-HSA-1482961",
+    "displayName" : "CDP-Cho and DAG are converted to PC by CEPT1 at the ER membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482777, 1483081, 1482654, 1483203 ],
+    "following" : [ 1483142, 8858298, 1483182, 1482862, 1482856, 1482816, 1483186, 1482827 ],
+    "inputs" : [ 1524060, 1500596 ],
+    "outputs" : [ 426925, 109395 ],
+    "catalysts" : [ 1500587 ],
+    "efs" : [ ],
+    "diagramIds" : [ 209 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5696415,
+    "stId" : "R-HSA-5696415",
+    "displayName" : "ETNPPL tetramer hydrolyses PETA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483222 ],
+    "inputs" : [ 5696414, 113521 ],
+    "outputs" : [ 113548, 113532, 5693978 ],
+    "catalysts" : [ 5696413 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1276 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483229,
+    "stId" : "R-HSA-1483229",
+    "displayName" : "PI:PITPNB is transported from the ER membrane to the Golgi membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483219 ],
+    "following" : [ 1483087 ],
+    "inputs" : [ 1524117 ],
+    "outputs" : [ 1524150 ],
+    "efs" : [ ],
+    "diagramIds" : [ 229 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482973,
+    "stId" : "R-HSA-1482973",
+    "displayName" : "CDP-Cho and DAG are converted to PC by CHPT1 at the Golgi membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483081 ],
+    "following" : [ 1483087 ],
+    "inputs" : [ 1524057, 1524060 ],
+    "outputs" : [ 429785, 109395 ],
+    "catalysts" : [ 1500652 ],
+    "efs" : [ ],
+    "diagramIds" : [ 216 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482695,
+    "stId" : "R-HSA-1482695",
+    "displayName" : "G3P is acylated to 1-acyl LPA by GPAM/GPAT2 (OM)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483116, 1483107, 75889 ],
+    "following" : [ 1482548 ],
+    "inputs" : [ 1500578, 76114 ],
+    "outputs" : [ 76194, 1500580 ],
+    "catalysts" : [ 1500606 ],
+    "efs" : [ ],
+    "diagramIds" : [ 84 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483203,
+    "stId" : "R-HSA-1483203",
+    "displayName" : "PA is dephosphorylated to DAG by LPIN",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75885, 1483182 ],
+    "following" : [ 1482961, 1482962 ],
+    "inputs" : [ 29356, 426755 ],
+    "outputs" : [ 29372, 1500596 ],
+    "catalysts" : [ 1500636 ],
+    "efs" : [ ],
+    "diagramIds" : [ 154 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482691,
+    "stId" : "R-HSA-1482691",
+    "displayName" : "2-acyl LPS is acylated to PS by LPSAT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482897 ],
+    "following" : [ 1483170, 1482897, 1482776, 1482771 ],
+    "inputs" : [ 1500578, 1498722 ],
+    "outputs" : [ 76194, 1500646 ],
+    "catalysts" : [ 1524037 ],
+    "efs" : [ ],
+    "diagramIds" : [ 798 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482689,
+    "stId" : "R-HSA-1482689",
+    "displayName" : "1-acyl LPG is acylated to PG by CRLS1 (IM)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482745 ],
+    "following" : [ 1482847, 1482745 ],
+    "inputs" : [ 1524027, 1524038 ],
+    "outputs" : [ 29374, 1524042 ],
+    "catalysts" : [ 1498760 ],
+    "efs" : [ ],
+    "diagramIds" : [ 721 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483212,
+    "stId" : "R-HSA-1483212",
+    "displayName" : "PS is decarboxylated to PE by PISD",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483170 ],
+    "following" : [ 1483077, 1482850 ],
+    "inputs" : [ 1500644 ],
+    "outputs" : [ 1524083, 29376 ],
+    "catalysts" : [ 1500656 ],
+    "efs" : [ ],
+    "diagramIds" : [ 170 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483211,
+    "stId" : "R-HSA-1483211",
+    "displayName" : "PC:PITPNB is transported from the Golgi membrane to the ER membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483087 ],
+    "following" : [ 1483219 ],
+    "inputs" : [ 1524122 ],
+    "outputs" : [ 1524110 ],
+    "efs" : [ ],
+    "diagramIds" : [ 239 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482696,
+    "stId" : "R-HSA-1482696",
+    "displayName" : "1-acyl LPC is hydrolyzed to GPCho by PLA2G4C",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1482856, 1482816 ],
+    "following" : [ 1483116 ],
+    "inputs" : [ 29356, 1524028 ],
+    "outputs" : [ 1498750, 1524021 ],
+    "catalysts" : [ 1498799 ],
+    "efs" : [ ],
+    "diagramIds" : [ 623 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483209,
+    "stId" : "R-HSA-1483209",
+    "displayName" : "PG is converted to BMP",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 1483218 ],
+    "inputs" : [ 1524139 ],
+    "outputs" : [ 1498732 ],
+    "efs" : [ ],
+    "diagramIds" : [ 473 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8873830,
+    "stId" : "R-HSA-8873830",
+    "displayName" : "STARD7 transports PC from ER membrane to mitochondrial outer membrane",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 8877153 ],
+    "inputs" : [ 8873897 ],
+    "outputs" : [ 8873896 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2380 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8865637,
+    "stId" : "R-HSA-8865637",
+    "displayName" : "MFSD2A transports LPC from extracellular region to plasma membrane",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8865642, 74113 ],
+    "outputs" : [ 8865629, 83910 ],
+    "catalysts" : [ 5216203 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1986 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8877153,
+    "stId" : "R-HSA-8877153",
+    "displayName" : "STARD7 binds PC",
+    "schemaClass" : "Reaction",
+    "following" : [ 8873830 ],
+    "inputs" : [ 426925, 8873841 ],
+    "outputs" : [ 8873897 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2861 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483004,
+    "stId" : "R-HSA-1483004",
+    "displayName" : "Cho is phosphorylated to PCho by CHK dimer",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483116, 1483182, 444433, 1483159 ],
+    "following" : [ 1483081, 1483159 ],
+    "inputs" : [ 264618, 113592 ],
+    "outputs" : [ 29370, 1524071 ],
+    "catalysts" : [ 1524078 ],
+    "efs" : [ ],
+    "diagramIds" : [ 186 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1483002,
+    "stId" : "R-HSA-1483002",
+    "displayName" : "DHAP is converted to 1-acyl GO3P by GNPAT",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 1500578, 75970 ],
+    "outputs" : [ 75973, 76194 ],
+    "catalysts" : [ 1500605 ],
+    "efs" : [ ],
+    "diagramIds" : [ 18 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8873834,
+    "stId" : "R-HSA-8873834",
+    "displayName" : "STARD10 transports PC from ER membrane to lamellar body membrane",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 8873921 ],
+    "outputs" : [ 1498772, 8873863 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2938 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482745,
+    "stId" : "R-HSA-1482745",
+    "displayName" : "PG is hydrolyzed to 1-acyl LPG by PLA2G4B (IM)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483197, 1482689, 1482546 ],
+    "following" : [ 1482689 ],
+    "inputs" : [ 1524042, 113521 ],
+    "outputs" : [ 1524027, 1524085 ],
+    "catalysts" : [ 3215272 ],
+    "efs" : [ ],
+    "diagramIds" : [ 702 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 549112,
+    "stId" : "R-HSA-549112",
+    "displayName" : "G3P is acylated to 1-acyl LPA by AGPAT6",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483116, 1483107, 75889 ],
+    "following" : [ 75885 ],
+    "inputs" : [ 1500578, 76114 ],
+    "outputs" : [ 1500604, 76194 ],
+    "catalysts" : [ 549099 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1071 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1482976,
+    "stId" : "R-HSA-1482976",
+    "displayName" : "CDP-DAG is converted to PI by CDIPT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 1483121 ],
+    "following" : [ 1483219, 1482825, 1482868, 1482932 ],
+    "inputs" : [ 426955, 426910 ],
+    "outputs" : [ 426639, 109395 ],
+    "catalysts" : [ 1500647 ],
+    "efs" : [ ],
+    "diagramIds" : [ 271 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8869241,
+    "stId" : "R-HSA-8869241",
+    "displayName" : "PITPNM1,2,3 exchange PI for PA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 426639, 1602448 ],
+    "outputs" : [ 426755, 426658 ],
+    "catalysts" : [ 8869240 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2071 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5333678,
+    "stId" : "R-HSA-5333678",
+    "displayName" : "CPNEs bind PL",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 171142, 5333699 ],
+    "outputs" : [ 5333679 ],
+    "efs" : [ ],
+    "activators" : [ 74016 ],
+    "diagramIds" : [ 1217 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 1483191,
+    "stId" : "R-HSA-1483191",
+    "displayName" : "Synthesis of PC",
+    "events" : [ 8873830, 1483159, 372519, 8865637, 5694485, 8873923, 8873794, 8877153, 1482961, 1483004, 264622, 1482973, 8873834, 8873929, 1483174, 1483203, 444433, 1483081 ]
+  }, {
+    "dbId" : 1482925,
+    "stId" : "R-HSA-1482925",
+    "displayName" : "Acyl chain remodelling of PG",
+    "events" : [ 1482900, 1482546, 1482689, 1602368, 1482847, 1482907, 1482539, 1482635, 1482920, 1482745 ]
+  }, {
+    "dbId" : 1483196,
+    "stId" : "R-HSA-1483196",
+    "displayName" : "PI and PC transport between ER and Golgi membranes",
+    "events" : [ 1483219, 1483087, 1483229, 1483211 ]
+  }, {
+    "dbId" : 1483166,
+    "stId" : "R-HSA-1483166",
+    "displayName" : "Synthesis of PA",
+    "events" : [ 1482679, 1482548, 8878787, 1483002, 75885, 75889, 549112, 188467, 1482695, 1482656, 8954398, 1602446, 1483182, 8878654, 1482604, 6792445, 6786650 ]
+  }, {
+    "dbId" : 1482922,
+    "stId" : "R-HSA-1482922",
+    "displayName" : "Acyl chain remodelling of PI",
+    "events" : [ 1482598, 1602377, 1482868, 1482932, 1482626, 1482825 ]
+  }, {
+    "dbId" : 1483171,
+    "stId" : "R-HSA-1483171",
+    "displayName" : "Synthesis of BMP",
+    "events" : [ 1483218, 1483209 ]
+  }, {
+    "dbId" : 1482883,
+    "stId" : "R-HSA-1482883",
+    "displayName" : "Acyl chain remodeling of DAG and TAG",
+    "events" : [ 1482647, 8848580, 5696448, 1482654, 1482543, 1482811, 1482777, 1482889 ]
+  }, {
+    "dbId" : 1482788,
+    "stId" : "R-HSA-1482788",
+    "displayName" : "Acyl chain remodelling of PC",
+    "events" : [ 1482533, 8874435, 1482547, 1482816, 1602399, 1482862, 1602417, 1482827, 1482856 ]
+  }, {
+    "dbId" : 1483213,
+    "stId" : "R-HSA-1483213",
+    "displayName" : "Synthesis of PE",
+    "events" : [ 1483222, 1483190, 1483077, 1482962, 1483170, 1483203, 5696415, 1483212, 1483096 ]
+  }, {
+    "dbId" : 1483076,
+    "stId" : "R-HSA-1483076",
+    "displayName" : "Synthesis of CL",
+    "events" : [ 1483063 ]
+  }, {
+    "dbId" : 1482801,
+    "stId" : "R-HSA-1482801",
+    "displayName" : "Acyl chain remodelling of PS",
+    "events" : [ 8867876, 1482771, 1482691, 8869425, 1482897, 1482636, 1482776, 1602374 ]
+  }, {
+    "dbId" : 1483226,
+    "stId" : "R-HSA-1483226",
+    "displayName" : "Synthesis of PI",
+    "events" : [ 1482976, 1483121, 8869241 ]
+  }, {
+    "dbId" : 1483152,
+    "stId" : "R-HSA-1483152",
+    "displayName" : "Hydrolysis of LPE",
+    "events" : [ 1483107, 1482545, 1482571 ]
+  }, {
+    "dbId" : 1482839,
+    "stId" : "R-HSA-1482839",
+    "displayName" : "Acyl chain remodelling of PE",
+    "events" : [ 1482646, 1482887, 5694583, 1482884, 1602398, 1482828, 1482892, 1482667, 8858298 ]
+  }, {
+    "dbId" : 1483115,
+    "stId" : "R-HSA-1483115",
+    "displayName" : "Hydrolysis of LPC",
+    "events" : [ 1482612, 1482629, 8952251, 1483116, 1482685, 1482696 ]
+  }, {
+    "dbId" : 1482798,
+    "stId" : "R-HSA-1482798",
+    "displayName" : "Acyl chain remodeling of CL",
+    "events" : [ 1482775, 1482759, 1482773, 1482850, 1482867, 1482894, 1482860, 1482781, 1482861, 1482778, 1482794, 1482857 ]
+  }, {
+    "dbId" : 1483148,
+    "stId" : "R-HSA-1483148",
+    "displayName" : "Synthesis of PG",
+    "events" : [ 1483142, 1483165, 1483197, 1483099, 1482939 ]
+  }, {
+    "dbId" : 1483101,
+    "stId" : "R-HSA-1483101",
+    "displayName" : "Synthesis of PS",
+    "events" : [ 1483186, 1483089 ]
+  } ]
+}

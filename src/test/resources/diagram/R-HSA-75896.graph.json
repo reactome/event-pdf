@@ -1,0 +1,188 @@
+{
+  "dbId" : 75896,
+  "stId" : "R-HSA-75896",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 76161,
+    "stId" : "R-HSA-76161",
+    "displayName" : "AADHAPR [peroxisomal membrane]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 198 ]
+  }, {
+    "dbId" : 390404,
+    "stId" : "R-ALL-390404",
+    "displayName" : "DHAP [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 180 ],
+    "identifier" : "16108"
+  }, {
+    "dbId" : 390407,
+    "stId" : "R-HSA-390407",
+    "displayName" : "AGPS:FAD [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 76165 ],
+    "children" : [ 141335, 49699 ]
+  }, {
+    "dbId" : 49699,
+    "stId" : "R-HSA-49699",
+    "displayName" : "AGPS [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00116",
+    "geneNames" : [ "AGPS", "AAG5" ],
+    "parents" : [ 390407 ]
+  }, {
+    "dbId" : 76165,
+    "stId" : "R-HSA-76165",
+    "displayName" : "GNPAT:AGPS complex [peroxisomal matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 182 ],
+    "children" : [ 53413, 390407 ]
+  }, {
+    "dbId" : 75973,
+    "stId" : "R-ALL-75973",
+    "displayName" : "GO3P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 191 ],
+    "identifier" : "17197"
+  }, {
+    "dbId" : 53413,
+    "stId" : "R-HSA-53413",
+    "displayName" : "GNPAT [peroxisomal matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15228",
+    "geneNames" : [ "GNPAT", "DAPAT", "DHAPAT" ],
+    "parents" : [ 76165 ]
+  }, {
+    "dbId" : 390435,
+    "stId" : "R-ALL-390435",
+    "displayName" : "PALM [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 186 ],
+    "identifier" : "15756"
+  }, {
+    "dbId" : 193514,
+    "stId" : "R-ALL-193514",
+    "displayName" : "CoA-SH [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 184 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 390409,
+    "stId" : "R-ALL-390409",
+    "displayName" : "GO3P [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 187 ],
+    "identifier" : "17197"
+  }, {
+    "dbId" : 390440,
+    "stId" : "R-ALL-390440",
+    "displayName" : "HXOL [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 165 ],
+    "identifier" : "16125"
+  }, {
+    "dbId" : 390422,
+    "stId" : "R-ALL-390422",
+    "displayName" : "HXDG3P [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 197 ],
+    "identifier" : "63818"
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 195 ],
+    "identifier" : "16474"
+  }, {
+    "dbId" : 141335,
+    "stId" : "R-ALL-141335",
+    "displayName" : "FAD [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 390407 ]
+  }, {
+    "dbId" : 390419,
+    "stId" : "R-ALL-390419",
+    "displayName" : "1-Palmitoyl dihydroxyacetone phosphate [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 181 ],
+    "identifier" : "17868"
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 196 ],
+    "identifier" : "18009"
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 194 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 390426,
+    "stId" : "R-ALL-390426",
+    "displayName" : "PalmCoA [peroxisomal matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 164 ],
+    "identifier" : "15525"
+  } ],
+  "edges" : [ {
+    "dbId" : 75879,
+    "stId" : "R-HSA-75879",
+    "displayName" : "palmitoyl-CoA + DHAP => 1-palmitoylglycerone phosphate + CoASH",
+    "schemaClass" : "Reaction",
+    "following" : [ 390427 ],
+    "inputs" : [ 390426, 390404 ],
+    "outputs" : [ 193514, 390419 ],
+    "catalysts" : [ 76165 ],
+    "efs" : [ ],
+    "diagramIds" : [ 179 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390402,
+    "stId" : "R-HSA-390402",
+    "displayName" : "Movement of O-hexadecylglycerone phosphate from the peroxisomal matrix to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390427 ],
+    "following" : [ 75883 ],
+    "inputs" : [ 390409 ],
+    "outputs" : [ 75973 ],
+    "efs" : [ ],
+    "diagramIds" : [ 190 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75883,
+    "stId" : "R-HSA-75883",
+    "displayName" : "O-hexadecylglycerone phosphate + NADPH + H+ => 1-hexadecyl glycerol-3-phosphate + NADP+",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 390402 ],
+    "inputs" : [ 70106, 75973, 29364 ],
+    "outputs" : [ 29366, 390422 ],
+    "catalysts" : [ 76161 ],
+    "efs" : [ ],
+    "diagramIds" : [ 193 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 390427,
+    "stId" : "R-HSA-390427",
+    "displayName" : "1-palmitoylglycerone phosphate + hexadecanol => O-hexadecylglycerone phosphate + palmitate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75879 ],
+    "following" : [ 390402 ],
+    "inputs" : [ 390440, 390419 ],
+    "outputs" : [ 390409, 390435 ],
+    "catalysts" : [ 76165 ],
+    "efs" : [ ],
+    "diagramIds" : [ 185 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

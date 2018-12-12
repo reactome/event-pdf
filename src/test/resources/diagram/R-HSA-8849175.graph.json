@@ -1,0 +1,283 @@
+{
+  "dbId" : 8849175,
+  "stId" : "R-HSA-8849175",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 936714,
+    "stId" : "R-ALL-936714",
+    "displayName" : "2OBUTA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8994 ],
+    "identifier" : "30831"
+  }, {
+    "dbId" : 29382,
+    "stId" : "R-ALL-29382",
+    "displayName" : "NH3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8995 ],
+    "identifier" : "16134"
+  }, {
+    "dbId" : 9014721,
+    "stId" : "R-HSA-9014721",
+    "displayName" : "SDSL dimer:PXLP [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9014724 ],
+    "children" : [ 29390, 9017156 ]
+  }, {
+    "dbId" : 9014723,
+    "stId" : "R-HSA-9014723",
+    "displayName" : "SDSL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96GA7",
+    "geneNames" : [ "SDSL" ],
+    "parents" : [ 9017156 ]
+  }, {
+    "dbId" : 9017156,
+    "stId" : "R-HSA-9017156",
+    "displayName" : "SDSL dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9014721 ],
+    "children" : [ 9014723 ]
+  }, {
+    "dbId" : 9014724,
+    "stId" : "R-HSA-9014724",
+    "displayName" : "SDS dimers:PXLP [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8997 ],
+    "children" : [ 9014631, 9014721 ]
+  }, {
+    "dbId" : 29390,
+    "stId" : "R-ALL-29390",
+    "displayName" : "PXLP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18405",
+    "parents" : [ 9014631, 9014721 ]
+  }, {
+    "dbId" : 9014623,
+    "stId" : "R-HSA-9014623",
+    "displayName" : "SDS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20132",
+    "geneNames" : [ "SDS", "SDH" ],
+    "parents" : [ 9017149 ]
+  }, {
+    "dbId" : 113559,
+    "stId" : "R-ALL-113559",
+    "displayName" : "Ac-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8777 ],
+    "identifier" : "15351"
+  }, {
+    "dbId" : 159450,
+    "stId" : "R-ALL-159450",
+    "displayName" : "PPi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8773 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 6798653,
+    "stId" : "R-HSA-6798653",
+    "displayName" : "GCAT:PXLP [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 6798680 ],
+    "children" : [ 113583, 535614 ]
+  }, {
+    "dbId" : 6798652,
+    "stId" : "R-ALL-6798652",
+    "displayName" : "2A-3OBU [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8775 ],
+    "identifier" : "16944"
+  }, {
+    "dbId" : 9014634,
+    "stId" : "R-HSA-9014634",
+    "displayName" : "HRSP12 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8996 ],
+    "identifier" : "P52758",
+    "geneNames" : [ "RIDA", "HRSP12" ]
+  }, {
+    "dbId" : 6798657,
+    "stId" : "R-HSA-6798657",
+    "displayName" : "TDH [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZJ6",
+    "geneNames" : [ "TDH", "SDR14E1P" ],
+    "parents" : [ 6798682 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8990 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 113583,
+    "stId" : "R-ALL-113583",
+    "displayName" : "PXLP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18405",
+    "parents" : [ 6798653 ]
+  }, {
+    "dbId" : 9014631,
+    "stId" : "R-HSA-9014631",
+    "displayName" : "SDS dimer:PXLP [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9014724 ],
+    "children" : [ 29390, 9017149 ]
+  }, {
+    "dbId" : 29362,
+    "stId" : "R-ALL-29362",
+    "displayName" : "NADH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8771 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 351990,
+    "stId" : "R-ALL-351990",
+    "displayName" : "L-Thr [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8989 ],
+    "identifier" : "57926"
+  }, {
+    "dbId" : 9017149,
+    "stId" : "R-HSA-9017149",
+    "displayName" : "SDS dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9014631 ],
+    "children" : [ 9014623 ]
+  }, {
+    "dbId" : 535614,
+    "stId" : "R-HSA-535614",
+    "displayName" : "GCAT [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75600",
+    "geneNames" : [ "GCAT", "KBL" ],
+    "parents" : [ 6798653 ]
+  }, {
+    "dbId" : 113526,
+    "stId" : "R-ALL-113526",
+    "displayName" : "NAD+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8770 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 113593,
+    "stId" : "R-ALL-113593",
+    "displayName" : "ATP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8778 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8774 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 9014643,
+    "stId" : "R-ALL-9014643",
+    "displayName" : "2AA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8991 ],
+    "identifier" : "58020"
+  }, {
+    "dbId" : 6798682,
+    "stId" : "R-HSA-6798682",
+    "displayName" : "TDH tetramer [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 6798680 ],
+    "children" : [ 6798657 ]
+  }, {
+    "dbId" : 29374,
+    "stId" : "R-ALL-29374",
+    "displayName" : "CoA-SH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8779 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 159549,
+    "stId" : "R-ALL-159549",
+    "displayName" : "Gly [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8769 ],
+    "identifier" : "57305"
+  }, {
+    "dbId" : 6798680,
+    "stId" : "R-HSA-6798680",
+    "displayName" : "GCAT:PXLP dimer:TDH tetramer [mitochondrial inner membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8780 ],
+    "children" : [ 6798682, 6798653 ]
+  }, {
+    "dbId" : 379706,
+    "stId" : "R-ALL-379706",
+    "displayName" : "L-Thr [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8776 ],
+    "identifier" : "57926"
+  } ],
+  "edges" : [ {
+    "dbId" : 9014641,
+    "stId" : "R-HSA-9014641",
+    "displayName" : "HRSP12 deaminates 2AA to 2OBUTA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9014627 ],
+    "inputs" : [ 9014643 ],
+    "outputs" : [ 29382, 936714 ],
+    "catalysts" : [ 9014634 ],
+    "efs" : [ ],
+    "diagramIds" : [ 8993 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9014627,
+    "stId" : "R-HSA-9014627",
+    "displayName" : "SDS dimers:PXLP dehydrate L-Thr to 2AA",
+    "schemaClass" : "Reaction",
+    "following" : [ 9014641 ],
+    "inputs" : [ 351990 ],
+    "outputs" : [ 29356, 9014643 ],
+    "catalysts" : [ 9014724 ],
+    "efs" : [ ],
+    "diagramIds" : [ 8988 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6798667,
+    "stId" : "R-HSA-6798667",
+    "displayName" : "TDH tetramer oxidises L-Thr to 2A-3OB",
+    "schemaClass" : "Reaction",
+    "following" : [ 6798345 ],
+    "inputs" : [ 379706, 113526 ],
+    "outputs" : [ 6798652, 29362 ],
+    "catalysts" : [ 6798680 ],
+    "efs" : [ ],
+    "diagramIds" : [ 8768 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6798345,
+    "stId" : "R-HSA-6798345",
+    "displayName" : "GCAT:PXLP dimer ligates CoASH to 2A-3OB to form Gly and Ac-CoA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6798667 ],
+    "inputs" : [ 29374, 6798652, 113593 ],
+    "outputs" : [ 159549, 113529, 159450, 113559 ],
+    "catalysts" : [ 6798680 ],
+    "efs" : [ ],
+    "diagramIds" : [ 8772 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

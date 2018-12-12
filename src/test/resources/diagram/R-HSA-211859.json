@@ -1,0 +1,181 @@
+{
+  "dbId" : 211859,
+  "stableId" : "R-HSA-211859",
+  "displayName" : "Biological oxidations",
+  "nodes" : [ {
+    "id" : 2,
+    "reactomeId" : 211945,
+    "displayName" : "Phase I - Functionalization of compounds",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 120,
+      "y" : 80
+    },
+    "minX" : 53,
+    "maxX" : 187,
+    "minY" : 45,
+    "maxY" : 115,
+    "prop" : {
+      "x" : 53,
+      "y" : 45,
+      "width" : 134,
+      "height" : 70
+    },
+    "textPosition" : {
+      "x" : 55,
+      "y" : 51
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 156580,
+    "displayName" : "Phase II - Conjugation of compounds",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 285,
+      "y" : 79
+    },
+    "minX" : 241,
+    "maxX" : 330,
+    "minY" : 52,
+    "maxY" : 107,
+    "prop" : {
+      "x" : 241,
+      "y" : 52,
+      "width" : 89,
+      "height" : 55
+    },
+    "textPosition" : {
+      "x" : 241,
+      "y" : 44
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 5423646,
+    "displayName" : "Aflatoxin activation and detoxification",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 210,
+      "y" : 208
+    },
+    "minX" : 125,
+    "maxX" : 296,
+    "minY" : 180,
+    "maxY" : 236,
+    "prop" : {
+      "x" : 125,
+      "y" : 180,
+      "width" : 171,
+      "height" : 56
+    },
+    "textPosition" : {
+      "x" : 133,
+      "y" : 186
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ {
+    "id" : 1,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 205,
+      "y" : 145
+    },
+    "minX" : 0,
+    "maxX" : 411,
+    "minY" : 0,
+    "maxY" : 291,
+    "prop" : {
+      "x" : 0,
+      "y" : 0,
+      "width" : 411,
+      "height" : 291
+    },
+    "textPosition" : {
+      "x" : 24,
+      "y" : 145
+    },
+    "insets" : {
+      "x" : 10,
+      "y" : 10,
+      "width" : 391,
+      "height" : 271
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2, 3, 4, 5 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 4,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 214,
+      "y" : 78
+    },
+    "minX" : 190,
+    "maxX" : 238,
+    "minY" : 72,
+    "maxY" : 84,
+    "segments" : [ {
+      "from" : {
+        "x" : 190,
+        "y" : 78
+      },
+      "to" : {
+        "x" : 238,
+        "y" : 78
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 231,
+        "y" : 82
+      },
+      "b" : {
+        "x" : 238,
+        "y" : 78
+      },
+      "c" : {
+        "x" : 231,
+        "y" : 74
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 208,
+        "y" : 72
+      },
+      "b" : {
+        "x" : 220,
+        "y" : 84
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 3
+    } ]
+  } ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 411,
+  "minY" : 0,
+  "maxY" : 291,
+  "disease" : false
+}

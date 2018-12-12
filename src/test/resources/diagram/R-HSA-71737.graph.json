@@ -1,0 +1,121 @@
+{
+  "dbId" : 71737,
+  "stId" : "R-HSA-71737",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 10 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 449923,
+    "stId" : "R-HSA-449923",
+    "displayName" : "PPA2 dimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 13 ],
+    "children" : [ 449918 ]
+  }, {
+    "dbId" : 29926,
+    "stId" : "R-ALL-29926",
+    "displayName" : "Mg2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8 ],
+    "identifier" : "18420"
+  }, {
+    "dbId" : 159450,
+    "stId" : "R-ALL-159450",
+    "displayName" : "PPi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 11 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 449918,
+    "stId" : "R-HSA-449918",
+    "displayName" : "PPA2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H2U2",
+    "geneNames" : [ "PPA2", "HSPC124" ],
+    "parents" : [ 449923 ]
+  }, {
+    "dbId" : 109496,
+    "stId" : "R-ALL-109496",
+    "displayName" : "Mg2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "18420"
+  }, {
+    "dbId" : 71725,
+    "stId" : "R-HSA-71725",
+    "displayName" : "PPA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15181",
+    "geneNames" : [ "PPA1", "IOPPP", "PP" ],
+    "parents" : [ 71726 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 113548,
+    "stId" : "R-ALL-113548",
+    "displayName" : "Pi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 12 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 71726,
+    "stId" : "R-HSA-71726",
+    "displayName" : "PPA1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "children" : [ 71725 ]
+  }, {
+    "dbId" : 111294,
+    "stId" : "R-ALL-111294",
+    "displayName" : "PPi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 5 ],
+    "identifier" : "29888"
+  } ],
+  "edges" : [ {
+    "dbId" : 71732,
+    "stId" : "R-HSA-71732",
+    "displayName" : "pyrophosphate + H2O => 2 orthophosphate [cytosolic]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 111294, 29356 ],
+    "outputs" : [ 29372 ],
+    "catalysts" : [ 71726 ],
+    "efs" : [ ],
+    "requirements" : [ 29926 ],
+    "diagramIds" : [ 3 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 449937,
+    "stId" : "R-HSA-449937",
+    "displayName" : "pyrophosphate + H2O => 2 orthophosphate [mitochondrial]",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 159450, 113521 ],
+    "outputs" : [ 113548 ],
+    "catalysts" : [ 449923 ],
+    "efs" : [ ],
+    "requirements" : [ 109496 ],
+    "diagramIds" : [ 9 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

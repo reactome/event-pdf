@@ -1,0 +1,3645 @@
+{
+  "dbId" : 2161522,
+  "stableId" : "R-HSA-2161522",
+  "displayName" : "Abacavir transport and metabolism",
+  "nodes" : [ {
+    "id" : 4,
+    "reactomeId" : 2161525,
+    "displayName" : "abacavir",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 29,
+      "y" : 265
+    },
+    "minX" : 0,
+    "maxX" : 93,
+    "minY" : 249,
+    "maxY" : 375,
+    "prop" : {
+      "x" : 0,
+      "y" : 250,
+      "width" : 59,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1,
+      "y" : 254
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 54,
+          "y" : 255
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 3,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 7,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 39,
+          "y" : 283
+        },
+        "to" : {
+          "x" : 93,
+          "y" : 358
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 46,
+          "y" : 286
+        },
+        "b" : {
+          "x" : 39,
+          "y" : 283
+        },
+        "c" : {
+          "x" : 40,
+          "y" : 291
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 14,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 35,
+          "y" : 283
+        },
+        "to" : {
+          "x" : 73,
+          "y" : 375
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 41,
+          "y" : 288
+        },
+        "b" : {
+          "x" : 35,
+          "y" : 283
+        },
+        "c" : {
+          "x" : 34,
+          "y" : 291
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 2161185,
+    "displayName" : "abacavir",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 315,
+      "y" : 264
+    },
+    "minX" : 220,
+    "maxX" : 419,
+    "minY" : 182,
+    "maxY" : 375,
+    "prop" : {
+      "x" : 286,
+      "y" : 249,
+      "width" : 59,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 287,
+      "y" : 253
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 340,
+          "y" : 254
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 33,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 327,
+          "y" : 282
+        },
+        "to" : {
+          "x" : 395,
+          "y" : 361
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 3,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 20,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 314,
+          "y" : 246
+        },
+        "to" : {
+          "x" : 314,
+          "y" : 182
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 299,
+          "y" : 282
+        },
+        "to" : {
+          "x" : 220,
+          "y" : 357
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 26,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 348,
+          "y" : 264
+        },
+        "to" : {
+          "x" : 419,
+          "y" : 264
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 14,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 303,
+          "y" : 282
+        },
+        "to" : {
+          "x" : 230,
+          "y" : 375
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 2161529,
+    "displayName" : "SLC22A1,2,3",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 117,
+      "y" : 206
+    },
+    "minX" : 78,
+    "maxX" : 156,
+    "minY" : 186,
+    "maxY" : 256,
+    "prop" : {
+      "x" : 78,
+      "y" : 186,
+      "width" : 78,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 85,
+      "y" : 188
+    },
+    "connectors" : [ {
+      "edgeId" : 3,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 117,
+          "y" : 232
+        },
+        "to" : {
+          "x" : 118,
+          "y" : 248
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 118,
+          "y" : 252
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 29356,
+    "displayName" : "H2O",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 233,
+      "y" : 422
+    },
+    "minX" : 212,
+    "maxX" : 256,
+    "minY" : 357,
+    "maxY" : 437,
+    "prop" : {
+      "x" : 212,
+      "y" : 407,
+      "width" : 43,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 216,
+      "y" : 411
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 250,
+          "y" : 412
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 230,
+          "y" : 404
+        },
+        "to" : {
+          "x" : 220,
+          "y" : 357
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 14,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 232,
+          "y" : 404
+        },
+        "to" : {
+          "x" : 230,
+          "y" : 375
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 9,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 276,
+      "y" : 396
+    },
+    "minX" : 220,
+    "maxX" : 297,
+    "minY" : 357,
+    "maxY" : 411,
+    "prop" : {
+      "x" : 256,
+      "y" : 381,
+      "width" : 40,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 260,
+      "y" : 385
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 291,
+          "y" : 386
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 253,
+          "y" : 382
+        },
+        "to" : {
+          "x" : 220,
+          "y" : 357
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 14,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 253,
+          "y" : 386
+        },
+        "to" : {
+          "x" : 230,
+          "y" : 375
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 10,
+    "reactomeId" : 29372,
+    "displayName" : "Pi",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 203,
+      "y" : 303
+    },
+    "minX" : 73,
+    "maxX" : 218,
+    "minY" : 287,
+    "maxY" : 375,
+    "prop" : {
+      "x" : 190,
+      "y" : 288,
+      "width" : 27,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 194,
+      "y" : 292
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 212,
+          "y" : 293
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 187,
+          "y" : 309
+        },
+        "to" : {
+          "x" : 93,
+          "y" : 358
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 183,
+          "y" : 316
+        },
+        "b" : {
+          "x" : 187,
+          "y" : 309
+        },
+        "c" : {
+          "x" : 179,
+          "y" : 309
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 14,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 187,
+          "y" : 307
+        },
+        "to" : {
+          "x" : 99,
+          "y" : 334
+        }
+      }, {
+        "from" : {
+          "x" : 99,
+          "y" : 334
+        },
+        "to" : {
+          "x" : 73,
+          "y" : 375
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 182,
+          "y" : 313
+        },
+        "b" : {
+          "x" : 187,
+          "y" : 307
+        },
+        "c" : {
+          "x" : 179,
+          "y" : 305
+        },
+        "type" : "ARROW"
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 11,
+    "reactomeId" : 29370,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 154,
+      "y" : 290
+    },
+    "minX" : 73,
+    "maxX" : 176,
+    "minY" : 274,
+    "maxY" : 375,
+    "prop" : {
+      "x" : 134,
+      "y" : 275,
+      "width" : 41,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 138,
+      "y" : 279
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 170,
+          "y" : 280
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 140,
+          "y" : 308
+        },
+        "to" : {
+          "x" : 93,
+          "y" : 358
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 138,
+          "y" : 316
+        },
+        "b" : {
+          "x" : 140,
+          "y" : 308
+        },
+        "c" : {
+          "x" : 132,
+          "y" : 310
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 14,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 131,
+          "y" : 297
+        },
+        "to" : {
+          "x" : 99,
+          "y" : 309
+        }
+      }, {
+        "from" : {
+          "x" : 99,
+          "y" : 309
+        },
+        "to" : {
+          "x" : 73,
+          "y" : 375
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 126,
+          "y" : 303
+        },
+        "b" : {
+          "x" : 131,
+          "y" : 297
+        },
+        "c" : {
+          "x" : 123,
+          "y" : 296
+        },
+        "type" : "ARROW"
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 12,
+    "reactomeId" : 917863,
+    "displayName" : "ABCG2 dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 117,
+      "y" : 410
+    },
+    "minX" : 85,
+    "maxX" : 150,
+    "minY" : 363,
+    "maxY" : 427,
+    "prop" : {
+      "x" : 85,
+      "y" : 393,
+      "width" : 65,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 91,
+      "y" : 392
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 107,
+          "y" : 390
+        },
+        "to" : {
+          "x" : 99,
+          "y" : 378
+        }
+      }, {
+        "from" : {
+          "x" : 99,
+          "y" : 378
+        },
+        "to" : {
+          "x" : 106,
+          "y" : 370
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 108,
+          "y" : 367
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 1457534,
+    "displayName" : "ABCB1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 118,
+      "y" : 449
+    },
+    "minX" : 95,
+    "maxX" : 161,
+    "minY" : 376,
+    "maxY" : 460,
+    "prop" : {
+      "x" : 95,
+      "y" : 438,
+      "width" : 47,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 95,
+      "y" : 438
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 142,
+          "y" : 438
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 14,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 141,
+          "y" : 435
+        },
+        "to" : {
+          "x" : 161,
+          "y" : 429
+        }
+      }, {
+        "from" : {
+          "x" : 161,
+          "y" : 429
+        },
+        "to" : {
+          "x" : 159,
+          "y" : 390
+        }
+      }, {
+        "from" : {
+          "x" : 159,
+          "y" : 390
+        },
+        "to" : {
+          "x" : 137,
+          "y" : 381
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 133,
+          "y" : 380
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 21,
+    "reactomeId" : 158601,
+    "displayName" : "UDP-GlcA",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 245,
+      "y" : 211
+    },
+    "minX" : 212,
+    "maxX" : 314,
+    "minY" : 182,
+    "maxY" : 232,
+    "prop" : {
+      "x" : 212,
+      "y" : 190,
+      "width" : 67,
+      "height" : 42
+    },
+    "textPosition" : {
+      "x" : 213,
+      "y" : 200
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 274,
+          "y" : 195
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 282,
+          "y" : 196
+        },
+        "to" : {
+          "x" : 314,
+          "y" : 182
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 110096,
+    "displayName" : "UDP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 235,
+      "y" : 86
+    },
+    "minX" : 215,
+    "maxX" : 315,
+    "minY" : 70,
+    "maxY" : 106,
+    "prop" : {
+      "x" : 215,
+      "y" : 71,
+      "width" : 41,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 219,
+      "y" : 75
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 251,
+          "y" : 76
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 259,
+          "y" : 91
+        },
+        "to" : {
+          "x" : 315,
+          "y" : 106
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 267,
+          "y" : 89
+        },
+        "b" : {
+          "x" : 259,
+          "y" : 91
+        },
+        "c" : {
+          "x" : 265,
+          "y" : 97
+        },
+        "type" : "ARROW"
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 23,
+    "reactomeId" : 2162068,
+    "displayName" : "abacavir 5'-glucuronide",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 315,
+      "y" : 47
+    },
+    "minX" : 271,
+    "maxX" : 361,
+    "minY" : 24,
+    "maxY" : 106,
+    "prop" : {
+      "x" : 271,
+      "y" : 25,
+      "width" : 89,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 276,
+      "y" : 29
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 355,
+          "y" : 30
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 315,
+          "y" : 72
+        },
+        "to" : {
+          "x" : 315,
+          "y" : 106
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 319,
+          "y" : 79
+        },
+        "b" : {
+          "x" : 315,
+          "y" : 72
+        },
+        "c" : {
+          "x" : 311,
+          "y" : 79
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 24,
+    "reactomeId" : 2162090,
+    "displayName" : "UDPGT",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 378,
+      "y" : 136
+    },
+    "minX" : 323,
+    "maxX" : 403,
+    "minY" : 125,
+    "maxY" : 147,
+    "prop" : {
+      "x" : 353,
+      "y" : 125,
+      "width" : 50,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 353,
+      "y" : 125
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 350,
+          "y" : 136
+        },
+        "to" : {
+          "x" : 331,
+          "y" : 136
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 327,
+          "y" : 136
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 27,
+    "reactomeId" : 29360,
+    "displayName" : "NAD+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 365,
+      "y" : 218
+    },
+    "minX" : 339,
+    "maxX" : 419,
+    "minY" : 202,
+    "maxY" : 264,
+    "prop" : {
+      "x" : 339,
+      "y" : 203,
+      "width" : 53,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 343,
+      "y" : 207
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 387,
+          "y" : 208
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 382,
+          "y" : 236
+        },
+        "to" : {
+          "x" : 419,
+          "y" : 264
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 394,
+            "y" : 244
+          },
+          "b" : {
+            "x" : 406,
+            "y" : 256
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 28,
+    "reactomeId" : 70106,
+    "displayName" : "H+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 567,
+      "y" : 192
+    },
+    "minX" : 541,
+    "maxX" : 586,
+    "minY" : 176,
+    "maxY" : 265,
+    "prop" : {
+      "x" : 550,
+      "y" : 177,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 554,
+      "y" : 181
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 580,
+          "y" : 182
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 561,
+          "y" : 210
+        },
+        "to" : {
+          "x" : 541,
+          "y" : 265
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 545,
+            "y" : 231
+          },
+          "b" : {
+            "x" : 557,
+            "y" : 243
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 562,
+          "y" : 218
+        },
+        "b" : {
+          "x" : 561,
+          "y" : 210
+        },
+        "c" : {
+          "x" : 555,
+          "y" : 215
+        },
+        "type" : "ARROW"
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 29,
+    "reactomeId" : 73473,
+    "displayName" : "NADH",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 617,
+      "y" : 218
+    },
+    "minX" : 541,
+    "maxX" : 644,
+    "minY" : 202,
+    "maxY" : 265,
+    "prop" : {
+      "x" : 591,
+      "y" : 203,
+      "width" : 52,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 595,
+      "y" : 207
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 638,
+          "y" : 208
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 592,
+          "y" : 236
+        },
+        "to" : {
+          "x" : 541,
+          "y" : 265
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 560,
+            "y" : 244
+          },
+          "b" : {
+            "x" : 572,
+            "y" : 256
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 588,
+          "y" : 243
+        },
+        "b" : {
+          "x" : 592,
+          "y" : 236
+        },
+        "c" : {
+          "x" : 584,
+          "y" : 236
+        },
+        "type" : "ARROW"
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 30,
+    "reactomeId" : 2162081,
+    "displayName" : "abacavir 5'-carboxylic acid",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 666,
+      "y" : 265
+    },
+    "minX" : 541,
+    "maxX" : 721,
+    "minY" : 243,
+    "maxY" : 287,
+    "prop" : {
+      "x" : 613,
+      "y" : 244,
+      "width" : 107,
+      "height" : 43
+    },
+    "textPosition" : {
+      "x" : 619,
+      "y" : 248
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 715,
+          "y" : 249
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 610,
+          "y" : 265
+        },
+        "to" : {
+          "x" : 541,
+          "y" : 265
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 603,
+          "y" : 269
+        },
+        "b" : {
+          "x" : 610,
+          "y" : 265
+        },
+        "c" : {
+          "x" : 603,
+          "y" : 261
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 71693,
+    "displayName" : "ADH1A:2Zn2+ dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 455,
+      "y" : 206
+    },
+    "minX" : 406,
+    "maxX" : 505,
+    "minY" : 188,
+    "maxY" : 256,
+    "prop" : {
+      "x" : 406,
+      "y" : 188,
+      "width" : 99,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 406,
+      "y" : 189
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 454,
+          "y" : 227
+        },
+        "to" : {
+          "x" : 454,
+          "y" : 248
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 454,
+          "y" : 252
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 34,
+    "reactomeId" : 76577,
+    "displayName" : "AMP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 352,
+      "y" : 397
+    },
+    "minX" : 331,
+    "maxX" : 395,
+    "minY" : 361,
+    "maxY" : 412,
+    "prop" : {
+      "x" : 331,
+      "y" : 382,
+      "width" : 42,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 335,
+      "y" : 386
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 368,
+          "y" : 387
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 33,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 369,
+          "y" : 379
+        },
+        "to" : {
+          "x" : 395,
+          "y" : 361
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 35,
+    "reactomeId" : 2161194,
+    "displayName" : "abacavir monophosphate",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 596,
+      "y" : 397
+    },
+    "minX" : 502,
+    "maxX" : 709,
+    "minY" : 361,
+    "maxY" : 419,
+    "prop" : {
+      "x" : 539,
+      "y" : 375,
+      "width" : 114,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 545,
+      "y" : 379
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 648,
+          "y" : 380
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 33,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 536,
+          "y" : 375
+        },
+        "to" : {
+          "x" : 502,
+          "y" : 361
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 528,
+          "y" : 376
+        },
+        "b" : {
+          "x" : 536,
+          "y" : 375
+        },
+        "c" : {
+          "x" : 531,
+          "y" : 369
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 39,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 656,
+          "y" : 396
+        },
+        "to" : {
+          "x" : 709,
+          "y" : 396
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 36,
+    "reactomeId" : 83909,
+    "displayName" : "Ade-Rib",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 596,
+      "y" : 339
+    },
+    "minX" : 502,
+    "maxX" : 636,
+    "minY" : 323,
+    "maxY" : 361,
+    "prop" : {
+      "x" : 557,
+      "y" : 324,
+      "width" : 78,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 567,
+      "y" : 328
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 630,
+          "y" : 329
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 33,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 554,
+          "y" : 348
+        },
+        "to" : {
+          "x" : 502,
+          "y" : 361
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 548,
+          "y" : 354
+        },
+        "b" : {
+          "x" : 554,
+          "y" : 348
+        },
+        "c" : {
+          "x" : 546,
+          "y" : 346
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 37,
+    "reactomeId" : 2161183,
+    "displayName" : "adenosine phosphotransferase",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 461,
+      "y" : 315
+    },
+    "minX" : 396,
+    "maxX" : 526,
+    "minY" : 297,
+    "maxY" : 353,
+    "prop" : {
+      "x" : 396,
+      "y" : 297,
+      "width" : 130,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 399,
+      "y" : 297
+    },
+    "connectors" : [ {
+      "edgeId" : 33,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 460,
+          "y" : 336
+        },
+        "to" : {
+          "x" : 460,
+          "y" : 345
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 460,
+          "y" : 349
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 40,
+    "reactomeId" : 29356,
+    "displayName" : "H2O",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 680,
+      "y" : 353
+    },
+    "minX" : 660,
+    "maxX" : 709,
+    "minY" : 337,
+    "maxY" : 396,
+    "prop" : {
+      "x" : 660,
+      "y" : 338,
+      "width" : 41,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 663,
+      "y" : 342
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 696,
+          "y" : 343
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 39,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 690,
+          "y" : 371
+        },
+        "to" : {
+          "x" : 709,
+          "y" : 396
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 41,
+    "reactomeId" : 2161175,
+    "displayName" : "cyclopropylamine",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 807,
+      "y" : 353
+    },
+    "minX" : 753,
+    "maxX" : 863,
+    "minY" : 337,
+    "maxY" : 396,
+    "prop" : {
+      "x" : 753,
+      "y" : 338,
+      "width" : 109,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 753,
+      "y" : 342
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 857,
+          "y" : 343
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 39,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 801,
+          "y" : 371
+        },
+        "to" : {
+          "x" : 792,
+          "y" : 396
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 802,
+          "y" : 379
+        },
+        "b" : {
+          "x" : 801,
+          "y" : 371
+        },
+        "c" : {
+          "x" : 795,
+          "y" : 376
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 42,
+    "reactomeId" : 2161176,
+    "displayName" : "carbovir monophosphate",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 894,
+      "y" : 395
+    },
+    "minX" : 792,
+    "maxX" : 948,
+    "minY" : 273,
+    "maxY" : 464,
+    "prop" : {
+      "x" : 842,
+      "y" : 373,
+      "width" : 105,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 844,
+      "y" : 377
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 942,
+          "y" : 378
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 49,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 894,
+          "y" : 420
+        },
+        "to" : {
+          "x" : 895,
+          "y" : 464
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 39,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 839,
+          "y" : 395
+        },
+        "to" : {
+          "x" : 792,
+          "y" : 396
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 832,
+          "y" : 399
+        },
+        "b" : {
+          "x" : 839,
+          "y" : 395
+        },
+        "c" : {
+          "x" : 832,
+          "y" : 391
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 44,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 894,
+          "y" : 370
+        },
+        "to" : {
+          "x" : 895,
+          "y" : 273
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 890,
+          "y" : 363
+        },
+        "b" : {
+          "x" : 894,
+          "y" : 370
+        },
+        "c" : {
+          "x" : 898,
+          "y" : 363
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 43,
+    "reactomeId" : 2161178,
+    "displayName" : "ADAL:Zn",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 747,
+      "y" : 444
+    },
+    "minX" : 718,
+    "maxX" : 776,
+    "minY" : 404,
+    "maxY" : 455,
+    "prop" : {
+      "x" : 718,
+      "y" : 433,
+      "width" : 58,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 718,
+      "y" : 434
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 39,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 747,
+          "y" : 430
+        },
+        "to" : {
+          "x" : 748,
+          "y" : 412
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 748,
+          "y" : 408
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 45,
+    "reactomeId" : 29602,
+    "displayName" : "IMP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 823,
+      "y" : 172
+    },
+    "minX" : 806,
+    "maxX" : 894,
+    "minY" : 156,
+    "maxY" : 193,
+    "prop" : {
+      "x" : 806,
+      "y" : 157,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 809,
+      "y" : 161
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 836,
+          "y" : 162
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 844,
+          "y" : 177
+        },
+        "to" : {
+          "x" : 894,
+          "y" : 193
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 46,
+    "reactomeId" : 2161514,
+    "displayName" : "carbovir",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 894,
+      "y" : 125
+    },
+    "minX" : 865,
+    "maxX" : 925,
+    "minY" : 109,
+    "maxY" : 193,
+    "prop" : {
+      "x" : 865,
+      "y" : 110,
+      "width" : 59,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 867,
+      "y" : 114
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 919,
+          "y" : 115
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 894,
+          "y" : 143
+        },
+        "to" : {
+          "x" : 894,
+          "y" : 193
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 47,
+    "reactomeId" : 83927,
+    "displayName" : "Ino",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 823,
+      "y" : 287
+    },
+    "minX" : 796,
+    "maxX" : 895,
+    "minY" : 271,
+    "maxY" : 302,
+    "prop" : {
+      "x" : 796,
+      "y" : 272,
+      "width" : 55,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 811,
+      "y" : 276
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 846,
+          "y" : 277
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 854,
+          "y" : 281
+        },
+        "to" : {
+          "x" : 895,
+          "y" : 273
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 860,
+          "y" : 276
+        },
+        "b" : {
+          "x" : 854,
+          "y" : 281
+        },
+        "c" : {
+          "x" : 862,
+          "y" : 284
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 48,
+    "reactomeId" : 109318,
+    "displayName" : "NT5C2 tetramer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 823,
+      "y" : 231
+    },
+    "minX" : 790,
+    "maxX" : 886,
+    "minY" : 213,
+    "maxY" : 250,
+    "prop" : {
+      "x" : 790,
+      "y" : 213,
+      "width" : 67,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 794,
+      "y" : 215
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 860,
+          "y" : 231
+        },
+        "to" : {
+          "x" : 878,
+          "y" : 231
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 882,
+          "y" : 231
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 50,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 937,
+      "y" : 453
+    },
+    "minX" : 895,
+    "maxX" : 957,
+    "minY" : 437,
+    "maxY" : 468,
+    "prop" : {
+      "x" : 918,
+      "y" : 438,
+      "width" : 38,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 921,
+      "y" : 442
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 951,
+          "y" : 443
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 49,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 915,
+          "y" : 457
+        },
+        "to" : {
+          "x" : 895,
+          "y" : 464
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 51,
+    "reactomeId" : 29370,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 937,
+      "y" : 536
+    },
+    "minX" : 894,
+    "maxX" : 958,
+    "minY" : 520,
+    "maxY" : 551,
+    "prop" : {
+      "x" : 918,
+      "y" : 521,
+      "width" : 39,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 921,
+      "y" : 525
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 952,
+          "y" : 526
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 49,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 915,
+          "y" : 531
+        },
+        "to" : {
+          "x" : 894,
+          "y" : 526
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 907,
+          "y" : 533
+        },
+        "b" : {
+          "x" : 915,
+          "y" : 531
+        },
+        "c" : {
+          "x" : 909,
+          "y" : 526
+        },
+        "type" : "ARROW"
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 52,
+    "reactomeId" : 2162075,
+    "displayName" : "carbovir diphosphate",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 894,
+      "y" : 579
+    },
+    "minX" : 804,
+    "maxX" : 950,
+    "minY" : 526,
+    "maxY" : 599,
+    "prop" : {
+      "x" : 840,
+      "y" : 559,
+      "width" : 109,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 854,
+      "y" : 561
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 944,
+          "y" : 564
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 49,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 894,
+          "y" : 556
+        },
+        "to" : {
+          "x" : 894,
+          "y" : 526
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 890,
+          "y" : 549
+        },
+        "b" : {
+          "x" : 894,
+          "y" : 556
+        },
+        "c" : {
+          "x" : 898,
+          "y" : 549
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 57,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 837,
+          "y" : 579
+        },
+        "to" : {
+          "x" : 804,
+          "y" : 579
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 53,
+    "reactomeId" : 58048,
+    "displayName" : "GUK1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 837,
+      "y" : 493
+    },
+    "minX" : 814,
+    "maxX" : 886,
+    "minY" : 477,
+    "maxY" : 504,
+    "prop" : {
+      "x" : 814,
+      "y" : 483,
+      "width" : 46,
+      "height" : 21
+    },
+    "textPosition" : {
+      "x" : 816,
+      "y" : 483
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 860,
+          "y" : 483
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 49,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 863,
+          "y" : 493
+        },
+        "to" : {
+          "x" : 878,
+          "y" : 493
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 882,
+          "y" : 494
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 58,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 835,
+      "y" : 620
+    },
+    "minX" : 804,
+    "maxX" : 855,
+    "minY" : 579,
+    "maxY" : 635,
+    "prop" : {
+      "x" : 816,
+      "y" : 605,
+      "width" : 38,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 819,
+      "y" : 609
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 849,
+          "y" : 610
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 57,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 823,
+          "y" : 602
+        },
+        "to" : {
+          "x" : 804,
+          "y" : 579
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 59,
+    "reactomeId" : 29370,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 713,
+      "y" : 620
+    },
+    "minX" : 694,
+    "maxX" : 734,
+    "minY" : 580,
+    "maxY" : 635,
+    "prop" : {
+      "x" : 694,
+      "y" : 605,
+      "width" : 39,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 697,
+      "y" : 609
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 728,
+          "y" : 610
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 57,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 717,
+          "y" : 602
+        },
+        "to" : {
+          "x" : 726,
+          "y" : 580
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 716,
+          "y" : 594
+        },
+        "b" : {
+          "x" : 717,
+          "y" : 602
+        },
+        "c" : {
+          "x" : 723,
+          "y" : 597
+        },
+        "type" : "ARROW"
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 60,
+    "reactomeId" : 2162091,
+    "displayName" : "carbovir triphosphate",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 620,
+      "y" : 579
+    },
+    "minX" : 570,
+    "maxX" : 726,
+    "minY" : 558,
+    "maxY" : 600,
+    "prop" : {
+      "x" : 570,
+      "y" : 559,
+      "width" : 100,
+      "height" : 41
+    },
+    "textPosition" : {
+      "x" : 579,
+      "y" : 562
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 665,
+          "y" : 564
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 57,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 673,
+          "y" : 579
+        },
+        "to" : {
+          "x" : 726,
+          "y" : 580
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 680,
+          "y" : 575
+        },
+        "b" : {
+          "x" : 673,
+          "y" : 579
+        },
+        "c" : {
+          "x" : 680,
+          "y" : 583
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 61,
+    "reactomeId" : 70495,
+    "displayName" : "PCK1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 767,
+      "y" : 536
+    },
+    "minX" : 746,
+    "maxX" : 795,
+    "minY" : 520,
+    "maxY" : 571,
+    "prop" : {
+      "x" : 746,
+      "y" : 526,
+      "width" : 43,
+      "height" : 21
+    },
+    "textPosition" : {
+      "x" : 748,
+      "y" : 526
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 789,
+          "y" : 526
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 57,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 766,
+          "y" : 550
+        },
+        "to" : {
+          "x" : 766,
+          "y" : 563
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 766,
+          "y" : 567
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 33,
+    "reactomeId" : 2161193,
+    "displayName" : "abacavir + AMP => abacavir monophosphate + adenosine",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 460,
+      "y" : 361
+    },
+    "minX" : 395,
+    "maxX" : 502,
+    "minY" : 355,
+    "maxY" : 367,
+    "segments" : [ {
+      "from" : {
+        "x" : 395,
+        "y" : 361
+      },
+      "to" : {
+        "x" : 460,
+        "y" : 361
+      }
+    }, {
+      "from" : {
+        "x" : 460,
+        "y" : 361
+      },
+      "to" : {
+        "x" : 502,
+        "y" : 361
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 454,
+        "y" : 355
+      },
+      "b" : {
+        "x" : 466,
+        "y" : 367
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 34,
+      "points" : [ {
+        "x" : 369,
+        "y" : 379
+      } ]
+    }, {
+      "id" : 5,
+      "points" : [ {
+        "x" : 327,
+        "y" : 282
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 35,
+      "points" : [ {
+        "x" : 536,
+        "y" : 375
+      } ]
+    }, {
+      "id" : 36,
+      "points" : [ {
+        "x" : 554,
+        "y" : 348
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 37,
+      "points" : [ {
+        "x" : 460,
+        "y" : 336
+      } ]
+    } ]
+  }, {
+    "id" : 49,
+    "reactomeId" : 2162092,
+    "displayName" : "carbovir monophosphate + ATP => carbovir diphosphate + ADP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 894,
+      "y" : 494
+    },
+    "minX" : 888,
+    "maxX" : 900,
+    "minY" : 464,
+    "maxY" : 526,
+    "segments" : [ {
+      "from" : {
+        "x" : 895,
+        "y" : 464
+      },
+      "to" : {
+        "x" : 894,
+        "y" : 494
+      }
+    }, {
+      "from" : {
+        "x" : 894,
+        "y" : 494
+      },
+      "to" : {
+        "x" : 894,
+        "y" : 526
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 888,
+        "y" : 488
+      },
+      "b" : {
+        "x" : 900,
+        "y" : 500
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 50,
+      "points" : [ {
+        "x" : 915,
+        "y" : 457
+      } ]
+    }, {
+      "id" : 42,
+      "points" : [ {
+        "x" : 894,
+        "y" : 420
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 51,
+      "points" : [ {
+        "x" : 915,
+        "y" : 531
+      } ]
+    }, {
+      "id" : 52,
+      "points" : [ {
+        "x" : 894,
+        "y" : 556
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 53,
+      "points" : [ {
+        "x" : 863,
+        "y" : 493
+      } ]
+    } ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 2161500,
+    "displayName" : "abacavir [extracellular] => abacavir [cytosol]",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 119,
+      "y" : 264
+    },
+    "minX" : 62,
+    "maxX" : 283,
+    "minY" : 258,
+    "maxY" : 270,
+    "segments" : [ {
+      "from" : {
+        "x" : 62,
+        "y" : 264
+      },
+      "to" : {
+        "x" : 119,
+        "y" : 264
+      }
+    }, {
+      "from" : {
+        "x" : 119,
+        "y" : 264
+      },
+      "to" : {
+        "x" : 283,
+        "y" : 264
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 276,
+        "y" : 268
+      },
+      "b" : {
+        "x" : 283,
+        "y" : 264
+      },
+      "c" : {
+        "x" : 276,
+        "y" : 260
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 113,
+        "y" : 258
+      },
+      "b" : {
+        "x" : 125,
+        "y" : 270
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 4
+    } ],
+    "outputs" : [ {
+      "id" : 5
+    } ],
+    "catalysts" : [ {
+      "id" : 6,
+      "points" : [ {
+        "x" : 117,
+        "y" : 232
+      } ]
+    } ]
+  }, {
+    "id" : 20,
+    "reactomeId" : 2162099,
+    "displayName" : "abacavir + UDP-glucuronate => abacavir 5'-glucuronide + UDP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 315,
+      "y" : 136
+    },
+    "minX" : 309,
+    "maxX" : 321,
+    "minY" : 106,
+    "maxY" : 182,
+    "segments" : [ {
+      "from" : {
+        "x" : 314,
+        "y" : 182
+      },
+      "to" : {
+        "x" : 315,
+        "y" : 136
+      }
+    }, {
+      "from" : {
+        "x" : 315,
+        "y" : 136
+      },
+      "to" : {
+        "x" : 315,
+        "y" : 106
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 309,
+        "y" : 130
+      },
+      "b" : {
+        "x" : 321,
+        "y" : 142
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 21,
+      "points" : [ {
+        "x" : 282,
+        "y" : 196
+      } ]
+    }, {
+      "id" : 5,
+      "points" : [ {
+        "x" : 314,
+        "y" : 246
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 22,
+      "points" : [ {
+        "x" : 259,
+        "y" : 91
+      } ]
+    }, {
+      "id" : 23,
+      "points" : [ {
+        "x" : 315,
+        "y" : 72
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 350,
+        "y" : 136
+      } ]
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 2161506,
+    "displayName" : "abacavir [cytosol] + ATP + H2O => abacavir[extracellular] + ADP + phosphate",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 116,
+      "y" : 358
+    },
+    "minX" : 93,
+    "maxX" : 220,
+    "minY" : 352,
+    "maxY" : 364,
+    "segments" : [ {
+      "from" : {
+        "x" : 220,
+        "y" : 357
+      },
+      "to" : {
+        "x" : 116,
+        "y" : 358
+      }
+    }, {
+      "from" : {
+        "x" : 116,
+        "y" : 358
+      },
+      "to" : {
+        "x" : 93,
+        "y" : 358
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 110,
+        "y" : 352
+      },
+      "b" : {
+        "x" : 122,
+        "y" : 364
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 8,
+      "points" : [ {
+        "x" : 230,
+        "y" : 404
+      } ]
+    }, {
+      "id" : 5,
+      "points" : [ {
+        "x" : 299,
+        "y" : 282
+      } ]
+    }, {
+      "id" : 9,
+      "points" : [ {
+        "x" : 253,
+        "y" : 382
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 10,
+      "points" : [ {
+        "x" : 187,
+        "y" : 309
+      } ]
+    }, {
+      "id" : 4,
+      "points" : [ {
+        "x" : 39,
+        "y" : 283
+      } ]
+    }, {
+      "id" : 11,
+      "points" : [ {
+        "x" : 140,
+        "y" : 308
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 12,
+      "points" : [ {
+        "x" : 107,
+        "y" : 390
+      }, {
+        "x" : 99,
+        "y" : 378
+      } ]
+    } ]
+  }, {
+    "id" : 39,
+    "reactomeId" : 2161195,
+    "displayName" : "abacavir monophosphate + H2O => carbovir monophosphate + cyclopropylamine",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 748,
+      "y" : 396
+    },
+    "minX" : 709,
+    "maxX" : 792,
+    "minY" : 390,
+    "maxY" : 402,
+    "segments" : [ {
+      "from" : {
+        "x" : 709,
+        "y" : 396
+      },
+      "to" : {
+        "x" : 748,
+        "y" : 396
+      }
+    }, {
+      "from" : {
+        "x" : 748,
+        "y" : 396
+      },
+      "to" : {
+        "x" : 792,
+        "y" : 396
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 742,
+        "y" : 390
+      },
+      "b" : {
+        "x" : 754,
+        "y" : 402
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 35,
+      "points" : [ {
+        "x" : 656,
+        "y" : 396
+      } ]
+    }, {
+      "id" : 40,
+      "points" : [ {
+        "x" : 690,
+        "y" : 371
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 41,
+      "points" : [ {
+        "x" : 801,
+        "y" : 371
+      } ]
+    }, {
+      "id" : 42,
+      "points" : [ {
+        "x" : 839,
+        "y" : 395
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 43,
+      "points" : [ {
+        "x" : 747,
+        "y" : 430
+      } ]
+    } ]
+  }, {
+    "id" : 57,
+    "reactomeId" : 2162096,
+    "displayName" : "carbovir diphosphate + ATP => carbovir triphosphate + ADP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 766,
+      "y" : 579
+    },
+    "minX" : 726,
+    "maxX" : 804,
+    "minY" : 573,
+    "maxY" : 585,
+    "segments" : [ {
+      "from" : {
+        "x" : 804,
+        "y" : 579
+      },
+      "to" : {
+        "x" : 766,
+        "y" : 579
+      }
+    }, {
+      "from" : {
+        "x" : 766,
+        "y" : 579
+      },
+      "to" : {
+        "x" : 726,
+        "y" : 580
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 760,
+        "y" : 573
+      },
+      "b" : {
+        "x" : 772,
+        "y" : 585
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 52,
+      "points" : [ {
+        "x" : 837,
+        "y" : 579
+      } ]
+    }, {
+      "id" : 58,
+      "points" : [ {
+        "x" : 823,
+        "y" : 602
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 59,
+      "points" : [ {
+        "x" : 717,
+        "y" : 602
+      } ]
+    }, {
+      "id" : 60,
+      "points" : [ {
+        "x" : 673,
+        "y" : 579
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 61,
+      "points" : [ {
+        "x" : 766,
+        "y" : 550
+      } ]
+    } ]
+  }, {
+    "id" : 26,
+    "reactomeId" : 2162078,
+    "displayName" : "abacavir + 2 NAD+ => abacavir 5'-carboxylate + 2 NADH + 2 H+",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 454,
+      "y" : 264
+    },
+    "minX" : 419,
+    "maxX" : 541,
+    "minY" : 258,
+    "maxY" : 270,
+    "segments" : [ {
+      "from" : {
+        "x" : 419,
+        "y" : 264
+      },
+      "to" : {
+        "x" : 454,
+        "y" : 264
+      }
+    }, {
+      "from" : {
+        "x" : 454,
+        "y" : 264
+      },
+      "to" : {
+        "x" : 541,
+        "y" : 265
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 448,
+        "y" : 258
+      },
+      "b" : {
+        "x" : 460,
+        "y" : 270
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 27,
+      "points" : [ {
+        "x" : 382,
+        "y" : 236
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 5,
+      "points" : [ {
+        "x" : 348,
+        "y" : 264
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 28,
+      "points" : [ {
+        "x" : 561,
+        "y" : 210
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 29,
+      "points" : [ {
+        "x" : 592,
+        "y" : 236
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 610,
+        "y" : 265
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 31,
+      "points" : [ {
+        "x" : 454,
+        "y" : 227
+      } ]
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 2162066,
+    "displayName" : "carbovir + IMP => carbovir monophosphate + inosine",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 894,
+      "y" : 231
+    },
+    "minX" : 888,
+    "maxX" : 900,
+    "minY" : 193,
+    "maxY" : 273,
+    "segments" : [ {
+      "from" : {
+        "x" : 894,
+        "y" : 193
+      },
+      "to" : {
+        "x" : 894,
+        "y" : 231
+      }
+    }, {
+      "from" : {
+        "x" : 894,
+        "y" : 231
+      },
+      "to" : {
+        "x" : 895,
+        "y" : 273
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 888,
+        "y" : 225
+      },
+      "b" : {
+        "x" : 900,
+        "y" : 237
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 45,
+      "points" : [ {
+        "x" : 844,
+        "y" : 177
+      } ]
+    }, {
+      "id" : 46,
+      "points" : [ {
+        "x" : 894,
+        "y" : 143
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 47,
+      "points" : [ {
+        "x" : 854,
+        "y" : 281
+      } ]
+    }, {
+      "id" : 42,
+      "points" : [ {
+        "x" : 894,
+        "y" : 370
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 48,
+      "points" : [ {
+        "x" : 860,
+        "y" : 231
+      } ]
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 2161538,
+    "displayName" : "abacavir [cytosol] + ATP + H2O => abacavir[extracellular] + ADP + phosphate",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 122,
+      "y" : 375
+    },
+    "minX" : 73,
+    "maxX" : 230,
+    "minY" : 369,
+    "maxY" : 381,
+    "segments" : [ {
+      "from" : {
+        "x" : 230,
+        "y" : 375
+      },
+      "to" : {
+        "x" : 122,
+        "y" : 375
+      }
+    }, {
+      "from" : {
+        "x" : 122,
+        "y" : 375
+      },
+      "to" : {
+        "x" : 73,
+        "y" : 375
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 116,
+        "y" : 369
+      },
+      "b" : {
+        "x" : 128,
+        "y" : 381
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 5,
+      "points" : [ {
+        "x" : 303,
+        "y" : 282
+      } ]
+    }, {
+      "id" : 8,
+      "points" : [ {
+        "x" : 232,
+        "y" : 404
+      } ]
+    }, {
+      "id" : 9,
+      "points" : [ {
+        "x" : 253,
+        "y" : 386
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 10,
+      "points" : [ {
+        "x" : 187,
+        "y" : 307
+      }, {
+        "x" : 99,
+        "y" : 334
+      } ]
+    }, {
+      "id" : 4,
+      "points" : [ {
+        "x" : 35,
+        "y" : 283
+      } ]
+    }, {
+      "id" : 11,
+      "points" : [ {
+        "x" : 131,
+        "y" : 297
+      }, {
+        "x" : 99,
+        "y" : 309
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 18,
+      "points" : [ {
+        "x" : 141,
+        "y" : 435
+      }, {
+        "x" : 161,
+        "y" : 429
+      }, {
+        "x" : 159,
+        "y" : 390
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 1,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 551,
+      "y" : 332
+    },
+    "minX" : 112,
+    "maxX" : 990,
+    "minY" : 0,
+    "maxY" : 665,
+    "prop" : {
+      "x" : 112,
+      "y" : 0,
+      "width" : 878,
+      "height" : 665
+    },
+    "textPosition" : {
+      "x" : 126,
+      "y" : 621
+    },
+    "insets" : {
+      "x" : 122,
+      "y" : 10,
+      "width" : 857,
+      "height" : 647
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2, 5, 6, 3, 8, 9, 10, 11, 12, 18, 14, 20, 21, 22, 23, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 37, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 57, 58, 59, 60, 61, 7 ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 12045,
+    "displayName" : "endoplasmic reticulum membrane",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 425,
+      "y" : 114
+    },
+    "minX" : 378,
+    "maxX" : 472,
+    "minY" : 66,
+    "maxY" : 162,
+    "prop" : {
+      "x" : 378,
+      "y" : 66,
+      "width" : 94,
+      "height" : 96
+    },
+    "textPosition" : {
+      "x" : 372,
+      "y" : 69
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 24 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ {
+    "id" : 62,
+    "reactomeId" : 2161517,
+    "displayName" : "Abacavir transmembrane transport",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 172,
+      "y" : 323
+    },
+    "minX" : -10,
+    "maxX" : 355,
+    "minY" : 176,
+    "maxY" : 470,
+    "prop" : {
+      "x" : -10,
+      "y" : 176,
+      "width" : 212,
+      "height" : 294
+    },
+    "points" : [ {
+      "x" : -10,
+      "y" : 176
+    }, {
+      "x" : 355,
+      "y" : 176
+    }, {
+      "x" : 355,
+      "y" : 470
+    }, {
+      "x" : -10,
+      "y" : 470
+    } ],
+    "colour" : "#4684ee"
+  }, {
+    "id" : 63,
+    "reactomeId" : 2161541,
+    "displayName" : "Abacavir metabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 584,
+      "y" : 330
+    },
+    "minX" : 202,
+    "maxX" : 967,
+    "minY" : 15,
+    "maxY" : 645,
+    "prop" : {
+      "x" : 355,
+      "y" : 176,
+      "width" : 612,
+      "height" : 294
+    },
+    "points" : [ {
+      "x" : 202,
+      "y" : 15
+    }, {
+      "x" : 967,
+      "y" : 15
+    }, {
+      "x" : 967,
+      "y" : 645
+    }, {
+      "x" : 202,
+      "y" : 645
+    } ],
+    "colour" : "#dc3912"
+  } ],
+  "minX" : 0,
+  "maxX" : 990,
+  "minY" : 0,
+  "maxY" : 665,
+  "disease" : false
+}

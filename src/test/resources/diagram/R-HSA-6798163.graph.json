@@ -1,0 +1,318 @@
+{
+  "dbId" : 6798163,
+  "stId" : "R-HSA-6798163",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 6797923,
+    "stId" : "R-ALL-6797923",
+    "displayName" : "DMGLY [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1992 ],
+    "identifier" : "17724"
+  }, {
+    "dbId" : 6797920,
+    "stId" : "R-ALL-6797920",
+    "displayName" : "CH2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1993 ],
+    "identifier" : "16842"
+  }, {
+    "dbId" : 6797933,
+    "stId" : "R-HSA-6797933",
+    "displayName" : "SARDH:FAD [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1561 ],
+    "children" : [ 113596, 6797951 ]
+  }, {
+    "dbId" : 352015,
+    "stId" : "R-ALL-352015",
+    "displayName" : "BET [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1430 ],
+    "identifier" : "17750"
+  }, {
+    "dbId" : 6798195,
+    "stId" : "R-HSA-6798195",
+    "displayName" : "CHDH [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1422 ],
+    "identifier" : "Q8NE62",
+    "geneNames" : [ "CHDH" ]
+  }, {
+    "dbId" : 6798194,
+    "stId" : "R-ALL-6798194",
+    "displayName" : "BETALD [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1421 ],
+    "identifier" : "15710"
+  }, {
+    "dbId" : 508562,
+    "stId" : "R-HSA-508562",
+    "displayName" : "ALDH7A1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1428 ],
+    "identifier" : "P49419",
+    "geneNames" : [ "ALDH7A1", "ATQ1" ]
+  }, {
+    "dbId" : 6797951,
+    "stId" : "R-HSA-6797951",
+    "displayName" : "SARDH [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UL12",
+    "geneNames" : [ "SARDH", "DMGDHL1" ],
+    "parents" : [ 6797933 ]
+  }, {
+    "dbId" : 6798202,
+    "stId" : "R-ALL-6798202",
+    "displayName" : "BET [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1426 ],
+    "identifier" : "17750"
+  }, {
+    "dbId" : 31649,
+    "stId" : "R-ALL-31649",
+    "displayName" : "FADH2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1420 ],
+    "identifier" : "17877"
+  }, {
+    "dbId" : 1614585,
+    "stId" : "R-ALL-1614585",
+    "displayName" : "DMGLY [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1551 ],
+    "identifier" : "17724"
+  }, {
+    "dbId" : 174369,
+    "stId" : "R-ALL-174369",
+    "displayName" : "HCYS [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1961 ],
+    "identifier" : "17230"
+  }, {
+    "dbId" : 6798211,
+    "stId" : "R-HSA-6798211",
+    "displayName" : "BHMT:Zn2+ tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1963 ],
+    "children" : [ 6798210 ]
+  }, {
+    "dbId" : 6798210,
+    "stId" : "R-HSA-6798210",
+    "displayName" : "BHMT:Zn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 6798211 ],
+    "children" : [ 1614525, 29426 ]
+  }, {
+    "dbId" : 1614525,
+    "stId" : "R-HSA-1614525",
+    "displayName" : "BHMT [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q93088",
+    "geneNames" : [ "BHMT" ],
+    "parents" : [ 6798210 ]
+  }, {
+    "dbId" : 6798157,
+    "stId" : "R-HSA-6798157",
+    "displayName" : "SLC44A1 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1417 ],
+    "identifier" : "Q8WWI5",
+    "geneNames" : [ "SLC44A1", "CD92", "CDW92", "CTL1" ]
+  }, {
+    "dbId" : 264618,
+    "stId" : "R-ALL-264618",
+    "displayName" : "Cho [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 188 ],
+    "identifier" : "15354"
+  }, {
+    "dbId" : 6797655,
+    "stId" : "R-HSA-6797655",
+    "displayName" : "DMGDH [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UI17",
+    "geneNames" : [ "DMGDH" ],
+    "parents" : [ 6797657 ]
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1425, 1991, 1997 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 29362,
+    "stId" : "R-ALL-29362",
+    "displayName" : "NADH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1427 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29105",
+    "parents" : [ 6798210 ]
+  }, {
+    "dbId" : 174390,
+    "stId" : "R-ALL-174390",
+    "displayName" : "L-Met [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1962 ],
+    "identifier" : "57844"
+  }, {
+    "dbId" : 6798162,
+    "stId" : "R-ALL-6798162",
+    "displayName" : "Cho [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1416 ],
+    "identifier" : "15354"
+  }, {
+    "dbId" : 113526,
+    "stId" : "R-ALL-113526",
+    "displayName" : "NAD+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1424 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 6797917,
+    "stId" : "R-ALL-6797917",
+    "displayName" : "SARC [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1994 ],
+    "identifier" : "15611"
+  }, {
+    "dbId" : 113596,
+    "stId" : "R-ALL-113596",
+    "displayName" : "FAD [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1419 ],
+    "identifier" : "16238",
+    "parents" : [ 6797933, 6797657 ]
+  }, {
+    "dbId" : 6797657,
+    "stId" : "R-HSA-6797657",
+    "displayName" : "DMGDH:FAD [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1557 ],
+    "children" : [ 113596, 6797655 ]
+  }, {
+    "dbId" : 159549,
+    "stId" : "R-ALL-159549",
+    "displayName" : "Gly [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1560 ],
+    "identifier" : "57305"
+  } ],
+  "edges" : [ {
+    "dbId" : 6797653,
+    "stId" : "R-HSA-6797653",
+    "displayName" : "DMGDH:FAD oxidatively demethylates DMGLY to SARC",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6797962 ],
+    "following" : [ 6797913 ],
+    "inputs" : [ 6797923, 113521 ],
+    "outputs" : [ 6797917, 6797920 ],
+    "catalysts" : [ 6797657 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1990 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6797957,
+    "stId" : "R-HSA-6797957",
+    "displayName" : "BET translocates from mitochondrial matrix to cytosol",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 6797955 ],
+    "following" : [ 1614654 ],
+    "inputs" : [ 6798202 ],
+    "outputs" : [ 352015 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1429 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6797956,
+    "stId" : "R-HSA-6797956",
+    "displayName" : "SLC44A1 transports Cho from cytosol to mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "following" : [ 6797961 ],
+    "inputs" : [ 264618 ],
+    "outputs" : [ 6798162 ],
+    "catalysts" : [ 6798157 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1415 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6797955,
+    "stId" : "R-HSA-6797955",
+    "displayName" : "ALDH7A1 oxidises BETALD to BET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6797961 ],
+    "following" : [ 6797957 ],
+    "inputs" : [ 113526, 6798194, 113521 ],
+    "outputs" : [ 6798202, 29362 ],
+    "catalysts" : [ 508562 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1423 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1614654,
+    "stId" : "R-HSA-1614654",
+    "displayName" : "BHMT tetramer transfers CH3 group from BET to HCYS to form DMGLY",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6797957 ],
+    "inputs" : [ 352015, 174369 ],
+    "outputs" : [ 174390, 1614585 ],
+    "catalysts" : [ 6798211 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1960 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6797962,
+    "stId" : "R-HSA-6797962",
+    "displayName" : "DMGLY translocates from cytosol to mitochondrial matrix",
+    "schemaClass" : "BlackBoxEvent",
+    "following" : [ 6797653 ],
+    "inputs" : [ 1614585 ],
+    "outputs" : [ 6797923 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1550 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6797913,
+    "stId" : "R-HSA-6797913",
+    "displayName" : "SARDH:FAD oxidatively demethylates SARC to Gly",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6797653 ],
+    "inputs" : [ 6797917, 113521 ],
+    "outputs" : [ 159549, 6797920 ],
+    "catalysts" : [ 6797933 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1996 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6797961,
+    "stId" : "R-HSA-6797961",
+    "displayName" : "CHDH oxidises Cho to BETALD",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6797956 ],
+    "following" : [ 6797955 ],
+    "inputs" : [ 113596, 6798162 ],
+    "outputs" : [ 6798194, 31649 ],
+    "catalysts" : [ 6798195 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1418 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

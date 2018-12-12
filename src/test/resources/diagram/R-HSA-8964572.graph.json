@@ -1,0 +1,190 @@
+{
+  "dbId" : 8964572,
+  "stId" : "R-HSA-8964572",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 8856647,
+    "stId" : "R-HSA-8856647",
+    "displayName" : "CIDEA:CIDEC:lipid droplet [lipid droplet]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4431 ],
+    "children" : [ 8866926, 8856629 ]
+  }, {
+    "dbId" : 8857666,
+    "stId" : "R-HSA-8857666",
+    "displayName" : "FITM1,FITM2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4458 ],
+    "parents" : [ 8857661 ],
+    "children" : [ 8857678, 8857655 ]
+  }, {
+    "dbId" : 8862370,
+    "stId" : "R-HSA-8862370",
+    "displayName" : "HSD17B13:lipid droplet [lipid droplet]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4456 ],
+    "children" : [ 8862029, 8866926 ]
+  }, {
+    "dbId" : 549167,
+    "stId" : "R-ALL-549167",
+    "displayName" : "TAG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4690 ],
+    "identifier" : "17855",
+    "parents" : [ 8857661 ]
+  }, {
+    "dbId" : 8857678,
+    "stId" : "R-HSA-8857678",
+    "displayName" : "FITM2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N6M3",
+    "geneNames" : [ "FITM2", "C20orf142", "FIT2" ],
+    "parents" : [ 8857666 ]
+  }, {
+    "dbId" : 8866926,
+    "stId" : "R-ALL-8866926",
+    "displayName" : "lipid droplet [lipid droplet]",
+    "schemaClass" : "Complex",
+    "diagramIds" : [ 4689 ],
+    "parents" : [ 8856647, 8858282, 8862370 ],
+    "children" : [ 8866774, 163579, 163438 ]
+  }, {
+    "dbId" : 8862029,
+    "stId" : "R-HSA-8862029",
+    "displayName" : "HSD17B13 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4455 ],
+    "identifier" : "Q7Z5P4",
+    "geneNames" : [ "HSD17B13", "SCDR9", "SDR16C3", "HMFN0376", "UNQ497/PRO1014" ],
+    "parents" : [ 8862370 ]
+  }, {
+    "dbId" : 8858285,
+    "stId" : "R-HSA-8858285",
+    "displayName" : "HILPDA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4433 ],
+    "identifier" : "Q9Y5L2",
+    "geneNames" : [ "HILPDA", "C7orf68", "HIG2" ],
+    "parents" : [ 8858282 ]
+  }, {
+    "dbId" : 163438,
+    "stId" : "R-ALL-163438",
+    "displayName" : "TAG [lipid droplet]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17855",
+    "parents" : [ 8866926 ]
+  }, {
+    "dbId" : 8858282,
+    "stId" : "R-HSA-8858282",
+    "displayName" : "HILPDA:lipid droplet [lipid droplet]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4434 ],
+    "children" : [ 8858285, 8866926 ]
+  }, {
+    "dbId" : 8857655,
+    "stId" : "R-HSA-8857655",
+    "displayName" : "FITM1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A5D6W6",
+    "geneNames" : [ "FITM1", "FIT1" ],
+    "parents" : [ 8857666 ]
+  }, {
+    "dbId" : 8866774,
+    "stId" : "R-ALL-8866774",
+    "displayName" : "PL [lipid droplet]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16247",
+    "parents" : [ 8866926 ]
+  }, {
+    "dbId" : 8856629,
+    "stId" : "R-HSA-8856629",
+    "displayName" : "CIDEA:CIDEC [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4429 ],
+    "parents" : [ 8856647 ],
+    "children" : [ 8856626, 8856627 ]
+  }, {
+    "dbId" : 8856627,
+    "stId" : "R-HSA-8856627",
+    "displayName" : "CIDEC [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96AQ7",
+    "geneNames" : [ "CIDEC", "FSP27" ],
+    "parents" : [ 8856629 ]
+  }, {
+    "dbId" : 8856626,
+    "stId" : "R-HSA-8856626",
+    "displayName" : "CIDEA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60543",
+    "geneNames" : [ "CIDEA" ],
+    "parents" : [ 8856629 ]
+  }, {
+    "dbId" : 163579,
+    "stId" : "R-ALL-163579",
+    "displayName" : "CHEST [lipid droplet]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17002",
+    "parents" : [ 8866926 ]
+  }, {
+    "dbId" : 8857661,
+    "stId" : "R-HSA-8857661",
+    "displayName" : "(FITM1,FITM2):TAGs [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4460 ],
+    "children" : [ 549167, 8857666 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 8857686,
+    "stId" : "R-HSA-8857686",
+    "displayName" : "FITM1, FITM2 bind TAGs",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 549167, 8857666 ],
+    "outputs" : [ 8857661 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5967 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8856630,
+    "stId" : "R-HSA-8856630",
+    "displayName" : "CIDEA:CIDEC binds lipid droplets",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8866926, 8856629 ],
+    "outputs" : [ 8856647 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5964 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8858270,
+    "stId" : "R-HSA-8858270",
+    "displayName" : "HILPDA binds lipid droplets",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8858285, 8866926 ],
+    "outputs" : [ 8858282 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5965 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8862380,
+    "stId" : "R-HSA-8862380",
+    "displayName" : "HSD17B13 binds lipid droplets",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8862029, 8866926 ],
+    "outputs" : [ 8862370 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5966 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}
