@@ -97,6 +97,16 @@ public class PdfProfile {
 				.setTextAlignment(TextAlignment.JUSTIFIED);
 	}
 
+	public Paragraph getCitation(String text, String link) {
+		return  getParagraph(text)
+				.setFontSize(fontSize - 1)
+				.setFirstLineIndent(-15)
+				.setPaddingLeft(30)
+				.setMultipliedLeading(1)
+				.add(" ")
+				.add(Images.getLink(link, fontSize - 2f));
+	}
+
 	public Paragraph getH1(String text) {
 		return getH1(text, true);
 	}

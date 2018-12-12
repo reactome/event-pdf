@@ -18,7 +18,8 @@ public class Images {
 	 * @param size size of the link
 	 */
 	public static Image getLink(String url, float size) {
-		return new Image(LINK_DATA).scaleToFit(size, size).setAction(PdfAction.createURI(url));
+		return new Image(LINK_DATA).scaleToFit(size, size).setAction(PdfAction.createURI(url))
+				;
 	}
 
 	/**

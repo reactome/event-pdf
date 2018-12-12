@@ -10,7 +10,6 @@ import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.document.exporter.AnalysisData;
 import org.reactome.server.tools.document.exporter.DocumentArgs;
 import org.reactome.server.tools.document.exporter.DocumentProperties;
-import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.ApaStyle;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
@@ -45,14 +44,15 @@ public class PathwaysDetails implements Section {
 		document.add(new AreaBreak());
 		document.add(getTitle(profile, event, properties.getServer()));
 
-		insertDiagram(document, event, analysisData);
 		createNav(document, nav, profile);
 		insertType(document, event, profile);
 //		insertStId(document, properties, event, profile);
 		addDatabaseObjectList(document, "Cellular compartments", event.getCompartment(), profile);
 		addRelatedDiseases(document, event, profile);
 		addDatabaseObjectList(document, "Inferred from", event.getInferredFrom(), profile);
-//
+
+		insertDiagram(document, event, analysisData);
+
 		addSummations(document, event, profile);
 		addReferences(document, event, profile);
 		addEditTable(document, event, profile);
@@ -174,10 +174,9 @@ public class PathwaysDetails implements Section {
 
 	private void addDatabaseObjectList(Document document, String title, Collection<? extends DatabaseObject> objects, PdfProfile profile) {
 		if (objects != null && !objects.isEmpty()) {
-			final java.util.List<String> list = objects.stream()
+			final String body = objects.stream()
 					.map(DatabaseObject::getDisplayName)
-					.collect(Collectors.toList());
-			final String body = String.join(", ", list) + ".";
+					.collect(Collectors.joining(", "));
 			final Paragraph paragraph = profile.getParagraph("")
 					.add(new Text(title + ": ").setFont(profile.getBoldFont()))
 					.add(body);
@@ -187,7 +186,7 @@ public class PathwaysDetails implements Section {
 
 	private void addReferences(Document document, Event event, PdfProfile profile) {
 		if (event.getLiteratureReference().isEmpty()) return;
-		document.add(profile.getH3("Literature references"));
+//		document.add(profile.getH3("Literature references"));
 		event.getLiteratureReference().stream()
 				.limit(5)
 				.map(publication -> createPublication(publication, profile))
@@ -198,22 +197,25 @@ public class PathwaysDetails implements Section {
 		final java.util.List<Text> texts = ApaStyle.toApa(publication);
 		final Paragraph paragraph = profile.getParagraph("")
 				.setFirstLineIndent(-15)
-				.setPaddingLeft(15)
+				.setPaddingLeft(30)
+				.setFontSize(profile.getFontSize() - 1f)
 				.setMultipliedLeading(1);
 		texts.forEach(paragraph::add);
 		if (publication instanceof LiteratureReference) {
 			final LiteratureReference reference = (LiteratureReference) publication;
 			if (reference.getUrl() != null)
-				paragraph.add(" ").add(Images.getLink(reference.getUrl(), profile.getFontSize() - 1f));
+//				paragraph.add(" ").add(Images.getLink(reference.getUrl(), profile.getFontSize() - 2f));
+				paragraph.add(" ").add(new Text("link").setFontColor(profile.getLinkColor()).setAction(PdfAction.createURI(reference.getUrl())));
 		} else if (publication instanceof URL) {
 			final URL url = (URL) publication;
-			paragraph.add(Images.getLink(url.getUniformResourceLocator(), profile.getFontSize() - 1f));
+//			paragraph.add(Images.getLink(url.getUniformResourceLocator(), profile.getFontSize() - 2f));
+			paragraph.add(" ").add(new Text("link").setFontColor(profile.getLinkColor()).setAction(PdfAction.createURI(url.getUniformResourceLocator())));
 		}
 		return paragraph;
 	}
 
 	private void addEditTable(Document document, Event event, PdfProfile profile) {
-		document.add(profile.getH3("Edit history"));
+//		document.add(profile.getH3("Edit history"));
 		final java.util.List<Edition> editions = new LinkedList<>();
 		if (event.getCreated() != null)
 			editions.add(new Edition("Created", event.getCreated()));

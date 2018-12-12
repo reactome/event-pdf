@@ -4,7 +4,6 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.tools.document.exporter.DocumentProperties;
-import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
 import org.reactome.server.tools.document.exporter.util.PdfUtils;
@@ -37,12 +36,7 @@ public class Introduction implements Section {
 		intro.forEach(document::add);
 
 		for (Reference publication : PUBLICATIONS) {
-			document.add(profile.getParagraph(publication.text)
-					.setFirstLineIndent(-15)
-					.setPaddingLeft(15)
-					.setMultipliedLeading(1)
-					.add(" ")
-					.add(Images.getLink(publication.link, profile.getFontSize() - 1f)));
+			document.add(profile.getCitation(publication.text, publication.link));
 		}
 	}
 
