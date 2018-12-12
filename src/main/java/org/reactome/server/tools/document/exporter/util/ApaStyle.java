@@ -77,21 +77,11 @@ public class ApaStyle {
 	}
 
 	private static String toApa(List<Person> author) {
-		final StringBuilder citation = new StringBuilder();
-		if (author.size() == 1)
-			citation.append(apa(author.get(0)));
-		else if (author.size() < 8) {
-			for (int i = 0; i < author.size() - 2; i++)
-				citation.append(apa(author.get(i))).append(", ");
-			citation.append(apa(author.get(author.size() - 2)))
-					.append(" & ")
-					.append(apa(author.get(author.size() - 1)));
-		} else {
-			for (int i = 0; i < 6; i++)
-				citation.append(apa(author.get(i))).append(", ");
-			citation.append("... ").append(apa(author.get(author.size() - 1)));
-		}
-		return citation.toString();
+		return author.stream()
+				.limit(6)
+				.map(ApaStyle::apa)
+				.collect(Collectors.joining(", "))
+				+ (author.size() > 6 ? " et. al." : "");
 	}
 
 
