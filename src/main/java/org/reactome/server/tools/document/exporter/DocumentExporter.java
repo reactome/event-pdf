@@ -64,7 +64,7 @@ public class DocumentExporter {
 
 			analysisData = new AnalysisData(result, args.getResource(), args.getSpecies(), Integer.MAX_VALUE);
 		} else analysisData = null;
-		final DocumentProperties properties = new DocumentProperties(analysisData, pdfProfile, event, args);
+		final DocumentContent properties = new DocumentContent(analysisData, pdfProfile, event, args);
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
 			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome (%s)", properties.getServer()));

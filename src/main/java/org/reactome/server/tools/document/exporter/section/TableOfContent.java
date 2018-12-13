@@ -9,7 +9,7 @@ import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.tools.document.exporter.DocumentArgs;
-import org.reactome.server.tools.document.exporter.DocumentProperties;
+import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 
@@ -26,10 +26,10 @@ public class TableOfContent implements Section {
 	private final Map<String, AtomicLong> destinations = new TreeMap<>();
 
 	@Override
-	public void render(Document document, DocumentProperties properties) {
-		final PdfProfile profile = properties.getPdfProfile();
-		final Event event = properties.getEvent();
-		final DocumentArgs args = properties.getArgs();
+	public void render(Document document, DocumentContent content) {
+		final PdfProfile profile = content.getPdfProfile();
+		final Event event = content.getEvent();
+		final DocumentArgs args = content.getArgs();
 		document.add(new AreaBreak());
 		document.add(profile.getH1("Table of Contents", false));
 		document.add(profile.getH3("Introduction").setAction(PdfAction.createGoTo("introduction")).setFontColor(profile.getLinkColor()));

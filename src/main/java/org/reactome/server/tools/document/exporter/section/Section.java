@@ -1,7 +1,7 @@
 package org.reactome.server.tools.document.exporter.section;
 
 import com.itextpdf.layout.Document;
-import org.reactome.server.tools.document.exporter.DocumentProperties;
+import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.exception.DocumentExporterException;
 
 /**
@@ -11,5 +11,5 @@ import org.reactome.server.tools.document.exporter.exception.DocumentExporterExc
  */
 public interface Section {
 
-	void render(Document document, DocumentProperties properties) throws DocumentExporterException;
+	void render(Document document, DocumentContent content) throws DocumentExporterException;
 }

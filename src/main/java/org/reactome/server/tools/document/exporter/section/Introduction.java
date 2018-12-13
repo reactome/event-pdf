@@ -3,7 +3,7 @@ package org.reactome.server.tools.document.exporter.section;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Paragraph;
-import org.reactome.server.tools.document.exporter.DocumentProperties;
+import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
 import org.reactome.server.tools.document.exporter.util.PdfUtils;
@@ -29,8 +29,8 @@ public class Introduction implements Section {
 			.collect(Collectors.toList());
 
 	@Override
-	public void render(Document document, DocumentProperties properties) {
-		final PdfProfile profile = properties.getPdfProfile();
+	public void render(Document document, DocumentContent content) {
+		final PdfProfile profile = content.getPdfProfile();
 		document.add(new AreaBreak());
 		document.add(profile.getH2("Introduction").setDestination("introduction"));
 		final Collection<Paragraph> intro = HtmlParser.parseText(profile, INTRODUCTION);

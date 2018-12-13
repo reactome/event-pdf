@@ -3,17 +3,14 @@ package org.reactome.server.tools.document.exporter;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 
-import java.util.List;
-
-public class DocumentProperties {
+public class DocumentContent {
 	private AnalysisData analysisData;
 	private final PdfProfile pdfProfile;
 	private final Event event;
 	private final DocumentArgs args;
-	private List<Event> nav;
 	private String server;
 
-	public DocumentProperties(AnalysisData analysisData, PdfProfile pdfProfile, Event event, DocumentArgs args) {
+	public DocumentContent(AnalysisData analysisData, PdfProfile pdfProfile, Event event, DocumentArgs args) {
 		this.analysisData = analysisData;
 		this.pdfProfile = pdfProfile;
 		this.event = event;
@@ -21,15 +18,6 @@ public class DocumentProperties {
 		this.server = analysisData != null
 				? analysisData.getServerName()
 				: "https://reactome.org";
-	}
-
-
-	public void setNav(List<Event> nav) {
-		this.nav = nav;
-	}
-
-	public List<Event> getNav() {
-		return nav;
 	}
 
 	public AnalysisData getAnalysisData() {
