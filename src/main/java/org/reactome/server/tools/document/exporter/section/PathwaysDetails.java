@@ -30,6 +30,7 @@ import java.util.stream.Collectors;
  */
 public class PathwaysDetails implements Section {
 
+	private static final List<String> EDIT_ORDER = Arrays.asList("Authored", "Created", "Edited", "Modified", "Reviewed", "Revised");
 	private static final String CONTENT_DETAIL = "/content/detail/";
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
@@ -144,7 +145,6 @@ public class PathwaysDetails implements Section {
 		if (entities.isEmpty()) return;
 		document.add(profile.getH3(String.format("Entities found in the analysis (%d)", entities.size())));
 		for (String resource : analysisData.getResources()) {
-//			document.add(profile.getParagraph(""));
 			addIdentifiers(document, entities, resource, analysisData, profile);
 		}
 	}
@@ -237,7 +237,7 @@ public class PathwaysDetails implements Section {
 
 	private void addReferences(Document document, Event event, PdfProfile profile) {
 		if (event.getLiteratureReference().isEmpty()) return;
-//		document.add(profile.getH3("Literature references"));
+		document.add(profile.getH3("Literature references"));
 		event.getLiteratureReference().stream()
 				.limit(5)
 				.map(publication -> createPublication(publication, profile))
@@ -266,7 +266,7 @@ public class PathwaysDetails implements Section {
 	}
 
 	private void addEditTable(Document document, Event event, PdfProfile profile) {
-//		document.add(profile.getH3("Edit history"));
+		document.add(profile.getH3("Edit history"));
 		final java.util.List<Edition> editions = new LinkedList<>();
 		if (event.getCreated() != null)
 			editions.add(new Edition("Created", event.getCreated()));
@@ -307,7 +307,8 @@ public class PathwaysDetails implements Section {
 		for (int row = 0; row < edits.size(); row++) {
 			java.util.List<Edition> list = edits.get(row);
 			final String date = list.get(0).getDate();
-			final String action = list.stream().map(Edition::getType).distinct().collect(Collectors.joining(", "));
+			final String action = list.stream().map(Edition::getType).distinct().sorted(Comparator.comparingInt(EDIT_ORDER::indexOf))
+					.collect(Collectors.joining(", "));
 			final String authors = asString(list.stream().map(Edition::getAuthors).flatMap(Collection::stream).collect(Collectors.toSet()));
 			table.addCell(profile.getBodyCell(date, row));
 			table.addCell(profile.getBodyCell(action, row));
@@ -322,7 +323,7 @@ public class PathwaysDetails implements Section {
 	}
 
 	private String asString(Collection<Person> persons, int maxAuthors) {
-		if (persons == null) return "";
+		if (persons.isEmpty()) return "";
 		String text = persons.stream()
 				.limit(maxAuthors)
 				.map(this::getGetDisplayName)
