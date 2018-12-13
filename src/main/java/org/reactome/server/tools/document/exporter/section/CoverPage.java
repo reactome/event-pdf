@@ -1,11 +1,15 @@
 package org.reactome.server.tools.document.exporter.section;
 
 import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.HorizontalAlignment;
+import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
+import org.reactome.server.tools.document.exporter.util.HtmlParser;
+import org.reactome.server.tools.document.exporter.util.PdfUtils;
 
 import java.text.SimpleDateFormat;
 
@@ -24,6 +28,9 @@ public class CoverPage implements Section {
 		document.add(profile.getTitle(""));
 		document.add(profile.getTitle(event.getDisplayName()));
 		document.add(profile.getTitle(""));
+		for (Paragraph paragraph : HtmlParser.parseText(profile, PdfUtils.getProperty("cover.page.disclaimer"))) {
+			document.add(paragraph.setTextAlignment(TextAlignment.CENTER));
+		}
 
 //		final String link = analysisData.getServerName() + "/PathwayBrowser/#/ANALYSIS=" + analysisData.getResult().getSummary().getToken();
 
