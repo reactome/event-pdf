@@ -26,7 +26,8 @@ public class AppTest extends BaseTest {
 	private static final String ANALYSIS_PATH = ROOT + "analysis";
 	private static final String FIREWORKS_PATH = ROOT + "fireworks";
 	private static final String SVGSUMMARY = ROOT + "ehld/svgsummary.txt";
-	private static final String TOKEN = "MjAxODEwMzAxMDIzMDBfNQ%253D%253D"; // HPA (GeneName)
+	private static final String TOKEN_EXP = "MjAxODEwMzAxMDIzMDBfNQ%253D%253D"; // HPA (GeneName)
+	private static final String TOKEN_OVER = "MjAxODExMDEwNzI3NDNfOA%253D%253D"; // HPA (GeneName)
 	@Autowired
 	private DatabaseObjectService databaseObjectService;
 	@Autowired
@@ -53,15 +54,15 @@ public class AppTest extends BaseTest {
 	@Test
 	public void test() {
 		final DocumentExporter documentExporter = new DocumentExporter(DIAGRAM_PATH, EHLD_PATH, ANALYSIS_PATH, FIREWORKS_PATH, SVGSUMMARY, diagramService, databaseObjectService, generalService, advancedDatabaseObjectService);
-//		final String stId = "R-HSA-354192";   // Integrin alphaIIb beta3 signaling (pathway)
+		final String stId = "R-HSA-354192";   // Integrin alphaIIb beta3 signaling (pathway)
 //		final String stId = "R-HSA-8963743";  // Digestion and absorption (small)
-		final String stId = "R-HSA-112316";  // Neuronal system
+//		final String stId = "R-HSA-112316";  // Neuronal system
 //		final String stId = "R-HSA-1430728";  // Metabolism (large)
 		try {
 			final long start = System.nanoTime();
 			final File file = new File(TEST_DOCS, stId + ".pdf");
-			final AnalysisStoredResult result = new TokenUtils(ANALYSIS_PATH).getFromToken(TOKEN);
-			documentExporter.export(new DocumentArgs(stId).setMaxLevel(15), null, new FileOutputStream(file));
+			final AnalysisStoredResult result = new TokenUtils(ANALYSIS_PATH).getFromToken(TOKEN_OVER);
+			documentExporter.export(new DocumentArgs(stId).setMaxLevel(1), result, new FileOutputStream(file));
 			final long end = System.nanoTime();
 			System.out.println(formatTime(end - start));
 		} catch (FileNotFoundException e) {

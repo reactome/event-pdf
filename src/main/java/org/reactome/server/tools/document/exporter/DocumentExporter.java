@@ -27,18 +27,12 @@ import java.util.Locale;
 public class DocumentExporter {
 
 	private static final ObjectMapper MAPPER = new ObjectMapper();
-	private final List<Section> SECTIONS = Arrays.asList(
-			new CoverPage(),
-			new TableOfContent(),
-			new Introduction(),
-//			new PropertiesSection(),
-//			new TopPathwayTable(),
-			new PathwaysDetails()
-	);
 	private DatabaseObjectService databaseObjectService;
+	private AdvancedDatabaseObjectService advancedDatabaseObjectService;
 
 
 	public DocumentExporter(String diagramPath, String ehldPath, String analysisPath, String fireworksPath, String svgSummary, DiagramService diagramService, DatabaseObjectService databaseObjectService, GeneralService generalService, AdvancedDatabaseObjectService advancedDatabaseObjectService) {
+		this.advancedDatabaseObjectService = advancedDatabaseObjectService;
 		ImageFactory.setPaths(diagramPath, ehldPath, analysisPath, fireworksPath, svgSummary);
 		Locale.setDefault(Locale.ENGLISH);
 		ImageFactory.setDiagramService(diagramService);
@@ -79,6 +73,12 @@ public class DocumentExporter {
 					pdfProfile.getMargin().getLeft());
 			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, properties.getServer()));
 //			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new HeaderEventHandler(document, data));
+			final List<Section> SECTIONS = Arrays.asList(
+					new CoverPage(),
+					new TableOfContent(),
+					new Introduction(),
+					new PathwaysDetails(advancedDatabaseObjectService)
+			);
 			for (Section section : SECTIONS)
 				section.render(document, properties);
 		}

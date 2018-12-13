@@ -4,9 +4,12 @@ import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.*;
-import org.reactome.server.analysis.core.result.model.FoundEntities;
+import org.reactome.server.analysis.core.model.AnalysisType;
+import org.reactome.server.analysis.core.result.model.FoundEntity;
 import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.graph.domain.model.*;
+import org.reactome.server.graph.exception.CustomQueryException;
+import org.reactome.server.graph.service.AdvancedDatabaseObjectService;
 import org.reactome.server.tools.document.exporter.AnalysisData;
 import org.reactome.server.tools.document.exporter.DocumentArgs;
 import org.reactome.server.tools.document.exporter.DocumentContent;
@@ -24,27 +27,32 @@ import java.util.stream.Collectors;
  * Section PathwaysDetails contains the detail info for top hit pathways(sorted by
  * p-value), include the overlay diagram image, entities mapped and description
  * for each pathway.
- *
- * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class PathwaysDetails implements Section {
 
 	private static final String CONTENT_DETAIL = "/content/detail/";
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
+	// This should be used the same way as in the TOC,
+	// to get the anchor for an event call get(ev.getStId),
+	// to create a new anchor, get(ev.stId).incrementAndGet()
 	private final Map<String, AtomicLong> destinations = new TreeMap<>();
+	private AdvancedDatabaseObjectService advancedDatabaseObjectService;
 
+	public PathwaysDetails(AdvancedDatabaseObjectService advancedDatabaseObjectService) {
+		this.advancedDatabaseObjectService = advancedDatabaseObjectService;
+	}
 	@Override
 	public void render(Document document, DocumentContent content) {
 		details(document, content, content.getEvent(), Collections.emptyList(), 0);
 	}
 
-	private void details(Document document, DocumentContent properties, Event event, java.util.List<Event> nav, int level) {
-		final PdfProfile profile = properties.getPdfProfile();
-		final AnalysisData analysisData = properties.getAnalysisData();
-		final DocumentArgs args = properties.getArgs();
+	private void details(Document document, DocumentContent content, Event event, java.util.List<Event> nav, int level) {
+		final PdfProfile profile = content.getPdfProfile();
+		final AnalysisData analysisData = content.getAnalysisData();
+		final DocumentArgs args = content.getArgs();
 		document.add(new AreaBreak());
-		document.add(getTitle(profile, event, properties.getServer()));
+		document.add(getTitle(profile, event, content.getServer()));
 
 		createNav(document, nav, profile);
 		insertType(document, event, profile);
@@ -59,14 +67,18 @@ public class PathwaysDetails implements Section {
 		addReferences(document, event, profile);
 		addEditTable(document, event, profile);
 
-		if (event instanceof Pathway && level < args.getMaxLevel()) {
+		if (content.getAnalysisData() != null) {
+			addFoundElements(document, content.getAnalysisData(), event, content.getPdfProfile());
+			addFoundInteractors(document, content.getAnalysisData(), event, content.getPdfProfile());
+		}
+		if (level < args.getMaxLevel() && event instanceof Pathway) {
 			final Pathway pathway = (Pathway) event;
 			final java.util.List<Event> events = pathway.getHasEvent();
 			events.sort(Comparator.comparingInt(ev -> classOrder.indexOf(ev.getSchemaClass())));
 			final ArrayList<Event> nav2 = new ArrayList<>(nav);
 			nav2.add(event);
 			for (Event ev : events) {
-				details(document, properties, ev, nav2, level + 1);
+				details(document, content, ev, nav2, level + 1);
 			}
 		}
 	}
@@ -127,26 +139,59 @@ public class PathwaysDetails implements Section {
 				.setDestination(destination);
 	}
 
-	private void addFoundElements(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {
-		final FoundEntities foundEntities = analysisData.getResult().getFoundEntities(pathway.getStId());
-		if (foundEntities.getIdentifiers().isEmpty()) return;
-		document.add(profile.getH3(String.format("Entities found in this pathway (%d)", foundEntities.getIdentifiers().size())));
+	private void addFoundElements(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
+		final Collection<FoundEntity> entities = getFoundEntities(analysisData, event);
+		if (entities.isEmpty()) return;
+		document.add(profile.getH3(String.format("Entities found in the analysis (%d)", entities.size())));
 		for (String resource : analysisData.getResources()) {
-			document.add(profile.getParagraph(""));
-			addIdentifiers(document, foundEntities.filter(resource), resource, profile);
+//			document.add(profile.getParagraph(""));
+			addIdentifiers(document, entities, resource, analysisData, profile);
 		}
 	}
 
-	private void addIdentifiers(Document document, FoundEntities elements, String resource, PdfProfile profile) {
-		if (elements.getIdentifiers().isEmpty()) return;
-		final Table identifiersTable = elements.getExpNames() == null || elements.getExpNames().isEmpty()
-				? Tables.createEntitiesTable(elements.getIdentifiers(), resource, profile)
-				: Tables.getExpressionTable(elements.getIdentifiers(), resource, profile, elements.getExpNames());
+	private Collection<FoundEntity> getFoundEntities(AnalysisData analysisData, Event event) {
+		if (event instanceof Pathway)
+			return analysisData.getResult().getFoundEntities(event.getStId()).filter(analysisData.getResource()).getIdentifiers();
+		final ReactionLikeEvent reaction = (ReactionLikeEvent) event;
+		if (reaction.getEventOf().isEmpty()) return Collections.emptyList();
+		final List<FoundEntity> identifiers = analysisData.getResult().getFoundEntities(reaction.getEventOf().get(0).getStId()).filter(analysisData.getResource()).getIdentifiers();
+		final Collection<String> idsInEvent = getIdsInReaction(reaction);
+		final Collection<FoundEntity> found = new ArrayList<>();
+		for (FoundEntity identifier : identifiers) {
+			if (identifier.getMapsTo().stream().anyMatch(map -> map.getIds().stream().anyMatch(idsInEvent::contains)))
+				found.add(identifier);
+		}
+		return found;
+	}
+
+	private Collection<String> getIdsInReaction(ReactionLikeEvent reaction) {
+		final Map<String, Object> map = new HashMap<>();
+		map.put("stId", reaction.getStId());
+		final String query = "" +
+				"MATCH (r:ReactionLikeEvent{stId:{stId}})," +
+				" (r)-[:input|output|catalystActivity|physicalEntity|regulatedBy|regulator|hasComponent|hasMember|hasCandidate*]->(pe:PhysicalEntity)," +
+				" (pe)-[:referenceEntity]->(re:ReferenceEntity)" +
+				" RETURN DISTINCT re.identifier";
+		try {
+			return advancedDatabaseObjectService.getCustomQueryResults(String.class, query, map);
+		} catch (CustomQueryException e) {
+			e.printStackTrace();
+		}
+
+		return Collections.emptyList();
+	}
+
+	private void addIdentifiers(Document document, Collection<FoundEntity> elements, String resource, AnalysisData analysisData, PdfProfile profile) {
+		if (elements.isEmpty()) return;
+		final Table identifiersTable = analysisData.getType() == AnalysisType.EXPRESSION
+				? Tables.getExpressionTable(elements, resource, profile, analysisData.getResult().getExpressionSummary().getColumnNames())
+				: Tables.createEntitiesTable(elements, resource, profile);
 		document.add(identifiersTable);
 	}
 
-	private void addFoundInteractors(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {
-		final FoundInteractors interactors = analysisData.getResult().getFoundInteractors(pathway.getStId());
+	private void addFoundInteractors(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
+		final FoundInteractors interactors = analysisData.getResult().getFoundInteractors(event.getStId());
+		if (interactors == null) return;
 		if (interactors.getIdentifiers().isEmpty()) return;
 		document.add(profile.getH3(String.format("Interactors found in this pathway (%d)", interactors.getIdentifiers().size())));
 		for (String resource : analysisData.getResources()) {
@@ -288,12 +333,6 @@ public class PathwaysDetails implements Section {
 
 	private String getGetDisplayName(Person person) {
 		return person.getDisplayName() + ".";
-	}
-
-	private String initials(String name) {
-		return Arrays.stream(name.split(" "))
-				.map(n -> n.substring(0, 1).toUpperCase())
-				.collect(Collectors.joining(" "));
 	}
 
 	private class Edition {

@@ -41,7 +41,7 @@ class Tables {
 		table.addHeaderCell(profile.getHeaderCell(INPUT));
 		table.addHeaderCell(profile.getHeaderCell(resource + " Id"));
 		for (int i = 0; i < rows; i++)
-			table.addHeaderCell(profile.getHeaderCell(ellipsis(columnNames.get(i), 12)));
+			table.addHeaderCell(profile.getHeaderCell(ellipsis(columnNames.get(i), 11)));
 		int row = 0;
 		for (FoundEntity entity : entities) {
 			table.addCell(profile.getBodyCell(entity.getId(), row));
@@ -104,7 +104,7 @@ class Tables {
 
 	private static Table createEntitiesTable(Collection<FoundEntity> entities, String resource, PdfProfile profile, int columns) {
 		final float[] widths = new float[2 * columns + (columns - 1)];
-		for (int i = 0; i < columns; i++) {
+		for (int i = 0; i < widths.length; i+= 3) {
 			widths[i] = 2f;
 			widths[i + 1] = 2f;
 			if (i + 2 < widths.length) {
@@ -128,16 +128,23 @@ class Tables {
 				.sorted(Comparator.comparing(IdentifierSummary::getId))
 				.distinct()
 				.collect(Collectors.toList());
+		int filled = 0;
 		for (FoundEntity identifier : identifiers) {
 			final int column = i % columns;
 			final int row = i / columns;
 			table.addCell(profile.getBodyCell(identifier.getId(), row));
 			table.addCell(profile.getBodyCell(toString(identifier.getMapsTo()), row));
-			if (column < columns - 1)
+			filled += 2;
+			if (column < columns - 1) {
+				filled += 1;
 				table.addCell(profile.getBodyCell("", 0));
+			}
 			i += 1;
 		}
-		fillLastRow(table, identifiers.size(), 0, profile);
+		while (filled++ % widths.length != 0) {
+			table.addCell(profile.getBodyCell("", 0));
+		}
+//		fillLastRow(table, identifiers.size(), 0, profile);
 		return table;
 	}
 

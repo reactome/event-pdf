@@ -23,6 +23,9 @@ public class TableOfContent implements Section {
 
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
+	// This should be used the same way as in the PathwaysDetails,
+	// to get the anchor for an event call get(ev.getStId),
+	// to create a new anchor, get(ev.stId).incrementAndGet()
 	private final Map<String, AtomicLong> destinations = new TreeMap<>();
 
 	@Override
