@@ -5,7 +5,6 @@ import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.analysis.core.result.model.AnalysisSummary;
 import org.reactome.server.tools.document.exporter.AnalysisData;
-import org.reactome.server.tools.document.exporter.DocumentArgs;
 import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
@@ -28,11 +27,11 @@ public class PropertiesSection implements Section {
 
 	@Override
 	public void render(Document document, DocumentContent content) {
+		if (content.getAnalysisData() == null) return;
 		final PdfProfile profile = content.getPdfProfile();
 		final AnalysisData analysisData = content.getAnalysisData();
-		final DocumentArgs args = content.getArgs();
 		document.add(new AreaBreak());
-		document.add(profile.getH1("Properties").setDestination("properties"));
+		document.add(profile.getH1("Analysis properties", false).setDestination("properties"));
 		final List<Paragraph> list = new LinkedList<>();
 
 		final String text = PdfUtils.getProperty(analysisData.getResult().getSummary().getType().toLowerCase());
@@ -44,7 +43,8 @@ public class PropertiesSection implements Section {
 		final String serverName = analysisData.getServerName();
 		list.add(HtmlParser.parseParagraph(text, profile)
 				.add(" ")
-				.add(Images.getLink(serverName + ANALYSIS_PATH, profile.getFontSize())));
+				.add(profile.getLink("See more", serverName + ANALYSIS_PATH)));
+//				.add(Images.getLink(serverName + ANALYSIS_PATH, profile.getFontSize())));
 
 		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("identifiers.found"),
 				found, found + notFound, analysisData.getResult().getPathways().size())));

@@ -222,4 +222,8 @@ public class PdfProfile {
 					.setMultipliedLeading(1.0f));
 		return cell;
 	}
+
+	public Text getLink(String text, String link) {
+		return new Text(text).setFontColor(LINK_COLOR).setAction(PdfAction.createURI(link));
+	}
 }

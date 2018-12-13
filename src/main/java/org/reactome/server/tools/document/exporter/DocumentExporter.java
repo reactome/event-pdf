@@ -77,6 +77,7 @@ public class DocumentExporter {
 					new CoverPage(),
 					new TableOfContent(),
 					new Introduction(),
+					new PropertiesSection(),
 					new PathwaysDetails(advancedDatabaseObjectService)
 			);
 			for (Section section : SECTIONS)

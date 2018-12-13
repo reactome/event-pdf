@@ -36,6 +36,8 @@ public class TableOfContent implements Section {
 		document.add(new AreaBreak());
 		document.add(profile.getH1("Table of Contents", false));
 		document.add(profile.getH3("Introduction").setAction(PdfAction.createGoTo("introduction")).setFontColor(profile.getLinkColor()));
+		if (content.getAnalysisData() != null)
+			document.add(profile.getH3("Analysis properties").setAction(PdfAction.createGoTo("properties")).setFontColor(profile.getLinkColor()));
 
 		addToc(document, profile, event, args.getMaxLevel());
 	}
