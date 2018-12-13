@@ -1,0 +1,149 @@
+{
+  "dbId" : 6794362,
+  "stableId" : "R-HSA-6794362",
+  "displayName" : "Protein-protein interactions at synapses",
+  "nodes" : [ {
+    "id" : 3,
+    "reactomeId" : 6794361,
+    "displayName" : "Neurexins and neuroligins",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 144,
+      "y" : 90
+    },
+    "minX" : 40,
+    "maxX" : 248,
+    "minY" : 48,
+    "maxY" : 133,
+    "prop" : {
+      "x" : 40,
+      "y" : 48,
+      "width" : 208,
+      "height" : 85
+    },
+    "textPosition" : {
+      "x" : 61,
+      "y" : 76
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 388844,
+    "displayName" : "Receptor-type tyrosine-protein phosphatases",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 552,
+      "y" : 92
+    },
+    "minX" : 472,
+    "maxX" : 633,
+    "minY" : 55,
+    "maxY" : 129,
+    "prop" : {
+      "x" : 472,
+      "y" : 55,
+      "width" : 161,
+      "height" : 74
+    },
+    "textPosition" : {
+      "x" : 474,
+      "y" : 70
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 8849932,
+    "displayName" : "Synaptic adhesion-like molecules",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 367,
+      "y" : 91
+    },
+    "minX" : 269,
+    "maxX" : 465,
+    "minY" : 49,
+    "maxY" : 134,
+    "prop" : {
+      "x" : 269,
+      "y" : 49,
+      "width" : 196,
+      "height" : 85
+    },
+    "textPosition" : {
+      "x" : 292,
+      "y" : 70
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ {
+    "id" : 5,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 324,
+      "y" : 96
+    },
+    "minX" : 0,
+    "maxX" : 649,
+    "minY" : 0,
+    "maxY" : 193,
+    "prop" : {
+      "x" : 0,
+      "y" : 0,
+      "width" : 649,
+      "height" : 193
+    },
+    "textPosition" : {
+      "x" : 296,
+      "y" : 137
+    },
+    "insets" : {
+      "x" : 10,
+      "y" : 10,
+      "width" : 629,
+      "height" : 174
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 3, 4, 6, 7 ]
+  } ],
+  "notes" : [ {
+    "id" : 6,
+    "displayName" : "Neuronal site",
+    "renderableClass" : "Note",
+    "position" : {
+      "x" : 251,
+      "y" : 153
+    },
+    "minX" : 209,
+    "maxX" : 294,
+    "minY" : 139,
+    "maxY" : 168,
+    "prop" : {
+      "x" : 209,
+      "y" : 139,
+      "width" : 85,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 209,
+      "y" : 143
+    }
+  } ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 649,
+  "minY" : 0,
+  "maxY" : 193,
+  "disease" : false
+}

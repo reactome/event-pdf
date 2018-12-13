@@ -1,0 +1,224 @@
+{
+  "dbId" : 112308,
+  "stId" : "R-HSA-112308",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 74112,
+    "stId" : "R-ALL-74112",
+    "displayName" : "Ca2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 210402,
+    "stId" : "R-HSA-210402",
+    "displayName" : "CACNA2D3 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZS8",
+    "geneNames" : [ "CACNA2D3" ],
+    "parents" : [ 210460 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 210401,
+    "stId" : "R-HSA-210401",
+    "displayName" : "CACNB3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P54284",
+    "geneNames" : [ "CACNB3", "CACNLB3" ],
+    "parents" : [ 210504, 210517 ]
+  }, {
+    "dbId" : 210496,
+    "stId" : "R-HSA-210496",
+    "displayName" : "CACNB2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08289",
+    "geneNames" : [ "CACNB2", "CACNLB2", "MYSB" ],
+    "parents" : [ 210517 ]
+  }, {
+    "dbId" : 210375,
+    "stId" : "R-HSA-210375",
+    "displayName" : "CACNG2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y698",
+    "geneNames" : [ "CACNG2" ],
+    "parents" : [ 210492, 210504 ]
+  }, {
+    "dbId" : 210411,
+    "stId" : "R-HSA-210411",
+    "displayName" : "CACNA2D1(1-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UIU0",
+    "geneNames" : [ "CACNA2D1" ],
+    "parents" : [ 210460 ]
+  }, {
+    "dbId" : 210378,
+    "stId" : "R-HSA-210378",
+    "displayName" : "Voltage Gated Ca2+ Channel [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "children" : [ 210492, 210504, 210394 ]
+  }, {
+    "dbId" : 210409,
+    "stId" : "R-HSA-210409",
+    "displayName" : "CACNA1B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q00975",
+    "geneNames" : [ "CACNA1B", "CACH5", "CACNL1A5" ],
+    "parents" : [ 210504 ]
+  }, {
+    "dbId" : 210504,
+    "stId" : "R-HSA-210504",
+    "displayName" : "calcium channel multimer of N type VGCC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 210378 ],
+    "children" : [ 210460, 210409, 210375, 210401 ]
+  }, {
+    "dbId" : 210446,
+    "stId" : "R-HSA-210446",
+    "displayName" : "CACNA2D2(19-1150) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NY47",
+    "geneNames" : [ "CACNA2D2", "KIAA0558" ],
+    "parents" : [ 210460 ]
+  }, {
+    "dbId" : 74126,
+    "stId" : "R-ALL-74126",
+    "displayName" : "K+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6 ],
+    "identifier" : "29103"
+  }, {
+    "dbId" : 210417,
+    "stId" : "R-HSA-210417",
+    "displayName" : "CACNG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UBN1",
+    "geneNames" : [ "CACNG4" ],
+    "parents" : [ 210394 ]
+  }, {
+    "dbId" : 5672066,
+    "stId" : "R-HSA-5672066",
+    "displayName" : "CACFD1 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "children" : [ 5216218 ]
+  }, {
+    "dbId" : 5216218,
+    "stId" : "R-HSA-5216218",
+    "displayName" : "CACFD1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UGQ2",
+    "geneNames" : [ "CACFD1", "C9orf7", "PSEC0107", "PSEC0248", "UNQ3071/PRO9903" ],
+    "parents" : [ 5672066 ]
+  }, {
+    "dbId" : 210518,
+    "stId" : "R-HSA-210518",
+    "displayName" : "CACNB4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00305",
+    "geneNames" : [ "CACNB4", "CACNLB4" ],
+    "parents" : [ 210492, 210517 ]
+  }, {
+    "dbId" : 210517,
+    "stId" : "R-HSA-210517",
+    "displayName" : "beta subunit of VGCC [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 210394 ],
+    "children" : [ 210493, 210518, 210496, 210401 ]
+  }, {
+    "dbId" : 210356,
+    "stId" : "R-HSA-210356",
+    "displayName" : "CACNA1E [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15878",
+    "geneNames" : [ "CACNA1E", "CACH6", "CACNL1A6" ],
+    "parents" : [ 210394 ]
+  }, {
+    "dbId" : 210490,
+    "stId" : "R-HSA-210490",
+    "displayName" : "CACNA1A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00555",
+    "geneNames" : [ "CACNA1A", "CACH4", "CACN3", "CACNL1A4" ],
+    "parents" : [ 210492 ]
+  }, {
+    "dbId" : 210394,
+    "stId" : "R-HSA-210394",
+    "displayName" : "calcium channel multimer of R type VGCC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 210378 ],
+    "children" : [ 210460, 210356, 210517, 210417 ]
+  }, {
+    "dbId" : 210493,
+    "stId" : "R-HSA-210493",
+    "displayName" : "CACNB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q02641",
+    "geneNames" : [ "CACNB1", "CACNLB1" ],
+    "parents" : [ 210517 ]
+  }, {
+    "dbId" : 210460,
+    "stId" : "R-HSA-210460",
+    "displayName" : "Alpha 2 delta subunits of VGCC [extracellular region]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 210492, 210504, 210394 ],
+    "children" : [ 210446, 210411, 210402 ]
+  }, {
+    "dbId" : 210492,
+    "stId" : "R-HSA-210492",
+    "displayName" : "calcium channel multimer of P/Q type VGCC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 210378 ],
+    "children" : [ 210460, 210490, 210518, 210375 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 5263618,
+    "stId" : "R-HSA-5263618",
+    "displayName" : "CACFD1 dimer transports Ca2+ from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74112 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 5672066 ],
+    "efs" : [ ],
+    "diagramIds" : [ 7 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 210420,
+    "stId" : "R-HSA-210420",
+    "displayName" : "Ca2+ influx through voltage gated Ca2+ channels",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74112 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 210378 ],
+    "efs" : [ ],
+    "inhibitors" : [ 74126 ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

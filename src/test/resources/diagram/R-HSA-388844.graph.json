@@ -1,0 +1,352 @@
+{
+  "dbId" : 388844,
+  "stId" : "R-HSA-388844",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 6797862,
+    "stId" : "R-HSA-6797862",
+    "displayName" : "SLITRK6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H5Y7",
+    "geneNames" : [ "SLITRK6" ],
+    "parents" : [ 6797785 ]
+  }, {
+    "dbId" : 6797859,
+    "stId" : "R-HSA-6797859",
+    "displayName" : "SLITRK3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O94933",
+    "geneNames" : [ "SLITRK3", "KIAA0848" ],
+    "parents" : [ 6797785 ]
+  }, {
+    "dbId" : 6798240,
+    "stId" : "R-HSA-6798240",
+    "displayName" : "NTRK3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "identifier" : "Q16288",
+    "geneNames" : [ "NTRK3", "TRKC" ],
+    "parents" : [ 6798231 ]
+  }, {
+    "dbId" : 6797868,
+    "stId" : "R-HSA-6797868",
+    "displayName" : "PTPRD [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ],
+    "identifier" : "P23468",
+    "geneNames" : [ "PTPRD" ],
+    "parents" : [ 6797827, 6800384, 6798238, 6797901 ]
+  }, {
+    "dbId" : 6798251,
+    "stId" : "R-HSA-6798251",
+    "displayName" : "LRRC4B:PTPRF,PTPRS,PTPRD [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 23 ],
+    "children" : [ 6798248, 6798238 ]
+  }, {
+    "dbId" : 6798248,
+    "stId" : "R-HSA-6798248",
+    "displayName" : "LRRC4B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 22 ],
+    "identifier" : "Q9NT99",
+    "geneNames" : [ "LRRC4B", "LRIG4" ],
+    "parents" : [ 6798251 ]
+  }, {
+    "dbId" : 6786486,
+    "stId" : "R-HSA-6786486",
+    "displayName" : "PTPRF [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10586",
+    "geneNames" : [ "PTPRF", "LAR" ],
+    "parents" : [ 6798238 ]
+  }, {
+    "dbId" : 383380,
+    "stId" : "R-HSA-383380",
+    "displayName" : "PPFIA2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75334",
+    "geneNames" : [ "PPFIA2" ],
+    "parents" : [ 383385 ]
+  }, {
+    "dbId" : 383383,
+    "stId" : "R-HSA-383383",
+    "displayName" : "PPFIA4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75335",
+    "geneNames" : [ "PPFIA4", "KIAA0897" ],
+    "parents" : [ 383385 ]
+  }, {
+    "dbId" : 383382,
+    "stId" : "R-HSA-383382",
+    "displayName" : "PPFIA3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75145",
+    "geneNames" : [ "PPFIA3", "KIAA0654" ],
+    "parents" : [ 383385 ]
+  }, {
+    "dbId" : 383377,
+    "stId" : "R-HSA-383377",
+    "displayName" : "PPFIA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13136",
+    "geneNames" : [ "PPFIA1", "LIP1" ],
+    "parents" : [ 383385 ]
+  }, {
+    "dbId" : 383385,
+    "stId" : "R-HSA-383385",
+    "displayName" : "Alpha-liprins [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 6799309 ],
+    "children" : [ 383377, 383382, 383383, 383380 ]
+  }, {
+    "dbId" : 383387,
+    "stId" : "R-HSA-383387",
+    "displayName" : "LAR,PTPRS,PTPRD:Liprins [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 26 ],
+    "children" : [ 6799309, 6798238 ]
+  }, {
+    "dbId" : 6799300,
+    "stId" : "R-HSA-6799300",
+    "displayName" : "PPFIBP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86W92",
+    "geneNames" : [ "PPFIBP1", "KIAA1230" ],
+    "parents" : [ 6799298 ]
+  }, {
+    "dbId" : 6797827,
+    "stId" : "R-HSA-6797827",
+    "displayName" : "SLITRK1-6:PTPRD [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 10 ],
+    "children" : [ 6797785, 6797868 ]
+  }, {
+    "dbId" : 6799298,
+    "stId" : "R-HSA-6799298",
+    "displayName" : "Beta-liprins [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 6799309 ],
+    "children" : [ 6799320, 6799300 ]
+  }, {
+    "dbId" : 6797888,
+    "stId" : "R-HSA-6797888",
+    "displayName" : "IL1RAPL2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NP60",
+    "geneNames" : [ "IL1RAPL2", "IL1R9" ],
+    "parents" : [ 6797845 ]
+  }, {
+    "dbId" : 6800384,
+    "stId" : "R-HSA-6800384",
+    "displayName" : "PTPRD:IL1RAP-1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "children" : [ 6797868, 445745 ]
+  }, {
+    "dbId" : 6797901,
+    "stId" : "R-HSA-6797901",
+    "displayName" : "PTPRD:IL1RAPL1,(IL1RAPL2) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "children" : [ 6797868, 6797845 ]
+  }, {
+    "dbId" : 6799309,
+    "stId" : "R-HSA-6799309",
+    "displayName" : "Liprins [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 25 ],
+    "parents" : [ 383387 ],
+    "children" : [ 383385, 6799298 ]
+  }, {
+    "dbId" : 6797834,
+    "stId" : "R-HSA-6797834",
+    "displayName" : "SLITRK5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O94991",
+    "geneNames" : [ "SLITRK5", "KIAA0918", "LRRC11" ],
+    "parents" : [ 6797785 ]
+  }, {
+    "dbId" : 6798231,
+    "stId" : "R-HSA-6798231",
+    "displayName" : "PTPRS:NTRK3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 17 ],
+    "children" : [ 6798240, 197680 ]
+  }, {
+    "dbId" : 6797845,
+    "stId" : "R-HSA-6797845",
+    "displayName" : "IL1RAPL1,(IL1RAPL2) [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3 ],
+    "parents" : [ 6797901 ],
+    "children" : [ 6797888, 6797781 ]
+  }, {
+    "dbId" : 6797781,
+    "stId" : "R-HSA-6797781",
+    "displayName" : "IL1RAPL1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NZN1",
+    "geneNames" : [ "IL1RAPL1", "OPHN4" ],
+    "parents" : [ 6797845 ]
+  }, {
+    "dbId" : 197680,
+    "stId" : "R-HSA-197680",
+    "displayName" : "PTPRS [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 16 ],
+    "identifier" : "Q13332",
+    "geneNames" : [ "PTPRS" ],
+    "parents" : [ 6798231, 6798238 ]
+  }, {
+    "dbId" : 6797843,
+    "stId" : "R-HSA-6797843",
+    "displayName" : "SLITRK1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96PX8",
+    "geneNames" : [ "SLITRK1", "KIAA1910", "LRRC12", "UNQ233/PRO266" ],
+    "parents" : [ 6797785 ]
+  }, {
+    "dbId" : 6797778,
+    "stId" : "R-HSA-6797778",
+    "displayName" : "SLITRK2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H156",
+    "geneNames" : [ "SLITRK2", "CXorf2", "KIAA1854", "SLITL1", "UNQ9197/PRO34756" ],
+    "parents" : [ 6797785 ]
+  }, {
+    "dbId" : 445745,
+    "stId" : "R-HSA-445745",
+    "displayName" : "IL1RAP-1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6 ],
+    "identifier" : "Q9NPH3-1",
+    "geneNames" : [ "IL1RAP", "C3orf13", "IL1R3" ],
+    "parents" : [ 6800384 ]
+  }, {
+    "dbId" : 6797855,
+    "stId" : "R-HSA-6797855",
+    "displayName" : "SLITRK4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IW52",
+    "geneNames" : [ "SLITRK4" ],
+    "parents" : [ 6797785 ]
+  }, {
+    "dbId" : 6798238,
+    "stId" : "R-HSA-6798238",
+    "displayName" : "PTPRF, PTPRS, PTPRD [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 19 ],
+    "parents" : [ 383387, 6798251 ],
+    "children" : [ 6797868, 197680, 6786486 ]
+  }, {
+    "dbId" : 6797785,
+    "stId" : "R-HSA-6797785",
+    "displayName" : "SLITRK1-6 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "parents" : [ 6797827 ],
+    "children" : [ 6797834, 6797855, 6797778, 6797859, 6797843, 6797862 ]
+  }, {
+    "dbId" : 6799320,
+    "stId" : "R-HSA-6799320",
+    "displayName" : "PPFIBP2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8ND30",
+    "geneNames" : [ "PPFIBP2" ],
+    "parents" : [ 6799298 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 6798258,
+    "stId" : "R-HSA-6798258",
+    "displayName" : "PRTPRF, PTPRS, PTPRD bind LRRC4B",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6798248, 6798238 ],
+    "outputs" : [ 6798251 ],
+    "efs" : [ ],
+    "diagramIds" : [ 18 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6797810,
+    "stId" : "R-HSA-6797810",
+    "displayName" : "PTPRD binds IL1RAPL1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6797868, 6797845 ],
+    "outputs" : [ 6797901 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6798257,
+    "stId" : "R-HSA-6798257",
+    "displayName" : "PTPRS binds NTRK3",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6798240, 197680 ],
+    "outputs" : [ 6798231 ],
+    "efs" : [ ],
+    "diagramIds" : [ 14 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6800380,
+    "stId" : "R-HSA-6800380",
+    "displayName" : "PTPRD binds IL1RAP-1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6797868, 445745 ],
+    "outputs" : [ 6800384 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6797803,
+    "stId" : "R-HSA-6797803",
+    "displayName" : "PTPRD binds SLITRK1-6",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6797785, 6797868 ],
+    "outputs" : [ 6797827 ],
+    "efs" : [ ],
+    "diagramIds" : [ 8 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 388824,
+    "stId" : "R-HSA-388824",
+    "displayName" : "PTPRF, PTPRS, PTPRD bind Liprins",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6799309, 6798238 ],
+    "outputs" : [ 383387 ],
+    "efs" : [ ],
+    "diagramIds" : [ 24 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

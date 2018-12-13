@@ -1,0 +1,431 @@
+{
+  "dbId" : 181431,
+  "stId" : "R-HSA-181431",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 507847,
+    "stId" : "R-HSA-507847",
+    "displayName" : "CHRND [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q07001",
+    "geneNames" : [ "CHRND", "ACHRD" ],
+    "parents" : [ 532618 ]
+  }, {
+    "dbId" : 629577,
+    "stId" : "R-HSA-629577",
+    "displayName" : "Acetylcholine receptor containing alpha7 subunit [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629581 ],
+    "children" : [ 629580, 507830 ]
+  }, {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 23 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 74112,
+    "stId" : "R-ALL-74112",
+    "displayName" : "Ca2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 629576,
+    "stId" : "R-HSA-629576",
+    "displayName" : "Highly sodium permeable nicotinic acetylcholine receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 20 ],
+    "parents" : [ 629590 ],
+    "children" : [ 629575, 532622, 532621 ]
+  }, {
+    "dbId" : 532618,
+    "stId" : "R-HSA-532618",
+    "displayName" : "Delta, epsilon, gamma subunits of acetylcholine receptor [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 532621 ],
+    "children" : [ 507843, 507845, 507847 ]
+  }, {
+    "dbId" : 507845,
+    "stId" : "R-HSA-507845",
+    "displayName" : "CHRNE [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q04844",
+    "geneNames" : [ "CHRNE", "ACHRE" ],
+    "parents" : [ 532618 ]
+  }, {
+    "dbId" : 549002,
+    "stId" : "R-HSA-549002",
+    "displayName" : "Acetylcholine receptor alpha6 beta3 beta4 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629586 ],
+    "children" : [ 507832, 507821, 507823 ]
+  }, {
+    "dbId" : 629581,
+    "stId" : "R-HSA-629581",
+    "displayName" : "Highly calcium permeable postsynaptic  nicotinic acetylcholine receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 26 ],
+    "parents" : [ 629592 ],
+    "children" : [ 532595, 629577 ]
+  }, {
+    "dbId" : 507843,
+    "stId" : "R-HSA-507843",
+    "displayName" : "CHRNG [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07510",
+    "geneNames" : [ "CHRNG", "ACHRG" ],
+    "parents" : [ 532618 ]
+  }, {
+    "dbId" : 629580,
+    "stId" : "R-HSA-629580",
+    "displayName" : "acetylcholine receptor subunits [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 629577 ],
+    "children" : [ 507832, 507833, 507836, 507821, 507838, 507823, 507840, 507826, 507827, 507830 ]
+  }, {
+    "dbId" : 532621,
+    "stId" : "R-HSA-532621",
+    "displayName" : "Acetylcholine receptor alpha3-beta4 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629576 ],
+    "children" : [ 507821, 507838, 532618 ]
+  }, {
+    "dbId" : 532622,
+    "stId" : "R-HSA-532622",
+    "displayName" : "Acetylcholine Receptor alpha4(2)-beta2(3) subunits [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629576 ],
+    "children" : [ 507836, 507826 ]
+  }, {
+    "dbId" : 629582,
+    "stId" : "R-HSA-629582",
+    "displayName" : "Acetylcholine receptor alpha3-beta4-apha5 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629586 ],
+    "children" : [ 507833, 507821, 507838 ]
+  }, {
+    "dbId" : 507840,
+    "stId" : "R-HSA-507840",
+    "displayName" : "CHRNA2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15822",
+    "geneNames" : [ "CHRNA2" ],
+    "parents" : [ 629580, 633846 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 24 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 629575,
+    "stId" : "R-HSA-629575",
+    "displayName" : "Acetylcholine receptor alpha3(2)-beta4(3) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629576 ],
+    "children" : [ 507821, 507838 ]
+  }, {
+    "dbId" : 629592,
+    "stId" : "R-HSA-629592",
+    "displayName" : "O-acteylcholine bound to calcium permeable postsynaptic nicotinic acetylcholine receptors [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "children" : [ 399976, 629581 ]
+  }, {
+    "dbId" : 629584,
+    "stId" : "R-HSA-629584",
+    "displayName" : "Acetylcholine receptor alpha3-beta2-aplha5 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629586 ],
+    "children" : [ 507833, 507838, 507826 ]
+  }, {
+    "dbId" : 532625,
+    "stId" : "R-HSA-532625",
+    "displayName" : "Acetylcholine Receptors alpha4(3)-beta2(2) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629586 ],
+    "children" : [ 507836, 507826 ]
+  }, {
+    "dbId" : 629586,
+    "stId" : "R-HSA-629586",
+    "displayName" : "Highly calcium permeable nicotinic acetylcholine receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3 ],
+    "parents" : [ 629600 ],
+    "children" : [ 633846, 532595, 629584, 532625, 629582, 633773, 549002 ]
+  }, {
+    "dbId" : 629590,
+    "stId" : "R-HSA-629590",
+    "displayName" : "O-Acetylcholine bound to Acetylcholine receptor [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 21 ],
+    "children" : [ 629576, 372533 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 9 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 633773,
+    "stId" : "R-HSA-633773",
+    "displayName" : "acetylcholine receptor alpha6 aplha4 beta3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629586 ],
+    "children" : [ 507832, 507836, 507823 ]
+  }, {
+    "dbId" : 507823,
+    "stId" : "R-HSA-507823",
+    "displayName" : "CHRNB3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05901",
+    "geneNames" : [ "CHRNB3" ],
+    "parents" : [ 629580, 633846, 633773, 549002 ]
+  }, {
+    "dbId" : 629600,
+    "stId" : "R-HSA-629600",
+    "displayName" : "0-acteylcholine bound to calcium permeable nictonic acteylcholine receptor complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "children" : [ 629586, 372533 ]
+  }, {
+    "dbId" : 507821,
+    "stId" : "R-HSA-507821",
+    "displayName" : "CHRNB4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30926",
+    "geneNames" : [ "CHRNB4" ],
+    "parents" : [ 629580, 629575, 532621, 629582, 549002 ]
+  }, {
+    "dbId" : 399976,
+    "stId" : "R-ALL-399976",
+    "displayName" : "AcCho [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15355",
+    "parents" : [ 629592 ]
+  }, {
+    "dbId" : 480553,
+    "stId" : "R-HSA-480553",
+    "displayName" : "CHRNA1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02708",
+    "geneNames" : [ "CHRNA1", "ACHRA", "CHNRA" ],
+    "parents" : [ 532595 ]
+  }, {
+    "dbId" : 372533,
+    "stId" : "R-ALL-372533",
+    "displayName" : "AcCho [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2 ],
+    "identifier" : "15355",
+    "parents" : [ 629590, 629600 ]
+  }, {
+    "dbId" : 507830,
+    "stId" : "R-HSA-507830",
+    "displayName" : "CHRNA7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36544",
+    "geneNames" : [ "CHRNA7", "NACHRA7" ],
+    "parents" : [ 629580, 629577 ]
+  }, {
+    "dbId" : 507827,
+    "stId" : "R-HSA-507827",
+    "displayName" : "CHRNA9 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UGM1",
+    "geneNames" : [ "CHRNA9", "NACHRA9" ],
+    "parents" : [ 629580 ]
+  }, {
+    "dbId" : 507826,
+    "stId" : "R-HSA-507826",
+    "displayName" : "CHRNB2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P17787",
+    "geneNames" : [ "CHRNB2" ],
+    "parents" : [ 629580, 532622, 629584, 532625 ]
+  }, {
+    "dbId" : 507838,
+    "stId" : "R-HSA-507838",
+    "displayName" : "CHRNA3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P32297",
+    "geneNames" : [ "CHRNA3", "NACHRA3" ],
+    "parents" : [ 629580, 629575, 532621, 629584, 629582 ]
+  }, {
+    "dbId" : 532595,
+    "stId" : "R-HSA-532595",
+    "displayName" : "Acetylcholine Receptor (homomeric) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629581, 629586 ],
+    "children" : [ 480553 ]
+  }, {
+    "dbId" : 507836,
+    "stId" : "R-HSA-507836",
+    "displayName" : "CHRNA4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P43681",
+    "geneNames" : [ "CHRNA4", "NACRA4" ],
+    "parents" : [ 629580, 532622, 532625, 633773 ]
+  }, {
+    "dbId" : 507833,
+    "stId" : "R-HSA-507833",
+    "displayName" : "CHRNA5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30532",
+    "geneNames" : [ "CHRNA5", "NACHRA5" ],
+    "parents" : [ 629580, 629584, 629582 ]
+  }, {
+    "dbId" : 507832,
+    "stId" : "R-HSA-507832",
+    "displayName" : "CHRNA6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15825",
+    "geneNames" : [ "CHRNA6" ],
+    "parents" : [ 629580, 633773, 549002 ]
+  }, {
+    "dbId" : 633846,
+    "stId" : "R-HSA-633846",
+    "displayName" : "Acetylcholine receptors alpha2(3)  beta3(2) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 629586 ],
+    "children" : [ 507823, 507840 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 629595,
+    "stId" : "R-HSA-629595",
+    "displayName" : "Activation of highly calcium permeable postsynaptic nicotinic acetylcholine receptors",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 629596 ],
+    "inputs" : [ 74112 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 629592 ],
+    "efs" : [ ],
+    "diagramIds" : [ 29 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 629596,
+    "stId" : "R-HSA-629596",
+    "displayName" : "Binding of acetylcholine to  highly calcium permeable postsynaptic nicotinic acetylcholine receptors",
+    "schemaClass" : "Reaction",
+    "following" : [ 629595 ],
+    "inputs" : [ 629581, 372533 ],
+    "outputs" : [ 629592 ],
+    "efs" : [ ],
+    "diagramIds" : [ 25 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 629599,
+    "stId" : "R-HSA-629599",
+    "displayName" : "Binding of acetylcholine to highly calcium permeable acetylcholine receptors",
+    "schemaClass" : "Reaction",
+    "following" : [ 622326 ],
+    "inputs" : [ 629586, 372533 ],
+    "outputs" : [ 629600 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 622325,
+    "stId" : "R-HSA-622325",
+    "displayName" : "Activation of highly sodium permeable nicotinic acetylcholine receptors",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 629588 ],
+    "inputs" : [ 74113 ],
+    "outputs" : [ 83910 ],
+    "catalysts" : [ 629590 ],
+    "efs" : [ ],
+    "diagramIds" : [ 22 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 629588,
+    "stId" : "R-HSA-629588",
+    "displayName" : "Binding of acetylcholine to  highly sodium permeable acetylcholine receptors",
+    "schemaClass" : "Reaction",
+    "following" : [ 622325 ],
+    "inputs" : [ 629576, 372533 ],
+    "outputs" : [ 629590 ],
+    "efs" : [ ],
+    "diagramIds" : [ 19 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 622326,
+    "stId" : "R-HSA-622326",
+    "displayName" : "Activation of highly calcium permeable nicotinic acetylcholine receptors",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 629599 ],
+    "inputs" : [ 74112 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 629600 ],
+    "efs" : [ ],
+    "diagramIds" : [ 7 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 622323,
+    "stId" : "R-HSA-622323",
+    "displayName" : "Presynaptic nicotinic acetylcholine receptors",
+    "events" : [ 629599, 622326, 622325, 629588 ]
+  }, {
+    "dbId" : 629602,
+    "stId" : "R-HSA-629602",
+    "displayName" : "Activation of Nicotinic Acetylcholine Receptors",
+    "events" : [ 629599, 622326, 622325, 629588, 629595, 629596, 622325, 629588 ]
+  }, {
+    "dbId" : 629587,
+    "stId" : "R-HSA-629587",
+    "displayName" : "Highly sodium permeable acetylcholine nicotinic receptors",
+    "events" : [ 622325, 629588 ]
+  }, {
+    "dbId" : 622327,
+    "stId" : "R-HSA-622327",
+    "displayName" : "Postsynaptic nicotinic acetylcholine receptors",
+    "events" : [ 629595, 629596, 622325, 629588 ]
+  }, {
+    "dbId" : 629597,
+    "stId" : "R-HSA-629597",
+    "displayName" : "Highly calcium permeable nicotinic acetylcholine receptors",
+    "events" : [ 629599, 622326 ]
+  }, {
+    "dbId" : 629594,
+    "stId" : "R-HSA-629594",
+    "displayName" : "Highly calcium permeable postsynaptic nicotinic acetylcholine receptors",
+    "events" : [ 629595, 629596 ]
+  } ]
+}

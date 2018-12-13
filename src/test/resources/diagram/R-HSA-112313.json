@@ -1,0 +1,957 @@
+{
+  "dbId" : 112313,
+  "stableId" : "R-HSA-112313",
+  "displayName" : "Neurotransmitter uptake and metabolism In glial cells",
+  "nodes" : [ {
+    "id" : 16,
+    "reactomeId" : 29372,
+    "displayName" : "Pi",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 259,
+      "y" : 463
+    },
+    "minX" : 203,
+    "maxX" : 317,
+    "minY" : 355,
+    "maxY" : 485,
+    "prop" : {
+      "x" : 203,
+      "y" : 441,
+      "width" : 113,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 250,
+      "y" : 452
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 311,
+          "y" : 446
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 13,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 258,
+          "y" : 438
+        },
+        "to" : {
+          "x" : 256,
+          "y" : 355
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 254,
+          "y" : 431
+        },
+        "b" : {
+          "x" : 258,
+          "y" : 438
+        },
+        "c" : {
+          "x" : 262,
+          "y" : 431
+        },
+        "type" : "ARROW"
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 17,
+    "reactomeId" : 29472,
+    "displayName" : "L-Gln",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 403,
+      "y" : 452
+    },
+    "minX" : 256,
+    "maxX" : 473,
+    "minY" : 355,
+    "maxY" : 467,
+    "prop" : {
+      "x" : 334,
+      "y" : 437,
+      "width" : 138,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 383,
+      "y" : 441
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 467,
+          "y" : 442
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 13,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 380,
+          "y" : 434
+        },
+        "to" : {
+          "x" : 256,
+          "y" : 355
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 372,
+          "y" : 434
+        },
+        "b" : {
+          "x" : 380,
+          "y" : 434
+        },
+        "c" : {
+          "x" : 376,
+          "y" : 427
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 29370,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 127,
+      "y" : 458
+    },
+    "minX" : 82,
+    "maxX" : 256,
+    "minY" : 355,
+    "maxY" : 473,
+    "prop" : {
+      "x" : 82,
+      "y" : 443,
+      "width" : 91,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 111,
+      "y" : 447
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 168,
+          "y" : 448
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 13,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 145,
+          "y" : 440
+        },
+        "to" : {
+          "x" : 256,
+          "y" : 355
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 148,
+          "y" : 433
+        },
+        "b" : {
+          "x" : 145,
+          "y" : 440
+        },
+        "c" : {
+          "x" : 153,
+          "y" : 439
+        },
+        "type" : "ARROW"
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 2,
+    "reactomeId" : 210382,
+    "displayName" : "L-Glu",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 739,
+      "y" : 233
+    },
+    "minX" : 672,
+    "maxX" : 808,
+    "minY" : 210,
+    "maxY" : 255,
+    "prop" : {
+      "x" : 672,
+      "y" : 211,
+      "width" : 135,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 719,
+      "y" : 222
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 802,
+          "y" : 216
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 29404,
+    "displayName" : "L-Glu",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 371,
+      "y" : 235
+    },
+    "minX" : 255,
+    "maxX" : 418,
+    "minY" : 212,
+    "maxY" : 257,
+    "prop" : {
+      "x" : 325,
+      "y" : 213,
+      "width" : 92,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 351,
+      "y" : 224
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 412,
+          "y" : 218
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 13,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 322,
+          "y" : 242
+        },
+        "to" : {
+          "x" : 255,
+          "y" : 254
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 70604,
+    "displayName" : "GLUL decamer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 166,
+      "y" : 305
+    },
+    "minX" : 118,
+    "maxX" : 250,
+    "minY" : 287,
+    "maxY" : 323,
+    "prop" : {
+      "x" : 118,
+      "y" : 287,
+      "width" : 96,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 120,
+      "y" : 302
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 13,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 217,
+          "y" : 303
+        },
+        "to" : {
+          "x" : 242,
+          "y" : 302
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 246,
+          "y" : 302
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 210416,
+    "displayName" : "Astrocytic EAATs",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 519,
+      "y" : 112
+    },
+    "minX" : 457,
+    "maxX" : 582,
+    "minY" : 94,
+    "maxY" : 224,
+    "prop" : {
+      "x" : 457,
+      "y" : 94,
+      "width" : 125,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 467,
+      "y" : 101
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 518,
+          "y" : 136
+        },
+        "to" : {
+          "x" : 516,
+          "y" : 216
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 516,
+          "y" : 220
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 21,
+    "reactomeId" : 212615,
+    "displayName" : "L-Gln",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 757,
+      "y" : 437
+    },
+    "minX" : 690,
+    "maxX" : 826,
+    "minY" : 414,
+    "maxY" : 459,
+    "prop" : {
+      "x" : 690,
+      "y" : 415,
+      "width" : 135,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 737,
+      "y" : 426
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 820,
+          "y" : 420
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 212663,
+    "displayName" : "SLC38A1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 524,
+      "y" : 340
+    },
+    "minX" : 462,
+    "maxX" : 593,
+    "minY" : 309,
+    "maxY" : 439,
+    "prop" : {
+      "x" : 462,
+      "y" : 315,
+      "width" : 125,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 494,
+      "y" : 329
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 587,
+          "y" : 315
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 523,
+          "y" : 368
+        },
+        "to" : {
+          "x" : 523,
+          "y" : 431
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 523,
+          "y" : 435
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 288,
+      "y" : 178
+    },
+    "minX" : 243,
+    "maxX" : 334,
+    "minY" : 162,
+    "maxY" : 254,
+    "prop" : {
+      "x" : 243,
+      "y" : 163,
+      "width" : 90,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 272,
+      "y" : 167
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 328,
+          "y" : 168
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 13,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 281,
+          "y" : 196
+        },
+        "to" : {
+          "x" : 255,
+          "y" : 254
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 15,
+    "reactomeId" : 31633,
+    "displayName" : "NH4+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 187,
+      "y" : 214
+    },
+    "minX" : 136,
+    "maxX" : 255,
+    "minY" : 198,
+    "maxY" : 254,
+    "prop" : {
+      "x" : 136,
+      "y" : 199,
+      "width" : 103,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 165,
+      "y" : 203
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 234,
+          "y" : 204
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 13,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 212,
+          "y" : 232
+        },
+        "to" : {
+          "x" : 255,
+          "y" : 254
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 1,
+    "reactomeId" : 210439,
+    "displayName" : "glutamate uptake by astrocytes",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 516,
+      "y" : 232
+    },
+    "minX" : 420,
+    "maxX" : 669,
+    "minY" : 226,
+    "maxY" : 238,
+    "segments" : [ {
+      "from" : {
+        "x" : 669,
+        "y" : 232
+      },
+      "to" : {
+        "x" : 516,
+        "y" : 232
+      }
+    }, {
+      "from" : {
+        "x" : 516,
+        "y" : 232
+      },
+      "to" : {
+        "x" : 420,
+        "y" : 234
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 427,
+        "y" : 230
+      },
+      "b" : {
+        "x" : 420,
+        "y" : 234
+      },
+      "c" : {
+        "x" : 427,
+        "y" : 238
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 510,
+        "y" : 226
+      },
+      "b" : {
+        "x" : 522,
+        "y" : 238
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 3
+    } ],
+    "catalysts" : [ {
+      "id" : 4,
+      "points" : [ {
+        "x" : 518,
+        "y" : 136
+      } ]
+    } ]
+  }, {
+    "id" : 20,
+    "reactomeId" : 212614,
+    "displayName" : "Glutamine transport from astrocytes",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 523,
+      "y" : 447
+    },
+    "minX" : 475,
+    "maxX" : 687,
+    "minY" : 439,
+    "maxY" : 453,
+    "segments" : [ {
+      "from" : {
+        "x" : 475,
+        "y" : 449
+      },
+      "to" : {
+        "x" : 523,
+        "y" : 447
+      }
+    }, {
+      "from" : {
+        "x" : 523,
+        "y" : 447
+      },
+      "to" : {
+        "x" : 687,
+        "y" : 439
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 680,
+        "y" : 443
+      },
+      "b" : {
+        "x" : 687,
+        "y" : 439
+      },
+      "c" : {
+        "x" : 680,
+        "y" : 435
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 517,
+        "y" : 441
+      },
+      "b" : {
+        "x" : 529,
+        "y" : 453
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 17
+    } ],
+    "outputs" : [ {
+      "id" : 21
+    } ],
+    "catalysts" : [ {
+      "id" : 22,
+      "points" : [ {
+        "x" : 523,
+        "y" : 368
+      } ]
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 70606,
+    "displayName" : "glutamate + NH4+ + ATP => glutamine + ADP + orthophosphate [GLUL]",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 258,
+      "y" : 302
+    },
+    "minX" : 252,
+    "maxX" : 264,
+    "minY" : 254,
+    "maxY" : 355,
+    "segments" : [ {
+      "from" : {
+        "x" : 255,
+        "y" : 254
+      },
+      "to" : {
+        "x" : 258,
+        "y" : 302
+      }
+    }, {
+      "from" : {
+        "x" : 258,
+        "y" : 302
+      },
+      "to" : {
+        "x" : 256,
+        "y" : 355
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 252,
+        "y" : 296
+      },
+      "b" : {
+        "x" : 264,
+        "y" : 308
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 3,
+      "points" : [ {
+        "x" : 322,
+        "y" : 242
+      } ]
+    }, {
+      "id" : 14,
+      "points" : [ {
+        "x" : 281,
+        "y" : 196
+      } ]
+    }, {
+      "id" : 15,
+      "points" : [ {
+        "x" : 212,
+        "y" : 232
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 16,
+      "points" : [ {
+        "x" : 258,
+        "y" : 438
+      } ]
+    }, {
+      "id" : 17,
+      "points" : [ {
+        "x" : 380,
+        "y" : 434
+      } ]
+    }, {
+      "id" : 18,
+      "points" : [ {
+        "x" : 145,
+        "y" : 440
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 19,
+      "points" : [ {
+        "x" : 217,
+        "y" : 303
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 23,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 254,
+      "y" : 298
+    },
+    "minX" : 0,
+    "maxX" : 508,
+    "minY" : 0,
+    "maxY" : 597,
+    "prop" : {
+      "x" : 0,
+      "y" : 0,
+      "width" : 508,
+      "height" : 597
+    },
+    "textPosition" : {
+      "x" : 71,
+      "y" : 532
+    },
+    "insets" : {
+      "x" : 10,
+      "y" : 10,
+      "width" : 488,
+      "height" : 577
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 1, 3, 4, 13, 14, 15, 16, 17, 18, 19, 20, 22 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ {
+    "id" : 24,
+    "reactomeId" : 210455,
+    "displayName" : "Astrocytic Glutamate-Glutamine Uptake And Metabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 453,
+      "y" : 289
+    },
+    "minX" : 72,
+    "maxX" : 835,
+    "minY" : 84,
+    "maxY" : 495,
+    "prop" : {
+      "x" : 72,
+      "y" : 84,
+      "width" : 763,
+      "height" : 411
+    },
+    "points" : [ {
+      "x" : 72,
+      "y" : 84
+    }, {
+      "x" : 835,
+      "y" : 84
+    }, {
+      "x" : 835,
+      "y" : 495
+    }, {
+      "x" : 72,
+      "y" : 495
+    } ],
+    "colour" : "#4684ee"
+  } ],
+  "minX" : 0,
+  "maxX" : 826,
+  "minY" : 0,
+  "maxY" : 597,
+  "disease" : false
+}

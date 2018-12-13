@@ -1,0 +1,296 @@
+{
+  "dbId" : 112314,
+  "stId" : "R-HSA-112314",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 434 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 74112,
+    "stId" : "R-ALL-74112",
+    "displayName" : "Ca2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 425 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 442755,
+    "stId" : "R-HSA-442755",
+    "displayName" : "Activation of NMDA receptors and postsynaptic events",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 976 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 433 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 975301,
+    "stId" : "R-HSA-975301",
+    "displayName" : "HTR3A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P46098",
+    "geneNames" : [ "HTR3A", "5HT3R", "HTR3" ],
+    "parents" : [ 6792753, 6792754, 6792755, 6792757, 6792758 ]
+  }, {
+    "dbId" : 975360,
+    "stId" : "R-HSA-975360",
+    "displayName" : "HTR3B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95264",
+    "geneNames" : [ "HTR3B" ],
+    "parents" : [ 6792755 ]
+  }, {
+    "dbId" : 74126,
+    "stId" : "R-ALL-74126",
+    "displayName" : "K+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 843 ],
+    "identifier" : "29103"
+  }, {
+    "dbId" : 975326,
+    "stId" : "R-HSA-975326",
+    "displayName" : "HTR3 pentamer [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 975348 ],
+    "children" : [ 6792753, 6792754, 6792755, 6792757, 6792758 ]
+  }, {
+    "dbId" : 6792758,
+    "stId" : "R-HSA-6792758",
+    "displayName" : "2xHTR3A:3xHTR3C [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 975326 ],
+    "children" : [ 975312, 975301 ]
+  }, {
+    "dbId" : 6792757,
+    "stId" : "R-HSA-6792757",
+    "displayName" : "HTR3A pentamer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 975326 ],
+    "children" : [ 975301 ]
+  }, {
+    "dbId" : 352022,
+    "stId" : "R-ALL-352022",
+    "displayName" : "Cl- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 468 ],
+    "identifier" : "17996"
+  }, {
+    "dbId" : 6792755,
+    "stId" : "R-HSA-6792755",
+    "displayName" : "2xHTR3A:3xHTR3B [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 975326 ],
+    "children" : [ 975360, 975301 ]
+  }, {
+    "dbId" : 6792754,
+    "stId" : "R-HSA-6792754",
+    "displayName" : "2xHTR3A:3xHTR3E [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 975326 ],
+    "children" : [ 975301, 975278 ]
+  }, {
+    "dbId" : 6792753,
+    "stId" : "R-HSA-6792753",
+    "displayName" : "2xHTR3A:3xHTR3D [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 975326 ],
+    "children" : [ 975345, 975301 ]
+  }, {
+    "dbId" : 975385,
+    "stId" : "R-HSA-975385",
+    "displayName" : "GLRA:GLRB:Gly [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 839 ],
+    "children" : [ 975394, 266029, 975405 ]
+  }, {
+    "dbId" : 975383,
+    "stId" : "R-HSA-975383",
+    "displayName" : "GLRA2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23416",
+    "geneNames" : [ "GLRA2" ],
+    "parents" : [ 975405 ]
+  }, {
+    "dbId" : 114523,
+    "stId" : "R-ALL-114523",
+    "displayName" : "5HT [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28790",
+    "parents" : [ 975348 ]
+  }, {
+    "dbId" : 975312,
+    "stId" : "R-HSA-975312",
+    "displayName" : "HTR3C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WXA8",
+    "geneNames" : [ "HTR3C" ],
+    "parents" : [ 6792758 ]
+  }, {
+    "dbId" : 975278,
+    "stId" : "R-HSA-975278",
+    "displayName" : "HTR3E [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A5X5Y0",
+    "geneNames" : [ "HTR3E" ],
+    "parents" : [ 6792754 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 426 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 975404,
+    "stId" : "R-HSA-975404",
+    "displayName" : "GLRA4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5JXX5",
+    "geneNames" : [ "GLRA4" ],
+    "parents" : [ 975405 ]
+  }, {
+    "dbId" : 975405,
+    "stId" : "R-HSA-975405",
+    "displayName" : "GLRA1-4 [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 975385 ],
+    "children" : [ 975392, 975383, 975403, 975404 ]
+  }, {
+    "dbId" : 975403,
+    "stId" : "R-HSA-975403",
+    "displayName" : "GLRA3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75311",
+    "geneNames" : [ "GLRA3" ],
+    "parents" : [ 975405 ]
+  }, {
+    "dbId" : 266029,
+    "stId" : "R-ALL-266029",
+    "displayName" : "Gly [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57305",
+    "parents" : [ 975385 ]
+  }, {
+    "dbId" : 975394,
+    "stId" : "R-HSA-975394",
+    "displayName" : "GLRB [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48167",
+    "geneNames" : [ "GLRB" ],
+    "parents" : [ 975385 ]
+  }, {
+    "dbId" : 29804,
+    "stId" : "R-ALL-29804",
+    "displayName" : "K+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 845 ],
+    "identifier" : "29103"
+  }, {
+    "dbId" : 977443,
+    "stId" : "R-HSA-977443",
+    "displayName" : "GABA receptor activation",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 978 ]
+  }, {
+    "dbId" : 188972,
+    "stId" : "R-ALL-188972",
+    "displayName" : "Cl- [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 467 ],
+    "identifier" : "17996"
+  }, {
+    "dbId" : 975392,
+    "stId" : "R-HSA-975392",
+    "displayName" : "GLRA1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23415",
+    "geneNames" : [ "GLRA1" ],
+    "parents" : [ 975405 ]
+  }, {
+    "dbId" : 399721,
+    "stId" : "R-HSA-399721",
+    "displayName" : "Glutamate binding, activation of AMPA receptors and synaptic plasticity",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 975 ]
+  }, {
+    "dbId" : 181431,
+    "stId" : "R-HSA-181431",
+    "displayName" : "Acetylcholine binding and downstream events",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 974 ]
+  }, {
+    "dbId" : 451326,
+    "stId" : "R-HSA-451326",
+    "displayName" : "Activation of kainate receptors upon glutamate binding",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 977 ]
+  }, {
+    "dbId" : 975348,
+    "stId" : "R-HSA-975348",
+    "displayName" : "HTR3 pentamer:5HT [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 841 ],
+    "children" : [ 114523, 975326 ]
+  }, {
+    "dbId" : 975345,
+    "stId" : "R-HSA-975345",
+    "displayName" : "HTR3D [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q70Z44",
+    "geneNames" : [ "HTR3D" ],
+    "parents" : [ 6792753 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 975311,
+    "stId" : "R-HSA-975311",
+    "displayName" : "HTR3 pentamer:5HT transports Na+,K+, and Ca2+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74126, 74112, 74113 ],
+    "outputs" : [ 29804, 83910, 74016 ],
+    "catalysts" : [ 975348 ],
+    "efs" : [ ],
+    "diagramIds" : [ 840 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 975389,
+    "stId" : "R-HSA-975389",
+    "displayName" : "GLRA:GLRB:Gly transports extracellular Cl- to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 188972 ],
+    "outputs" : [ 352022 ],
+    "catalysts" : [ 975385 ],
+    "efs" : [ ],
+    "diagramIds" : [ 838 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

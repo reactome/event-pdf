@@ -17,6 +17,7 @@ import org.reactome.server.tools.document.exporter.util.ImageFactory;
 
 import java.util.List;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
 
 /**
@@ -30,6 +31,8 @@ public class PathwaysDetails implements Section {
 
 	private static final String CONTENT_DETAIL = "/content/detail/";
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
+
+	private final Map<String, AtomicLong> destinations = new TreeMap<>();
 
 	@Override
 	public void render(Document document, DocumentProperties properties) {
@@ -105,20 +108,24 @@ public class PathwaysDetails implements Section {
 		for (int i = 0; i < nav.size(); i++) {
 			if (i > 0) paragraph.add(" > ");  // current font does not support RIGHTARROW'\u2192'
 			final Event ev = nav.get(i);
-			final Text text = new Text(ev.getDisplayName()).setAction(PdfAction.createGoTo(ev.getStId())).setFontColor(profile.getLinkColor());
+			final String dest = String.format("%s:%d", ev.getStId(), destinations.get(ev.getStId()).get());
+			final Text text = new Text(ev.getDisplayName())
+					.setAction(PdfAction.createGoTo(dest))
+					.setFontColor(profile.getLinkColor());
 			paragraph.add(text);
 		}
 		document.add(paragraph);
 	}
 
 	private BlockElement getTitle(PdfProfile profile, Event event, String server) {
+		final String destination = String.format("%s:%d", event.getStId(), destinations.computeIfAbsent(event.getStId(), stId -> new AtomicLong()).incrementAndGet());
 		return profile.getH3(event.getDisplayName())
 				.add(" (")
 				.add(new Text(event.getStId())
 						.setAction(PdfAction.createURI(server + CONTENT_DETAIL + event.getStId()))
 						.setFontColor(profile.getLinkColor()))
 				.add(")")
-				.setDestination(event.getStId());
+				.setDestination(destination);
 	}
 
 	private void addFoundElements(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {

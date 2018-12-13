@@ -1,0 +1,1286 @@
+{
+  "dbId" : 451326,
+  "stableId" : "R-HSA-451326",
+  "displayName" : "Activation of kainate receptors upon glutamate binding",
+  "nodes" : [ {
+    "id" : 225,
+    "reactomeId" : 450885,
+    "displayName" : "Kainate Receptors",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 227,
+      "y" : 156
+    },
+    "minX" : 170,
+    "maxX" : 352,
+    "minY" : 145,
+    "maxY" : 167,
+    "prop" : {
+      "x" : 170,
+      "y" : 145,
+      "width" : 114,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 170,
+      "y" : 145
+    },
+    "connectors" : [ {
+      "edgeId" : 224,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 290,
+          "y" : 153
+        },
+        "to" : {
+          "x" : 352,
+          "y" : 150
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 226,
+    "reactomeId" : 451281,
+    "displayName" : "Kainate receptor-glutamate complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 535,
+      "y" : 157
+    },
+    "minX" : 476,
+    "maxX" : 804,
+    "minY" : 137,
+    "maxY" : 175,
+    "prop" : {
+      "x" : 476,
+      "y" : 139,
+      "width" : 119,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 476,
+      "y" : 140
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 224,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 227,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 598,
+          "y" : 153
+        },
+        "to" : {
+          "x" : 796,
+          "y" : 141
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 800,
+          "y" : 141
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 228,
+    "reactomeId" : 74112,
+    "displayName" : "Ca2+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 803,
+      "y" : 29
+    },
+    "minX" : 778,
+    "maxX" : 829,
+    "minY" : 13,
+    "maxY" : 44,
+    "prop" : {
+      "x" : 778,
+      "y" : 14,
+      "width" : 50,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 782,
+      "y" : 18
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 823,
+          "y" : 19
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 227,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 229,
+    "reactomeId" : 74016,
+    "displayName" : "Ca2+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 827,
+      "y" : 343
+    },
+    "minX" : 802,
+    "maxX" : 853,
+    "minY" : 327,
+    "maxY" : 358,
+    "prop" : {
+      "x" : 802,
+      "y" : 328,
+      "width" : 50,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 806,
+      "y" : 332
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 847,
+          "y" : 333
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 227,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 231,
+    "reactomeId" : 450196,
+    "displayName" : "GRIK 3 homomer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 261,
+      "y" : 215
+    },
+    "minX" : 207,
+    "maxX" : 348,
+    "minY" : 204,
+    "maxY" : 226,
+    "prop" : {
+      "x" : 207,
+      "y" : 204,
+      "width" : 108,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 207,
+      "y" : 205
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 230,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 318,
+          "y" : 215
+        },
+        "to" : {
+          "x" : 348,
+          "y" : 215
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 233,
+    "reactomeId" : 500705,
+    "displayName" : "GRIK3 homomer glutamate complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 545,
+      "y" : 216
+    },
+    "minX" : 486,
+    "maxX" : 605,
+    "minY" : 198,
+    "maxY" : 295,
+    "prop" : {
+      "x" : 486,
+      "y" : 198,
+      "width" : 119,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 486,
+      "y" : 199
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 230,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 234,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 534,
+          "y" : 237
+        },
+        "to" : {
+          "x" : 497,
+          "y" : 295
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 234,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 543,
+          "y" : 237
+        },
+        "to" : {
+          "x" : 540,
+          "y" : 284
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 540,
+          "y" : 288
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 235,
+    "reactomeId" : 398037,
+    "displayName" : "G-protein beta-gamma:PLC beta 1/2/3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 382,
+      "y" : 284
+    },
+    "minX" : 327,
+    "maxX" : 497,
+    "minY" : 259,
+    "maxY" : 309,
+    "prop" : {
+      "x" : 327,
+      "y" : 259,
+      "width" : 111,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 327,
+      "y" : 260
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 234,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 441,
+          "y" : 289
+        },
+        "to" : {
+          "x" : 497,
+          "y" : 295
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 236,
+    "reactomeId" : 500703,
+    "displayName" : "Kainate receptor-glutamate-Gprotein complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 632,
+      "y" : 294
+    },
+    "minX" : 569,
+    "maxX" : 696,
+    "minY" : 269,
+    "maxY" : 319,
+    "prop" : {
+      "x" : 569,
+      "y" : 269,
+      "width" : 127,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 569,
+      "y" : 270
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 234,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 217,
+    "reactomeId" : 451279,
+    "displayName" : "Edited Kainate receptors",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 229,
+      "y" : 84
+    },
+    "minX" : 181,
+    "maxX" : 324,
+    "minY" : 66,
+    "maxY" : 102,
+    "prop" : {
+      "x" : 181,
+      "y" : 66,
+      "width" : 97,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 181,
+      "y" : 67
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 216,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 281,
+          "y" : 81
+        },
+        "to" : {
+          "x" : 324,
+          "y" : 79
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 218,
+    "reactomeId" : 210382,
+    "displayName" : "L-Glu",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 271,
+      "y" : 16
+    },
+    "minX" : 247,
+    "maxX" : 352,
+    "minY" : 0,
+    "maxY" : 215,
+    "prop" : {
+      "x" : 247,
+      "y" : 1,
+      "width" : 49,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 251,
+      "y" : 5
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 291,
+          "y" : 6
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 224,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 280,
+          "y" : 34
+        },
+        "to" : {
+          "x" : 352,
+          "y" : 150
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 230,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 276,
+          "y" : 34
+        },
+        "to" : {
+          "x" : 348,
+          "y" : 215
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 216,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 283,
+          "y" : 34
+        },
+        "to" : {
+          "x" : 324,
+          "y" : 79
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 219,
+    "reactomeId" : 451304,
+    "displayName" : "Edited Kainate Receptor-glutamate complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 525,
+      "y" : 80
+    },
+    "minX" : 461,
+    "maxX" : 680,
+    "minY" : 55,
+    "maxY" : 117,
+    "prop" : {
+      "x" : 461,
+      "y" : 55,
+      "width" : 129,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 461,
+      "y" : 56
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 216,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 221,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 593,
+          "y" : 94
+        },
+        "to" : {
+          "x" : 672,
+          "y" : 112
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 676,
+          "y" : 113
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 222,
+    "reactomeId" : 74113,
+    "displayName" : "Na+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 677,
+      "y" : 28
+    },
+    "minX" : 656,
+    "maxX" : 700,
+    "minY" : 15,
+    "maxY" : 40,
+    "prop" : {
+      "x" : 656,
+      "y" : 16,
+      "width" : 43,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 660,
+      "y" : 17
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 694,
+          "y" : 21
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 221,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 223,
+    "reactomeId" : 83910,
+    "displayName" : "Na+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 732,
+      "y" : 338
+    },
+    "minX" : 711,
+    "maxX" : 755,
+    "minY" : 325,
+    "maxY" : 351,
+    "prop" : {
+      "x" : 711,
+      "y" : 326,
+      "width" : 43,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 715,
+      "y" : 328
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 749,
+          "y" : 331
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 221,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 224,
+    "reactomeId" : 451283,
+    "displayName" : "kainate receptor binds glutamate",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 412,
+      "y" : 154
+    },
+    "minX" : 352,
+    "maxX" : 473,
+    "minY" : 149,
+    "maxY" : 159,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 352,
+        "y" : 150
+      },
+      "to" : {
+        "x" : 412,
+        "y" : 154
+      }
+    }, {
+      "from" : {
+        "x" : 412,
+        "y" : 154
+      },
+      "to" : {
+        "x" : 473,
+        "y" : 155
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 466,
+        "y" : 159
+      },
+      "b" : {
+        "x" : 473,
+        "y" : 155
+      },
+      "c" : {
+        "x" : 466,
+        "y" : 151
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 412,
+        "y" : 154
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 225,
+      "points" : [ {
+        "x" : 290,
+        "y" : 153
+      } ]
+    }, {
+      "id" : 218,
+      "points" : [ {
+        "x" : 280,
+        "y" : 34
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 226
+    } ]
+  }, {
+    "id" : 227,
+    "reactomeId" : 451311,
+    "displayName" : "Activation of Ca-permeable Kainate receptors",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 812,
+      "y" : 140
+    },
+    "minX" : 804,
+    "maxX" : 825,
+    "minY" : 47,
+    "maxY" : 325,
+    "segments" : [ {
+      "from" : {
+        "x" : 804,
+        "y" : 47
+      },
+      "to" : {
+        "x" : 812,
+        "y" : 140
+      }
+    }, {
+      "from" : {
+        "x" : 812,
+        "y" : 140
+      },
+      "to" : {
+        "x" : 825,
+        "y" : 325
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 821,
+        "y" : 318
+      },
+      "b" : {
+        "x" : 825,
+        "y" : 325
+      },
+      "c" : {
+        "x" : 829,
+        "y" : 318
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 806,
+        "y" : 134
+      },
+      "b" : {
+        "x" : 818,
+        "y" : 146
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 228
+    } ],
+    "outputs" : [ {
+      "id" : 229
+    } ],
+    "catalysts" : [ {
+      "id" : 226,
+      "points" : [ {
+        "x" : 598,
+        "y" : 153
+      } ]
+    } ]
+  }, {
+    "id" : 230,
+    "reactomeId" : 500708,
+    "displayName" : "GRIK3 homomer binds glutamate",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 381,
+      "y" : 217
+    },
+    "minX" : 348,
+    "maxX" : 483,
+    "minY" : 212,
+    "maxY" : 222,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 348,
+        "y" : 215
+      },
+      "to" : {
+        "x" : 381,
+        "y" : 217
+      }
+    }, {
+      "from" : {
+        "x" : 381,
+        "y" : 217
+      },
+      "to" : {
+        "x" : 483,
+        "y" : 216
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 476,
+        "y" : 220
+      },
+      "b" : {
+        "x" : 483,
+        "y" : 216
+      },
+      "c" : {
+        "x" : 476,
+        "y" : 212
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 381,
+        "y" : 217
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 231,
+      "points" : [ {
+        "x" : 318,
+        "y" : 215
+      } ]
+    }, {
+      "id" : 218,
+      "points" : [ {
+        "x" : 276,
+        "y" : 34
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 233
+    } ]
+  }, {
+    "id" : 216,
+    "reactomeId" : 451309,
+    "displayName" : "Edited Kainate Receptor binds glutamate",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 366,
+      "y" : 77
+    },
+    "minX" : 324,
+    "maxX" : 458,
+    "minY" : 72,
+    "maxY" : 82,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 324,
+        "y" : 79
+      },
+      "to" : {
+        "x" : 366,
+        "y" : 77
+      }
+    }, {
+      "from" : {
+        "x" : 366,
+        "y" : 77
+      },
+      "to" : {
+        "x" : 458,
+        "y" : 78
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 451,
+        "y" : 82
+      },
+      "b" : {
+        "x" : 458,
+        "y" : 78
+      },
+      "c" : {
+        "x" : 451,
+        "y" : 74
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 366,
+        "y" : 77
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 217,
+      "points" : [ {
+        "x" : 281,
+        "y" : 81
+      } ]
+    }, {
+      "id" : 218,
+      "points" : [ {
+        "x" : 283,
+        "y" : 34
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 219
+    } ]
+  }, {
+    "id" : 234,
+    "reactomeId" : 500717,
+    "displayName" : "Activation of GRIK3 homomer",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 539,
+      "y" : 300
+    },
+    "minX" : 497,
+    "maxX" : 566,
+    "minY" : 294,
+    "maxY" : 306,
+    "segments" : [ {
+      "from" : {
+        "x" : 497,
+        "y" : 295
+      },
+      "to" : {
+        "x" : 539,
+        "y" : 300
+      }
+    }, {
+      "from" : {
+        "x" : 539,
+        "y" : 300
+      },
+      "to" : {
+        "x" : 566,
+        "y" : 298
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 559,
+        "y" : 303
+      },
+      "b" : {
+        "x" : 566,
+        "y" : 298
+      },
+      "c" : {
+        "x" : 559,
+        "y" : 295
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 533,
+        "y" : 294
+      },
+      "b" : {
+        "x" : 545,
+        "y" : 306
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 235,
+      "points" : [ {
+        "x" : 441,
+        "y" : 289
+      } ]
+    }, {
+      "id" : 233,
+      "points" : [ {
+        "x" : 534,
+        "y" : 237
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 236
+    } ],
+    "catalysts" : [ {
+      "id" : 233,
+      "points" : [ {
+        "x" : 543,
+        "y" : 237
+      } ]
+    } ]
+  }, {
+    "id" : 221,
+    "reactomeId" : 451310,
+    "displayName" : "Activation of Edited Kainate receptors",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 688,
+      "y" : 116
+    },
+    "minX" : 678,
+    "maxX" : 729,
+    "minY" : 43,
+    "maxY" : 323,
+    "segments" : [ {
+      "from" : {
+        "x" : 678,
+        "y" : 43
+      },
+      "to" : {
+        "x" : 688,
+        "y" : 116
+      }
+    }, {
+      "from" : {
+        "x" : 688,
+        "y" : 116
+      },
+      "to" : {
+        "x" : 729,
+        "y" : 323
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 724,
+        "y" : 317
+      },
+      "b" : {
+        "x" : 729,
+        "y" : 323
+      },
+      "c" : {
+        "x" : 732,
+        "y" : 315
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 682,
+        "y" : 110
+      },
+      "b" : {
+        "x" : 694,
+        "y" : 122
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 222
+    } ],
+    "outputs" : [ {
+      "id" : 223
+    } ],
+    "catalysts" : [ {
+      "id" : 219,
+      "points" : [ {
+        "x" : 593,
+        "y" : 94
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 220,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 689,
+      "y" : 309
+    },
+    "minX" : 0,
+    "maxX" : 1379,
+    "minY" : 69,
+    "maxY" : 550,
+    "prop" : {
+      "x" : 0,
+      "y" : 69,
+      "width" : 1379,
+      "height" : 481
+    },
+    "textPosition" : {
+      "x" : 54,
+      "y" : 486
+    },
+    "insets" : {
+      "x" : 41,
+      "y" : 285,
+      "width" : 1309,
+      "height" : 237
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 216, 217, 219, 221, 223, 224, 225, 226, 227, 229, 230, 231, 232, 233, 234, 235, 236 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 232,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 243,
+      "y" : 187
+    },
+    "minX" : 233,
+    "maxX" : 253,
+    "minY" : 173,
+    "maxY" : 201,
+    "segments" : [ {
+      "from" : {
+        "x" : 253,
+        "y" : 201
+      },
+      "to" : {
+        "x" : 233,
+        "y" : 173
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 237,
+        "y" : 181
+      },
+      "b" : {
+        "x" : 249,
+        "y" : 193
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 231
+    } ],
+    "outputs" : [ {
+      "id" : 225
+    } ]
+  } ],
+  "shadows" : [ {
+    "id" : 237,
+    "reactomeId" : 451306,
+    "displayName" : "Ionotropic activity of kainate receptors",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 511,
+      "y" : 179
+    },
+    "minX" : 160,
+    "maxX" : 862,
+    "minY" : -9,
+    "maxY" : 368,
+    "prop" : {
+      "x" : 706,
+      "y" : -9,
+      "width" : 156,
+      "height" : 338
+    },
+    "points" : [ {
+      "x" : 160,
+      "y" : -9
+    }, {
+      "x" : 862,
+      "y" : -9
+    }, {
+      "x" : 862,
+      "y" : 368
+    }, {
+      "x" : 160,
+      "y" : 368
+    } ],
+    "colour" : "#4684ee"
+  }, {
+    "id" : 238,
+    "reactomeId" : 500657,
+    "displayName" : "Presynaptic function of Kainate receptors",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 451,
+      "y" : 160
+    },
+    "minX" : 197,
+    "maxX" : 706,
+    "minY" : -9,
+    "maxY" : 329,
+    "prop" : {
+      "x" : 197,
+      "y" : -9,
+      "width" : 509,
+      "height" : 338
+    },
+    "points" : [ {
+      "x" : 197,
+      "y" : -9
+    }, {
+      "x" : 706,
+      "y" : -9
+    }, {
+      "x" : 706,
+      "y" : 329
+    }, {
+      "x" : 197,
+      "y" : 329
+    } ],
+    "colour" : "#dc3912"
+  } ],
+  "minX" : 0,
+  "maxX" : 1379,
+  "minY" : 0,
+  "maxY" : 550,
+  "disease" : false
+}

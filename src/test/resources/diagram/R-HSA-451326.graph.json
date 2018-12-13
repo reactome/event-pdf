@@ -1,0 +1,617 @@
+{
+  "dbId" : 451326,
+  "stId" : "R-HSA-451326",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 222 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 74112,
+    "stId" : "R-ALL-74112",
+    "displayName" : "Ca2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 228 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 167428,
+    "stId" : "R-HSA-167428",
+    "displayName" : "GNGT1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63211",
+    "geneNames" : [ "GNGT1" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 167434,
+    "stId" : "R-HSA-167434",
+    "displayName" : "G-protein beta-gamma complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 398037 ],
+    "children" : [ 167442, 6814413 ]
+  }, {
+    "dbId" : 450191,
+    "stId" : "R-HSA-450191",
+    "displayName" : "GRIK 2 homomer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 450885 ],
+    "children" : [ 188972, 450890, 450192 ]
+  }, {
+    "dbId" : 9016707,
+    "stId" : "R-HSA-9016707",
+    "displayName" : "CALM1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0DP23",
+    "geneNames" : [ "CALM1", "CALM", "CAM", "CAM1" ],
+    "parents" : [ 450890 ]
+  }, {
+    "dbId" : 164367,
+    "stId" : "R-HSA-164367",
+    "displayName" : "GNG12 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UBI6",
+    "geneNames" : [ "GNG12" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 167442,
+    "stId" : "R-HSA-167442",
+    "displayName" : "G-protein gamma subunit [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 167434 ],
+    "children" : [ 164380, 164367, 164383, 164350, 164329, 164344, 164376, 164346, 164325, 167428, 167440, 164371 ]
+  }, {
+    "dbId" : 164371,
+    "stId" : "R-HSA-164371",
+    "displayName" : "GNG8 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK08",
+    "geneNames" : [ "GNG8", "GNG9", "GNGT9" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 450196,
+    "stId" : "R-HSA-450196",
+    "displayName" : "GRIK 3 homomer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 231 ],
+    "parents" : [ 450885, 500705 ],
+    "children" : [ 188972, 450194 ]
+  }, {
+    "dbId" : 167440,
+    "stId" : "R-HSA-167440",
+    "displayName" : "GNGT2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14610",
+    "geneNames" : [ "GNGT2", "GNG8", "GNG9", "GNGT8" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 425749,
+    "stId" : "R-HSA-425749",
+    "displayName" : "PLC-beta 1/2/3 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 398037 ],
+    "children" : [ 61695, 61693, 61747 ]
+  }, {
+    "dbId" : 450197,
+    "stId" : "R-HSA-450197",
+    "displayName" : "GRIK5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16478",
+    "geneNames" : [ "GRIK5", "GRIK2" ],
+    "parents" : [ 450205 ]
+  }, {
+    "dbId" : 450194,
+    "stId" : "R-HSA-450194",
+    "displayName" : "GRIK3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13003",
+    "geneNames" : [ "GRIK3", "GLUR7" ],
+    "parents" : [ 450203, 450196 ]
+  }, {
+    "dbId" : 202135,
+    "stId" : "R-HSA-202135",
+    "displayName" : "DLG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P78352",
+    "geneNames" : [ "DLG4", "PSD95" ],
+    "parents" : [ 450890, 450889 ]
+  }, {
+    "dbId" : 450192,
+    "stId" : "R-HSA-450192",
+    "displayName" : "GRIK2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13002",
+    "geneNames" : [ "GRIK2", "GLUR6" ],
+    "parents" : [ 450203, 450191, 450210 ]
+  }, {
+    "dbId" : 450206,
+    "stId" : "R-HSA-450206",
+    "displayName" : "GRIK4 heteromer with GRIK1/2/3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 450885 ],
+    "children" : [ 450889, 188972, 450200, 450203 ]
+  }, {
+    "dbId" : 164376,
+    "stId" : "R-HSA-164376",
+    "displayName" : "GNG3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63215",
+    "geneNames" : [ "GNG3", "GNGT3" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 450205,
+    "stId" : "R-HSA-450205",
+    "displayName" : "GRIK5 heteromer with GRIk1/2/3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 450885 ],
+    "children" : [ 188972, 450203, 450197 ]
+  }, {
+    "dbId" : 450203,
+    "stId" : "R-HSA-450203",
+    "displayName" : "GRIK1, GRIK2, GRIK3 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 450205, 450206 ],
+    "children" : [ 450201, 450192, 450194 ]
+  }, {
+    "dbId" : 164383,
+    "stId" : "R-HSA-164383",
+    "displayName" : "GNG5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63218",
+    "geneNames" : [ "GNG5", "GNGT5" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 164380,
+    "stId" : "R-HSA-164380",
+    "displayName" : "GNG2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P59768",
+    "geneNames" : [ "GNG2" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 450200,
+    "stId" : "R-HSA-450200",
+    "displayName" : "GRIK4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16099",
+    "geneNames" : [ "GRIK4", "GRIK" ],
+    "parents" : [ 450206 ]
+  }, {
+    "dbId" : 450201,
+    "stId" : "R-HSA-450201",
+    "displayName" : "GRIK1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P39086",
+    "geneNames" : [ "GRIK1", "GLUR5" ],
+    "parents" : [ 450203, 450209, 450210 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 229 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 450210,
+    "stId" : "R-HSA-450210",
+    "displayName" : "GRIK1 and 2 heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 450885 ],
+    "children" : [ 450201, 188972, 450192 ]
+  }, {
+    "dbId" : 450209,
+    "stId" : "R-HSA-450209",
+    "displayName" : "GRIK1 homomer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 450885 ],
+    "children" : [ 450201, 188972 ]
+  }, {
+    "dbId" : 6814414,
+    "stId" : "R-HSA-6814414",
+    "displayName" : "GNB3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16520",
+    "geneNames" : [ "GNB3" ],
+    "parents" : [ 6814413 ]
+  }, {
+    "dbId" : 6814413,
+    "stId" : "R-HSA-6814413",
+    "displayName" : "G-protein beta subunit [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 167434 ],
+    "children" : [ 6814412, 6814414, 6814416, 6814417, 6814421 ]
+  }, {
+    "dbId" : 6814412,
+    "stId" : "R-HSA-6814412",
+    "displayName" : "GNB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62873",
+    "geneNames" : [ "GNB1" ],
+    "parents" : [ 6814413 ]
+  }, {
+    "dbId" : 375977,
+    "stId" : "R-HSA-375977",
+    "displayName" : "DLG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12959",
+    "geneNames" : [ "DLG1" ],
+    "parents" : [ 450890 ]
+  }, {
+    "dbId" : 188972,
+    "stId" : "R-ALL-188972",
+    "displayName" : "Cl- [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17996",
+    "parents" : [ 451321, 451324, 451319, 450205, 450191, 450206, 450209, 450210, 450196 ]
+  }, {
+    "dbId" : 6814421,
+    "stId" : "R-HSA-6814421",
+    "displayName" : "GNB2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62879",
+    "geneNames" : [ "GNB2" ],
+    "parents" : [ 6814413 ]
+  }, {
+    "dbId" : 61747,
+    "stId" : "R-HSA-61747",
+    "displayName" : "PLCB3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01970",
+    "geneNames" : [ "PLCB3" ],
+    "parents" : [ 425749 ]
+  }, {
+    "dbId" : 6814417,
+    "stId" : "R-HSA-6814417",
+    "displayName" : "GNB4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HAV0",
+    "geneNames" : [ "GNB4" ],
+    "parents" : [ 6814413 ]
+  }, {
+    "dbId" : 6814416,
+    "stId" : "R-HSA-6814416",
+    "displayName" : "GNB5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14775",
+    "geneNames" : [ "GNB5" ],
+    "parents" : [ 6814413 ]
+  }, {
+    "dbId" : 450887,
+    "stId" : "R-HSA-450887",
+    "displayName" : "NCALD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61601",
+    "geneNames" : [ "NCALD" ],
+    "parents" : [ 450890 ]
+  }, {
+    "dbId" : 450885,
+    "stId" : "R-HSA-450885",
+    "displayName" : "Kainate Receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 225 ],
+    "parents" : [ 451281 ],
+    "children" : [ 450205, 450191, 450206, 450209, 450210, 450196 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 223 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 451279,
+    "stId" : "R-HSA-451279",
+    "displayName" : "Edited Kainate receptors [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 217 ],
+    "parents" : [ 451304 ],
+    "children" : [ 451321, 451324, 451319 ]
+  }, {
+    "dbId" : 450890,
+    "stId" : "R-HSA-450890",
+    "displayName" : "GRIK2 interacting proteins [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 450191 ],
+    "children" : [ 443609, 375977, 9016707, 202135, 450887 ]
+  }, {
+    "dbId" : 210382,
+    "stId" : "R-ALL-210382",
+    "displayName" : "L-Glu [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 218 ],
+    "identifier" : "29985",
+    "parents" : [ 451304, 451281, 500705 ]
+  }, {
+    "dbId" : 450889,
+    "stId" : "R-HSA-450889",
+    "displayName" : "GRIK4 interacting proteins [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 450206 ],
+    "children" : [ 443609, 202135 ]
+  }, {
+    "dbId" : 398037,
+    "stId" : "R-HSA-398037",
+    "displayName" : "G-protein beta-gamma:PLC beta 1/2/3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 235 ],
+    "parents" : [ 500703 ],
+    "children" : [ 167434, 425749 ]
+  }, {
+    "dbId" : 451281,
+    "stId" : "R-HSA-451281",
+    "displayName" : "Kainate receptor-glutamate complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 226 ],
+    "children" : [ 210382, 450885 ]
+  }, {
+    "dbId" : 500703,
+    "stId" : "R-HSA-500703",
+    "displayName" : "Kainate receptor-glutamate-Gprotein complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 236 ],
+    "children" : [ 500705, 398037 ]
+  }, {
+    "dbId" : 443609,
+    "stId" : "R-HSA-443609",
+    "displayName" : "DLG3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92796",
+    "geneNames" : [ "DLG3", "KIAA1232" ],
+    "parents" : [ 450890, 450889 ]
+  }, {
+    "dbId" : 500705,
+    "stId" : "R-HSA-500705",
+    "displayName" : "GRIK3 homomer glutamate complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 233 ],
+    "parents" : [ 500703 ],
+    "children" : [ 210382, 450196 ]
+  }, {
+    "dbId" : 164325,
+    "stId" : "R-HSA-164325",
+    "displayName" : "GNG7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60262",
+    "geneNames" : [ "GNG7", "GNGT7" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 164329,
+    "stId" : "R-HSA-164329",
+    "displayName" : "GNG11 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61952",
+    "geneNames" : [ "GNG11", "GNGT11" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 451304,
+    "stId" : "R-HSA-451304",
+    "displayName" : "Edited Kainate Receptor-glutamate complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 219 ],
+    "children" : [ 210382, 451279 ]
+  }, {
+    "dbId" : 451318,
+    "stId" : "R-HSA-451318",
+    "displayName" : "Edited GRIK2 (GluR6) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13002",
+    "geneNames" : [ "GRIK2", "GLUR6" ],
+    "parents" : [ 451324, 451319 ]
+  }, {
+    "dbId" : 451319,
+    "stId" : "R-HSA-451319",
+    "displayName" : "Edited GRIK2 homomer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 451279 ],
+    "children" : [ 188972, 451318 ]
+  }, {
+    "dbId" : 164346,
+    "stId" : "R-HSA-164346",
+    "displayName" : "GNG13 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9P2W3",
+    "geneNames" : [ "GNG13" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 451324,
+    "stId" : "R-HSA-451324",
+    "displayName" : "Edited GRIK1 and GRIK2 heteroteramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 451279 ],
+    "children" : [ 188972, 451322, 451318 ]
+  }, {
+    "dbId" : 164344,
+    "stId" : "R-HSA-164344",
+    "displayName" : "GNG10 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50151",
+    "geneNames" : [ "GNG10", "GNGT10" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 451322,
+    "stId" : "R-HSA-451322",
+    "displayName" : "Edited GRIK 1 (GluR5) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P39086",
+    "geneNames" : [ "GRIK1", "GLUR5" ],
+    "parents" : [ 451321, 451324 ]
+  }, {
+    "dbId" : 164350,
+    "stId" : "R-HSA-164350",
+    "displayName" : "GNG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50150",
+    "geneNames" : [ "GNG4", "GNGT4" ],
+    "parents" : [ 167442 ]
+  }, {
+    "dbId" : 61693,
+    "stId" : "R-HSA-61693",
+    "displayName" : "PLCB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NQ66",
+    "geneNames" : [ "PLCB1", "KIAA0581" ],
+    "parents" : [ 425749 ]
+  }, {
+    "dbId" : 451321,
+    "stId" : "R-HSA-451321",
+    "displayName" : "Edited GRIK1 homomer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 451279 ],
+    "children" : [ 188972, 451322 ]
+  }, {
+    "dbId" : 61695,
+    "stId" : "R-HSA-61695",
+    "displayName" : "PLCB2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q00722",
+    "geneNames" : [ "PLCB2" ],
+    "parents" : [ 425749 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 500708,
+    "stId" : "R-HSA-500708",
+    "displayName" : "GRIK3 homomer binds glutamate",
+    "schemaClass" : "Reaction",
+    "following" : [ 500717 ],
+    "inputs" : [ 210382, 450196 ],
+    "outputs" : [ 500705 ],
+    "efs" : [ ],
+    "diagramIds" : [ 230 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 451283,
+    "stId" : "R-HSA-451283",
+    "displayName" : "kainate receptor binds glutamate",
+    "schemaClass" : "Reaction",
+    "following" : [ 451311 ],
+    "inputs" : [ 210382, 450885 ],
+    "outputs" : [ 451281 ],
+    "efs" : [ ],
+    "diagramIds" : [ 224 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 451310,
+    "stId" : "R-HSA-451310",
+    "displayName" : "Activation of Edited Kainate receptors",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 451309 ],
+    "inputs" : [ 74113 ],
+    "outputs" : [ 83910 ],
+    "catalysts" : [ 451304 ],
+    "efs" : [ ],
+    "diagramIds" : [ 221 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 451311,
+    "stId" : "R-HSA-451311",
+    "displayName" : "Activation of Ca-permeable Kainate receptors",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 451283 ],
+    "inputs" : [ 74112 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 451281 ],
+    "efs" : [ ],
+    "diagramIds" : [ 227 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 500717,
+    "stId" : "R-HSA-500717",
+    "displayName" : "Activation of GRIK3 homomer",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 500708 ],
+    "inputs" : [ 500705, 398037 ],
+    "outputs" : [ 500703 ],
+    "catalysts" : [ 500705 ],
+    "efs" : [ ],
+    "diagramIds" : [ 234 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 451309,
+    "stId" : "R-HSA-451309",
+    "displayName" : "Edited Kainate Receptor binds glutamate",
+    "schemaClass" : "Reaction",
+    "following" : [ 451310 ],
+    "inputs" : [ 210382, 451279 ],
+    "outputs" : [ 451304 ],
+    "efs" : [ ],
+    "diagramIds" : [ 216 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 451307,
+    "stId" : "R-HSA-451307",
+    "displayName" : "Activation of Na-permeable kainate receptors",
+    "events" : [ 451310, 451309 ]
+  }, {
+    "dbId" : 500657,
+    "stId" : "R-HSA-500657",
+    "displayName" : "Presynaptic function of Kainate receptors",
+    "events" : [ 500708, 500717 ]
+  }, {
+    "dbId" : 451306,
+    "stId" : "R-HSA-451306",
+    "displayName" : "Ionotropic activity of kainate receptors",
+    "events" : [ 451283, 451311, 451310, 451309 ]
+  }, {
+    "dbId" : 451308,
+    "stId" : "R-HSA-451308",
+    "displayName" : "Activation of Ca-permeable Kainate Receptor",
+    "events" : [ 451283, 451311 ]
+  } ]
+}

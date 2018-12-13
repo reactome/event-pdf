@@ -1,0 +1,2003 @@
+{
+  "dbId" : 8849932,
+  "stableId" : "R-HSA-8849932",
+  "displayName" : "Synaptic adhesion-like molecules",
+  "nodes" : [ {
+    "id" : 32,
+    "reactomeId" : 8849896,
+    "displayName" : "SALM2,3(SALM1,4)",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1011,
+      "y" : 18
+    },
+    "minX" : 953,
+    "maxX" : 1117,
+    "minY" : 7,
+    "maxY" : 29,
+    "prop" : {
+      "x" : 953,
+      "y" : 7,
+      "width" : 117,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 953,
+      "y" : 7
+    },
+    "connectors" : [ {
+      "edgeId" : 31,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1076,
+          "y" : 18
+        },
+        "to" : {
+          "x" : 1117,
+          "y" : 18
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 8849905,
+    "displayName" : "NMDA receptor complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 70,
+      "y" : 24
+    },
+    "minX" : 19,
+    "maxX" : 168,
+    "minY" : 6,
+    "maxY" : 42,
+    "prop" : {
+      "x" : 19,
+      "y" : 6,
+      "width" : 102,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 19,
+      "y" : 7
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 124,
+          "y" : 23
+        },
+        "to" : {
+          "x" : 168,
+          "y" : 23
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 66,
+    "reactomeId" : 8855645,
+    "displayName" : "SALM3:LAR-RPTPs",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1490,
+      "y" : 239
+    },
+    "minX" : 1432,
+    "maxX" : 1548,
+    "minY" : 228,
+    "maxY" : 250,
+    "prop" : {
+      "x" : 1432,
+      "y" : 228,
+      "width" : 116,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1432,
+      "y" : 229
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 60,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 202135,
+    "displayName" : "DLG4",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 147,
+      "y" : 49
+    },
+    "minX" : 120,
+    "maxX" : 180,
+    "minY" : 23,
+    "maxY" : 60,
+    "prop" : {
+      "x" : 120,
+      "y" : 38,
+      "width" : 54,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 127,
+      "y" : 38
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 174,
+          "y" : 38
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 155,
+          "y" : 35
+        },
+        "to" : {
+          "x" : 168,
+          "y" : 23
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 8849869,
+    "displayName" : "NMDAR:PSD-95",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 282,
+      "y" : 25
+    },
+    "minX" : 231,
+    "maxX" : 364,
+    "minY" : 14,
+    "maxY" : 36,
+    "prop" : {
+      "x" : 231,
+      "y" : 14,
+      "width" : 102,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 231,
+      "y" : 15
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 5,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 336,
+          "y" : 24
+        },
+        "to" : {
+          "x" : 364,
+          "y" : 24
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 37,
+    "reactomeId" : 8849907,
+    "displayName" : "RTN3",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1101,
+      "y" : 41
+    },
+    "minX" : 1080,
+    "maxX" : 1128,
+    "minY" : 18,
+    "maxY" : 52,
+    "prop" : {
+      "x" : 1080,
+      "y" : 30,
+      "width" : 42,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1080,
+      "y" : 30
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1122,
+          "y" : 30
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 31,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1108,
+          "y" : 27
+        },
+        "to" : {
+          "x" : 1117,
+          "y" : 18
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 38,
+    "reactomeId" : 8849893,
+    "displayName" : "SALM2,3(SALM1,4):RTN3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1233,
+      "y" : 18
+    },
+    "minX" : 1173,
+    "maxX" : 1294,
+    "minY" : 0,
+    "maxY" : 36,
+    "prop" : {
+      "x" : 1173,
+      "y" : 0,
+      "width" : 121,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1173,
+      "y" : 1
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 31,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 197665,
+    "displayName" : "SALM1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 328,
+      "y" : 50
+    },
+    "minX" : 305,
+    "maxX" : 364,
+    "minY" : 24,
+    "maxY" : 61,
+    "prop" : {
+      "x" : 305,
+      "y" : 39,
+      "width" : 47,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 305,
+      "y" : 39
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 352,
+          "y" : 39
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 5,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 343,
+          "y" : 36
+        },
+        "to" : {
+          "x" : 364,
+          "y" : 24
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 8849935,
+    "displayName" : "SALM1:NMDAR:PSD-95",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 481,
+      "y" : 24
+    },
+    "minX" : 417,
+    "maxX" : 545,
+    "minY" : 6,
+    "maxY" : 42,
+    "prop" : {
+      "x" : 417,
+      "y" : 6,
+      "width" : 128,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 417,
+      "y" : 7
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 5,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 376003,
+    "displayName" : "PSD-95 family",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 621,
+      "y" : 24
+    },
+    "minX" : 575,
+    "maxX" : 709,
+    "minY" : 13,
+    "maxY" : 35,
+    "prop" : {
+      "x" : 575,
+      "y" : 13,
+      "width" : 92,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 575,
+      "y" : 13
+    },
+    "connectors" : [ {
+      "edgeId" : 8,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 673,
+          "y" : 23
+        },
+        "to" : {
+          "x" : 709,
+          "y" : 23
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 8849913,
+    "displayName" : "SALMs 1-3:PSD-95 family",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 843,
+      "y" : 24
+    },
+    "minX" : 781,
+    "maxX" : 906,
+    "minY" : 6,
+    "maxY" : 42,
+    "prop" : {
+      "x" : 781,
+      "y" : 6,
+      "width" : 125,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 781,
+      "y" : 7
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 8,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 8849894,
+    "displayName" : "FLOT1(FLOT2)",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1075,
+      "y" : 251
+    },
+    "minX" : 1030,
+    "maxX" : 1137,
+    "minY" : 219,
+    "maxY" : 262,
+    "prop" : {
+      "x" : 1030,
+      "y" : 240,
+      "width" : 91,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1030,
+      "y" : 240
+    },
+    "connectors" : [ {
+      "edgeId" : 43,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1096,
+          "y" : 234
+        },
+        "to" : {
+          "x" : 1137,
+          "y" : 219
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 204742,
+    "displayName" : "SALM1,2,3",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 374,
+      "y" : 231
+    },
+    "minX" : 339,
+    "maxX" : 709,
+    "minY" : 23,
+    "maxY" : 242,
+    "prop" : {
+      "x" : 339,
+      "y" : 220,
+      "width" : 71,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 339,
+      "y" : 220
+    },
+    "connectors" : [ {
+      "edgeId" : 8,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 391,
+          "y" : 214
+        },
+        "to" : {
+          "x" : 709,
+          "y" : 23
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 12,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 442,
+            "y" : 224
+          },
+          "b" : {
+            "x" : 454,
+            "y" : 236
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 45,
+    "reactomeId" : 197704,
+    "displayName" : "SALM4",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1063,
+      "y" : 220
+    },
+    "minX" : 1040,
+    "maxX" : 1137,
+    "minY" : 203,
+    "maxY" : 231,
+    "prop" : {
+      "x" : 1040,
+      "y" : 209,
+      "width" : 47,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1040,
+      "y" : 209
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1087,
+          "y" : 209
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 43,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1090,
+          "y" : 219
+        },
+        "to" : {
+          "x" : 1137,
+          "y" : 219
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 47,
+    "reactomeId" : 8849870,
+    "displayName" : "SALM4:FLOT1(FLOT2)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1241,
+      "y" : 220
+    },
+    "minX" : 1197,
+    "maxX" : 1285,
+    "minY" : 202,
+    "maxY" : 238,
+    "prop" : {
+      "x" : 1197,
+      "y" : 202,
+      "width" : 88,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1197,
+      "y" : 203
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 43,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 8849910,
+    "displayName" : "SALM1,2,3 dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 568,
+      "y" : 230
+    },
+    "minX" : 514,
+    "maxX" : 623,
+    "minY" : 219,
+    "maxY" : 241,
+    "prop" : {
+      "x" : 514,
+      "y" : 219,
+      "width" : 109,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 514,
+      "y" : 220
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 12,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 8849876,
+    "displayName" : "AMPA, NMDA receptors",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 700,
+      "y" : 218
+    },
+    "minX" : 655,
+    "maxX" : 810,
+    "minY" : 200,
+    "maxY" : 236,
+    "prop" : {
+      "x" : 655,
+      "y" : 200,
+      "width" : 90,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 655,
+      "y" : 200
+    },
+    "connectors" : [ {
+      "edgeId" : 17,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 751,
+          "y" : 218
+        },
+        "to" : {
+          "x" : 810,
+          "y" : 218
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 20,
+    "reactomeId" : 204734,
+    "displayName" : "SALM2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 781,
+      "y" : 242
+    },
+    "minX" : 758,
+    "maxX" : 811,
+    "minY" : 218,
+    "maxY" : 253,
+    "prop" : {
+      "x" : 758,
+      "y" : 231,
+      "width" : 47,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 758,
+      "y" : 231
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 805,
+          "y" : 231
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 17,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 794,
+          "y" : 228
+        },
+        "to" : {
+          "x" : 810,
+          "y" : 218
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 8849914,
+    "displayName" : "SALM2:AMPA, NMDA receptors",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 941,
+      "y" : 218
+    },
+    "minX" : 875,
+    "maxX" : 1007,
+    "minY" : 200,
+    "maxY" : 236,
+    "prop" : {
+      "x" : 875,
+      "y" : 200,
+      "width" : 132,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 875,
+      "y" : 201
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 17,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 61,
+    "reactomeId" : 6798238,
+    "displayName" : "PTPRF, PTPRS, PTPRD",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1391,
+      "y" : 29
+    },
+    "minX" : 1334,
+    "maxX" : 1448,
+    "minY" : 11,
+    "maxY" : 238,
+    "prop" : {
+      "x" : 1334,
+      "y" : 11,
+      "width" : 114,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1343,
+      "y" : 11
+    },
+    "connectors" : [ {
+      "edgeId" : 60,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1390,
+          "y" : 53
+        },
+        "to" : {
+          "x" : 1390,
+          "y" : 238
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 62,
+    "reactomeId" : 197883,
+    "displayName" : "SALM3",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1337,
+      "y" : 239
+    },
+    "minX" : 1314,
+    "maxX" : 1390,
+    "minY" : 222,
+    "maxY" : 250,
+    "prop" : {
+      "x" : 1314,
+      "y" : 228,
+      "width" : 47,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1314,
+      "y" : 228
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1361,
+          "y" : 228
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 60,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1364,
+          "y" : 238
+        },
+        "to" : {
+          "x" : 1390,
+          "y" : 238
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 1,
+    "reactomeId" : 8849878,
+    "displayName" : "PSD-95 binds NMDA receptor",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 195,
+      "y" : 23
+    },
+    "minX" : 168,
+    "maxX" : 228,
+    "minY" : 18,
+    "maxY" : 28,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 168,
+        "y" : 23
+      },
+      "to" : {
+        "x" : 195,
+        "y" : 23
+      }
+    }, {
+      "from" : {
+        "x" : 195,
+        "y" : 23
+      },
+      "to" : {
+        "x" : 228,
+        "y" : 23
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 221,
+        "y" : 27
+      },
+      "b" : {
+        "x" : 228,
+        "y" : 23
+      },
+      "c" : {
+        "x" : 221,
+        "y" : 19
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 195,
+        "y" : 23
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 2,
+      "points" : [ {
+        "x" : 124,
+        "y" : 23
+      } ]
+    }, {
+      "id" : 3,
+      "points" : [ {
+        "x" : 155,
+        "y" : 35
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 4
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 8849881,
+    "displayName" : "SALM2 associate with AMPA and NMDA receptors",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 842,
+      "y" : 218
+    },
+    "minX" : 810,
+    "maxX" : 872,
+    "minY" : 213,
+    "maxY" : 223,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 810,
+        "y" : 218
+      },
+      "to" : {
+        "x" : 842,
+        "y" : 218
+      }
+    }, {
+      "from" : {
+        "x" : 842,
+        "y" : 218
+      },
+      "to" : {
+        "x" : 872,
+        "y" : 218
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 865,
+        "y" : 222
+      },
+      "b" : {
+        "x" : 872,
+        "y" : 218
+      },
+      "c" : {
+        "x" : 865,
+        "y" : 214
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 842,
+        "y" : 218
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 18,
+      "points" : [ {
+        "x" : 751,
+        "y" : 218
+      } ]
+    }, {
+      "id" : 20,
+      "points" : [ {
+        "x" : 794,
+        "y" : 228
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 22
+    } ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 8849906,
+    "displayName" : "SALM1 binds NMDA receptor",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 394,
+      "y" : 24
+    },
+    "minX" : 364,
+    "maxX" : 414,
+    "minY" : 19,
+    "maxY" : 29,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 364,
+        "y" : 24
+      },
+      "to" : {
+        "x" : 394,
+        "y" : 24
+      }
+    }, {
+      "from" : {
+        "x" : 394,
+        "y" : 24
+      },
+      "to" : {
+        "x" : 414,
+        "y" : 24
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 407,
+        "y" : 28
+      },
+      "b" : {
+        "x" : 414,
+        "y" : 24
+      },
+      "c" : {
+        "x" : 407,
+        "y" : 20
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 394,
+        "y" : 24
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 4,
+      "points" : [ {
+        "x" : 336,
+        "y" : 24
+      } ]
+    }, {
+      "id" : 6,
+      "points" : [ {
+        "x" : 343,
+        "y" : 36
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 7
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 8849891,
+    "displayName" : "SALMs 1-3 bind to PSD-95 family members",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 745,
+      "y" : 23
+    },
+    "minX" : 709,
+    "maxX" : 778,
+    "minY" : 18,
+    "maxY" : 28,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 709,
+        "y" : 23
+      },
+      "to" : {
+        "x" : 745,
+        "y" : 23
+      }
+    }, {
+      "from" : {
+        "x" : 745,
+        "y" : 23
+      },
+      "to" : {
+        "x" : 778,
+        "y" : 23
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 771,
+        "y" : 27
+      },
+      "b" : {
+        "x" : 778,
+        "y" : 23
+      },
+      "c" : {
+        "x" : 771,
+        "y" : 19
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 745,
+        "y" : 23
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 13,
+      "points" : [ {
+        "x" : 391,
+        "y" : 214
+      } ]
+    }, {
+      "id" : 9,
+      "points" : [ {
+        "x" : 673,
+        "y" : 23
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 11
+    } ]
+  }, {
+    "id" : 43,
+    "reactomeId" : 8849908,
+    "displayName" : "SALM4 binds flotillin-1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1163,
+      "y" : 219
+    },
+    "minX" : 1137,
+    "maxX" : 1194,
+    "minY" : 214,
+    "maxY" : 224,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1137,
+        "y" : 219
+      },
+      "to" : {
+        "x" : 1163,
+        "y" : 219
+      }
+    }, {
+      "from" : {
+        "x" : 1163,
+        "y" : 219
+      },
+      "to" : {
+        "x" : 1194,
+        "y" : 219
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1187,
+        "y" : 223
+      },
+      "b" : {
+        "x" : 1194,
+        "y" : 219
+      },
+      "c" : {
+        "x" : 1187,
+        "y" : 215
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1163,
+        "y" : 219
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 1096,
+        "y" : 234
+      } ]
+    }, {
+      "id" : 45,
+      "points" : [ {
+        "x" : 1090,
+        "y" : 219
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 47
+    } ]
+  }, {
+    "id" : 60,
+    "reactomeId" : 8855648,
+    "displayName" : "SALM3 binds LAR-RPTP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1421,
+      "y" : 238
+    },
+    "minX" : 1390,
+    "maxX" : 1429,
+    "minY" : 233,
+    "maxY" : 243,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1390,
+        "y" : 238
+      },
+      "to" : {
+        "x" : 1421,
+        "y" : 238
+      }
+    }, {
+      "from" : {
+        "x" : 1421,
+        "y" : 238
+      },
+      "to" : {
+        "x" : 1429,
+        "y" : 238
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1422,
+        "y" : 242
+      },
+      "b" : {
+        "x" : 1429,
+        "y" : 238
+      },
+      "c" : {
+        "x" : 1422,
+        "y" : 234
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1421,
+        "y" : 238
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 61,
+      "points" : [ {
+        "x" : 1390,
+        "y" : 53
+      } ]
+    }, {
+      "id" : 62,
+      "points" : [ {
+        "x" : 1364,
+        "y" : 238
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 66
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 8849900,
+    "displayName" : "SALMs1-3 bind each other in cis interactions",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 480,
+      "y" : 230
+    },
+    "minX" : 416,
+    "maxX" : 511,
+    "minY" : 225,
+    "maxY" : 235,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 416,
+        "y" : 230
+      },
+      "to" : {
+        "x" : 480,
+        "y" : 230
+      }
+    }, {
+      "from" : {
+        "x" : 480,
+        "y" : 230
+      },
+      "to" : {
+        "x" : 511,
+        "y" : 230
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 504,
+        "y" : 234
+      },
+      "b" : {
+        "x" : 511,
+        "y" : 230
+      },
+      "c" : {
+        "x" : 504,
+        "y" : 226
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 480,
+        "y" : 230
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 13,
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 15
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 8849882,
+    "displayName" : "SALMs 1-4 bind reticulon 3",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1146,
+      "y" : 18
+    },
+    "minX" : 1117,
+    "maxX" : 1170,
+    "minY" : 13,
+    "maxY" : 23,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1117,
+        "y" : 18
+      },
+      "to" : {
+        "x" : 1146,
+        "y" : 18
+      }
+    }, {
+      "from" : {
+        "x" : 1146,
+        "y" : 18
+      },
+      "to" : {
+        "x" : 1170,
+        "y" : 18
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1163,
+        "y" : 22
+      },
+      "b" : {
+        "x" : 1170,
+        "y" : 18
+      },
+      "c" : {
+        "x" : 1163,
+        "y" : 14
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1146,
+        "y" : 18
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 32,
+      "points" : [ {
+        "x" : 1076,
+        "y" : 18
+      } ]
+    }, {
+      "id" : 37,
+      "points" : [ {
+        "x" : 1108,
+        "y" : 27
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 38
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 59,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 747,
+      "y" : 134
+    },
+    "minX" : 0,
+    "maxX" : 1494,
+    "minY" : 18,
+    "maxY" : 251,
+    "prop" : {
+      "x" : 0,
+      "y" : 18,
+      "width" : 1494,
+      "height" : 233
+    },
+    "textPosition" : {
+      "x" : 777,
+      "y" : 129
+    },
+    "insets" : {
+      "x" : 9,
+      "y" : 43,
+      "width" : 1461,
+      "height" : 184
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 31, 37, 38, 43, 47, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 22, 32, 33, 34, 35, 45, 46, 17, 20, 44, 60, 61, 62, 66, 64 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 64,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 1173,
+      "y" : 130
+    },
+    "minX" : 1027,
+    "maxX" : 1320,
+    "minY" : 35,
+    "maxY" : 225,
+    "segments" : [ {
+      "from" : {
+        "x" : 1320,
+        "y" : 225
+      },
+      "to" : {
+        "x" : 1027,
+        "y" : 35
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1167,
+        "y" : 124
+      },
+      "b" : {
+        "x" : 1179,
+        "y" : 136
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 62
+    } ],
+    "outputs" : [ {
+      "id" : 32
+    } ]
+  }, {
+    "id" : 33,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 895,
+      "y" : 131
+    },
+    "minX" : 792,
+    "maxX" : 999,
+    "minY" : 35,
+    "maxY" : 228,
+    "segments" : [ {
+      "from" : {
+        "x" : 792,
+        "y" : 228
+      },
+      "to" : {
+        "x" : 999,
+        "y" : 35
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 889,
+        "y" : 125
+      },
+      "b" : {
+        "x" : 901,
+        "y" : 137
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 20
+    } ],
+    "outputs" : [ {
+      "id" : 32
+    } ]
+  }, {
+    "id" : 34,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 775,
+      "y" : 120
+    },
+    "minX" : 355,
+    "maxX" : 985,
+    "minY" : 35,
+    "maxY" : 126,
+    "segments" : [ {
+      "from" : {
+        "x" : 355,
+        "y" : 53
+      },
+      "to" : {
+        "x" : 775,
+        "y" : 120
+      }
+    }, {
+      "from" : {
+        "x" : 775,
+        "y" : 120
+      },
+      "to" : {
+        "x" : 985,
+        "y" : 35
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 769,
+        "y" : 114
+      },
+      "b" : {
+        "x" : 781,
+        "y" : 126
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 6
+    } ],
+    "outputs" : [ {
+      "id" : 32
+    } ]
+  }, {
+    "id" : 19,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 109,
+      "y" : 79
+    },
+    "minX" : 82,
+    "maxX" : 649,
+    "minY" : 45,
+    "maxY" : 207,
+    "segments" : [ {
+      "from" : {
+        "x" : 82,
+        "y" : 45
+      },
+      "to" : {
+        "x" : 109,
+        "y" : 79
+      }
+    }, {
+      "from" : {
+        "x" : 109,
+        "y" : 79
+      },
+      "to" : {
+        "x" : 649,
+        "y" : 207
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 103,
+        "y" : 73
+      },
+      "b" : {
+        "x" : 115,
+        "y" : 85
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 18
+    } ]
+  }, {
+    "id" : 35,
+    "renderableClass" : "EntitySetAndEntitySetLink",
+    "position" : {
+      "x" : 692,
+      "y" : 124
+    },
+    "minX" : 407,
+    "maxX" : 977,
+    "minY" : 35,
+    "maxY" : 214,
+    "segments" : [ {
+      "from" : {
+        "x" : 977,
+        "y" : 35
+      },
+      "to" : {
+        "x" : 407,
+        "y" : 214
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 686,
+        "y" : 118
+      },
+      "b" : {
+        "x" : 698,
+        "y" : 130
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 32
+    } ],
+    "outputs" : [ {
+      "id" : 13
+    } ]
+  }, {
+    "id" : 21,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 651,
+      "y" : 272
+    },
+    "minX" : 416,
+    "maxX" : 755,
+    "minY" : 236,
+    "maxY" : 278,
+    "segments" : [ {
+      "from" : {
+        "x" : 755,
+        "y" : 247
+      },
+      "to" : {
+        "x" : 651,
+        "y" : 272
+      }
+    }, {
+      "from" : {
+        "x" : 651,
+        "y" : 272
+      },
+      "to" : {
+        "x" : 416,
+        "y" : 236
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 645,
+        "y" : 266
+      },
+      "b" : {
+        "x" : 657,
+        "y" : 278
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 20
+    } ],
+    "outputs" : [ {
+      "id" : 13
+    } ]
+  }, {
+    "id" : 10,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 461,
+      "y" : 104
+    },
+    "minX" : 177,
+    "maxX" : 599,
+    "minY" : 41,
+    "maxY" : 110,
+    "segments" : [ {
+      "from" : {
+        "x" : 177,
+        "y" : 53
+      },
+      "to" : {
+        "x" : 461,
+        "y" : 104
+      }
+    }, {
+      "from" : {
+        "x" : 461,
+        "y" : 104
+      },
+      "to" : {
+        "x" : 599,
+        "y" : 41
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 455,
+        "y" : 98
+      },
+      "b" : {
+        "x" : 467,
+        "y" : 110
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 3
+    } ],
+    "outputs" : [ {
+      "id" : 9
+    } ]
+  }, {
+    "id" : 14,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 350,
+      "y" : 139
+    },
+    "minX" : 330,
+    "maxX" : 371,
+    "minY" : 64,
+    "maxY" : 214,
+    "segments" : [ {
+      "from" : {
+        "x" : 330,
+        "y" : 64
+      },
+      "to" : {
+        "x" : 371,
+        "y" : 214
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 344,
+        "y" : 133
+      },
+      "b" : {
+        "x" : 356,
+        "y" : 145
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 6
+    } ],
+    "outputs" : [ {
+      "id" : 13
+    } ]
+  }, {
+    "id" : 46,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 1036,
+      "y" : 120
+    },
+    "minX" : 1013,
+    "maxX" : 1060,
+    "minY" : 35,
+    "maxY" : 206,
+    "segments" : [ {
+      "from" : {
+        "x" : 1060,
+        "y" : 206
+      },
+      "to" : {
+        "x" : 1013,
+        "y" : 35
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1030,
+        "y" : 114
+      },
+      "b" : {
+        "x" : 1042,
+        "y" : 126
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 45
+    } ],
+    "outputs" : [ {
+      "id" : 32
+    } ]
+  }, {
+    "id" : 63,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 778,
+      "y" : 320
+    },
+    "minX" : 416,
+    "maxX" : 1311,
+    "minY" : 238,
+    "maxY" : 326,
+    "segments" : [ {
+      "from" : {
+        "x" : 1311,
+        "y" : 242
+      },
+      "to" : {
+        "x" : 778,
+        "y" : 320
+      }
+    }, {
+      "from" : {
+        "x" : 778,
+        "y" : 320
+      },
+      "to" : {
+        "x" : 416,
+        "y" : 238
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 772,
+        "y" : 314
+      },
+      "b" : {
+        "x" : 784,
+        "y" : 326
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 62
+    } ],
+    "outputs" : [ {
+      "id" : 13
+    } ]
+  } ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 1548,
+  "minY" : 0,
+  "maxY" : 326,
+  "disease" : false
+}

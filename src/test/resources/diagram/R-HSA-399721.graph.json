@@ -1,0 +1,960 @@
+{
+  "dbId" : 399721,
+  "stId" : "R-HSA-399721",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 3004479,
+    "stId" : "R-HSA-3004479",
+    "displayName" : "GRIA1 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42261",
+    "geneNames" : [ "GRIA1", "GLUH1", "GLUR1" ],
+    "parents" : [ 416309, 416304, 416295 ]
+  }, {
+    "dbId" : 264471,
+    "stId" : "R-HSA-264471",
+    "displayName" : "NSF [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 45 ],
+    "identifier" : "P46459",
+    "geneNames" : [ "NSF" ]
+  }, {
+    "dbId" : 392229,
+    "stId" : "R-HSA-392229",
+    "displayName" : "GRIA4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48058",
+    "geneNames" : [ "GRIA4", "GLUR4" ],
+    "parents" : [ 399698 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 94 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 416295,
+    "stId" : "R-HSA-416295",
+    "displayName" : "AMPA receptors containing GluR1 (heteromers) [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 416325 ],
+    "children" : [ 416296, 3004479 ]
+  }, {
+    "dbId" : 210465,
+    "stId" : "R-HSA-210465",
+    "displayName" : "CACNG3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60359",
+    "geneNames" : [ "CACNG3" ],
+    "parents" : [ 416844 ]
+  }, {
+    "dbId" : 416289,
+    "stId" : "R-HSA-416289",
+    "displayName" : "AMPA receptors containing GluR2 (homomers) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 399713 ],
+    "children" : [ 3004502 ]
+  }, {
+    "dbId" : 416303,
+    "stId" : "R-HSA-416303",
+    "displayName" : "GRIA4 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48058",
+    "geneNames" : [ "GRIA4", "GLUR4" ],
+    "parents" : [ 416296 ]
+  }, {
+    "dbId" : 416296,
+    "stId" : "R-HSA-416296",
+    "displayName" : "GRIA3,GRIA4 [endocytic vesicle membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 416312, 416295 ],
+    "children" : [ 416303, 3004509 ]
+  }, {
+    "dbId" : 156467,
+    "stId" : "R-HSA-156467",
+    "displayName" : "PRKCB [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05771",
+    "geneNames" : [ "PRKCB", "PKCB", "PRKCB1" ],
+    "parents" : [ 139829 ]
+  }, {
+    "dbId" : 416309,
+    "stId" : "R-HSA-416309",
+    "displayName" : "AMPA receptors containing GluR1 and GluR2 [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 416323 ],
+    "children" : [ 3004487, 3004479 ]
+  }, {
+    "dbId" : 139830,
+    "stId" : "R-HSA-139830",
+    "displayName" : "Activated conventional protein kinase C [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 30 ],
+    "children" : [ 139829, 139828, 426343 ]
+  }, {
+    "dbId" : 392241,
+    "stId" : "R-HSA-392241",
+    "displayName" : "EPB41L1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6 ],
+    "identifier" : "Q9H4G0",
+    "geneNames" : [ "EPB41L1", "KIAA0338" ]
+  }, {
+    "dbId" : 210486,
+    "stId" : "R-HSA-210486",
+    "displayName" : "CACNG8 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WXS5",
+    "geneNames" : [ "CACNG8", "CACNG6" ],
+    "parents" : [ 416844 ]
+  }, {
+    "dbId" : 416304,
+    "stId" : "R-HSA-416304",
+    "displayName" : "AMPA receptors containing GluR1 (homomers) [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 416325 ],
+    "children" : [ 3004479 ]
+  }, {
+    "dbId" : 139828,
+    "stId" : "R-HSA-139828",
+    "displayName" : "Activated PKC alpha [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 139830 ],
+    "children" : [ 140648, 33625, 156469, 114519 ]
+  }, {
+    "dbId" : 139829,
+    "stId" : "R-HSA-139829",
+    "displayName" : "Activated PKC beta [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 139830 ],
+    "children" : [ 140648, 33625, 114519, 156467 ]
+  }, {
+    "dbId" : 156469,
+    "stId" : "R-HSA-156469",
+    "displayName" : "PRKCA [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P17252",
+    "geneNames" : [ "PRKCA", "PKCA", "PRKACA" ],
+    "parents" : [ 139828 ]
+  }, {
+    "dbId" : 416314,
+    "stId" : "R-HSA-416314",
+    "displayName" : "AMPA receptors containing GluR2 (homomers) [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 416323 ],
+    "children" : [ 3004487 ]
+  }, {
+    "dbId" : 416312,
+    "stId" : "R-HSA-416312",
+    "displayName" : "AMPA receptors containing GluR2 (heteromers) [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 416323 ],
+    "children" : [ 416296, 3004487 ]
+  }, {
+    "dbId" : 416325,
+    "stId" : "R-HSA-416325",
+    "displayName" : "Ca permeable AMPA receptors [endocytic vesicle membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "children" : [ 416304, 416295 ]
+  }, {
+    "dbId" : 416323,
+    "stId" : "R-HSA-416323",
+    "displayName" : "Ca impermeable AMPA receptors [endocytic vesicle membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 22 ],
+    "children" : [ 416312, 416314, 416309 ]
+  }, {
+    "dbId" : 416846,
+    "stId" : "R-HSA-416846",
+    "displayName" : "CACNG2 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y698",
+    "geneNames" : [ "CACNG2" ],
+    "parents" : [ 416845 ]
+  }, {
+    "dbId" : 416847,
+    "stId" : "R-HSA-416847",
+    "displayName" : "DLG4 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P78352",
+    "geneNames" : [ "DLG4", "PSD95" ],
+    "parents" : [ 416851 ]
+  }, {
+    "dbId" : 416332,
+    "stId" : "R-HSA-416332",
+    "displayName" : "DLG1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "identifier" : "Q12959",
+    "geneNames" : [ "DLG1" ]
+  }, {
+    "dbId" : 416844,
+    "stId" : "R-HSA-416844",
+    "displayName" : "Gamma subunit of VGCC (Stargazin) [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 416329 ],
+    "children" : [ 210486, 210375, 210417, 210465 ]
+  }, {
+    "dbId" : 416845,
+    "stId" : "R-HSA-416845",
+    "displayName" : "Gamma subunit of VGCC (Stargazin) [endocytic vesicle membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 416851 ],
+    "children" : [ 416846, 416848, 416853, 416852 ]
+  }, {
+    "dbId" : 416333,
+    "stId" : "R-HSA-416333",
+    "displayName" : "EPB41L1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 10 ],
+    "identifier" : "Q9H4G0",
+    "geneNames" : [ "EPB41L1", "KIAA0338" ]
+  }, {
+    "dbId" : 416331,
+    "stId" : "R-HSA-416331",
+    "displayName" : "AKAP5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "identifier" : "P24588",
+    "geneNames" : [ "AKAP5", "AKAP79" ]
+  }, {
+    "dbId" : 416843,
+    "stId" : "R-HSA-416843",
+    "displayName" : "MDM2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q00987",
+    "geneNames" : [ "MDM2" ],
+    "parents" : [ 416329 ]
+  }, {
+    "dbId" : 416329,
+    "stId" : "R-HSA-416329",
+    "displayName" : "TARP-PSD95-Mdm2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 16 ],
+    "children" : [ 416843, 416844, 202135 ]
+  }, {
+    "dbId" : 399700,
+    "stId" : "R-HSA-399700",
+    "displayName" : "GluR1 receptors [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 399714 ],
+    "children" : [ 3004495 ]
+  }, {
+    "dbId" : 416852,
+    "stId" : "R-HSA-416852",
+    "displayName" : "CACNG4 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UBN1",
+    "geneNames" : [ "CACNG4" ],
+    "parents" : [ 416845 ]
+  }, {
+    "dbId" : 399701,
+    "stId" : "R-HSA-399701",
+    "displayName" : "AMPA receptors containing GluR1 and GluR2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 399713 ],
+    "children" : [ 3004502, 3004495 ]
+  }, {
+    "dbId" : 416853,
+    "stId" : "R-HSA-416853",
+    "displayName" : "CACNG3 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60359",
+    "geneNames" : [ "CACNG3" ],
+    "parents" : [ 416845 ]
+  }, {
+    "dbId" : 399698,
+    "stId" : "R-HSA-399698",
+    "displayName" : "GRIA3,GRIA4 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 421004, 399696, 399704 ],
+    "children" : [ 3004508, 392229 ]
+  }, {
+    "dbId" : 416851,
+    "stId" : "R-HSA-416851",
+    "displayName" : "TARP-PSD95-Mdm2 [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ],
+    "children" : [ 416845, 416847, 416849 ]
+  }, {
+    "dbId" : 399696,
+    "stId" : "R-HSA-399696",
+    "displayName" : "AMPA receptors containing GluR1 (heteromers) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 399714 ],
+    "children" : [ 399698, 3004495 ]
+  }, {
+    "dbId" : 114519,
+    "stId" : "R-ALL-114519",
+    "displayName" : "DAG [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17815",
+    "parents" : [ 139829, 139828, 426343 ]
+  }, {
+    "dbId" : 416848,
+    "stId" : "R-HSA-416848",
+    "displayName" : "CACNG8 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WXS5",
+    "geneNames" : [ "CACNG8", "CACNG6" ],
+    "parents" : [ 416845 ]
+  }, {
+    "dbId" : 416849,
+    "stId" : "R-HSA-416849",
+    "displayName" : "MDM2 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q00987",
+    "geneNames" : [ "MDM2" ],
+    "parents" : [ 416851 ]
+  }, {
+    "dbId" : 33625,
+    "stId" : "R-ALL-33625",
+    "displayName" : "PS [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18303",
+    "parents" : [ 139829, 426343, 139828 ]
+  }, {
+    "dbId" : 58204,
+    "stId" : "R-HSA-58204",
+    "displayName" : "PRKCG [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05129",
+    "geneNames" : [ "PRKCG", "PKCG" ],
+    "parents" : [ 426343 ]
+  }, {
+    "dbId" : 399704,
+    "stId" : "R-HSA-399704",
+    "displayName" : "AMPA receptors containing GluR2 (heteromers) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 399713 ],
+    "children" : [ 3004502, 399698 ]
+  }, {
+    "dbId" : 426343,
+    "stId" : "R-HSA-426343",
+    "displayName" : "Activated PKC gamma [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 139830 ],
+    "children" : [ 58204, 140648, 33625, 114519 ]
+  }, {
+    "dbId" : 3004495,
+    "stId" : "R-HSA-3004495",
+    "displayName" : "GRIA1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42261",
+    "geneNames" : [ "GRIA1", "GLUH1", "GLUR1" ],
+    "parents" : [ 421002, 399696, 399700, 399701 ]
+  }, {
+    "dbId" : 399714,
+    "stId" : "R-HSA-399714",
+    "displayName" : "Ca permeable AMPA receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "parents" : [ 420976 ],
+    "children" : [ 399696, 399700 ]
+  }, {
+    "dbId" : 399713,
+    "stId" : "R-HSA-399713",
+    "displayName" : "Ca impermeable AMPA receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "parents" : [ 420974 ],
+    "children" : [ 399704, 416289, 399701 ]
+  }, {
+    "dbId" : 420974,
+    "stId" : "R-HSA-420974",
+    "displayName" : "Ca impermeable AMPA receptor ligand complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 99 ],
+    "children" : [ 210382, 399713 ]
+  }, {
+    "dbId" : 3004487,
+    "stId" : "R-HSA-3004487",
+    "displayName" : "GRIA2 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42262",
+    "geneNames" : [ "GRIA2", "GLUR2" ],
+    "parents" : [ 416312, 416314, 416309 ]
+  }, {
+    "dbId" : 140648,
+    "stId" : "R-ALL-140648",
+    "displayName" : "Ca2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 139829, 139828, 426343 ]
+  }, {
+    "dbId" : 416630,
+    "stId" : "R-HSA-416630",
+    "displayName" : "AP2S1-1 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P53680-1",
+    "geneNames" : [ "AP2S1", "AP17", "CLAPS2" ],
+    "parents" : [ 416629 ]
+  }, {
+    "dbId" : 3004509,
+    "stId" : "R-HSA-3004509",
+    "displayName" : "GRIA3 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42263",
+    "geneNames" : [ "GRIA3", "GLUR3", "GLURC" ],
+    "parents" : [ 416296 ]
+  }, {
+    "dbId" : 416631,
+    "stId" : "R-HSA-416631",
+    "displayName" : "GRIP1/GRIP2 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 27 ],
+    "children" : [ 416632, 416638 ]
+  }, {
+    "dbId" : 3004508,
+    "stId" : "R-HSA-3004508",
+    "displayName" : "GRIA3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42263",
+    "geneNames" : [ "GRIA3", "GLUR3", "GLURC" ],
+    "parents" : [ 399698 ]
+  }, {
+    "dbId" : 416629,
+    "stId" : "R-HSA-416629",
+    "displayName" : "AP2 complex [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 25 ],
+    "children" : [ 416634, 416640, 416642, 416630 ]
+  }, {
+    "dbId" : 420976,
+    "stId" : "R-HSA-420976",
+    "displayName" : "Ca permeable AMPA receptor ligand complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 91 ],
+    "children" : [ 210382, 399714 ]
+  }, {
+    "dbId" : 416638,
+    "stId" : "R-HSA-416638",
+    "displayName" : "GRIP1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y3R0",
+    "geneNames" : [ "GRIP1" ],
+    "parents" : [ 416631 ]
+  }, {
+    "dbId" : 3004500,
+    "stId" : "R-HSA-3004500",
+    "displayName" : "p-S880-GRIA2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42262",
+    "geneNames" : [ "GRIA2", "GLUR2" ],
+    "parents" : [ 421002, 421004, 421010 ]
+  }, {
+    "dbId" : 416636,
+    "stId" : "R-HSA-416636",
+    "displayName" : "GRIP1/GRIP2 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 23 ],
+    "children" : [ 416633, 416643 ]
+  }, {
+    "dbId" : 3004502,
+    "stId" : "R-HSA-3004502",
+    "displayName" : "GRIA2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42262",
+    "geneNames" : [ "GRIA2", "GLUR2" ],
+    "parents" : [ 399704, 416289, 399701 ]
+  }, {
+    "dbId" : 416634,
+    "stId" : "R-HSA-416634",
+    "displayName" : "AP2M1-2 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96CW1-2",
+    "geneNames" : [ "AP2M1", "CLAPM1", "KIAA0109" ],
+    "parents" : [ 416629 ]
+  }, {
+    "dbId" : 416635,
+    "stId" : "R-HSA-416635",
+    "displayName" : "AP2A2-3 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O94973-3",
+    "geneNames" : [ "AP2A2", "ADTAB", "CLAPA2", "HIP9", "HYPJ", "KIAA0899" ],
+    "parents" : [ 416640 ]
+  }, {
+    "dbId" : 416632,
+    "stId" : "R-HSA-416632",
+    "displayName" : "GRIP2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9C0E4",
+    "geneNames" : [ "GRIP2", "KIAA1719" ],
+    "parents" : [ 416631 ]
+  }, {
+    "dbId" : 416633,
+    "stId" : "R-HSA-416633",
+    "displayName" : "GRIP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y3R0",
+    "geneNames" : [ "GRIP1" ],
+    "parents" : [ 416636 ]
+  }, {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 96 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 74112,
+    "stId" : "R-ALL-74112",
+    "displayName" : "Ca2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 93 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 416642,
+    "stId" : "R-HSA-416642",
+    "displayName" : "AP2B1-1 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63010-1",
+    "geneNames" : [ "AP2B1", "ADTB2", "CLAPB1" ],
+    "parents" : [ 416629 ]
+  }, {
+    "dbId" : 416643,
+    "stId" : "R-HSA-416643",
+    "displayName" : "GRIP2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9C0E4",
+    "geneNames" : [ "GRIP2", "KIAA1719" ],
+    "parents" : [ 416636 ]
+  }, {
+    "dbId" : 416640,
+    "stId" : "R-HSA-416640",
+    "displayName" : "AP2A [endocytic vesicle membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 75 ],
+    "parents" : [ 416629 ],
+    "children" : [ 416635, 416641 ]
+  }, {
+    "dbId" : 416641,
+    "stId" : "R-HSA-416641",
+    "displayName" : "AP2A1 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95782",
+    "geneNames" : [ "AP2A1", "ADTAA", "CLAPA1" ],
+    "parents" : [ 416640 ]
+  }, {
+    "dbId" : 421004,
+    "stId" : "R-HSA-421004",
+    "displayName" : "AMPA receptors (heteromers) with phopho GluR2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 421001 ],
+    "children" : [ 3004500, 399698 ]
+  }, {
+    "dbId" : 421002,
+    "stId" : "R-HSA-421002",
+    "displayName" : "AMPA receptors containing GluR1 and Phospho GluR2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 421001 ],
+    "children" : [ 3004500, 3004495 ]
+  }, {
+    "dbId" : 421001,
+    "stId" : "R-HSA-421001",
+    "displayName" : "Ca impermeable AMPA receptors (with phospho GluR2 S880) [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 73 ],
+    "children" : [ 421002, 421004, 421010 ]
+  }, {
+    "dbId" : 421010,
+    "stId" : "R-HSA-421010",
+    "displayName" : "AMPA receptors with phopho GluR2 (homomers) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 421001 ],
+    "children" : [ 3004500 ]
+  }, {
+    "dbId" : 202135,
+    "stId" : "R-HSA-202135",
+    "displayName" : "DLG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P78352",
+    "geneNames" : [ "DLG4", "PSD95" ],
+    "parents" : [ 416329 ]
+  }, {
+    "dbId" : 375977,
+    "stId" : "R-HSA-375977",
+    "displayName" : "DLG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "identifier" : "Q12959",
+    "geneNames" : [ "DLG1" ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 49, 5, 21, 74 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 50, 76, 13, 29 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 51, 14, 78, 31 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 210375,
+    "stId" : "R-HSA-210375",
+    "displayName" : "CACNG2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y698",
+    "geneNames" : [ "CACNG2" ],
+    "parents" : [ 416844 ]
+  }, {
+    "dbId" : 8858433,
+    "stId" : "R-HSA-8858433",
+    "displayName" : "TSPAN7:PICK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 46 ],
+    "children" : [ 416989, 400337 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 97 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 3006692,
+    "stId" : "R-HSA-3006692",
+    "displayName" : "MYO6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3 ],
+    "identifier" : "Q9UM54",
+    "geneNames" : [ "MYO6", "KIAA0389" ]
+  }, {
+    "dbId" : 210382,
+    "stId" : "R-ALL-210382",
+    "displayName" : "L-Glu [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 90 ],
+    "identifier" : "29985",
+    "parents" : [ 420976, 420974 ]
+  }, {
+    "dbId" : 3006691,
+    "stId" : "R-HSA-3006691",
+    "displayName" : "MYO6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 11 ],
+    "identifier" : "Q9UM54",
+    "geneNames" : [ "MYO6", "KIAA0389" ]
+  }, {
+    "dbId" : 400337,
+    "stId" : "R-HSA-400337",
+    "displayName" : "TSPAN7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P41732",
+    "geneNames" : [ "TSPAN7", "A15", "DXS1692E", "MXS1", "TM4SF2" ],
+    "parents" : [ 8858433 ]
+  }, {
+    "dbId" : 416989,
+    "stId" : "R-HSA-416989",
+    "displayName" : "PICK1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 26 ],
+    "identifier" : "Q9NRD5",
+    "geneNames" : [ "PICK1", "PRKCABP" ],
+    "parents" : [ 8858433 ]
+  }, {
+    "dbId" : 381669,
+    "stId" : "R-HSA-381669",
+    "displayName" : "AKAP5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 12 ],
+    "identifier" : "P24588",
+    "geneNames" : [ "AKAP5", "AKAP79" ]
+  }, {
+    "dbId" : 416999,
+    "stId" : "R-HSA-416999",
+    "displayName" : "p-T286-CAMK2A [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UQM7",
+    "geneNames" : [ "CAMK2A", "CAMKA", "KIAA0968" ],
+    "parents" : [ 417005 ]
+  }, {
+    "dbId" : 417004,
+    "stId" : "R-HSA-417004",
+    "displayName" : "CaMKII [endocytic vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 17 ],
+    "children" : [ 417005, 417015 ]
+  }, {
+    "dbId" : 417005,
+    "stId" : "R-HSA-417005",
+    "displayName" : "CaMKII subunits alpha/beta [endocytic vesicle membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 417004 ],
+    "children" : [ 417009, 416999 ]
+  }, {
+    "dbId" : 417002,
+    "stId" : "R-HSA-417002",
+    "displayName" : "p-T287-CAMK2D [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13557",
+    "geneNames" : [ "CAMK2D", "CAMKD" ],
+    "parents" : [ 417015 ]
+  }, {
+    "dbId" : 417014,
+    "stId" : "R-HSA-417014",
+    "displayName" : "p-T287-CAMK2G [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13555",
+    "geneNames" : [ "CAMK2G", "CAMK", "CAMK-II", "CAMKG" ],
+    "parents" : [ 417015 ]
+  }, {
+    "dbId" : 417015,
+    "stId" : "R-HSA-417015",
+    "displayName" : "CaMKII subunits delta/gamma [endocytic vesicle membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 417004 ],
+    "children" : [ 417002, 417014 ]
+  }, {
+    "dbId" : 210417,
+    "stId" : "R-HSA-210417",
+    "displayName" : "CACNG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UBN1",
+    "geneNames" : [ "CACNG4" ],
+    "parents" : [ 416844 ]
+  }, {
+    "dbId" : 417009,
+    "stId" : "R-HSA-417009",
+    "displayName" : "p-T287-CAMK2B [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13554",
+    "geneNames" : [ "CAMK2B", "CAM2", "CAMK2", "CAMKB" ],
+    "parents" : [ 417005 ]
+  }, {
+    "dbId" : 417017,
+    "stId" : "R-HSA-417017",
+    "displayName" : "PICK1 [endocytic vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 24 ],
+    "identifier" : "Q9NRD5",
+    "geneNames" : [ "PICK1", "PRKCABP" ]
+  } ],
+  "edges" : [ {
+    "dbId" : 420980,
+    "stId" : "R-HSA-420980",
+    "displayName" : "Activation of Ca permeable AMPA receptors",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74113 ],
+    "outputs" : [ 83910 ],
+    "catalysts" : [ 420976 ],
+    "efs" : [ ],
+    "diagramIds" : [ 95 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 399712,
+    "stId" : "R-HSA-399712",
+    "displayName" : "Activation of Ca permeable AMPA receptors",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 420977, 416320 ],
+    "inputs" : [ 74112 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 420976 ],
+    "efs" : [ ],
+    "diagramIds" : [ 92 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 416320,
+    "stId" : "R-HSA-416320",
+    "displayName" : "Trafficking of GluR1-containing  AMPA receptors",
+    "schemaClass" : "Reaction",
+    "following" : [ 399712, 420977 ],
+    "inputs" : [ 416331, 416332, 3006692, 113592, 416851, 392241, 416325 ],
+    "outputs" : [ 416329, 3006691, 29372, 375977, 416333, 29370, 399714, 381669 ],
+    "catalysts" : [ 417004 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420977,
+    "stId" : "R-HSA-420977",
+    "displayName" : "Ca permeable AMPA receptor ligand binding",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 416320 ],
+    "following" : [ 399712 ],
+    "inputs" : [ 210382, 399714 ],
+    "outputs" : [ 420976 ],
+    "efs" : [ ],
+    "diagramIds" : [ 89 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420975,
+    "stId" : "R-HSA-420975",
+    "displayName" : "Ca impermeable AMPA receptor ligand binding",
+    "schemaClass" : "Reaction",
+    "following" : [ 399711 ],
+    "inputs" : [ 210382, 399713 ],
+    "outputs" : [ 420974 ],
+    "efs" : [ ],
+    "diagramIds" : [ 98 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 399711,
+    "stId" : "R-HSA-399711",
+    "displayName" : "Activation of Ca impermeable AMPA receptors",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 420975 ],
+    "inputs" : [ 74113 ],
+    "outputs" : [ 83910 ],
+    "catalysts" : [ 420974 ],
+    "efs" : [ ],
+    "diagramIds" : [ 100 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 421007,
+    "stId" : "R-HSA-421007",
+    "displayName" : "Endocytosis of Ca impermeable AMPA receptors",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 416985, 416639 ],
+    "following" : [ 416639 ],
+    "inputs" : [ 421001, 416989, 113592, 416640, 416631 ],
+    "outputs" : [ 417017, 29372, 29370, 416636, 416640, 416323 ],
+    "catalysts" : [ 139830 ],
+    "efs" : [ ],
+    "diagramIds" : [ 72 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 416639,
+    "stId" : "R-HSA-416639",
+    "displayName" : "Trafficking of GluR2-containing AMPA receptors to extrasynaptic sites",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 421007 ],
+    "following" : [ 421007, 416985 ],
+    "inputs" : [ 417017, 416636, 113592, 416323, 416629 ],
+    "outputs" : [ 29372, 416989, 29370, 399713, 416629, 416631 ],
+    "catalysts" : [ 139830 ],
+    "efs" : [ ],
+    "diagramIds" : [ 20 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 416985,
+    "stId" : "R-HSA-416985",
+    "displayName" : "Trafficking of GluR2-containing AMPA receptors to synapse",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 416639 ],
+    "following" : [ 421007 ],
+    "inputs" : [ 29372, 416989, 113592, 399713, 416631 ],
+    "outputs" : [ 416989, 29370, 399713, 416631 ],
+    "catalysts" : [ 264471 ],
+    "efs" : [ ],
+    "inhibitors" : [ 8858433 ],
+    "diagramIds" : [ 42 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 416993,
+    "stId" : "R-HSA-416993",
+    "displayName" : "Trafficking of GluR2-containing AMPA receptors",
+    "events" : [ 416639, 421007, 416985 ]
+  }, {
+    "dbId" : 399719,
+    "stId" : "R-HSA-399719",
+    "displayName" : "Trafficking of AMPA receptors",
+    "events" : [ 416320, 416639, 421007, 416985 ]
+  }, {
+    "dbId" : 399710,
+    "stId" : "R-HSA-399710",
+    "displayName" : "Activation of AMPA receptors",
+    "events" : [ 420980, 399712, 420977, 420975, 399711 ]
+  } ]
+}

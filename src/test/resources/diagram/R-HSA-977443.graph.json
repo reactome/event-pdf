@@ -1,0 +1,1029 @@
+{
+  "dbId" : 977443,
+  "stId" : "R-HSA-977443",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 164355,
+    "stId" : "R-HSA-164355",
+    "displayName" : "GNB3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16520",
+    "geneNames" : [ "GNB3" ],
+    "parents" : [ 1013018 ]
+  }, {
+    "dbId" : 975373,
+    "stId" : "R-HSA-975373",
+    "displayName" : "KCNJ5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48544",
+    "geneNames" : [ "KCNJ5", "GIRK4" ],
+    "parents" : [ 975318 ]
+  }, {
+    "dbId" : 352003,
+    "stId" : "R-ALL-352003",
+    "displayName" : "GABA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 8 ],
+    "identifier" : "59888",
+    "parents" : [ 975448, 420698, 975268 ]
+  }, {
+    "dbId" : 167428,
+    "stId" : "R-HSA-167428",
+    "displayName" : "GNGT1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63211",
+    "geneNames" : [ "GNGT1" ],
+    "parents" : [ 1013010 ]
+  }, {
+    "dbId" : 975367,
+    "stId" : "R-HSA-975367",
+    "displayName" : "Kir4.2:Kir5.1 heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 975294 ],
+    "children" : [ 975281, 975292 ]
+  }, {
+    "dbId" : 975365,
+    "stId" : "R-HSA-975365",
+    "displayName" : "KCNJ9 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92806",
+    "geneNames" : [ "KCNJ9", "GIRK3" ],
+    "parents" : [ 975318 ]
+  }, {
+    "dbId" : 164367,
+    "stId" : "R-HSA-164367",
+    "displayName" : "GNG12 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UBI6",
+    "geneNames" : [ "GNG12" ],
+    "parents" : [ 1013010 ]
+  }, {
+    "dbId" : 164371,
+    "stId" : "R-HSA-164371",
+    "displayName" : "GNG8 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK08",
+    "geneNames" : [ "GNG8", "GNG9", "GNGT9" ],
+    "parents" : [ 1013010 ]
+  }, {
+    "dbId" : 167440,
+    "stId" : "R-HSA-167440",
+    "displayName" : "GNGT2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14610",
+    "geneNames" : [ "GNGT2", "GNG8", "GNG9", "GNGT8" ],
+    "parents" : [ 1013010 ]
+  }, {
+    "dbId" : 352022,
+    "stId" : "R-ALL-352022",
+    "displayName" : "Cl- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "17996"
+  }, {
+    "dbId" : 1013019,
+    "stId" : "R-HSA-1013019",
+    "displayName" : "G-protein beta-gamma subunits [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1013017 ],
+    "children" : [ 1013010, 1013018 ]
+  }, {
+    "dbId" : 1013018,
+    "stId" : "R-HSA-1013018",
+    "displayName" : "G-protein beta subunits (1-3) [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 1013019 ],
+    "children" : [ 164335, 164347, 164355 ]
+  }, {
+    "dbId" : 1013017,
+    "stId" : "R-HSA-1013017",
+    "displayName" : "GABA B receptor G-protein beta-gamma complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1013011 ],
+    "children" : [ 420698, 1013019 ]
+  }, {
+    "dbId" : 164376,
+    "stId" : "R-HSA-164376",
+    "displayName" : "GNG3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63215",
+    "geneNames" : [ "GNG3", "GNGT3" ],
+    "parents" : [ 1013010 ]
+  }, {
+    "dbId" : 975381,
+    "stId" : "R-HSA-975381",
+    "displayName" : "GABRB2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P47870",
+    "geneNames" : [ "GABRB2" ],
+    "parents" : [ 975288 ]
+  }, {
+    "dbId" : 975378,
+    "stId" : "R-HSA-975378",
+    "displayName" : "KCNJ2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63252",
+    "geneNames" : [ "KCNJ2", "IRK1" ],
+    "parents" : [ 975359 ]
+  }, {
+    "dbId" : 1013011,
+    "stId" : "R-HSA-1013011",
+    "displayName" : "GABA B receptor G-protein beta-gamma and Kir3 channel complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 31 ],
+    "children" : [ 1013017, 975294 ]
+  }, {
+    "dbId" : 1013010,
+    "stId" : "R-HSA-1013010",
+    "displayName" : "G-protein Gamma subunits [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 1013019 ],
+    "children" : [ 164380, 164367, 164383, 164350, 164344, 164376, 164325, 167428, 167440, 164371 ]
+  }, {
+    "dbId" : 164383,
+    "stId" : "R-HSA-164383",
+    "displayName" : "GNG5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63218",
+    "geneNames" : [ "GNG5", "GNGT5" ],
+    "parents" : [ 1013010 ]
+  }, {
+    "dbId" : 975376,
+    "stId" : "R-HSA-975376",
+    "displayName" : "GABRA5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31644",
+    "geneNames" : [ "GABRA5" ],
+    "parents" : [ 975253 ]
+  }, {
+    "dbId" : 164380,
+    "stId" : "R-HSA-164380",
+    "displayName" : "GNG2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P59768",
+    "geneNames" : [ "GNG2" ],
+    "parents" : [ 1013010 ]
+  }, {
+    "dbId" : 188972,
+    "stId" : "R-ALL-188972",
+    "displayName" : "Cl- [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2 ],
+    "identifier" : "17996"
+  }, {
+    "dbId" : 140344,
+    "stId" : "R-ALL-140344",
+    "displayName" : "Mg2+ [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18420",
+    "parents" : [ 170665 ]
+  }, {
+    "dbId" : 55365,
+    "stId" : "R-HSA-55365",
+    "displayName" : "GNAI3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08754",
+    "geneNames" : [ "GNAI3" ],
+    "parents" : [ 112270 ]
+  }, {
+    "dbId" : 975454,
+    "stId" : "R-HSA-975454",
+    "displayName" : "GABRR3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A8MPY1",
+    "geneNames" : [ "GABRR3" ],
+    "parents" : [ 975443 ]
+  }, {
+    "dbId" : 975448,
+    "stId" : "R-HSA-975448",
+    "displayName" : "GABRR pentamer:GABA [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 49 ],
+    "children" : [ 975443, 352003 ]
+  }, {
+    "dbId" : 975444,
+    "stId" : "R-HSA-975444",
+    "displayName" : "GABRR2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P28476",
+    "geneNames" : [ "GABRR2" ],
+    "parents" : [ 975443 ]
+  }, {
+    "dbId" : 420698,
+    "stId" : "R-HSA-420698",
+    "displayName" : "GABAB receptor:GABA [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "parents" : [ 1013017 ],
+    "children" : [ 420748, 352003 ]
+  }, {
+    "dbId" : 975442,
+    "stId" : "R-HSA-975442",
+    "displayName" : "GABRR1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24046",
+    "geneNames" : [ "GABRR1" ],
+    "parents" : [ 975443 ]
+  }, {
+    "dbId" : 975443,
+    "stId" : "R-HSA-975443",
+    "displayName" : "GABRR1-3 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 975448 ],
+    "children" : [ 975442, 975444, 975454 ]
+  }, {
+    "dbId" : 396910,
+    "stId" : "R-HSA-396910",
+    "displayName" : "G-protein alpha (i):GTP:Adenylate cyclase [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 14 ],
+    "parents" : [ 170659, 170683 ],
+    "children" : [ 170665, 392161 ]
+  }, {
+    "dbId" : 420716,
+    "stId" : "R-HSA-420716",
+    "displayName" : "GABBR1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UBS5",
+    "geneNames" : [ "GABBR1", "GPRC3A" ],
+    "parents" : [ 420748 ]
+  }, {
+    "dbId" : 29804,
+    "stId" : "R-ALL-29804",
+    "displayName" : "K+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 33 ],
+    "identifier" : "29103"
+  }, {
+    "dbId" : 114549,
+    "stId" : "R-ALL-114549",
+    "displayName" : "GDP [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17552",
+    "parents" : [ 392164 ]
+  }, {
+    "dbId" : 975244,
+    "stId" : "R-HSA-975244",
+    "displayName" : "GABRB3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P28472",
+    "geneNames" : [ "GABRB3" ],
+    "parents" : [ 975288 ]
+  }, {
+    "dbId" : 975242,
+    "stId" : "R-HSA-975242",
+    "displayName" : "KCNJ6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48051",
+    "geneNames" : [ "KCNJ6", "GIRK2", "KATP2", "KCNJ7" ],
+    "parents" : [ 975318 ]
+  }, {
+    "dbId" : 975240,
+    "stId" : "R-HSA-975240",
+    "displayName" : "Kirx.x that interacts with Kir2.1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 975359 ],
+    "children" : [ 975281, 975282, 975336, 975290 ]
+  }, {
+    "dbId" : 55431,
+    "stId" : "R-HSA-55431",
+    "displayName" : "GNAI1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63096",
+    "geneNames" : [ "GNAI1" ],
+    "parents" : [ 112270 ]
+  }, {
+    "dbId" : 420748,
+    "stId" : "R-HSA-420748",
+    "displayName" : "GABAB receptor [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "parents" : [ 420698 ],
+    "children" : [ 420747, 420716 ]
+  }, {
+    "dbId" : 55435,
+    "stId" : "R-HSA-55435",
+    "displayName" : "GNAI2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04899",
+    "geneNames" : [ "GNAI2", "GNAI2B" ],
+    "parents" : [ 112270 ]
+  }, {
+    "dbId" : 420747,
+    "stId" : "R-HSA-420747",
+    "displayName" : "GABBR2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75899",
+    "geneNames" : [ "GABBR2", "GPR51", "GPRC3B" ],
+    "parents" : [ 420748 ]
+  }, {
+    "dbId" : 112270,
+    "stId" : "R-HSA-112270",
+    "displayName" : "G alpha (i) [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 392164, 392161 ],
+    "children" : [ 380090, 55435, 55431, 55365 ]
+  }, {
+    "dbId" : 74126,
+    "stId" : "R-ALL-74126",
+    "displayName" : "K+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 34 ],
+    "identifier" : "29103"
+  }, {
+    "dbId" : 975262,
+    "stId" : "R-HSA-975262",
+    "displayName" : "GABRA1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14867",
+    "geneNames" : [ "GABRA1" ],
+    "parents" : [ 975253 ]
+  }, {
+    "dbId" : 975261,
+    "stId" : "R-HSA-975261",
+    "displayName" : "GABRG3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99928",
+    "geneNames" : [ "GABRG3" ],
+    "parents" : [ 975308 ]
+  }, {
+    "dbId" : 975254,
+    "stId" : "R-HSA-975254",
+    "displayName" : "GABRA2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P47869",
+    "geneNames" : [ "GABRA2" ],
+    "parents" : [ 975253, 975532 ]
+  }, {
+    "dbId" : 975253,
+    "stId" : "R-HSA-975253",
+    "displayName" : "GABRAs [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5357502, 5340312 ],
+    "children" : [ 975376, 975296, 975254, 975289, 975320, 975532, 975262 ]
+  }, {
+    "dbId" : 975504,
+    "stId" : "R-HSA-975504",
+    "displayName" : "GABRQ [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UN88",
+    "geneNames" : [ "GABRQ" ],
+    "parents" : [ 5340312 ]
+  }, {
+    "dbId" : 170659,
+    "stId" : "R-HSA-170659",
+    "displayName" : "(Gi alpha1:GTP:Adenylate cyclase):(G alpha-olf:GDP) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 20 ],
+    "children" : [ 170669, 396910 ]
+  }, {
+    "dbId" : 975532,
+    "stId" : "R-HSA-975532",
+    "displayName" : "GABRA2:ARHGEF9 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 975253 ],
+    "children" : [ 195067, 975254 ]
+  }, {
+    "dbId" : 170656,
+    "stId" : "R-HSA-170656",
+    "displayName" : "(Gi alpha1:GDP:Adenylate cyclase):(G alpha-olf:GDP) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 22 ],
+    "children" : [ 170669, 170665, 392164 ]
+  }, {
+    "dbId" : 170657,
+    "stId" : "R-HSA-170657",
+    "displayName" : "GNAL [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P38405",
+    "geneNames" : [ "GNAL" ],
+    "parents" : [ 170669, 170661 ]
+  }, {
+    "dbId" : 170661,
+    "stId" : "R-HSA-170661",
+    "displayName" : "G alpha-olf:GTP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 16 ],
+    "parents" : [ 170683 ],
+    "children" : [ 29438, 170657 ]
+  }, {
+    "dbId" : 379053,
+    "stId" : "R-HSA-379053",
+    "displayName" : "Adenylate cyclase [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 170665 ],
+    "children" : [ 53231, 170684, 379051, 53245, 379054, 379055, 379052, 379058, 379057 ]
+  }, {
+    "dbId" : 379052,
+    "stId" : "R-HSA-379052",
+    "displayName" : "ADCY2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08462",
+    "geneNames" : [ "ADCY2", "KIAA1060" ],
+    "parents" : [ 379053 ]
+  }, {
+    "dbId" : 379055,
+    "stId" : "R-HSA-379055",
+    "displayName" : "ADCY9 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60503",
+    "geneNames" : [ "ADCY9", "KIAA0520" ],
+    "parents" : [ 379053 ]
+  }, {
+    "dbId" : 975268,
+    "stId" : "R-HSA-975268",
+    "displayName" : "GABR heteropentamers:GABA [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "parents" : [ 8856431 ],
+    "children" : [ 5340318, 352003 ]
+  }, {
+    "dbId" : 379054,
+    "stId" : "R-HSA-379054",
+    "displayName" : "ADCY4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NFM4",
+    "geneNames" : [ "ADCY4" ],
+    "parents" : [ 379053 ]
+  }, {
+    "dbId" : 170665,
+    "stId" : "R-HSA-170665",
+    "displayName" : "Adenylate cyclase (Mg2+ cofactor) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 12 ],
+    "parents" : [ 170656, 396910 ],
+    "children" : [ 140344, 379053 ]
+  }, {
+    "dbId" : 379051,
+    "stId" : "R-HSA-379051",
+    "displayName" : "ADCY3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60266",
+    "geneNames" : [ "ADCY3", "KIAA0511" ],
+    "parents" : [ 379053 ]
+  }, {
+    "dbId" : 170669,
+    "stId" : "R-HSA-170669",
+    "displayName" : "G alpha-olf:GDP complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 24 ],
+    "parents" : [ 170656, 170659 ],
+    "children" : [ 29420, 170657 ]
+  }, {
+    "dbId" : 975294,
+    "stId" : "R-HSA-975294",
+    "displayName" : "Kir heterotetramers [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 1013011 ],
+    "children" : [ 975299, 975367, 975303, 975359 ]
+  }, {
+    "dbId" : 975292,
+    "stId" : "R-HSA-975292",
+    "displayName" : "KCNJ15 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99712",
+    "geneNames" : [ "KCNJ15", "KCNJ14" ],
+    "parents" : [ 975367 ]
+  }, {
+    "dbId" : 975293,
+    "stId" : "R-HSA-975293",
+    "displayName" : "GABRB1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18505",
+    "geneNames" : [ "GABRB1" ],
+    "parents" : [ 975288 ]
+  }, {
+    "dbId" : 975290,
+    "stId" : "R-HSA-975290",
+    "displayName" : "KCNJ10 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P78508",
+    "geneNames" : [ "KCNJ10" ],
+    "parents" : [ 975299, 975240 ]
+  }, {
+    "dbId" : 379057,
+    "stId" : "R-HSA-379057",
+    "displayName" : "ADCY7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51828",
+    "geneNames" : [ "ADCY7", "KIAA0037" ],
+    "parents" : [ 379053 ]
+  }, {
+    "dbId" : 975288,
+    "stId" : "R-HSA-975288",
+    "displayName" : "GABRBs [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5357502, 5340312 ],
+    "children" : [ 975381, 975293, 975244 ]
+  }, {
+    "dbId" : 379058,
+    "stId" : "R-HSA-379058",
+    "displayName" : "ADCY6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43306",
+    "geneNames" : [ "ADCY6", "KIAA0422" ],
+    "parents" : [ 379053 ]
+  }, {
+    "dbId" : 975289,
+    "stId" : "R-HSA-975289",
+    "displayName" : "GABRA3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P34903",
+    "geneNames" : [ "GABRA3" ],
+    "parents" : [ 975253 ]
+  }, {
+    "dbId" : 170683,
+    "stId" : "R-HSA-170683",
+    "displayName" : "(Gi alpha1:GTP:Adenylate cyclase):(G alpha-olf:GTP) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 17 ],
+    "children" : [ 396910, 170661 ]
+  }, {
+    "dbId" : 975282,
+    "stId" : "R-HSA-975282",
+    "displayName" : "KCNJ12 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14500",
+    "geneNames" : [ "KCNJ12", "IRK2", "KCNJN1" ],
+    "parents" : [ 975240 ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 19 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 170684,
+    "stId" : "R-HSA-170684",
+    "displayName" : "ADCY5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95622",
+    "geneNames" : [ "ADCY5" ],
+    "parents" : [ 379053 ]
+  }, {
+    "dbId" : 380090,
+    "stId" : "R-HSA-380090",
+    "displayName" : "GNAT3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A8MTJ3",
+    "geneNames" : [ "GNAT3" ],
+    "parents" : [ 112270 ]
+  }, {
+    "dbId" : 975281,
+    "stId" : "R-HSA-975281",
+    "displayName" : "KCNJ16 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NPI9",
+    "geneNames" : [ "KCNJ16" ],
+    "parents" : [ 975299, 975367, 975240 ]
+  }, {
+    "dbId" : 975310,
+    "stId" : "R-HSA-975310",
+    "displayName" : "KCNJ3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48549",
+    "geneNames" : [ "KCNJ3", "GIRK1" ],
+    "parents" : [ 975318 ]
+  }, {
+    "dbId" : 975308,
+    "stId" : "R-HSA-975308",
+    "displayName" : "GABRGs [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5357502, 5340312 ],
+    "children" : [ 975350, 975261 ]
+  }, {
+    "dbId" : 975303,
+    "stId" : "R-HSA-975303",
+    "displayName" : "Kir3 heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 975294 ],
+    "children" : [ 975318 ]
+  }, {
+    "dbId" : 5340312,
+    "stId" : "R-HSA-5340312",
+    "displayName" : "2GABRA:GABRB:GABRG:GABRQ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5340318 ],
+    "children" : [ 975504, 975253, 975288, 975308 ]
+  }, {
+    "dbId" : 975299,
+    "stId" : "R-HSA-975299",
+    "displayName" : "Kir4.1:Kir5.1 heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 975294 ],
+    "children" : [ 975281, 975290 ]
+  }, {
+    "dbId" : 975296,
+    "stId" : "R-HSA-975296",
+    "displayName" : "GABRA4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48169",
+    "geneNames" : [ "GABRA4" ],
+    "parents" : [ 975253 ]
+  }, {
+    "dbId" : 5340318,
+    "stId" : "R-HSA-5340318",
+    "displayName" : "GAGR heteropentamers [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 975268 ],
+    "children" : [ 5357502, 5340312 ]
+  }, {
+    "dbId" : 975320,
+    "stId" : "R-HSA-975320",
+    "displayName" : "GABRA6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16445",
+    "geneNames" : [ "GABRA6" ],
+    "parents" : [ 975253 ]
+  }, {
+    "dbId" : 975318,
+    "stId" : "R-HSA-975318",
+    "displayName" : "Kir3.x channels [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 975303 ],
+    "children" : [ 975365, 975242, 975373, 975310 ]
+  }, {
+    "dbId" : 392164,
+    "stId" : "R-HSA-392164",
+    "displayName" : "G-protein alpha (i):GDP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 25 ],
+    "parents" : [ 170656 ],
+    "children" : [ 112270, 114549 ]
+  }, {
+    "dbId" : 8856422,
+    "stId" : "R-HSA-8856422",
+    "displayName" : "NPTN [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 51 ],
+    "identifier" : "Q9Y639",
+    "geneNames" : [ "NPTN", "SDFR1", "SDR1" ],
+    "parents" : [ 8856431 ]
+  }, {
+    "dbId" : 392161,
+    "stId" : "R-HSA-392161",
+    "displayName" : "G alpha (i): GTP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 13 ],
+    "parents" : [ 396910 ],
+    "children" : [ 112270, 29438 ]
+  }, {
+    "dbId" : 975336,
+    "stId" : "R-HSA-975336",
+    "displayName" : "KCNJ4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48050",
+    "geneNames" : [ "KCNJ4", "IRK3" ],
+    "parents" : [ 975240 ]
+  }, {
+    "dbId" : 164325,
+    "stId" : "R-HSA-164325",
+    "displayName" : "GNG7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60262",
+    "geneNames" : [ "GNG7", "GNGT7" ],
+    "parents" : [ 1013010 ]
+  }, {
+    "dbId" : 8856431,
+    "stId" : "R-HSA-8856431",
+    "displayName" : "GABR heteropentamers:GABA:NPTN [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 52 ],
+    "children" : [ 975268, 8856422 ]
+  }, {
+    "dbId" : 29420,
+    "stId" : "R-ALL-29420",
+    "displayName" : "GDP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17552",
+    "parents" : [ 170669 ]
+  }, {
+    "dbId" : 164335,
+    "stId" : "R-HSA-164335",
+    "displayName" : "GNB2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62879",
+    "geneNames" : [ "GNB2" ],
+    "parents" : [ 1013018 ]
+  }, {
+    "dbId" : 5357502,
+    "stId" : "R-HSA-5357502",
+    "displayName" : "2GABRA:2GABRB:GABRG [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5340318 ],
+    "children" : [ 975253, 975288, 975308 ]
+  }, {
+    "dbId" : 53231,
+    "stId" : "R-HSA-53231",
+    "displayName" : "ADCY1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08828",
+    "geneNames" : [ "ADCY1" ],
+    "parents" : [ 379053 ]
+  }, {
+    "dbId" : 975359,
+    "stId" : "R-HSA-975359",
+    "displayName" : "Kir2.1:Kirx.x heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 975294 ],
+    "children" : [ 975378, 975240 ]
+  }, {
+    "dbId" : 975350,
+    "stId" : "R-HSA-975350",
+    "displayName" : "GABRG2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18507",
+    "geneNames" : [ "GABRG2" ],
+    "parents" : [ 975308 ]
+  }, {
+    "dbId" : 195067,
+    "stId" : "R-HSA-195067",
+    "displayName" : "ARHGEF9 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43307",
+    "geneNames" : [ "ARHGEF9", "ARHDH9", "KIAA0424" ],
+    "parents" : [ 975532 ]
+  }, {
+    "dbId" : 164347,
+    "stId" : "R-HSA-164347",
+    "displayName" : "GNB1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62873",
+    "geneNames" : [ "GNB1" ],
+    "parents" : [ 1013018 ]
+  }, {
+    "dbId" : 164344,
+    "stId" : "R-HSA-164344",
+    "displayName" : "GNG10 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50151",
+    "geneNames" : [ "GNG10", "GNGT10" ],
+    "parents" : [ 1013010 ]
+  }, {
+    "dbId" : 164350,
+    "stId" : "R-HSA-164350",
+    "displayName" : "GNG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50150",
+    "geneNames" : [ "GNG4", "GNGT4" ],
+    "parents" : [ 1013010 ]
+  }, {
+    "dbId" : 53245,
+    "stId" : "R-HSA-53245",
+    "displayName" : "ADCY8 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P40145",
+    "geneNames" : [ "ADCY8" ],
+    "parents" : [ 379053 ]
+  }, {
+    "dbId" : 29438,
+    "stId" : "R-ALL-29438",
+    "displayName" : "GTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15996",
+    "parents" : [ 170661, 392161 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 170674,
+    "stId" : "R-HSA-170674",
+    "displayName" : "Dissociation of the Gi alpha:G olf complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 170686 ],
+    "inputs" : [ 170656 ],
+    "outputs" : [ 170669, 170665, 392164 ],
+    "efs" : [ ],
+    "diagramIds" : [ 23 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 975340,
+    "stId" : "R-HSA-975340",
+    "displayName" : "GABR heteropentamers:GABA transport Cl- from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 188972 ],
+    "outputs" : [ 352022 ],
+    "catalysts" : [ 975268 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1013020,
+    "stId" : "R-HSA-1013020",
+    "displayName" : "Activation of GIRK/Kir3 Channels",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29804 ],
+    "outputs" : [ 74126 ],
+    "catalysts" : [ 1013011 ],
+    "efs" : [ ],
+    "diagramIds" : [ 32 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420688,
+    "stId" : "R-HSA-420688",
+    "displayName" : "GABAB heterodimeric receptor binds GABA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 420748, 352003 ],
+    "outputs" : [ 420698 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 975449,
+    "stId" : "R-HSA-975449",
+    "displayName" : "GABRR pentamer:GABA transports extracellular Cl- to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 188972 ],
+    "outputs" : [ 352022 ],
+    "catalysts" : [ 975448 ],
+    "efs" : [ ],
+    "diagramIds" : [ 48 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 170666,
+    "stId" : "R-HSA-170666",
+    "displayName" : "Adenylate cyclase increases the GTPase activity of G alpha-olf",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 170671 ],
+    "following" : [ 170686 ],
+    "inputs" : [ 170683 ],
+    "outputs" : [ 29372, 170659 ],
+    "catalysts" : [ 170683 ],
+    "efs" : [ ],
+    "diagramIds" : [ 18 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8856398,
+    "stId" : "R-HSA-8856398",
+    "displayName" : "NPTN binds GABA A receptors",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 975268, 8856422 ],
+    "outputs" : [ 8856431 ],
+    "efs" : [ ],
+    "diagramIds" : [ 50 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 392206,
+    "stId" : "R-HSA-392206",
+    "displayName" : "G alpha (i) inhibits adenylate cyclase",
+    "schemaClass" : "Reaction",
+    "following" : [ 170671 ],
+    "inputs" : [ 170665, 392161 ],
+    "outputs" : [ 396910 ],
+    "efs" : [ ],
+    "diagramIds" : [ 11 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 170686,
+    "stId" : "R-HSA-170686",
+    "displayName" : "Adenylate cyclase increases the GTPase activity of Gi alpha",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 170666 ],
+    "following" : [ 170674 ],
+    "inputs" : [ 170683 ],
+    "outputs" : [ 29372, 170656 ],
+    "catalysts" : [ 170683 ],
+    "efs" : [ ],
+    "diagramIds" : [ 21 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 170671,
+    "stId" : "R-HSA-170671",
+    "displayName" : "G alpha-olf:GTP binds to Gi alpha1:GTP:adenylate cyclase complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 392206 ],
+    "following" : [ 170666 ],
+    "inputs" : [ 396910, 170661 ],
+    "outputs" : [ 170683 ],
+    "efs" : [ ],
+    "diagramIds" : [ 15 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 977441,
+    "stId" : "R-HSA-977441",
+    "displayName" : "GABA A receptor activation",
+    "events" : [ 975340 ]
+  }, {
+    "dbId" : 977444,
+    "stId" : "R-HSA-977444",
+    "displayName" : "GABA B receptor activation",
+    "events" : [ 420688, 1013020, 170674, 170666, 392206, 170686, 170671 ]
+  }, {
+    "dbId" : 997272,
+    "stId" : "R-HSA-997272",
+    "displayName" : "Inhibition  of voltage gated Ca2+ channels via Gbeta/gamma subunits",
+    "events" : [ 1013020 ]
+  }, {
+    "dbId" : 170670,
+    "stId" : "R-HSA-170670",
+    "displayName" : "Adenylate cyclase inhibitory pathway",
+    "events" : [ 170674, 170666, 392206, 170686, 170671 ]
+  }, {
+    "dbId" : 977442,
+    "stId" : "R-HSA-977442",
+    "displayName" : "GABA A (rho) receptor activation",
+    "events" : [ 975449 ]
+  }, {
+    "dbId" : 997269,
+    "stId" : "R-HSA-997269",
+    "displayName" : "Inhibition of adenylate cyclase pathway",
+    "events" : [ 170674, 170666, 392206, 170686, 170671 ]
+  }, {
+    "dbId" : 991365,
+    "stId" : "R-HSA-991365",
+    "displayName" : "Activation of GABAB receptors",
+    "events" : [ 1013020, 170674, 170666, 392206, 170686, 170671 ]
+  } ]
+}

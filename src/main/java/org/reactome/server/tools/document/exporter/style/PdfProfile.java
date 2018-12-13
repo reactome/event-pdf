@@ -45,7 +45,7 @@ public class PdfProfile {
 	private int toc = 1;
 
 	public PdfProfile() {
-		// Every PDF must load the fonts again, as they are hold by one, and only one document
+		// Every PDF must load the fonts again, as they are hold by one, and only one, document
 		try {
 			byte[] bytes;
 			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/SourceSerifPro-Regular.ttf"));

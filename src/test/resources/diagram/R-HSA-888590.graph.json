@@ -1,0 +1,665 @@
+{
+  "dbId" : 888590,
+  "stId" : "R-HSA-888590",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 917774,
+    "stId" : "R-HSA-917774",
+    "displayName" : "Docked GABA loaded synaptic vesicle [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 24 ],
+    "children" : [ 449128, 917748, 2029017, 210407, 210385, 210514 ]
+  }, {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 33 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 113536,
+    "stId" : "R-ALL-113536",
+    "displayName" : "SUCCA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 50 ],
+    "identifier" : "15741"
+  }, {
+    "dbId" : 428551,
+    "stId" : "R-HSA-428551",
+    "displayName" : "SLC32A1 [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "identifier" : "Q9H598",
+    "geneNames" : [ "SLC32A1", "VGAT", "VIAAT" ],
+    "parents" : [ 917748 ]
+  }, {
+    "dbId" : 352007,
+    "stId" : "R-ALL-352007",
+    "displayName" : "ligands of SLC6A12 (BGT-1) [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 38 ],
+    "children" : [ 352009, 351986, 352003, 352021 ]
+  }, {
+    "dbId" : 352003,
+    "stId" : "R-ALL-352003",
+    "displayName" : "GABA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26 ],
+    "identifier" : "59888",
+    "parents" : [ 352007 ]
+  }, {
+    "dbId" : 888580,
+    "stId" : "R-HSA-888580",
+    "displayName" : "GAD1 [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99259",
+    "geneNames" : [ "GAD1", "GAD", "GAD67" ],
+    "parents" : [ 888570, 888583 ]
+  }, {
+    "dbId" : 352015,
+    "stId" : "R-ALL-352015",
+    "displayName" : "BET [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17750",
+    "parents" : [ 351982 ]
+  }, {
+    "dbId" : 888583,
+    "stId" : "R-HSA-888583",
+    "displayName" : "Heterodimer of GAD1 and GAD2 [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 888569 ],
+    "children" : [ 888582, 888580 ]
+  }, {
+    "dbId" : 210441,
+    "stId" : "R-HSA-210441",
+    "displayName" : "SNARE complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 29 ],
+    "children" : [ 449128, 2029017, 210516 ]
+  }, {
+    "dbId" : 888582,
+    "stId" : "R-HSA-888582",
+    "displayName" : "GAD2 [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05329",
+    "geneNames" : [ "GAD2", "GAD65" ],
+    "parents" : [ 888583, 888574 ]
+  }, {
+    "dbId" : 444045,
+    "stId" : "R-HSA-444045",
+    "displayName" : "SLC6A11 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48066",
+    "geneNames" : [ "SLC6A11", "GABT3", "GAT3" ],
+    "parents" : [ 444011 ]
+  }, {
+    "dbId" : 352009,
+    "stId" : "R-ALL-352009",
+    "displayName" : "DAB [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "48950",
+    "parents" : [ 352007 ]
+  }, {
+    "dbId" : 352011,
+    "stId" : "R-ALL-352011",
+    "displayName" : "GABA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6, 60 ],
+    "identifier" : "59888",
+    "parents" : [ 351982 ]
+  }, {
+    "dbId" : 352021,
+    "stId" : "R-ALL-352021",
+    "displayName" : "b-Ala [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16958",
+    "parents" : [ 352007 ]
+  }, {
+    "dbId" : 113552,
+    "stId" : "R-ALL-113552",
+    "displayName" : "L-Glu [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 43 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 352023,
+    "stId" : "R-ALL-352023",
+    "displayName" : "DAB [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "48950",
+    "parents" : [ 351982 ]
+  }, {
+    "dbId" : 352022,
+    "stId" : "R-ALL-352022",
+    "displayName" : "Cl- [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 36 ],
+    "identifier" : "17996"
+  }, {
+    "dbId" : 947480,
+    "stId" : "R-HSA-947480",
+    "displayName" : "Homodimer of GAD2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 947479 ],
+    "children" : [ 936509 ]
+  }, {
+    "dbId" : 947478,
+    "stId" : "R-HSA-947478",
+    "displayName" : "Heterodimer of GAD1 and GAD2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 947479 ],
+    "children" : [ 947477, 936509 ]
+  }, {
+    "dbId" : 947479,
+    "stId" : "R-HSA-947479",
+    "displayName" : "GAD Complexes [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 56 ],
+    "children" : [ 947478, 947480 ]
+  }, {
+    "dbId" : 888599,
+    "stId" : "R-HSA-888599",
+    "displayName" : "HSPA8 [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11142",
+    "geneNames" : [ "HSPA8", "HSC70", "HSP73", "HSPA10" ],
+    "parents" : [ 917748 ]
+  }, {
+    "dbId" : 888598,
+    "stId" : "R-HSA-888598",
+    "displayName" : "DNAJC5 [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H3Z4",
+    "geneNames" : [ "DNAJC5", "CLN4" ],
+    "parents" : [ 917748 ]
+  }, {
+    "dbId" : 947477,
+    "stId" : "R-HSA-947477",
+    "displayName" : "GAD1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99259",
+    "geneNames" : [ "GAD1", "GAD", "GAD67" ],
+    "parents" : [ 947478 ]
+  }, {
+    "dbId" : 428571,
+    "stId" : "R-ALL-428571",
+    "displayName" : "GABA [clathrin-sculpted gamma-aminobutyric acid transport vesicle lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "59888",
+    "parents" : [ 917748 ]
+  }, {
+    "dbId" : 210461,
+    "stId" : "R-HSA-210461",
+    "displayName" : "RAB3A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "identifier" : "P20336",
+    "geneNames" : [ "RAB3A" ]
+  }, {
+    "dbId" : 880046,
+    "stId" : "R-ALL-880046",
+    "displayName" : "SUCCSA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 44 ],
+    "identifier" : "16265"
+  }, {
+    "dbId" : 188972,
+    "stId" : "R-ALL-188972",
+    "displayName" : "Cl- [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 34 ],
+    "identifier" : "17996"
+  }, {
+    "dbId" : 29362,
+    "stId" : "R-ALL-29362",
+    "displayName" : "NADH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 51 ],
+    "identifier" : "16908"
+  }, {
+    "dbId" : 936508,
+    "stId" : "R-HSA-936508",
+    "displayName" : "HSPA8 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 55 ],
+    "identifier" : "P11142",
+    "geneNames" : [ "HSPA8", "HSC70", "HSP73", "HSPA10" ]
+  }, {
+    "dbId" : 936509,
+    "stId" : "R-HSA-936509",
+    "displayName" : "GAD2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05329",
+    "geneNames" : [ "GAD2", "GAD65" ],
+    "parents" : [ 947478, 947480 ]
+  }, {
+    "dbId" : 113594,
+    "stId" : "R-ALL-113594",
+    "displayName" : "2OG [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 42 ],
+    "identifier" : "30915"
+  }, {
+    "dbId" : 2029017,
+    "stId" : "R-HSA-2029017",
+    "displayName" : "SNAP25 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 64 ],
+    "identifier" : "P60880",
+    "geneNames" : [ "SNAP25", "SNAP" ],
+    "parents" : [ 917774, 210441 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 35 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 936512,
+    "stId" : "R-HSA-936512",
+    "displayName" : "DNAJC5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 54 ],
+    "identifier" : "Q9H3Z4",
+    "geneNames" : [ "DNAJC5", "CLN4" ]
+  }, {
+    "dbId" : 29390,
+    "stId" : "R-ALL-29390",
+    "displayName" : "PXLP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4, 10 ],
+    "identifier" : "18405"
+  }, {
+    "dbId" : 168786,
+    "stId" : "R-HSA-168786",
+    "displayName" : "SYT1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 30 ],
+    "identifier" : "P21579",
+    "geneNames" : [ "SYT1", "SVP65", "SYT" ]
+  }, {
+    "dbId" : 210514,
+    "stId" : "R-HSA-210514",
+    "displayName" : "STXBP1-1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 21 ],
+    "identifier" : "P61764-1",
+    "geneNames" : [ "STXBP1", "UNC18A" ],
+    "parents" : [ 917774 ]
+  }, {
+    "dbId" : 916831,
+    "stId" : "R-HSA-916831",
+    "displayName" : "ALDH5A1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 52 ],
+    "identifier" : "P51649",
+    "geneNames" : [ "ALDH5A1", "SSADH" ]
+  }, {
+    "dbId" : 210385,
+    "stId" : "R-HSA-210385",
+    "displayName" : "CPLX1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 19 ],
+    "identifier" : "O14810",
+    "geneNames" : [ "CPLX1" ],
+    "parents" : [ 917774 ]
+  }, {
+    "dbId" : 210516,
+    "stId" : "R-HSA-210516",
+    "displayName" : "VAMP2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63027",
+    "geneNames" : [ "VAMP2", "SYB2" ],
+    "parents" : [ 210441 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 29404,
+    "stId" : "R-ALL-29404",
+    "displayName" : "L-Glu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 917998,
+    "stId" : "R-HSA-917998",
+    "displayName" : "SLC32A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 27 ],
+    "identifier" : "Q9H598",
+    "geneNames" : [ "SLC32A1", "VGAT", "VIAAT" ]
+  }, {
+    "dbId" : 917743,
+    "stId" : "R-HSA-917743",
+    "displayName" : "RAB3A [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20336",
+    "geneNames" : [ "RAB3A" ],
+    "parents" : [ 917748 ]
+  }, {
+    "dbId" : 916847,
+    "stId" : "R-HSA-916847",
+    "displayName" : "4 aminobutyrate aminotransferase homodimer [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 45 ],
+    "children" : [ 916848 ]
+  }, {
+    "dbId" : 917741,
+    "stId" : "R-HSA-917741",
+    "displayName" : "SYT1 [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21579",
+    "geneNames" : [ "SYT1", "SVP65", "SYT" ],
+    "parents" : [ 917748 ]
+  }, {
+    "dbId" : 210407,
+    "stId" : "R-HSA-210407",
+    "displayName" : "RIMS1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 23 ],
+    "identifier" : "Q86UR5",
+    "geneNames" : [ "RIMS1", "KIAA0340", "RAB3IP2", "RIM1", "Nbla00761" ],
+    "parents" : [ 917774 ]
+  }, {
+    "dbId" : 917738,
+    "stId" : "R-HSA-917738",
+    "displayName" : "VAMP2 [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63027",
+    "geneNames" : [ "VAMP2", "SYB2" ],
+    "parents" : [ 917748 ]
+  }, {
+    "dbId" : 351969,
+    "stId" : "R-HSA-351969",
+    "displayName" : "SLC6A12 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 58 ],
+    "identifier" : "P48065",
+    "geneNames" : [ "SLC6A12" ]
+  }, {
+    "dbId" : 351982,
+    "stId" : "R-ALL-351982",
+    "displayName" : "ligands of SLC6A12 (BGT-1) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 39 ],
+    "children" : [ 352011, 352015, 73590, 352023 ]
+  }, {
+    "dbId" : 444011,
+    "stId" : "R-HSA-444011",
+    "displayName" : "SLC6A GABA transporters [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 57 ],
+    "children" : [ 444027, 444045, 444017 ]
+  }, {
+    "dbId" : 449128,
+    "stId" : "R-HSA-449128",
+    "displayName" : "STX1A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 66 ],
+    "identifier" : "Q16623",
+    "geneNames" : [ "STX1A", "STX1" ],
+    "parents" : [ 917774, 210441 ]
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 48 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 888574,
+    "stId" : "R-HSA-888574",
+    "displayName" : "Homodimer of GAD2 [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 888569 ],
+    "children" : [ 888582 ]
+  }, {
+    "dbId" : 888569,
+    "stId" : "R-HSA-888569",
+    "displayName" : "GAD Complexes [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "parents" : [ 917748 ],
+    "children" : [ 888583, 888574 ]
+  }, {
+    "dbId" : 444017,
+    "stId" : "R-HSA-444017",
+    "displayName" : "SLC6A13 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NSD5",
+    "geneNames" : [ "SLC6A13", "GAT2" ],
+    "parents" : [ 444011 ]
+  }, {
+    "dbId" : 351986,
+    "stId" : "R-ALL-351986",
+    "displayName" : "BET [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17750",
+    "parents" : [ 352007 ]
+  }, {
+    "dbId" : 73590,
+    "stId" : "R-ALL-73590",
+    "displayName" : "b-Ala [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16958",
+    "parents" : [ 351982 ]
+  }, {
+    "dbId" : 113526,
+    "stId" : "R-ALL-113526",
+    "displayName" : "NAD+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 49 ],
+    "identifier" : "15846"
+  }, {
+    "dbId" : 888570,
+    "stId" : "R-HSA-888570",
+    "displayName" : "GAD1 homodimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 65 ],
+    "children" : [ 888580 ]
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 5 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 917748,
+    "stId" : "R-HSA-917748",
+    "displayName" : "GABA Loaded synaptic vesicle [clathrin-sculpted gamma-aminobutyric acid transport vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 13 ],
+    "parents" : [ 917774 ],
+    "children" : [ 428571, 888598, 888599, 917738, 888569, 917741, 917743, 428551 ]
+  }, {
+    "dbId" : 916848,
+    "stId" : "R-HSA-916848",
+    "displayName" : "ABAT [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P80404",
+    "geneNames" : [ "ABAT", "GABAT" ],
+    "parents" : [ 916847 ]
+  }, {
+    "dbId" : 444027,
+    "stId" : "R-HSA-444027",
+    "displayName" : "SLC6A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30531",
+    "geneNames" : [ "SLC6A1", "GABATR", "GABT1", "GAT1" ],
+    "parents" : [ 444011 ]
+  }, {
+    "dbId" : 916850,
+    "stId" : "R-ALL-916850",
+    "displayName" : "GABA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 41 ],
+    "identifier" : "59888"
+  } ],
+  "edges" : [ {
+    "dbId" : 888589,
+    "stId" : "R-HSA-888589",
+    "displayName" : "Release of GABA at the synapse",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 917744 ],
+    "inputs" : [ 917774 ],
+    "outputs" : [ 210461, 936512, 210441, 947479, 352003, 210407, 936508, 210385, 210514, 168786, 917998 ],
+    "catalysts" : [ 917774 ],
+    "efs" : [ ],
+    "diagramIds" : [ 25 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 444007,
+    "stId" : "R-HSA-444007",
+    "displayName" : "GAT1-3 mediate Na+/Cl- dependent GABA transport",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 188972, 352003, 74113 ],
+    "outputs" : [ 352011, 83910, 352022 ],
+    "catalysts" : [ 444011 ],
+    "efs" : [ ],
+    "diagramIds" : [ 32 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 888572,
+    "stId" : "R-HSA-888572",
+    "displayName" : "Synthesis of GABA by GAD1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29390, 29404, 70106 ],
+    "outputs" : [ 29390, 352011, 113528 ],
+    "catalysts" : [ 888570 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 352029,
+    "stId" : "R-HSA-352029",
+    "displayName" : "SLC6A12 (BGT-1)-mediated uptake of GABA and betaine",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 188972, 352007, 74113 ],
+    "outputs" : [ 351982, 83910, 352022 ],
+    "catalysts" : [ 351969 ],
+    "efs" : [ ],
+    "diagramIds" : [ 37 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 888548,
+    "stId" : "R-HSA-888548",
+    "displayName" : "Conversion of succinate semialdehyde to succinate",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113526, 880046, 113521 ],
+    "outputs" : [ 29362, 113536 ],
+    "catalysts" : [ 916831 ],
+    "efs" : [ ],
+    "diagramIds" : [ 47 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 916855,
+    "stId" : "R-HSA-916855",
+    "displayName" : "Conversion of GABA to Succinate Semialdehyde",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 916850, 29390, 113594 ],
+    "outputs" : [ 29390, 880046, 113552 ],
+    "catalysts" : [ 916847 ],
+    "efs" : [ ],
+    "diagramIds" : [ 40 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 888577,
+    "stId" : "R-HSA-888577",
+    "displayName" : "Synthesis of GABA by GAD2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29390, 29404, 70106 ],
+    "outputs" : [ 29390, 352011, 113528 ],
+    "catalysts" : [ 888569 ],
+    "efs" : [ ],
+    "diagramIds" : [ 8 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 888592,
+    "stId" : "R-HSA-888592",
+    "displayName" : "Loading of GABA into clathrin sculpted GABA transport vesicle lumen",
+    "schemaClass" : "Reaction",
+    "following" : [ 917744 ],
+    "inputs" : [ 352011 ],
+    "outputs" : [ 428571 ],
+    "catalysts" : [ 428551 ],
+    "efs" : [ ],
+    "diagramIds" : [ 11 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 917744,
+    "stId" : "R-HSA-917744",
+    "displayName" : "GABA loaded synaptic vesicle Docking and Priming",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 888592 ],
+    "following" : [ 888589 ],
+    "inputs" : [ 449128, 917748, 2029017, 210407, 210385, 210514 ],
+    "outputs" : [ 917774 ],
+    "catalysts" : [ 917748 ],
+    "efs" : [ ],
+    "diagramIds" : [ 18 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 888568,
+    "stId" : "R-HSA-888568",
+    "displayName" : "GABA synthesis",
+    "events" : [ 888572, 888577 ]
+  }, {
+    "dbId" : 916853,
+    "stId" : "R-HSA-916853",
+    "displayName" : "Degradation of GABA",
+    "events" : [ 888548, 916855 ]
+  }, {
+    "dbId" : 888593,
+    "stId" : "R-HSA-888593",
+    "displayName" : "Reuptake of GABA",
+    "events" : [ 444007, 352029 ]
+  } ]
+}

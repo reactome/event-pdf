@@ -1,0 +1,465 @@
+{
+  "dbId" : 112315,
+  "stableId" : "R-HSA-112315",
+  "displayName" : "Transmission across Chemical Synapses",
+  "nodes" : [ {
+    "id" : 42,
+    "reactomeId" : 112314,
+    "displayName" : "Neurotransmitter receptors and postsynaptic signal transmission",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 60,
+      "y" : 269
+    },
+    "minX" : 0,
+    "maxX" : 121,
+    "minY" : 219,
+    "maxY" : 319,
+    "prop" : {
+      "x" : 0,
+      "y" : 219,
+      "width" : 121,
+      "height" : 100
+    },
+    "textPosition" : {
+      "x" : 1,
+      "y" : 226
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 43,
+    "reactomeId" : 112313,
+    "displayName" : "Neurotransmitter uptake and metabolism In glial cells",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 472,
+      "y" : 280
+    },
+    "minX" : 408,
+    "maxX" : 537,
+    "minY" : 244,
+    "maxY" : 316,
+    "prop" : {
+      "x" : 408,
+      "y" : 244,
+      "width" : 129,
+      "height" : 72
+    },
+    "textPosition" : {
+      "x" : 408,
+      "y" : 244
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 112310,
+    "displayName" : "Neurotransmitter release cycle",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 199,
+      "y" : 146
+    },
+    "minX" : 140,
+    "maxX" : 258,
+    "minY" : 124,
+    "maxY" : 168,
+    "prop" : {
+      "x" : 140,
+      "y" : 124,
+      "width" : 118,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 140,
+      "y" : 124
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 45,
+    "reactomeId" : 112311,
+    "displayName" : "Neurotransmitter clearance",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 249,
+      "y" : 289
+    },
+    "minX" : 190,
+    "maxX" : 308,
+    "minY" : 260,
+    "maxY" : 318,
+    "prop" : {
+      "x" : 190,
+      "y" : 260,
+      "width" : 118,
+      "height" : 58
+    },
+    "textPosition" : {
+      "x" : 190,
+      "y" : 267
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 46,
+    "reactomeId" : 112308,
+    "displayName" : "Presynaptic depolarization and calcium channel opening",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 198,
+      "y" : 43
+    },
+    "minX" : 137,
+    "maxX" : 260,
+    "minY" : 0,
+    "maxY" : 86,
+    "prop" : {
+      "x" : 137,
+      "y" : 0,
+      "width" : 123,
+      "height" : 86
+    },
+    "textPosition" : {
+      "x" : 143,
+      "y" : 7
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 48,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 145,
+      "y" : 193
+    },
+    "minX" : 117,
+    "maxX" : 173,
+    "minY" : 171,
+    "maxY" : 216,
+    "segments" : [ {
+      "from" : {
+        "x" : 173,
+        "y" : 171
+      },
+      "to" : {
+        "x" : 117,
+        "y" : 216
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 120,
+        "y" : 209
+      },
+      "b" : {
+        "x" : 117,
+        "y" : 216
+      },
+      "c" : {
+        "x" : 125,
+        "y" : 215
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 139,
+        "y" : 187
+      },
+      "b" : {
+        "x" : 151,
+        "y" : 199
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 44
+    } ],
+    "outputs" : [ {
+      "id" : 42
+    } ]
+  }, {
+    "id" : 49,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 324,
+      "y" : 210
+    },
+    "minX" : 243,
+    "maxX" : 405,
+    "minY" : 171,
+    "maxY" : 249,
+    "segments" : [ {
+      "from" : {
+        "x" : 243,
+        "y" : 171
+      },
+      "to" : {
+        "x" : 405,
+        "y" : 249
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 397,
+        "y" : 250
+      },
+      "b" : {
+        "x" : 405,
+        "y" : 249
+      },
+      "c" : {
+        "x" : 400,
+        "y" : 242
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 318,
+        "y" : 204
+      },
+      "b" : {
+        "x" : 330,
+        "y" : 216
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 44
+    } ],
+    "outputs" : [ {
+      "id" : 43
+    } ]
+  }, {
+    "id" : 50,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 324,
+      "y" : 210
+    },
+    "minX" : 243,
+    "maxX" : 405,
+    "minY" : 171,
+    "maxY" : 249,
+    "segments" : [ {
+      "from" : {
+        "x" : 405,
+        "y" : 249
+      },
+      "to" : {
+        "x" : 243,
+        "y" : 171
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 251,
+        "y" : 170
+      },
+      "b" : {
+        "x" : 243,
+        "y" : 171
+      },
+      "c" : {
+        "x" : 248,
+        "y" : 178
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 318,
+        "y" : 204
+      },
+      "b" : {
+        "x" : 330,
+        "y" : 216
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 43
+    } ],
+    "outputs" : [ {
+      "id" : 44
+    } ]
+  }, {
+    "id" : 51,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 259,
+      "y" : 138
+    },
+    "minX" : 253,
+    "maxX" : 265,
+    "minY" : 132,
+    "maxY" : 144,
+    "segments" : [ {
+      "from" : {
+        "x" : 258,
+        "y" : 138
+      },
+      "to" : {
+        "x" : 261,
+        "y" : 138
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 254,
+        "y" : 142
+      },
+      "b" : {
+        "x" : 261,
+        "y" : 138
+      },
+      "c" : {
+        "x" : 254,
+        "y" : 134
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 253,
+        "y" : 132
+      },
+      "b" : {
+        "x" : 265,
+        "y" : 144
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 44
+    } ],
+    "outputs" : [ {
+      "id" : 44
+    } ]
+  }, {
+    "id" : 52,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 198,
+      "y" : 105
+    },
+    "minX" : 192,
+    "maxX" : 204,
+    "minY" : 89,
+    "maxY" : 121,
+    "segments" : [ {
+      "from" : {
+        "x" : 198,
+        "y" : 89
+      },
+      "to" : {
+        "x" : 198,
+        "y" : 121
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 194,
+        "y" : 114
+      },
+      "b" : {
+        "x" : 198,
+        "y" : 121
+      },
+      "c" : {
+        "x" : 202,
+        "y" : 114
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 192,
+        "y" : 99
+      },
+      "b" : {
+        "x" : 204,
+        "y" : 111
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 46
+    } ],
+    "outputs" : [ {
+      "id" : 44
+    } ]
+  }, {
+    "id" : 53,
+    "renderableClass" : "FlowLine",
+    "position" : {
+      "x" : 222,
+      "y" : 214
+    },
+    "minX" : 206,
+    "maxX" : 238,
+    "minY" : 171,
+    "maxY" : 257,
+    "segments" : [ {
+      "from" : {
+        "x" : 206,
+        "y" : 171
+      },
+      "to" : {
+        "x" : 238,
+        "y" : 257
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 232,
+        "y" : 252
+      },
+      "b" : {
+        "x" : 238,
+        "y" : 257
+      },
+      "c" : {
+        "x" : 239,
+        "y" : 249
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 216,
+        "y" : 208
+      },
+      "b" : {
+        "x" : 228,
+        "y" : 220
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 44
+    } ],
+    "outputs" : [ {
+      "id" : 45
+    } ]
+  } ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 537,
+  "minY" : 0,
+  "maxY" : 319,
+  "disease" : false
+}

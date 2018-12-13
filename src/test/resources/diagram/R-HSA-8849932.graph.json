@@ -1,0 +1,472 @@
+{
+  "dbId" : 8849932,
+  "stId" : "R-HSA-8849932",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 204742,
+    "stId" : "R-HSA-204742",
+    "displayName" : "SALM1,2,3 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 13 ],
+    "parents" : [ 8849910, 8849913 ],
+    "children" : [ 204734, 197883, 197665 ]
+  }, {
+    "dbId" : 376003,
+    "stId" : "R-HSA-376003",
+    "displayName" : "PSD-95 family [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "parents" : [ 8849913 ],
+    "children" : [ 443609, 375977, 202135 ]
+  }, {
+    "dbId" : 8849935,
+    "stId" : "R-HSA-8849935",
+    "displayName" : "SALM1:NMDAR:PSD-95 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "children" : [ 8849869, 197665 ]
+  }, {
+    "dbId" : 8849870,
+    "stId" : "R-HSA-8849870",
+    "displayName" : "SALM4:FLOT1(FLOT2) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 47 ],
+    "children" : [ 197704, 8849894 ]
+  }, {
+    "dbId" : 8849869,
+    "stId" : "R-HSA-8849869",
+    "displayName" : "NMDAR:PSD-95 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "parents" : [ 8849935 ],
+    "children" : [ 8849905, 202135 ]
+  }, {
+    "dbId" : 197704,
+    "stId" : "R-HSA-197704",
+    "displayName" : "SALM4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 45 ],
+    "identifier" : "Q9BTN0",
+    "geneNames" : [ "LRFN3", "SALM4", "UNQ5865/PRO34192" ],
+    "parents" : [ 8849896, 8849870 ]
+  }, {
+    "dbId" : 6797868,
+    "stId" : "R-HSA-6797868",
+    "displayName" : "PTPRD [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23468",
+    "geneNames" : [ "PTPRD" ],
+    "parents" : [ 6798238 ]
+  }, {
+    "dbId" : 210382,
+    "stId" : "R-ALL-210382",
+    "displayName" : "L-Glu [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29985",
+    "parents" : [ 8849905 ]
+  }, {
+    "dbId" : 6786486,
+    "stId" : "R-HSA-6786486",
+    "displayName" : "PTPRF [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10586",
+    "geneNames" : [ "PTPRF", "LAR" ],
+    "parents" : [ 6798238 ]
+  }, {
+    "dbId" : 399700,
+    "stId" : "R-HSA-399700",
+    "displayName" : "GluR1 receptors [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 399714 ],
+    "children" : [ 3004495 ]
+  }, {
+    "dbId" : 8849876,
+    "stId" : "R-HSA-8849876",
+    "displayName" : "AMPA, NMDA receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 18 ],
+    "parents" : [ 8849914 ],
+    "children" : [ 8849905, 399714 ]
+  }, {
+    "dbId" : 399698,
+    "stId" : "R-HSA-399698",
+    "displayName" : "GRIA3,GRIA4 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 399696 ],
+    "children" : [ 3004508, 392229 ]
+  }, {
+    "dbId" : 202135,
+    "stId" : "R-HSA-202135",
+    "displayName" : "DLG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3 ],
+    "identifier" : "P78352",
+    "geneNames" : [ "DLG4", "PSD95" ],
+    "parents" : [ 376003, 8849869 ]
+  }, {
+    "dbId" : 399696,
+    "stId" : "R-HSA-399696",
+    "displayName" : "AMPA receptors containing GluR1 (heteromers) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 399714 ],
+    "children" : [ 399698, 3004495 ]
+  }, {
+    "dbId" : 8855645,
+    "stId" : "R-HSA-8855645",
+    "displayName" : "SALM3:LAR-RPTPs [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 66 ],
+    "children" : [ 6798238, 197883 ]
+  }, {
+    "dbId" : 443609,
+    "stId" : "R-HSA-443609",
+    "displayName" : "DLG3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92796",
+    "geneNames" : [ "DLG3", "KIAA1232" ],
+    "parents" : [ 376003 ]
+  }, {
+    "dbId" : 392229,
+    "stId" : "R-HSA-392229",
+    "displayName" : "GRIA4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48058",
+    "geneNames" : [ "GRIA4", "GLUR4" ],
+    "parents" : [ 399698 ]
+  }, {
+    "dbId" : 8849895,
+    "stId" : "R-HSA-8849895",
+    "displayName" : "FLOT2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14254",
+    "geneNames" : [ "FLOT2", "ESA1", "M17S1" ],
+    "parents" : [ 8849894 ]
+  }, {
+    "dbId" : 419558,
+    "stId" : "R-HSA-419558",
+    "displayName" : "GRIN2B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13224",
+    "geneNames" : [ "GRIN2B", "NMDAR2B" ],
+    "parents" : [ 419565 ]
+  }, {
+    "dbId" : 8849894,
+    "stId" : "R-HSA-8849894",
+    "displayName" : "FLOT1(FLOT2) [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 44 ],
+    "parents" : [ 8849870 ],
+    "children" : [ 8849895, 112174 ]
+  }, {
+    "dbId" : 8849893,
+    "stId" : "R-HSA-8849893",
+    "displayName" : "SALM2,3(SALM1,4):RTN3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 38 ],
+    "children" : [ 8849896, 8849907 ]
+  }, {
+    "dbId" : 419556,
+    "stId" : "R-HSA-419556",
+    "displayName" : "GRIN2A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12879",
+    "geneNames" : [ "GRIN2A", "NMDAR2A" ],
+    "parents" : [ 419565 ]
+  }, {
+    "dbId" : 197665,
+    "stId" : "R-HSA-197665",
+    "displayName" : "SALM1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6 ],
+    "identifier" : "Q9ULH4",
+    "geneNames" : [ "LRFN2", "KIAA1246", "SALM1" ],
+    "parents" : [ 8849896, 8849935, 204742 ]
+  }, {
+    "dbId" : 3004495,
+    "stId" : "R-HSA-3004495",
+    "displayName" : "GRIA1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42261",
+    "geneNames" : [ "GRIA1", "GLUH1", "GLUR1" ],
+    "parents" : [ 399696, 399700 ]
+  }, {
+    "dbId" : 399714,
+    "stId" : "R-HSA-399714",
+    "displayName" : "Ca permeable AMPA receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 8849876 ],
+    "children" : [ 399696, 399700 ]
+  }, {
+    "dbId" : 8849903,
+    "stId" : "R-HSA-8849903",
+    "displayName" : "NMDA receptor [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8849905 ],
+    "children" : [ 419565, 419564 ]
+  }, {
+    "dbId" : 266029,
+    "stId" : "R-ALL-266029",
+    "displayName" : "Gly [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "57305",
+    "parents" : [ 8849905 ]
+  }, {
+    "dbId" : 419564,
+    "stId" : "R-HSA-419564",
+    "displayName" : "GRIN1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05586",
+    "geneNames" : [ "GRIN1", "NMDAR1" ],
+    "parents" : [ 8849903 ]
+  }, {
+    "dbId" : 419565,
+    "stId" : "R-HSA-419565",
+    "displayName" : "NR2 subunits [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 8849903 ],
+    "children" : [ 419561, 419560, 419556, 419558 ]
+  }, {
+    "dbId" : 375977,
+    "stId" : "R-HSA-375977",
+    "displayName" : "DLG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12959",
+    "geneNames" : [ "DLG1" ],
+    "parents" : [ 376003 ]
+  }, {
+    "dbId" : 419560,
+    "stId" : "R-HSA-419560",
+    "displayName" : "GRIN2C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14957",
+    "geneNames" : [ "GRIN2C", "NMDAR2C" ],
+    "parents" : [ 419565 ]
+  }, {
+    "dbId" : 419561,
+    "stId" : "R-HSA-419561",
+    "displayName" : "GRIN2D [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15399",
+    "geneNames" : [ "GRIN2D", "GluN2D", "NMDAR2D" ],
+    "parents" : [ 419565 ]
+  }, {
+    "dbId" : 112174,
+    "stId" : "R-HSA-112174",
+    "displayName" : "FLOT1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75955",
+    "geneNames" : [ "FLOT1" ],
+    "parents" : [ 8849894 ]
+  }, {
+    "dbId" : 8849896,
+    "stId" : "R-HSA-8849896",
+    "displayName" : "SALM2,3(SALM1,4) [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 32 ],
+    "parents" : [ 8849893 ],
+    "children" : [ 197704, 197665, 204734, 197883 ]
+  }, {
+    "dbId" : 8849910,
+    "stId" : "R-HSA-8849910",
+    "displayName" : "SALM1,2,3 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "children" : [ 204742 ]
+  }, {
+    "dbId" : 3004508,
+    "stId" : "R-HSA-3004508",
+    "displayName" : "GRIA3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42263",
+    "geneNames" : [ "GRIA3", "GLUR3", "GLURC" ],
+    "parents" : [ 399698 ]
+  }, {
+    "dbId" : 197680,
+    "stId" : "R-HSA-197680",
+    "displayName" : "PTPRS [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13332",
+    "geneNames" : [ "PTPRS" ],
+    "parents" : [ 6798238 ]
+  }, {
+    "dbId" : 8849907,
+    "stId" : "R-HSA-8849907",
+    "displayName" : "RTN3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 37 ],
+    "identifier" : "O95197",
+    "geneNames" : [ "RTN3", "ASYIP", "NSPL2" ],
+    "parents" : [ 8849893 ]
+  }, {
+    "dbId" : 8849905,
+    "stId" : "R-HSA-8849905",
+    "displayName" : "NMDA receptor complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ],
+    "parents" : [ 8849876, 8849869 ],
+    "children" : [ 210382, 266029, 8849903 ]
+  }, {
+    "dbId" : 197883,
+    "stId" : "R-HSA-197883",
+    "displayName" : "SALM3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 62 ],
+    "identifier" : "Q6PJG9",
+    "geneNames" : [ "LRFN4", "SALM3" ],
+    "parents" : [ 8849896, 8855645, 204742 ]
+  }, {
+    "dbId" : 6798238,
+    "stId" : "R-HSA-6798238",
+    "displayName" : "PTPRF, PTPRS, PTPRD [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 61 ],
+    "parents" : [ 8855645 ],
+    "children" : [ 6797868, 197680, 6786486 ]
+  }, {
+    "dbId" : 8849914,
+    "stId" : "R-HSA-8849914",
+    "displayName" : "SALM2:AMPA, NMDA receptors [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 22 ],
+    "children" : [ 204734, 8849876 ]
+  }, {
+    "dbId" : 204734,
+    "stId" : "R-HSA-204734",
+    "displayName" : "SALM2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 20 ],
+    "identifier" : "Q9P244",
+    "geneNames" : [ "LRFN1", "KIAA1484", "SALM2" ],
+    "parents" : [ 8849914, 8849896, 204742 ]
+  }, {
+    "dbId" : 8849913,
+    "stId" : "R-HSA-8849913",
+    "displayName" : "SALMs 1-3:PSD-95 family [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 11 ],
+    "children" : [ 376003, 204742 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 8849878,
+    "stId" : "R-HSA-8849878",
+    "displayName" : "PSD-95 binds NMDA receptor",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8849905, 202135 ],
+    "outputs" : [ 8849869 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8849908,
+    "stId" : "R-HSA-8849908",
+    "displayName" : "SALM4 binds flotillin-1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 197704, 8849894 ],
+    "outputs" : [ 8849870 ],
+    "efs" : [ ],
+    "diagramIds" : [ 43 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8849891,
+    "stId" : "R-HSA-8849891",
+    "displayName" : "SALMs 1-3 bind to PSD-95 family members",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 376003, 204742 ],
+    "outputs" : [ 8849913 ],
+    "efs" : [ ],
+    "diagramIds" : [ 8 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8849906,
+    "stId" : "R-HSA-8849906",
+    "displayName" : "SALM1 binds NMDA receptor",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8849869, 197665 ],
+    "outputs" : [ 8849935 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8855648,
+    "stId" : "R-HSA-8855648",
+    "displayName" : "SALM3 binds LAR-RPTP",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6798238, 197883 ],
+    "outputs" : [ 8855645 ],
+    "efs" : [ ],
+    "diagramIds" : [ 60 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8849900,
+    "stId" : "R-HSA-8849900",
+    "displayName" : "SALMs1-3 bind each other in cis interactions",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 204742 ],
+    "outputs" : [ 8849910 ],
+    "efs" : [ ],
+    "diagramIds" : [ 12 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8849882,
+    "stId" : "R-HSA-8849882",
+    "displayName" : "SALMs 1-4 bind reticulon 3",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8849896, 8849907 ],
+    "outputs" : [ 8849893 ],
+    "efs" : [ ],
+    "diagramIds" : [ 31 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8849881,
+    "stId" : "R-HSA-8849881",
+    "displayName" : "SALM2 associate with AMPA and NMDA receptors",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 204734, 8849876 ],
+    "outputs" : [ 8849914 ],
+    "efs" : [ ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

@@ -1,0 +1,727 @@
+{
+  "dbId" : 112307,
+  "stableId" : "R-HSA-112307",
+  "displayName" : "Transmission across Electrical Synapses ",
+  "nodes" : [ {
+    "id" : 33,
+    "reactomeId" : 375333,
+    "displayName" : "Connexin 36/Connexin 45 Gap Junction Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 291,
+      "y" : 338
+    },
+    "minX" : 238,
+    "maxX" : 345,
+    "minY" : 226,
+    "maxY" : 370,
+    "prop" : {
+      "x" : 238,
+      "y" : 306,
+      "width" : 107,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 238,
+      "y" : 307
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 290,
+          "y" : 303
+        },
+        "to" : {
+          "x" : 290,
+          "y" : 234
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 290,
+          "y" : 230
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 35,
+    "reactomeId" : 375341,
+    "displayName" : "Connexin 62 Gap Junction Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 657,
+      "y" : 337
+    },
+    "minX" : 601,
+    "maxX" : 714,
+    "minY" : 232,
+    "maxY" : 355,
+    "prop" : {
+      "x" : 601,
+      "y" : 319,
+      "width" : 113,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 601,
+      "y" : 320
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 34,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 657,
+          "y" : 316
+        },
+        "to" : {
+          "x" : 658,
+          "y" : 240
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 658,
+          "y" : 236
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 37,
+    "reactomeId" : 375332,
+    "displayName" : "Pannexin 1/Pannexin 2 Gap Junction Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 114,
+      "y" : 335
+    },
+    "minX" : 47,
+    "maxX" : 181,
+    "minY" : 220,
+    "maxY" : 360,
+    "prop" : {
+      "x" : 47,
+      "y" : 310,
+      "width" : 134,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 47,
+      "y" : 311
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 36,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 114,
+          "y" : 307
+        },
+        "to" : {
+          "x" : 116,
+          "y" : 228
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 116,
+          "y" : 224
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 30,
+    "reactomeId" : 29804,
+    "displayName" : "K+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 387,
+      "y" : 110
+    },
+    "minX" : 350,
+    "maxX" : 425,
+    "minY" : 94,
+    "maxY" : 125,
+    "prop" : {
+      "x" : 350,
+      "y" : 95,
+      "width" : 74,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 374,
+      "y" : 99
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 419,
+          "y" : 100
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 32,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 34,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 34,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 36,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 36,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 29,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 375351,
+    "displayName" : "Connexin 36 Gap Junction Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 492,
+      "y" : 337
+    },
+    "minX" : 436,
+    "maxX" : 549,
+    "minY" : 227,
+    "maxY" : 355,
+    "prop" : {
+      "x" : 436,
+      "y" : 319,
+      "width" : 113,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 436,
+      "y" : 320
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 492,
+          "y" : 316
+        },
+        "to" : {
+          "x" : 493,
+          "y" : 235
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 493,
+          "y" : 231
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 32,
+    "reactomeId" : 375330,
+    "displayName" : "Connexin 45/Connexin 36 mediated neuronal gap junction communication",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 290,
+      "y" : 218
+    },
+    "minX" : 284,
+    "maxX" : 385,
+    "minY" : 128,
+    "maxY" : 224,
+    "segments" : [ {
+      "from" : {
+        "x" : 385,
+        "y" : 128
+      },
+      "to" : {
+        "x" : 377,
+        "y" : 218
+      }
+    }, {
+      "from" : {
+        "x" : 377,
+        "y" : 218
+      },
+      "to" : {
+        "x" : 290,
+        "y" : 218
+      }
+    }, {
+      "from" : {
+        "x" : 290,
+        "y" : 218
+      },
+      "to" : {
+        "x" : 373,
+        "y" : 128
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 371,
+        "y" : 136
+      },
+      "b" : {
+        "x" : 373,
+        "y" : 128
+      },
+      "c" : {
+        "x" : 365,
+        "y" : 130
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 284,
+        "y" : 212
+      },
+      "b" : {
+        "x" : 296,
+        "y" : 224
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 30
+    } ],
+    "outputs" : [ {
+      "id" : 30
+    } ],
+    "catalysts" : [ {
+      "id" : 33,
+      "points" : [ {
+        "x" : 290,
+        "y" : 303
+      } ]
+    } ]
+  }, {
+    "id" : 34,
+    "reactomeId" : 375340,
+    "displayName" : "Connexin 62 mediated neuronal gap junction communication",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 658,
+      "y" : 224
+    },
+    "minX" : 422,
+    "maxX" : 664,
+    "minY" : 117,
+    "maxY" : 230,
+    "segments" : [ {
+      "from" : {
+        "x" : 422,
+        "y" : 128
+      },
+      "to" : {
+        "x" : 658,
+        "y" : 224
+      }
+    }, {
+      "from" : {
+        "x" : 658,
+        "y" : 224
+      },
+      "to" : {
+        "x" : 657,
+        "y" : 162
+      }
+    }, {
+      "from" : {
+        "x" : 657,
+        "y" : 162
+      },
+      "to" : {
+        "x" : 427,
+        "y" : 117
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 435,
+        "y" : 114
+      },
+      "b" : {
+        "x" : 427,
+        "y" : 117
+      },
+      "c" : {
+        "x" : 433,
+        "y" : 122
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 652,
+        "y" : 218
+      },
+      "b" : {
+        "x" : 664,
+        "y" : 230
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 30
+    } ],
+    "outputs" : [ {
+      "id" : 30
+    } ],
+    "catalysts" : [ {
+      "id" : 35,
+      "points" : [ {
+        "x" : 657,
+        "y" : 316
+      } ]
+    } ]
+  }, {
+    "id" : 36,
+    "reactomeId" : 375339,
+    "displayName" : "Pannexin 1/Pannexin2 mediated neuronal gap junction communication",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 116,
+      "y" : 212
+    },
+    "minX" : 110,
+    "maxX" : 347,
+    "minY" : 117,
+    "maxY" : 218,
+    "segments" : [ {
+      "from" : {
+        "x" : 347,
+        "y" : 123
+      },
+      "to" : {
+        "x" : 116,
+        "y" : 212
+      }
+    }, {
+      "from" : {
+        "x" : 116,
+        "y" : 212
+      },
+      "to" : {
+        "x" : 115,
+        "y" : 165
+      }
+    }, {
+      "from" : {
+        "x" : 115,
+        "y" : 165
+      },
+      "to" : {
+        "x" : 347,
+        "y" : 117
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 341,
+        "y" : 122
+      },
+      "b" : {
+        "x" : 347,
+        "y" : 117
+      },
+      "c" : {
+        "x" : 339,
+        "y" : 114
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 110,
+        "y" : 206
+      },
+      "b" : {
+        "x" : 122,
+        "y" : 218
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 30
+    } ],
+    "outputs" : [ {
+      "id" : 30
+    } ],
+    "catalysts" : [ {
+      "id" : 37,
+      "points" : [ {
+        "x" : 114,
+        "y" : 307
+      } ]
+    } ]
+  }, {
+    "id" : 29,
+    "reactomeId" : 375342,
+    "displayName" : "Connexin 36 mediated neuronal gap junction communication",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 493,
+      "y" : 219
+    },
+    "minX" : 390,
+    "maxX" : 499,
+    "minY" : 128,
+    "maxY" : 225,
+    "segments" : [ {
+      "from" : {
+        "x" : 390,
+        "y" : 128
+      },
+      "to" : {
+        "x" : 416,
+        "y" : 219
+      }
+    }, {
+      "from" : {
+        "x" : 416,
+        "y" : 219
+      },
+      "to" : {
+        "x" : 493,
+        "y" : 219
+      }
+    }, {
+      "from" : {
+        "x" : 493,
+        "y" : 219
+      },
+      "to" : {
+        "x" : 401,
+        "y" : 128
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 409,
+        "y" : 130
+      },
+      "b" : {
+        "x" : 401,
+        "y" : 128
+      },
+      "c" : {
+        "x" : 403,
+        "y" : 136
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 487,
+        "y" : 213
+      },
+      "b" : {
+        "x" : 499,
+        "y" : 225
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 30
+    } ],
+    "outputs" : [ {
+      "id" : 30
+    } ],
+    "catalysts" : [ {
+      "id" : 31,
+      "points" : [ {
+        "x" : 492,
+        "y" : 316
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 38,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 383,
+      "y" : 172
+    },
+    "minX" : 0,
+    "maxX" : 767,
+    "minY" : 0,
+    "maxY" : 344,
+    "prop" : {
+      "x" : 0,
+      "y" : 0,
+      "width" : 767,
+      "height" : 344
+    },
+    "textPosition" : {
+      "x" : 354,
+      "y" : 155
+    },
+    "insets" : {
+      "x" : 10,
+      "y" : 10,
+      "width" : 747,
+      "height" : 324
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 36, 29, 30, 31, 32, 33, 34, 35, 37 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ {
+    "id" : 39,
+    "reactomeId" : 112303,
+    "displayName" : "Electric Transmission Across Gap Junctions",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 380,
+      "y" : 232
+    },
+    "minX" : 37,
+    "maxX" : 724,
+    "minY" : 85,
+    "maxY" : 380,
+    "prop" : {
+      "x" : 37,
+      "y" : 85,
+      "width" : 687,
+      "height" : 295
+    },
+    "points" : [ {
+      "x" : 37,
+      "y" : 85
+    }, {
+      "x" : 724,
+      "y" : 85
+    }, {
+      "x" : 724,
+      "y" : 380
+    }, {
+      "x" : 37,
+      "y" : 380
+    } ],
+    "colour" : "#4684ee"
+  } ],
+  "minX" : 0,
+  "maxX" : 767,
+  "minY" : 0,
+  "maxY" : 370,
+  "disease" : false
+}

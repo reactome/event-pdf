@@ -1,0 +1,1612 @@
+{
+  "dbId" : 442755,
+  "stId" : "R-HSA-442755",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 1063697,
+    "stId" : "R-HSA-1063697",
+    "displayName" : "Activated B-raf complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 49 ],
+    "children" : [ 399865, 196180, 1063700 ]
+  }, {
+    "dbId" : 1063700,
+    "stId" : "R-HSA-1063700",
+    "displayName" : "p-S338-BRAF [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P15056",
+    "geneNames" : [ "BRAF", "BRAF1", "RAFB1" ],
+    "parents" : [ 1063697 ]
+  }, {
+    "dbId" : 9016707,
+    "stId" : "R-HSA-9016707",
+    "displayName" : "CALM1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 29 ],
+    "identifier" : "P0DP23",
+    "geneNames" : [ "CALM1", "CALM", "CAM", "CAM1" ],
+    "parents" : [ 74294 ]
+  }, {
+    "dbId" : 9610654,
+    "stId" : "R-HSA-9610654",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610878 ],
+    "children" : [ 9610652, 202135, 9610678 ]
+  }, {
+    "dbId" : 9610652,
+    "stId" : "R-HSA-9610652",
+    "displayName" : "DLG1,DLG2,DLG3,DLG4 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 9610654 ],
+    "children" : [ 443609, 202135, 9610662, 9610630 ]
+  }, {
+    "dbId" : 9610630,
+    "stId" : "R-HSA-9610630",
+    "displayName" : "DLG1 homotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610652 ],
+    "children" : [ 375977 ]
+  }, {
+    "dbId" : 3222308,
+    "stId" : "R-HSA-3222308",
+    "displayName" : "PRKX [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51817",
+    "geneNames" : [ "PRKX", "PKX1" ],
+    "parents" : [ 9615387 ]
+  }, {
+    "dbId" : 1063687,
+    "stId" : "R-HSA-1063687",
+    "displayName" : "RasGTP-B raf compex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 48 ],
+    "children" : [ 399865, 934547, 29370 ]
+  }, {
+    "dbId" : 109853,
+    "stId" : "R-HSA-109853",
+    "displayName" : "p-T185,Y187-MAPK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 56 ],
+    "identifier" : "P28482",
+    "geneNames" : [ "MAPK1", "ERK2", "PRKM1", "PRKM2" ]
+  }, {
+    "dbId" : 111900,
+    "stId" : "R-HSA-111900",
+    "displayName" : "Calmodulin:CaMK IV [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 124 ],
+    "children" : [ 57900, 74294 ]
+  }, {
+    "dbId" : 111902,
+    "stId" : "R-HSA-111902",
+    "displayName" : "p-S12,S13-CAMK4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16566",
+    "geneNames" : [ "CAMK4", "CAMK", "CAMK-GR", "CAMKIV" ],
+    "parents" : [ 111904 ]
+  }, {
+    "dbId" : 392229,
+    "stId" : "R-HSA-392229",
+    "displayName" : "GRIA4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48058",
+    "geneNames" : [ "GRIA4", "GLUR4" ],
+    "parents" : [ 399698 ]
+  }, {
+    "dbId" : 111904,
+    "stId" : "R-HSA-111904",
+    "displayName" : "phospho-CaMK IV:Calmodulin [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 141 ],
+    "children" : [ 111902, 629658 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 27 ],
+    "identifier" : "29108",
+    "parents" : [ 74294 ]
+  }, {
+    "dbId" : 9614256,
+    "stId" : "R-HSA-9614256",
+    "displayName" : "Gly:L-Glu:GRIN1:GRIN2 NMDA receptors:PSD proteins:Mg2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1092 ],
+    "children" : [ 210382, 9614184, 266029 ]
+  }, {
+    "dbId" : 9610678,
+    "stId" : "R-HSA-9610678",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 9610654 ],
+    "children" : [ 9610756, 3928507 ]
+  }, {
+    "dbId" : 9610679,
+    "stId" : "R-HSA-9610679",
+    "displayName" : "GRIN1:GRIN2A di-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419564, 419556 ]
+  }, {
+    "dbId" : 9610932,
+    "stId" : "R-HSA-9610932",
+    "displayName" : "ACTN2 homodimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9611031 ],
+    "children" : [ 390562 ]
+  }, {
+    "dbId" : 416289,
+    "stId" : "R-HSA-416289",
+    "displayName" : "AMPA receptors containing GluR2 (homomers) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 399713 ],
+    "children" : [ 3004502 ]
+  }, {
+    "dbId" : 111910,
+    "stId" : "R-HSA-111910",
+    "displayName" : "p-S133-CREB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 74 ],
+    "identifier" : "P16220",
+    "geneNames" : [ "CREB1" ]
+  }, {
+    "dbId" : 266029,
+    "stId" : "R-ALL-266029",
+    "displayName" : "Gly [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 22 ],
+    "identifier" : "57305",
+    "parents" : [ 9614253, 9614256 ]
+  }, {
+    "dbId" : 52777,
+    "stId" : "R-HSA-52777",
+    "displayName" : "CREB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 73 ],
+    "identifier" : "P16220",
+    "geneNames" : [ "CREB1" ]
+  }, {
+    "dbId" : 57900,
+    "stId" : "R-HSA-57900",
+    "displayName" : "CAMK4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 123 ],
+    "identifier" : "Q16566",
+    "geneNames" : [ "CAMK4", "CAMK", "CAMK-GR", "CAMKIV" ],
+    "parents" : [ 111900 ]
+  }, {
+    "dbId" : 9610687,
+    "stId" : "R-HSA-9610687",
+    "displayName" : "GRIN1:GRIN2C di-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419560, 419564 ]
+  }, {
+    "dbId" : 206896,
+    "stId" : "R-HSA-206896",
+    "displayName" : "HRAS:GDP [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 33 ],
+    "children" : [ 29420, 205771 ]
+  }, {
+    "dbId" : 9610662,
+    "stId" : "R-HSA-9610662",
+    "displayName" : "DLG2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15700",
+    "geneNames" : [ "DLG2" ],
+    "parents" : [ 9610652 ]
+  }, {
+    "dbId" : 74294,
+    "stId" : "R-HSA-74294",
+    "displayName" : "CALM1:4xCa2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 98 ],
+    "parents" : [ 444601, 442735, 111900 ],
+    "children" : [ 9016707, 74016 ]
+  }, {
+    "dbId" : 29496,
+    "stId" : "R-ALL-29496",
+    "displayName" : "Ca2+ [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 629658 ]
+  }, {
+    "dbId" : 139836,
+    "stId" : "R-ALL-139836",
+    "displayName" : "ATP [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 47 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 9614253,
+    "stId" : "R-HSA-9614253",
+    "displayName" : "Gly:L-Glu:GRIN1:GRIN2 NMDA receptors [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1093 ],
+    "parents" : [ 442735 ],
+    "children" : [ 210382, 9611369, 266029 ]
+  }, {
+    "dbId" : 111937,
+    "stId" : "R-HSA-111937",
+    "displayName" : "PRKACB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22694",
+    "geneNames" : [ "PRKACB" ],
+    "parents" : [ 9615387 ]
+  }, {
+    "dbId" : 111936,
+    "stId" : "R-HSA-111936",
+    "displayName" : "PRKACA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P17612",
+    "geneNames" : [ "PRKACA", "PKACA" ],
+    "parents" : [ 9615387 ]
+  }, {
+    "dbId" : 9610705,
+    "stId" : "R-HSA-9610705",
+    "displayName" : "GRIN1:GRIN2B:GRIN2D tri-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419561, 419564, 419558 ]
+  }, {
+    "dbId" : 443461,
+    "stId" : "R-HSA-443461",
+    "displayName" : "Ca/calmodulin activated Adenylate Cyclase [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 91 ],
+    "children" : [ 53231, 379051, 53245 ]
+  }, {
+    "dbId" : 111938,
+    "stId" : "R-HSA-111938",
+    "displayName" : "PRKACG [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22612",
+    "geneNames" : [ "PRKACG" ],
+    "parents" : [ 9615387 ]
+  }, {
+    "dbId" : 444236,
+    "stId" : "R-HSA-444236",
+    "displayName" : "p-S338-RAF1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 57 ],
+    "identifier" : "P04049",
+    "geneNames" : [ "RAF1", "RAF" ]
+  }, {
+    "dbId" : 444232,
+    "stId" : "R-HSA-444232",
+    "displayName" : "p-CAMKK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 120 ],
+    "identifier" : "Q8N5S9",
+    "geneNames" : [ "CAMKK1", "CAMKKA" ]
+  }, {
+    "dbId" : 444246,
+    "stId" : "R-HSA-444246",
+    "displayName" : "p-S363,S380,T573-RPS6KA1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15418",
+    "geneNames" : [ "RPS6KA1", "MAPKAPK1A", "RSK1" ],
+    "parents" : [ 444261 ]
+  }, {
+    "dbId" : 9610690,
+    "stId" : "R-HSA-9610690",
+    "displayName" : "GRIN1:GRIN2D di-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419561, 419564 ]
+  }, {
+    "dbId" : 444247,
+    "stId" : "R-HSA-444247",
+    "displayName" : "Ribosomal S6 kinase [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 60 ],
+    "children" : [ 444266, 444250, 444252, 444256 ]
+  }, {
+    "dbId" : 399701,
+    "stId" : "R-HSA-399701",
+    "displayName" : "AMPA receptors containing GluR1 and GluR2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 399713 ],
+    "children" : [ 3004502, 3004495 ]
+  }, {
+    "dbId" : 399698,
+    "stId" : "R-HSA-399698",
+    "displayName" : "GRIA3,GRIA4 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 399704 ],
+    "children" : [ 3004508, 392229 ]
+  }, {
+    "dbId" : 9610694,
+    "stId" : "R-HSA-9610694",
+    "displayName" : "GRIN1:GRIN2A:GRIN2C tri-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419560, 419564, 419556 ]
+  }, {
+    "dbId" : 196180,
+    "stId" : "R-ALL-196180",
+    "displayName" : "ADP [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 50 ],
+    "identifier" : "16761",
+    "parents" : [ 1063697 ]
+  }, {
+    "dbId" : 444252,
+    "stId" : "R-HSA-444252",
+    "displayName" : "RPS6KA2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15349",
+    "geneNames" : [ "RPS6KA2", "MAPKAPK1C", "RSK3" ],
+    "parents" : [ 444247 ]
+  }, {
+    "dbId" : 444250,
+    "stId" : "R-HSA-444250",
+    "displayName" : "RPS6KA3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51812",
+    "geneNames" : [ "RPS6KA3", "ISPK1", "MAPKAPK1B", "RSK2" ],
+    "parents" : [ 444247 ]
+  }, {
+    "dbId" : 444251,
+    "stId" : "R-HSA-444251",
+    "displayName" : "p-S369,S386,T573-RPS6KA3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51812",
+    "geneNames" : [ "RPS6KA3", "ISPK1", "MAPKAPK1B", "RSK2" ],
+    "parents" : [ 444261 ]
+  }, {
+    "dbId" : 9610700,
+    "stId" : "R-HSA-9610700",
+    "displayName" : "GRIN1:GRIN2A:GRIN2D tri-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419561, 419564, 419556 ]
+  }, {
+    "dbId" : 399704,
+    "stId" : "R-HSA-399704",
+    "displayName" : "AMPA receptors containing GluR2 (heteromers) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 399713 ],
+    "children" : [ 3004502, 399698 ]
+  }, {
+    "dbId" : 206946,
+    "stId" : "R-HSA-206946",
+    "displayName" : "HRAS:GTP [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 34 ],
+    "children" : [ 29438, 205771 ]
+  }, {
+    "dbId" : 3004495,
+    "stId" : "R-HSA-3004495",
+    "displayName" : "GRIA1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42261",
+    "geneNames" : [ "GRIA1", "GLUH1", "GLUR1" ],
+    "parents" : [ 399701 ]
+  }, {
+    "dbId" : 444261,
+    "stId" : "R-HSA-444261",
+    "displayName" : "Phospho(S363,S380,T573)- ribosomal S6 kinase [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 64 ],
+    "children" : [ 444264, 444251, 444268, 444246 ]
+  }, {
+    "dbId" : 442723,
+    "stId" : "R-HSA-442723",
+    "displayName" : "RASGRF1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13972",
+    "geneNames" : [ "RASGRF1", "CDC25", "GNRP", "GRF1" ],
+    "parents" : [ 442734 ]
+  }, {
+    "dbId" : 444256,
+    "stId" : "R-HSA-444256",
+    "displayName" : "RPS6KA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15418",
+    "geneNames" : [ "RPS6KA1", "MAPKAPK1A", "RSK1" ],
+    "parents" : [ 444247 ]
+  }, {
+    "dbId" : 399713,
+    "stId" : "R-HSA-399713",
+    "displayName" : "Ca impermeable AMPA receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 420974 ],
+    "children" : [ 399704, 416289, 399701 ]
+  }, {
+    "dbId" : 420974,
+    "stId" : "R-HSA-420974",
+    "displayName" : "Ca impermeable AMPA receptor ligand complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ],
+    "children" : [ 210382, 399713 ]
+  }, {
+    "dbId" : 442734,
+    "stId" : "R-HSA-442734",
+    "displayName" : "RasGRF [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 30 ],
+    "parents" : [ 442735 ],
+    "children" : [ 442744, 442723 ]
+  }, {
+    "dbId" : 442735,
+    "stId" : "R-HSA-442735",
+    "displayName" : "RasGRF:Ca/calmodulin [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 31 ],
+    "children" : [ 9614253, 442734, 74294 ]
+  }, {
+    "dbId" : 444268,
+    "stId" : "R-HSA-444268",
+    "displayName" : "p-S360,S377,T570-RPS6KA2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15349",
+    "geneNames" : [ "RPS6KA2", "MAPKAPK1C", "RSK3" ],
+    "parents" : [ 444261 ]
+  }, {
+    "dbId" : 444781,
+    "stId" : "R-HSA-444781",
+    "displayName" : "p-T287-CAMK2G [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13555",
+    "geneNames" : [ "CAMK2G", "CAMK", "CAMK-II", "CAMKG" ],
+    "parents" : [ 444779 ]
+  }, {
+    "dbId" : 4332329,
+    "stId" : "R-HSA-4332329",
+    "displayName" : "CAMK2A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UQM7",
+    "geneNames" : [ "CAMK2A", "CAMKA", "KIAA0968" ],
+    "parents" : [ 9611359 ]
+  }, {
+    "dbId" : 444266,
+    "stId" : "R-HSA-444266",
+    "displayName" : "RPS6KA6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK32",
+    "geneNames" : [ "RPS6KA6", "RSK4" ],
+    "parents" : [ 444247 ]
+  }, {
+    "dbId" : 444779,
+    "stId" : "R-HSA-444779",
+    "displayName" : "CaMKII gamma/delta subunits [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 444796 ],
+    "children" : [ 444781, 444785 ]
+  }, {
+    "dbId" : 444264,
+    "stId" : "R-HSA-444264",
+    "displayName" : "p-S372,S389,T581-RPS6KA6 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK32",
+    "geneNames" : [ "RPS6KA6", "RSK4" ],
+    "parents" : [ 444261 ]
+  }, {
+    "dbId" : 399721,
+    "stId" : "R-HSA-399721",
+    "displayName" : "Glutamate binding, activation of AMPA receptors and synaptic plasticity",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 146 ]
+  }, {
+    "dbId" : 3004508,
+    "stId" : "R-HSA-3004508",
+    "displayName" : "GRIA3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42263",
+    "geneNames" : [ "GRIA3", "GLUR3", "GLURC" ],
+    "parents" : [ 399698 ]
+  }, {
+    "dbId" : 444787,
+    "stId" : "R-HSA-444787",
+    "displayName" : "p-T287-CAMK2B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13554",
+    "geneNames" : [ "CAMK2B", "CAM2", "CAMK2", "CAMKB" ],
+    "parents" : [ 444794 ]
+  }, {
+    "dbId" : 444785,
+    "stId" : "R-HSA-444785",
+    "displayName" : "p-T287-CAMK2D [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13557",
+    "geneNames" : [ "CAMK2D", "CAMKD" ],
+    "parents" : [ 444779 ]
+  }, {
+    "dbId" : 444286,
+    "stId" : "R-HSA-444286",
+    "displayName" : "p-S227,S369,S386,T573-RPS6KA3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51812",
+    "geneNames" : [ "RPS6KA3", "ISPK1", "MAPKAPK1B", "RSK2" ],
+    "parents" : [ 444291 ]
+  }, {
+    "dbId" : 444796,
+    "stId" : "R-HSA-444796",
+    "displayName" : "CaMKII [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 113 ],
+    "children" : [ 444779, 444794 ]
+  }, {
+    "dbId" : 444797,
+    "stId" : "R-HSA-444797",
+    "displayName" : "p-T286-CAMK2A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UQM7",
+    "geneNames" : [ "CAMK2A", "CAMKA", "KIAA0968" ],
+    "parents" : [ 444794 ]
+  }, {
+    "dbId" : 3004502,
+    "stId" : "R-HSA-3004502",
+    "displayName" : "GRIA2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42262",
+    "geneNames" : [ "GRIA2", "GLUR2" ],
+    "parents" : [ 399704, 416289, 399701 ]
+  }, {
+    "dbId" : 444794,
+    "stId" : "R-HSA-444794",
+    "displayName" : "CaMKII alpha/beta subunits [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 444796 ],
+    "children" : [ 444797, 444787 ]
+  }, {
+    "dbId" : 442744,
+    "stId" : "R-HSA-442744",
+    "displayName" : "RASGRF2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14827",
+    "geneNames" : [ "RASGRF2", "GRF2" ],
+    "parents" : [ 442734 ]
+  }, {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 3928507,
+    "stId" : "R-HSA-3928507",
+    "displayName" : "GRIN1:GRIN2B di-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610678 ],
+    "children" : [ 419564, 419558 ]
+  }, {
+    "dbId" : 74112,
+    "stId" : "R-ALL-74112",
+    "displayName" : "Ca2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 444292,
+    "stId" : "R-HSA-444292",
+    "displayName" : "p-S221,S363,S380,T573-RPS6KA1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15418",
+    "geneNames" : [ "RPS6KA1", "MAPKAPK1A", "RSK1" ],
+    "parents" : [ 444291 ]
+  }, {
+    "dbId" : 444293,
+    "stId" : "R-HSA-444293",
+    "displayName" : "p-S232,S372,S389,T581-RPS6KA6 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK32",
+    "geneNames" : [ "RPS6KA6", "RSK4" ],
+    "parents" : [ 444291 ]
+  }, {
+    "dbId" : 444290,
+    "stId" : "R-HSA-444290",
+    "displayName" : "p-S218,S360,S377,T570-RPS6KA2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15349",
+    "geneNames" : [ "RPS6KA2", "MAPKAPK1C", "RSK3" ],
+    "parents" : [ 444291 ]
+  }, {
+    "dbId" : 9611031,
+    "stId" : "R-HSA-9611031",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4:NEFL:ACTN2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9611369 ],
+    "children" : [ 9610878, 9610932 ]
+  }, {
+    "dbId" : 444291,
+    "stId" : "R-HSA-444291",
+    "displayName" : "Phospho(S221,S363,S380,T573)-ribosomal S6 kinase [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 68 ],
+    "children" : [ 444286, 444290, 444293, 444292 ]
+  }, {
+    "dbId" : 9615387,
+    "stId" : "R-HSA-9615387",
+    "displayName" : "PRKACA,(PRKACB,PRKACG,PRKX) [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1160 ],
+    "children" : [ 111936, 3222308, 111938, 111937 ]
+  }, {
+    "dbId" : 432790,
+    "stId" : "R-HSA-432790",
+    "displayName" : "p-CAMK2D, p-CAMK2G [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 432792 ],
+    "children" : [ 432794, 432797 ]
+  }, {
+    "dbId" : 432791,
+    "stId" : "R-HSA-432791",
+    "displayName" : "p-T287-CAMK2B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13554",
+    "geneNames" : [ "CAMK2B", "CAM2", "CAMK2", "CAMKB" ],
+    "parents" : [ 432795 ]
+  }, {
+    "dbId" : 442775,
+    "stId" : "R-HSA-442775",
+    "displayName" : "CAMKK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 119 ],
+    "identifier" : "Q8N5S9",
+    "geneNames" : [ "CAMKK1", "CAMKKA" ]
+  }, {
+    "dbId" : 59282,
+    "stId" : "R-HSA-59282",
+    "displayName" : "MAPK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 54 ],
+    "identifier" : "P28482",
+    "geneNames" : [ "MAPK1", "ERK2", "PRKM1", "PRKM2" ]
+  }, {
+    "dbId" : 629658,
+    "stId" : "R-HSA-629658",
+    "displayName" : "Active Calmodulin [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 112281, 111904 ],
+    "children" : [ 9016871, 29496 ]
+  }, {
+    "dbId" : 202135,
+    "stId" : "R-HSA-202135",
+    "displayName" : "DLG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P78352",
+    "geneNames" : [ "DLG4", "PSD95" ],
+    "parents" : [ 9610652, 9610654 ]
+  }, {
+    "dbId" : 9610756,
+    "stId" : "R-HSA-9610756",
+    "displayName" : "GRIN1:GRIN2A,C,D di-heteromers,GRIN1:GRIN2 tri-heteromers [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 9610678 ],
+    "children" : [ 9610679, 9610700, 9610687, 9610694, 9610705, 9610690 ]
+  }, {
+    "dbId" : 112281,
+    "stId" : "R-HSA-112281",
+    "displayName" : "Calmodulin:CaMK IV [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 127 ],
+    "children" : [ 112280, 629658 ]
+  }, {
+    "dbId" : 112280,
+    "stId" : "R-HSA-112280",
+    "displayName" : "CAMK4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16566",
+    "geneNames" : [ "CAMK4", "CAMK", "CAMK-GR", "CAMKIV" ],
+    "parents" : [ 112281 ]
+  }, {
+    "dbId" : 396959,
+    "stId" : "R-HSA-396959",
+    "displayName" : "RRAS [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10301",
+    "geneNames" : [ "RRAS" ],
+    "parents" : [ 399865 ]
+  }, {
+    "dbId" : 432796,
+    "stId" : "R-HSA-432796",
+    "displayName" : "p-T286-CAMK2A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UQM7",
+    "geneNames" : [ "CAMK2A", "CAMKA", "KIAA0968" ],
+    "parents" : [ 432795 ]
+  }, {
+    "dbId" : 432284,
+    "stId" : "R-HSA-432284",
+    "displayName" : "NEFL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07196",
+    "geneNames" : [ "NEFL", "NF68", "NFL" ],
+    "parents" : [ 9610878 ]
+  }, {
+    "dbId" : 432797,
+    "stId" : "R-HSA-432797",
+    "displayName" : "p-T287-CAMK2G [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13555",
+    "geneNames" : [ "CAMK2G", "CAMK", "CAMK-II", "CAMKG" ],
+    "parents" : [ 432790 ]
+  }, {
+    "dbId" : 432794,
+    "stId" : "R-HSA-432794",
+    "displayName" : "p-T287-CAMK2D [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13557",
+    "geneNames" : [ "CAMK2D", "CAMKD" ],
+    "parents" : [ 432790 ]
+  }, {
+    "dbId" : 934547,
+    "stId" : "R-HSA-934547",
+    "displayName" : "BRAF [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P15056",
+    "geneNames" : [ "BRAF", "BRAF1", "RAFB1" ],
+    "parents" : [ 1063687 ]
+  }, {
+    "dbId" : 432795,
+    "stId" : "R-HSA-432795",
+    "displayName" : "p-CAMK2A, p-CAMK2B [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 432792 ],
+    "children" : [ 432796, 432791 ]
+  }, {
+    "dbId" : 432792,
+    "stId" : "R-HSA-432792",
+    "displayName" : "CAMK2 heteromer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 97 ],
+    "parents" : [ 444601 ],
+    "children" : [ 432795, 432790 ]
+  }, {
+    "dbId" : 390562,
+    "stId" : "R-HSA-390562",
+    "displayName" : "ACTN2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35609",
+    "geneNames" : [ "ACTN2" ],
+    "parents" : [ 9610932 ]
+  }, {
+    "dbId" : 375977,
+    "stId" : "R-HSA-375977",
+    "displayName" : "DLG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12959",
+    "geneNames" : [ "DLG1" ],
+    "parents" : [ 9610630 ]
+  }, {
+    "dbId" : 9016871,
+    "stId" : "R-HSA-9016871",
+    "displayName" : "CALM1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0DP23",
+    "geneNames" : [ "CALM1", "CALM", "CAM", "CAM1" ],
+    "parents" : [ 629658 ]
+  }, {
+    "dbId" : 379051,
+    "stId" : "R-HSA-379051",
+    "displayName" : "ADCY3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60266",
+    "geneNames" : [ "ADCY3", "KIAA0511" ],
+    "parents" : [ 443461 ]
+  }, {
+    "dbId" : 29358,
+    "stId" : "R-ALL-29358",
+    "displayName" : "ATP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 67, 72, 140 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 113582,
+    "stId" : "R-ALL-113582",
+    "displayName" : "ADP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 69, 75, 142 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 445366,
+    "stId" : "R-HSA-445366",
+    "displayName" : "CaMKII alpha/beta [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 445374 ],
+    "children" : [ 445368, 445371 ]
+  }, {
+    "dbId" : 30389,
+    "stId" : "R-ALL-30389",
+    "displayName" : "cAMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 90 ],
+    "identifier" : "17489"
+  }, {
+    "dbId" : 445374,
+    "stId" : "R-HSA-445374",
+    "displayName" : "CaMKII [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 51 ],
+    "children" : [ 445372, 445366 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 53, 118, 88, 59 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 445372,
+    "stId" : "R-HSA-445372",
+    "displayName" : "CaMKII delta/gamma [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 445374 ],
+    "children" : [ 445369, 445370 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 55, 121, 62 ],
+    "identifier" : "16761",
+    "parents" : [ 1063687 ]
+  }, {
+    "dbId" : 445370,
+    "stId" : "R-HSA-445370",
+    "displayName" : "p-T287-CAMK2D [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13557",
+    "geneNames" : [ "CAMK2D", "CAMKD" ],
+    "parents" : [ 445372 ]
+  }, {
+    "dbId" : 445371,
+    "stId" : "R-HSA-445371",
+    "displayName" : "p-T287-CAMK2B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13554",
+    "geneNames" : [ "CAMK2B", "CAM2", "CAMK2", "CAMKB" ],
+    "parents" : [ 445366 ]
+  }, {
+    "dbId" : 445368,
+    "stId" : "R-HSA-445368",
+    "displayName" : "p-T286-CAMK2A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UQM7",
+    "geneNames" : [ "CAMK2A", "CAMKA", "KIAA0968" ],
+    "parents" : [ 445366 ]
+  }, {
+    "dbId" : 445369,
+    "stId" : "R-HSA-445369",
+    "displayName" : "p-T287-CAMK2G [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13555",
+    "geneNames" : [ "CAMK2G", "CAMK", "CAMK-II", "CAMKG" ],
+    "parents" : [ 445372 ]
+  }, {
+    "dbId" : 444601,
+    "stId" : "R-HSA-444601",
+    "displayName" : "CAMK2 heteromer:CALM:4xCa2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 99 ],
+    "children" : [ 432792, 74294 ]
+  }, {
+    "dbId" : 111294,
+    "stId" : "R-ALL-111294",
+    "displayName" : "PPi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 89 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 9611351,
+    "stId" : "R-HSA-9611351",
+    "displayName" : "LRRC7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96NW7",
+    "geneNames" : [ "LRRC7", "KIAA1365", "LAP1" ],
+    "parents" : [ 9611369 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 205771,
+    "stId" : "R-HSA-205771",
+    "displayName" : "HRAS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01112",
+    "geneNames" : [ "HRAS", "HRAS1" ],
+    "parents" : [ 206946, 206896 ]
+  }, {
+    "dbId" : 9611355,
+    "stId" : "R-HSA-9611355",
+    "displayName" : "CaMKII dodecamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9611369 ],
+    "children" : [ 9611359 ]
+  }, {
+    "dbId" : 114632,
+    "stId" : "R-ALL-114632",
+    "displayName" : "Mg2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 20 ],
+    "identifier" : "18420",
+    "parents" : [ 9614184 ]
+  }, {
+    "dbId" : 9611358,
+    "stId" : "R-HSA-9611358",
+    "displayName" : "CAMK2G [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13555",
+    "geneNames" : [ "CAMK2G", "CAMK", "CAMK-II", "CAMKG" ],
+    "parents" : [ 9611359 ]
+  }, {
+    "dbId" : 210382,
+    "stId" : "R-ALL-210382",
+    "displayName" : "L-Glu [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 23 ],
+    "identifier" : "29985",
+    "parents" : [ 420974, 9614256, 9614253 ]
+  }, {
+    "dbId" : 9611359,
+    "stId" : "R-HSA-9611359",
+    "displayName" : "CAMK2A,CAMK2B,CAMK2D,CAMK2G [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 9611355 ],
+    "children" : [ 9611357, 9611358, 4332329, 9611360 ]
+  }, {
+    "dbId" : 9611357,
+    "stId" : "R-HSA-9611357",
+    "displayName" : "CAMK2D [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13557",
+    "geneNames" : [ "CAMK2D", "CAMKD" ],
+    "parents" : [ 9611359 ]
+  }, {
+    "dbId" : 445404,
+    "stId" : "R-HSA-445404",
+    "displayName" : "p-S363,S380,T573-RPS6KA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15418",
+    "geneNames" : [ "RPS6KA1", "MAPKAPK1A", "RSK1" ],
+    "parents" : [ 445403 ]
+  }, {
+    "dbId" : 445405,
+    "stId" : "R-HSA-445405",
+    "displayName" : "p-S360,S377,T570-RPS6KA2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15349",
+    "geneNames" : [ "RPS6KA2", "MAPKAPK1C", "RSK3" ],
+    "parents" : [ 445403 ]
+  }, {
+    "dbId" : 445402,
+    "stId" : "R-HSA-445402",
+    "displayName" : "p-S372,S389,T581-RPS6KA6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK32",
+    "geneNames" : [ "RPS6KA6", "RSK4" ],
+    "parents" : [ 445403 ]
+  }, {
+    "dbId" : 445403,
+    "stId" : "R-HSA-445403",
+    "displayName" : "Phospho(S363,S380,T573)-ribosomal S6 kinase [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 61 ],
+    "children" : [ 445400, 445402, 445405, 445404 ]
+  }, {
+    "dbId" : 445400,
+    "stId" : "R-HSA-445400",
+    "displayName" : "p-S369,S386,T573-RPS6KA3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51812",
+    "geneNames" : [ "RPS6KA3", "ISPK1", "MAPKAPK1B", "RSK2" ],
+    "parents" : [ 445403 ]
+  }, {
+    "dbId" : 443609,
+    "stId" : "R-HSA-443609",
+    "displayName" : "DLG3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92796",
+    "geneNames" : [ "DLG3", "KIAA1232" ],
+    "parents" : [ 9610652 ]
+  }, {
+    "dbId" : 419558,
+    "stId" : "R-HSA-419558",
+    "displayName" : "GRIN2B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13224",
+    "geneNames" : [ "GRIN2B", "NMDAR2B" ],
+    "parents" : [ 9610705, 3928507 ]
+  }, {
+    "dbId" : 419556,
+    "stId" : "R-HSA-419556",
+    "displayName" : "GRIN2A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12879",
+    "geneNames" : [ "GRIN2A", "NMDAR2A" ],
+    "parents" : [ 9610679, 9610700, 9610694 ]
+  }, {
+    "dbId" : 419564,
+    "stId" : "R-HSA-419564",
+    "displayName" : "GRIN1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05586",
+    "geneNames" : [ "GRIN1", "NMDAR1" ],
+    "parents" : [ 9610679, 9610700, 9610687, 9610694, 9610705, 9610690, 3928507 ]
+  }, {
+    "dbId" : 445421,
+    "stId" : "R-HSA-445421",
+    "displayName" : "PDPK1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 70 ],
+    "identifier" : "O15530",
+    "geneNames" : [ "PDPK1", "PDK1" ]
+  }, {
+    "dbId" : 9610878,
+    "stId" : "R-HSA-9610878",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4:NEFL [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9611031 ],
+    "children" : [ 9610654, 432284 ]
+  }, {
+    "dbId" : 29420,
+    "stId" : "R-ALL-29420",
+    "displayName" : "GDP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17552",
+    "parents" : [ 206896 ]
+  }, {
+    "dbId" : 419560,
+    "stId" : "R-HSA-419560",
+    "displayName" : "GRIN2C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14957",
+    "geneNames" : [ "GRIN2C", "NMDAR2C" ],
+    "parents" : [ 9610687, 9610694 ]
+  }, {
+    "dbId" : 419561,
+    "stId" : "R-HSA-419561",
+    "displayName" : "GRIN2D [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15399",
+    "geneNames" : [ "GRIN2D", "GluN2D", "NMDAR2D" ],
+    "parents" : [ 9610700, 9610705, 9610690 ]
+  }, {
+    "dbId" : 53231,
+    "stId" : "R-HSA-53231",
+    "displayName" : "ADCY1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08828",
+    "geneNames" : [ "ADCY1" ],
+    "parents" : [ 443461 ]
+  }, {
+    "dbId" : 9611360,
+    "stId" : "R-HSA-9611360",
+    "displayName" : "CAMK2B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13554",
+    "geneNames" : [ "CAMK2B", "CAM2", "CAMK2", "CAMKB" ],
+    "parents" : [ 9611359 ]
+  }, {
+    "dbId" : 9614184,
+    "stId" : "R-HSA-9614184",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors:PSD proteins:Mg2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 585 ],
+    "parents" : [ 9614256 ],
+    "children" : [ 9611369, 114632 ]
+  }, {
+    "dbId" : 9611369,
+    "stId" : "R-HSA-9611369",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors:PSD proteins [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 584 ],
+    "parents" : [ 9614184, 9614253 ],
+    "children" : [ 9611355, 9611351, 9611031 ]
+  }, {
+    "dbId" : 53245,
+    "stId" : "R-HSA-53245",
+    "displayName" : "ADCY8 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P40145",
+    "geneNames" : [ "ADCY8" ],
+    "parents" : [ 443461 ]
+  }, {
+    "dbId" : 29438,
+    "stId" : "R-ALL-29438",
+    "displayName" : "GTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15996",
+    "parents" : [ 206946, 399865 ]
+  }, {
+    "dbId" : 399865,
+    "stId" : "R-HSA-399865",
+    "displayName" : "R-Ras-GTP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1063697, 1063687 ],
+    "children" : [ 29438, 396959 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 442760,
+    "stId" : "R-HSA-442760",
+    "displayName" : "Activation of RasGRF",
+    "schemaClass" : "Reaction",
+    "following" : [ 442732 ],
+    "inputs" : [ 9614253, 9016707, 442734, 74016 ],
+    "outputs" : [ 442735 ],
+    "catalysts" : [ 9614253 ],
+    "efs" : [ ],
+    "diagramIds" : [ 28 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 74448,
+    "stId" : "R-HSA-74448",
+    "displayName" : "Calcium binds calmodulin",
+    "schemaClass" : "Reaction",
+    "following" : [ 111913 ],
+    "inputs" : [ 9016707, 74016 ],
+    "outputs" : [ 74294 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1161 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 438037,
+    "stId" : "R-HSA-438037",
+    "displayName" : "Membrane depolarization upon activation of Ca impermeable AMPA receptors",
+    "schemaClass" : "Reaction",
+    "following" : [ 432162 ],
+    "inputs" : [ 74113 ],
+    "outputs" : [ 83910 ],
+    "catalysts" : [ 420974 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 443475,
+    "stId" : "R-HSA-443475",
+    "displayName" : "Phosphorylation of CREB by CaMKII",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 444792 ],
+    "inputs" : [ 29358, 52777 ],
+    "outputs" : [ 113582, 111910 ],
+    "catalysts" : [ 444796 ],
+    "efs" : [ ],
+    "diagramIds" : [ 114 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 444253,
+    "stId" : "R-HSA-444253",
+    "displayName" : "Phosphorylation by MAPK/ERK",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 442737 ],
+    "following" : [ 9029434 ],
+    "inputs" : [ 113592, 444247 ],
+    "outputs" : [ 445403, 29370 ],
+    "catalysts" : [ 109853 ],
+    "efs" : [ ],
+    "diagramIds" : [ 58 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112282,
+    "stId" : "R-HSA-112282",
+    "displayName" : "CamKIV enters the nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 111913 ],
+    "following" : [ 111915 ],
+    "inputs" : [ 111900 ],
+    "outputs" : [ 112281 ],
+    "efs" : [ ],
+    "diagramIds" : [ 126 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 442715,
+    "stId" : "R-HSA-442715",
+    "displayName" : "Activation of Adenylate Cyclase",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 432164 ],
+    "following" : [ 111919 ],
+    "inputs" : [ 113592, 74016 ],
+    "outputs" : [ 111294, 30389, 74016 ],
+    "catalysts" : [ 443461 ],
+    "efs" : [ ],
+    "diagramIds" : [ 87 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 442726,
+    "stId" : "R-HSA-442726",
+    "displayName" : "Raf activation",
+    "schemaClass" : "Reaction",
+    "following" : [ 442737 ],
+    "inputs" : [ 139836, 1063687 ],
+    "outputs" : [ 196180, 1063697 ],
+    "catalysts" : [ 445374 ],
+    "efs" : [ ],
+    "diagramIds" : [ 46 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 432164,
+    "stId" : "R-HSA-432164",
+    "displayName" : "Ca2+ influx into the post-synaptic cell",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 432172 ],
+    "following" : [ 442715 ],
+    "inputs" : [ 74112 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 9614253 ],
+    "efs" : [ ],
+    "diagramIds" : [ 25 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 442724,
+    "stId" : "R-HSA-442724",
+    "displayName" : "Phosphorylation of CREB by ribosomal protein S6 kinase",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 442739 ],
+    "inputs" : [ 29358, 52777 ],
+    "outputs" : [ 113582, 111910 ],
+    "catalysts" : [ 444291 ],
+    "efs" : [ ],
+    "diagramIds" : [ 71 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 442725,
+    "stId" : "R-HSA-442725",
+    "displayName" : "Activation of CaMKII",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 445367 ],
+    "following" : [ 445367 ],
+    "inputs" : [ 432792, 74294 ],
+    "outputs" : [ 444601 ],
+    "catalysts" : [ 445374 ],
+    "efs" : [ ],
+    "diagramIds" : [ 96 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 432162,
+    "stId" : "R-HSA-432162",
+    "displayName" : "Unblocking of GRIN1:GRIN2 NMDA receptors",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 432172, 438037 ],
+    "inputs" : [ 9614256 ],
+    "outputs" : [ 9614253, 114632 ],
+    "catalysts" : [ 420974 ],
+    "efs" : [ ],
+    "requirements" : [ 83910 ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 111913,
+    "stId" : "R-HSA-111913",
+    "displayName" : "Calmodulin binds CaMK IV",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 74448 ],
+    "following" : [ 112282 ],
+    "inputs" : [ 57900, 74294 ],
+    "outputs" : [ 111900 ],
+    "efs" : [ ],
+    "diagramIds" : [ 122 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 111912,
+    "stId" : "R-HSA-111912",
+    "displayName" : "CaMK IV phosphorylates CREB",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 111915 ],
+    "inputs" : [ 29358, 52777 ],
+    "outputs" : [ 113582, 111910 ],
+    "catalysts" : [ 111904 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1152 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 111915,
+    "stId" : "R-HSA-111915",
+    "displayName" : "CaMK IV autophosphorylation",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112282 ],
+    "following" : [ 111912 ],
+    "inputs" : [ 29358, 112281 ],
+    "outputs" : [ 113582, 111904 ],
+    "catalysts" : [ 112281 ],
+    "efs" : [ ],
+    "diagramIds" : [ 139 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 432172,
+    "stId" : "R-HSA-432172",
+    "displayName" : "Glycine and glutamate ligands bind GRIN1:GRIN2 NMDA receptor",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9614185 ],
+    "following" : [ 432162, 432164 ],
+    "inputs" : [ 210382, 9614184, 266029 ],
+    "outputs" : [ 9614256 ],
+    "efs" : [ ],
+    "diagramIds" : [ 21 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 442732,
+    "stId" : "R-HSA-442732",
+    "displayName" : "Ras activation",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 442760 ],
+    "inputs" : [ 206896 ],
+    "outputs" : [ 206946 ],
+    "catalysts" : [ 442735 ],
+    "efs" : [ ],
+    "diagramIds" : [ 32 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 111919,
+    "stId" : "R-HSA-111919",
+    "displayName" : "PKA phosphorylates CREB1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 442715 ],
+    "inputs" : [ 29358, 52777 ],
+    "outputs" : [ 113582, 111910 ],
+    "catalysts" : [ 9615387 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1157 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 445367,
+    "stId" : "R-HSA-445367",
+    "displayName" : "CaMKII enters cytoplasm",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 442725 ],
+    "following" : [ 444792, 442725 ],
+    "inputs" : [ 432792 ],
+    "outputs" : [ 445374 ],
+    "catalysts" : [ 9614253 ],
+    "efs" : [ ],
+    "diagramIds" : [ 111 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9029434,
+    "stId" : "R-HSA-9029434",
+    "displayName" : "p-S363,S380,T573 RS6K translocates to the nucleus",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 444253 ],
+    "following" : [ 442739 ],
+    "inputs" : [ 445403 ],
+    "outputs" : [ 444261 ],
+    "efs" : [ ],
+    "diagramIds" : [ 63 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 442739,
+    "stId" : "R-HSA-442739",
+    "displayName" : "Phosphorylation by PDK1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 9029434 ],
+    "following" : [ 442724 ],
+    "inputs" : [ 29358, 444261 ],
+    "outputs" : [ 113582, 444291 ],
+    "catalysts" : [ 445421 ],
+    "efs" : [ ],
+    "diagramIds" : [ 66 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 442737,
+    "stId" : "R-HSA-442737",
+    "displayName" : "Activation of MAPK",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 442726 ],
+    "following" : [ 444253 ],
+    "inputs" : [ 113592, 59282 ],
+    "outputs" : [ 109853, 29370 ],
+    "catalysts" : [ 444236 ],
+    "efs" : [ ],
+    "diagramIds" : [ 52 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 442749,
+    "stId" : "R-HSA-442749",
+    "displayName" : "Activation of CaMKK",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 442775 ],
+    "outputs" : [ 444232, 29370 ],
+    "catalysts" : [ 442775 ],
+    "efs" : [ ],
+    "diagramIds" : [ 117 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9614185,
+    "stId" : "R-HSA-9614185",
+    "displayName" : "Mg2+ binds GRIN1:GRIN2 NMDA receptors",
+    "schemaClass" : "Reaction",
+    "following" : [ 432172 ],
+    "inputs" : [ 9611369, 114632 ],
+    "outputs" : [ 9614184 ],
+    "efs" : [ ],
+    "diagramIds" : [ 583 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 444792,
+    "stId" : "R-HSA-444792",
+    "displayName" : "CaMKII enters nucleus",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 445367 ],
+    "following" : [ 443475 ],
+    "inputs" : [ 445374 ],
+    "outputs" : [ 444796 ],
+    "efs" : [ ],
+    "diagramIds" : [ 112 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 438064,
+    "stId" : "R-HSA-438064",
+    "displayName" : "Post NMDA receptor activation events",
+    "events" : [ 442732, 442760, 442726, 442724, 442737, 9029434, 442739, 444253, 442715, 111919, 111912, 442749, 111913, 111915, 112282, 445367, 442725, 443475, 444792 ]
+  }, {
+    "dbId" : 438066,
+    "stId" : "R-HSA-438066",
+    "displayName" : "Unblocking of NMDA receptors, glutamate binding and activation",
+    "events" : [ 432164, 438037, 432162, 432172, 9614185 ]
+  }, {
+    "dbId" : 442720,
+    "stId" : "R-HSA-442720",
+    "displayName" : "CREB phosphorylation through the activation of Adenylate Cyclase",
+    "events" : [ 442715, 111919 ]
+  }, {
+    "dbId" : 442729,
+    "stId" : "R-HSA-442729",
+    "displayName" : "CREB phosphorylation through the activation of CaMKII",
+    "events" : [ 445367, 442725, 443475, 444792 ]
+  }, {
+    "dbId" : 442745,
+    "stId" : "R-HSA-442745",
+    "displayName" : "Activation of CaMK IV",
+    "events" : [ 111913, 111915, 112282 ]
+  }, {
+    "dbId" : 442717,
+    "stId" : "R-HSA-442717",
+    "displayName" : "CREB phosphorylation through the activation of CaMKK",
+    "events" : [ 111912, 442749, 111913, 111915, 112282 ]
+  }, {
+    "dbId" : 442982,
+    "stId" : "R-HSA-442982",
+    "displayName" : "Ras activation upon Ca2+ influx through NMDA receptor",
+    "events" : [ 442732, 442760 ]
+  }, {
+    "dbId" : 442742,
+    "stId" : "R-HSA-442742",
+    "displayName" : "CREB phosphorylation through the activation of Ras",
+    "events" : [ 442732, 442760, 442726, 442724, 442737, 9029434, 442739, 444253 ]
+  }, {
+    "dbId" : 444257,
+    "stId" : "R-HSA-444257",
+    "displayName" : "RSK activation",
+    "events" : [ 9029434, 442739, 444253 ]
+  } ]
+}

@@ -1,0 +1,158 @@
+{
+  "dbId" : 112313,
+  "stId" : "R-HSA-112313",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 29472,
+    "stId" : "R-ALL-29472",
+    "displayName" : "L-Gln [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 17 ],
+    "identifier" : "58359"
+  }, {
+    "dbId" : 212615,
+    "stId" : "R-ALL-212615",
+    "displayName" : "L-Gln [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 21 ],
+    "identifier" : "58359"
+  }, {
+    "dbId" : 70603,
+    "stId" : "R-HSA-70603",
+    "displayName" : "GLUL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P15104",
+    "geneNames" : [ "GLUL", "GLNS" ],
+    "parents" : [ 70604 ]
+  }, {
+    "dbId" : 70604,
+    "stId" : "R-HSA-70604",
+    "displayName" : "GLUL decamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 19 ],
+    "children" : [ 70603 ]
+  }, {
+    "dbId" : 210382,
+    "stId" : "R-ALL-210382",
+    "displayName" : "L-Glu [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 31633,
+    "stId" : "R-ALL-31633",
+    "displayName" : "NH4+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 15 ],
+    "identifier" : "28938"
+  }, {
+    "dbId" : 210416,
+    "stId" : "R-HSA-210416",
+    "displayName" : "Astrocytic EAATs [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "children" : [ 210520, 210459 ]
+  }, {
+    "dbId" : 212663,
+    "stId" : "R-HSA-212663",
+    "displayName" : "SLC38A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 22 ],
+    "identifier" : "Q9H2H9",
+    "geneNames" : [ "SLC38A1", "ATA1", "NAT2", "SAT1", "SNAT1" ]
+  }, {
+    "dbId" : 210459,
+    "stId" : "R-HSA-210459",
+    "displayName" : "SLC1A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P43004",
+    "geneNames" : [ "SLC1A2", "EAAT2", "GLT1" ],
+    "parents" : [ 210416 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 210520,
+    "stId" : "R-HSA-210520",
+    "displayName" : "SLC1A3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P43003",
+    "geneNames" : [ "SLC1A3", "EAAT1", "GLAST", "GLAST1" ],
+    "parents" : [ 210416 ]
+  }, {
+    "dbId" : 29404,
+    "stId" : "R-ALL-29404",
+    "displayName" : "L-Glu [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3 ],
+    "identifier" : "29985"
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 16 ],
+    "identifier" : "18367"
+  } ],
+  "edges" : [ {
+    "dbId" : 210439,
+    "stId" : "R-HSA-210439",
+    "displayName" : "glutamate uptake by astrocytes",
+    "schemaClass" : "Reaction",
+    "following" : [ 70606 ],
+    "inputs" : [ 210382 ],
+    "outputs" : [ 29404 ],
+    "catalysts" : [ 210416 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 212614,
+    "stId" : "R-HSA-212614",
+    "displayName" : "Glutamine transport from astrocytes",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 70606 ],
+    "inputs" : [ 29472 ],
+    "outputs" : [ 212615 ],
+    "catalysts" : [ 212663 ],
+    "efs" : [ ],
+    "diagramIds" : [ 20 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 70606,
+    "stId" : "R-HSA-70606",
+    "displayName" : "glutamate + NH4+ + ATP => glutamine + ADP + orthophosphate [GLUL]",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 210439 ],
+    "following" : [ 212614 ],
+    "inputs" : [ 29404, 113592, 31633 ],
+    "outputs" : [ 29372, 29370, 29472 ],
+    "catalysts" : [ 70604 ],
+    "efs" : [ ],
+    "diagramIds" : [ 13 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 210455,
+    "stId" : "R-HSA-210455",
+    "displayName" : "Astrocytic Glutamate-Glutamine Uptake And Metabolism",
+    "events" : [ 210439, 212614, 70606 ]
+  } ]
+}

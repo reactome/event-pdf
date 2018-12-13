@@ -1,0 +1,181 @@
+{
+  "dbId" : 112307,
+  "stId" : "R-HSA-112307",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 375333,
+    "stId" : "R-HSA-375333",
+    "displayName" : "Connexin 36/Connexin 45 Gap Junction Complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 33 ],
+    "children" : [ 158044, 375347 ]
+  }, {
+    "dbId" : 375332,
+    "stId" : "R-HSA-375332",
+    "displayName" : "Pannexin 1/Pannexin 2 Gap Junction Complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 37 ],
+    "children" : [ 375325, 375349 ]
+  }, {
+    "dbId" : 375334,
+    "stId" : "R-HSA-375334",
+    "displayName" : "Hemi-Connexin 62 Complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 375341 ],
+    "children" : [ 383283 ]
+  }, {
+    "dbId" : 158055,
+    "stId" : "R-HSA-158055",
+    "displayName" : "GJD2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UKL4",
+    "geneNames" : [ "GJD2", "GJA9" ],
+    "parents" : [ 158044 ]
+  }, {
+    "dbId" : 375341,
+    "stId" : "R-HSA-375341",
+    "displayName" : "Connexin 62 Gap Junction Complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 35 ],
+    "children" : [ 375334 ]
+  }, {
+    "dbId" : 29804,
+    "stId" : "R-ALL-29804",
+    "displayName" : "K+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 30 ],
+    "identifier" : "29103"
+  }, {
+    "dbId" : 375349,
+    "stId" : "R-HSA-375349",
+    "displayName" : "Hemi-Pannexin 1 Complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 375332 ],
+    "children" : [ 375344 ]
+  }, {
+    "dbId" : 383285,
+    "stId" : "R-HSA-383285",
+    "displayName" : "GJC1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36383",
+    "geneNames" : [ "GJC1", "GJA7" ],
+    "parents" : [ 375347 ]
+  }, {
+    "dbId" : 375351,
+    "stId" : "R-HSA-375351",
+    "displayName" : "Connexin 36 Gap Junction Complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 31 ],
+    "children" : [ 158044 ]
+  }, {
+    "dbId" : 375350,
+    "stId" : "R-HSA-375350",
+    "displayName" : "PANX2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96RD6",
+    "geneNames" : [ "PANX2" ],
+    "parents" : [ 375325 ]
+  }, {
+    "dbId" : 375344,
+    "stId" : "R-HSA-375344",
+    "displayName" : "PANX1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96RD7",
+    "geneNames" : [ "PANX1", "MRS1", "UNQ2529/PRO6028" ],
+    "parents" : [ 375349 ]
+  }, {
+    "dbId" : 383283,
+    "stId" : "R-HSA-383283",
+    "displayName" : "GJA10 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q969M2",
+    "geneNames" : [ "GJA10", "CX62" ],
+    "parents" : [ 375334 ]
+  }, {
+    "dbId" : 375347,
+    "stId" : "R-HSA-375347",
+    "displayName" : "Hemi-Connexin 45 Complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 375333 ],
+    "children" : [ 383285 ]
+  }, {
+    "dbId" : 375325,
+    "stId" : "R-HSA-375325",
+    "displayName" : "Hemi-Pannexin 2 Complex [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 375332 ],
+    "children" : [ 375350 ]
+  }, {
+    "dbId" : 158044,
+    "stId" : "R-HSA-158044",
+    "displayName" : "Connexon36 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 375351, 375333 ],
+    "children" : [ 158055 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 375330,
+    "stId" : "R-HSA-375330",
+    "displayName" : "Connexin 45/Connexin 36 mediated neuronal gap junction communication",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29804 ],
+    "outputs" : [ 29804 ],
+    "catalysts" : [ 375333 ],
+    "efs" : [ ],
+    "diagramIds" : [ 32 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 375340,
+    "stId" : "R-HSA-375340",
+    "displayName" : "Connexin 62 mediated neuronal gap junction communication",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29804 ],
+    "outputs" : [ 29804 ],
+    "catalysts" : [ 375341 ],
+    "efs" : [ ],
+    "diagramIds" : [ 34 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 375342,
+    "stId" : "R-HSA-375342",
+    "displayName" : "Connexin 36 mediated neuronal gap junction communication",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29804 ],
+    "outputs" : [ 29804 ],
+    "catalysts" : [ 375351 ],
+    "efs" : [ ],
+    "diagramIds" : [ 29 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 375339,
+    "stId" : "R-HSA-375339",
+    "displayName" : "Pannexin 1/Pannexin2 mediated neuronal gap junction communication",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29804 ],
+    "outputs" : [ 29804 ],
+    "catalysts" : [ 375332 ],
+    "efs" : [ ],
+    "diagramIds" : [ 36 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 112303,
+    "stId" : "R-HSA-112303",
+    "displayName" : "Electric Transmission Across Gap Junctions",
+    "events" : [ 375330, 375340, 375342, 375339 ]
+  } ]
+}

@@ -1,0 +1,2186 @@
+{
+  "dbId" : 977443,
+  "stableId" : "R-HSA-977443",
+  "displayName" : "GABA receptor activation",
+  "nodes" : [ {
+    "id" : 33,
+    "reactomeId" : 29804,
+    "displayName" : "K+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 389,
+      "y" : 789
+    },
+    "minX" : 372,
+    "maxX" : 408,
+    "minY" : 773,
+    "maxY" : 804,
+    "prop" : {
+      "x" : 372,
+      "y" : 774,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 376,
+      "y" : 778
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 402,
+          "y" : 779
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 188972,
+    "displayName" : "Cl-",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 366,
+      "y" : 31
+    },
+    "minX" : 349,
+    "maxX" : 385,
+    "minY" : 15,
+    "maxY" : 46,
+    "prop" : {
+      "x" : 349,
+      "y" : 16,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 353,
+      "y" : 20
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 379,
+          "y" : 21
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 48,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 34,
+    "reactomeId" : 74126,
+    "displayName" : "K+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 386,
+      "y" : 921
+    },
+    "minX" : 369,
+    "maxX" : 405,
+    "minY" : 905,
+    "maxY" : 936,
+    "prop" : {
+      "x" : 369,
+      "y" : 906,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 373,
+      "y" : 910
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 399,
+          "y" : 911
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 352022,
+    "displayName" : "Cl-",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 387,
+      "y" : 267
+    },
+    "minX" : 370,
+    "maxX" : 406,
+    "minY" : 251,
+    "maxY" : 282,
+    "prop" : {
+      "x" : 370,
+      "y" : 252,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 374,
+      "y" : 256
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 400,
+          "y" : 257
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 48,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 975268,
+    "displayName" : "GABR heteropentamers:GABA",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 267,
+      "y" : 123
+    },
+    "minX" : 167,
+    "maxX" : 371,
+    "minY" : 98,
+    "maxY" : 148,
+    "prop" : {
+      "x" : 211,
+      "y" : 98,
+      "width" : 112,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 211,
+      "y" : 99
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 326,
+          "y" : 126
+        },
+        "to" : {
+          "x" : 363,
+          "y" : 128
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 367,
+          "y" : 128
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 50,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 208,
+          "y" : 130
+        },
+        "to" : {
+          "x" : 167,
+          "y" : 137
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 420748,
+    "displayName" : "GABAB receptor",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 504,
+      "y" : 90
+    },
+    "minX" : 454,
+    "maxX" : 592,
+    "minY" : 79,
+    "maxY" : 101,
+    "prop" : {
+      "x" : 454,
+      "y" : 79,
+      "width" : 101,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 454,
+      "y" : 80
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 6,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 558,
+          "y" : 90
+        },
+        "to" : {
+          "x" : 592,
+          "y" : 91
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 352003,
+    "displayName" : "GABA",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 575,
+      "y" : 16
+    },
+    "minX" : 551,
+    "maxX" : 601,
+    "minY" : 0,
+    "maxY" : 91,
+    "prop" : {
+      "x" : 551,
+      "y" : 1,
+      "width" : 49,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 555,
+      "y" : 5
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 595,
+          "y" : 6
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 6,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 578,
+          "y" : 34
+        },
+        "to" : {
+          "x" : 592,
+          "y" : 91
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 420698,
+    "displayName" : "GABAB receptor:GABA",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 758,
+      "y" : 91
+    },
+    "minX" : 696,
+    "maxX" : 821,
+    "minY" : 71,
+    "maxY" : 112,
+    "prop" : {
+      "x" : 696,
+      "y" : 71,
+      "width" : 125,
+      "height" : 41
+    },
+    "textPosition" : {
+      "x" : 706,
+      "y" : 77
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 6,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 170665,
+    "displayName" : "Adenylate cyclase (Mg2+ cofactor)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 908,
+      "y" : 99
+    },
+    "minX" : 851,
+    "maxX" : 1761,
+    "minY" : 49,
+    "maxY" : 184,
+    "prop" : {
+      "x" : 851,
+      "y" : 81,
+      "width" : 115,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 851,
+      "y" : 82
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 23,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 932,
+          "y" : 78
+        },
+        "to" : {
+          "x" : 975,
+          "y" : 49
+        }
+      }, {
+        "from" : {
+          "x" : 975,
+          "y" : 49
+        },
+        "to" : {
+          "x" : 1673,
+          "y" : 55
+        }
+      }, {
+        "from" : {
+          "x" : 1673,
+          "y" : 55
+        },
+        "to" : {
+          "x" : 1761,
+          "y" : 184
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 936,
+          "y" : 71
+        },
+        "b" : {
+          "x" : 932,
+          "y" : 78
+        },
+        "c" : {
+          "x" : 940,
+          "y" : 77
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 11,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 925,
+          "y" : 120
+        },
+        "to" : {
+          "x" : 964,
+          "y" : 158
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 392161,
+    "displayName" : "G alpha (i): GTP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 881,
+      "y" : 176
+    },
+    "minX" : 831,
+    "maxX" : 964,
+    "minY" : 158,
+    "maxY" : 187,
+    "prop" : {
+      "x" : 831,
+      "y" : 165,
+      "width" : 101,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 831,
+      "y" : 166
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 11,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 931,
+          "y" : 162
+        },
+        "to" : {
+          "x" : 964,
+          "y" : 158
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 396910,
+    "displayName" : "G-protein alpha (i):GTP:Adenylate cyclase",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1096,
+      "y" : 148
+    },
+    "minX" : 1036,
+    "maxX" : 1206,
+    "minY" : 123,
+    "maxY" : 173,
+    "prop" : {
+      "x" : 1036,
+      "y" : 123,
+      "width" : 121,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1036,
+      "y" : 124
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 11,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 15,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1160,
+          "y" : 154
+        },
+        "to" : {
+          "x" : 1206,
+          "y" : 159
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 16,
+    "reactomeId" : 170661,
+    "displayName" : "G alpha-olf:GTP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1129,
+      "y" : 208
+    },
+    "minX" : 1078,
+    "maxX" : 1206,
+    "minY" : 159,
+    "maxY" : 219,
+    "prop" : {
+      "x" : 1078,
+      "y" : 197,
+      "width" : 103,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1078,
+      "y" : 198
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 15,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1146,
+          "y" : 194
+        },
+        "to" : {
+          "x" : 1206,
+          "y" : 159
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 49,
+    "reactomeId" : 975448,
+    "displayName" : "GABRR pentamer:GABA",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 257,
+      "y" : 195
+    },
+    "minX" : 201,
+    "maxX" : 447,
+    "minY" : 126,
+    "maxY" : 213,
+    "prop" : {
+      "x" : 201,
+      "y" : 177,
+      "width" : 113,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 201,
+      "y" : 178
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 48,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 308,
+          "y" : 174
+        },
+        "to" : {
+          "x" : 439,
+          "y" : 131
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 443,
+          "y" : 130
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 170683,
+    "displayName" : "(Gi alpha1:GTP:Adenylate cyclase):(G alpha-olf:GTP)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1336,
+      "y" : 151
+    },
+    "minX" : 1277,
+    "maxX" : 1469,
+    "minY" : 112,
+    "maxY" : 176,
+    "prop" : {
+      "x" : 1277,
+      "y" : 126,
+      "width" : 119,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1277,
+      "y" : 127
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 18,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1399,
+          "y" : 128
+        },
+        "to" : {
+          "x" : 1437,
+          "y" : 112
+        }
+      }, {
+        "from" : {
+          "x" : 1437,
+          "y" : 112
+        },
+        "to" : {
+          "x" : 1463,
+          "y" : 143
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1465,
+          "y" : 146
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 21,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 21,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1399,
+          "y" : 135
+        },
+        "to" : {
+          "x" : 1431,
+          "y" : 127
+        }
+      }, {
+        "from" : {
+          "x" : 1431,
+          "y" : 127
+        },
+        "to" : {
+          "x" : 1462,
+          "y" : 166
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1465,
+          "y" : 170
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 15,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 51,
+    "reactomeId" : 8856422,
+    "displayName" : "NPTN",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 128,
+      "y" : 99
+    },
+    "minX" : 107,
+    "maxX" : 167,
+    "minY" : 82,
+    "maxY" : 137,
+    "prop" : {
+      "x" : 107,
+      "y" : 88,
+      "width" : 42,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 107,
+      "y" : 88
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 149,
+          "y" : 88
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 50,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 139,
+          "y" : 113
+        },
+        "to" : {
+          "x" : 167,
+          "y" : 137
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 29372,
+    "displayName" : "Pi",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1515,
+      "y" : 259
+    },
+    "minX" : 1491,
+    "maxX" : 1530,
+    "minY" : 153,
+    "maxY" : 274,
+    "prop" : {
+      "x" : 1502,
+      "y" : 244,
+      "width" : 27,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1506,
+      "y" : 248
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1524,
+          "y" : 249
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1512,
+          "y" : 241
+        },
+        "to" : {
+          "x" : 1496,
+          "y" : 153
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1507,
+          "y" : 235
+        },
+        "b" : {
+          "x" : 1512,
+          "y" : 241
+        },
+        "c" : {
+          "x" : 1515,
+          "y" : 233
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 21,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1509,
+          "y" : 241
+        },
+        "to" : {
+          "x" : 1491,
+          "y" : 191
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1503,
+          "y" : 236
+        },
+        "b" : {
+          "x" : 1509,
+          "y" : 241
+        },
+        "c" : {
+          "x" : 1510,
+          "y" : 233
+        },
+        "type" : "ARROW"
+      }
+    } ],
+    "trivial" : true
+  }, {
+    "id" : 20,
+    "reactomeId" : 170659,
+    "displayName" : "(Gi alpha1:GTP:Adenylate cyclase):(G alpha-olf:GDP)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1612,
+      "y" : 136
+    },
+    "minX" : 1496,
+    "maxX" : 1672,
+    "minY" : 111,
+    "maxY" : 161,
+    "prop" : {
+      "x" : 1553,
+      "y" : 111,
+      "width" : 119,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1553,
+      "y" : 112
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1550,
+          "y" : 144
+        },
+        "to" : {
+          "x" : 1496,
+          "y" : 153
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1544,
+          "y" : 149
+        },
+        "b" : {
+          "x" : 1550,
+          "y" : 144
+        },
+        "c" : {
+          "x" : 1543,
+          "y" : 141
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 52,
+    "reactomeId" : 8856431,
+    "displayName" : "GABR heteropentamers:GABA:NPTN",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 56,
+      "y" : 192
+    },
+    "minX" : 0,
+    "maxX" : 112,
+    "minY" : 167,
+    "maxY" : 217,
+    "prop" : {
+      "x" : 0,
+      "y" : 167,
+      "width" : 112,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 0,
+      "y" : 168
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 50,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 170656,
+    "displayName" : "(Gi alpha1:GDP:Adenylate cyclase):(G alpha-olf:GDP)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1623,
+      "y" : 207
+    },
+    "minX" : 1491,
+    "maxX" : 1683,
+    "minY" : 182,
+    "maxY" : 232,
+    "prop" : {
+      "x" : 1564,
+      "y" : 182,
+      "width" : 119,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1564,
+      "y" : 183
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 21,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1561,
+          "y" : 199
+        },
+        "to" : {
+          "x" : 1491,
+          "y" : 191
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1554,
+          "y" : 202
+        },
+        "b" : {
+          "x" : 1561,
+          "y" : 199
+        },
+        "c" : {
+          "x" : 1555,
+          "y" : 194
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 23,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 24,
+    "reactomeId" : 170669,
+    "displayName" : "G alpha-olf:GDP complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1859,
+      "y" : 149
+    },
+    "minX" : 1761,
+    "maxX" : 1913,
+    "minY" : 131,
+    "maxY" : 184,
+    "prop" : {
+      "x" : 1805,
+      "y" : 131,
+      "width" : 108,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1805,
+      "y" : 132
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 23,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1808,
+          "y" : 170
+        },
+        "to" : {
+          "x" : 1761,
+          "y" : 184
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1803,
+          "y" : 176
+        },
+        "b" : {
+          "x" : 1808,
+          "y" : 170
+        },
+        "c" : {
+          "x" : 1800,
+          "y" : 168
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 25,
+    "reactomeId" : 392164,
+    "displayName" : "G-protein alpha (i):GDP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1861,
+      "y" : 211
+    },
+    "minX" : 1761,
+    "maxX" : 1922,
+    "minY" : 184,
+    "maxY" : 229,
+    "prop" : {
+      "x" : 1801,
+      "y" : 193,
+      "width" : 121,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1801,
+      "y" : 194
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 23,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1798,
+          "y" : 194
+        },
+        "to" : {
+          "x" : 1761,
+          "y" : 184
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1790,
+          "y" : 196
+        },
+        "b" : {
+          "x" : 1798,
+          "y" : 194
+        },
+        "c" : {
+          "x" : 1792,
+          "y" : 188
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 1013011,
+    "displayName" : "GABA B receptor G-protein beta-gamma and Kir3 channel complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 191,
+      "y" : 843
+    },
+    "minX" : 124,
+    "maxX" : 386,
+    "minY" : 811,
+    "maxY" : 875,
+    "prop" : {
+      "x" : 124,
+      "y" : 811,
+      "width" : 134,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 124,
+      "y" : 812
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 261,
+          "y" : 845
+        },
+        "to" : {
+          "x" : 378,
+          "y" : 849
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 382,
+          "y" : 850
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 32,
+    "reactomeId" : 1013020,
+    "displayName" : "Activation of GIRK/Kir3 Channels",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 394,
+      "y" : 850
+    },
+    "minX" : 387,
+    "maxX" : 400,
+    "minY" : 807,
+    "maxY" : 903,
+    "segments" : [ {
+      "from" : {
+        "x" : 390,
+        "y" : 807
+      },
+      "to" : {
+        "x" : 394,
+        "y" : 850
+      }
+    }, {
+      "from" : {
+        "x" : 394,
+        "y" : 850
+      },
+      "to" : {
+        "x" : 387,
+        "y" : 903
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 384,
+        "y" : 896
+      },
+      "b" : {
+        "x" : 387,
+        "y" : 903
+      },
+      "c" : {
+        "x" : 392,
+        "y" : 897
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 388,
+        "y" : 844
+      },
+      "b" : {
+        "x" : 400,
+        "y" : 856
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 33
+    } ],
+    "outputs" : [ {
+      "id" : 34
+    } ],
+    "catalysts" : [ {
+      "id" : 31,
+      "points" : [ {
+        "x" : 261,
+        "y" : 845
+      } ]
+    } ]
+  }, {
+    "id" : 48,
+    "reactomeId" : 975449,
+    "displayName" : "GABRR pentamer:GABA transports extracellular Cl- to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 454,
+      "y" : 126
+    },
+    "minX" : 379,
+    "maxX" : 460,
+    "minY" : 49,
+    "maxY" : 249,
+    "segments" : [ {
+      "from" : {
+        "x" : 379,
+        "y" : 49
+      },
+      "to" : {
+        "x" : 454,
+        "y" : 126
+      }
+    }, {
+      "from" : {
+        "x" : 454,
+        "y" : 126
+      },
+      "to" : {
+        "x" : 394,
+        "y" : 249
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 393,
+        "y" : 241
+      },
+      "b" : {
+        "x" : 394,
+        "y" : 249
+      },
+      "c" : {
+        "x" : 401,
+        "y" : 245
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 448,
+        "y" : 120
+      },
+      "b" : {
+        "x" : 460,
+        "y" : 132
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 3
+    } ],
+    "catalysts" : [ {
+      "id" : 49,
+      "points" : [ {
+        "x" : 308,
+        "y" : 174
+      } ]
+    } ]
+  }, {
+    "id" : 1,
+    "reactomeId" : 975340,
+    "displayName" : "GABR heteropentamers:GABA transport Cl- from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 379,
+      "y" : 129
+    },
+    "minX" : 367,
+    "maxX" : 386,
+    "minY" : 49,
+    "maxY" : 249,
+    "segments" : [ {
+      "from" : {
+        "x" : 367,
+        "y" : 49
+      },
+      "to" : {
+        "x" : 379,
+        "y" : 129
+      }
+    }, {
+      "from" : {
+        "x" : 379,
+        "y" : 129
+      },
+      "to" : {
+        "x" : 386,
+        "y" : 249
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 382,
+        "y" : 242
+      },
+      "b" : {
+        "x" : 386,
+        "y" : 249
+      },
+      "c" : {
+        "x" : 390,
+        "y" : 242
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 373,
+        "y" : 123
+      },
+      "b" : {
+        "x" : 385,
+        "y" : 135
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 3
+    } ],
+    "catalysts" : [ {
+      "id" : 4,
+      "points" : [ {
+        "x" : 326,
+        "y" : 126
+      } ]
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 170666,
+    "displayName" : "Adenylate cyclase increases the GTPase activity of G alpha-olf",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1473,
+      "y" : 155
+    },
+    "minX" : 1399,
+    "maxX" : 1496,
+    "minY" : 149,
+    "maxY" : 161,
+    "segments" : [ {
+      "from" : {
+        "x" : 1399,
+        "y" : 152
+      },
+      "to" : {
+        "x" : 1473,
+        "y" : 155
+      }
+    }, {
+      "from" : {
+        "x" : 1473,
+        "y" : 155
+      },
+      "to" : {
+        "x" : 1496,
+        "y" : 153
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1467,
+        "y" : 149
+      },
+      "b" : {
+        "x" : 1479,
+        "y" : 161
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 17
+    } ],
+    "outputs" : [ {
+      "id" : 19,
+      "points" : [ {
+        "x" : 1512,
+        "y" : 241
+      } ]
+    }, {
+      "id" : 20,
+      "points" : [ {
+        "x" : 1550,
+        "y" : 144
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 17,
+      "points" : [ {
+        "x" : 1399,
+        "y" : 128
+      }, {
+        "x" : 1437,
+        "y" : 112
+      } ]
+    } ]
+  }, {
+    "id" : 50,
+    "reactomeId" : 8856398,
+    "displayName" : "NPTN binds GABA A receptors",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 164,
+      "y" : 161
+    },
+    "minX" : 115,
+    "maxX" : 169,
+    "minY" : 137,
+    "maxY" : 175,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 167,
+        "y" : 137
+      },
+      "to" : {
+        "x" : 164,
+        "y" : 161
+      }
+    }, {
+      "from" : {
+        "x" : 164,
+        "y" : 161
+      },
+      "to" : {
+        "x" : 115,
+        "y" : 175
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 121,
+        "y" : 169
+      },
+      "b" : {
+        "x" : 115,
+        "y" : 175
+      },
+      "c" : {
+        "x" : 123,
+        "y" : 177
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 164,
+        "y" : 161
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 51,
+      "points" : [ {
+        "x" : 139,
+        "y" : 113
+      } ]
+    }, {
+      "id" : 4,
+      "points" : [ {
+        "x" : 208,
+        "y" : 130
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 52
+    } ]
+  }, {
+    "id" : 21,
+    "reactomeId" : 170686,
+    "displayName" : "Adenylate cyclase increases the GTPase activity of Gi alpha",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1472,
+      "y" : 179
+    },
+    "minX" : 1399,
+    "maxX" : 1491,
+    "minY" : 163,
+    "maxY" : 191,
+    "segments" : [ {
+      "from" : {
+        "x" : 1399,
+        "y" : 163
+      },
+      "to" : {
+        "x" : 1472,
+        "y" : 179
+      }
+    }, {
+      "from" : {
+        "x" : 1472,
+        "y" : 179
+      },
+      "to" : {
+        "x" : 1491,
+        "y" : 191
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1466,
+        "y" : 173
+      },
+      "b" : {
+        "x" : 1478,
+        "y" : 185
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 17
+    } ],
+    "outputs" : [ {
+      "id" : 19,
+      "points" : [ {
+        "x" : 1509,
+        "y" : 241
+      } ]
+    }, {
+      "id" : 22,
+      "points" : [ {
+        "x" : 1561,
+        "y" : 199
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 17,
+      "points" : [ {
+        "x" : 1399,
+        "y" : 135
+      }, {
+        "x" : 1431,
+        "y" : 127
+      } ]
+    } ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 420688,
+    "displayName" : "GABAB heterodimeric receptor binds GABA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 628,
+      "y" : 92
+    },
+    "minX" : 592,
+    "maxX" : 693,
+    "minY" : 87,
+    "maxY" : 97,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 592,
+        "y" : 91
+      },
+      "to" : {
+        "x" : 628,
+        "y" : 92
+      }
+    }, {
+      "from" : {
+        "x" : 628,
+        "y" : 92
+      },
+      "to" : {
+        "x" : 693,
+        "y" : 91
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 686,
+        "y" : 95
+      },
+      "b" : {
+        "x" : 693,
+        "y" : 91
+      },
+      "c" : {
+        "x" : 686,
+        "y" : 87
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 628,
+        "y" : 92
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 7,
+      "points" : [ {
+        "x" : 558,
+        "y" : 90
+      } ]
+    }, {
+      "id" : 8,
+      "points" : [ {
+        "x" : 578,
+        "y" : 34
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 9
+    } ]
+  }, {
+    "id" : 23,
+    "reactomeId" : 170674,
+    "displayName" : "Dissociation of the Gi alpha:G olf complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1748,
+      "y" : 183
+    },
+    "minX" : 1686,
+    "maxX" : 1761,
+    "minY" : 178,
+    "maxY" : 195,
+    "reactionType" : "Dissociation",
+    "segments" : [ {
+      "from" : {
+        "x" : 1686,
+        "y" : 195
+      },
+      "to" : {
+        "x" : 1748,
+        "y" : 183
+      }
+    }, {
+      "from" : {
+        "x" : 1748,
+        "y" : 183
+      },
+      "to" : {
+        "x" : 1761,
+        "y" : 184
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 1748,
+        "y" : 183
+      },
+      "r" : 5,
+      "r1" : 3,
+      "type" : "DOUBLE_CIRCLE",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 22
+    } ],
+    "outputs" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1808,
+        "y" : 170
+      } ]
+    }, {
+      "id" : 12,
+      "points" : [ {
+        "x" : 932,
+        "y" : 78
+      }, {
+        "x" : 975,
+        "y" : 49
+      }, {
+        "x" : 1673,
+        "y" : 55
+      } ]
+    }, {
+      "id" : 25,
+      "points" : [ {
+        "x" : 1798,
+        "y" : 194
+      } ]
+    } ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 392206,
+    "displayName" : "G alpha (i) inhibits adenylate cyclase",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 993,
+      "y" : 157
+    },
+    "minX" : 964,
+    "maxX" : 1033,
+    "minY" : 152,
+    "maxY" : 162,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 964,
+        "y" : 158
+      },
+      "to" : {
+        "x" : 993,
+        "y" : 157
+      }
+    }, {
+      "from" : {
+        "x" : 993,
+        "y" : 157
+      },
+      "to" : {
+        "x" : 1033,
+        "y" : 153
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1027,
+        "y" : 158
+      },
+      "b" : {
+        "x" : 1033,
+        "y" : 153
+      },
+      "c" : {
+        "x" : 1026,
+        "y" : 150
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 993,
+        "y" : 157
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 12,
+      "points" : [ {
+        "x" : 925,
+        "y" : 120
+      } ]
+    }, {
+      "id" : 13,
+      "points" : [ {
+        "x" : 931,
+        "y" : 162
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 14
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 170671,
+    "displayName" : "G alpha-olf:GTP binds to Gi alpha1:GTP:adenylate cyclase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1234,
+      "y" : 160
+    },
+    "minX" : 1206,
+    "maxX" : 1274,
+    "minY" : 155,
+    "maxY" : 165,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1206,
+        "y" : 159
+      },
+      "to" : {
+        "x" : 1234,
+        "y" : 160
+      }
+    }, {
+      "from" : {
+        "x" : 1234,
+        "y" : 160
+      },
+      "to" : {
+        "x" : 1274,
+        "y" : 156
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1268,
+        "y" : 161
+      },
+      "b" : {
+        "x" : 1274,
+        "y" : 156
+      },
+      "c" : {
+        "x" : 1267,
+        "y" : 153
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1234,
+        "y" : 160
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 14,
+      "points" : [ {
+        "x" : 1160,
+        "y" : 154
+      } ]
+    }, {
+      "id" : 16,
+      "points" : [ {
+        "x" : 1146,
+        "y" : 194
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 17
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 5,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 974,
+      "y" : 473
+    },
+    "minX" : 23,
+    "maxX" : 1925,
+    "minY" : 83,
+    "maxY" : 863,
+    "prop" : {
+      "x" : 23,
+      "y" : 83,
+      "width" : 1902,
+      "height" : 780
+    },
+    "textPosition" : {
+      "x" : 56,
+      "y" : 777
+    },
+    "insets" : {
+      "x" : 43,
+      "y" : 205,
+      "width" : 1852,
+      "height" : 636
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 1, 3, 4, 6, 7, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 31, 32, 33, 48, 49, 50, 51, 52 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ {
+    "id" : 53,
+    "reactomeId" : 977441,
+    "displayName" : "GABA A receptor activation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 308,
+      "y" : 149
+    },
+    "minX" : 201,
+    "maxX" : 415,
+    "minY" : 6,
+    "maxY" : 292,
+    "prop" : {
+      "x" : 201,
+      "y" : 6,
+      "width" : 214,
+      "height" : 286
+    },
+    "points" : [ {
+      "x" : 201,
+      "y" : 6
+    }, {
+      "x" : 415,
+      "y" : 6
+    }, {
+      "x" : 415,
+      "y" : 292
+    }, {
+      "x" : 201,
+      "y" : 292
+    } ],
+    "colour" : "#4684ee"
+  }, {
+    "id" : 54,
+    "reactomeId" : 977442,
+    "displayName" : "GABA A (rho) receptor activation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 330,
+      "y" : 149
+    },
+    "minX" : 191,
+    "maxX" : 470,
+    "minY" : 6,
+    "maxY" : 292,
+    "prop" : {
+      "x" : 191,
+      "y" : 6,
+      "width" : 279,
+      "height" : 286
+    },
+    "points" : [ {
+      "x" : 191,
+      "y" : 6
+    }, {
+      "x" : 470,
+      "y" : 6
+    }, {
+      "x" : 470,
+      "y" : 292
+    }, {
+      "x" : 191,
+      "y" : 292
+    } ],
+    "colour" : "#dc3912"
+  }, {
+    "id" : 55,
+    "reactomeId" : 977444,
+    "displayName" : "GABA B receptor activation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 1023,
+      "y" : 468
+    },
+    "minX" : 114,
+    "maxX" : 1932,
+    "minY" : -9,
+    "maxY" : 946,
+    "prop" : {
+      "x" : 114,
+      "y" : 292,
+      "width" : 1818,
+      "height" : 654
+    },
+    "points" : [ {
+      "x" : 114,
+      "y" : -9
+    }, {
+      "x" : 1932,
+      "y" : -9
+    }, {
+      "x" : 1932,
+      "y" : 946
+    }, {
+      "x" : 114,
+      "y" : 946
+    } ],
+    "colour" : "#008000"
+  } ],
+  "minX" : 0,
+  "maxX" : 1925,
+  "minY" : 0,
+  "maxY" : 936,
+  "disease" : false
+}

@@ -15,10 +15,15 @@ import org.reactome.server.tools.document.exporter.style.PdfProfile;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.concurrent.atomic.AtomicLong;
 
 public class TableOfContent implements Section {
 
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
+
+	private final Map<String, AtomicLong> destinations = new TreeMap<>();
 
 	@Override
 	public void render(Document document, DocumentProperties properties) {
@@ -33,11 +38,12 @@ public class TableOfContent implements Section {
 	}
 
 	private void addToc(Document document, PdfProfile profile, Event event, int maxLevel) {
+		final String destination = String.format("%s:%d", event.getStId(), destinations.computeIfAbsent(event.getStId(), stId -> new AtomicLong()).incrementAndGet());
 		document.add(profile.getH3("")
 				.add(Images.get(event.getSchemaClass()))
 				.add(" ")
 				.add(event.getDisplayName())
-				.setAction(PdfAction.createGoTo(event.getStId()))
+				.setAction(PdfAction.createGoTo(destination))
 				.setFontColor(profile.getLinkColor()));
 		if (event instanceof Pathway) {
 			final Pathway pathway = (Pathway) event;
@@ -54,12 +60,13 @@ public class TableOfContent implements Section {
 				.setListSymbol("")
 				.setFontColor(profile.getLinkColor());
 		for (Event ev : events) {
+			final String destination = String.format("%s:%d", ev.getStId(), destinations.computeIfAbsent(ev.getStId(), stId -> new AtomicLong()).incrementAndGet());
 			final Paragraph paragraph = profile.getParagraph("")
 					.setMultipliedLeading(1f)
 					.add(Images.get(ev.getSchemaClass(), profile.getFontSize() - 1))
 					.add(" ")
 					.add(ev.getDisplayName())
-					.setAction(PdfAction.createGoTo(ev.getStId()));
+					.setAction(PdfAction.createGoTo(destination));
 			final ListItem listItem = new ListItem();
 			listItem.add(paragraph);
 			list.add(listItem);

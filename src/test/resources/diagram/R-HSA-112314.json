@@ -1,0 +1,901 @@
+{
+  "dbId" : 112314,
+  "stableId" : "R-HSA-112314",
+  "displayName" : "Neurotransmitter receptors and postsynaptic signal transmission",
+  "nodes" : [ {
+    "id" : 839,
+    "reactomeId" : 975385,
+    "displayName" : "GLRA:GLRB:Gly",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 223,
+      "y" : 130
+    },
+    "minX" : 181,
+    "maxX" : 341,
+    "minY" : 111,
+    "maxY" : 149,
+    "prop" : {
+      "x" : 181,
+      "y" : 111,
+      "width" : 84,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 184,
+      "y" : 114
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 838,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 268,
+          "y" : 134
+        },
+        "to" : {
+          "x" : 333,
+          "y" : 141
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 337,
+          "y" : 142
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 425,
+    "reactomeId" : 74112,
+    "displayName" : "Ca2+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 740,
+      "y" : 17
+    },
+    "minX" : 643,
+    "maxX" : 766,
+    "minY" : 1,
+    "maxY" : 99,
+    "prop" : {
+      "x" : 715,
+      "y" : 2,
+      "width" : 50,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 719,
+      "y" : 6
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 760,
+          "y" : 7
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 840,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 722,
+          "y" : 35
+        },
+        "to" : {
+          "x" : 643,
+          "y" : 99
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 841,
+    "reactomeId" : 975348,
+    "displayName" : "HTR3 pentamer:5HT",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 458,
+      "y" : 115
+    },
+    "minX" : 407,
+    "maxX" : 634,
+    "minY" : 98,
+    "maxY" : 136,
+    "prop" : {
+      "x" : 407,
+      "y" : 98,
+      "width" : 102,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 411,
+      "y" : 97
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 840,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 512,
+          "y" : 119
+        },
+        "to" : {
+          "x" : 626,
+          "y" : 131
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 630,
+          "y" : 132
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 426,
+    "reactomeId" : 74016,
+    "displayName" : "Ca2+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 730,
+      "y" : 270
+    },
+    "minX" : 634,
+    "maxX" : 756,
+    "minY" : 193,
+    "maxY" : 285,
+    "prop" : {
+      "x" : 705,
+      "y" : 255,
+      "width" : 50,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 709,
+      "y" : 259
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 750,
+          "y" : 260
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 840,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 711,
+          "y" : 252
+        },
+        "to" : {
+          "x" : 634,
+          "y" : 193
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 703,
+          "y" : 251
+        },
+        "b" : {
+          "x" : 711,
+          "y" : 252
+        },
+        "c" : {
+          "x" : 708,
+          "y" : 245
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 843,
+    "reactomeId" : 74126,
+    "displayName" : "K+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 659,
+      "y" : 21
+    },
+    "minX" : 642,
+    "maxX" : 678,
+    "minY" : 5,
+    "maxY" : 99,
+    "prop" : {
+      "x" : 642,
+      "y" : 6,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 646,
+      "y" : 10
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 672,
+          "y" : 11
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 840,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 655,
+          "y" : 39
+        },
+        "to" : {
+          "x" : 643,
+          "y" : 99
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 845,
+    "reactomeId" : 29804,
+    "displayName" : "K+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 628,
+      "y" : 294
+    },
+    "minX" : 611,
+    "maxX" : 647,
+    "minY" : 193,
+    "maxY" : 309,
+    "prop" : {
+      "x" : 611,
+      "y" : 279,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 615,
+      "y" : 283
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 641,
+          "y" : 284
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 840,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 628,
+          "y" : 276
+        },
+        "to" : {
+          "x" : 634,
+          "y" : 193
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 625,
+          "y" : 269
+        },
+        "b" : {
+          "x" : 628,
+          "y" : 276
+        },
+        "c" : {
+          "x" : 632,
+          "y" : 269
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 974,
+    "reactomeId" : 181431,
+    "displayName" : "Acetylcholine binding and downstream events",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 100,
+      "y" : 413
+    },
+    "minX" : 5,
+    "maxX" : 196,
+    "minY" : 380,
+    "maxY" : 446,
+    "prop" : {
+      "x" : 5,
+      "y" : 380,
+      "width" : 191,
+      "height" : 66
+    },
+    "textPosition" : {
+      "x" : 17,
+      "y" : 391
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 975,
+    "reactomeId" : 399721,
+    "displayName" : "Glutamate binding, activation of AMPA receptors and synaptic plasticity",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 99,
+      "y" : 507
+    },
+    "minX" : 0,
+    "maxX" : 198,
+    "minY" : 471,
+    "maxY" : 544,
+    "prop" : {
+      "x" : 0,
+      "y" : 471,
+      "width" : 198,
+      "height" : 73
+    },
+    "textPosition" : {
+      "x" : 5,
+      "y" : 479
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 976,
+    "reactomeId" : 442755,
+    "displayName" : "Activation of NMDA receptors and postsynaptic events",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 110,
+      "y" : 589
+    },
+    "minX" : 12,
+    "maxX" : 209,
+    "minY" : 559,
+    "maxY" : 619,
+    "prop" : {
+      "x" : 12,
+      "y" : 559,
+      "width" : 197,
+      "height" : 60
+    },
+    "textPosition" : {
+      "x" : 16,
+      "y" : 567
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 433,
+    "reactomeId" : 83910,
+    "displayName" : "Na+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 552,
+      "y" : 266
+    },
+    "minX" : 531,
+    "maxX" : 634,
+    "minY" : 193,
+    "maxY" : 281,
+    "prop" : {
+      "x" : 531,
+      "y" : 251,
+      "width" : 43,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 535,
+      "y" : 255
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 569,
+          "y" : 256
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 840,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 568,
+          "y" : 248
+        },
+        "to" : {
+          "x" : 634,
+          "y" : 193
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 571,
+          "y" : 240
+        },
+        "b" : {
+          "x" : 568,
+          "y" : 248
+        },
+        "c" : {
+          "x" : 576,
+          "y" : 247
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 977,
+    "reactomeId" : 451326,
+    "displayName" : "Activation of kainate receptors upon glutamate binding",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 106,
+      "y" : 664
+    },
+    "minX" : 27,
+    "maxX" : 186,
+    "minY" : 629,
+    "maxY" : 699,
+    "prop" : {
+      "x" : 27,
+      "y" : 629,
+      "width" : 159,
+      "height" : 70
+    },
+    "textPosition" : {
+      "x" : 38,
+      "y" : 635
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 434,
+    "reactomeId" : 74113,
+    "displayName" : "Na+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 531,
+      "y" : 21
+    },
+    "minX" : 510,
+    "maxX" : 643,
+    "minY" : 5,
+    "maxY" : 99,
+    "prop" : {
+      "x" : 510,
+      "y" : 6,
+      "width" : 43,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 514,
+      "y" : 10
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 548,
+          "y" : 11
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 840,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 552,
+          "y" : 39
+        },
+        "to" : {
+          "x" : 643,
+          "y" : 99
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 978,
+    "reactomeId" : 977443,
+    "displayName" : "GABA receptor activation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 108,
+      "y" : 735
+    },
+    "minX" : 35,
+    "maxX" : 182,
+    "minY" : 708,
+    "maxY" : 762,
+    "prop" : {
+      "x" : 35,
+      "y" : 708,
+      "width" : 147,
+      "height" : 54
+    },
+    "textPosition" : {
+      "x" : 56,
+      "y" : 713
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 467,
+    "reactomeId" : 188972,
+    "displayName" : "Cl-",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 309,
+      "y" : 16
+    },
+    "minX" : 292,
+    "maxX" : 328,
+    "minY" : 0,
+    "maxY" : 31,
+    "prop" : {
+      "x" : 292,
+      "y" : 1,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 296,
+      "y" : 5
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 322,
+          "y" : 6
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 838,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 468,
+    "reactomeId" : 352022,
+    "displayName" : "Cl-",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 348,
+      "y" : 241
+    },
+    "minX" : 331,
+    "maxX" : 367,
+    "minY" : 225,
+    "maxY" : 256,
+    "prop" : {
+      "x" : 331,
+      "y" : 226,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 335,
+      "y" : 230
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 361,
+          "y" : 231
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 838,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 838,
+    "reactomeId" : 975389,
+    "displayName" : "GLRA:GLRB:Gly transports extracellular Cl- to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 349,
+      "y" : 143
+    },
+    "minX" : 313,
+    "maxX" : 355,
+    "minY" : 34,
+    "maxY" : 223,
+    "segments" : [ {
+      "from" : {
+        "x" : 313,
+        "y" : 34
+      },
+      "to" : {
+        "x" : 349,
+        "y" : 143
+      }
+    }, {
+      "from" : {
+        "x" : 349,
+        "y" : 143
+      },
+      "to" : {
+        "x" : 348,
+        "y" : 223
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 344,
+        "y" : 216
+      },
+      "b" : {
+        "x" : 348,
+        "y" : 223
+      },
+      "c" : {
+        "x" : 352,
+        "y" : 216
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 343,
+        "y" : 137
+      },
+      "b" : {
+        "x" : 355,
+        "y" : 149
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 467
+    } ],
+    "outputs" : [ {
+      "id" : 468
+    } ],
+    "catalysts" : [ {
+      "id" : 839,
+      "points" : [ {
+        "x" : 268,
+        "y" : 134
+      } ]
+    } ]
+  }, {
+    "id" : 840,
+    "reactomeId" : 975311,
+    "displayName" : "HTR3 pentamer:5HT transports Na+,K+, and Ca2+",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 642,
+      "y" : 133
+    },
+    "minX" : 634,
+    "maxX" : 648,
+    "minY" : 99,
+    "maxY" : 193,
+    "segments" : [ {
+      "from" : {
+        "x" : 643,
+        "y" : 99
+      },
+      "to" : {
+        "x" : 642,
+        "y" : 133
+      }
+    }, {
+      "from" : {
+        "x" : 642,
+        "y" : 133
+      },
+      "to" : {
+        "x" : 634,
+        "y" : 193
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 636,
+        "y" : 127
+      },
+      "b" : {
+        "x" : 648,
+        "y" : 139
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 843,
+      "points" : [ {
+        "x" : 655,
+        "y" : 39
+      } ]
+    }, {
+      "id" : 425,
+      "points" : [ {
+        "x" : 722,
+        "y" : 35
+      } ]
+    }, {
+      "id" : 434,
+      "points" : [ {
+        "x" : 552,
+        "y" : 39
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 845,
+      "points" : [ {
+        "x" : 628,
+        "y" : 276
+      } ]
+    }, {
+      "id" : 426,
+      "points" : [ {
+        "x" : 711,
+        "y" : 252
+      } ]
+    }, {
+      "id" : 433,
+      "points" : [ {
+        "x" : 568,
+        "y" : 248
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 841,
+      "points" : [ {
+        "x" : 512,
+        "y" : 119
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 38,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 458,
+      "y" : 420
+    },
+    "minX" : 46,
+    "maxX" : 870,
+    "minY" : 44,
+    "maxY" : 797,
+    "prop" : {
+      "x" : 46,
+      "y" : 44,
+      "width" : 824,
+      "height" : 753
+    },
+    "textPosition" : {
+      "x" : 286,
+      "y" : 745
+    },
+    "insets" : {
+      "x" : 103,
+      "y" : 169,
+      "width" : 745,
+      "height" : 612
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 426, 433, 468, 838, 839, 841, 845, 840, 974, 975, 976, 977, 978 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 870,
+  "minY" : 0,
+  "maxY" : 797,
+  "disease" : false
+}

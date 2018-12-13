@@ -1,0 +1,1414 @@
+{
+  "dbId" : 388844,
+  "stableId" : "R-HSA-388844",
+  "displayName" : "Receptor-type tyrosine-protein phosphatases",
+  "nodes" : [ {
+    "id" : 2,
+    "reactomeId" : 6797868,
+    "displayName" : "PTPRD",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 83,
+      "y" : 160
+    },
+    "minX" : 59,
+    "maxX" : 507,
+    "minY" : 143,
+    "maxY" : 196,
+    "prop" : {
+      "x" : 59,
+      "y" : 149,
+      "width" : 48,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 59,
+      "y" : 149
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 107,
+          "y" : 149
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 93,
+          "y" : 174
+        },
+        "to" : {
+          "x" : 116,
+          "y" : 196
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 5,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 110,
+          "y" : 160
+        },
+        "to" : {
+          "x" : 305,
+          "y" : 166
+        }
+      }, {
+        "from" : {
+          "x" : 305,
+          "y" : 166
+        },
+        "to" : {
+          "x" : 333,
+          "y" : 191
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 8,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 110,
+          "y" : 159
+        },
+        "to" : {
+          "x" : 454,
+          "y" : 157
+        }
+      }, {
+        "from" : {
+          "x" : 454,
+          "y" : 157
+        },
+        "to" : {
+          "x" : 507,
+          "y" : 194
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 6797845,
+    "displayName" : "IL1RAPL1,(IL1RAPL2)",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 90,
+      "y" : 241
+    },
+    "minX" : 26,
+    "maxX" : 155,
+    "minY" : 196,
+    "maxY" : 252,
+    "prop" : {
+      "x" : 26,
+      "y" : 230,
+      "width" : 129,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 26,
+      "y" : 230
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 96,
+          "y" : 224
+        },
+        "to" : {
+          "x" : 116,
+          "y" : 196
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 6797901,
+    "displayName" : "PTPRD:IL1RAPL1,(IL1RAPL2)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 239,
+      "y" : 198
+    },
+    "minX" : 182,
+    "maxX" : 296,
+    "minY" : 180,
+    "maxY" : 216,
+    "prop" : {
+      "x" : 182,
+      "y" : 180,
+      "width" : 114,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 184,
+      "y" : 181
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 445745,
+    "displayName" : "IL1RAP-1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 295,
+      "y" : 241
+    },
+    "minX" : 263,
+    "maxX" : 333,
+    "minY" : 191,
+    "maxY" : 252,
+    "prop" : {
+      "x" : 263,
+      "y" : 230,
+      "width" : 64,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 263,
+      "y" : 230
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 327,
+          "y" : 230
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 5,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 303,
+          "y" : 227
+        },
+        "to" : {
+          "x" : 333,
+          "y" : 191
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 6800384,
+    "displayName" : "PTPRD:IL1RAP-1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 435,
+      "y" : 192
+    },
+    "minX" : 394,
+    "maxX" : 476,
+    "minY" : 173,
+    "maxY" : 211,
+    "prop" : {
+      "x" : 394,
+      "y" : 173,
+      "width" : 82,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 403,
+      "y" : 176
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 5,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 6797785,
+    "displayName" : "SLITRK1-6",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 456,
+      "y" : 241
+    },
+    "minX" : 421,
+    "maxX" : 507,
+    "minY" : 194,
+    "maxY" : 252,
+    "prop" : {
+      "x" : 421,
+      "y" : 230,
+      "width" : 71,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 421,
+      "y" : 230
+    },
+    "connectors" : [ {
+      "edgeId" : 8,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 467,
+          "y" : 224
+        },
+        "to" : {
+          "x" : 507,
+          "y" : 194
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 6797827,
+    "displayName" : "SLITRK1-6:PTPRD",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 614,
+      "y" : 194
+    },
+    "minX" : 572,
+    "maxX" : 656,
+    "minY" : 176,
+    "maxY" : 213,
+    "prop" : {
+      "x" : 572,
+      "y" : 176,
+      "width" : 84,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 577,
+      "y" : 178
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 8,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 6798240,
+    "displayName" : "NTRK3",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 715,
+      "y" : 241
+    },
+    "minX" : 690,
+    "maxX" : 751,
+    "minY" : 194,
+    "maxY" : 252,
+    "prop" : {
+      "x" : 690,
+      "y" : 230,
+      "width" : 50,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 690,
+      "y" : 230
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 740,
+          "y" : 230
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 14,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 723,
+          "y" : 227
+        },
+        "to" : {
+          "x" : 751,
+          "y" : 194
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 16,
+    "reactomeId" : 197680,
+    "displayName" : "PTPRS",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 710,
+      "y" : 160
+    },
+    "minX" : 688,
+    "maxX" : 751,
+    "minY" : 143,
+    "maxY" : 194,
+    "prop" : {
+      "x" : 688,
+      "y" : 149,
+      "width" : 44,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 688,
+      "y" : 149
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 732,
+          "y" : 149
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 14,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 723,
+          "y" : 174
+        },
+        "to" : {
+          "x" : 751,
+          "y" : 194
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 6798231,
+    "displayName" : "PTPRS:NTRK3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 861,
+      "y" : 195
+    },
+    "minX" : 816,
+    "maxX" : 906,
+    "minY" : 184,
+    "maxY" : 206,
+    "prop" : {
+      "x" : 816,
+      "y" : 184,
+      "width" : 90,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 816,
+      "y" : 185
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 14,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 6798238,
+    "displayName" : "PTPRF, PTPRS, PTPRD",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 904,
+      "y" : 156
+    },
+    "minX" : 844,
+    "maxX" : 1146,
+    "minY" : 141,
+    "maxY" : 199,
+    "prop" : {
+      "x" : 844,
+      "y" : 141,
+      "width" : 120,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 856,
+      "y" : 139
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 913,
+          "y" : 177
+        },
+        "to" : {
+          "x" : 931,
+          "y" : 199
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 24,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 970,
+          "y" : 156
+        },
+        "to" : {
+          "x" : 1115,
+          "y" : 159
+        }
+      }, {
+        "from" : {
+          "x" : 1115,
+          "y" : 159
+        },
+        "to" : {
+          "x" : 1146,
+          "y" : 199
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 6798248,
+    "displayName" : "LRRC4B",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 904,
+      "y" : 235
+    },
+    "minX" : 874,
+    "maxX" : 940,
+    "minY" : 199,
+    "maxY" : 246,
+    "prop" : {
+      "x" : 874,
+      "y" : 224,
+      "width" : 60,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 877,
+      "y" : 224
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 934,
+          "y" : 224
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 912,
+          "y" : 221
+        },
+        "to" : {
+          "x" : 931,
+          "y" : 199
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 23,
+    "reactomeId" : 6798251,
+    "displayName" : "LRRC4B:PTPRF,PTPRS,PTPRD",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1063,
+      "y" : 200
+    },
+    "minX" : 1003,
+    "maxX" : 1124,
+    "minY" : 182,
+    "maxY" : 218,
+    "prop" : {
+      "x" : 1003,
+      "y" : 182,
+      "width" : 121,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1015,
+      "y" : 183
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 25,
+    "reactomeId" : 6799309,
+    "displayName" : "Liprins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1125,
+      "y" : 241
+    },
+    "minX" : 1094,
+    "maxX" : 1156,
+    "minY" : 199,
+    "maxY" : 253,
+    "prop" : {
+      "x" : 1094,
+      "y" : 230,
+      "width" : 62,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 1102,
+      "y" : 231
+    },
+    "connectors" : [ {
+      "edgeId" : 24,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1130,
+          "y" : 224
+        },
+        "to" : {
+          "x" : 1146,
+          "y" : 199
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 26,
+    "reactomeId" : 383387,
+    "displayName" : "LAR,PTPRS,PTPRD:Liprins",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1281,
+      "y" : 200
+    },
+    "minX" : 1224,
+    "maxX" : 1339,
+    "minY" : 182,
+    "maxY" : 218,
+    "prop" : {
+      "x" : 1224,
+      "y" : 182,
+      "width" : 115,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1237,
+      "y" : 183
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 24,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 1,
+    "reactomeId" : 6797810,
+    "displayName" : "PTPRD binds IL1RAPL1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 153,
+      "y" : 196
+    },
+    "minX" : 116,
+    "maxX" : 179,
+    "minY" : 191,
+    "maxY" : 201,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 116,
+        "y" : 196
+      },
+      "to" : {
+        "x" : 153,
+        "y" : 196
+      }
+    }, {
+      "from" : {
+        "x" : 153,
+        "y" : 196
+      },
+      "to" : {
+        "x" : 179,
+        "y" : 196
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 172,
+        "y" : 200
+      },
+      "b" : {
+        "x" : 179,
+        "y" : 196
+      },
+      "c" : {
+        "x" : 172,
+        "y" : 192
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 153,
+        "y" : 196
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 2,
+      "points" : [ {
+        "x" : 93,
+        "y" : 174
+      } ]
+    }, {
+      "id" : 3,
+      "points" : [ {
+        "x" : 96,
+        "y" : 224
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 4
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 6798258,
+    "displayName" : "PRTPRF, PTPRS, PTPRD bind LRRC4B",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 962,
+      "y" : 199
+    },
+    "minX" : 931,
+    "maxX" : 1000,
+    "minY" : 194,
+    "maxY" : 204,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 931,
+        "y" : 199
+      },
+      "to" : {
+        "x" : 962,
+        "y" : 199
+      }
+    }, {
+      "from" : {
+        "x" : 962,
+        "y" : 199
+      },
+      "to" : {
+        "x" : 1000,
+        "y" : 199
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 993,
+        "y" : 203
+      },
+      "b" : {
+        "x" : 1000,
+        "y" : 199
+      },
+      "c" : {
+        "x" : 993,
+        "y" : 195
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 962,
+        "y" : 199
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 19,
+      "points" : [ {
+        "x" : 913,
+        "y" : 177
+      } ]
+    }, {
+      "id" : 22,
+      "points" : [ {
+        "x" : 912,
+        "y" : 221
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 23
+    } ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 6800380,
+    "displayName" : "PTPRD binds IL1RAP-1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 358,
+      "y" : 191
+    },
+    "minX" : 333,
+    "maxX" : 391,
+    "minY" : 186,
+    "maxY" : 196,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 333,
+        "y" : 191
+      },
+      "to" : {
+        "x" : 358,
+        "y" : 191
+      }
+    }, {
+      "from" : {
+        "x" : 358,
+        "y" : 191
+      },
+      "to" : {
+        "x" : 391,
+        "y" : 191
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 384,
+        "y" : 195
+      },
+      "b" : {
+        "x" : 391,
+        "y" : 191
+      },
+      "c" : {
+        "x" : 384,
+        "y" : 187
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 358,
+        "y" : 191
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 2,
+      "points" : [ {
+        "x" : 110,
+        "y" : 160
+      }, {
+        "x" : 305,
+        "y" : 166
+      } ]
+    }, {
+      "id" : 6,
+      "points" : [ {
+        "x" : 303,
+        "y" : 227
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 7
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 6797803,
+    "displayName" : "PTPRD binds SLITRK1-6",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 537,
+      "y" : 194
+    },
+    "minX" : 507,
+    "maxX" : 569,
+    "minY" : 189,
+    "maxY" : 199,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 507,
+        "y" : 194
+      },
+      "to" : {
+        "x" : 537,
+        "y" : 194
+      }
+    }, {
+      "from" : {
+        "x" : 537,
+        "y" : 194
+      },
+      "to" : {
+        "x" : 569,
+        "y" : 194
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 562,
+        "y" : 198
+      },
+      "b" : {
+        "x" : 569,
+        "y" : 194
+      },
+      "c" : {
+        "x" : 562,
+        "y" : 190
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 537,
+        "y" : 194
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 9,
+      "points" : [ {
+        "x" : 467,
+        "y" : 224
+      } ]
+    }, {
+      "id" : 2,
+      "points" : [ {
+        "x" : 110,
+        "y" : 159
+      }, {
+        "x" : 454,
+        "y" : 157
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 10
+    } ]
+  }, {
+    "id" : 24,
+    "reactomeId" : 388824,
+    "displayName" : "PTPRF, PTPRS, PTPRD bind Liprins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1181,
+      "y" : 199
+    },
+    "minX" : 1146,
+    "maxX" : 1221,
+    "minY" : 194,
+    "maxY" : 204,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1146,
+        "y" : 199
+      },
+      "to" : {
+        "x" : 1181,
+        "y" : 199
+      }
+    }, {
+      "from" : {
+        "x" : 1181,
+        "y" : 199
+      },
+      "to" : {
+        "x" : 1221,
+        "y" : 199
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1214,
+        "y" : 203
+      },
+      "b" : {
+        "x" : 1221,
+        "y" : 199
+      },
+      "c" : {
+        "x" : 1214,
+        "y" : 195
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1181,
+        "y" : 199
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 25,
+      "points" : [ {
+        "x" : 1130,
+        "y" : 224
+      } ]
+    }, {
+      "id" : 19,
+      "points" : [ {
+        "x" : 970,
+        "y" : 156
+      }, {
+        "x" : 1115,
+        "y" : 159
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 26
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 6798257,
+    "displayName" : "PTPRS binds NTRK3",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 781,
+      "y" : 194
+    },
+    "minX" : 751,
+    "maxX" : 813,
+    "minY" : 189,
+    "maxY" : 199,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 751,
+        "y" : 194
+      },
+      "to" : {
+        "x" : 781,
+        "y" : 194
+      }
+    }, {
+      "from" : {
+        "x" : 781,
+        "y" : 194
+      },
+      "to" : {
+        "x" : 813,
+        "y" : 194
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 806,
+        "y" : 198
+      },
+      "b" : {
+        "x" : 813,
+        "y" : 194
+      },
+      "c" : {
+        "x" : 806,
+        "y" : 190
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 781,
+        "y" : 194
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 15,
+      "points" : [ {
+        "x" : 723,
+        "y" : 227
+      } ]
+    }, {
+      "id" : 16,
+      "points" : [ {
+        "x" : 723,
+        "y" : 174
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 17
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 44,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 683,
+      "y" : 89
+    },
+    "minX" : 0,
+    "maxX" : 1366,
+    "minY" : 0,
+    "maxY" : 179,
+    "prop" : {
+      "x" : 0,
+      "y" : 0,
+      "width" : 1366,
+      "height" : 179
+    },
+    "textPosition" : {
+      "x" : 667,
+      "y" : 79
+    },
+    "insets" : {
+      "x" : 28,
+      "y" : 30,
+      "width" : 1309,
+      "height" : 121
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2, 7, 10, 16, 19, 20, 21, 39 ]
+  }, {
+    "id" : 30,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 682,
+      "y" : 304
+    },
+    "minX" : 2,
+    "maxX" : 1363,
+    "minY" : 220,
+    "maxY" : 389,
+    "prop" : {
+      "x" : 2,
+      "y" : 220,
+      "width" : 1361,
+      "height" : 169
+    },
+    "textPosition" : {
+      "x" : 668,
+      "y" : 299
+    },
+    "insets" : {
+      "x" : 30,
+      "y" : 249,
+      "width" : 1307,
+      "height" : 113
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 22, 3, 6, 9, 15, 25, 34 ]
+  } ],
+  "notes" : [ {
+    "id" : 34,
+    "displayName" : "Postsynaptic",
+    "renderableClass" : "Note",
+    "position" : {
+      "x" : 623,
+      "y" : 317
+    },
+    "minX" : 573,
+    "maxX" : 673,
+    "minY" : 305,
+    "maxY" : 329,
+    "prop" : {
+      "x" : 573,
+      "y" : 305,
+      "width" : 100,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 583,
+      "y" : 306
+    }
+  }, {
+    "id" : 39,
+    "displayName" : "Presynaptic",
+    "renderableClass" : "Note",
+    "position" : {
+      "x" : 625,
+      "y" : 96
+    },
+    "minX" : 577,
+    "maxX" : 674,
+    "minY" : 86,
+    "maxY" : 107,
+    "prop" : {
+      "x" : 577,
+      "y" : 86,
+      "width" : 97,
+      "height" : 21
+    },
+    "textPosition" : {
+      "x" : 588,
+      "y" : 86
+    }
+  }, {
+    "id" : 40,
+    "displayName" : "Synaptic cleft",
+    "renderableClass" : "Note",
+    "position" : {
+      "x" : 696,
+      "y" : 199
+    },
+    "minX" : 665,
+    "maxX" : 727,
+    "minY" : 179,
+    "maxY" : 219,
+    "prop" : {
+      "x" : 665,
+      "y" : 179,
+      "width" : 62,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 666,
+      "y" : 181
+    }
+  } ],
+  "links" : [ {
+    "id" : 20,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 786,
+      "y" : 158
+    },
+    "minX" : 735,
+    "maxX" : 838,
+    "minY" : 152,
+    "maxY" : 164,
+    "segments" : [ {
+      "from" : {
+        "x" : 735,
+        "y" : 159
+      },
+      "to" : {
+        "x" : 838,
+        "y" : 157
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 780,
+        "y" : 152
+      },
+      "b" : {
+        "x" : 792,
+        "y" : 164
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 16
+    } ],
+    "outputs" : [ {
+      "id" : 19
+    } ]
+  }, {
+    "id" : 21,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 593,
+      "y" : 128
+    },
+    "minX" : 110,
+    "maxX" : 838,
+    "minY" : 122,
+    "maxY" : 158,
+    "segments" : [ {
+      "from" : {
+        "x" : 110,
+        "y" : 158
+      },
+      "to" : {
+        "x" : 593,
+        "y" : 128
+      }
+    }, {
+      "from" : {
+        "x" : 593,
+        "y" : 128
+      },
+      "to" : {
+        "x" : 838,
+        "y" : 150
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 587,
+        "y" : 122
+      },
+      "b" : {
+        "x" : 599,
+        "y" : 134
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 19
+    } ]
+  } ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 1366,
+  "minY" : 0,
+  "maxY" : 389,
+  "disease" : false
+}
