@@ -9,7 +9,7 @@ import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.document.exporter.AnalysisData;
 import org.reactome.server.tools.document.exporter.DocumentArgs;
-import org.reactome.server.tools.document.exporter.DocumentProperties;
+import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.ApaStyle;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
@@ -35,12 +35,11 @@ public class PathwaysDetails implements Section {
 	private final Map<String, AtomicLong> destinations = new TreeMap<>();
 
 	@Override
-	public void render(Document document, DocumentProperties properties) {
-		details(document, properties, properties.getEvent(), Collections.emptyList(), 0);
-		properties.setNav(null);
+	public void render(Document document, DocumentContent content) {
+		details(document, content, content.getEvent(), Collections.emptyList(), 0);
 	}
 
-	private void details(Document document, DocumentProperties properties, Event event, java.util.List<Event> nav, int level) {
+	private void details(Document document, DocumentContent properties, Event event, java.util.List<Event> nav, int level) {
 		final PdfProfile profile = properties.getPdfProfile();
 		final AnalysisData analysisData = properties.getAnalysisData();
 		final DocumentArgs args = properties.getArgs();
@@ -72,7 +71,7 @@ public class PathwaysDetails implements Section {
 		}
 	}
 
-	private void insertStId(Document document, DocumentProperties properties, Event event, PdfProfile profile) {
+	private void insertStId(Document document, DocumentContent properties, Event event, PdfProfile profile) {
 		final Paragraph paragraph = profile.getParagraph("")
 				.add(new Text("Stable identifier: ").setFont(profile.getBoldFont()))
 				.add(new Text(event.getStId())
@@ -279,21 +278,16 @@ public class PathwaysDetails implements Section {
 
 	private String asString(Collection<Person> persons, int maxAuthors) {
 		if (persons == null) return "";
-		String text = String.join(", ", persons.stream()
+		String text = persons.stream()
 				.limit(maxAuthors)
-				.map(this::compileName)
-				.collect(Collectors.toList()));
+				.map(this::getGetDisplayName)
+				.collect(Collectors.joining(", "));
 		if (persons.size() > maxAuthors) text += " et al.";
 		return text;
 	}
 
-	private String compileName(Person person) {
-		if (person.getSurname() != null && person.getInitial() != null)
-			return person.getSurname() + " " + person.getInitial();
-		if (person.getSurname() != null && person.getFirstname() != null)
-			return person.getSurname() + " " + initials(person.getFirstname());
-		if (person.getSurname() != null) return person.getSurname();
-		return person.getFirstname();
+	private String getGetDisplayName(Person person) {
+		return person.getDisplayName() + ".";
 	}
 
 	private String initials(String name) {
