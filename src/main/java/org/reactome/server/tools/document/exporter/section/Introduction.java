@@ -15,8 +15,6 @@ import java.util.stream.Collectors;
 /**
  * Section Introduction contains the analysis introduction and Reactome relative
  * publications
- *
- * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class Introduction implements Section {
 
