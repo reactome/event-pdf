@@ -56,10 +56,10 @@ public class TableOfContent implements Section {
 
 	private void writeTocEntry(Document document, PdfProfile profile, int level, Event event) {
 		final Paragraph paragraph = profile.getParagraph("")
-				.addTabStops(new TabStop(level * 10f), new TabStop(1000, TabAlignment.RIGHT))
+				.setPaddingLeft(level * 10)
+				.addTabStops(new TabStop(1000, TabAlignment.RIGHT))
 				.setTextAlignment(TextAlignment.LEFT)
 				.setMultipliedLeading(1f)
-				.add(new Tab())
 				.add(Images.get(event.getSchemaClass(), profile.getFontSize() - 1))
 				.add(" ")
 				.add(event.getDisplayName())
