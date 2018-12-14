@@ -35,10 +35,11 @@ public class TableOfContent implements Section {
 		final Event event = content.getEvent();
 		final DocumentArgs args = content.getArgs();
 		document.add(new AreaBreak());
-		document.add(profile.getH1("Table of Contents", false));
+		document.add(profile.getH1("Table of Contents", false).setDestination("toc"));
 		document.add(profile.getH3("Introduction").setAction(PdfAction.createGoTo("introduction")).setFontColor(profile.getLinkColor()));
 		if (content.getAnalysisData() != null)
 			document.add(profile.getH3("Analysis properties").setAction(PdfAction.createGoTo("properties")).setFontColor(profile.getLinkColor()));
+		document.add(profile.getH3("Details").setAction(PdfAction.createGoTo("details")).setFontColor(profile.getLinkColor()));
 		addToToc(document, profile, event, 1, args.getMaxLevel());
 	}
 

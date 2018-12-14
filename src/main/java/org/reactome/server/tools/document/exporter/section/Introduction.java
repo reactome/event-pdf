@@ -3,6 +3,9 @@ package org.reactome.server.tools.document.exporter.section;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Paragraph;
+import org.reactome.server.graph.domain.model.Event;
+import org.reactome.server.graph.domain.model.Pathway;
+import org.reactome.server.graph.domain.model.ReactionLikeEvent;
 import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
@@ -38,6 +41,43 @@ public class Introduction implements Section {
 		for (Reference publication : PUBLICATIONS) {
 			document.add(profile.getCitation(publication.text, publication.link));
 		}
+		final int pathways = countPathways(content.getEvent(), 0, content.getArgs().getMaxLevel());
+		final int reactions = countReactions(content.getEvent(), 0, content.getArgs().getMaxLevel());
+		final String counts = String.format("This document contains %d pathway%s and %d reaction%s", pathways, getPlural(pathways), reactions, getPlural(reactions));
+		document.add(profile.getParagraph(counts)
+				.add(" (")
+				.add(profile.getGoTo("see Table of Contents", "toc"))
+				.add(")"));
+	}
+
+	private String getPlural(int count) {
+		return count == 1 ? "" : "s";
+	}
+
+	private int countPathways(Event event, int level, int maxLevel) {
+		int pathways = 0;
+		if (event instanceof Pathway) {
+			pathways = 1;
+			if (level < maxLevel) {
+				for (Event ev : ((Pathway) event).getHasEvent()) {
+					pathways += countPathways(ev, level + 1, maxLevel);
+				}
+			}
+		}
+		return pathways;
+	}
+
+	private int countReactions(Event event, int level, int maxLevel) {
+		if (event instanceof ReactionLikeEvent) {
+			return 1;
+		}
+		int reactions = 0;
+		if (level < maxLevel) {
+			for (Event ev : ((Pathway) event).getHasEvent()) {
+				reactions += countReactions(ev, level + 1, maxLevel);
+			}
+		}
+		return reactions;
 	}
 
 	private static class Reference {

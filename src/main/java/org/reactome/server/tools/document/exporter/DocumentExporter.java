@@ -2,7 +2,6 @@ package org.reactome.server.tools.document.exporter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.itextpdf.kernel.events.PdfDocumentEvent;
-import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
@@ -56,7 +55,7 @@ public class DocumentExporter {
 			analysisData = new AnalysisData(result, args.getResource(), args.getSpecies(), Integer.MAX_VALUE);
 		} else analysisData = null;
 		final DocumentContent content = new DocumentContent(analysisData, pdfProfile, event, args);
-		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)), PageSize.A4, false)) {
+		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
 			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome (%s)", content.getServer()));
 			document.getPdfDocument().getDocumentInfo().setCreator(String.format("Reactome (%s)", content.getServer()));
 			document.getPdfDocument().getDocumentInfo().setTitle(String.format("Reactome | %s (%s)", event.getDisplayName(), args.getStId()));
@@ -80,47 +79,6 @@ public class DocumentExporter {
 				section.render(document, content);
 		}
 	}
-
-//	public void export(DocumentArgs args, AnalysisStoredResult result, OutputStream destination) throws DocumentExporterException {
-//		final Event event = databaseObjectService.findById(args.getStId());
-//		if (event == null) throw new DocumentExporterException(args.getStId() + " is not an event");
-//
-//		final PdfProfile pdfProfile = loadProfile("breathe");
-//
-//		final AnalysisData analysisData;
-//		if (result != null) {
-//			// if the analysis result not contains the given resource, use the first resource in this analysis.
-//			if (!result.getResourceSummary().contains(new ResourceSummary(args.getResource(), null)))
-//				args.setResource(getDefaultResource(result));
-//
-//			analysisData = new AnalysisData(result, args.getResource(), args.getSpecies(), Integer.MAX_VALUE);
-//		} else analysisData = null;
-//		final DocumentContent properties = new DocumentContent(analysisData, pdfProfile, event, args);
-//
-//		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
-//			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome (%s)", properties.getServer()));
-//			document.getPdfDocument().getDocumentInfo().setCreator(String.format("Reactome (%s)", properties.getServer()));
-//			document.getPdfDocument().getDocumentInfo().setTitle(String.format("Reactome | %s (%s)", event.getDisplayName(), args.getStId()));
-//			document.getPdfDocument().getDocumentInfo().setSubject(String.format("Reactome | %s (%s)", event.getDisplayName(), args.getStId()));
-//			document.getPdfDocument().getDocumentInfo().setKeywords("pathway,reactome,reaction");
-//			document.setFont(pdfProfile.getRegularFont());
-//			document.setMargins(pdfProfile.getMargin().getTop(),
-//					pdfProfile.getMargin().getRight(),
-//					pdfProfile.getMargin().getBottom(),
-//					pdfProfile.getMargin().getLeft());
-//			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, properties.getServer()));
-////			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new HeaderEventHandler(document, data));
-//			final List<Section> SECTIONS = Arrays.asList(
-//					new CoverPage(generalService),
-//					new TableOfContent(),
-//					new Introduction(),
-//					new PropertiesSection(),
-//					new PathwaysDetails(participantService, tableOfContent.getMap())
-//			);
-//			for (Section section : SECTIONS)
-//				section.render(document, properties);
-//		}
-//	}
 
 	private PdfProfile loadProfile(String profile) throws DocumentExporterException {
 		try {
