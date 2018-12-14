@@ -226,4 +226,8 @@ public class PdfProfile {
 	public Text getLink(String text, String link) {
 		return new Text(text).setFontColor(LINK_COLOR).setAction(PdfAction.createURI(link));
 	}
+
+	public Text getGoTo(String text, String destination) {
+		return new Text(text).setFontColor(LINK_COLOR).setAction(PdfAction.createGoTo(destination));
+	}
 }

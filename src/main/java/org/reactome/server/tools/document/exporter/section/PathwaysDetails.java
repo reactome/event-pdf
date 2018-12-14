@@ -53,18 +53,18 @@ public class PathwaysDetails implements Section {
 		final AnalysisData analysisData = content.getAnalysisData();
 		final DocumentArgs args = content.getArgs();
 		document.add(new AreaBreak());
-		document.add(getTitle(profile, event, content.getServer()));
-
-		createNav(document, nav, profile);
-		insertType(document, event, profile);
+		addTitle(document, content, event, profile);
+		addLocation(document, nav, profile);
+		addType(document, event, profile);
 //		insertStId(document, properties, event, profile);
 		addDatabaseObjectList(document, "Cellular compartments", event.getCompartment(), profile);
 		addRelatedDiseases(document, event, profile);
 		addDatabaseObjectList(document, "Inferred from", event.getInferredFrom(), profile);
 
-		insertDiagram(document, event, analysisData);
+		addDiagram(document, event, analysisData);
 
 		addSummations(document, event, profile);
+		addPrecedingAndFollowing(document, event, profile);
 		addReferences(document, event, profile);
 		addEditTable(document, event, profile);
 
@@ -84,7 +84,29 @@ public class PathwaysDetails implements Section {
 		}
 	}
 
-	private void insertStId(Document document, DocumentContent properties, Event event, PdfProfile profile) {
+	private void addPrecedingAndFollowing(Document document, Event event, PdfProfile profile) {
+		if (event instanceof ReactionLikeEvent) {
+			addEvents(document, profile, "Preceded by", event.getPrecedingEvent());
+			addEvents(document, profile, "Followed by", event.getFollowingEvent());
+		}
+	}
+
+	private void addEvents(Document document, PdfProfile profile, String title, List<Event> events) {
+		if (events.isEmpty()) return;
+		final Paragraph preceding = profile.getParagraph("").add(new Text(title + ": ").setFont(profile.getBoldFont()));
+		for (int i = 0; i < events.size(); i++) {
+			final Event ev = events.get(i);
+			if (i > 0) preceding.add(", ");
+			preceding.add(profile.getGoTo(ev.getDisplayName(), getCurrentDestination(ev)));
+		}
+		document.add(preceding);
+	}
+
+	private Document addTitle(Document document, DocumentContent content, Event event, PdfProfile profile) {
+		return document.add(getTitle(profile, event, content.getServer()));
+	}
+
+	private void addStId(Document document, DocumentContent properties, Event event, PdfProfile profile) {
 		final Paragraph paragraph = profile.getParagraph("")
 				.add(new Text("Stable identifier: ").setFont(profile.getBoldFont()))
 				.add(new Text(event.getStId())
@@ -94,18 +116,17 @@ public class PathwaysDetails implements Section {
 		document.add(paragraph);
 	}
 
-	private void insertType(Document document, Event event, PdfProfile profile) {
-		String type = event.getSchemaClass();
+	private void addType(Document document, Event event, PdfProfile profile) {
 		if (event instanceof ReactionLikeEvent) {
-			type = String.format("Reaction [%s]", ((ReactionLikeEvent) event).getCategory());
+			final String type = ((ReactionLikeEvent) event).getCategory();
+			final Paragraph paragraph = profile.getParagraph("")
+					.add(new Text("Type: ").setFont(profile.getBoldFont()))
+					.add(type);
+			document.add(paragraph);
 		}
-		final Paragraph paragraph = profile.getParagraph("")
-				.add(new Text("Type: ").setFont(profile.getBoldFont()))
-				.add(type);
-		document.add(paragraph);
 	}
 
-	private void insertDiagram(Document document, Event event, AnalysisData analysisData) {
+	private void addDiagram(Document document, Event event, AnalysisData analysisData) {
 		if (event instanceof Pathway) {
 			ImageFactory.insertDiagram(event.getStId(), analysisData, document);
 		} else if (event instanceof ReactionLikeEvent) {
@@ -113,14 +134,14 @@ public class PathwaysDetails implements Section {
 		}
 	}
 
-	private void createNav(Document document, List<Event> nav, PdfProfile profile) {
+	private void addLocation(Document document, List<Event> nav, PdfProfile profile) {
 		if (nav.isEmpty()) return;
 		final Paragraph paragraph = profile.getParagraph("")
 				.add(new Text("Location: ").setFont(profile.getBoldFont()));
 		for (int i = 0; i < nav.size(); i++) {
 			if (i > 0) paragraph.add(" > ");  // current font does not support RIGHTARROW'\u2192'
 			final Event ev = nav.get(i);
-			final String dest = String.format("%s:%d", ev.getStId(), destinations.get(ev.getStId()).get());
+			final String dest = getCurrentDestination(ev);
 			final Text text = new Text(ev.getDisplayName())
 					.setAction(PdfAction.createGoTo(dest))
 					.setFontColor(profile.getLinkColor());
@@ -130,7 +151,7 @@ public class PathwaysDetails implements Section {
 	}
 
 	private BlockElement getTitle(PdfProfile profile, Event event, String server) {
-		final String destination = String.format("%s:%d", event.getStId(), destinations.computeIfAbsent(event.getStId(), stId -> new AtomicLong()).incrementAndGet());
+		final String destination = getNewDestination(event);
 		return profile.getH3(event.getDisplayName())
 				.add(" (")
 				.add(new Text(event.getStId())
@@ -138,6 +159,18 @@ public class PathwaysDetails implements Section {
 						.setFontColor(profile.getLinkColor()))
 				.add(")")
 				.setDestination(destination);
+	}
+
+	private String getCurrentDestination(Event ev) {
+		// here we don't use computeIfAbsent to insert a new AtomicLong(1).
+		// Otherwise, when we call for getNewDestination, it will get a 2
+		final long index = destinations.getOrDefault(ev.getStId(), new AtomicLong(1)).get();
+		return String.format("%s:%d", ev.getStId(), index);
+	}
+
+	private String getNewDestination(Event event) {
+		final long index = destinations.computeIfAbsent(event.getStId(), stId -> new AtomicLong()).incrementAndGet();
+		return String.format("%s:%d", event.getStId(), index);
 	}
 
 	private void addFoundElements(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
