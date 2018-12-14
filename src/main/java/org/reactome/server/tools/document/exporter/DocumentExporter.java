@@ -8,10 +8,7 @@ import com.itextpdf.layout.Document;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.graph.domain.model.Event;
-import org.reactome.server.graph.service.AdvancedDatabaseObjectService;
-import org.reactome.server.graph.service.DatabaseObjectService;
-import org.reactome.server.graph.service.DiagramService;
-import org.reactome.server.graph.service.GeneralService;
+import org.reactome.server.graph.service.*;
 import org.reactome.server.tools.document.exporter.exception.DocumentExporterException;
 import org.reactome.server.tools.document.exporter.section.*;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
@@ -28,11 +25,12 @@ public class DocumentExporter {
 
 	private static final ObjectMapper MAPPER = new ObjectMapper();
 	private DatabaseObjectService databaseObjectService;
-	private AdvancedDatabaseObjectService advancedDatabaseObjectService;
+	private ParticipantService participantService;
 
 
-	public DocumentExporter(String diagramPath, String ehldPath, String analysisPath, String fireworksPath, String svgSummary, DiagramService diagramService, DatabaseObjectService databaseObjectService, GeneralService generalService, AdvancedDatabaseObjectService advancedDatabaseObjectService) {
-		this.advancedDatabaseObjectService = advancedDatabaseObjectService;
+	public DocumentExporter(String diagramPath, String ehldPath, String analysisPath, String fireworksPath, String svgSummary, DiagramService diagramService, DatabaseObjectService databaseObjectService, GeneralService generalService, AdvancedDatabaseObjectService advancedDatabaseObjectService, ParticipantService participantService) {
+		this.databaseObjectService = databaseObjectService;
+		this.participantService = participantService;
 		ImageFactory.setPaths(diagramPath, ehldPath, analysisPath, fireworksPath, svgSummary);
 		Locale.setDefault(Locale.ENGLISH);
 		ImageFactory.setDiagramService(diagramService);
@@ -40,11 +38,9 @@ public class DocumentExporter {
 		ImageFactory.setAdvancedDatabaseObjectService(advancedDatabaseObjectService);
 		AnalysisData.setDatabaseObjectService(databaseObjectService);
 		AnalysisData.setGeneralService(generalService);
-		this.databaseObjectService = databaseObjectService;
 	}
 
 	public void export(DocumentArgs args, AnalysisStoredResult result, OutputStream destination) throws DocumentExporterException {
-
 		final Event event = databaseObjectService.findById(args.getStId());
 		if (event == null) throw new DocumentExporterException(args.getStId() + " is not an event");
 
@@ -78,7 +74,7 @@ public class DocumentExporter {
 					new TableOfContent(),
 					new Introduction(),
 					new PropertiesSection(),
-					new PathwaysDetails(advancedDatabaseObjectService)
+					new PathwaysDetails(participantService)
 			);
 			for (Section section : SECTIONS)
 				section.render(document, properties);

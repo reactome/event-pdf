@@ -8,8 +8,7 @@ import org.reactome.server.analysis.core.model.AnalysisType;
 import org.reactome.server.analysis.core.result.model.FoundEntity;
 import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.graph.domain.model.*;
-import org.reactome.server.graph.exception.CustomQueryException;
-import org.reactome.server.graph.service.AdvancedDatabaseObjectService;
+import org.reactome.server.graph.service.ParticipantService;
 import org.reactome.server.tools.document.exporter.AnalysisData;
 import org.reactome.server.tools.document.exporter.DocumentArgs;
 import org.reactome.server.tools.document.exporter.DocumentContent;
@@ -38,11 +37,12 @@ public class PathwaysDetails implements Section {
 	// to get the anchor for an event call get(ev.getStId),
 	// to create a new anchor, get(ev.stId).incrementAndGet()
 	private final Map<String, AtomicLong> destinations = new TreeMap<>();
-	private AdvancedDatabaseObjectService advancedDatabaseObjectService;
+	private ParticipantService participantService;
 
-	public PathwaysDetails(AdvancedDatabaseObjectService advancedDatabaseObjectService) {
-		this.advancedDatabaseObjectService = advancedDatabaseObjectService;
+	public PathwaysDetails(ParticipantService participantService) {
+		this.participantService = participantService;
 	}
+
 	@Override
 	public void render(Document document, DocumentContent content) {
 		details(document, content, content.getEvent(), Collections.emptyList(), 0);
@@ -200,20 +200,9 @@ public class PathwaysDetails implements Section {
 	}
 
 	private Collection<String> getIdsInReaction(ReactionLikeEvent reaction) {
-		final Map<String, Object> map = new HashMap<>();
-		map.put("stId", reaction.getStId());
-		final String query = "" +
-				"MATCH (r:ReactionLikeEvent{stId:{stId}})," +
-				" (r)-[:input|output|catalystActivity|physicalEntity|regulatedBy|regulator|hasComponent|hasMember|hasCandidate*]->(pe:PhysicalEntity)," +
-				" (pe)-[:referenceEntity]->(re:ReferenceEntity)" +
-				" RETURN DISTINCT re.identifier";
-		try {
-			return advancedDatabaseObjectService.getCustomQueryResults(String.class, query, map);
-		} catch (CustomQueryException e) {
-			e.printStackTrace();
-		}
-
-		return Collections.emptyList();
+		return participantService.getParticipatingReferenceEntities(reaction.getStId()).stream()
+				.map(ReferenceEntity::getIdentifier)
+				.collect(Collectors.toSet());
 	}
 
 	private void addIdentifiers(Div div, Collection<FoundEntity> elements, String resource, AnalysisData analysisData, PdfProfile profile) {
