@@ -62,7 +62,6 @@ public class PropertiesSection implements Section {
 		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("token"), summary.getToken())));
 
 		document.add(profile.getList(list));
-		document.add(new AreaBreak());
 	}
 
 }
