@@ -176,10 +176,12 @@ public class PathwaysDetails implements Section {
 	private void addFoundElements(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
 		final Collection<FoundEntity> entities = getFoundEntities(analysisData, event);
 		if (entities.isEmpty()) return;
-		document.add(profile.getH3(String.format("Entities found in the analysis (%d)", entities.size())));
+		final Div div = new Div().setKeepTogether(true);
+		div.add(profile.getH3(String.format("Entities found in the analysis (%d)", entities.size())));
 		for (String resource : analysisData.getResources()) {
-			addIdentifiers(document, entities, resource, analysisData, profile);
+			addIdentifiers(div, entities, resource, analysisData, profile);
 		}
+		document.add(div);
 	}
 
 	private Collection<FoundEntity> getFoundEntities(AnalysisData analysisData, Event event) {
@@ -214,30 +216,32 @@ public class PathwaysDetails implements Section {
 		return Collections.emptyList();
 	}
 
-	private void addIdentifiers(Document document, Collection<FoundEntity> elements, String resource, AnalysisData analysisData, PdfProfile profile) {
+	private void addIdentifiers(Div div, Collection<FoundEntity> elements, String resource, AnalysisData analysisData, PdfProfile profile) {
 		if (elements.isEmpty()) return;
 		final Table identifiersTable = analysisData.getType() == AnalysisType.EXPRESSION
 				? Tables.getExpressionTable(elements, resource, profile, analysisData.getResult().getExpressionSummary().getColumnNames())
 				: Tables.createEntitiesTable(elements, resource, profile);
-		document.add(identifiersTable);
+		div.add(identifiersTable);
 	}
 
 	private void addFoundInteractors(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
 		final FoundInteractors interactors = analysisData.getResult().getFoundInteractors(event.getStId());
 		if (interactors == null) return;
 		if (interactors.getIdentifiers().isEmpty()) return;
-		document.add(profile.getH3(String.format("Interactors found in this pathway (%d)", interactors.getIdentifiers().size())));
+		final Div div = new Div().setKeepTogether(true);
+		div.add(profile.getH3(String.format("Interactors found in this pathway (%d)", interactors.getIdentifiers().size())));
 		for (String resource : analysisData.getResources()) {
-			addInteractorsTable(document, interactors.filter(resource), resource, profile);
+			addInteractorsTable(div, interactors.filter(resource), resource, profile);
 		}
+		document.add(div);
 	}
 
-	private void addInteractorsTable(Document document, FoundInteractors interactors, String resource, PdfProfile profile) {
+	private void addInteractorsTable(Div div, FoundInteractors interactors, String resource, PdfProfile profile) {
 		if (interactors.getIdentifiers().isEmpty()) return;
 		final Table table = (interactors.getExpNames() == null || interactors.getExpNames().isEmpty())
 				? Tables.getInteractorsTable(interactors.getIdentifiers(), resource, profile)
 				: Tables.getInteractorsExpressionTable(interactors.getIdentifiers(), resource, profile, interactors.getExpNames());
-		document.add(table);
+		div.add(table);
 	}
 
 	private void addSummations(Document document, Event event, PdfProfile profile) {
@@ -299,7 +303,7 @@ public class PathwaysDetails implements Section {
 	}
 
 	private void addEditTable(Document document, Event event, PdfProfile profile) {
-		document.add(profile.getH3("Edit history"));
+		final Div div = new Div().setKeepTogether(true).add(profile.getH3("Edit history"));
 		final java.util.List<Edition> editions = new LinkedList<>();
 		if (event.getCreated() != null)
 			editions.add(new Edition("Created", event.getCreated()));
@@ -347,8 +351,8 @@ public class PathwaysDetails implements Section {
 			table.addCell(profile.getBodyCell(action, row));
 			table.addCell(profile.getBodyCell(authors, row));
 		}
-		document.add(table);
-
+		div.add(table);
+		document.add(div);
 	}
 
 	private String asString(Collection<Person> persons) {
