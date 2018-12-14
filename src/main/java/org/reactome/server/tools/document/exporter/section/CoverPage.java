@@ -36,7 +36,7 @@ public class CoverPage implements Section {
 		document.add(profile.getTitle(""));
 		document.add(profile.getTitle(event.getDisplayName()));
 		document.add(profile.getTitle(""));
-		final List<String> authors = collectAuthors(event).stream().map(this::getName).collect(Collectors.toList());
+		final List<String> authors = collectAuthors(event).stream().map(this::getName).sorted().collect(Collectors.toList());
 		final String auth = String.join(", ", authors);
 		document.add(profile.getParagraph(auth).setTextAlignment(TextAlignment.CENTER));
 
