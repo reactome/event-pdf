@@ -1,5 +1,6 @@
 package org.reactome.server.tools.document.exporter.section;
 
+import com.itextpdf.kernel.pdf.PdfPage;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
@@ -33,11 +34,13 @@ public class PathwaysDetails implements Section {
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
 	private final ParticipantService participantService;
+	private Map<Long, Integer> map;
 
 	private final Set<Long> printed = new HashSet<>();
 
-	public PathwaysDetails(ParticipantService participantService) {
+	public PathwaysDetails(ParticipantService participantService, Map<Long, Integer> map) {
 		this.participantService = participantService;
+		this.map = map;
 	}
 
 	@Override
@@ -52,6 +55,9 @@ public class PathwaysDetails implements Section {
 		final AnalysisData analysisData = content.getAnalysisData();
 		final DocumentArgs args = content.getArgs();
 		document.add(new AreaBreak());
+		final PdfPage page = document.getPdfDocument().getLastPage();
+		final int number = document.getPdfDocument().getPageNumber(page);
+		map.put(event.getId(), number - 1);
 		addTitle(document, content, event, profile);
 		addLocation(document, nav, profile);
 		addType(document, event, profile);

@@ -59,8 +59,8 @@ public class AppTest extends BaseTest {
 		final DocumentExporter documentExporter = new DocumentExporter(DIAGRAM_PATH, EHLD_PATH, ANALYSIS_PATH, FIREWORKS_PATH, SVGSUMMARY, diagramService, databaseObjectService, generalService, advancedDatabaseObjectService, participantService);
 //		final String stId = "R-HSA-901006";   // Reaction
 //		final String stId = "R-HSA-354192";   // Integrin alphaIIb beta3 signaling (pathway)
-//		final String stId = "R-HSA-8963743";  // Digestion and absorption (small, 50 pages)
-		final String stId = "R-HSA-112316";  // Neuronal system (medium, 300 pages)
+		final String stId = "R-HSA-8963743";  // Digestion and absorption (small, 50 pages)
+//		final String stId = "R-HSA-112316";  // Neuronal system (medium, 300 pages)
 //		final String stId = "R-HSA-1430728";  // Metabolism (large, 3000 pages)
 		try {
 			final long start = System.nanoTime();

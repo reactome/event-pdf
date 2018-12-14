@@ -34,6 +34,7 @@ public class Introduction implements Section {
 		final Collection<Paragraph> intro = HtmlParser.parseText(profile, INTRODUCTION);
 		intro.forEach(document::add);
 
+		document.add(profile.getH3("Literature references"));
 		for (Reference publication : PUBLICATIONS) {
 			document.add(profile.getCitation(publication.text, publication.link));
 		}

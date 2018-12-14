@@ -3,9 +3,11 @@ package org.reactome.server.tools.document.exporter.section;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
-import com.itextpdf.layout.element.List;
-import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.element.Tab;
+import com.itextpdf.layout.element.TabStop;
+import com.itextpdf.layout.property.TabAlignment;
+import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.tools.document.exporter.DocumentArgs;
@@ -15,10 +17,17 @@ import org.reactome.server.tools.document.exporter.style.PdfProfile;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
 
 public class TableOfContent implements Section {
 
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
+	private Map<Long, Integer> pages;
+
+	public TableOfContent(Map<Long, Integer> pages) {
+		this.pages = pages;
+	}
 
 	@Override
 	public void render(Document document, DocumentContent content) {
@@ -30,47 +39,34 @@ public class TableOfContent implements Section {
 		document.add(profile.getH3("Introduction").setAction(PdfAction.createGoTo("introduction")).setFontColor(profile.getLinkColor()));
 		if (content.getAnalysisData() != null)
 			document.add(profile.getH3("Analysis properties").setAction(PdfAction.createGoTo("properties")).setFontColor(profile.getLinkColor()));
-
-		addToc(document, profile, event, args.getMaxLevel());
+		addToToc(document, profile, event, 1, args.getMaxLevel());
 	}
 
-	private void addToc(Document document, PdfProfile profile, Event event, int maxLevel) {
-		document.add(profile.getH3("")
-				.add(Images.get(event.getSchemaClass()))
+	private void addToToc(Document document, PdfProfile profile, Event pathway, int level, int maxLevel) {
+		writeTocEntry(document, profile, level, pathway);
+		if (pathway instanceof Pathway && level + 1 < maxLevel) {
+			final List<Event> events = ((Pathway) pathway).getHasEvent();
+			events.sort(Comparator.comparingInt(o -> classOrder.indexOf(o.getSchemaClass())));
+			for (Event ev : events) {
+				addToToc(document, profile, ev, level + 1, maxLevel);
+			}
+		}
+	}
+
+	private void writeTocEntry(Document document, PdfProfile profile, int level, Event event) {
+		final Paragraph paragraph = profile.getParagraph("")
+				.addTabStops(new TabStop(level * 10f), new TabStop(1000, TabAlignment.RIGHT))
+				.setTextAlignment(TextAlignment.LEFT)
+				.setMultipliedLeading(1f)
+				.add(new Tab())
+				.add(Images.get(event.getSchemaClass(), profile.getFontSize() - 1))
 				.add(" ")
 				.add(event.getDisplayName())
 				.setAction(PdfAction.createGoTo(event.getStId()))
-				.setFontColor(profile.getLinkColor()));
-		if (event instanceof Pathway) {
-			final Pathway pathway = (Pathway) event;
-			final List list = getList(profile, pathway, 0, maxLevel);
-			document.add(list);
-		}
+				.setFontColor(profile.getLinkColor())
+				.add(new Tab())
+				.add(String.valueOf(pages.get(event.getId())));
+		document.add(paragraph);
 	}
 
-	private List getList(PdfProfile profile, Pathway pathway, int level, int maxLevel) {
-		final java.util.List<Event> events = pathway.getHasEvent();
-		events.sort(Comparator.comparingInt(o -> classOrder.indexOf(o.getSchemaClass())));
-		final List list = new List()
-				.setSymbolIndent(10)
-				.setListSymbol("")
-				.setFontColor(profile.getLinkColor());
-		for (Event ev : events) {
-			final Paragraph paragraph = profile.getParagraph("")
-					.setMultipliedLeading(1f)
-					.add(Images.get(ev.getSchemaClass(), profile.getFontSize() - 1))
-					.add(" ")
-					.add(ev.getDisplayName())
-					.setAction(PdfAction.createGoTo(ev.getStId()));
-			final ListItem listItem = new ListItem();
-			listItem.add(paragraph);
-			list.add(listItem);
-			if (ev instanceof Pathway && level + 1 < maxLevel) {
-				final ListItem item = new ListItem();
-				item.add(getList(profile, (Pathway) ev, level + 1, maxLevel));
-				listItem.add(item);
-			}
-		}
-		return list;
-	}
 }
