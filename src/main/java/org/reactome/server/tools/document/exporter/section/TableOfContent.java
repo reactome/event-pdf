@@ -15,18 +15,10 @@ import org.reactome.server.tools.document.exporter.style.PdfProfile;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.concurrent.atomic.AtomicLong;
 
 public class TableOfContent implements Section {
 
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
-
-	// This should be used the same way as in the PathwaysDetails,
-	// to get the anchor for an event call get(ev.getStId),
-	// to create a new anchor, get(ev.stId).incrementAndGet()
-	private final Map<String, AtomicLong> destinations = new TreeMap<>();
 
 	@Override
 	public void render(Document document, DocumentContent content) {
@@ -43,12 +35,11 @@ public class TableOfContent implements Section {
 	}
 
 	private void addToc(Document document, PdfProfile profile, Event event, int maxLevel) {
-		final String destination = String.format("%s:%d", event.getStId(), destinations.computeIfAbsent(event.getStId(), stId -> new AtomicLong()).incrementAndGet());
 		document.add(profile.getH3("")
 				.add(Images.get(event.getSchemaClass()))
 				.add(" ")
 				.add(event.getDisplayName())
-				.setAction(PdfAction.createGoTo(destination))
+				.setAction(PdfAction.createGoTo(event.getStId()))
 				.setFontColor(profile.getLinkColor()));
 		if (event instanceof Pathway) {
 			final Pathway pathway = (Pathway) event;
@@ -65,13 +56,12 @@ public class TableOfContent implements Section {
 				.setListSymbol("")
 				.setFontColor(profile.getLinkColor());
 		for (Event ev : events) {
-			final String destination = String.format("%s:%d", ev.getStId(), destinations.computeIfAbsent(ev.getStId(), stId -> new AtomicLong()).incrementAndGet());
 			final Paragraph paragraph = profile.getParagraph("")
 					.setMultipliedLeading(1f)
 					.add(Images.get(ev.getSchemaClass(), profile.getFontSize() - 1))
 					.add(" ")
 					.add(ev.getDisplayName())
-					.setAction(PdfAction.createGoTo(destination));
+					.setAction(PdfAction.createGoTo(ev.getStId()));
 			final ListItem listItem = new ListItem();
 			listItem.add(paragraph);
 			list.add(listItem);

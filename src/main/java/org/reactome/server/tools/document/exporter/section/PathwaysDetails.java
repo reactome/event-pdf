@@ -19,7 +19,6 @@ import org.reactome.server.tools.document.exporter.util.ImageFactory;
 
 import java.util.List;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
 
 /**
@@ -33,11 +32,9 @@ public class PathwaysDetails implements Section {
 	private static final String CONTENT_DETAIL = "/content/detail/";
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
-	// This should be used the same way as in the TOC,
-	// to get the anchor for an event call get(ev.getStId),
-	// to create a new anchor, get(ev.stId).incrementAndGet()
-	private final Map<String, AtomicLong> destinations = new TreeMap<>();
-	private ParticipantService participantService;
+	private final ParticipantService participantService;
+
+	private final Set<Long> printed = new HashSet<>();
 
 	public PathwaysDetails(ParticipantService participantService) {
 		this.participantService = participantService;
@@ -49,6 +46,8 @@ public class PathwaysDetails implements Section {
 	}
 
 	private void details(Document document, DocumentContent content, Event event, java.util.List<Event> nav, int level) {
+		if (printed.contains(event.getId())) return;
+		printed.add(event.getId());
 		final PdfProfile profile = content.getPdfProfile();
 		final AnalysisData analysisData = content.getAnalysisData();
 		final DocumentArgs args = content.getArgs();
@@ -97,7 +96,7 @@ public class PathwaysDetails implements Section {
 		for (int i = 0; i < events.size(); i++) {
 			final Event ev = events.get(i);
 			if (i > 0) preceding.add(", ");
-			preceding.add(profile.getGoTo(ev.getDisplayName(), getCurrentDestination(ev)));
+			preceding.add(profile.getGoTo(ev.getDisplayName(), ev.getStId()));
 		}
 		document.add(preceding);
 	}
@@ -141,9 +140,8 @@ public class PathwaysDetails implements Section {
 		for (int i = 0; i < nav.size(); i++) {
 			if (i > 0) paragraph.add(" > ");  // current font does not support RIGHTARROW'\u2192'
 			final Event ev = nav.get(i);
-			final String dest = getCurrentDestination(ev);
 			final Text text = new Text(ev.getDisplayName())
-					.setAction(PdfAction.createGoTo(dest))
+					.setAction(PdfAction.createGoTo(ev.getStId()))
 					.setFontColor(profile.getLinkColor());
 			paragraph.add(text);
 		}
@@ -151,26 +149,13 @@ public class PathwaysDetails implements Section {
 	}
 
 	private BlockElement getTitle(PdfProfile profile, Event event, String server) {
-		final String destination = getNewDestination(event);
 		return profile.getH3(event.getDisplayName())
 				.add(" (")
 				.add(new Text(event.getStId())
 						.setAction(PdfAction.createURI(server + CONTENT_DETAIL + event.getStId()))
 						.setFontColor(profile.getLinkColor()))
 				.add(")")
-				.setDestination(destination);
-	}
-
-	private String getCurrentDestination(Event ev) {
-		// here we don't use computeIfAbsent to insert a new AtomicLong(1).
-		// Otherwise, when we call for getNewDestination, it will get a 2
-		final long index = destinations.getOrDefault(ev.getStId(), new AtomicLong(1)).get();
-		return String.format("%s:%d", ev.getStId(), index);
-	}
-
-	private String getNewDestination(Event event) {
-		final long index = destinations.computeIfAbsent(event.getStId(), stId -> new AtomicLong()).incrementAndGet();
-		return String.format("%s:%d", event.getStId(), index);
+				.setDestination(event.getStId());
 	}
 
 	private void addFoundElements(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
