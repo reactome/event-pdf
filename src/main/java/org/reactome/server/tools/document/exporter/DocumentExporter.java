@@ -25,11 +25,13 @@ public class DocumentExporter {
 
 	private static final ObjectMapper MAPPER = new ObjectMapper();
 	private DatabaseObjectService databaseObjectService;
+	private GeneralService generalService;
 	private ParticipantService participantService;
 
 
 	public DocumentExporter(String diagramPath, String ehldPath, String analysisPath, String fireworksPath, String svgSummary, DiagramService diagramService, DatabaseObjectService databaseObjectService, GeneralService generalService, AdvancedDatabaseObjectService advancedDatabaseObjectService, ParticipantService participantService) {
 		this.databaseObjectService = databaseObjectService;
+		this.generalService = generalService;
 		this.participantService = participantService;
 		ImageFactory.setPaths(diagramPath, ehldPath, analysisPath, fireworksPath, svgSummary);
 		Locale.setDefault(Locale.ENGLISH);
@@ -70,7 +72,7 @@ public class DocumentExporter {
 			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, properties.getServer()));
 //			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new HeaderEventHandler(document, data));
 			final List<Section> SECTIONS = Arrays.asList(
-					new CoverPage(),
+					new CoverPage(generalService),
 					new TableOfContent(),
 					new Introduction(),
 					new PropertiesSection(),
