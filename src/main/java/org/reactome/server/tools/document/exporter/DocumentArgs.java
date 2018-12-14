@@ -15,8 +15,8 @@ public class DocumentArgs {
 		return maxLevel;
 	}
 
-	public DocumentArgs setMaxLevel(int maxLevel) {
-		this.maxLevel = maxLevel;
+	public DocumentArgs setMaxLevel(Integer maxLevel) {
+		this.maxLevel = maxLevel == null ? Integer.MAX_VALUE : maxLevel;
 		return this;
 	}
 
