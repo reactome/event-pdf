@@ -17,8 +17,8 @@ import org.reactome.server.tools.document.exporter.util.PdfUtils;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
+import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
 /**
@@ -36,13 +36,24 @@ public class CoverPage implements Section {
 		document.add(profile.getTitle(""));
 		document.add(profile.getTitle(event.getDisplayName()));
 		document.add(profile.getTitle(""));
-		final List<String> authors = collectAuthors(event).stream().map(this::getName).sorted().collect(Collectors.toList());
-		final String auth = String.join(", ", authors);
-		document.add(profile.getParagraph(auth).setTextAlignment(TextAlignment.CENTER));
+		final String authors = collectAuthors(event).stream()
+				.map(this::getName)
+				.sorted()
+				.map(this::getIndivisibleString)
+				.collect(Collectors.joining(", "));
+		final Paragraph auth = profile.getParagraph(authors).setTextAlignment(TextAlignment.CENTER);
+		document.add(auth);
 
 		for (Paragraph paragraph : HtmlParser.parseText(profile, PdfUtils.getProperty("cover.page.disclaimer"))) {
 			document.add(paragraph.setTextAlignment(TextAlignment.CENTER));
 		}
+	}
+
+	private String getIndivisibleString(String string) {
+		final StringJoiner joiner = new StringJoiner("\u2010");
+		for (int i = 0; i < string.length(); i++)
+			joiner.add(Character.toString(string.charAt(i)));
+		return joiner.toString();
 	}
 
 	private String getName(Person person) {
