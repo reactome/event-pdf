@@ -8,7 +8,6 @@ import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.InstanceEdit;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.Person;
-import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.style.Images;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
@@ -27,11 +26,6 @@ import java.util.stream.Collectors;
  */
 public class CoverPage implements Section {
 	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
-	private GeneralService generalService;
-
-	public CoverPage(GeneralService generalService) {
-		this.generalService = generalService;
-	}
 
 	@Override
 	public void render(Document document, DocumentContent content) {
@@ -49,8 +43,6 @@ public class CoverPage implements Section {
 		for (Paragraph paragraph : HtmlParser.parseText(profile, PdfUtils.getProperty("cover.page.disclaimer"))) {
 			document.add(paragraph.setTextAlignment(TextAlignment.CENTER));
 		}
-		final String version = "Reactome graph database version: " + generalService.getDBInfo().getVersion();
-		document.add(profile.getParagraph(version).setTextAlignment(TextAlignment.CENTER));
 	}
 
 	private String getName(Person person) {

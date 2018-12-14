@@ -69,8 +69,8 @@ public class DocumentExporter {
 			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, content.getServer()));
 			final Map<Long, Integer> pages = new HashMap<>();
 			final List<Section> SECTIONS = Arrays.asList(
-					new CoverPage(generalService),
-					new Introduction(),
+					new CoverPage(),
+					new Introduction(generalService),
 					new PropertiesSection(),
 					new PathwaysDetails(participantService, pages),
 					new TableOfContent(pages)

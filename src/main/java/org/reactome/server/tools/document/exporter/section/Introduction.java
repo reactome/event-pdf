@@ -2,10 +2,13 @@ package org.reactome.server.tools.document.exporter.section;
 
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
+import com.itextpdf.layout.element.Div;
 import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.ReactionLikeEvent;
+import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.style.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
@@ -28,6 +31,11 @@ public class Introduction implements Section {
 			.map(s -> s.split("\t"))
 			.map(line -> new Reference(line[0], line[1]))
 			.collect(Collectors.toList());
+	private GeneralService generalService;
+
+	public Introduction(GeneralService generalService) {
+		this.generalService = generalService;
+	}
 
 	@Override
 	public void render(Document document, DocumentContent content) {
@@ -44,10 +52,15 @@ public class Introduction implements Section {
 		final int pathways = countPathways(content.getEvent(), 0, content.getArgs().getMaxLevel());
 		final int reactions = countReactions(content.getEvent(), 0, content.getArgs().getMaxLevel());
 		final String counts = String.format("This document contains %d pathway%s and %d reaction%s", pathways, getPlural(pathways), reactions, getPlural(reactions));
-		document.add(profile.getParagraph(counts)
-				.add(" (")
-				.add(profile.getGoTo("see Table of Contents", "toc"))
-				.add(")"));
+		final String version = "Reactome graph database version: " + generalService.getDBInfo().getVersion();
+		document.add(
+				new Div().setFillAvailableArea(true)
+						.add(profile.getParagraph(version))
+						.add(profile.getParagraph(counts)
+								.add(" (")
+								.add(profile.getGoTo("see Table of Contents", "toc"))
+								.add(")"))
+						.setVerticalAlignment(VerticalAlignment.BOTTOM));
 	}
 
 	private String getPlural(int count) {
