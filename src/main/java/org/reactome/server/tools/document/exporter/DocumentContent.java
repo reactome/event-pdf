@@ -4,10 +4,10 @@ import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 
 public class DocumentContent {
-	private AnalysisData analysisData;
 	private final PdfProfile pdfProfile;
 	private final Event event;
 	private final DocumentArgs args;
+	private AnalysisData analysisData;
 	private String server;
 
 	public DocumentContent(AnalysisData analysisData, PdfProfile pdfProfile, Event event, DocumentArgs args) {
