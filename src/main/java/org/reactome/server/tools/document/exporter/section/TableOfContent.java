@@ -36,22 +36,40 @@ public class TableOfContent implements Section {
 		final DocumentArgs args = content.getArgs();
 		document.add(new AreaBreak());
 		document.add(profile.getH1("Table of Contents", false).setDestination("toc"));
-		document.add(profile.getH3("Introduction").setAction(PdfAction.createGoTo("introduction")).setFontColor(profile.getLinkColor()));
-		if (content.getAnalysisData() != null)
-			document.add(profile.getH3("Analysis properties").setAction(PdfAction.createGoTo("properties")).setFontColor(profile.getLinkColor()));
-		document.add(profile.getH3("Details").setAction(PdfAction.createGoTo("details")).setFontColor(profile.getLinkColor()));
+		writeTocEntry(document, profile, "Introduction", "introduction", 1);
+		if (content.getAnalysisData() != null) {
+			writeTocEntry(document, profile, "Analysis properties", "properties", 2);
+			writeTocEntry(document, profile, "Details", "details", 3);
+		} else {
+			writeTocEntry(document, profile, "Details", "details", 2);
+
+		}
 		addToToc(document, profile, event, 1, args.getMaxLevel());
+		writeTocEntry(document, profile, "Table of Contents", "toc", document.getPdfDocument().getPageNumber(document.getPdfDocument().getLastPage()));
 	}
 
 	private void addToToc(Document document, PdfProfile profile, Event pathway, int level, int maxLevel) {
 		writeTocEntry(document, profile, level, pathway);
-		if (pathway instanceof Pathway && level + 1 < maxLevel) {
+		if (pathway instanceof Pathway && level < maxLevel) {
 			final List<Event> events = ((Pathway) pathway).getHasEvent();
 			events.sort(Comparator.comparingInt(o -> classOrder.indexOf(o.getSchemaClass())));
 			for (Event ev : events) {
 				addToToc(document, profile, ev, level + 1, maxLevel);
 			}
 		}
+	}
+
+	private void writeTocEntry(Document document, PdfProfile profile, String text, String destination, int page) {
+		final Paragraph paragraph = profile.getParagraph("")
+				.addTabStops(new TabStop(1000, TabAlignment.RIGHT))
+				.setTextAlignment(TextAlignment.LEFT)
+				.setMultipliedLeading(1f)
+				.add(text)
+				.setAction(PdfAction.createGoTo(destination))
+				.setFontColor(profile.getLinkColor())
+				.add(new Tab())
+				.add(String.valueOf(page));
+		document.add(paragraph);
 	}
 
 	private void writeTocEntry(Document document, PdfProfile profile, int level, Event event) {
