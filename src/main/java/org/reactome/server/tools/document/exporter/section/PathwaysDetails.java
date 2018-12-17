@@ -35,9 +35,9 @@ public class PathwaysDetails implements Section {
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
 	private final ParticipantService participantService;
-	private Map<Long, Integer> map;
-
 	private final Set<Long> printed = new HashSet<>();
+	private Set<Long> documentEvents = new HashSet<>();
+	private Map<Long, Integer> map;
 
 	public PathwaysDetails(ParticipantService participantService, Map<Long, Integer> map) {
 		this.participantService = participantService;
@@ -46,7 +46,19 @@ public class PathwaysDetails implements Section {
 
 	@Override
 	public void render(Document document, DocumentContent content) {
+		documentEvents = collectEvents(content.getEvent(), content.getArgs().getMaxLevel(), 0);
 		details(document, content, content.getEvent(), Collections.emptyList(), 0);
+	}
+
+	private Set<Long> collectEvents(Event event, int maxLevel, int level) {
+		final Set<Long> rtn = new TreeSet<>();
+		rtn.add(event.getId());
+		if (event instanceof Pathway && level < maxLevel) {
+			for (Event ev : ((Pathway) event).getHasEvent()) {
+				rtn.addAll(collectEvents(ev, maxLevel, level + 1));
+			}
+		}
+		return rtn;
 	}
 
 	private void details(Document document, DocumentContent content, Event event, java.util.List<Event> nav, int level) {
@@ -92,9 +104,13 @@ public class PathwaysDetails implements Section {
 
 	private void addPrecedingAndFollowing(Document document, Event event, PdfProfile profile) {
 		if (event instanceof ReactionLikeEvent) {
-			addEvents(document, profile, "Preceded by", event.getPrecedingEvent());
-			addEvents(document, profile, "Followed by", event.getFollowingEvent());
+			addEvents(document, profile, "Preceded by", inDocument(event.getPrecedingEvent()));
+			addEvents(document, profile, "Followed by", inDocument(event.getFollowingEvent()));
 		}
+	}
+
+	private List<Event> inDocument(List<Event> events) {
+		return events.stream().filter(event -> documentEvents.contains(event.getId())).collect(Collectors.toList());
 	}
 
 	private void addEvents(Document document, PdfProfile profile, String title, List<Event> events) {
@@ -278,7 +294,7 @@ public class PathwaysDetails implements Section {
 	}
 
 	private void addEditTable(Document document, Event event, PdfProfile profile) {
-		final Div div = new Div().setKeepTogether(true).add(profile.getH3("Edit history"));
+		final Div div = new Div().setKeepTogether(true).add(profile.getH3("Editions"));
 		final java.util.List<Edition> editions = new LinkedList<>();
 		if (event.getCreated() != null)
 			editions.add(new Edition("Created", event.getCreated()));
@@ -300,13 +316,14 @@ public class PathwaysDetails implements Section {
 		edits.add(current);
 		for (int i = 1; i < editions.size(); i++) {
 			final Edition edition = editions.get(i);
-			if (!edition.getDate().equals(editions.get(i - 1).getDate())
-					|| !edition.getAuthors().equals(editions.get(i - 1).getAuthors())) {
+			final Edition previousEdition = editions.get(i - 1);
+			if (edition.getDate().equals(previousEdition.getDate())
+					&& (edition.getType().equals(previousEdition.getType()) || edition.getAuthors().equals(previousEdition.getAuthors()))) {
+				current.add(edition);
+			} else {
 				current = new ArrayList<>();
 				current.add(edition);
 				edits.add(current);
-			} else {
-				current.add(edition);
 			}
 		}
 
@@ -321,7 +338,7 @@ public class PathwaysDetails implements Section {
 			final String date = list.get(0).getDate();
 			final String action = list.stream().map(Edition::getType).distinct().sorted(Comparator.comparingInt(EDIT_ORDER::indexOf))
 					.collect(Collectors.joining(", "));
-			final String authors = asString(list.stream().map(Edition::getAuthors).flatMap(Collection::stream).collect(Collectors.toSet()));
+			final String authors = asString(list.stream().map(Edition::getAuthors).flatMap(Collection::stream).distinct().sorted().collect(Collectors.toList()));
 			table.addCell(profile.getBodyCell(date, row));
 			table.addCell(profile.getBodyCell(action, row));
 			table.addCell(profile.getBodyCell(authors, row));
