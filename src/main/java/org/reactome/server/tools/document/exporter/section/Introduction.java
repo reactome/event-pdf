@@ -10,9 +10,9 @@ import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.ReactionLikeEvent;
 import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.tools.document.exporter.DocumentContent;
-import org.reactome.server.tools.document.exporter.style.PdfProfile;
+import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
-import org.reactome.server.tools.document.exporter.util.PdfUtils;
+import org.reactome.server.tools.document.exporter.util.Texts;
 
 import java.util.Collection;
 import java.util.List;
@@ -24,8 +24,8 @@ import java.util.stream.Collectors;
  */
 public class Introduction implements Section {
 
-	private static final String INTRODUCTION = PdfUtils.getProperty("introduction");
-	private static final List<Reference> PUBLICATIONS = PdfUtils.getText(Introduction.class.getResourceAsStream("/texts/references.txt"))
+	private static final String INTRODUCTION = Texts.getProperty("introduction");
+	private static final List<Reference> PUBLICATIONS = Texts.getText(Introduction.class.getResourceAsStream("/texts/references.txt"))
 			.stream()
 			.filter(line -> !line.isEmpty())
 			.map(s -> s.split("\t"))

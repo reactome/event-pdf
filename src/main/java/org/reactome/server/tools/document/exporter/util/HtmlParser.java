@@ -2,7 +2,7 @@ package org.reactome.server.tools.document.exporter.util;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Paragraph;
-import org.reactome.server.tools.document.exporter.style.PdfProfile;
+import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -12,6 +12,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+/**
+ * Helper class to transform HTML text to iText. Conversion is limited to first level tags, and only supports
+ * <strong>br, p, sub, i, b</strong> and <strong>a</strong> tags.
+ */
 public class HtmlParser {
 
 	private static final Pattern SUB = Pattern.compile("(?i)<sub>(.*?)</sub>");

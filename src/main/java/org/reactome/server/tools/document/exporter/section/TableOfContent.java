@@ -12,8 +12,8 @@ import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.tools.document.exporter.DocumentArgs;
 import org.reactome.server.tools.document.exporter.DocumentContent;
-import org.reactome.server.tools.document.exporter.style.Images;
-import org.reactome.server.tools.document.exporter.style.PdfProfile;
+import org.reactome.server.tools.document.exporter.profile.PdfProfile;
+import org.reactome.server.tools.document.exporter.util.Images;
 
 import java.util.Arrays;
 import java.util.Comparator;

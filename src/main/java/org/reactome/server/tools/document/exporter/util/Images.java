@@ -1,10 +1,13 @@
-package org.reactome.server.tools.document.exporter.style;
+package org.reactome.server.tools.document.exporter.util;
 
 import com.itextpdf.io.image.ImageData;
 import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
 
+/**
+ * Helper class to add icons and logo to document
+ */
 public class Images {
 
 	private static ImageData LOGO_DATA = ImageDataFactory.create(Images.class.getResource("/img/logo.png"));

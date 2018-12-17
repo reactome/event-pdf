@@ -13,10 +13,11 @@ import org.reactome.server.graph.service.ParticipantService;
 import org.reactome.server.tools.document.exporter.AnalysisData;
 import org.reactome.server.tools.document.exporter.DocumentArgs;
 import org.reactome.server.tools.document.exporter.DocumentContent;
-import org.reactome.server.tools.document.exporter.style.PdfProfile;
-import org.reactome.server.tools.document.exporter.util.ApaStyle;
+import org.reactome.server.tools.document.exporter.profile.PdfProfile;
+import org.reactome.server.tools.document.exporter.util.Diagrams;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
-import org.reactome.server.tools.document.exporter.util.ImageFactory;
+import org.reactome.server.tools.document.exporter.util.References;
+import org.reactome.server.tools.document.exporter.util.Tables;
 
 import java.util.List;
 import java.util.*;
@@ -133,9 +134,9 @@ public class PathwaysDetails implements Section {
 
 	private void addDiagram(Document document, Event event, AnalysisData analysisData) {
 		if (event instanceof Pathway) {
-			ImageFactory.insertDiagram(event.getStId(), analysisData, document);
+			Diagrams.insertDiagram(event.getStId(), analysisData, document);
 		} else if (event instanceof ReactionLikeEvent) {
-			ImageFactory.insertReaction(event.getStId(), analysisData, document);
+			Diagrams.insertReaction(event.getStId(), analysisData, document);
 		}
 	}
 
@@ -262,13 +263,7 @@ public class PathwaysDetails implements Section {
 	}
 
 	private Paragraph createPublication(Publication publication, PdfProfile profile) {
-		final java.util.List<Text> texts = ApaStyle.toApa(publication);
-		final Paragraph paragraph = profile.getParagraph("")
-				.setFirstLineIndent(-15)
-				.setPaddingLeft(30)
-				.setFontSize(profile.getFontSize() - 1f)
-				.setMultipliedLeading(1);
-		texts.forEach(paragraph::add);
+		final Paragraph paragraph = References.getPublication(profile, publication);
 		if (publication instanceof LiteratureReference) {
 			final LiteratureReference reference = (LiteratureReference) publication;
 			if (reference.getUrl() != null)
@@ -318,9 +313,9 @@ public class PathwaysDetails implements Section {
 		final Table table = new Table(new float[]{0.2f, 0.2f, 1f});
 		table.useAllAvailableWidth();
 		table.setBorder(Border.NO_BORDER);
-		table.addHeaderCell(profile.getHeaderCell("Date"));
-		table.addHeaderCell(profile.getHeaderCell("Action"));
-		table.addHeaderCell(profile.getHeaderCell("Author"));
+//		table.addHeaderCell(profile.getHeaderCell("Date"));
+//		table.addHeaderCell(profile.getHeaderCell("Action"));
+//		table.addHeaderCell(profile.getHeaderCell("Author"));
 		for (int row = 0; row < edits.size(); row++) {
 			java.util.List<Edition> list = edits.get(row);
 			final String date = list.get(0).getDate();

@@ -30,7 +30,10 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
-public class ImageFactory {
+/**
+ * Helper class to insert diagrams of events in document
+ */
+public class Diagrams {
 
 	private static final double QUALITY = 3.;
 	private static String diagramProfile;
@@ -50,7 +53,7 @@ public class ImageFactory {
 		try {
 			addToDocument(document, fireworksExporter.renderPdf(args, data.getResult()));
 		} catch (IOException e) {
-			LoggerFactory.getLogger(ImageFactory.class).error("Couldn't insert fireworks", e);
+			LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert fireworks", e);
 		}
 
 	}
@@ -67,7 +70,7 @@ public class ImageFactory {
 		try {
 			addToDocument(document, diagramExporter.exportToPdf(args, analysisData != null ? analysisData.getResult() : null));
 		} catch (AnalysisException | EhldException | DiagramJsonNotFoundException | DiagramJsonDeserializationException | IOException e) {
-			LoggerFactory.getLogger(ImageFactory.class).error("Couldn't insert diagram " + stId, e);
+			LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert diagram " + stId, e);
 		}
 	}
 
@@ -86,7 +89,7 @@ public class ImageFactory {
 			if (analysisData != null) args.setResource(analysisData.getResource());
 			addToDocument(document, diagramExporter.exportToPdf(diagram, graph, args, analysisData == null ? null : analysisData.getResult()));
 		} catch (AnalysisException | IOException e) {
-			LoggerFactory.getLogger(ImageFactory.class).error("Couldn't insert diagram for " + stId, e);
+			LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert diagram for " + stId, e);
 		}
 
 	}
@@ -105,24 +108,21 @@ public class ImageFactory {
 	}
 
 	public static void setProfiles(String diagramProfile, String analysisProfile, String fireworksProfile) {
-		ImageFactory.diagramProfile = diagramProfile;
-		ImageFactory.analysisProfile = analysisProfile;
-		ImageFactory.fireworksProfile = fireworksProfile;
+		Diagrams.diagramProfile = diagramProfile;
+		Diagrams.analysisProfile = analysisProfile;
+		Diagrams.fireworksProfile = fireworksProfile;
 	}
 
 	public static void setDiagramService(DiagramService diagramService) {
-		ImageFactory.diagramService = diagramService;
+		Diagrams.diagramService = diagramService;
 	}
 
 	public static void setDatabaseObjectService(DatabaseObjectService databaseObjectService) {
-		ImageFactory.databaseObjectService = databaseObjectService;
+		Diagrams.databaseObjectService = databaseObjectService;
 	}
 
 	public static void setAdvancedDatabaseObjectService(AdvancedDatabaseObjectService advancedDatabaseObjectService) {
-		ImageFactory.advancedDatabaseObjectService = advancedDatabaseObjectService;
+		Diagrams.advancedDatabaseObjectService = advancedDatabaseObjectService;
 	}
 
-	public static AdvancedDatabaseObjectService getAdvancedDatabaseObjectService() {
-		return advancedDatabaseObjectService;
-	}
 }

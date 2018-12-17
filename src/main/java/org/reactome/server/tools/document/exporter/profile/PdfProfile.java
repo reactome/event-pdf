@@ -1,4 +1,4 @@
-package org.reactome.server.tools.document.exporter.style;
+package org.reactome.server.tools.document.exporter.profile;
 
 import com.itextpdf.kernel.colors.Color;
 import com.itextpdf.kernel.colors.DeviceGray;
@@ -94,6 +94,14 @@ public class PdfProfile {
 				.setTextAlignment(TextAlignment.JUSTIFIED);
 	}
 
+	public Paragraph getCitation() {
+		return getParagraph("")
+				.setFontSize(fontSize - 1)
+				.setFirstLineIndent(-15)
+				.setPaddingLeft(30)
+				.setMultipliedLeading(1);
+	}
+
 	public Paragraph getCitation(String text, String link) {
 		return getParagraph(text)
 				.setFontSize(fontSize - 1)
@@ -104,7 +112,6 @@ public class PdfProfile {
 				.add(new Text("link")
 						.setFontColor(LINK_COLOR)
 						.setAction(PdfAction.createURI(link)));
-//				.add(Images.getLink(link, fontSize - 2f));
 	}
 
 	public Paragraph getH1(String text) {

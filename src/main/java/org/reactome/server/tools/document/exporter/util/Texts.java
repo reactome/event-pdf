@@ -13,7 +13,10 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Properties;
 
-public class PdfUtils {
+/**
+ * Helper class to add predefined texts (from resources) to document.
+ */
+public class Texts {
 
 	private static final NumberFormat NUMBER_FORMAT = NumberFormat.getNumberInstance(Locale.ENGLISH);
 	private static final NumberFormat EXP_FORMAT = NumberFormat.getNumberInstance(Locale.ENGLISH);
@@ -22,11 +25,11 @@ public class PdfUtils {
 
 	static {
 		try {
-			final InputStream resource = PdfUtils.class.getResourceAsStream("/texts/properties.properties");
+			final InputStream resource = Texts.class.getResourceAsStream("/texts/properties.properties");
 			final InputStreamReader reader = new InputStreamReader(resource, Charset.forName("utf8"));
 			properties.load(reader);
 		} catch (IOException e) {
-			LoggerFactory.getLogger(PdfUtils.class).error("Couldn't load resource properties.properties");
+			LoggerFactory.getLogger(Texts.class).error("Couldn't load resource properties.properties");
 		}
 	}
 

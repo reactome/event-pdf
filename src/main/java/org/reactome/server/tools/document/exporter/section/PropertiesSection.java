@@ -6,10 +6,10 @@ import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.analysis.core.result.model.AnalysisSummary;
 import org.reactome.server.tools.document.exporter.AnalysisData;
 import org.reactome.server.tools.document.exporter.DocumentContent;
-import org.reactome.server.tools.document.exporter.style.Images;
-import org.reactome.server.tools.document.exporter.style.PdfProfile;
+import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
-import org.reactome.server.tools.document.exporter.util.PdfUtils;
+import org.reactome.server.tools.document.exporter.util.Images;
+import org.reactome.server.tools.document.exporter.util.Texts;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -34,7 +34,7 @@ public class PropertiesSection implements Section {
 		document.add(profile.getH1("Analysis properties", false).setDestination("properties"));
 		final List<Paragraph> list = new LinkedList<>();
 
-		final String text = PdfUtils.getProperty(analysisData.getResult().getSummary().getType().toLowerCase());
+		final String text = Texts.getProperty(analysisData.getResult().getSummary().getType().toLowerCase());
 		final int found = analysisData.getResult().getAnalysisIdentifiers().size();
 		final int notFound = analysisData.getResult().getNotFound().size();
 		final AnalysisSummary summary = analysisData.getResult().getSummary();
@@ -46,20 +46,20 @@ public class PropertiesSection implements Section {
 				.add(profile.getLink("See more", serverName + ANALYSIS_PATH)));
 //				.add(Images.getLink(serverName + ANALYSIS_PATH, profile.getFontSize())));
 
-		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("identifiers.found"),
+		list.add(profile.getParagraph(String.format(Texts.getProperty("identifiers.found"),
 				found, found + notFound, analysisData.getResult().getPathways().size())));
 
 		if (analysisData.isProjection())
-			list.add(profile.getParagraph(PdfUtils.getProperty("projected"))
+			list.add(profile.getParagraph(Texts.getProperty("projected"))
 					.add(" ")
 					.add(Images.getLink(serverName + PROJECTED, profile.getFontSize())));
 
 		if (analysisData.isInteractors())
-			list.add(profile.getParagraph(PdfUtils.getProperty("interactors")));
+			list.add(profile.getParagraph(Texts.getProperty("interactors")));
 
-		list.add(profile.getParagraph((PdfUtils.getProperty("target.species.resource", analysisData.getSpecies(), analysisData.getBeautifiedResource()))));
+		list.add(profile.getParagraph((Texts.getProperty("target.species.resource", analysisData.getSpecies(), analysisData.getBeautifiedResource()))));
 
-		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("token"), summary.getToken())));
+		list.add(profile.getParagraph(String.format(Texts.getProperty("token"), summary.getToken())));
 
 		document.add(profile.getList(list));
 	}

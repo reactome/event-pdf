@@ -9,10 +9,10 @@ import org.reactome.server.graph.domain.model.InstanceEdit;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.Person;
 import org.reactome.server.tools.document.exporter.DocumentContent;
-import org.reactome.server.tools.document.exporter.style.Images;
-import org.reactome.server.tools.document.exporter.style.PdfProfile;
+import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
-import org.reactome.server.tools.document.exporter.util.PdfUtils;
+import org.reactome.server.tools.document.exporter.util.Images;
+import org.reactome.server.tools.document.exporter.util.Texts;
 
 import java.text.SimpleDateFormat;
 import java.util.Collection;
@@ -44,7 +44,7 @@ public class CoverPage implements Section {
 		final Paragraph auth = profile.getParagraph(authors).setTextAlignment(TextAlignment.CENTER);
 		document.add(auth);
 
-		for (Paragraph paragraph : HtmlParser.parseText(profile, PdfUtils.getProperty("cover.page.disclaimer"))) {
+		for (Paragraph paragraph : HtmlParser.parseText(profile, Texts.getProperty("cover.page.disclaimer"))) {
 			document.add(paragraph.setTextAlignment(TextAlignment.CENTER));
 		}
 	}

@@ -7,7 +7,6 @@ import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.Species;
 import org.reactome.server.graph.service.DatabaseObjectService;
-import org.reactome.server.graph.service.GeneralService;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -22,7 +21,6 @@ import java.util.stream.Collectors;
 public class AnalysisData {
 
 	private static final String DEFAULT_SERVER_NAME = "https://reactome.org";
-	private static GeneralService generalService;
 	private static DatabaseObjectService databaseObjectService;
 	private final AnalysisType type;
 	private final List<PathwayData> pathways;
@@ -116,13 +114,6 @@ public class AnalysisData {
 		}
 	}
 
-	/**
-	 * @return Reactome's current database version.
-	 */
-	public int getDBVersion() {
-		return generalService.getDBInfo().getVersion();
-	}
-
 	public AnalysisStoredResult getResult() {
 		return result;
 	}
@@ -180,11 +171,7 @@ public class AnalysisData {
 		return serverName;
 	}
 
-	public static void setGeneralService(GeneralService generalService) {
-		AnalysisData.generalService = generalService;
-	}
-
-	public static void setDatabaseObjectService(DatabaseObjectService databaseObjectService) {
+	static void setDatabaseObjectService(DatabaseObjectService databaseObjectService) {
 		AnalysisData.databaseObjectService = databaseObjectService;
 	}
 }

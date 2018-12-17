@@ -10,9 +10,9 @@ import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.service.*;
 import org.reactome.server.tools.document.exporter.exception.DocumentExporterException;
+import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 import org.reactome.server.tools.document.exporter.section.*;
-import org.reactome.server.tools.document.exporter.style.PdfProfile;
-import org.reactome.server.tools.document.exporter.util.ImageFactory;
+import org.reactome.server.tools.document.exporter.util.Diagrams;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -31,13 +31,12 @@ public class DocumentExporter {
 		this.databaseObjectService = databaseObjectService;
 		this.generalService = generalService;
 		this.participantService = participantService;
-		ImageFactory.setPaths(diagramPath, ehldPath, analysisPath, fireworksPath, svgSummary);
+		Diagrams.setPaths(diagramPath, ehldPath, analysisPath, fireworksPath, svgSummary);
 		Locale.setDefault(Locale.ENGLISH);
-		ImageFactory.setDiagramService(diagramService);
-		ImageFactory.setDatabaseObjectService(databaseObjectService);
-		ImageFactory.setAdvancedDatabaseObjectService(advancedDatabaseObjectService);
+		Diagrams.setDiagramService(diagramService);
+		Diagrams.setDatabaseObjectService(databaseObjectService);
+		Diagrams.setAdvancedDatabaseObjectService(advancedDatabaseObjectService);
 		AnalysisData.setDatabaseObjectService(databaseObjectService);
-		AnalysisData.setGeneralService(generalService);
 	}
 
 	public void export(DocumentArgs args, AnalysisStoredResult result, OutputStream destination) throws DocumentExporterException {

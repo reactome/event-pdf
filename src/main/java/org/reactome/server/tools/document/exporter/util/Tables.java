@@ -1,4 +1,4 @@
-package org.reactome.server.tools.document.exporter.section;
+package org.reactome.server.tools.document.exporter.util;
 
 import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.UnitValue;
@@ -6,8 +6,7 @@ import org.reactome.server.analysis.core.result.model.FoundEntity;
 import org.reactome.server.analysis.core.result.model.FoundInteractor;
 import org.reactome.server.analysis.core.result.model.IdentifierMap;
 import org.reactome.server.analysis.core.result.model.IdentifierSummary;
-import org.reactome.server.tools.document.exporter.style.PdfProfile;
-import org.reactome.server.tools.document.exporter.util.PdfUtils;
+import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 
 import java.util.Collection;
 import java.util.Comparator;
@@ -15,7 +14,10 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-class Tables {
+/**
+ * Helper class to add tables of entities to document.
+ */
+public class Tables {
 
 	private static final String INPUT = "Input";
 	private static final String DELIMITER = ", ";
@@ -34,7 +36,7 @@ class Tables {
 	 * @param profile     pdf profile to create elements
 	 * @param columnNames list of column names for the expression columns
 	 */
-	static Table getExpressionTable(Collection<FoundEntity> entities, String resource, PdfProfile profile, List<String> columnNames) {
+	public static Table getExpressionTable(Collection<FoundEntity> entities, String resource, PdfProfile profile, List<String> columnNames) {
 		final int rows = Math.min(6, columnNames.size());
 		final Table table = new Table(UnitValue.createPercentArray(2 + rows));
 		table.useAllAvailableWidth();
@@ -47,7 +49,7 @@ class Tables {
 			table.addCell(profile.getBodyCell(entity.getId(), row));
 			table.addCell(profile.getBodyCell(toString(entity.getMapsTo()), row));
 			for (int i = 0; i < rows; i++) {
-				table.addCell(profile.getBodyCell(PdfUtils.formatNumber(entity.getExp().get(i)), row));
+				table.addCell(profile.getBodyCell(Texts.formatNumber(entity.getExp().get(i)), row));
 			}
 			row++;
 		}
@@ -84,7 +86,7 @@ class Tables {
 	 * @param profile  pdf profile to create elements
 	 * @return a table divided in n columns with id -> mapsTo sorted by id
 	 */
-	static Table createEntitiesTable(Collection<FoundEntity> entities, String resource, PdfProfile profile) {
+	public static Table createEntitiesTable(Collection<FoundEntity> entities, String resource, PdfProfile profile) {
 		int columns = getColumns(entities.size(), 3);
 		return createEntitiesTable(entities, resource, profile, columns);
 	}
@@ -148,7 +150,7 @@ class Tables {
 		return table;
 	}
 
-	static Table getInteractorsTable(Collection<FoundInteractor> interactors, String resource, PdfProfile profile) {
+	public static Table getInteractorsTable(Collection<FoundInteractor> interactors, String resource, PdfProfile profile) {
 		final Collection<FoundInteractor> sorted = interactors.stream()
 				.distinct()
 				.sorted(Comparator.comparing(IdentifierSummary::getId))
@@ -178,7 +180,7 @@ class Tables {
 		return table;
 	}
 
-	static Table getInteractorsExpressionTable(Collection<FoundInteractor> interactors, String resource, PdfProfile profile, List<String> columns) {
+	public static Table getInteractorsExpressionTable(Collection<FoundInteractor> interactors, String resource, PdfProfile profile, List<String> columns) {
 		final int rows = Math.min(6, columns.size());
 		final Table table = new Table(UnitValue.createPercentArray(3 + rows));
 		table.useAllAvailableWidth();
@@ -193,7 +195,7 @@ class Tables {
 			table.addCell(profile.getBodyCell(String.join(DELIMITER, entity.getMapsTo()), row));
 			table.addCell(profile.getBodyCell(String.join(DELIMITER, entity.getInteractsWith().getIds()), row));
 			for (int i = 0; i < rows; i++) {
-				table.addCell(profile.getBodyCell(PdfUtils.formatNumber(entity.getExp().get(i)), row));
+				table.addCell(profile.getBodyCell(Texts.formatNumber(entity.getExp().get(i)), row));
 			}
 			row++;
 		}

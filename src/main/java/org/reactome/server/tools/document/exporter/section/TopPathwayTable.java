@@ -9,8 +9,8 @@ import org.reactome.server.analysis.core.result.model.PathwayBase;
 import org.reactome.server.tools.document.exporter.AnalysisData;
 import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.PathwayData;
-import org.reactome.server.tools.document.exporter.style.PdfProfile;
-import org.reactome.server.tools.document.exporter.util.PdfUtils;
+import org.reactome.server.tools.document.exporter.profile.PdfProfile;
+import org.reactome.server.tools.document.exporter.util.Texts;
 
 import java.util.Arrays;
 
@@ -35,7 +35,7 @@ public class TopPathwayTable implements Section {
 		final AnalysisData analysisData = content.getAnalysisData();
 		final PdfProfile profile = content.getPdfProfile();
 		document.add(profile.getH1("Most significant pathways").setDestination("pathway-list"));
-		document.add(profile.getParagraph(PdfUtils.getProperty("most.significant.pathways", analysisData.getPathways().size())));
+		document.add(profile.getParagraph(Texts.getProperty("most.significant.pathways", analysisData.getPathways().size())));
 		// Let iText decide the width of the columns
 		final Table table = new Table(new float[]{3, 1, 1, 1, 1, 1, 1});
 		table.setBorder(Border.NO_BORDER);
@@ -53,14 +53,14 @@ public class TopPathwayTable implements Section {
 			table.addCell(profile.getPathwayCell(i, pathway));
 			final String entities = String.format("%,d / %,d", pathwayBase.getEntities().getFound(), pathwayBase.getEntities().getTotal());
 			table.addCell(profile.getBodyCell(entities, i));
-			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathwayBase.getEntities().getRatio()), i));
-			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathwayBase.getEntities().getpValue()), i));
-			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathwayBase.getEntities().getFdr()), i));
+			table.addCell(profile.getBodyCell(Texts.formatNumber(pathwayBase.getEntities().getRatio()), i));
+			table.addCell(profile.getBodyCell(Texts.formatNumber(pathwayBase.getEntities().getpValue()), i));
+			table.addCell(profile.getBodyCell(Texts.formatNumber(pathwayBase.getEntities().getFdr()), i));
 			final String reactions = String.format("%,d / %,d",
 					pathway.getData().getReactionsFound(),
 					pathway.getData().getReactionsCount());
 			table.addCell(profile.getBodyCell(reactions, i));
-			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathway.getData().getReactionsRatio()), i));
+			table.addCell(profile.getBodyCell(Texts.formatNumber(pathway.getData().getReactionsRatio()), i));
 			i++;
 		}
 		document.add(table);

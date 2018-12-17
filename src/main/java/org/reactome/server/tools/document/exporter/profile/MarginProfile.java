@@ -1,4 +1,4 @@
-package org.reactome.server.tools.document.exporter.style;
+package org.reactome.server.tools.document.exporter.profile;
 
 /**
  * Margin profile model for the {@link PdfProfile}.

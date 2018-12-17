@@ -1,7 +1,7 @@
 package org.reactome.server.tools.document.exporter;
 
 import org.reactome.server.graph.domain.model.Event;
-import org.reactome.server.tools.document.exporter.style.PdfProfile;
+import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 
 public class DocumentContent {
 	private AnalysisData analysisData;
