@@ -39,6 +39,7 @@ public class CoverPage implements Section {
 		final String authors = collectAuthors(event).stream()
 				.map(this::getName)
 				.sorted()
+				.distinct()
 				.map(this::getIndivisibleString)
 				.collect(Collectors.joining(", "));
 		final Paragraph auth = profile.getParagraph(authors).setTextAlignment(TextAlignment.CENTER);
