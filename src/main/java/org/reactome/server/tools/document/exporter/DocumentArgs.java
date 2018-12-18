@@ -3,7 +3,7 @@ package org.reactome.server.tools.document.exporter;
 public class DocumentArgs {
 
 	private String stId;
-	private int maxLevel = 1;
+	private int maxLevel = 0;
 	private Long species = 48887L;   // Homo sapiens
 	private String resource;
 
