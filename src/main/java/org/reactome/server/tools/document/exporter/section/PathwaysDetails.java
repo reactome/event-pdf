@@ -274,23 +274,8 @@ public class PathwaysDetails implements Section {
 		document.add(profile.getH3("Literature references"));
 		event.getLiteratureReference().stream()
 				.limit(5)
-				.map(publication -> createPublication(publication, profile))
+				.map(publication -> References.getPublication(profile, publication))
 				.forEach(document::add);
-	}
-
-	private Paragraph createPublication(Publication publication, PdfProfile profile) {
-		final Paragraph paragraph = References.getPublication(profile, publication);
-		if (publication instanceof LiteratureReference) {
-			final LiteratureReference reference = (LiteratureReference) publication;
-			if (reference.getUrl() != null)
-//				paragraph.add(" ").add(Images.getLink(reference.getUrl(), profile.getFontSize() - 2f));
-				paragraph.add(" ").add(new Text("link").setFontColor(profile.getLinkColor()).setAction(PdfAction.createURI(reference.getUrl())));
-		} else if (publication instanceof URL) {
-			final URL url = (URL) publication;
-//			paragraph.add(Images.getLink(url.getUniformResourceLocator(), profile.getFontSize() - 2f));
-			paragraph.add(" ").add(new Text("link").setFontColor(profile.getLinkColor()).setAction(PdfAction.createURI(url.getUniformResourceLocator())));
-		}
-		return paragraph;
 	}
 
 	private void addEditTable(Document document, Event event, PdfProfile profile) {

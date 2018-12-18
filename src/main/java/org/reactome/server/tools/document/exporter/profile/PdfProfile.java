@@ -230,6 +230,10 @@ public class PdfProfile {
 		return cell;
 	}
 
+	public Text getLink(String link) {
+		return getLink(link, link);
+	}
+
 	public Text getLink(String text, String link) {
 		return new Text(text).setFontColor(LINK_COLOR).setAction(PdfAction.createURI(link));
 	}
