@@ -39,7 +39,7 @@ public class References {
 		if (reference.getVolume() != null) citation.add(", " + reference.getVolume());
 		if (reference.getPages() != null) citation.add(", " + reference.getPages().trim());
 		citation.add(".");
-		if (reference.getUrl() != null) citation.add(profile.getLink("link", reference.getUrl()));
+		if (reference.getUrl() != null) citation.add(" ").add(profile.getLink("pubmed", reference.getUrl()));
 		return citation;
 	}
 
