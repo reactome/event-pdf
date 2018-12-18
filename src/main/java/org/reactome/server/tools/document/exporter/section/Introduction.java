@@ -14,6 +14,7 @@ import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
 import org.reactome.server.tools.document.exporter.util.Texts;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -51,12 +52,16 @@ public class Introduction implements Section {
 		}
 		final int pathways = countPathways(content.getEvent(), 0, content.getArgs().getMaxLevel());
 		final int reactions = countReactions(content.getEvent(), 0, content.getArgs().getMaxLevel());
-		final String counts = String.format("This document contains %d pathway%s and %d reaction%s", pathways, getPlural(pathways), reactions, getPlural(reactions));
+		final StringBuilder counter = new StringBuilder("This document contains ");
+		final List<String> things = new ArrayList<>();
+		if (pathways > 0) things.add(String.format("%d pathway%s", pathways, getPlural(pathways)));
+		if (reactions > 0) things.add(String.format("%d reaction%s", reactions, getPlural(reactions)));
+		counter.append(String.join(" and ", things)).append(".");
 		final String version = "Reactome graph database version: " + generalService.getDBInfo().getVersion();
 		document.add(
 				new Div().setFillAvailableArea(true)
 						.add(profile.getParagraph(version))
-						.add(profile.getParagraph(counts)
+						.add(profile.getParagraph(counter.toString())
 								.add(" (")
 								.add(profile.getGoTo("see Table of Contents", "toc"))
 								.add(")"))
