@@ -35,6 +35,7 @@ public class TableOfContent implements Section {
 		final Event event = content.getEvent();
 		final DocumentArgs args = content.getArgs();
 		document.add(new AreaBreak());
+		final int page = document.getPdfDocument().getPageNumber(document.getPdfDocument().getLastPage());
 		document.add(profile.getH1("Table of Contents", false).setDestination("toc"));
 		writeTocEntry(document, profile, "Introduction", "introduction", 1);
 		if (content.getAnalysisData() != null) {
@@ -42,10 +43,9 @@ public class TableOfContent implements Section {
 			writeTocEntry(document, profile, "Details", "details", 3);
 		} else {
 			writeTocEntry(document, profile, "Details", "details", 2);
-
 		}
-		addToToc(document, profile, event, 1, args.getMaxLevel());
-		writeTocEntry(document, profile, "Table of Contents", "toc", document.getPdfDocument().getPageNumber(document.getPdfDocument().getLastPage()));
+		addToToc(document, profile, event, 0, args.getMaxLevel());
+		writeTocEntry(document, profile, "Table of Contents", "toc", page - 1);
 	}
 
 	private void addToToc(Document document, PdfProfile profile, Event pathway, int level, int maxLevel) {
