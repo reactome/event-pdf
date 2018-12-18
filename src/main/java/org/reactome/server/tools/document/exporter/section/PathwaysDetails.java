@@ -330,9 +330,6 @@ public class PathwaysDetails implements Section {
 		final Table table = new Table(new float[]{0.2f, 0.2f, 1f});
 		table.useAllAvailableWidth();
 		table.setBorder(Border.NO_BORDER);
-//		table.addHeaderCell(profile.getHeaderCell("Date"));
-//		table.addHeaderCell(profile.getHeaderCell("Action"));
-//		table.addHeaderCell(profile.getHeaderCell("Author"));
 		for (int row = 0; row < edits.size(); row++) {
 			java.util.List<Edition> list = edits.get(row);
 			final String date = list.get(0).getDate();

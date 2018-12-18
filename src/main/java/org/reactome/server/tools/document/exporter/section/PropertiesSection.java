@@ -41,7 +41,7 @@ public class PropertiesSection implements Section {
 
 
 		final String serverName = analysisData.getServerName();
-		list.add(HtmlParser.parseParagraph(text, profile)
+		list.add(HtmlParser.parseParagraph(profile, text)
 				.add(" ")
 				.add(profile.getLink("See more", serverName + ANALYSIS_PATH)));
 //				.add(Images.getLink(serverName + ANALYSIS_PATH, profile.getFontSize())));
