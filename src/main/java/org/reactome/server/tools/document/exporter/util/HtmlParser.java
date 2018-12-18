@@ -24,7 +24,7 @@ public class HtmlParser {
 	private static final Pattern ITALIC = Pattern.compile("(?i)<i>(.*?)</i>");
 	private static final Pattern BOLD = Pattern.compile("(?i)<b>(.*?)</b>");
 
-	public static Paragraph parseParagraph(String html, PdfProfile profile) {
+	public static Paragraph parseParagraph(PdfProfile profile, String html) {
 		List<Span> spans = new LinkedList<>();
 		spans.add(new Text(html));
 		spans = trimItalic(spans);
@@ -41,7 +41,7 @@ public class HtmlParser {
 		return Arrays.stream(paragraphs)
 				.map(String::trim)
 				.filter(p -> !p.isEmpty())
-				.map(p -> parseParagraph(p, profile))
+				.map(p -> parseParagraph(profile, p))
 				.collect(Collectors.toList());
 	}
 

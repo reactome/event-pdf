@@ -1,9 +1,11 @@
 package org.reactome.server.tools.document.exporter.section;
 
 import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.Div;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import com.itextpdf.layout.property.TextAlignment;
+import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.InstanceEdit;
 import org.reactome.server.graph.domain.model.Pathway;
@@ -36,18 +38,30 @@ public class CoverPage implements Section {
 		document.add(profile.getTitle(""));
 		document.add(profile.getTitle(event.getDisplayName()));
 		document.add(profile.getTitle(""));
-		final String authors = collectAuthors(event).stream()
+		final Collection<Person> people = collectAuthors(event);
+		final String authors = people.stream()
 				.map(this::getName)
 				.sorted()
 				.distinct()
 				.map(this::getIndivisibleString)
 				.collect(Collectors.joining(", "));
-		final Paragraph auth = profile.getParagraph(authors).setTextAlignment(TextAlignment.CENTER);
-		document.add(auth);
+		document.add(profile.getParagraph(authors).setTextAlignment(TextAlignment.CENTER));
+//		final String affiliations = people.stream()
+//				.map(Person::getAffiliation)
+//				.flatMap(Collection::stream)
+//				.map(Affiliation::getDisplayName)
+//				.distinct()
+//				.sorted()
+//				.collect(Collectors.joining("\n"));
+//		document.add(profile.getParagraph(affiliations).setTextAlignment(TextAlignment.CENTER));
 
-		for (Paragraph paragraph : HtmlParser.parseText(profile, Texts.getProperty("cover.page.disclaimer"))) {
-			document.add(paragraph.setTextAlignment(TextAlignment.CENTER));
-		}
+		document.add(HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.institutions"))
+				.setTextAlignment(TextAlignment.CENTER));
+
+		final Paragraph disclaimer = HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.disclaimer"))
+				.setTextAlignment(TextAlignment.CENTER);
+		document.add(new Div().setVerticalAlignment(VerticalAlignment.BOTTOM).setFillAvailableArea(true).add(disclaimer));
+
 	}
 
 	private String getIndivisibleString(String string) {
