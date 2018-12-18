@@ -14,8 +14,10 @@ import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
 import org.reactome.server.tools.document.exporter.util.Texts;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -24,6 +26,8 @@ import java.util.stream.Collectors;
  * publications
  */
 public class Introduction implements Section {
+
+	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
 
 	private static final String INTRODUCTION = Texts.getProperty("introduction");
 	private static final List<Reference> PUBLICATIONS = Texts.getText(Introduction.class.getResourceAsStream("/texts/references.txt"))
@@ -56,10 +60,11 @@ public class Introduction implements Section {
 		final List<String> things = new ArrayList<>();
 		if (pathways > 0) things.add(String.format("%d pathway%s", pathways, getPlural(pathways)));
 		if (reactions > 0) things.add(String.format("%d reaction%s", reactions, getPlural(reactions)));
-		counter.append(String.join(" and ", things)).append(".");
+		counter.append(String.join(" and ", things));
 		final String version = "Reactome graph database version: " + generalService.getDBInfo().getVersion();
 		document.add(
 				new Div().setFillAvailableArea(true)
+						.add(profile.getParagraph(DATE_FORMAT.format(new Date())))
 						.add(profile.getParagraph(version))
 						.add(profile.getParagraph(counter.toString())
 								.add(" (")
