@@ -12,11 +12,11 @@ import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.Person;
 import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.profile.PdfProfile;
+import org.reactome.server.tools.document.exporter.util.Diagrams;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
 import org.reactome.server.tools.document.exporter.util.Images;
 import org.reactome.server.tools.document.exporter.util.Texts;
 
-import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -27,7 +27,6 @@ import java.util.stream.Collectors;
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class CoverPage implements Section {
-	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
 
 	@Override
 	public void render(Document document, DocumentContent content) {
@@ -37,6 +36,9 @@ public class CoverPage implements Section {
 		// Empty space
 		document.add(profile.getTitle(""));
 		document.add(profile.getTitle(event.getDisplayName()));
+		document.add(profile.getTitle(""));
+		if (event instanceof Pathway)
+			Diagrams.insertDiagram(event.getStId(), content.getAnalysisData(), document);
 		document.add(profile.getTitle(""));
 		final Collection<Person> people = collectAuthors(event);
 		final String authors = people.stream()
