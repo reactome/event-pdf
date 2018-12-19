@@ -85,7 +85,11 @@ public class PdfProfile {
 	}
 
 	public Paragraph getParagraph(String text) {
-		return new Paragraph(text)
+		return getParagraph().add(text);
+	}
+
+	public Paragraph getParagraph() {
+		return new Paragraph()
 				.setFont(REGULAR)
 				.setKeepTogether(true)
 				.setFontSize(fontSize)
