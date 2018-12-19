@@ -19,9 +19,19 @@ import java.util.stream.Collectors;
  */
 public class References {
 
+	// The Reactome citation style is almost equivalent to APA style:
+	// https://owl.purdue.edu/owl/research_and_citation/using_research/documents/20180719CitationChart.pdf
+	// The only difference with APA is in the list of authors when we have more than 6,
+	// instead of
+	//      6 authors "...last author".
+	// we use
+	//      6 authors "et al."
+
+
 	private static final Pattern FACING_CHARACTERS = Pattern.compile("^[\\s,.]+");
 	private static final Pattern TRAILING_CHARACTERS = Pattern.compile("[\\s,.]+$");
 	private static final String REFERENCES_JSON = "/texts/references.json";
+	private static final String ET_AL = " et al.";
 	private static List<LiteratureReference> references;
 
 	public static Paragraph getPublication(PdfProfile profile, Publication publication) {
@@ -35,14 +45,13 @@ public class References {
 		return profile.getCitation().add(publication.getDisplayName());
 	}
 
-	// Author, A. A., & Author, B. B. (Date of publication). Title of article. Title of Journal, volume number, page range. doi:0000000/000000000000 or https://doi.org/10.0000/0000
-	// Brownlie, D. (2007). Toward effective poster presentations: An annotated bibliography. European Journal of Marketing, 41, 1245-1283. doi:10.1108/03090560710821161
-	// Wooldridge, M.B., & Shapka, J. (2012). Playing with technology: Mother-toddler interaction scores lower during play with electronic toys. Journal of Applied Developmental Psychology, 33(5), 211-218. https://doi.org/10.1016/j.appdev.2012.05.005
 	private static Paragraph getLiteratureReference(PdfProfile profile, LiteratureReference reference) {
+		// [author] ([year]). [title]. <i>[journal], [volume]</i>, [pages].
+		// <i> for italic
 		final Paragraph citation = profile.getCitation();
 		citation.add(String.format("%s (%d). %s", getAuthorList(reference.getAuthor()), reference.getYear(), trim(reference.getTitle())));
-		if (reference.getJournal() != null) citation.add(". " + reference.getJournal().trim());
-		if (reference.getVolume() != null) citation.add(", " + reference.getVolume());
+		if (reference.getJournal() != null) citation.add(". ").add(new Text(reference.getJournal().trim()).setItalic());
+		if (reference.getVolume() != null) citation.add(new Text(", " + reference.getVolume()).setItalic());
 		if (reference.getPages() != null) citation.add(", " + reference.getPages().trim());
 		citation.add(".");
 		if (reference.getUrl() != null) citation.add(" ").add(profile.getLink("pubmed", reference.getUrl()));
@@ -56,29 +65,25 @@ public class References {
 	}
 
 	private static Paragraph getURL(PdfProfile profile, URL url) {
+		// [author] ([year]). [title]. Retrieved from [url].
 		return profile.getCitation()
-				.add(String.format("%s. Retrieved from ", url.getTitle()))
+				.add(getAuthorList(url.getAuthor()))
+				.add(" (n.d.). ") // year is always unknown
+				.add(url.getTitle())
+				.add(". Retrieved from ")
 				.add(profile.getLink(url.getUniformResourceLocator()));
 	}
 
 	private static Paragraph getBook(PdfProfile profile, Book book) {
-		// year			    *
-		// title 			*
-		// chapterTitle	    opt
-		// ISBN 			opt
-		// pages			opt
+		// [author] ([year]). [chapter], [title]. <i>[publisher]</i>, [pages].
 		final Paragraph citation = profile.getCitation();
-		citation.add(getAuthorList(book.getAuthor())
-				+ " (" + book.getYear() + ")");
-		citation.add(". ");
-		if (book.getChapterTitle() != null)
-			citation.add(book.getChapterTitle() + ", ");
-		citation.add(new Text(book.getTitle().trim()).setItalic());
-		if (book.getPages() != null)
-			citation.add(new Text(", " + book.getPages().trim()));
+		citation.add(String.format("%s (%d). ", getAuthorList(book.getAuthor()), book.getYear()));
+		if (book.getChapterTitle() != null) citation.add(String.format("%s, ", book.getChapterTitle()));
+		citation.add(book.getTitle().trim());
+		// TODO: 19/12/18 book.getPublisher return null always
+//		citation.add(new Text(book.getPublisher().getName().get(0)).setItalic());
+		if (book.getPages() != null) citation.add(String.format(", %s", book.getPages().trim()));
 		// APA style does not provide ISBN
-//		if (book.getISBN() != null)
-//			citation.append(". ISBN: ").append(book.getISBN());
 		citation.add(".");
 		return citation;
 	}
@@ -88,7 +93,7 @@ public class References {
 				.limit(6)
 				.map(person -> person.getDisplayName() + ".")
 				.collect(Collectors.joining(", "))
-				+ (author.size() > 6 ? " et. al." : "");
+				+ (author.size() > 6 ? ET_AL : "");
 	}
 
 	public static Collection<LiteratureReference> getReactomeReferences() {
