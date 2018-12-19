@@ -31,7 +31,7 @@ public class HtmlParser {
 		spans = trimBold(spans);
 		spans = trimSubs(spans);
 		spans = trimLinks(spans);
-		final Paragraph paragraph = profile.getParagraph("");
+		final Paragraph paragraph = profile.getParagraph();
 		spans.forEach(span -> span.render(paragraph, profile));
 		return paragraph;
 	}

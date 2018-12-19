@@ -91,7 +91,7 @@ public class PdfProfile {
 	public Paragraph getParagraph() {
 		return new Paragraph()
 				.setFont(REGULAR)
-				.setKeepTogether(true)
+//				.setKeepTogether(true)
 				.setFontSize(fontSize)
 				.setMultipliedLeading(1.2f)
 				.setHyphenation(HYPHENATION_CONFIG)
@@ -99,7 +99,7 @@ public class PdfProfile {
 	}
 
 	public Paragraph getCitation() {
-		return getParagraph("")
+		return getParagraph()
 				.setFontSize(fontSize - 1)
 				.setFirstLineIndent(-15)
 				.setPaddingLeft(30)

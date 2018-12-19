@@ -60,7 +60,7 @@ public class TableOfContent implements Section {
 	}
 
 	private void writeTocEntry(Document document, PdfProfile profile, String text, String destination, int page) {
-		final Paragraph paragraph = profile.getParagraph("")
+		final Paragraph paragraph = profile.getParagraph()
 				.addTabStops(new TabStop(1000, TabAlignment.RIGHT))
 				.setTextAlignment(TextAlignment.LEFT)
 				.setMultipliedLeading(1f)
@@ -73,7 +73,7 @@ public class TableOfContent implements Section {
 	}
 
 	private void writeTocEntry(Document document, PdfProfile profile, int level, Event event) {
-		final Paragraph paragraph = profile.getParagraph("")
+		final Paragraph paragraph = profile.getParagraph()
 				.setPaddingLeft(level * 10)
 				.addTabStops(new TabStop(1000, TabAlignment.RIGHT))
 				.setTextAlignment(TextAlignment.LEFT)

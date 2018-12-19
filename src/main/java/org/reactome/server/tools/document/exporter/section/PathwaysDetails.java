@@ -102,7 +102,7 @@ public class PathwaysDetails implements Section {
 
 	private void addEvents(Document document, PdfProfile profile, String title, List<Event> events) {
 		if (events.isEmpty()) return;
-		final Paragraph preceding = profile.getParagraph("").add(new Text(title + ": ").setFont(profile.getBoldFont()));
+		final Paragraph preceding = profile.getParagraph().add(new Text(title + ": ").setFont(profile.getBoldFont()));
 		for (int i = 0; i < events.size(); i++) {
 			final Event ev = events.get(i);
 			if (i > 0) preceding.add(", ");
@@ -118,7 +118,7 @@ public class PathwaysDetails implements Section {
 	private void addType(Document document, Event event, PdfProfile profile) {
 		if (event instanceof ReactionLikeEvent) {
 			final String type = ((ReactionLikeEvent) event).getCategory();
-			final Paragraph paragraph = profile.getParagraph("")
+			final Paragraph paragraph = profile.getParagraph()
 					.add(new Text("Type: ").setFont(profile.getBoldFont()))
 					.add(type);
 			document.add(paragraph);
@@ -135,7 +135,7 @@ public class PathwaysDetails implements Section {
 
 	private void addLocation(Document document, List<Event> nav, PdfProfile profile) {
 		if (nav.isEmpty()) return;
-		final Paragraph paragraph = profile.getParagraph("")
+		final Paragraph paragraph = profile.getParagraph()
 				.add(new Text("Location: ").setFont(profile.getBoldFont()));
 		for (int i = 0; i < nav.size(); i++) {
 			if (i > 0) paragraph.add(" > ");  // current font does not support RIGHTARROW'\u2192'
@@ -239,7 +239,7 @@ public class PathwaysDetails implements Section {
 			final String body = objects.stream()
 					.map(DatabaseObject::getDisplayName)
 					.collect(Collectors.joining(", "));
-			final Paragraph paragraph = profile.getParagraph("")
+			final Paragraph paragraph = profile.getParagraph()
 					.add(new Text(title + ": ").setFont(profile.getBoldFont()))
 					.add(body);
 			document.add(paragraph);
