@@ -102,18 +102,6 @@ public class PdfProfile {
 				.setMultipliedLeading(1);
 	}
 
-	public Paragraph getCitation(String text, String link) {
-		return getParagraph(text)
-				.setFontSize(fontSize - 1)
-				.setFirstLineIndent(-15)
-				.setPaddingLeft(30)
-				.setMultipliedLeading(1)
-				.add(" ")
-				.add(new Text("link")
-						.setFontColor(LINK_COLOR)
-						.setAction(PdfAction.createURI(link)));
-	}
-
 	public Paragraph getH1(String text) {
 		return getH1(text, true);
 	}

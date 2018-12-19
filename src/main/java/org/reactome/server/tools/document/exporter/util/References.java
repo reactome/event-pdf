@@ -77,7 +77,7 @@ public class References {
 		return citation;
 	}
 
-	private static String getAuthorList(List<Person> author) {
+	public static String getAuthorList(List<Person> author) {
 		return author.stream()
 				.limit(6)
 				.map(person -> person.getDisplayName() + ".")

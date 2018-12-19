@@ -7,6 +7,7 @@
     <groupId>org.reactome.server.tools</groupId>
     <artifactId>document-exporter</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <name>document-exporter</name>
 
@@ -86,7 +87,7 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${spring.test.version}</version>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
 
 
@@ -114,7 +115,7 @@
     </dependencies>
 
     <build>
-        <finalName>document-exporter</finalName>
+        <finalName>${project.name}</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>

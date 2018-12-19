@@ -36,7 +36,6 @@ public class PathwaysDetails implements Section {
 
 	private final ParticipantService participantService;
 	private final Set<Long> printed = new HashSet<>();
-	private Set<Long> documentEvents = new HashSet<>();
 	private Map<Long, Integer> map;
 
 	public PathwaysDetails(ParticipantService participantService, Map<Long, Integer> map) {
@@ -46,19 +45,7 @@ public class PathwaysDetails implements Section {
 
 	@Override
 	public void render(Document document, DocumentContent content) {
-		documentEvents = collectEvents(content.getEvent(), content.getArgs().getMaxLevel(), 0);
 		details(document, content, content.getEvent(), Collections.emptyList(), 0);
-	}
-
-	private Set<Long> collectEvents(Event event, int maxLevel, int level) {
-		final Set<Long> rtn = new TreeSet<>();
-		rtn.add(event.getId());
-		if (event instanceof Pathway && level < maxLevel) {
-			for (Event ev : ((Pathway) event).getHasEvent()) {
-				rtn.addAll(collectEvents(ev, maxLevel, level + 1));
-			}
-		}
-		return rtn;
 	}
 
 	private void details(Document document, DocumentContent content, Event event, java.util.List<Event> nav, int level) {
@@ -82,7 +69,7 @@ public class PathwaysDetails implements Section {
 		addDiagram(document, event, analysisData);
 
 		addSummations(document, event, profile);
-		addPrecedingAndFollowing(document, event, profile);
+		addPrecedingAndFollowing(document, event, profile, content.getEvents());
 		addReferences(document, event, profile);
 		addEditTable(document, event, profile);
 
@@ -102,15 +89,15 @@ public class PathwaysDetails implements Section {
 		}
 	}
 
-	private void addPrecedingAndFollowing(Document document, Event event, PdfProfile profile) {
+	private void addPrecedingAndFollowing(Document document, Event event, PdfProfile profile, Set<Event> contentEvents) {
 		if (event instanceof ReactionLikeEvent) {
-			addEvents(document, profile, "Preceded by", inDocument(event.getPrecedingEvent()));
-			addEvents(document, profile, "Followed by", inDocument(event.getFollowingEvent()));
+			addEvents(document, profile, "Preceded by", inDocument(event.getPrecedingEvent(), contentEvents));
+			addEvents(document, profile, "Followed by", inDocument(event.getFollowingEvent(), contentEvents));
 		}
 	}
 
-	private List<Event> inDocument(List<Event> events) {
-		return events.stream().filter(event -> documentEvents.contains(event.getId())).collect(Collectors.toList());
+	private List<Event> inDocument(List<Event> events, Set<Event> contentEvents) {
+		return events.stream().filter(contentEvents::contains).collect(Collectors.toList());
 	}
 
 	private void addEvents(Document document, PdfProfile profile, String title, List<Event> events) {
@@ -124,18 +111,8 @@ public class PathwaysDetails implements Section {
 		document.add(preceding);
 	}
 
-	private Document addTitle(Document document, DocumentContent content, Event event, PdfProfile profile) {
-		return document.add(getTitle(profile, event, content.getServer()));
-	}
-
-	private void addStId(Document document, DocumentContent properties, Event event, PdfProfile profile) {
-		final Paragraph paragraph = profile.getParagraph("")
-				.add(new Text("Stable identifier: ").setFont(profile.getBoldFont()))
-				.add(new Text(event.getStId())
-						.setAction(PdfAction.createURI(properties.getServer() + CONTENT_DETAIL + event.getStId()))
-						.setFontColor(profile.getLinkColor())
-						.setDestination(event.getStId()));
-		document.add(paragraph);
+	private void addTitle(Document document, DocumentContent content, Event event, PdfProfile profile) {
+		document.add(getTitle(profile, event, content.getServer()));
 	}
 
 	private void addType(Document document, Event event, PdfProfile profile) {
@@ -320,31 +297,14 @@ public class PathwaysDetails implements Section {
 			final String date = list.get(0).getDate();
 			final String action = list.stream().map(Edition::getType).distinct().sorted(Comparator.comparingInt(EDIT_ORDER::indexOf))
 					.collect(Collectors.joining(", "));
-			final String authors = asString(list.stream().map(Edition::getAuthors).flatMap(Collection::stream).distinct().sorted().collect(Collectors.toList()));
+			final List<Person> people = list.stream().map(Edition::getAuthors).flatMap(Collection::stream).distinct().sorted().collect(Collectors.toList());
+			final String authors = References.getAuthorList(people);
 			table.addCell(profile.getBodyCell(date, row));
 			table.addCell(profile.getBodyCell(action, row));
 			table.addCell(profile.getBodyCell(authors, row));
 		}
 		div.add(table);
 		document.add(div);
-	}
-
-	private String asString(Collection<Person> persons) {
-		return asString(persons, 5);
-	}
-
-	private String asString(Collection<Person> persons, int maxAuthors) {
-		if (persons.isEmpty()) return "";
-		String text = persons.stream()
-				.limit(maxAuthors)
-				.map(this::getGetDisplayName)
-				.collect(Collectors.joining(", "));
-		if (persons.size() > maxAuthors) text += " et al.";
-		return text;
-	}
-
-	private String getGetDisplayName(Person person) {
-		return person.getDisplayName() + ".";
 	}
 
 	private class Edition {

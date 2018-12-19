@@ -5,7 +5,6 @@ import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Div;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.VerticalAlignment;
-import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.ReactionLikeEvent;
 import org.reactome.server.graph.service.GeneralService;
@@ -52,10 +51,13 @@ public class Introduction implements Section {
 
 		document.add(profile.getH3("Literature references"));
 		for (Reference publication : PUBLICATIONS) {
-			document.add(profile.getCitation(publication.text, publication.link));
+			document.add(profile.getCitation()
+					.add(publication.text)
+					.add(" ")
+					.add(profile.getLink("pubmed", publication.link)));
 		}
-		final int pathways = countPathways(content.getEvent(), 0, content.getArgs().getMaxLevel());
-		final int reactions = countReactions(content.getEvent(), 0, content.getArgs().getMaxLevel());
+		final long pathways = content.getEvents().stream().filter(Pathway.class::isInstance).count();
+		final long reactions = content.getEvents().stream().filter(ReactionLikeEvent.class::isInstance).count();
 		final StringBuilder counter = new StringBuilder("This document contains ");
 		final List<String> things = new ArrayList<>();
 		if (pathways > 0) things.add(String.format("%d pathway%s", pathways, getPlural(pathways)));
@@ -73,34 +75,8 @@ public class Introduction implements Section {
 						.setVerticalAlignment(VerticalAlignment.BOTTOM));
 	}
 
-	private String getPlural(int count) {
+	private String getPlural(long count) {
 		return count == 1 ? "" : "s";
-	}
-
-	private int countPathways(Event event, int level, int maxLevel) {
-		int pathways = 0;
-		if (event instanceof Pathway) {
-			pathways = 1;
-			if (level < maxLevel) {
-				for (Event ev : ((Pathway) event).getHasEvent()) {
-					pathways += countPathways(ev, level + 1, maxLevel);
-				}
-			}
-		}
-		return pathways;
-	}
-
-	private int countReactions(Event event, int level, int maxLevel) {
-		if (event instanceof ReactionLikeEvent) {
-			return 1;
-		}
-		int reactions = 0;
-		if (level < maxLevel) {
-			for (Event ev : ((Pathway) event).getHasEvent()) {
-				reactions += countReactions(ev, level + 1, maxLevel);
-			}
-		}
-		return reactions;
 	}
 
 	private static class Reference {
