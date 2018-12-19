@@ -4,6 +4,7 @@ import com.itextpdf.kernel.pdf.xobject.PdfFormXObject;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.property.HorizontalAlignment;
+import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.domain.model.ReactionLikeEvent;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.AdvancedDatabaseObjectService;
@@ -51,7 +52,7 @@ public class Diagrams {
 		args.setWriteTitle(false);
 		args.setProfile(fireworksProfile);
 		try {
-			addToDocument(document, fireworksExporter.renderPdf(args, data.getResult()));
+			addToDocument(document, fireworksExporter.renderPdf(args, data.getResult()), 0.5f);
 		} catch (IOException e) {
 			LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert fireworks", e);
 		}
@@ -68,7 +69,7 @@ public class Diagrams {
 		}
 		args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
 		try {
-			addToDocument(document, diagramExporter.exportToPdf(args, analysisData != null ? analysisData.getResult() : null));
+			addToDocument(document, diagramExporter.exportToPdf(args, analysisData != null ? analysisData.getResult() : null), 0.5f);
 		} catch (AnalysisException | EhldException | DiagramJsonNotFoundException | DiagramJsonDeserializationException | IOException e) {
 			LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert diagram " + stId, e);
 		}
@@ -87,17 +88,18 @@ public class Diagrams {
 		try {
 			final RasterArgs args = new RasterArgs(pStId, "pdf");
 			if (analysisData != null) args.setResource(analysisData.getResource());
-			addToDocument(document, diagramExporter.exportToPdf(diagram, graph, args, analysisData == null ? null : analysisData.getResult()));
+			final AnalysisStoredResult result = analysisData == null ? null : analysisData.getResult();
+			addToDocument(document, diagramExporter.exportToPdf(diagram, graph, args, result), 0.4f);
 		} catch (AnalysisException | IOException e) {
 			LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert diagram for " + stId, e);
 		}
 
 	}
 
-	private static void addToDocument(Document document, Document imagePdf) throws IOException {
+	private static void addToDocument(Document document, Document imagePdf, float proportion) throws IOException {
 		final PdfFormXObject object = imagePdf.getPdfDocument().getFirstPage().copyAsFormXObject(document.getPdfDocument());
 		final float wi = document.getPdfDocument().getLastPage().getPageSize().getWidth() - document.getLeftMargin() - document.getRightMargin() - 0.1f;  // avoid image too large
-		final float he = 0.5f * document.getPdfDocument().getLastPage().getPageSize().getHeight() - document.getTopMargin() - document.getBottomMargin();
+		final float he = proportion * document.getPdfDocument().getLastPage().getPageSize().getHeight() - document.getTopMargin() - document.getBottomMargin();
 		document.add(new Image(object).scaleToFit(wi, he).setHorizontalAlignment(HorizontalAlignment.CENTER));
 		document.flush();
 	}
