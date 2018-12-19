@@ -1,11 +1,15 @@
 package org.reactome.server.tools.document.exporter.util;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Text;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -17,6 +21,8 @@ public class References {
 
 	private static final Pattern FACING_CHARACTERS = Pattern.compile("^[\\s,.]+");
 	private static final Pattern TRAILING_CHARACTERS = Pattern.compile("[\\s,.]+$");
+	private static final String REFERENCES_JSON = "/texts/references.json";
+	private static List<LiteratureReference> references;
 
 	public static Paragraph getPublication(PdfProfile profile, Publication publication) {
 		if (publication instanceof LiteratureReference)
@@ -84,4 +90,16 @@ public class References {
 				.collect(Collectors.joining(", "))
 				+ (author.size() > 6 ? " et. al." : "");
 	}
+
+	public static Collection<LiteratureReference> getReactomeReferences() {
+		if (references != null) return references;
+		try {
+			references = new ObjectMapper().readValue(References.class.getResourceAsStream(REFERENCES_JSON), Refs.class).getReferences();
+		} catch (IOException e) {
+			LoggerFactory.getLogger("document-exporter").error(String.format("Couldn't load references '%s'", REFERENCES_JSON), e);
+			references = Collections.emptyList();
+		}
+		return references;
+	}
+
 }

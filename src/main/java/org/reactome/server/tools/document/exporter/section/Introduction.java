@@ -5,12 +5,14 @@ import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Div;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.VerticalAlignment;
+import org.reactome.server.graph.domain.model.LiteratureReference;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.ReactionLikeEvent;
 import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.HtmlParser;
+import org.reactome.server.tools.document.exporter.util.References;
 import org.reactome.server.tools.document.exporter.util.Texts;
 
 import java.text.SimpleDateFormat;
@@ -18,7 +20,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Section Introduction contains the analysis introduction and Reactome relative
@@ -29,12 +30,12 @@ public class Introduction implements Section {
 	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
 
 	private static final String INTRODUCTION = Texts.getProperty("introduction");
-	private static final List<Reference> PUBLICATIONS = Texts.getText(Introduction.class.getResourceAsStream("/texts/references.txt"))
-			.stream()
-			.filter(line -> !line.isEmpty())
-			.map(s -> s.split("\t"))
-			.map(line -> new Reference(line[0], line[1]))
-			.collect(Collectors.toList());
+//	private static final List<Reference> PUBLICATIONS = Texts.getText(Introduction.class.getResourceAsStream("/texts/references.txt"))
+//			.stream()
+//			.filter(line -> !line.isEmpty())
+//			.map(s -> s.split("\t"))
+//			.map(line -> new Reference(line[0], line[1]))
+//			.collect(Collectors.toList());
 	private GeneralService generalService;
 
 	public Introduction(GeneralService generalService) {
@@ -50,12 +51,15 @@ public class Introduction implements Section {
 		intro.forEach(document::add);
 
 		document.add(profile.getH3("Literature references"));
-		for (Reference publication : PUBLICATIONS) {
-			document.add(profile.getCitation()
-					.add(publication.text)
-					.add(" ")
-					.add(profile.getLink("pubmed", publication.link)));
+		for (LiteratureReference reference : References.getReactomeReferences()) {
+			document.add(References.getPublication(profile, reference));
 		}
+//		for (Reference publication : PUBLICATIONS) {
+//			document.add(profile.getCitation()
+//					.add(publication.text)
+//					.add(" ")
+//					.add(profile.getLink("pubmed", publication.link)));
+//		}
 		final long pathways = content.getEvents().stream().filter(Pathway.class::isInstance).count();
 		final long reactions = content.getEvents().stream().filter(ReactionLikeEvent.class::isInstance).count();
 		final StringBuilder counter = new StringBuilder("This document contains ");
