@@ -80,6 +80,7 @@ public class ProgressBar {
 
 	public void clear() {
 		if (timer != null) {
+			progress = 1.0;
 			timer.cancel();
 			timer = null;
 			printProgress();

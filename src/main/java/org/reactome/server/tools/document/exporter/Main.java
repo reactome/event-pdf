@@ -94,6 +94,7 @@ public class Main {
 			}
 			i++;
 		}
+		bar.setProgress(1.0, String.format("%d / %d", targets.size(), targets.size()));
 		bar.clear();
 	}
 
