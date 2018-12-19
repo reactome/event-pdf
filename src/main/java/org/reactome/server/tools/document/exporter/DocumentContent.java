@@ -1,7 +1,12 @@
 package org.reactome.server.tools.document.exporter;
 
 import org.reactome.server.graph.domain.model.Event;
+import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.tools.document.exporter.profile.PdfProfile;
+
+import java.util.Collections;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class DocumentContent {
 	private final PdfProfile pdfProfile;
@@ -9,6 +14,7 @@ public class DocumentContent {
 	private final DocumentArgs args;
 	private AnalysisData analysisData;
 	private String server;
+	private Set<Event> events;
 
 	public DocumentContent(AnalysisData analysisData, PdfProfile pdfProfile, Event event, DocumentArgs args) {
 		this.analysisData = analysisData;
@@ -18,6 +24,18 @@ public class DocumentContent {
 		this.server = analysisData != null
 				? analysisData.getServerName()
 				: "https://reactome.org";
+		events = Collections.unmodifiableSet(collectEvents(event, args.getMaxLevel(), 0));
+	}
+
+	private Set<Event> collectEvents(Event event, int maxLevel, int level) {
+		final Set<Event> rtn = new TreeSet<>();
+		rtn.add(event);
+		if (event instanceof Pathway && level < maxLevel) {
+			for (Event ev : ((Pathway) event).getHasEvent()) {
+				rtn.addAll(collectEvents(ev, maxLevel, level + 1));
+			}
+		}
+		return rtn;
 	}
 
 	public AnalysisData getAnalysisData() {
@@ -42,5 +60,14 @@ public class DocumentContent {
 
 	public void setServer(String server) {
 		this.server = server;
+	}
+
+	/**
+	 * Get a plain list of unique events contained in this document
+	 *
+	 * @return the list of all unique events that appear in the document
+	 */
+	public Set<Event> getEvents() {
+		return events;
 	}
 }
