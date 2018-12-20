@@ -24,11 +24,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Section PathwaysDetails contains the detail info for top hit pathways(sorted by
- * p-value), include the overlay diagram image, entities mapped and description
- * for each pathway.
+ * Main section: shows name, type, diagram, summations, references, editions and more information about each event.
  */
-public class PathwaysDetails implements Section {
+public class EventsDetails implements Section {
 
 	private static final List<String> EDIT_ORDER = Arrays.asList("Authored", "Created", "Edited", "Modified", "Reviewed", "Revised");
 	private static final String CONTENT_DETAIL = "/content/detail/";
@@ -38,7 +36,7 @@ public class PathwaysDetails implements Section {
 	private final Set<Long> printed = new HashSet<>();
 	private Map<Long, Integer> map;
 
-	public PathwaysDetails(ParticipantService participantService, Map<Long, Integer> map) {
+	public EventsDetails(ParticipantService participantService, Map<Long, Integer> map) {
 		this.participantService = participantService;
 		this.map = map;
 	}
@@ -55,13 +53,15 @@ public class PathwaysDetails implements Section {
 		final AnalysisData analysisData = content.getAnalysisData();
 		final DocumentArgs args = content.getArgs();
 		document.add(new AreaBreak());
+
 		final PdfPage page = document.getPdfDocument().getLastPage();
 		final int number = document.getPdfDocument().getPageNumber(page);
 		map.put(event.getId(), number - 1);
+
 		addTitle(document, content, event, profile);
-		addLocation(document, nav, profile);
+		addLocation(document, nav, profile, content);
+//		addAlternativeLocations(document, nav, event, profile, content);
 		addType(document, event, profile);
-//		insertStId(document, properties, event, profile);
 		addDatabaseObjectList(document, "Cellular compartments", event.getCompartment(), profile);
 		addRelatedDiseases(document, event, profile);
 		addDatabaseObjectList(document, "Inferred from", event.getInferredFrom(), profile);
@@ -73,10 +73,13 @@ public class PathwaysDetails implements Section {
 		addReferences(document, event, profile);
 		addEditTable(document, event, profile);
 
+		// Analysis tables
 		if (content.getAnalysisData() != null) {
 			addFoundElements(document, content.getAnalysisData(), event, content.getPdfProfile());
 			addFoundInteractors(document, content.getAnalysisData(), event, content.getPdfProfile());
 		}
+
+		// Call sub events
 		if (level < args.getMaxLevel() && event instanceof Pathway) {
 			final Pathway pathway = (Pathway) event;
 			final java.util.List<Event> events = pathway.getHasEvent();
@@ -133,19 +136,54 @@ public class PathwaysDetails implements Section {
 		}
 	}
 
-	private void addLocation(Document document, List<Event> nav, PdfProfile profile) {
+	private void addLocation(Document document, List<Event> nav, PdfProfile profile, DocumentContent content) {
 		if (nav.isEmpty()) return;
+		document.add(getLocationParagraph(nav, profile, "Location", content));
+	}
+
+	private Paragraph getLocationParagraph(List<Event> nav, PdfProfile profile, String prefix, DocumentContent content) {
 		final Paragraph paragraph = profile.getParagraph()
-				.add(new Text("Location: ").setFont(profile.getBoldFont()));
+				.add(new Text(prefix + ": ").setFont(profile.getBoldFont()));
 		for (int i = 0; i < nav.size(); i++) {
 			if (i > 0) paragraph.add(" > ");  // current font does not support RIGHTARROW'\u2192'
 			final Event ev = nav.get(i);
-			final Text text = new Text(ev.getDisplayName())
-					.setAction(PdfAction.createGoTo(ev.getStId()))
-					.setFontColor(profile.getLinkColor());
+			final Text text = new Text(ev.getDisplayName());
+			if (content.getEvents().contains(ev)) {
+					text.setAction(PdfAction.createGoTo(ev.getStId()))
+						.setFontColor(profile.getLinkColor());
+			}
 			paragraph.add(text);
 		}
-		document.add(paragraph);
+		return paragraph;
+	}
+
+	private void addAlternativeLocations(Document document, List<Event> nav, Event event, PdfProfile profile, DocumentContent content) {
+		final List<List<Event>> navs = getLocations(event);
+		for (List<Event> list : navs) list.remove(list.size() - 1); // event will appear ath the end of each list
+		navs.removeIf(List::isEmpty);
+		navs.removeIf(nav::equals);
+		for (List<Event> events : navs) {
+			document.add(getLocationParagraph(events, profile, "Alternative location", content));
+		}
+	}
+
+	private List<List<Event>> getLocations(Event event) {
+		if (event.getEventOf().isEmpty()){
+			final List<Event> nav = new ArrayList<>();
+			nav.add(event);
+			final List<List<Event>> navs = new ArrayList<>();
+			navs.add(nav);
+			return navs;
+		}
+		final List<List<Event>> navs = new ArrayList<>();
+		for (Pathway pathway : event.getEventOf()) {
+			final List<List<Event>> subNavs = getLocations(pathway);
+			for (List<Event> subNav : subNavs) {
+				subNav.add(event);
+				navs.add((subNav));
+			}
+		}
+		return navs;
 	}
 
 	private BlockElement getTitle(PdfProfile profile, Event event, String server) {

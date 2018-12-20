@@ -19,6 +19,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.*;
 
+/**
+ * Document generator. One instance of this class can create more than one document.
+ */
 public class DocumentExporter {
 
 	private static final ObjectMapper MAPPER = new ObjectMapper();
@@ -27,6 +30,20 @@ public class DocumentExporter {
 	private ParticipantService participantService;
 
 
+	/**
+	 * Creates and configures a new DocumentExporter. Use {@link DocumentExporter#export(DocumentArgs, AnalysisStoredResult, OutputStream)} to generate documents.
+	 *
+	 * @param diagramPath                   path where diagrams (.json and .graph.json) are stored
+	 * @param ehldPath                      path where EHLD are stored
+	 * @param analysisPath                  path where analysis file are stored
+	 * @param fireworksPath                 path where fireworks (.json) are stored
+	 * @param svgSummary                    path to svgsummary.txt file
+	 * @param diagramService                service needed for diagrams
+	 * @param databaseObjectService         service needed for events
+	 * @param generalService                service needed for general info (db version)
+	 * @param advancedDatabaseObjectService service needed for reactions layout
+	 * @param participantService            service needed for reaction analysis info
+	 */
 	public DocumentExporter(String diagramPath, String ehldPath, String analysisPath, String fireworksPath, String svgSummary, DiagramService diagramService, DatabaseObjectService databaseObjectService, GeneralService generalService, AdvancedDatabaseObjectService advancedDatabaseObjectService, ParticipantService participantService) {
 		this.databaseObjectService = databaseObjectService;
 		this.generalService = generalService;
@@ -71,7 +88,7 @@ public class DocumentExporter {
 					new CoverPage(),
 					new Introduction(generalService),
 					new PropertiesSection(),
-					new PathwaysDetails(participantService, pages),
+					new EventsDetails(participantService, pages),
 					new TableOfContent(pages)
 			);
 			for (Section section : SECTIONS)
@@ -79,6 +96,7 @@ public class DocumentExporter {
 		}
 	}
 
+	// TODO: 19/12/18 too weak profile system
 	private PdfProfile loadProfile(String profile) throws DocumentExporterException {
 		try {
 			final InputStream resource = getClass().getResourceAsStream("/profiles/" + profile.toLowerCase() + ".json");
