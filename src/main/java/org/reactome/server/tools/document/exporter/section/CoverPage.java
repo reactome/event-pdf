@@ -3,7 +3,6 @@ package org.reactome.server.tools.document.exporter.section;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Div;
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
@@ -20,8 +19,8 @@ import org.reactome.server.tools.document.exporter.util.Texts;
 
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
+import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
 /**
@@ -42,18 +41,13 @@ public class CoverPage implements Section {
 			Diagrams.insertDiagram(event.getStId(), content.getAnalysisData(), document);
 		document.add(profile.getTitle(""));
 		final Collection<Person> people = collectAuthors(event);
-		final List<String> authorNames = people.stream()
+		final String authors = people.stream()
 				.map(this::getName)
 				.sorted()
 				.distinct()
-				.collect(Collectors.toList());
-		// TODO: 19/12/18 unbreakable author names, plus centered text
-		final Paragraph authors = profile.getParagraph().setTextAlignment(TextAlignment.CENTER);
-		for (int i = 0; i < authorNames.size(); i++) {
-			if (i > 0) authors.add(", ");
-			authors.add(new Text(getIndivisibleString(authorNames.get(i))));
-		}
-		document.add(authors);
+				.map(this::getIndivisibleString)
+				.collect(Collectors.joining(", "));
+		document.add(profile.getParagraph(authors).setTextAlignment(TextAlignment.CENTER));
 //		final String affiliations = people.stream()
 //				.map(Person::getAffiliation)
 //				.flatMap(Collection::stream)
@@ -73,11 +67,10 @@ public class CoverPage implements Section {
 	}
 
 	private String getIndivisibleString(String string) {
-		return string.replaceAll("\\s+", "\u00a0");
-//		final StringJoiner joiner = new StringJoiner("\u2060");
-//		for (int i = 0; i < string.length(); i++)
-//			joiner.add(Character.toString(string.charAt(i)));
-//		return joiner.toString().replaceAll("\\s+", "\u00A0");
+		final StringJoiner joiner = new StringJoiner("\u2060");
+		for (int i = 0; i < string.length(); i++)
+			joiner.add(Character.toString(string.charAt(i)));
+		return joiner.toString().replaceAll("\\s+", "\u00A0");
 	}
 
 	private String getName(Person person) {
