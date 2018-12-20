@@ -2,7 +2,6 @@ package org.reactome.server.tools.document.exporter.section;
 
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Div;
-import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
@@ -57,13 +56,13 @@ public class CoverPage implements Section {
 //				.collect(Collectors.joining("\n"));
 //		document.add(profile.getParagraph(affiliations).setTextAlignment(TextAlignment.CENTER));
 
-		document.add(HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.institutions"))
-				.setTextAlignment(TextAlignment.CENTER));
-
-		final Paragraph disclaimer = HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.disclaimer"))
-				.setTextAlignment(TextAlignment.CENTER);
-		document.add(new Div().setVerticalAlignment(VerticalAlignment.BOTTOM).setFillAvailableArea(true).add(disclaimer));
-
+		final Div bottomDiv = new Div()
+				.setKeepTogether(true)
+				.setFillAvailableArea(true)
+				.setVerticalAlignment(VerticalAlignment.BOTTOM)
+				.add(HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.institutions")).setTextAlignment(TextAlignment.CENTER))
+				.add(HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.disclaimer")).setTextAlignment(TextAlignment.CENTER));
+		document.add(bottomDiv);
 	}
 
 	private String getIndivisibleString(String string) {
