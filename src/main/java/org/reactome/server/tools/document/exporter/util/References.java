@@ -30,8 +30,12 @@ public class References {
 
 	private static final Pattern FACING_CHARACTERS = Pattern.compile("^[\\s,.]+");
 	private static final Pattern TRAILING_CHARACTERS = Pattern.compile("[\\s,.]+$");
-	private static final String REFERENCES_JSON = "/texts/references.json";
+	private static final String REFERENCES_PATH = "/texts/references.json";
 	private static final String ET_AL = " et al.";
+	private static final String N_D = "n.d.";
+	private static final String PUBMED = "pubmed";
+	private static final String RETRIEVED_FROM = "Retrieved from";
+
 	private static List<LiteratureReference> references;
 
 	public static Paragraph getPublication(PdfProfile profile, Publication publication) {
@@ -54,23 +58,16 @@ public class References {
 		if (reference.getVolume() != null) citation.add(new Text(", " + reference.getVolume()).setItalic());
 		if (reference.getPages() != null) citation.add(", " + reference.getPages().trim());
 		citation.add(".");
-		if (reference.getUrl() != null) citation.add(" ").add(profile.getLink("pubmed", reference.getUrl()));
+		if (reference.getUrl() != null) citation.add(" ").add(profile.getLink(PUBMED, reference.getUrl()));
 		return citation;
-	}
-
-	private static String trim(String title) {
-		title = FACING_CHARACTERS.matcher(title).replaceAll("");
-		title = TRAILING_CHARACTERS.matcher(title).replaceAll("");
-		return title;
 	}
 
 	private static Paragraph getURL(PdfProfile profile, URL url) {
 		// [author] ([year]). [title]. Retrieved from [url].
 		return profile.getCitation()
-				.add(getAuthorList(url.getAuthor()))
-				.add(" (n.d.). ") // year is always unknown
+				.add(String.format("%s (%s). ",getAuthorList(url.getAuthor()) , N_D)) // year is always unknown
 				.add(url.getTitle())
-				.add(". Retrieved from ")
+				.add(String.format(". %s ", RETRIEVED_FROM))
 				.add(profile.getLink(url.getUniformResourceLocator()));
 	}
 
@@ -79,13 +76,28 @@ public class References {
 		final Paragraph citation = profile.getCitation();
 		citation.add(String.format("%s (%d). ", getAuthorList(book.getAuthor()), book.getYear()));
 		if (book.getChapterTitle() != null) citation.add(String.format("%s, ", book.getChapterTitle()));
-		citation.add(book.getTitle().trim());
-		// TODO: 19/12/18 book.getPublisher return null always
-//		citation.add(new Text(book.getPublisher().getName().get(0)).setItalic());
-		if (book.getPages() != null) citation.add(String.format(", %s", book.getPages().trim()));
-		// APA style does not provide ISBN
+		citation.add(trim(book.getTitle()));
+		if (book.getPublisher() != null)
+			citation.add(new Text(". " + book.getPublisher().getName().get(0)).setItalic());
+		if (book.getPages() != null) {
+			if (book.getPublisher() != null) citation.add(", ");
+			else citation.add(". ");
+			citation.add(book.getPages().trim());
+		}
 		citation.add(".");
+		// APA style does not provide ISBN
 		return citation;
+	}
+
+	/**
+	 * Trims not only spaces, but dots (.) and commas (,) at the beginning and end of the string
+	 * @param text a string to trim, null not allowed
+	 * @return a new String that does not start neither end with a space, dot (.) or comma (,)
+	 */
+	private static String trim(String text) {
+		text = FACING_CHARACTERS.matcher(text).replaceAll("");
+		text = TRAILING_CHARACTERS.matcher(text).replaceAll("");
+		return text;
 	}
 
 	public static String getAuthorList(List<Person> author) {
@@ -96,12 +108,15 @@ public class References {
 				+ (author.size() > 6 ? ET_AL : "");
 	}
 
+	/**
+	 * @return the static references of Reactome
+	 */
 	public static Collection<LiteratureReference> getReactomeReferences() {
 		if (references != null) return references;
 		try {
-			references = new ObjectMapper().readValue(References.class.getResourceAsStream(REFERENCES_JSON), Refs.class).getReferences();
+			references = new ObjectMapper().readValue(References.class.getResourceAsStream(REFERENCES_PATH), Refs.class).getReferences();
 		} catch (IOException e) {
-			LoggerFactory.getLogger("document-exporter").error(String.format("Couldn't load references '%s'", REFERENCES_JSON), e);
+			LoggerFactory.getLogger("document-exporter").error(String.format("Couldn't load references '%s'", REFERENCES_PATH), e);
 			references = Collections.emptyList();
 		}
 		return references;
