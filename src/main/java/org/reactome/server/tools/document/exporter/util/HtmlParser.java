@@ -37,7 +37,7 @@ public class HtmlParser {
 	}
 
 	public static Collection<Paragraph> parseText(PdfProfile profile, String text) {
-		final String[] paragraphs = text.split("(?i)<br>|<p>|</p>");
+		final String[] paragraphs = text.split("(?i)<br>|<p>|</p>|\n");
 		return Arrays.stream(paragraphs)
 				.map(String::trim)
 				.filter(p -> !p.isEmpty())
