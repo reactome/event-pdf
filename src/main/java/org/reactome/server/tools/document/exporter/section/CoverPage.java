@@ -2,13 +2,12 @@ package org.reactome.server.tools.document.exporter.section;
 
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Div;
+import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
-import org.reactome.server.graph.domain.model.Event;
-import org.reactome.server.graph.domain.model.InstanceEdit;
-import org.reactome.server.graph.domain.model.Pathway;
-import org.reactome.server.graph.domain.model.Person;
+import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.document.exporter.DocumentContent;
 import org.reactome.server.tools.document.exporter.profile.PdfProfile;
 import org.reactome.server.tools.document.exporter.util.Diagrams;
@@ -16,16 +15,16 @@ import org.reactome.server.tools.document.exporter.util.HtmlParser;
 import org.reactome.server.tools.document.exporter.util.Images;
 import org.reactome.server.tools.document.exporter.util.Texts;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.StringJoiner;
+import java.text.SimpleDateFormat;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author Chuan-Deng dengchuanbio@gmail.com
+ * @author Pascual Lorente (plorente@ebi.ac.uk)
  */
 public class CoverPage implements Section {
+
+	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
 
 	@Override
 	public void render(Document document, DocumentContent content) {
@@ -39,30 +38,63 @@ public class CoverPage implements Section {
 		if (event instanceof Pathway)
 			Diagrams.insertDiagram(event.getStId(), content.getAnalysisData(), document);
 		document.add(profile.getTitle(""));
-		final Collection<Person> people = collectAuthors(event);
+		final List<Person> people = new ArrayList<>(collectAuthors(event));
+		people.sort(Comparator.comparing(Person::getDisplayName));
 		final String authors = people.stream()
 				.map(this::getName)
-				.sorted()
 				.distinct()
 				.map(this::getIndivisibleString)
 				.collect(Collectors.joining(", "));
 		document.add(profile.getParagraph(authors).setTextAlignment(TextAlignment.CENTER));
-//		final String affiliations = people.stream()
-//				.map(Person::getAffiliation)
-//				.flatMap(Collection::stream)
-//				.map(Affiliation::getDisplayName)
-//				.distinct()
-//				.sorted()
-//				.collect(Collectors.joining("\n"));
-//		document.add(profile.getParagraph(affiliations).setTextAlignment(TextAlignment.CENTER));
+
+//		addAuthorsWithAffiliation(document, profile, people);
 
 		final Div bottomDiv = new Div()
 				.setKeepTogether(true)
 				.setFillAvailableArea(true)
 				.setVerticalAlignment(VerticalAlignment.BOTTOM)
 				.add(HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.institutions")).setTextAlignment(TextAlignment.CENTER))
-				.add(HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.disclaimer")).setTextAlignment(TextAlignment.CENTER));
+				.add(HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.disclaimer")).setTextAlignment(TextAlignment.CENTER))
+				.add(profile.getParagraph(DATE_FORMAT.format(new Date())).setTextAlignment(TextAlignment.CENTER));
 		document.add(bottomDiv);
+	}
+
+	private void addAuthorsWithAffiliation(Document document, PdfProfile profile, List<Person> people) {
+		final Paragraph paragraph = profile.getParagraph();
+
+		final List<String> names = new ArrayList<>();
+		final List<String> affiliations = new ArrayList<>();
+		for (int i = 0; i < people.size(); i++) {
+			final Person person = people.get(i);
+			if (!names.contains(person.getDisplayName())) {
+				final List<Integer> affIndex = new ArrayList<>();
+				final StringJoiner aff = new StringJoiner(", ", "(", ")").setEmptyValue("");
+				for (Affiliation affiliation : person.getAffiliation()) {
+					if (!affiliations.contains(affiliation.getDisplayName())) {
+						affiliations.add(affiliation.getDisplayName());
+					}
+					affIndex.add(1 + affiliations.indexOf(affiliation.getDisplayName()));
+					aff.add(String.valueOf(1 + affiliations.indexOf(affiliation.getDisplayName())));
+				}
+				names.add(getIndivisibleString(person.getDisplayName() + "." + aff.toString()));
+				paragraph.add(new Text(getIndivisibleString(person.getDisplayName() + ".")));
+				if (!affIndex.isEmpty()) {
+					affIndex.sort(Comparator.naturalOrder());
+					paragraph.add(new Text(getIndivisibleString(affIndex.stream().map(String::valueOf).collect(Collectors.joining(", "))))
+							.setTextRise(5).setFontSize(6));
+				}
+			}
+			if (i < people.size() - 1) paragraph.add(", ");
+
+		}
+		document.add(paragraph);
+
+		final StringJoiner joiner = new StringJoiner("\n");
+		for (int i = 0; i < affiliations.size(); i++) {
+			String affiliation = affiliations.get(i);
+			joiner.add(String.format("%d. %s", i + 1, affiliation));
+		}
+		document.add(profile.getParagraph(joiner.toString()));
 	}
 
 	private String getIndivisibleString(String string) {

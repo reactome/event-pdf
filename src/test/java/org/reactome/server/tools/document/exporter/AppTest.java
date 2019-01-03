@@ -6,7 +6,6 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
-import org.reactome.server.analysis.core.result.utils.TokenUtils;
 import org.reactome.server.graph.service.AdvancedDatabaseObjectService;
 import org.reactome.server.graph.service.DatabaseObjectService;
 import org.reactome.server.graph.service.DiagramService;
@@ -57,16 +56,27 @@ public class AppTest extends BaseTest {
 	@Test
 	public void test() {
 		final DocumentExporter documentExporter = new DocumentExporter(DIAGRAM_PATH, EHLD_PATH, ANALYSIS_PATH, FIREWORKS_PATH, SVGSUMMARY, diagramService, databaseObjectService, generalService, advancedDatabaseObjectService, participantService);
-//		final String stId = "R-HSA-901006";   // Reaction
-		final String stId = "R-HSA-354192";   // Integrin alphaIIb beta3 signaling (pathway)
-//		final String stId = "R-HSA-8963743";  // Digestion and absorption (small, 50 pages)
-//		final String stId = "R-HSA-112316";  // Neuronal system (medium, 300 pages)
-//		final String stId = "R-HSA-1430728";  // Metabolism (large, 3000 pages)
+		// Reaction
+//		final DocumentArgs args = new DocumentArgs("R-HSA-901006");
+
+		// Integrin alphaIIb beta3 signaling (pathway)
+//		final DocumentArgs args = new DocumentArgs("R-HSA-354192").setMaxLevel(1);
+
+		// Digestion and absorption (small, 50 pages)
+//		final DocumentArgs args = new DocumentArgs("R-HSA-8963743").setMaxLevel(null);
+
+		// Neuronal system (medium, 300 pages)
+		final DocumentArgs args = new DocumentArgs("R-HSA-112316").setMaxLevel(null);
+
+		// Metabolism (large, 3000 pages)
+//		final DocumentArgs args = new DocumentArgs("R-HSA-1430728").setMaxLevel(null);
+
+//		final AnalysisStoredResult result = new TokenUtils(ANALYSIS_PATH).getFromToken(TOKEN_OVER);
+		final AnalysisStoredResult result = null;
 		try {
 			final long start = System.nanoTime();
-			final File file = new File(TEST_DOCS, stId + ".pdf");
-			final AnalysisStoredResult result = new TokenUtils(ANALYSIS_PATH).getFromToken(TOKEN_OVER);
-			documentExporter.export(new DocumentArgs(stId).setMaxLevel(15), null, new FileOutputStream(file));
+			final File file = new File(TEST_DOCS, args.getStId() + ".pdf");
+			documentExporter.export(args, result, new FileOutputStream(file));
 			final long end = System.nanoTime();
 			System.out.println(formatTime(end - start));
 		} catch (FileNotFoundException e) {

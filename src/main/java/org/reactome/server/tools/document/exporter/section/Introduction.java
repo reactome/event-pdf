@@ -15,16 +15,16 @@ import org.reactome.server.tools.document.exporter.util.HtmlParser;
 import org.reactome.server.tools.document.exporter.util.References;
 import org.reactome.server.tools.document.exporter.util.Texts;
 
-import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * Section Introduction contains the analysis introduction and Reactome relative
  * publications
  */
 public class Introduction implements Section {
-
-	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
 
 	private static final String INTRODUCTION = Texts.getProperty("introduction");
 	private GeneralService generalService;
@@ -60,7 +60,6 @@ public class Introduction implements Section {
 		final String counter = getCounterText(pathways, reactions);
 		final String version = "Reactome graph database version: " + generalService.getDBInfo().getVersion();
 		document.add(new Div()
-				.add(profile.getParagraph(DATE_FORMAT.format(new Date())))
 				.add(profile.getParagraph(version))
 				.add(profile.getParagraph(counter)
 						.add(" (")
