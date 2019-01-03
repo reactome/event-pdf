@@ -13,7 +13,6 @@ import com.itextpdf.layout.hyphenation.HyphenationConfig;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.apache.commons.io.IOUtils;
-import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.tools.document.exporter.exception.DocumentExporterException;
 
 import java.io.IOException;
@@ -37,23 +36,25 @@ public class PdfProfile {
 	private float TITLE;
 	private float TABLE;
 
-	private PdfFont REGULAR;
-	private PdfFont BOLD;
-	private PdfFont LIGHT;
+	private PdfFont italic;
+	private PdfFont regular;
+	private PdfFont bold;
+	private PdfFont light;
 	private MarginProfile margin;
-
-	private int toc = 1;
 
 	public PdfProfile() {
 		// Every PDF must load the fonts again, as they are hold by one, and only one, document
 		try {
+			final String style = "Crimson";
 			byte[] bytes;
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/SourceSerifPro-Regular.ttf"));
-			REGULAR = PdfFontFactory.createFont(bytes, true);
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/SourceSerifPro-Bold.ttf"));
-			BOLD = PdfFontFactory.createFont(bytes, true);
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/SourceSerifPro-Semibold.ttf"));
-			LIGHT = PdfFontFactory.createFont(bytes, true);
+			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/" + style + "/regular.ttf"));
+			regular = PdfFontFactory.createFont(bytes, true);
+			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/" + style + "/bold.ttf"));
+			bold = PdfFontFactory.createFont(bytes, true);
+			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/" + style + "/light.ttf"));
+			light = PdfFontFactory.createFont(bytes, true);
+			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/" + style + "/italic.ttf"));
+			italic = PdfFontFactory.createFont(bytes, true);
 		} catch (IOException e) {
 			throw new DocumentExporterException("Internal error. Couldn't read fonts", e);
 		}
@@ -64,7 +65,7 @@ public class PdfProfile {
 	}
 
 	public PdfFont getBold() {
-		return BOLD;
+		return bold;
 	}
 
 	public Color getLinkColor() {
@@ -90,16 +91,16 @@ public class PdfProfile {
 
 	public Paragraph getParagraph() {
 		return new Paragraph()
-				.setFont(REGULAR)
-//				.setKeepTogether(true)
+				.setFont(regular)
 				.setFontSize(fontSize)
-				.setMultipliedLeading(1.2f)
 				.setHyphenation(HYPHENATION_CONFIG)
+				.setMultipliedLeading(1.1f)
 				.setTextAlignment(TextAlignment.JUSTIFIED);
 	}
 
 	public Paragraph getCitation() {
 		return getParagraph()
+				.setKeepTogether(true)
 				.setFontSize(fontSize - 1)
 				.setFirstLineIndent(-15)
 				.setPaddingLeft(15)
@@ -107,44 +108,36 @@ public class PdfProfile {
 	}
 
 	public Paragraph getH1(String text) {
-		return getH1(text, true);
-	}
-
-	public Paragraph getH1(String text, boolean indexed) {
-		return new Paragraph(indexed ? (toc++ + ". " + text) : text)
-				.setFont(BOLD)
+		return getParagraph(text)
+				.setFont(bold)
 				.setFontSize(H1)
-				.setMultipliedLeading(2f)
-				.setHyphenation(HYPHENATION_CONFIG)
+//				.setMultipliedLeading(1.5f)
 				.setTextAlignment(TextAlignment.LEFT);
 	}
 
 	public Paragraph getH2(String text) {
-		return new Paragraph(text)
-				.setFont(BOLD)
+		return getParagraph(text)
+				.setFont(bold)
 				.setFontSize(H2)
-				.setMultipliedLeading(1.5f)
-				.setHyphenation(HYPHENATION_CONFIG)
+//				.setMultipliedLeading(1.4f)
 				.setTextAlignment(TextAlignment.LEFT);
 	}
 
 	public Paragraph getH3(String text) {
-		return new Paragraph(text)
-				.setFont(BOLD)
+		return getParagraph(text)
+				.setFont(bold)
 				.setFontSize(H3)
-				.setMultipliedLeading(1.2f)
-				.setHyphenation(HYPHENATION_CONFIG)
+//				.setMultipliedLeading(1.2f)
 				.setTextAlignment(TextAlignment.LEFT);
 	}
 
 
 	public Paragraph getTitle(String text) {
-		return new Paragraph(text)
+		return getParagraph(text)
 				.setFontSize(TITLE)
-				.setFont(LIGHT)
+				.setFont(light)
 				.setTextAlignment(TextAlignment.CENTER)
-				.setHyphenation(HYPHENATION_CONFIG)
-				.setMultipliedLeading(2);
+				.setMultipliedLeading(1.2f);
 
 	}
 
@@ -156,29 +149,11 @@ public class PdfProfile {
 				.setBackgroundColor(row % 2 == 0 ? null : LIGHT_GRAY);
 		if (text != null)
 			cell.add(new Paragraph(text)
-					.setFont(REGULAR)
+					.setFont(regular)
 					.setFontSize(TABLE)
 					.setTextAlignment(TextAlignment.CENTER)
 					.setMultipliedLeading(1.0f));
 		return cell;
-	}
-
-	public Cell getPathwayCell(int i, PathwayNodeSummary pathway) {
-		final Cell cell = new Cell()
-				.setKeepTogether(true)
-				.setVerticalAlignment(VerticalAlignment.MIDDLE)
-				.setBorder(Border.NO_BORDER)
-				.setBackgroundColor(i % 2 == 0 ? null : LIGHT_GRAY);
-		cell.add(new Paragraph(pathway.getName())
-				.setFont(BOLD)
-				.setFontSize(TABLE)
-				.setFontColor(LINK_COLOR)
-				.setTextAlignment(TextAlignment.LEFT)
-				.setMultipliedLeading(1.0f))
-				.setAction(PdfAction.createGoTo(pathway.getStId()))
-				.setPadding(5);
-		return cell;
-
 	}
 
 	public List getList(java.util.List<Paragraph> paragraphList) {
@@ -195,11 +170,15 @@ public class PdfProfile {
 	}
 
 	public PdfFont getRegularFont() {
-		return REGULAR;
+		return regular;
 	}
 
 	public PdfFont getBoldFont() {
-		return BOLD;
+		return bold;
+	}
+
+	public PdfFont getItalic() {
+		return italic;
 	}
 
 	public Cell getHeaderCell(String text) {
@@ -212,7 +191,7 @@ public class PdfProfile {
 				.setVerticalAlignment(VerticalAlignment.MIDDLE)
 				.setBorder(new SolidBorder(DeviceGray.WHITE, 1))
 				.setFontColor(DeviceGray.WHITE)
-				.setFont(BOLD)
+				.setFont(bold)
 				.setFontSize(TABLE + 1)
 				.setBackgroundColor(REACTOME_COLOR);
 		if (text != null)

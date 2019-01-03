@@ -54,8 +54,8 @@ public class References {
 		// <i> for italic
 		final Paragraph citation = profile.getCitation();
 		citation.add(String.format("%s (%d). %s", getAuthorList(reference.getAuthor()), reference.getYear(), trim(reference.getTitle())));
-		if (reference.getJournal() != null) citation.add(". ").add(new Text(reference.getJournal().trim()).setItalic());
-		if (reference.getVolume() != null) citation.add(new Text(", " + reference.getVolume()).setItalic());
+		if (reference.getJournal() != null) citation.add(". ").add(new Text(reference.getJournal().trim()).setFont(profile.getItalic()));
+		if (reference.getVolume() != null) citation.add(new Text(", " + reference.getVolume()).setFont(profile.getItalic()));
 		if (reference.getPages() != null) citation.add(", " + reference.getPages().trim());
 		citation.add(".");
 		if (reference.getUrl() != null) citation.add(" ").add(profile.getLink(PUBMED, reference.getUrl()));
@@ -78,7 +78,7 @@ public class References {
 		if (book.getChapterTitle() != null) citation.add(String.format("%s, ", book.getChapterTitle()));
 		citation.add(trim(book.getTitle()));
 		if (book.getPublisher() != null)
-			citation.add(new Text(". " + book.getPublisher().getName().get(0)).setItalic());
+			citation.add(new Text(". " + book.getPublisher().getName().get(0)).setFont(profile.getItalic()));
 		if (book.getPages() != null) {
 			if (book.getPublisher() != null) citation.add(", ");
 			else citation.add(". ");

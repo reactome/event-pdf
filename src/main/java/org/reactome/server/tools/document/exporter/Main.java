@@ -83,7 +83,9 @@ public class Main {
 		final ProgressBar bar = new ProgressBar();
 		for (TopLevelPathway target : targets) {
 			if (verbose) {
-				bar.setProgress((double) i / targets.size(), String.format("%-3d / %-3d\t%-15s\t%s", i + 1, targets.size(), target.getStId(), target.getDisplayName()));
+				final double progress = (double) i / targets.size();
+				final String message = String.format("%-3d / %-3d\t%-15s\t%s", i + 1, targets.size(), target.getStId(), target.getDisplayName());
+				bar.setProgress(progress, message);
 			}
 			final DocumentArgs documentArgs = new DocumentArgs(target.getStId()).setMaxLevel(null);
 			final File dest = new File(output, target.getDisplayName() + ".pdf");

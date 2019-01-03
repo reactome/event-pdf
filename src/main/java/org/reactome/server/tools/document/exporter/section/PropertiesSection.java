@@ -31,7 +31,7 @@ public class PropertiesSection implements Section {
 		final PdfProfile profile = content.getPdfProfile();
 		final AnalysisData analysisData = content.getAnalysisData();
 		document.add(new AreaBreak());
-		document.add(profile.getH1("Analysis properties", false).setDestination("properties"));
+		document.add(profile.getH1("Analysis properties").setDestination("properties"));
 		final List<Paragraph> list = new LinkedList<>();
 
 		final String text = Texts.getProperty(analysisData.getResult().getSummary().getType().toLowerCase());

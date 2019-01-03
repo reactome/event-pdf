@@ -36,7 +36,7 @@ public class TableOfContent implements Section {
 		final DocumentArgs args = content.getArgs();
 		document.add(new AreaBreak());
 		final int page = document.getPdfDocument().getPageNumber(document.getPdfDocument().getLastPage());
-		document.add(profile.getH1("Table of Contents", false).setDestination("toc"));
+		document.add(profile.getH1("Table of Contents").setDestination("toc"));
 		writeTocEntry(document, profile, "Introduction", "introduction", 1);
 		if (content.getAnalysisData() != null) {
 			writeTocEntry(document, profile, "Analysis properties", "properties", 2);
