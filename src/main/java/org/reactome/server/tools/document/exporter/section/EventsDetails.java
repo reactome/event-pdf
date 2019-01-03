@@ -64,7 +64,7 @@ public class EventsDetails implements Section {
 		addType(document, event, profile);
 		addDatabaseObjectList(document, "Cellular compartments", event.getCompartment(), profile);
 		addRelatedDiseases(document, event, profile);
-		addDatabaseObjectList(document, "Inferred from", event.getInferredFrom(), profile);
+		addInferred(document, event, profile, content);
 
 		addDiagram(document, event, analysisData);
 
@@ -101,6 +101,22 @@ public class EventsDetails implements Section {
 
 	private List<Event> inDocument(List<Event> events, Set<Event> contentEvents) {
 		return events.stream().filter(contentEvents::contains).collect(Collectors.toList());
+	}
+
+	private void addInferred(Document document, Event event, PdfProfile profile, DocumentContent content) {
+		if (event.getInferredFrom() == null || event.getInferredFrom().isEmpty()) return;
+		final List<Event> events = new ArrayList<>(event.getInferredFrom());
+		final Paragraph paragraph = profile.getParagraph()
+				.add(new Text("Inferred from" + ": ").setFont(profile.getBoldFont()));
+		for (int i = 0; i < events.size(); i++) {
+			final Event ev = events.get(i);
+			if (content.getEvents().contains(ev))
+				paragraph.add(profile.getGoTo(events.get(i).getDisplayName(), ev.getStId()));
+			else
+				paragraph.add(profile.getLink(events.get(i).getDisplayName(), content.getServer() + CONTENT_DETAIL + ev.getStId()));
+			if (i < events.size() - 1) paragraph.add(", ");
+		}
+		document.add(paragraph);
 	}
 
 	private void addEvents(Document document, PdfProfile profile, String title, List<Event> events) {
@@ -189,9 +205,7 @@ public class EventsDetails implements Section {
 	private BlockElement getTitle(PdfProfile profile, Event event, String server) {
 		return profile.getH3(event.getDisplayName())
 				.add(" (")
-				.add(new Text(event.getStId())
-						.setAction(PdfAction.createURI(server + CONTENT_DETAIL + event.getStId()))
-						.setFontColor(profile.getLinkColor()))
+				.add(profile.getLink(event.getStId(), server + CONTENT_DETAIL + event.getStId()))
 				.add(")")
 				.setDestination(event.getStId());
 	}
@@ -286,7 +300,7 @@ public class EventsDetails implements Section {
 
 	private void addReferences(Document document, Event event, PdfProfile profile) {
 		if (event.getLiteratureReference().isEmpty()) return;
-		document.add(profile.getH3("Literature references"));
+		document.add(profile.getH3("Literature references").setKeepWithNext(true));
 		event.getLiteratureReference().stream()
 				.limit(5)
 				.map(publication -> References.getPublication(profile, publication))
