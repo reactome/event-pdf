@@ -102,7 +102,7 @@ public class PdfProfile {
 		return getParagraph()
 				.setFontSize(fontSize - 1)
 				.setFirstLineIndent(-15)
-				.setPaddingLeft(30)
+				.setPaddingLeft(15)
 				.setMultipliedLeading(1);
 	}
 
