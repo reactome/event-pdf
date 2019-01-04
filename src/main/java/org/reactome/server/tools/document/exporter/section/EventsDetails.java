@@ -308,7 +308,6 @@ public class EventsDetails implements Section {
 	}
 
 	private void addEditTable(Document document, Event event, PdfProfile profile) {
-		final Div div = new Div().setKeepTogether(true).add(profile.getH3("Editions"));
 		final java.util.List<Edition> editions = new LinkedList<>();
 		if (event.getCreated() != null)
 			editions.add(new Edition("Created", event.getCreated()));
@@ -344,6 +343,7 @@ public class EventsDetails implements Section {
 		final Table table = new Table(new float[]{0.2f, 0.2f, 1f});
 		table.useAllAvailableWidth();
 		table.setBorder(Border.NO_BORDER);
+		table.setKeepTogether(true);
 		for (int row = 0; row < edits.size(); row++) {
 			java.util.List<Edition> list = edits.get(row);
 			final String date = list.get(0).getDate();
@@ -355,8 +355,7 @@ public class EventsDetails implements Section {
 			table.addCell(profile.getBodyCell(action, row));
 			table.addCell(profile.getBodyCell(authors, row));
 		}
-		div.add(table);
-		document.add(div);
+		document.add(profile.getH3("Editions").setKeepWithNext(true)).add(table);
 	}
 
 	private class Edition {

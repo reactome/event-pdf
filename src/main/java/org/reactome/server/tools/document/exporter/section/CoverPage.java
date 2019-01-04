@@ -34,7 +34,6 @@ public class CoverPage implements Section {
 		// Empty space
 		document.add(profile.getTitle(""));
 		document.add(profile.getTitle(event.getDisplayName()));
-		document.add(profile.getTitle(""));
 		if (event instanceof Pathway)
 			Diagrams.insertDiagram(event.getStId(), content.getAnalysisData(), document);
 		document.add(profile.getTitle(""));

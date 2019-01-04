@@ -41,23 +41,28 @@ public class PdfProfile {
 	private PdfFont bold;
 	private PdfFont light;
 	private MarginProfile margin;
+	private static final String FONT_PATH_FORMAT = "/fonts/%s/%s-%s.ttf";
+	private static final String FONT_NAME = "SourceSerifPro";
 
 	public PdfProfile() {
 		// Every PDF must load the fonts again, as they are hold by one, and only one, document
 		try {
-			final String style = "Crimson";
 			byte[] bytes;
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/" + style + "/regular.ttf"));
+			bytes = IOUtils.toByteArray(getClass().getResourceAsStream(getFontPath("Regular")));
 			regular = PdfFontFactory.createFont(bytes, true);
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/" + style + "/bold.ttf"));
+			bytes = IOUtils.toByteArray(getClass().getResourceAsStream(getFontPath("Bold")));
 			bold = PdfFontFactory.createFont(bytes, true);
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/" + style + "/light.ttf"));
+			bytes = IOUtils.toByteArray(getClass().getResourceAsStream(getFontPath("Semibold")));
 			light = PdfFontFactory.createFont(bytes, true);
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream("/fonts/" + style + "/italic.ttf"));
+			bytes = IOUtils.toByteArray(getClass().getResourceAsStream(getFontPath("It")));
 			italic = PdfFontFactory.createFont(bytes, true);
 		} catch (IOException e) {
 			throw new DocumentExporterException("Internal error. Couldn't read fonts", e);
 		}
+	}
+
+	private String getFontPath(String style) {
+		return String.format(FONT_PATH_FORMAT, FONT_NAME, FONT_NAME, style);
 	}
 
 	public MarginProfile getMargin() {
@@ -111,7 +116,7 @@ public class PdfProfile {
 		return getParagraph(text)
 				.setFont(bold)
 				.setFontSize(H1)
-//				.setMultipliedLeading(1.5f)
+				.setMultipliedLeading(1.5f)
 				.setTextAlignment(TextAlignment.LEFT);
 	}
 
@@ -119,7 +124,7 @@ public class PdfProfile {
 		return getParagraph(text)
 				.setFont(bold)
 				.setFontSize(H2)
-//				.setMultipliedLeading(1.4f)
+				.setMultipliedLeading(1.4f)
 				.setTextAlignment(TextAlignment.LEFT);
 	}
 
@@ -137,7 +142,7 @@ public class PdfProfile {
 				.setFontSize(TITLE)
 				.setFont(light)
 				.setTextAlignment(TextAlignment.CENTER)
-				.setMultipliedLeading(1.2f);
+				.setMultipliedLeading(1.7f);
 
 	}
 
