@@ -77,7 +77,7 @@ public class DocumentExporter {
 			document.getPdfDocument().getDocumentInfo().setTitle(String.format("Reactome | %s (%s)", event.getDisplayName(), args.getStId()));
 			document.getPdfDocument().getDocumentInfo().setSubject(String.format("Reactome | %s (%s)", event.getDisplayName(), args.getStId()));
 			document.getPdfDocument().getDocumentInfo().setKeywords("pathway,reactome,reaction");
-			document.setFont(pdfProfile.getRegularFont());
+			document.setFont(pdfProfile.getRegular());
 			document.setMargins(pdfProfile.getMargin().getTop(),
 					pdfProfile.getMargin().getRight(),
 					pdfProfile.getMargin().getBottom(),

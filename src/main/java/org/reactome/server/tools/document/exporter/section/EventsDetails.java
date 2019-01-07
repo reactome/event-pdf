@@ -3,7 +3,10 @@ package org.reactome.server.tools.document.exporter.section;
 import com.itextpdf.kernel.pdf.PdfPage;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.*;
+import com.itextpdf.layout.element.AreaBreak;
+import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.element.Table;
+import com.itextpdf.layout.element.Text;
 import org.reactome.server.analysis.core.model.AnalysisType;
 import org.reactome.server.analysis.core.result.model.FoundEntities;
 import org.reactome.server.analysis.core.result.model.FoundEntity;
@@ -20,7 +23,6 @@ import org.reactome.server.tools.document.exporter.util.HtmlParser;
 import org.reactome.server.tools.document.exporter.util.References;
 import org.reactome.server.tools.document.exporter.util.Tables;
 
-import java.util.List;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -60,8 +62,9 @@ public class EventsDetails implements Section {
 
 		addTitle(document, content, event, profile);
 		addLocation(document, nav, profile, content);
-//		addAlternativeLocations(document, nav, event, profile, content);
+		addStableIdentifier(document, event, profile);
 		addType(document, event, profile);
+//		addAlternativeLocations(document, nav, event, profile, content);
 		addCompartments(document, event, profile);
 		addRelatedDiseases(document, event, profile);
 		addInferred(document, event, profile, content);
@@ -97,11 +100,10 @@ public class EventsDetails implements Section {
 		document.add(getTitle(profile, event, content.getServer()));
 	}
 
-	private BlockElement getTitle(PdfProfile profile, Event event, String server) {
+	private Paragraph getTitle(PdfProfile profile, Event event, String server) {
 		return profile.getH3(event.getDisplayName())
-				.add(" (")
-				.add(profile.getLink(event.getStId(), server + CONTENT_DETAIL + event.getStId()))
-				.add(")")
+				.add(" ")
+				.add(profile.getLink("\u2197", server + CONTENT_DETAIL + event.getStId()))
 				.setDestination(event.getStId());
 	}
 
@@ -112,7 +114,7 @@ public class EventsDetails implements Section {
 
 	private Paragraph getLocationParagraph(List<Event> nav, PdfProfile profile, String prefix, DocumentContent content) {
 		final Paragraph paragraph = profile.getParagraph()
-				.add(new Text(prefix + ": ").setFont(profile.getBoldFont()));
+				.add(new Text(prefix + ": ").setFont(profile.getBold()));
 		for (int i = 0; i < nav.size(); i++) {
 			if (i > 0) paragraph.add(" \u2192 ");
 			final Event ev = nav.get(i);
@@ -155,18 +157,25 @@ public class EventsDetails implements Section {
 		return navs;
 	}
 
+	private void addStableIdentifier(Document document, Event event, PdfProfile profile) {
+		document.add(profile.getParagraph()
+				.add(new Text("Stable identifier: ").setFont(profile.getBold()))
+				.add(event.getStId()));
+
+	}
+
 	private void addType(Document document, Event event, PdfProfile profile) {
 		if (event instanceof ReactionLikeEvent) {
 			final String type = ((ReactionLikeEvent) event).getCategory();
 			final Paragraph paragraph = profile.getParagraph()
-					.add(new Text("Type: ").setFont(profile.getBoldFont()))
+					.add(new Text("Type: ").setFont(profile.getBold()))
 					.add(type);
 			document.add(paragraph);
 		}
 	}
 
 	private void addCompartments(Document document, Event event, PdfProfile profile) {
-		addDatabaseObjectList(document, "Cellular compartments", event.getCompartment(), profile);
+		addDatabaseObjectList(document, "Compartments", event.getCompartment(), profile);
 	}
 
 	private void addRelatedDiseases(Document document, Event event, PdfProfile profile) {
@@ -184,7 +193,7 @@ public class EventsDetails implements Section {
 					.map(DatabaseObject::getDisplayName)
 					.collect(Collectors.joining(", "));
 			final Paragraph paragraph = profile.getParagraph()
-					.add(new Text(title + ": ").setFont(profile.getBoldFont()))
+					.add(new Text(title + ": ").setFont(profile.getBold()))
 					.add(body);
 			document.add(paragraph);
 		}
@@ -194,7 +203,7 @@ public class EventsDetails implements Section {
 		if (event.getInferredFrom() == null || event.getInferredFrom().isEmpty()) return;
 		final List<Event> events = new ArrayList<>(event.getInferredFrom());
 		final Paragraph paragraph = profile.getParagraph()
-				.add(new Text("Inferred from" + ": ").setFont(profile.getBoldFont()));
+				.add(new Text("Inferred from" + ": ").setFont(profile.getBold()));
 		for (int i = 0; i < events.size(); i++) {
 			final Event ev = events.get(i);
 			final String name = String.format("%s (%s)", ev.getDisplayName(), ev.getSpeciesName());
@@ -231,7 +240,7 @@ public class EventsDetails implements Section {
 
 	private void addEvents(Document document, PdfProfile profile, String title, List<Event> events) {
 		if (events.isEmpty()) return;
-		final Paragraph preceding = profile.getParagraph().add(new Text(title + ": ").setFont(profile.getBoldFont()));
+		final Paragraph preceding = profile.getParagraph().add(new Text(title + ": ").setFont(profile.getBold()));
 		for (int i = 0; i < events.size(); i++) {
 			final Event ev = events.get(i);
 			if (i > 0) preceding.add(", ");

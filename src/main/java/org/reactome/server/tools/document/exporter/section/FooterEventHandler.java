@@ -36,8 +36,8 @@ public class FooterEventHandler implements IEventHandler {
 		final String paging = String.format("Page %d", pageNumber - 1);
 		final float yCenter = document.getBottomMargin() * 0.5f;
 		final float width = page.getMediaBox().getWidth();
-		final float pagingWidth = profile.getRegularFont().getWidth(paging, profile.getFontSize()) + 1;
-		final float linkWidth = profile.getRegularFont().getWidth(serverName, profile.getFontSize()) + 1;
+		final float pagingWidth = profile.getRegular().getWidth(paging, profile.getFontSize()) + 1;
+		final float linkWidth = profile.getRegular().getWidth(serverName, profile.getFontSize()) + 1;
 		final Paragraph p = profile.getParagraph(serverName)
 				.setFontColor(profile.getLinkColor())
 				.setAction(PdfAction.createURI(serverName))

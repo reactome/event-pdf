@@ -176,12 +176,8 @@ public class PdfProfile {
 		return list;
 	}
 
-	public PdfFont getRegularFont() {
+	public PdfFont getRegular() {
 		return regular;
-	}
-
-	public PdfFont getBoldFont() {
-		return bold;
 	}
 
 	public PdfFont getItalic() {
