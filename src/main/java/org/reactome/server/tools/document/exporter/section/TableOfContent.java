@@ -1,12 +1,11 @@
 package org.reactome.server.tools.document.exporter.section;
 
-import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
+import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.AreaBreak;
+import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.element.Tab;
-import com.itextpdf.layout.element.TabStop;
-import com.itextpdf.layout.property.TabAlignment;
+import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.Pathway;
@@ -22,7 +21,15 @@ import java.util.Map;
 
 public class TableOfContent implements Section {
 
-	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
+	private static final java.util.List<String> classOrder = Arrays.asList(
+			"TopLevelPathway",
+			"Pathway",
+			"Reaction",
+			"Depolymerisation",
+			"Polymerisation",
+			"BlackBoxEvent",
+			"FailedReaction"
+	);
 	private Map<Long, Integer> pages;
 
 	public TableOfContent(Map<Long, Integer> pages) {
@@ -38,55 +45,59 @@ public class TableOfContent implements Section {
 		document.add(new AreaBreak());
 		final int page = document.getPdfDocument().getPageNumber(document.getPdfDocument().getLastPage());
 		document.add(profile.getH1("Table of Contents").setDestination("toc"));
-		writeTocEntry(document, profile, "Introduction", "introduction", 1);
+		final Table table = new Table(2);
+		table.setBorder(Border.NO_BORDER);
+		writeFreeTocEntry(table, profile, "Introduction", "introduction", 1);
 		if (content.getAnalysisData() != null) {
-			writeTocEntry(document, profile, "Analysis properties", "properties", 2);
-			writeTocEntry(document, profile, "Details", "details", 3);
+			writeFreeTocEntry(table, profile, "Analysis properties", "properties", 2);
+			writeFreeTocEntry(table, profile, "Details", "details", 3);
 		} else {
-			writeTocEntry(document, profile, "Details", "details", 2);
+			writeFreeTocEntry(table, profile, "Details", "details", 2);
 		}
-		addToToc(document, profile, event, 0, args.getMaxLevel());
-		writeTocEntry(document, profile, "Table of Contents", "toc", page - 1);
+		addToToc(table, profile, event, 0, args.getMaxLevel());
+		writeFreeTocEntry(table, profile, "Table of Contents", "toc", page - 1);
+		document.add(table);
 	}
 
-	private void addToToc(Document document, PdfProfile profile, Event pathway, int level, int maxLevel) {
-		writeTocEntry(document, profile, level, pathway);
+	private void addToToc(Table table, PdfProfile profile, Event pathway, int level, int maxLevel) {
+		writeEventTocEntry(table, profile, level, pathway);
 		if (pathway instanceof Pathway && level < maxLevel) {
 			final List<Event> events = ((Pathway) pathway).getHasEvent();
 			events.sort(Comparator.comparingInt(o -> classOrder.indexOf(o.getSchemaClass())));
 			for (Event ev : events) {
-				addToToc(document, profile, ev, level + 1, maxLevel);
+				addToToc(table, profile, ev, level + 1, maxLevel);
 			}
 		}
 	}
 
-	private void writeTocEntry(Document document, PdfProfile profile, String text, String destination, int page) {
-		final Paragraph paragraph = profile.getParagraph()
-				.addTabStops(new TabStop(1000, TabAlignment.RIGHT))
-				.setTextAlignment(TextAlignment.LEFT)
-				.setMultipliedLeading(1f)
-				.add(text)
-				.setAction(PdfAction.createGoTo(destination))
-				.setFontColor(profile.getLinkColor())
-				.add(new Tab())
-				.add(String.valueOf(page));
-		document.add(paragraph);
+	private void writeFreeTocEntry(Table table, PdfProfile profile, String text, String destination, int page) {
+		final Paragraph p = getTocParagraph(profile, 0)
+				.add(profile.getGoTo(text, destination));
+		final Paragraph p2 = getTocParagraph(profile, 0)
+				.setTextAlignment(TextAlignment.RIGHT)
+				.add(profile.getGoTo(String.valueOf(page), destination));
+		table.addCell(new Cell().add(p).setBorder(Border.NO_BORDER).setPaddingRight(10f))
+				.addCell(new Cell().add(p2).setBorder(Border.NO_BORDER));
 	}
 
-	private void writeTocEntry(Document document, PdfProfile profile, int level, Event event) {
-		final Paragraph paragraph = profile.getParagraph()
-				.setPaddingLeft(level * 10)
-				.addTabStops(new TabStop(1000, TabAlignment.RIGHT))
-				.setTextAlignment(TextAlignment.LEFT)
-				.setMultipliedLeading(1f)
+	private void writeEventTocEntry(Table table, PdfProfile profile, int level, Event event) {
+		final Paragraph p = getTocParagraph(profile, level)
 				.add(Images.get(event.getSchemaClass(), profile.getFontSize() - 1))
-				.add(" ")
-				.add(event.getDisplayName())
-				.setAction(PdfAction.createGoTo(event.getStId()))
-				.setFontColor(profile.getLinkColor())
-				.add(new Tab())
-				.add(String.valueOf(pages.get(event.getId())));
-		document.add(paragraph);
+				.add("   ")  // large space
+				.add(profile.getGoTo(event.getDisplayName(), event.getStId()));
+		final Paragraph p2 = getTocParagraph(profile, 0)
+				.setTextAlignment(TextAlignment.RIGHT)
+				.add(profile.getGoTo(String.valueOf(pages.get(event.getId())), event.getStId()));
+		table.addCell(new Cell().add(p).setBorder(Border.NO_BORDER).setPaddingRight(10f))
+				.addCell(new Cell().add(p2).setBorder(Border.NO_BORDER));
+	}
+
+	private Paragraph getTocParagraph(PdfProfile profile, int level) {
+		return profile.getParagraph()
+				.setFontSize(profile.getFontSize() - 2)
+				.setMultipliedLeading(1.0f)
+				.setBorder(Border.NO_BORDER)
+				.setPaddingLeft(level * 10);
 	}
 
 }

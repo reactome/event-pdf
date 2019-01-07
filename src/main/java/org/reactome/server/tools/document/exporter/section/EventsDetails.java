@@ -32,7 +32,15 @@ import java.util.stream.Collectors;
 public class EventsDetails implements Section {
 
 	private static final String CONTENT_DETAIL = "/content/detail/";
-	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
+	private static final java.util.List<String> classOrder = Arrays.asList(
+			"TopLevelPathway",
+			"Pathway",
+			"Reaction",
+			"Depolymerisation",
+			"Polymerisation",
+			"BlackBoxEvent",
+			"FailedReaction"
+	);
 
 	private final ParticipantService participantService;
 	private final Set<Long> printed = new HashSet<>();
