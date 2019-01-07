@@ -8,6 +8,9 @@ import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
 
+/**
+ * Wrapper for the contents of the document: events, analysis, pdf profile, args, root event
+ */
 public class DocumentContent {
 	private final PdfProfile pdfProfile;
 	private final Event event;
