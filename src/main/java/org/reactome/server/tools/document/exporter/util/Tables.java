@@ -30,6 +30,7 @@ public class Tables {
 	private static final String REVIEWED = "Reviewed";
 	private static final String REVISED = "Revised";
 	private static final List<String> EDIT_ORDER = Arrays.asList(AUTHORED, CREATED, EDITED, MODIFIED, REVIEWED, REVISED);
+	private static final int MAX_COLUMNS = 3;
 
 
 	private Tables() {
@@ -76,16 +77,6 @@ public class Tables {
 				.collect(Collectors.joining(DELIMITER));
 	}
 
-	private static void fillLastRow(Table table, int identifiers, int row, PdfProfile profile) {
-		int n = identifiers % 3;
-		int cols = 0;
-		if (n == 0) cols = 0;
-		if (n == 1) cols = 5;
-		if (n == 2) cols = 2;
-		for (int j = 0; j < cols; j++)
-			table.addCell(profile.getBodyCell("", row));
-	}
-
 	/**
 	 * This is a custom made layout to present n tables side by side. n is selected depending on the number of entities.
 	 *
@@ -95,14 +86,14 @@ public class Tables {
 	 * @return a table divided in n columns with id -> mapsTo sorted by id
 	 */
 	public static Table createEntitiesTable(Collection<FoundEntity> entities, String resource, PdfProfile profile) {
-		int columns = getColumns(entities.size(), 3);
+		int columns = getColumns(entities.size());
 		return createEntitiesTable(entities, resource, profile, columns);
 	}
 
-	private static int getColumns(int elements, int maxColumns) {
+	private static int getColumns(int elements) {
 		int columns = 1;
 		int minRows = elements;
-		for (int i = 2; i <= maxColumns; i++) {
+		for (int i = 2; i <= MAX_COLUMNS; i++) {
 			final int rows = (int) Math.ceil((double) elements / i);
 			if (rows < minRows) {
 				columns = i;
@@ -114,30 +105,31 @@ public class Tables {
 
 	private static Table createEntitiesTable(Collection<FoundEntity> entities, String resource, PdfProfile profile, int columns) {
 		final float[] widths = new float[2 * columns + (columns - 1)];
-		for (int i = 0; i < widths.length; i+= 3) {
+		for (int i = 0; i < widths.length; i += 3) {
 			widths[i] = 2f;
 			widths[i + 1] = 2f;
 			if (i + 2 < widths.length) {
 				widths[i + 2] = 0.1f;
 			}
 		}
-
+		// Create table and add headers
 		final Table table = new Table(widths);
 		table.useAllAvailableWidth();
 		final String mapping = String.format("%s Id", resource);
 		for (int i = 0; i < columns; i++) {
 			table.addHeaderCell(profile.getHeaderCell(INPUT));
 			table.addHeaderCell(profile.getHeaderCell(mapping));
-			if (i + 2 < widths.length) {
+			if (i < columns - 1) {
 				table.addHeaderCell(profile.getBodyCell("", 0));
 			}
 		}
 
-		int i = 0;
+		// Add content
 		final List<FoundEntity> identifiers = entities.stream()
 				.sorted(Comparator.comparing(IdentifierSummary::getId))
 				.distinct()
 				.collect(Collectors.toList());
+		int i = 0;
 		int filled = 0;
 		for (FoundEntity identifier : identifiers) {
 			final int column = i % columns;
@@ -152,9 +144,8 @@ public class Tables {
 			i += 1;
 		}
 		while (filled++ % widths.length != 0) {
-			table.addCell(profile.getBodyCell("", 0));
+			table.addCell(profile.getBodyCell(null, 0));
 		}
-//		fillLastRow(table, identifiers.size(), 0, profile);
 		return table;
 	}
 
@@ -174,17 +165,23 @@ public class Tables {
 		table.addHeaderCell(profile.getHeaderCell(mapping));
 		table.addHeaderCell(profile.getHeaderCell(INTERACTS_WITH));
 		int index = 0;
+		int filled = 0;
 		for (FoundInteractor interactor : sorted) {
 			final int column = index % 2;
 			final int row = index / 2;
 			table.addCell(profile.getBodyCell(interactor.getId(), row));
 			table.addCell(profile.getBodyCell(String.join(DELIMITER, interactor.getMapsTo()), row));
 			table.addCell(profile.getBodyCell(String.join(DELIMITER, interactor.getInteractsWith().getIds()), row));
-			if (column == 0)
+			filled += 3;
+			if (column == 0) {
 				table.addCell(profile.getBodyCell("", 0));
+				filled += 1;
+			}
 			index++;
 		}
-		fillLastRow(table, interactors.size(), 0, profile);
+		while (filled++ % table.getNumberOfColumns() != 0) {
+			table.addCell(profile.getBodyCell(null, 0));
+		}
 		return table;
 	}
 

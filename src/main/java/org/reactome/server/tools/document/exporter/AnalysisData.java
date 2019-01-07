@@ -155,7 +155,7 @@ public class AnalysisData {
 	}
 
 	/**
-	 * Get the list of all resources present in this analysis. If one resource
+	 * Get the list of all resources selected in this analysis. If one resource
 	 * is specified in the analysis, then this is a singleton list. If resource
 	 * is TOTAL, the gets a list with all the resources but TOTAL.
 	 * <p>
