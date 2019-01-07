@@ -1,5 +1,6 @@
 package org.reactome.server.tools.document.exporter.profile;
 
+import com.itextpdf.io.font.PdfEncodings;
 import com.itextpdf.kernel.colors.Color;
 import com.itextpdf.kernel.colors.DeviceGray;
 import com.itextpdf.kernel.colors.DeviceRgb;
@@ -48,21 +49,22 @@ public class PdfProfile {
 		// Every PDF must load the fonts again, as they are hold by one, and only one, document
 		try {
 			byte[] bytes;
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream(getFontPath("Regular")));
-			regular = PdfFontFactory.createFont(bytes, true);
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream(getFontPath("Bold")));
-			bold = PdfFontFactory.createFont(bytes, true);
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream(getFontPath("Semibold")));
-			light = PdfFontFactory.createFont(bytes, true);
-			bytes = IOUtils.toByteArray(getClass().getResourceAsStream(getFontPath("It")));
-			italic = PdfFontFactory.createFont(bytes, true);
+			bytes = getFontBytes("Regular");
+			regular = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
+			bytes = getFontBytes("Bold");
+			bold = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
+			bytes = getFontBytes("Semibold");
+			light = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
+			bytes = getFontBytes("It");
+			italic = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
 		} catch (IOException e) {
 			throw new DocumentExporterException("Internal error. Couldn't read fonts", e);
 		}
 	}
 
-	private String getFontPath(String style) {
-		return String.format(FONT_PATH_FORMAT, FONT_NAME, FONT_NAME, style);
+	private byte[] getFontBytes(String regular) throws IOException {
+		final String fontPath = String.format(FONT_PATH_FORMAT, FONT_NAME, FONT_NAME, regular);
+		return IOUtils.toByteArray(getClass().getResourceAsStream(fontPath));
 	}
 
 	public MarginProfile getMargin() {

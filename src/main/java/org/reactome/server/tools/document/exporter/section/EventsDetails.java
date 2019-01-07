@@ -161,7 +161,7 @@ public class EventsDetails implements Section {
 		final Paragraph paragraph = profile.getParagraph()
 				.add(new Text(prefix + ": ").setFont(profile.getBoldFont()));
 		for (int i = 0; i < nav.size(); i++) {
-			if (i > 0) paragraph.add(" > ");  // current font does not support RIGHTARROW'\u2192'
+			if (i > 0) paragraph.add(" \u2192 ");
 			final Event ev = nav.get(i);
 			final Text text = new Text(ev.getDisplayName());
 			if (content.getEvents().contains(ev)) {

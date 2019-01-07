@@ -33,7 +33,8 @@ public class References {
 	private static final String REFERENCES_PATH = "/texts/references.json";
 	private static final String ET_AL = " et al.";
 	private static final String N_D = "n.d.";
-	private static final String PUBMED = "pubmed";
+//	private static final String PUBMED = "pubmed";
+	private static final String PUBMED = "\u2197";
 	private static final String RETRIEVED_FROM = "Retrieved from";
 
 	private static List<LiteratureReference> references;
