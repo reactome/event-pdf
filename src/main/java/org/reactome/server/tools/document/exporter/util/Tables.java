@@ -23,13 +23,6 @@ public class Tables {
 	private static final String INPUT = "Input";
 	private static final String DELIMITER = ", ";
 	private static final String INTERACTS_WITH = "Interacts with";
-	private static final String AUTHORED = "Authored";
-	private static final String CREATED = "Created";
-	private static final String EDITED = "Edited";
-	private static final String MODIFIED = "Modified";
-	private static final String REVIEWED = "Reviewed";
-	private static final String REVISED = "Revised";
-	private static final List<String> EDIT_ORDER = Arrays.asList(AUTHORED, CREATED, EDITED, MODIFIED, REVIEWED, REVISED);
 	private static final int MAX_COLUMNS = 3;
 
 
@@ -238,7 +231,8 @@ public class Tables {
 			final String action = list.stream()
 					.map(Edition::getType)
 					.distinct()
-					.sorted(Comparator.comparingInt(EDIT_ORDER::indexOf))
+					.sorted(Comparator.comparingInt(Enum::ordinal))
+					.map(EditionType::toString)
 					.collect(Collectors.joining(", "));
 			final List<Person> people = list.stream().map(Edition::getAuthors)
 					.flatMap(Collection::stream)
@@ -259,34 +253,34 @@ public class Tables {
 	private static List<Edition> getEditions(Event event) {
 		final List<Edition> editions = new LinkedList<>();
 		if (event.getCreated() != null)
-			editions.add(new Edition(CREATED, event.getCreated()));
+			editions.add(new Edition(EditionType.CREATED, event.getCreated()));
 		if (event.getModified() != null)
-			editions.add(new Edition(MODIFIED, event.getModified()));
+			editions.add(new Edition(EditionType.MODIFIED, event.getModified()));
 		if (event.getAuthored() != null)
-			event.getAuthored().forEach(instanceEdit -> editions.add(new Edition(AUTHORED, instanceEdit)));
+			event.getAuthored().forEach(instanceEdit -> editions.add(new Edition(EditionType.AUTHORED, instanceEdit)));
 		if (event.getEdited() != null)
-			event.getEdited().forEach(instanceEdit -> editions.add(new Edition(EDITED, instanceEdit)));
+			event.getEdited().forEach(instanceEdit -> editions.add(new Edition(EditionType.EDITED, instanceEdit)));
 		if (event.getReviewed() != null)
-			event.getReviewed().forEach(instanceEdit -> editions.add(new Edition(REVIEWED, instanceEdit)));
+			event.getReviewed().forEach(instanceEdit -> editions.add(new Edition(EditionType.REVIEWED, instanceEdit)));
 		if (event.getRevised() != null)
-			event.getRevised().forEach(instanceEdit -> editions.add(new Edition(REVISED, instanceEdit)));
+			event.getRevised().forEach(instanceEdit -> editions.add(new Edition(EditionType.REVISED, instanceEdit)));
 		editions.removeIf(edition -> edition.getDate() == null || edition.getAuthors() == null || edition.getAuthors().isEmpty());
 		editions.sort(Comparator.comparing(Edition::getDate).thenComparing(edition -> edition.getAuthors().get(0).getSurname()));
 		return editions;
 	}
 
 	private static class Edition {
-		private final String type;
+		private final EditionType type;
 		private final List<Person> authors;
 		private final String date;
 
-		Edition(String type, InstanceEdit instanceEdit) {
+		Edition(EditionType type, InstanceEdit instanceEdit) {
 			this.type = type;
 			this.authors = instanceEdit.getAuthor();
 			this.date = instanceEdit.getDateTime().substring(0, 10);
 		}
 
-		public String getType() {
+		public EditionType getType() {
 			return type;
 		}
 
