@@ -3,9 +3,9 @@ package org.reactome.server.tools.document.exporter.section;
 import com.itextpdf.kernel.pdf.PdfPage;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
-import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.*;
 import org.reactome.server.analysis.core.model.AnalysisType;
+import org.reactome.server.analysis.core.result.model.FoundEntities;
 import org.reactome.server.analysis.core.result.model.FoundEntity;
 import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.graph.domain.model.*;
@@ -28,7 +28,6 @@ import java.util.stream.Collectors;
  */
 public class EventsDetails implements Section {
 
-	private static final List<String> EDIT_ORDER = Arrays.asList("Authored", "Created", "Edited", "Modified", "Reviewed", "Revised");
 	private static final String CONTENT_DETAIL = "/content/detail/";
 	private static final java.util.List<String> classOrder = Arrays.asList("Pathway", "Reaction", "BlackBoxEvent");
 
@@ -71,7 +70,9 @@ public class EventsDetails implements Section {
 		addSummations(document, event, profile);
 		addPrecedingAndFollowing(document, event, profile, content.getEvents());
 		addReferences(document, event, profile);
-		addEditTable(document, event, profile);
+		final Table editionsTable = Tables.createEditionsTable(event, profile);
+		document.add(profile.getH3("Editions").setKeepWithNext(true)).add(editionsTable);
+
 
 		// Analysis tables
 		if (content.getAnalysisData() != null) {
@@ -212,29 +213,37 @@ public class EventsDetails implements Section {
 	}
 
 	private void addFoundElements(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
-		final Collection<FoundEntity> entities = getFoundEntities(analysisData, event);
+		final Collection<FoundEntity> entities = getFoundEntities(analysisData, event, analysisData.getResource());
 		if (entities.isEmpty()) return;
-		final Div div = new Div().setKeepTogether(true);
-		div.add(profile.getH3(String.format("Entities found in the analysis (%d)", entities.size())));
+		document.add(profile.getH3(String.format("Entities found in the analysis (%d)", entities.size())).setKeepWithNext(true));
 		for (String resource : analysisData.getResources()) {
-			addIdentifiers(div, entities, resource, analysisData, profile);
+			final Collection<FoundEntity> elements = getFoundEntities(analysisData, event, resource);
+			if (elements.isEmpty()) continue;
+			document.add(addIdentifiers(elements, resource, analysisData, profile));
 		}
-		document.add(div);
 	}
 
-	private Collection<FoundEntity> getFoundEntities(AnalysisData analysisData, Event event) {
-		if (event instanceof Pathway)
-			return analysisData.getResult().getFoundEntities(event.getStId()).filter(analysisData.getResource()).getIdentifiers();
-		final ReactionLikeEvent reaction = (ReactionLikeEvent) event;
-		if (reaction.getEventOf().isEmpty()) return Collections.emptyList();
-		final List<FoundEntity> identifiers = analysisData.getResult().getFoundEntities(reaction.getEventOf().get(0).getStId()).filter(analysisData.getResource()).getIdentifiers();
-		final Collection<String> idsInEvent = getIdsInReaction(reaction);
-		final Collection<FoundEntity> found = new ArrayList<>();
-		for (FoundEntity identifier : identifiers) {
-			if (identifier.getMapsTo().stream().anyMatch(map -> map.getIds().stream().anyMatch(idsInEvent::contains)))
-				found.add(identifier);
+	private Collection<FoundEntity> getFoundEntities(AnalysisData analysisData, Event event, String resource) {
+		// If event is a pathway we use standard AnalysisStoredResult methods
+		if (event instanceof Pathway) {
+			final FoundEntities entities = analysisData.getResult().getFoundEntities(event.getStId());
+			if (entities == null) return Collections.emptyList();  // Pathway is not in the analysis
+			return entities.filter(resource).getIdentifiers();
 		}
-		return found;
+		// If event is a reaction, we get the elements from the pathway it belongs, and filter them
+		final ReactionLikeEvent reaction = (ReactionLikeEvent) event;
+		if (reaction.getEventOf().isEmpty()) return Collections.emptyList();  // Orphan reaction
+		final FoundEntities entities = analysisData.getResult().getFoundEntities(reaction.getEventOf().get(0).getStId());
+		if (entities == null) return Collections.emptyList();  // Pathway is not in the analysis
+		final List<FoundEntity> identifiers = entities.filter(resource).getIdentifiers();
+		final Collection<String> idsInEvent = getIdsInReaction(reaction);
+		return identifiers.stream()
+				.filter(identifier -> inReaction(idsInEvent, identifier))
+				.collect(Collectors.toList());
+	}
+
+	private boolean inReaction(Collection<String> idsInEvent, FoundEntity identifier) {
+		return identifier.getMapsTo().stream().anyMatch(map -> map.getIds().stream().anyMatch(idsInEvent::contains));
 	}
 
 	private Collection<String> getIdsInReaction(ReactionLikeEvent reaction) {
@@ -243,12 +252,11 @@ public class EventsDetails implements Section {
 				.collect(Collectors.toSet());
 	}
 
-	private void addIdentifiers(Div div, Collection<FoundEntity> elements, String resource, AnalysisData analysisData, PdfProfile profile) {
-		if (elements.isEmpty()) return;
-		final Table identifiersTable = analysisData.getType() == AnalysisType.EXPRESSION
+	private Table addIdentifiers(Collection<FoundEntity> elements, String resource, AnalysisData analysisData, PdfProfile profile) {
+		if (elements.isEmpty()) return null;
+		return analysisData.getType() == AnalysisType.EXPRESSION
 				? Tables.getExpressionTable(elements, resource, profile, analysisData.getResult().getExpressionSummary().getColumnNames())
 				: Tables.createEntitiesTable(elements, resource, profile);
-		div.add(identifiersTable);
 	}
 
 	private void addFoundInteractors(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
@@ -308,78 +316,4 @@ public class EventsDetails implements Section {
 				.forEach(document::add);
 	}
 
-	private void addEditTable(Document document, Event event, PdfProfile profile) {
-		final java.util.List<Edition> editions = new LinkedList<>();
-		if (event.getCreated() != null)
-			editions.add(new Edition("Created", event.getCreated()));
-		if (event.getModified() != null)
-			editions.add(new Edition("Modified", event.getModified()));
-		if (event.getAuthored() != null)
-			event.getAuthored().forEach(instanceEdit -> editions.add(new Edition("Authored", instanceEdit)));
-		if (event.getEdited() != null)
-			event.getEdited().forEach(instanceEdit -> editions.add(new Edition("Edited", instanceEdit)));
-		if (event.getReviewed() != null)
-			event.getReviewed().forEach(instanceEdit -> editions.add(new Edition("Reviewed", instanceEdit)));
-		if (event.getRevised() != null)
-			event.getRevised().forEach(instanceEdit -> editions.add(new Edition("Revised", instanceEdit)));
-		editions.removeIf(edition -> edition.getDate() == null || edition.getAuthors() == null || edition.getAuthors().isEmpty());
-		editions.sort(Comparator.comparing(Edition::getDate).thenComparing(edition -> edition.getAuthors().get(0).getSurname()));
-		final java.util.List<java.util.List<Edition>> edits = new ArrayList<>();
-		ArrayList<Edition> current = new ArrayList<>();
-		current.add(editions.get(0));
-		edits.add(current);
-		for (int i = 1; i < editions.size(); i++) {
-			final Edition edition = editions.get(i);
-			final Edition previousEdition = editions.get(i - 1);
-			if (edition.getDate().equals(previousEdition.getDate())
-					&& (edition.getType().equals(previousEdition.getType()) || edition.getAuthors().equals(previousEdition.getAuthors()))) {
-				current.add(edition);
-			} else {
-				current = new ArrayList<>();
-				current.add(edition);
-				edits.add(current);
-			}
-		}
-
-		final Table table = new Table(new float[]{0.2f, 0.2f, 1f});
-		table.useAllAvailableWidth();
-		table.setBorder(Border.NO_BORDER);
-		table.setKeepTogether(true);
-		for (int row = 0; row < edits.size(); row++) {
-			java.util.List<Edition> list = edits.get(row);
-			final String date = list.get(0).getDate();
-			final String action = list.stream().map(Edition::getType).distinct().sorted(Comparator.comparingInt(EDIT_ORDER::indexOf))
-					.collect(Collectors.joining(", "));
-			final List<Person> people = list.stream().map(Edition::getAuthors).flatMap(Collection::stream).distinct().sorted().collect(Collectors.toList());
-			final String authors = References.getAuthorList(people);
-			table.addCell(profile.getBodyCell(date, row));
-			table.addCell(profile.getBodyCell(action, row));
-			table.addCell(profile.getBodyCell(authors, row));
-		}
-		document.add(profile.getH3("Editions").setKeepWithNext(true)).add(table);
-	}
-
-	private class Edition {
-		private final String type;
-		private final java.util.List<Person> authors;
-		private final String date;
-
-		Edition(String type, InstanceEdit instanceEdit) {
-			this.type = type;
-			this.authors = instanceEdit.getAuthor();
-			this.date = instanceEdit.getDateTime().substring(0, 10);
-		}
-
-		public String getType() {
-			return type;
-		}
-
-		java.util.List<Person> getAuthors() {
-			return authors;
-		}
-
-		String getDate() {
-			return date;
-		}
-	}
 }
