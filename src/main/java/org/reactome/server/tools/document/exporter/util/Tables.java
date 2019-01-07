@@ -292,4 +292,24 @@ public class Tables {
 			return date;
 		}
 	}
+
+	private enum EditionType {
+		AUTHORED("Authored"),
+		CREATED("Created"),
+		EDITED("Edited"),
+		MODIFIED("Modified"),
+		REVIEWED("Reviewed"),
+		REVISED("Revised");
+
+		private String name;
+
+		EditionType(String name) {
+			this.name = name;
+		}
+
+		@Override
+		public String toString() {
+			return name;
+		}
+	}
 }
