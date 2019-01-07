@@ -58,15 +58,19 @@ public class Introduction implements Section {
 		final long pathways = content.getEvents().stream().filter(Pathway.class::isInstance).count();
 		final long reactions = content.getEvents().stream().filter(ReactionLikeEvent.class::isInstance).count();
 		final String counter = getCounterText(pathways, reactions);
-		final String version = "Reactome graph database version: " + generalService.getDBInfo().getVersion();
-		document.add(new Div()
-				.add(profile.getParagraph(version))
-				.add(profile.getParagraph(counter)
-						.add(" (")
-						.add(profile.getGoTo("see Table of Contents", "toc"))
-						.add(")"))
+		final String version = "Reactome database release: " + generalService.getDBInfo().getVersion();
+		final Div bottom = new Div()
 				.setFillAvailableArea(true)
-				.setVerticalAlignment(VerticalAlignment.BOTTOM));
+				.setVerticalAlignment(VerticalAlignment.BOTTOM);
+		bottom.add(profile.getParagraph(version));
+		final Paragraph paragraph = profile.getParagraph(counter);
+		if (content.getArgs().getMaxLevel() > 0)
+			paragraph.add(" (")
+					.add(profile.getGoTo("see Table of Contents", "toc"))
+					.add(")");
+		bottom.add(paragraph);
+
+		document.add(bottom);
 	}
 
 	private String getCounterText(long pathways, long reactions) {

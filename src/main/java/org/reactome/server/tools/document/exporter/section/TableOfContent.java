@@ -31,6 +31,7 @@ public class TableOfContent implements Section {
 
 	@Override
 	public void render(Document document, DocumentContent content) {
+		if (content.getArgs().getMaxLevel() == 0) return;  // skip when only one element
 		final PdfProfile profile = content.getPdfProfile();
 		final Event event = content.getEvent();
 		final DocumentArgs args = content.getArgs();
