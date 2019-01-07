@@ -2,10 +2,7 @@ package org.reactome.server.tools.document.exporter.section;
 
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
-import com.itextpdf.layout.element.AreaBreak;
-import com.itextpdf.layout.element.Cell;
-import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.element.Table;
+import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.Pathway;
@@ -71,9 +68,14 @@ public class TableOfContent implements Section {
 	}
 
 	private void writeFreeTocEntry(Table table, PdfProfile profile, String text, String destination, int page) {
-		final Paragraph p = getTocParagraph(profile, 0)
+		final Paragraph p = profile.getParagraph()
+				.setFontSize(profile.getFontSize() - 1)
+				.setMultipliedLeading(1.0f)
+				.setTextAlignment(TextAlignment.LEFT)
 				.add(profile.getGoTo(text, destination));
-		final Paragraph p2 = getTocParagraph(profile, 0)
+		final Paragraph p2 = profile.getParagraph()
+				.setFontSize(profile.getFontSize() - 1)
+				.setMultipliedLeading(1.0f)
 				.setTextAlignment(TextAlignment.RIGHT)
 				.add(profile.getGoTo(String.valueOf(page), destination));
 		table.addCell(new Cell().add(p).setBorder(Border.NO_BORDER).setPaddingRight(10f))
@@ -81,23 +83,24 @@ public class TableOfContent implements Section {
 	}
 
 	private void writeEventTocEntry(Table table, PdfProfile profile, int level, Event event) {
-		final Paragraph p = getTocParagraph(profile, level)
-				.add(Images.get(event.getSchemaClass(), profile.getFontSize() - 1))
-				.add("   ")  // large space
+		final Image icon = Images.get(event.getSchemaClass(), profile.getFontSize() - 1);
+		// This sub-table will manage to keep the text tabbed from the icon, even if the text has more than one line
+		// so the hierarchy is: table(t1(icon, p1), p2)
+		final Table t1 = new Table(2).setBorder(Border.NO_BORDER);
+		final Paragraph p1 = profile.getParagraph()
+				.setFontSize(profile.getFontSize() - 1)
+				.setMultipliedLeading(1.0f)
+				.setTextAlignment(TextAlignment.LEFT)
 				.add(profile.getGoTo(event.getDisplayName(), event.getStId()));
-		final Paragraph p2 = getTocParagraph(profile, 0)
+		t1.addCell(new Cell().add(icon).setBorder(Border.NO_BORDER))
+				.addCell(new Cell().add(p1).setBorder(Border.NO_BORDER));
+		final Paragraph p2 = profile.getParagraph()
+				.setFontSize(profile.getFontSize() - 1)
+				.setMultipliedLeading(1.0f)
 				.setTextAlignment(TextAlignment.RIGHT)
 				.add(profile.getGoTo(String.valueOf(pages.get(event.getId())), event.getStId()));
-		table.addCell(new Cell().add(p).setBorder(Border.NO_BORDER).setPaddingRight(10f))
+		table.addCell(new Cell().add(t1).setBorder(Border.NO_BORDER).setPaddingRight(20f).setPaddingLeft(10 * level))
 				.addCell(new Cell().add(p2).setBorder(Border.NO_BORDER));
-	}
-
-	private Paragraph getTocParagraph(PdfProfile profile, int level) {
-		return profile.getParagraph()
-				.setFontSize(profile.getFontSize() - 2)
-				.setMultipliedLeading(1.0f)
-				.setBorder(Border.NO_BORDER)
-				.setPaddingLeft(level * 10);
 	}
 
 }
