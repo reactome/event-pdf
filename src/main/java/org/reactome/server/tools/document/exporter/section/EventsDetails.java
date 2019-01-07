@@ -110,10 +110,11 @@ public class EventsDetails implements Section {
 				.add(new Text("Inferred from" + ": ").setFont(profile.getBoldFont()));
 		for (int i = 0; i < events.size(); i++) {
 			final Event ev = events.get(i);
+			final String name = String.format("%s (%s)", ev.getDisplayName(), ev.getSpeciesName());
 			if (content.getEvents().contains(ev))
-				paragraph.add(profile.getGoTo(events.get(i).getDisplayName(), ev.getStId()));
+				paragraph.add(profile.getGoTo(name, ev.getStId()));
 			else
-				paragraph.add(profile.getLink(events.get(i).getDisplayName(), content.getServer() + CONTENT_DETAIL + ev.getStId()));
+				paragraph.add(profile.getLink(name, content.getServer() + CONTENT_DETAIL + ev.getStId()));
 			if (i < events.size() - 1) paragraph.add(", ");
 		}
 		document.add(paragraph);
