@@ -62,7 +62,7 @@ public class EventsDetails implements Section {
 		addLocation(document, nav, profile, content);
 //		addAlternativeLocations(document, nav, event, profile, content);
 		addType(document, event, profile);
-		addDatabaseObjectList(document, "Cellular compartments", event.getCompartment(), profile);
+		addCompartments(document, event, profile);
 		addRelatedDiseases(document, event, profile);
 		addInferred(document, event, profile, content);
 
@@ -71,8 +71,7 @@ public class EventsDetails implements Section {
 		addSummations(document, event, profile);
 		addPrecedingAndFollowing(document, event, profile, content.getEvents());
 		addReferences(document, event, profile);
-		final Table editionsTable = Tables.createEditionsTable(event, profile);
-		document.add(profile.getH3("Editions").setKeepWithNext(true)).add(editionsTable);
+		addEditionsTable(document, event, profile);
 
 
 		// Analysis tables
@@ -94,65 +93,16 @@ public class EventsDetails implements Section {
 		}
 	}
 
-	private void addPrecedingAndFollowing(Document document, Event event, PdfProfile profile, Set<Event> contentEvents) {
-		if (event instanceof ReactionLikeEvent) {
-			addEvents(document, profile, "Preceded by", inDocument(event.getPrecedingEvent(), contentEvents));
-			addEvents(document, profile, "Followed by", inDocument(event.getFollowingEvent(), contentEvents));
-		}
-	}
-
-	private List<Event> inDocument(List<Event> events, Set<Event> contentEvents) {
-		return events.stream().filter(contentEvents::contains).collect(Collectors.toList());
-	}
-
-	private void addInferred(Document document, Event event, PdfProfile profile, DocumentContent content) {
-		if (event.getInferredFrom() == null || event.getInferredFrom().isEmpty()) return;
-		final List<Event> events = new ArrayList<>(event.getInferredFrom());
-		final Paragraph paragraph = profile.getParagraph()
-				.add(new Text("Inferred from" + ": ").setFont(profile.getBoldFont()));
-		for (int i = 0; i < events.size(); i++) {
-			final Event ev = events.get(i);
-			final String name = String.format("%s (%s)", ev.getDisplayName(), ev.getSpeciesName());
-			if (content.getEvents().contains(ev))
-				paragraph.add(profile.getGoTo(name, ev.getStId()));
-			else
-				paragraph.add(profile.getLink(name, content.getServer() + CONTENT_DETAIL + ev.getStId()));
-			if (i < events.size() - 1) paragraph.add(", ");
-		}
-		document.add(paragraph);
-	}
-
-	private void addEvents(Document document, PdfProfile profile, String title, List<Event> events) {
-		if (events.isEmpty()) return;
-		final Paragraph preceding = profile.getParagraph().add(new Text(title + ": ").setFont(profile.getBoldFont()));
-		for (int i = 0; i < events.size(); i++) {
-			final Event ev = events.get(i);
-			if (i > 0) preceding.add(", ");
-			preceding.add(profile.getGoTo(ev.getDisplayName(), ev.getStId()));
-		}
-		document.add(preceding);
-	}
-
 	private void addTitle(Document document, DocumentContent content, Event event, PdfProfile profile) {
 		document.add(getTitle(profile, event, content.getServer()));
 	}
 
-	private void addType(Document document, Event event, PdfProfile profile) {
-		if (event instanceof ReactionLikeEvent) {
-			final String type = ((ReactionLikeEvent) event).getCategory();
-			final Paragraph paragraph = profile.getParagraph()
-					.add(new Text("Type: ").setFont(profile.getBoldFont()))
-					.add(type);
-			document.add(paragraph);
-		}
-	}
-
-	private void addDiagram(Document document, Event event, AnalysisData analysisData) {
-		if (event instanceof Pathway) {
-			Diagrams.insertDiagram(event.getStId(), analysisData, document);
-		} else if (event instanceof ReactionLikeEvent) {
-			Diagrams.insertReaction(event.getStId(), analysisData, document);
-		}
+	private BlockElement getTitle(PdfProfile profile, Event event, String server) {
+		return profile.getH3(event.getDisplayName())
+				.add(" (")
+				.add(profile.getLink(event.getStId(), server + CONTENT_DETAIL + event.getStId()))
+				.add(")")
+				.setDestination(event.getStId());
 	}
 
 	private void addLocation(Document document, List<Event> nav, PdfProfile profile, DocumentContent content) {
@@ -205,111 +155,18 @@ public class EventsDetails implements Section {
 		return navs;
 	}
 
-	private BlockElement getTitle(PdfProfile profile, Event event, String server) {
-		return profile.getH3(event.getDisplayName())
-				.add(" (")
-				.add(profile.getLink(event.getStId(), server + CONTENT_DETAIL + event.getStId()))
-				.add(")")
-				.setDestination(event.getStId());
-	}
-
-	private void addFoundEntities(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
-		// Check the total entities found in the diagram
-		final Collection<FoundEntity> totalEntities = getFoundEntities(analysisData, event, analysisData.getResource());
-		if (totalEntities.isEmpty()) return;
-		document.add(profile.getH3(String.format("Entities found in the analysis (%d)", totalEntities.size())).setKeepWithNext(true));
-		// Split by resource
-		for (String resource : analysisData.getResources()) {
-			final Collection<FoundEntity> entities = getFoundEntities(analysisData, event, resource);
-			if (entities.isEmpty()) continue;
-			document.add(identifiersTable(entities, resource, analysisData, profile));
+	private void addType(Document document, Event event, PdfProfile profile) {
+		if (event instanceof ReactionLikeEvent) {
+			final String type = ((ReactionLikeEvent) event).getCategory();
+			final Paragraph paragraph = profile.getParagraph()
+					.add(new Text("Type: ").setFont(profile.getBoldFont()))
+					.add(type);
+			document.add(paragraph);
 		}
 	}
 
-	private Collection<FoundEntity> getFoundEntities(AnalysisData analysisData, Event event, String resource) {
-		// If event is a pathway we use standard AnalysisStoredResult methods
-		if (event instanceof Pathway) {
-			final FoundEntities entities = analysisData.getResult().getFoundEntities(event.getStId());
-			if (entities == null) return Collections.emptyList();  // Pathway is not in the analysis
-			return entities.filter(resource).getIdentifiers();
-		}
-		// If event is a reaction, we get the elements from the pathway it belongs, and filter them
-		final ReactionLikeEvent reaction = (ReactionLikeEvent) event;
-		if (reaction.getEventOf().isEmpty()) return Collections.emptyList();  // Orphan reaction
-		final FoundEntities entities = analysisData.getResult().getFoundEntities(reaction.getEventOf().get(0).getStId());
-		if (entities == null) return Collections.emptyList();  // Pathway is not in the analysis
-		final List<FoundEntity> identifiers = entities.filter(resource).getIdentifiers();
-		final Collection<String> idsInEvent = getIdsInReaction(reaction);
-		return identifiers.stream()
-				.filter(identifier -> inReaction(idsInEvent, identifier))
-				.collect(Collectors.toList());
-	}
-
-	private boolean inReaction(Collection<String> idsInEvent, FoundEntity identifier) {
-		return identifier.getMapsTo().stream()
-				.flatMap(map -> map.getIds().stream())
-				.anyMatch(idsInEvent::contains);
-	}
-
-	private boolean inReaction(Collection<String> idsInEvent, FoundInteractor identifier) {
-		return identifier.getMapsTo().stream().anyMatch(idsInEvent::contains);
-	}
-
-	private Collection<String> getIdsInReaction(ReactionLikeEvent reaction) {
-		return participantService.getParticipatingReferenceEntities(reaction.getStId()).stream()
-				.map(ReferenceEntity::getIdentifier)
-				.collect(Collectors.toSet());
-	}
-
-	private Table identifiersTable(Collection<FoundEntity> elements, String resource, AnalysisData analysisData, PdfProfile profile) {
-		return analysisData.getType() == AnalysisType.EXPRESSION
-				? Tables.getExpressionTable(elements, resource, profile, analysisData.getResult().getExpressionSummary().getColumnNames())
-				: Tables.createEntitiesTable(elements, resource, profile);
-	}
-
-	private void addFoundInteractors(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
-		// Check the total elements found in the diagram
-		final Collection<FoundInteractor> entities = getFoundInteractors(analysisData, event, analysisData.getResource());
-		if (entities.isEmpty()) return;
-		document.add(profile.getH3(String.format("Interactors found in the analysis (%d)", entities.size())).setKeepWithNext(true));
-		// Split by resource
-		for (String resource : analysisData.getResources()) {
-			final Collection<FoundInteractor> elements = getFoundInteractors(analysisData, event, resource);
-			if (elements.isEmpty()) continue;
-			document.add(addInteractorsTable(elements, resource, profile, analysisData));
-		}
-	}
-
-	private Collection<FoundInteractor> getFoundInteractors(AnalysisData analysisData, Event event, String resource) {
-		// If event is a pathway we use standard AnalysisStoredResult methods
-		if (event instanceof Pathway) {
-			final FoundInteractors interactors = analysisData.getResult().getFoundInteractors(event.getStId());
-			if (interactors == null) return Collections.emptyList();  // Pathway is not in the analysis
-			return interactors.filter(resource).getIdentifiers();
-		}
-		// If event is a reaction, we get the elements from the pathway it belongs, and filter them
-		final ReactionLikeEvent reaction = (ReactionLikeEvent) event;
-		if (reaction.getEventOf().isEmpty()) return Collections.emptyList();  // Orphan reaction
-		final FoundInteractors interactors = analysisData.getResult().getFoundInteractors(reaction.getEventOf().get(0).getStId());
-		if (interactors == null) return Collections.emptyList();  // Pathway is not in the analysis
-		final List<FoundInteractor> identifiers = interactors.filter(resource).getIdentifiers();
-		final Collection<String> idsInEvent = getIdsInReaction(reaction);
-		return identifiers.stream()
-				.filter(identifier -> inReaction(idsInEvent, identifier))
-				.collect(Collectors.toList());
-	}
-
-	private Table addInteractorsTable(Collection<FoundInteractor> interactors, String resource, PdfProfile profile, AnalysisData data) {
-		return (data.getType() == AnalysisType.EXPRESSION)
-				? Tables.getInteractorsExpressionTable(interactors, resource, profile, data.getResult().getExpressionSummary().getColumnNames())
-				: Tables.getInteractorsTable(interactors, resource, profile);
-	}
-
-	private void addSummations(Document document, Event event, PdfProfile profile) {
-		event.getSummation().stream()
-				.map(summation -> HtmlParser.parseText(profile, summation.getText()))
-				.flatMap(Collection::stream)
-				.forEach(document::add);
+	private void addCompartments(Document document, Event event, PdfProfile profile) {
+		addDatabaseObjectList(document, "Cellular compartments", event.getCompartment(), profile);
 	}
 
 	private void addRelatedDiseases(Document document, Event event, PdfProfile profile) {
@@ -333,6 +190,60 @@ public class EventsDetails implements Section {
 		}
 	}
 
+	private void addInferred(Document document, Event event, PdfProfile profile, DocumentContent content) {
+		if (event.getInferredFrom() == null || event.getInferredFrom().isEmpty()) return;
+		final List<Event> events = new ArrayList<>(event.getInferredFrom());
+		final Paragraph paragraph = profile.getParagraph()
+				.add(new Text("Inferred from" + ": ").setFont(profile.getBoldFont()));
+		for (int i = 0; i < events.size(); i++) {
+			final Event ev = events.get(i);
+			final String name = String.format("%s (%s)", ev.getDisplayName(), ev.getSpeciesName());
+			if (content.getEvents().contains(ev))
+				paragraph.add(profile.getGoTo(name, ev.getStId()));
+			else
+				paragraph.add(profile.getLink(name, content.getServer() + CONTENT_DETAIL + ev.getStId()));
+			if (i < events.size() - 1) paragraph.add(", ");
+		}
+		document.add(paragraph);
+	}
+
+	private void addDiagram(Document document, Event event, AnalysisData analysisData) {
+		if (event instanceof Pathway) {
+			Diagrams.insertDiagram(event.getStId(), analysisData, document);
+		} else if (event instanceof ReactionLikeEvent) {
+			Diagrams.insertReaction(event.getStId(), analysisData, document);
+		}
+	}
+
+	private void addSummations(Document document, Event event, PdfProfile profile) {
+		event.getSummation().stream()
+				.map(summation -> HtmlParser.parseText(profile, summation.getText()))
+				.flatMap(Collection::stream)
+				.forEach(document::add);
+	}
+
+	private void addPrecedingAndFollowing(Document document, Event event, PdfProfile profile, Set<Event> contentEvents) {
+		if (event instanceof ReactionLikeEvent) {
+			addEvents(document, profile, "Preceded by", inDocument(event.getPrecedingEvent(), contentEvents));
+			addEvents(document, profile, "Followed by", inDocument(event.getFollowingEvent(), contentEvents));
+		}
+	}
+
+	private void addEvents(Document document, PdfProfile profile, String title, List<Event> events) {
+		if (events.isEmpty()) return;
+		final Paragraph preceding = profile.getParagraph().add(new Text(title + ": ").setFont(profile.getBoldFont()));
+		for (int i = 0; i < events.size(); i++) {
+			final Event ev = events.get(i);
+			if (i > 0) preceding.add(", ");
+			preceding.add(profile.getGoTo(ev.getDisplayName(), ev.getStId()));
+		}
+		document.add(preceding);
+	}
+
+	private List<Event> inDocument(List<Event> events, Set<Event> contentEvents) {
+		return events.stream().filter(contentEvents::contains).collect(Collectors.toList());
+	}
+
 	private void addReferences(Document document, Event event, PdfProfile profile) {
 		if (event.getLiteratureReference().isEmpty()) return;
 		document.add(profile.getH3("Literature references").setKeepWithNext(true));
@@ -340,6 +251,105 @@ public class EventsDetails implements Section {
 				.limit(5)
 				.map(publication -> References.getPublication(profile, publication))
 				.forEach(document::add);
+	}
+
+	private void addEditionsTable(Document document, Event event, PdfProfile profile) {
+		final Table editionsTable = Tables.createEditionsTable(event, profile);
+		document.add(profile.getH3("Editions").setKeepWithNext(true)).add(editionsTable);
+	}
+
+	private void addFoundEntities(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
+		// Check the total entities found in the diagram
+		final Collection<FoundEntity> totalEntities = getFoundEntities(analysisData, event, analysisData.getResource());
+		if (totalEntities.isEmpty()) return;
+		document.add(profile.getH3(String.format("Entities found in the analysis (%d)", totalEntities.size())).setKeepWithNext(true));
+		// Split by resource
+		for (String resource : analysisData.getResources()) {
+			final Collection<FoundEntity> entities = getFoundEntities(analysisData, event, resource);
+			if (entities.isEmpty()) continue;
+			document.add(getEntitiesTable(entities, resource, analysisData, profile));
+		}
+	}
+
+	@SuppressWarnings("Duplicates")
+	private Collection<FoundEntity> getFoundEntities(AnalysisData analysisData, Event event, String resource) {
+		// If event is a pathway we use standard AnalysisStoredResult methods
+		if (event instanceof Pathway) {
+			final FoundEntities entities = analysisData.getResult().getFoundEntities(event.getStId());
+			if (entities == null) return Collections.emptyList();  // Pathway is not in the analysis
+			return entities.filter(resource).getIdentifiers();
+		}
+		// If event is a reaction, we get the elements from the pathway it belongs, and filter them
+		final ReactionLikeEvent reaction = (ReactionLikeEvent) event;
+		if (reaction.getEventOf().isEmpty()) return Collections.emptyList();  // Orphan reaction
+		final FoundEntities entities = analysisData.getResult().getFoundEntities(reaction.getEventOf().get(0).getStId());
+		if (entities == null) return Collections.emptyList();  // Pathway is not in the analysis
+		final List<FoundEntity> identifiers = entities.filter(resource).getIdentifiers();
+		final Collection<String> idsInEvent = getIdsInReaction(reaction);
+		return identifiers.stream()
+				.filter(identifier -> inReaction(idsInEvent, identifier))
+				.collect(Collectors.toList());
+	}
+
+	private Collection<String> getIdsInReaction(ReactionLikeEvent reaction) {
+		return participantService.getParticipatingReferenceEntities(reaction.getStId()).stream()
+				.map(ReferenceEntity::getIdentifier)
+				.collect(Collectors.toSet());
+	}
+
+	private boolean inReaction(Collection<String> idsInEvent, FoundEntity identifier) {
+		return identifier.getMapsTo().stream()
+				.flatMap(map -> map.getIds().stream())
+				.anyMatch(idsInEvent::contains);
+	}
+
+	private Table getEntitiesTable(Collection<FoundEntity> elements, String resource, AnalysisData analysisData, PdfProfile profile) {
+		return analysisData.getType() == AnalysisType.EXPRESSION
+				? Tables.getExpressionTable(elements, resource, profile, analysisData.getResult().getExpressionSummary().getColumnNames())
+				: Tables.createEntitiesTable(elements, resource, profile);
+	}
+
+	private void addFoundInteractors(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
+		// Check the total elements found in the diagram
+		final Collection<FoundInteractor> entities = getFoundInteractors(analysisData, event, analysisData.getResource());
+		if (entities.isEmpty()) return;
+		document.add(profile.getH3(String.format("Interactors found in the analysis (%d)", entities.size())).setKeepWithNext(true));
+		// Split by resource
+		for (String resource : analysisData.getResources()) {
+			final Collection<FoundInteractor> elements = getFoundInteractors(analysisData, event, resource);
+			if (elements.isEmpty()) continue;
+			document.add(getInteractorsTable(elements, resource, profile, analysisData));
+		}
+	}
+
+	@SuppressWarnings("Duplicates")
+	private Collection<FoundInteractor> getFoundInteractors(AnalysisData analysisData, Event event, String resource) {
+		// If event is a pathway we use standard AnalysisStoredResult methods
+		if (event instanceof Pathway) {
+			final FoundInteractors interactors = analysisData.getResult().getFoundInteractors(event.getStId());
+			if (interactors == null) return Collections.emptyList();  // Pathway is not in the analysis
+			return interactors.filter(resource).getIdentifiers();
+		}
+		// If event is a reaction, we get the elements from the pathway it belongs, and filter them
+		final ReactionLikeEvent reaction = (ReactionLikeEvent) event;
+		if (reaction.getEventOf().isEmpty()) return Collections.emptyList();  // Orphan reaction
+		final FoundInteractors interactors = analysisData.getResult().getFoundInteractors(reaction.getEventOf().get(0).getStId());
+		if (interactors == null) return Collections.emptyList();  // Pathway is not in the analysis
+		final List<FoundInteractor> identifiers = interactors.filter(resource).getIdentifiers();
+		final Collection<String> idsInEvent = getIdsInReaction(reaction);
+		return identifiers.stream()
+				.filter(identifier -> inReaction(idsInEvent, identifier))
+				.collect(Collectors.toList());
+	}
+
+	private boolean inReaction(Collection<String> idsInEvent, FoundInteractor identifier) {
+		return identifier.getMapsTo().stream().anyMatch(idsInEvent::contains);
+	}
+
+	private Table getInteractorsTable(Collection<FoundInteractor> interactors, String resource, PdfProfile profile, AnalysisData data) {
+		return (data.getType() == AnalysisType.EXPRESSION)
+				? Tables.getInteractorsExpressionTable(interactors, resource, profile, data.getResult().getExpressionSummary().getColumnNames())
+				: Tables.getInteractorsTable(interactors, resource, profile);
 	}
 
 }
