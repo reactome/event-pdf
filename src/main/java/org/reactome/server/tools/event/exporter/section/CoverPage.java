@@ -35,7 +35,7 @@ public class CoverPage implements Section {
 		document.add(profile.getTitle(""));
 		document.add(profile.getTitle(event.getDisplayName()));
 		if (event instanceof Pathway)
-			Diagrams.insertDiagram(event.getStId(), content.getAnalysisData(), document);
+			Diagrams.insertDiagram(event.getStId(), content.getAnalysisData(), document, content.getArgs());
 		document.add(profile.getTitle(""));
 		final List<Person> people = new ArrayList<>(collectAuthors(event));
 		people.sort(Comparator.comparing(Person::getDisplayName));
