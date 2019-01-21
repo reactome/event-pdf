@@ -38,8 +38,6 @@ import java.io.IOException;
 public class Diagrams {
 
 	private static final double QUALITY = 3.;
-	private static String diagramProfile;
-	private static String analysisProfile;
 	private static String fireworksProfile;
 	private static FireworksExporter fireworksExporter;
 	private static RasterExporter diagramExporter;
@@ -70,7 +68,6 @@ public class Diagrams {
 			args.setResource(analysisData.getResource())
 			.setColumn(documentArgs.getExpressionColumn());
 		}
-		args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
 		try {
 			addToDocument(document, diagramExporter.exportToPdf(args, analysisData != null ? analysisData.getResult() : null), 0.5f);
 		} catch (AnalysisException | EhldException | DiagramJsonNotFoundException | DiagramJsonDeserializationException | IOException e) {
@@ -116,12 +113,6 @@ public class Diagrams {
 	public static void setPaths(String diagramPath, String ehldPath, String analysisPath, String fireworksPath, String svgSummary) {
 		fireworksExporter = new FireworksExporter(fireworksPath, analysisPath);
 		diagramExporter = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
-	}
-
-	public static void setProfiles(String diagramProfile, String analysisProfile, String fireworksProfile) {
-		Diagrams.diagramProfile = diagramProfile;
-		Diagrams.analysisProfile = analysisProfile;
-		Diagrams.fireworksProfile = fireworksProfile;
 	}
 
 	public static void setDiagramService(DiagramService diagramService) {
