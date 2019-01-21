@@ -77,7 +77,7 @@ public class EventsDetails implements Section {
 		addRelatedDiseases(document, event, profile);
 		addInferred(document, event, profile, content);
 
-		addDiagram(document, event, analysisData);
+		addDiagram(document, event, content);
 
 		addSummations(document, event, profile);
 		addPrecedingAndFollowing(document, event, profile, content.getEvents());
@@ -224,11 +224,11 @@ public class EventsDetails implements Section {
 		document.add(paragraph);
 	}
 
-	private void addDiagram(Document document, Event event, AnalysisData analysisData) {
+	private void addDiagram(Document document, Event event, DocumentContent content) {
 		if (event instanceof Pathway) {
-			Diagrams.insertDiagram(event.getStId(), analysisData, document);
+			Diagrams.insertDiagram(event.getStId(), content.getAnalysisData(), document, content.getArgs());
 		} else if (event instanceof ReactionLikeEvent) {
-			Diagrams.insertReaction(event.getStId(), analysisData, document);
+			Diagrams.insertReaction(event.getStId(), content.getAnalysisData(), document, content.getArgs());
 		}
 	}
 

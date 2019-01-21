@@ -20,6 +20,7 @@ import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
 import org.reactome.server.tools.diagram.exporter.raster.ehld.exception.EhldException;
 import org.reactome.server.tools.diagram.exporter.raster.profiles.ColorProfiles;
 import org.reactome.server.tools.event.exporter.AnalysisData;
+import org.reactome.server.tools.event.exporter.DocumentArgs;
 import org.reactome.server.tools.fireworks.exporter.FireworksExporter;
 import org.reactome.server.tools.fireworks.exporter.common.analysis.exception.AnalysisServerError;
 import org.reactome.server.tools.fireworks.exporter.common.api.FireworkArgs;
@@ -59,13 +60,15 @@ public class Diagrams {
 
 	}
 
-	public static void insertDiagram(String stId, AnalysisData analysisData, Document document) {
+	public static void insertDiagram(String stId, AnalysisData analysisData, Document document, DocumentArgs documentArgs) {
 		final DiagramResult diagramResult = diagramService.getDiagramResult(stId);
-		final RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "pdf");
-		args.setSelected(diagramResult.getEvents());
-		args.setWriteTitle(false);
+		final RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "pdf")
+			.setSelected(diagramResult.getEvents())
+			.setWriteTitle(false)
+			.setProfiles(new ColorProfiles(documentArgs.getDiagramProfile(), documentArgs.getAnalysisProfile(), null));
 		if (analysisData != null) {
-			args.setResource(analysisData.getResource());
+			args.setResource(analysisData.getResource())
+			.setColumn(documentArgs.getExpressionColumn());
 		}
 		args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
 		try {
@@ -75,7 +78,7 @@ public class Diagrams {
 		}
 	}
 
-	public static void insertReaction(String stId, AnalysisData analysisData, Document document) {
+	public static void insertReaction(String stId, AnalysisData analysisData, Document document, DocumentArgs documentArgs) {
 		ReactionLikeEvent rle = databaseObjectService.findById(stId);
 		final String pStId = rle.getEventOf().isEmpty() ? stId : rle.getEventOf().get(0).getStId();
 
@@ -86,8 +89,14 @@ public class Diagrams {
 		final Graph graph = new ReactionGraphFactory(advancedDatabaseObjectService).getGraph(rle, layout);
 
 		try {
-			final RasterArgs args = new RasterArgs(pStId, "pdf");
-			if (analysisData != null) args.setResource(analysisData.getResource());
+			final RasterArgs args = new RasterArgs(pStId, "pdf")
+					.setProfiles(new ColorProfiles(documentArgs.getDiagramProfile(), documentArgs.getAnalysisProfile(), null))
+					.setMargin(2)
+					.setWriteTitle(false);
+			if (analysisData != null) {
+				args.setResource(analysisData.getResource())
+						.setColumn(args.getColumn());
+			}
 			final AnalysisStoredResult result = analysisData == null ? null : analysisData.getResult();
 			addToDocument(document, diagramExporter.exportToPdf(diagram, graph, args, result), 0.4f);
 		} catch (AnalysisException | IOException e) {
