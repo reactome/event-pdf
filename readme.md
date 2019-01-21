@@ -38,13 +38,13 @@ with reactome EBI repository
 
 ## Usage
 ```
-DocumentExporter documentExporter = new DocumentExporter(DIAGRAM_PATH, EHLD_PATH, ANALYSIS_PATH, FIREWORKS_PATH, SVGSUMMARY, diagramService, databaseObjectService, generalService, advancedDatabaseObjectService);
+EventExporter eventExporter = new EventExporter(DIAGRAM_PATH, EHLD_PATH, ANALYSIS_PATH, FIREWORKS_PATH, SVGSUMMARY, diagramService, databaseObjectService, generalService, advancedDatabaseObjectService);
 String stId = "R-HSA-8963743";  // Digestion and absorption (small)
 File file = new File(stId + ".pdf");
 DocumentArgs args = new DocumentArgs(stId)
     .setMaxLevel(15);
 try {
-    documentExporter.export(args, null, new FileOutputStream(file));
+    eventExporter.export(args, null, new FileOutputStream(file));
 } catch (FileNotFoundException e) {
     e.printStackTrace();
 }
