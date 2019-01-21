@@ -6,6 +6,9 @@ public class DocumentArgs {
 	private int maxLevel = 0;
 	private Long species = 48887L;   // Homo sapiens
 	private String resource;
+	private String diagramProfile;
+	private String analysisProfile;
+	private Integer expressionColumn;
 
 	public DocumentArgs(String stId) {
 		this.stId = stId;
@@ -39,6 +42,33 @@ public class DocumentArgs {
 
 	public DocumentArgs setResource(String resource) {
 		this.resource = resource;
+		return this;
+	}
+
+	public String getAnalysisProfile() {
+		return analysisProfile;
+	}
+
+	public DocumentArgs setAnalysisProfile(String analysisProfile) {
+		this.analysisProfile = analysisProfile;
+		return this;
+	}
+
+	public String getDiagramProfile() {
+		return diagramProfile;
+	}
+
+	public DocumentArgs setDiagramProfile(String diagramProfile) {
+		this.diagramProfile = diagramProfile;
+		return this;
+	}
+
+	public Integer getExpressionColumn() {
+		return expressionColumn;
+	}
+
+	public DocumentArgs setExpressionColumn(Integer expressionColumn) {
+		this.expressionColumn = expressionColumn;
 		return this;
 	}
 }
