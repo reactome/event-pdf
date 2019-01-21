@@ -22,8 +22,8 @@ Add to maven
 ```xml
 <dependency>
     <groupId>org.reactome.server.tools</groupId>
-    <artifactId>document-exporter</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>event-pdf</artifactId>
+    <version>1.0.0</version>
 </dependency>
 
 ```
