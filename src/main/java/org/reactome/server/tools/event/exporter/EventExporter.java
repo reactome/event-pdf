@@ -66,7 +66,7 @@ public class EventExporter {
 		setAdvancedDatabaseObjectService(advancedDatabaseObjectService);
 	}
 
-	public void export(DocumentArgs args, AnalysisStoredResult result, OutputStream destination) throws DocumentExporterException {
+	public int export(DocumentArgs args, AnalysisStoredResult result, OutputStream destination) throws DocumentExporterException {
 		final Event event = databaseObjectService.findById(args.getStId());
 		if (event == null) throw new DocumentExporterException(args.getStId() + " is not an event");
 
@@ -103,6 +103,7 @@ public class EventExporter {
 			);
 			for (Section section : SECTIONS)
 				section.render(document, content);
+			return document.getPdfDocument().getNumberOfPages();
 		}
 	}
 
