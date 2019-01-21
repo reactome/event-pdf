@@ -48,9 +48,6 @@ public class TableOfContent implements Section {
 		writeFreeTocEntry(table, profile, "Introduction", "introduction", 1);
 		if (content.getAnalysisData() != null) {
 			writeFreeTocEntry(table, profile, "Analysis properties", "properties", 2);
-			writeFreeTocEntry(table, profile, "Details", "details", 3);
-		} else {
-			writeFreeTocEntry(table, profile, "Details", "details", 2);
 		}
 		addToToc(table, profile, event, 0, args.getMaxLevel());
 		writeFreeTocEntry(table, profile, "Table of Contents", "toc", page - 1);
