@@ -82,8 +82,8 @@ public class EventExporter {
 		} else analysisData = null;
 		final DocumentContent content = new DocumentContent(analysisData, pdfProfile, event, args);
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
-			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome (%s)", content.getServer()));
-			document.getPdfDocument().getDocumentInfo().setCreator(String.format("Reactome (%s)", content.getServer()));
+			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome (%s)", args.getServerName()));
+			document.getPdfDocument().getDocumentInfo().setCreator(String.format("Reactome (%s)", args.getServerName()));
 			document.getPdfDocument().getDocumentInfo().setTitle(String.format("Reactome | %s (%s)", event.getDisplayName(), args.getStId()));
 			document.getPdfDocument().getDocumentInfo().setSubject(String.format("Reactome | %s (%s)", event.getDisplayName(), args.getStId()));
 			document.getPdfDocument().getDocumentInfo().setKeywords("pathway,reactome,reaction");
@@ -92,7 +92,7 @@ public class EventExporter {
 					pdfProfile.getMargin().getRight(),
 					pdfProfile.getMargin().getBottom(),
 					pdfProfile.getMargin().getLeft());
-			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, content.getServer()));
+			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, args.getServerName()));
 			final Map<Long, Integer> pages = new HashMap<>();
 			final List<Section> SECTIONS = Arrays.asList(
 					new CoverPage(),

@@ -105,7 +105,7 @@ public class EventsDetails implements Section {
 	}
 
 	private void addTitle(Document document, DocumentContent content, Event event, PdfProfile profile) {
-		document.add(getTitle(profile, event, content.getServer()));
+		document.add(getTitle(profile, event, content.getArgs().getServerName()));
 	}
 
 	private Paragraph getTitle(PdfProfile profile, Event event, String server) {
@@ -218,7 +218,7 @@ public class EventsDetails implements Section {
 			if (content.getEvents().contains(ev))
 				paragraph.add(profile.getGoTo(name, ev.getStId()));
 			else
-				paragraph.add(profile.getLink(name, content.getServer() + CONTENT_DETAIL + ev.getStId()));
+				paragraph.add(profile.getLink(name, content.getArgs().getServerName() + CONTENT_DETAIL + ev.getStId()));
 			if (i < events.size() - 1) paragraph.add(", ");
 		}
 		document.add(paragraph);

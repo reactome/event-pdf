@@ -9,6 +9,7 @@ public class DocumentArgs {
 	private String diagramProfile;
 	private String analysisProfile;
 	private Integer expressionColumn;
+	private String serverName = "https://reactome.org";
 
 	public DocumentArgs(String stId) {
 		this.stId = stId;
@@ -70,5 +71,14 @@ public class DocumentArgs {
 	public DocumentArgs setExpressionColumn(Integer expressionColumn) {
 		this.expressionColumn = expressionColumn;
 		return this;
+	}
+
+	public DocumentArgs setServerName(String serverName) {
+		this.serverName = serverName;
+		return this;
+	}
+
+	public String getServerName() {
+		return serverName;
 	}
 }

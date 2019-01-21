@@ -16,7 +16,6 @@ public class DocumentContent {
 	private final Event event;
 	private final DocumentArgs args;
 	private AnalysisData analysisData;
-	private String server;
 	private Set<Event> events;
 
 	public DocumentContent(AnalysisData analysisData, PdfProfile pdfProfile, Event event, DocumentArgs args) {
@@ -24,9 +23,6 @@ public class DocumentContent {
 		this.pdfProfile = pdfProfile;
 		this.event = event;
 		this.args = args;
-		this.server = analysisData != null
-				? analysisData.getServerName()
-				: "https://reactome.org";
 		events = Collections.unmodifiableSet(collectEvents(event, args.getMaxLevel(), 0));
 	}
 
@@ -55,14 +51,6 @@ public class DocumentContent {
 
 	public DocumentArgs getArgs() {
 		return args;
-	}
-
-	public String getServer() {
-		return server;
-	}
-
-	public void setServer(String server) {
-		this.server = server;
 	}
 
 	/**
