@@ -42,8 +42,9 @@ public class TableOfContent implements Section {
 		document.add(new AreaBreak());
 		final int page = document.getPdfDocument().getPageNumber(document.getPdfDocument().getLastPage());
 		document.add(profile.getH1("Table of Contents").setDestination("toc"));
-		final Table table = new Table(2);
-		table.setBorder(Border.NO_BORDER);
+		final Table table = new Table(2)
+			.setBorder(Border.NO_BORDER)
+			.useAllAvailableWidth();
 		writeFreeTocEntry(table, profile, "Introduction", "introduction", 1);
 		if (content.getAnalysisData() != null) {
 			writeFreeTocEntry(table, profile, "Analysis properties", "properties", 2);
