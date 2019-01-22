@@ -37,7 +37,7 @@ public class CoverPage implements Section {
 		if (event instanceof Pathway)
 			Diagrams.insertDiagram(event.getStId(), content.getAnalysisData(), document, content.getArgs());
 		document.add(profile.getTitle(""));
-		final List<Person> people = new ArrayList<>(collectAuthors(event));
+		final List<Person> people = new ArrayList<>(collectAuthors(event, 0, content.getArgs().getMaxLevel()));
 		people.sort(Comparator.comparing(Person::getDisplayName));
 		final String authors = people.stream()
 				.map(this::getName)
@@ -107,7 +107,7 @@ public class CoverPage implements Section {
 		return person.getDisplayName() + ".";
 	}
 
-	private Collection<Person> collectAuthors(Event event) {
+	private Collection<Person> collectAuthors(Event event, int level, int maxLevel) {
 		final Set<Person> authors = new HashSet<>();
 		for (InstanceEdit instanceEdit : event.getAuthored()) authors.addAll(instanceEdit.getAuthor());
 		for (InstanceEdit instanceEdit : event.getEdited()) authors.addAll(instanceEdit.getAuthor());
@@ -115,9 +115,9 @@ public class CoverPage implements Section {
 		for (InstanceEdit instanceEdit : event.getRevised()) authors.addAll(instanceEdit.getAuthor());
 		if (event.getCreated() != null) authors.addAll(event.getCreated().getAuthor());
 		if (event.getModified() != null) authors.addAll(event.getModified().getAuthor());
-		if (event instanceof Pathway) {
+		if (event instanceof Pathway && level < maxLevel) {
 			final Pathway pathway = (Pathway) event;
-			for (Event hasEvent : pathway.getHasEvent()) authors.addAll(collectAuthors(hasEvent));
+			for (Event hasEvent : pathway.getHasEvent()) authors.addAll(collectAuthors(hasEvent, level + 1, maxLevel));
 		}
 		return authors;
 	}
