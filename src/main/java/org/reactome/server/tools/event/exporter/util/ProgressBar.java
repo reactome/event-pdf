@@ -56,7 +56,7 @@ public class ProgressBar {
 	}
 
 	private void printProgress(double progress, String message, int completed, long elapsed) {
-		printStream.printf("\r%s %6.2f%% [", formatTime(elapsed), progress * 100);
+		printStream.printf("\r%s %4.0f%% [", formatTime(elapsed), progress * 100);
 		for (int i = 0; i < completed; i++) printStream.print("=");
 		int remaining = chunks - completed;
 		if (remaining > 0) {
