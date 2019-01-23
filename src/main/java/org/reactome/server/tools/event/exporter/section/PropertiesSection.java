@@ -8,7 +8,6 @@ import org.reactome.server.tools.event.exporter.AnalysisData;
 import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
 import org.reactome.server.tools.event.exporter.util.HtmlParser;
-import org.reactome.server.tools.event.exporter.util.Images;
 import org.reactome.server.tools.event.exporter.util.Texts;
 
 import java.util.LinkedList;
@@ -52,7 +51,7 @@ public class PropertiesSection implements Section {
 		if (analysisData.isProjection())
 			list.add(profile.getParagraph(Texts.getProperty("projected"))
 					.add(" ")
-					.add(Images.getLink(serverName + PROJECTED, profile.getFontSize())));
+					.add(profile.getLink("\u2197", serverName + PROJECTED)));
 
 		if (analysisData.isInteractors())
 			list.add(profile.getParagraph(Texts.getProperty("interactors")));

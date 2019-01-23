@@ -113,8 +113,6 @@ public class CoverPage implements Section {
 		for (InstanceEdit instanceEdit : event.getEdited()) authors.addAll(instanceEdit.getAuthor());
 		for (InstanceEdit instanceEdit : event.getReviewed()) authors.addAll(instanceEdit.getAuthor());
 		for (InstanceEdit instanceEdit : event.getRevised()) authors.addAll(instanceEdit.getAuthor());
-		if (event.getCreated() != null) authors.addAll(event.getCreated().getAuthor());
-		if (event.getModified() != null) authors.addAll(event.getModified().getAuthor());
 		if (event instanceof Pathway && level < maxLevel) {
 			final Pathway pathway = (Pathway) event;
 			for (Event hasEvent : pathway.getHasEvent()) authors.addAll(collectAuthors(hasEvent, level + 1, maxLevel));

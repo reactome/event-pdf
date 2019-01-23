@@ -11,6 +11,7 @@ import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.borders.SolidBorder;
 import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.hyphenation.HyphenationConfig;
+import com.itextpdf.layout.property.ListNumberingType;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.apache.commons.io.IOUtils;
@@ -30,20 +31,20 @@ public class PdfProfile {
 	private static final Color REACTOME_COLOR = new DeviceRgb(47, 158, 194);
 	private static final Color LINK_COLOR = REACTOME_COLOR;
 	private static final Color LIGHT_GRAY = new DeviceGray(0.9f);
+	private static final String FONT_PATH_FORMAT = "/fonts/%s/%s-%s.ttf";
+	private static final String FONT_NAME = "SourceSerifPro";
 	private float H1;
 	private float H2;
 	private float H3;
 	private float fontSize;
 	private float TITLE;
 	private float TABLE;
-
 	private PdfFont italic;
 	private PdfFont regular;
 	private PdfFont bold;
 	private PdfFont light;
 	private MarginProfile margin;
-	private static final String FONT_PATH_FORMAT = "/fonts/%s/%s-%s.ttf";
-	private static final String FONT_NAME = "SourceSerifPro";
+	private PdfFont boldItalic;
 
 	public PdfProfile() {
 		// Every PDF must load the fonts again, as they are hold by one, and only one, document
@@ -57,6 +58,9 @@ public class PdfProfile {
 			light = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
 			bytes = getFontBytes("It");
 			italic = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
+			bytes = getFontBytes("BoldIt");
+			boldItalic = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
+
 		} catch (IOException e) {
 			throw new DocumentExporterException("Internal error. Couldn't read fonts", e);
 		}
@@ -164,16 +168,28 @@ public class PdfProfile {
 	}
 
 	public List getList(java.util.List<Paragraph> paragraphList) {
-		final List list = new List()
-				.setMarginLeft(10)
-				.setSymbolIndent(10)
-				.setListSymbol("\u2022");
+		final List list = getList(false);
 		for (Paragraph paragraph : paragraphList) {
 			final ListItem item = new ListItem();
 			item.add(paragraph.setMultipliedLeading(1.0f));
 			list.add(item);
 		}
 		return list;
+	}
+
+	public List getList(boolean ordered) {
+		if (ordered) {
+			return new List(ListNumberingType.DECIMAL)
+					.setMarginLeft(10)
+					.setSymbolIndent(10)
+					.setFont(regular)
+					.setFontSize(fontSize);
+		} else return new List()
+				.setMarginLeft(10)
+				.setSymbolIndent(10)
+				.setListSymbol("\u2022")
+				.setFont(regular)
+				.setFontSize(fontSize);
 	}
 
 	public PdfFont getRegular() {
@@ -214,5 +230,9 @@ public class PdfProfile {
 
 	public Text getGoTo(String text, String destination) {
 		return new Text(text).setFontColor(LINK_COLOR).setAction(PdfAction.createGoTo(destination));
+	}
+
+	public PdfFont getBoldItalic() {
+		return boldItalic;
 	}
 }

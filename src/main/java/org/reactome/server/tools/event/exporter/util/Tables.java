@@ -252,10 +252,6 @@ public class Tables {
 	 */
 	private static List<Edition> getEditions(Event event) {
 		final List<Edition> editions = new LinkedList<>();
-		if (event.getCreated() != null)
-			editions.add(new Edition(EditionType.CREATED, event.getCreated()));
-		if (event.getModified() != null)
-			editions.add(new Edition(EditionType.MODIFIED, event.getModified()));
 		if (event.getAuthored() != null)
 			event.getAuthored().forEach(instanceEdit -> editions.add(new Edition(EditionType.AUTHORED, instanceEdit)));
 		if (event.getEdited() != null)
