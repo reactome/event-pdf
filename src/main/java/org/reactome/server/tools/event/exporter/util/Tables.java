@@ -11,6 +11,7 @@ import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.InstanceEdit;
 import org.reactome.server.graph.domain.model.Person;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -202,6 +203,10 @@ public class Tables {
 
 	public static Table createEditionsTable(Event event, PdfProfile profile) {
 		final List<Edition> editions = getEditions(event);
+		if (editions.isEmpty()) {
+			LoggerFactory.getLogger("event-pdf").warn(String.format("Event %s does not contain edits", event.getStId()));
+			return null;
+		}
 
 		// Group editions by date/authors or date/type
 		final List<List<Edition>> edits = new ArrayList<>();

@@ -272,7 +272,9 @@ public class EventsDetails implements Section {
 
 	private void addEditionsTable(Document document, Event event, PdfProfile profile) {
 		final Table editionsTable = Tables.createEditionsTable(event, profile);
-		document.add(profile.getH3("Editions").setKeepWithNext(true)).add(editionsTable);
+		if (editionsTable != null)
+			document.add(profile.getH3("Editions").setKeepWithNext(true))
+					.add(editionsTable);
 	}
 
 	private void addFoundEntities(Document document, AnalysisData analysisData, Event event, PdfProfile profile) {
