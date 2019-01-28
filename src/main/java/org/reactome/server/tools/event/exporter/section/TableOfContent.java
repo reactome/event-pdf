@@ -11,22 +11,11 @@ import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
 import org.reactome.server.tools.event.exporter.util.Images;
 
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 
 public class TableOfContent implements Section {
 
-	private static final java.util.List<String> classOrder = Arrays.asList(
-			"TopLevelPathway",
-			"Pathway",
-			"Reaction",
-			"Depolymerisation",
-			"Polymerisation",
-			"BlackBoxEvent",
-			"FailedReaction"
-	);
 	private Map<Long, Integer> pages;
 
 	public TableOfContent(Map<Long, Integer> pages) {
@@ -58,7 +47,6 @@ public class TableOfContent implements Section {
 		writeEventTocEntry(table, profile, level, pathway);
 		if (pathway instanceof Pathway && level < maxLevel) {
 			final List<Event> events = ((Pathway) pathway).getHasEvent();
-			events.sort(Comparator.comparingInt(o -> classOrder.indexOf(o.getSchemaClass())));
 			for (Event ev : events) {
 				addToToc(table, profile, ev, level + 1, maxLevel);
 			}

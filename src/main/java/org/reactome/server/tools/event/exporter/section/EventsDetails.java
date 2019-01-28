@@ -19,9 +19,9 @@ import org.reactome.server.tools.event.exporter.DocumentArgs;
 import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
 import org.reactome.server.tools.event.exporter.util.Diagrams;
-import org.reactome.server.tools.event.exporter.util.HtmlParser;
 import org.reactome.server.tools.event.exporter.util.References;
 import org.reactome.server.tools.event.exporter.util.Tables;
+import org.reactome.server.tools.event.exporter.util.html.HtmlProcessor;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -32,15 +32,6 @@ import java.util.stream.Collectors;
 public class EventsDetails implements Section {
 
 	private static final String CONTENT_DETAIL = "/content/detail/";
-	private static final java.util.List<String> classOrder = Arrays.asList(
-			"TopLevelPathway",
-			"Pathway",
-			"Reaction",
-			"Depolymerisation",
-			"Polymerisation",
-			"BlackBoxEvent",
-			"FailedReaction"
-	);
 
 	private final ParticipantService participantService;
 	private final Set<Long> printed = new HashSet<>();
@@ -95,7 +86,6 @@ public class EventsDetails implements Section {
 		if (level < args.getMaxLevel() && event instanceof Pathway) {
 			final Pathway pathway = (Pathway) event;
 			final java.util.List<Event> events = pathway.getHasEvent();
-			events.sort(Comparator.comparingInt(ev -> classOrder.indexOf(ev.getSchemaClass())));
 			final ArrayList<Event> nav2 = new ArrayList<>(nav);
 			nav2.add(event);
 			for (Event ev : events) {
@@ -233,10 +223,13 @@ public class EventsDetails implements Section {
 	}
 
 	private void addSummations(Document document, Event event, PdfProfile profile) {
-		event.getSummation().stream()
-				.map(summation -> HtmlParser.parseText(profile, summation.getText()))
-				.flatMap(Collection::stream)
-				.forEach(document::add);
+		for (Summation summation : event.getSummation()) {
+			HtmlProcessor.add(document, summation.getText(), profile);
+		}
+//		event.getSummation().stream()
+//				.map(summation -> HtmlParser.parseText(profile, summation.getText()))
+//				.flatMap(Collection::stream)
+//				.forEach(document::add);
 	}
 
 	private void addPrecedingAndFollowing(Document document, Event event, PdfProfile profile, Set<Event> contentEvents) {
