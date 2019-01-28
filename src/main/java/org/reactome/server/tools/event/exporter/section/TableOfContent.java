@@ -6,6 +6,7 @@ import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.graph.domain.model.Event;
 import org.reactome.server.graph.domain.model.Pathway;
+import org.reactome.server.graph.domain.model.ReactionLikeEvent;
 import org.reactome.server.tools.event.exporter.DocumentArgs;
 import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
@@ -24,7 +25,10 @@ public class TableOfContent implements Section {
 
 	@Override
 	public void render(Document document, DocumentContent content) {
-		if (content.getArgs().getMaxLevel() == 0) return;  // skip when only one element
+		// skip if document contains only one element
+		if (content.getArgs().getMaxLevel() == 0
+				|| content.getEvent() instanceof ReactionLikeEvent)
+			return;
 		final PdfProfile profile = content.getPdfProfile();
 		final Event event = content.getEvent();
 		final DocumentArgs args = content.getArgs();
