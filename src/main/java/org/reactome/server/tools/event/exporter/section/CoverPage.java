@@ -11,9 +11,9 @@ import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
 import org.reactome.server.tools.event.exporter.util.Diagrams;
-import org.reactome.server.tools.event.exporter.util.HtmlParser;
 import org.reactome.server.tools.event.exporter.util.Images;
 import org.reactome.server.tools.event.exporter.util.Texts;
+import org.reactome.server.tools.event.exporter.util.html.HtmlProcessor;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -52,9 +52,13 @@ public class CoverPage implements Section {
 				.setKeepTogether(true)
 				.setFillAvailableArea(true)
 				.setVerticalAlignment(VerticalAlignment.BOTTOM)
-				.add(HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.institutions")).setTextAlignment(TextAlignment.CENTER))
-				.add(HtmlParser.parseParagraph(profile, Texts.getProperty("cover.page.disclaimer")).setTextAlignment(TextAlignment.CENTER))
-				.add(profile.getParagraph(DATE_FORMAT.format(new Date())).setTextAlignment(TextAlignment.CENTER));
+				.setTextAlignment(TextAlignment.CENTER);
+		Paragraph p;
+		p = HtmlProcessor.createParagraph(Texts.getProperty("cover.page.institutions"), profile);
+		bottomDiv.add(p.setTextAlignment(TextAlignment.CENTER));
+		p = HtmlProcessor.createParagraph(Texts.getProperty("cover.page.disclaimer"), profile);
+		bottomDiv.add(p.setTextAlignment(TextAlignment.CENTER));
+		bottomDiv.add(profile.getParagraph(DATE_FORMAT.format(new Date())).setTextAlignment(TextAlignment.CENTER));
 		document.add(bottomDiv);
 	}
 

@@ -2,12 +2,10 @@ package org.reactome.server.tools.event.exporter.util.html;
 
 import com.itextpdf.kernel.colors.Color;
 import com.itextpdf.kernel.colors.DeviceRgb;
-import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.List;
-import com.itextpdf.layout.element.ListItem;
-import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.element.Text;
+import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.property.Property;
+import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,11 +14,16 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Helper class to transform HTML text to iText. Conversion is limited to first level tags, and only supports
+ * <strong>br, p, sub, i, b</strong> and <strong>a</strong> tags.
+ */
 public class HtmlProcessor {
 
 	private static final Collection<String> VALID_TAG = Arrays.asList("b", "strong", "i", "em", "sup", "sub", "a", "font");
 	private static final Pattern TAG = Pattern.compile("(?i)<(\\w+)(?: (.*?))?>(.*?)</(\\1)>");
 
+	private static final Pattern P = Pattern.compile("(?i)<(p)(?: (.*?))?>(.*?)</(\\1)>");
 	private static final Pattern UL = Pattern.compile("(?i)<(ul|ol)(?: (.*?))?>(.*?)</(\\1)>");
 	private static final Pattern BOLD = Pattern.compile("(?i)<(b|strong)>(.*?)</(\\1)>");
 	private static final Pattern ITALIC = Pattern.compile("(?i)<(i|em)>(.*?)</(\\1)>");
@@ -32,70 +35,122 @@ public class HtmlProcessor {
 	private static final Map<String, Color> COLOR_NAMES = new HashMap<String, Color>(){{
 		put("red", new DeviceRgb(255, 0,0));
 	}};
-	private static final Pattern ATTRIBUTE = Pattern.compile("(\\w+)=\"(.+?)\"");
-//	private static final Pattern UNQUOTED_ATTRIBUTE = Pattern.compile("(\\w+)=\"?(.+?)\"?");
+	private static final Pattern ATTRIBUTE = Pattern.compile("(\\w+)=(\\w+)|\"(.+?)\"");
 
-	public static void add(Document document, String text, PdfProfile profile) {
-		if (text == null || text.isEmpty()) return;
-		addBlock(document, text, profile);
-		final String[] paragraphs = text.split("(?i)<br\\s*>|<p( .*?)?>|</p>|\n|\\\\n");
+	public static java.util.List<? extends IBlockElement> getBlocks(String text, PdfProfile profile) {
+		if (text == null || text.isEmpty()) return Collections.emptyList();
+		final java.util.List<IBlockElement> elements = new ArrayList<>();
+		// <p> are treated as blocks
+		final String[] paragraphs = text.split("(?i)<br\\s*>|\n|\\\\n");
 		for (String paragraph : paragraphs) {
-			addParagraph(document, paragraph, profile);
+			elements.addAll(getParagraphs(paragraph, profile, Collections.emptyMap()));
 		}
+		return elements;
 	}
 
-	private static void addBlock(Document document, String text, PdfProfile profile) {
-
-	}
-
-	private static void addParagraph(Document document, String text, PdfProfile profile) {
-		// First find other block elements
-		Matcher matcher = UL.matcher(text);
+	private static java.util.List<IBlockElement> getParagraphs(String text, PdfProfile profile, Map<String, String> attributes) {
+		final java.util.List<IBlockElement> elements = new ArrayList<>();
+		// Find paragraph blocks
+		Matcher matcher;
+		matcher = P.matcher(text);
 		while (matcher.find()) {
 			final String prev = text.substring(0, matcher.start());
-			if (!prev.isEmpty())
-				document.add(profile.getParagraph(prev));
-			addList(document, matcher, profile);
+			elements.addAll(getParagraphs(prev, profile, attributes));
+//			final String type = matcher.group(1);
+			final String att = matcher.group(2);
+			final String content = matcher.group(3);
+			Map<String, String> map = new HashMap<>();
+			if (att != null && !att.isEmpty()) {
+				map = parseAttributes(att);
+				attributes.forEach(map::put);
+			}
+			elements.addAll(getParagraphs(content, profile, map));
+			text = text.substring(matcher.end());
+			matcher = P.matcher(text);
+		}
+
+		// Find list blocks
+		matcher = UL.matcher(text);
+		while (matcher.find()) {
+			final String prev = text.substring(0, matcher.start());
+			elements.addAll(getParagraphs(prev, profile, attributes));
+			elements.add(getList(matcher, profile, attributes));
 			text = text.substring(matcher.end());
 			matcher = UL.matcher(text);
 		}
-		if (!text.isEmpty())
-			document.add(createParagraph(text, profile));
 		// TODO: 22/01/19 tables
-
+		// This should be raw text
+		if (!text.isEmpty()) {
+			// a bad but accepted html practice is to use opening <p> blocks.
+			for (String p : text.split("(?i)<p>")) {
+				elements.add(createParagraph(p, profile, attributes));
+			}
+		}
+		return elements;
 	}
 
-	private static void addList(Document document, Matcher matcher, PdfProfile profile) {
+	private static List getList(Matcher matcher, PdfProfile profile, Map<String, String> attributes) {
 		final String type = matcher.group(1);
 		boolean ordered = type.toLowerCase().equals("ol");
-		final String attributes = matcher.group(2);
+//		final String attributes = matcher.group(2);
 		final String content = matcher.group(3);
 		final String[] items = content.split("<li>|</li>");  // very raw, but you can have no closing </li>
 		final List list = profile.getList(ordered);
 		for (String item : items) {
 			item = item.trim();
 			if (!item.isEmpty()) {
-				final Paragraph paragraph = createParagraph(item, profile);
+				final Paragraph paragraph = createParagraph(item, profile, attributes);
 				final ListItem listItem = new ListItem();
 				listItem.add(paragraph);
 				list.add(listItem);
 			}
 		}
-		document.add(list);
+		return list;
+	}
+
+	public static Paragraph createParagraph(String text, PdfProfile profile) {
+		return createParagraph(text, profile, Collections.emptyMap());
 	}
 
 	/**
 	 * Raw paragraph parser. No block elements expected.
-	 *
-	 * @param text
-	 * @param profile
-	 * @return
 	 */
-	private static Paragraph createParagraph(String text, PdfProfile profile) {
+	public static Paragraph createParagraph(String text, PdfProfile profile, Map<String, String> attributes) {
 		final Paragraph paragraph = profile.getParagraph();
+		if (attributes.containsKey("align")) {
+			final String align = attributes.get("align");
+			switch (align) {
+				case "center":
+					paragraph.setTextAlignment(TextAlignment.CENTER);
+					break;
+				case "left":
+					paragraph.setTextAlignment(TextAlignment.LEFT);
+					break;
+				case "right":
+					paragraph.setTextAlignment(TextAlignment.RIGHT);
+					break;
+				case "justify":
+					paragraph.setTextAlignment(TextAlignment.JUSTIFIED);
+					break;
+			}
+		}
 		final java.util.List<Text> texts = getTexts(text, profile);
-		for (Text t : texts) paragraph.add(t);
+		for (Text t : texts) {
+			t.setText(cleanTags(t.getText()));
+			paragraph.add(t);
+		}
 		return paragraph;
+	}
+
+	private static String cleanTags(String text) {
+		for (String tag : VALID_TAG) {
+			// this can produce false positives:
+			// "a <b and c>d" -> "a d"
+//			text = Pattern.compile("<" + tag + "( .*?)?>").matcher(text).replaceAll("");
+			text = Pattern.compile("<" + tag + "\\s*>").matcher(text).replaceAll("");
+			text = Pattern.compile("</" + tag + "\\s*>").matcher(text).replaceAll("");
+		}
+		return text;
 	}
 
 	private static java.util.List<Text> getTexts(String text, PdfProfile profile) {
@@ -302,7 +357,7 @@ public class HtmlProcessor {
 	private static int endOfTag(String text, int i, String tag) {
 		final Matcher matcher = Pattern.compile("(?i)</" + tag + ">").matcher(text);
 		if (!matcher.find(i)) {
-			LOGGER.error("Missing closing tag " + tag + " in " + text.substring(i, Math.min(i + 5, text.length())));
+			LOGGER.warn("Missing closing tag " + tag + " in " + text.substring(i, Math.min(i + 5, text.length())));
 			return -1;
 		}
 		return matcher.start() + 3 + tag.length();

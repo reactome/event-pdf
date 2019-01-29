@@ -11,12 +11,11 @@ import org.reactome.server.graph.domain.model.ReactionLikeEvent;
 import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
-import org.reactome.server.tools.event.exporter.util.HtmlParser;
 import org.reactome.server.tools.event.exporter.util.References;
 import org.reactome.server.tools.event.exporter.util.Texts;
+import org.reactome.server.tools.event.exporter.util.html.HtmlProcessor;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 
@@ -38,8 +37,9 @@ public class Introduction implements Section {
 		final PdfProfile profile = content.getPdfProfile();
 		document.add(new AreaBreak());
 		document.add(profile.getH2("Introduction").setDestination("introduction"));
-		final Collection<Paragraph> intro = HtmlParser.parseText(profile, INTRODUCTION);
-		intro.forEach(document::add);
+		HtmlProcessor.getBlocks(INTRODUCTION, profile).forEach(document::add);
+//		final Collection<Paragraph> intro = HtmlParser.parseText(profile, INTRODUCTION);
+//		intro.forEach(document::add);
 
 		addReferences(document, profile);
 		addBottomText(document, content, profile);

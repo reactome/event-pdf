@@ -224,12 +224,8 @@ public class EventsDetails implements Section {
 
 	private void addSummations(Document document, Event event, PdfProfile profile) {
 		for (Summation summation : event.getSummation()) {
-			HtmlProcessor.add(document, summation.getText(), profile);
+			HtmlProcessor.getBlocks(summation.getText(), profile).forEach(document::add);
 		}
-//		event.getSummation().stream()
-//				.map(summation -> HtmlParser.parseText(profile, summation.getText()))
-//				.flatMap(Collection::stream)
-//				.forEach(document::add);
 	}
 
 	private void addPrecedingAndFollowing(Document document, Event event, PdfProfile profile, Set<Event> contentEvents) {

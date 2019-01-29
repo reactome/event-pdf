@@ -7,8 +7,8 @@ import org.reactome.server.analysis.core.result.model.AnalysisSummary;
 import org.reactome.server.tools.event.exporter.AnalysisData;
 import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
-import org.reactome.server.tools.event.exporter.util.HtmlParser;
 import org.reactome.server.tools.event.exporter.util.Texts;
+import org.reactome.server.tools.event.exporter.util.html.HtmlProcessor;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -40,11 +40,9 @@ public class PropertiesSection implements Section {
 
 
 		final String serverName = analysisData.getServerName();
-		list.add(HtmlParser.parseParagraph(profile, text)
+		list.add(HtmlProcessor.createParagraph(text, profile)
 				.add(" ")
 				.add(profile.getLink("See more", serverName + ANALYSIS_PATH)));
-//				.add(Images.getLink(serverName + ANALYSIS_PATH, profile.getFontSize())));
-
 		list.add(profile.getParagraph(String.format(Texts.getProperty("identifiers.found"),
 				found, found + notFound, analysisData.getResult().getPathways().size())));
 
