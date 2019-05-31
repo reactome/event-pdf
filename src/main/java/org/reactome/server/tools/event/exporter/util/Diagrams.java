@@ -37,7 +37,7 @@ import java.io.IOException;
  */
 public class Diagrams {
 
-	private static final double QUALITY = 3.;
+	private static final Integer QUALITY = 3;
 	private static String fireworksProfile;
 	private static FireworksExporter fireworksExporter;
 	private static RasterExporter diagramExporter;
@@ -47,7 +47,7 @@ public class Diagrams {
 
 	public static void insertFireworks(Document document, AnalysisData data) throws AnalysisServerError {
 		final FireworkArgs args = new FireworkArgs(data.getSpecies().replace(" ", "_"), "png");
-		args.setFactor(QUALITY);
+		args.setQuality(QUALITY);
 		args.setWriteTitle(false);
 		args.setProfile(fireworksProfile);
 		try {
