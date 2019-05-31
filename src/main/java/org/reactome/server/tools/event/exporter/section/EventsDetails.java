@@ -283,14 +283,14 @@ public class EventsDetails implements Section {
 	private Collection<FoundEntity> getFoundEntities(AnalysisData analysisData, Event event, String resource) {
 		// If event is a pathway we use standard AnalysisStoredResult methods
 		if (event instanceof Pathway) {
-			final FoundEntities entities = analysisData.getResult().getFoundEntities(event.getStId());
+			final FoundEntities entities = analysisData.getResult().getFoundEntities(event.getStId(), resource);
 			if (entities == null) return Collections.emptyList();  // Pathway is not in the analysis
 			return entities.filter(resource).getIdentifiers();
 		}
 		// If event is a reaction, we get the elements from the pathway it belongs, and filter them
 		final ReactionLikeEvent reaction = (ReactionLikeEvent) event;
 		if (reaction.getEventOf().isEmpty()) return Collections.emptyList();  // Orphan reaction
-		final FoundEntities entities = analysisData.getResult().getFoundEntities(reaction.getEventOf().get(0).getStId());
+		final FoundEntities entities = analysisData.getResult().getFoundEntities(reaction.getEventOf().get(0).getStId(), resource);
 		if (entities == null) return Collections.emptyList();  // Pathway is not in the analysis
 		final List<FoundEntity> identifiers = entities.filter(resource).getIdentifiers();
 		final Collection<String> idsInEvent = getIdsInReaction(reaction);
