@@ -28,8 +28,7 @@ Usage:
   [(-u|--user) <user>] (-w|--password) <password> [(-c|--profile) <profile>]
   [(-v|--verbose)[:<verbose>]]
 
-Exports the requested pathway diagrams to different formats (svg, png, sbgn,
-pptx, gif, jpeg)
+Exports the requested pathway(s) to pdf
 
 
   [--help]

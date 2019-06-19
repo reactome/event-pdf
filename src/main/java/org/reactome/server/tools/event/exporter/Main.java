@@ -20,7 +20,7 @@ public class Main {
 	private static boolean verbose;
 
 	public static void main(String[] args) throws JSAPException {
-		SimpleJSAP jsap = new SimpleJSAP(Main.class.getName(), "Exports the requested pathway diagrams to different formats (svg, png, sbgn, pptx, gif, jpeg)",
+		SimpleJSAP jsap = new SimpleJSAP(Main.class.getName(), "Exports the requested pathway(s) to pdf",
 				new Parameter[]{
 						new QualifiedSwitch("target", JSAP.STRING_PARSER, null, JSAP.REQUIRED, 't', "target", "Target event to convert. Use either comma separated IDs, pathways for a given species (e.g. 'Homo sapiens') or 'all' for every pathway").setList(true).setListSeparator(','),
 						new FlaggedOption("output", JSAP.STRING_PARSER, null, JSAP.REQUIRED, 'o', "output", "The output folder"),
