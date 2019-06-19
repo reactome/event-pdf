@@ -17,6 +17,63 @@ stId | - | stable identifier of event
 maxLevel | 1 | number of levels to explore inside sub events
 analysis | null | providing an analysis will modify the information displayed, as well as the diagrams
 
+## Command line
+
+```
+Usage:
+  org.reactome.server.tools.event.exporter.Main [--help]
+  (-t|--target)[:target1,target2,...,targetN ] (-o|--output) <output> [(-e|--ehld)
+  <ehlds>] [(-d|--diagram) <diagrams>] [(-a|--analysis) <analysis>]
+  [(-s|--summary) <summary>] [(-h|--host) <host>] [(-p|--port) <port>]
+  [(-u|--user) <user>] (-w|--password) <password> [(-c|--profile) <profile>]
+  [(-v|--verbose)[:<verbose>]]
+
+Exports the requested pathway diagrams to different formats (svg, png, sbgn,
+pptx, gif, jpeg)
+
+
+  [--help]
+        Prints this help message.
+
+  (-t|--target)[:target1,target2,...,targetN ]
+        Target event to convert. Use either comma separated IDs, pathways for a
+        given species (e.g. 'Homo sapiens') or 'all' for every pathway
+
+  (-o|--output) <output>
+        The output folder
+
+  [(-e|--ehld) <ehlds>]
+        The folder containing the EHLD svg files
+
+  [(-d|--diagram) <diagrams>]
+        The folder containing the diagram json files
+
+  [(-a|--analysis) <analysis>]
+        The folder containing the analysis files
+
+  [(-s|--summary) <summary>]
+        The file containing the summary of pathways with EHLD assigned
+
+  [(-h|--host) <host>]
+        The neo4j host (default: localhost)
+
+  [(-p|--port) <port>]
+        The neo4j port (default: 7474)
+
+  [(-u|--user) <user>]
+        The neo4j user (default: neo4j)
+
+  (-w|--password) <password>
+        The neo4j password (default: neo4j)
+
+  [(-c|--profile) <profile>]
+        The colour diagram [Modern or Standard] (default: Modern)
+
+  [(-v|--verbose)[:<verbose>]]
+        Requests verbose output.
+
+```
+
 ## Installation
 Add to maven
 ```xml
