@@ -1,9 +1,6 @@
 package org.reactome.server.tools.event.exporter;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.FixMethodOrder;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runners.MethodSorters;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.service.AdvancedDatabaseObjectService;
@@ -53,6 +50,7 @@ public class AppTest extends BaseTest {
 //		}
 	}
 
+	@Ignore
 	@Test
 	public void test() {
 		final EventExporter eventExporter = new EventExporter(DIAGRAM_PATH, EHLD_PATH, ANALYSIS_PATH, FIREWORKS_PATH, SVGSUMMARY, diagramService, databaseObjectService, generalService, advancedDatabaseObjectService, participantService);
