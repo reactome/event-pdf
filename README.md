@@ -36,7 +36,7 @@ Exports the requested pathway(s) to pdf
 
   (-t|--target)[:target1,target2,...,targetN ]
         Target event to convert. Use either comma separated IDs, pathways for a
-        given species (e.g. 'Homo sapiens') or 'all' for every pathway
+        given species (e.g. 'Homo sapiens') or 'all' for every pathway (default: Homo sapiens)
 
   (-o|--output) <output>
         The output folder
@@ -71,6 +71,22 @@ Exports the requested pathway(s) to pdf
   [(-v|--verbose)[:<verbose>]]
         Requests verbose output.
 
+```
+
+## Creating The Reactome Book
+
+```console
+mvn clean package
+java -jar target/event-pdf-jar-with-dependencies.jar -o /tmp/TheReactomeBook  -d diagrams/ -e ehlds/ -s svgsummary.txt -v
+```
+
+## Distribution
+
+Zip as TheReactomeBook.pdf.tgz and place it in the download section at Website/static/download/current/
+
+```console
+tar -czvf TheReactomeBook.pdf.tgz /tmp/TheReactomeBook
+mv TheReactomeBook.pdf.tgz <path>/static/download/current
 ```
 
 ## Installation
