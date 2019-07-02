@@ -22,20 +22,20 @@ public class Main {
 	public static void main(String[] args) throws JSAPException {
 		SimpleJSAP jsap = new SimpleJSAP(Main.class.getName(), "Exports the requested pathway(s) to pdf",
 				new Parameter[]{
-						new QualifiedSwitch("target", JSAP.STRING_PARSER, null, JSAP.REQUIRED, 't', "target", "Target event to convert. Use either comma separated IDs, pathways for a given species (e.g. 'Homo sapiens') or 'all' for every pathway").setList(true).setListSeparator(','),
+						new QualifiedSwitch("target", JSAP.STRING_PARSER, "Homo sapiens", JSAP.REQUIRED, 't', "target", "Target event to convert. Use either comma separated IDs, pathways for a given species (e.g. 'Homo sapiens') or 'all' for every pathway").setList(true).setListSeparator(','),
 						new FlaggedOption("output", JSAP.STRING_PARSER, null, JSAP.REQUIRED, 'o', "output", "The output folder"),
 
 						// diagram options
-						new FlaggedOption("ehlds", JSAP.STRING_PARSER, null, JSAP.NOT_REQUIRED, 'e', "ehld", "The folder containing the EHLD svg files"),
-						new FlaggedOption("diagrams", JSAP.STRING_PARSER, null, JSAP.NOT_REQUIRED, 'd', "diagram", "The folder containing the diagram json files"),
+						new FlaggedOption("ehlds", JSAP.STRING_PARSER, null, JSAP.REQUIRED, 'e', "ehld", "The folder containing the EHLD svg files"),
+						new FlaggedOption("diagrams", JSAP.STRING_PARSER, null, JSAP.REQUIRED, 'd', "diagram", "The folder containing the diagram json files"),
 						new FlaggedOption("analysis", JSAP.STRING_PARSER, null, JSAP.NOT_REQUIRED, 'a', "analysis", "The folder containing the analysis files"),
-						new FlaggedOption("summary", JSAP.STRING_PARSER, null, JSAP.NOT_REQUIRED, 's', "summary", "The file containing the summary of pathways with EHLD assigned"),
+						new FlaggedOption("summary", JSAP.STRING_PARSER, null, JSAP.REQUIRED, 's', "summary", "The file containing the summary of pathways with EHLD assigned"),
 
 						// GRAPH-DB options
 						new FlaggedOption("host", JSAP.STRING_PARSER, "localhost", JSAP.NOT_REQUIRED, 'h', "host", "The neo4j host"),
 						new FlaggedOption("port", JSAP.STRING_PARSER, "7474", JSAP.NOT_REQUIRED, 'p', "port", "The neo4j port"),
 						new FlaggedOption("user", JSAP.STRING_PARSER, "neo4j", JSAP.NOT_REQUIRED, 'u', "user", "The neo4j user"),
-						new FlaggedOption("password", JSAP.STRING_PARSER, "neo4j", JSAP.REQUIRED, 'w', "password", "The neo4j password"),
+						new FlaggedOption("password", JSAP.STRING_PARSER, null, JSAP.REQUIRED, 'w', "password", "The neo4j password"),
 
 						new FlaggedOption("profile", JSAP.STRING_PARSER, "Modern", JSAP.NOT_REQUIRED, 'c', "profile", "The colour diagram [Modern or Standard]"),
 
