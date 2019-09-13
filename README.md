@@ -109,7 +109,7 @@ with reactome EBI repository
 ```
 
 ## Usage
-```
+```java
 EventExporter eventExporter = new EventExporter(DIAGRAM_PATH, EHLD_PATH, ANALYSIS_PATH, FIREWORKS_PATH, SVGSUMMARY, diagramService, databaseObjectService, generalService, advancedDatabaseObjectService);
 String stId = "R-HSA-8963743";  // Digestion and absorption (small)
 File file = new File(stId + ".pdf");
