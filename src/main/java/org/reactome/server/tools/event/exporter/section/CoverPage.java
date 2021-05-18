@@ -113,10 +113,18 @@ public class CoverPage implements Section {
 
 	private Collection<Person> collectAuthors(Event event, int level, int maxLevel) {
 		final Set<Person> authors = new HashSet<>();
-		for (InstanceEdit instanceEdit : event.getAuthored()) authors.addAll(instanceEdit.getAuthor());
-		for (InstanceEdit instanceEdit : event.getEdited()) authors.addAll(instanceEdit.getAuthor());
-		for (InstanceEdit instanceEdit : event.getReviewed()) authors.addAll(instanceEdit.getAuthor());
-		for (InstanceEdit instanceEdit : event.getRevised()) authors.addAll(instanceEdit.getAuthor());
+		if (event.getAuthored() != null) {
+			for (InstanceEdit instanceEdit : event.getAuthored()) authors.addAll(instanceEdit.getAuthor());
+		}
+		if (event.getEdited() != null) {
+			for (InstanceEdit instanceEdit : event.getEdited()) authors.addAll(instanceEdit.getAuthor());
+		}
+		if (event.getReviewed() != null) {
+			for (InstanceEdit instanceEdit : event.getReviewed()) authors.addAll(instanceEdit.getAuthor());
+		}
+		if (event.getRevised() != null) {
+			for (InstanceEdit instanceEdit : event.getRevised()) authors.addAll(instanceEdit.getAuthor());
+		}
 		if (event instanceof Pathway && level < maxLevel) {
 			final Pathway pathway = (Pathway) event;
 			for (Event hasEvent : pathway.getHasEvent()) authors.addAll(collectAuthors(hasEvent, level + 1, maxLevel));
