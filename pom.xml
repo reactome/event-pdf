@@ -9,11 +9,20 @@
     <version>1.0.7</version>
     <packaging>jar</packaging>
 
-    <name>event-pdf</name>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Generates a PDF (Portable Digital Format) document out a Reactome event (Pathway or Reaction)</description>
+    <url>https://github.com/reactome/event-pdf</url>
+
+    <licenses>
+        <license>
+            <name>GNU AFFERO GENERAL PUBLIC LICENSE</name>
+            <url>https://www.gnu.org/licenses/agpl-3.0.html</url>
+        </license>
+    </licenses>
 
     <organization>
         <name>The European Bioinformatics Institute</name>
-        <url>http://www.ebi.ac.uk/</url>
+        <url>https://www.ebi.ac.uk/</url>
     </organization>
 
     <developers>
@@ -21,15 +30,38 @@
             <id>plorente</id>
             <name>Pascual Lorente</name>
             <email>plorente@ebi.ac.uk</email>
-            <organization>http://www.ebi.ac.uk/</organization>
+            <organization>The European Bioinformatics Institute</organization>
+            <organizationUrl>https://www.ebi.ac.uk/</organizationUrl>
         </developer>
         <developer>
             <id>fabregat</id>
             <name>Antonio Fabregat</name>
-            <email>fabregat@ebi.ac.uk</email>
-            <organization>http://www.ebi.ac.uk/</organization>
+        </developer>
+        <developer>
+            <id>gsviteri</id>
+            <name>Guilherme Viteri</name>
+            <email>gviteri@ebi.ac.uk</email>
+            <organization>The European Bioinformatics Institute</organization>
+            <organizationUrl>https://www.ebi.ac.uk/</organizationUrl>
+        </developer>
+        <developer>
+            <id>cookersjs</id>
+            <name>Justin Cook</name>
+        </developer>
+        <developer>
+            <id>EliotRagueneau</id>
+            <name>Eliot Ragueneau</name>
+            <email>eragueneau@ebi.ac.uk</email>
+            <organization>The European Bioinformatics Institute</organization>
+            <organizationUrl>https://www.ebi.ac.uk/</organizationUrl>
         </developer>
     </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/reactome/event-pdf.git</connection>
+        <developerConnection>scm:git:ssh://github.com:reactome/event-pdf.git</developerConnection>
+        <url>https://github.com/reactome/event-pdf/tree/master</url>
+    </scm>
 
     <properties>
         <jdk.version>1.8</jdk.version>
@@ -46,12 +78,10 @@
 
         <maven.compiler.version>3.5.1</maven.compiler.version>
         <maven.jar.version>2.6</maven.jar.version>
-
     </properties>
 
 
     <dependencies>
-
         <dependency>
             <groupId>org.reactome.server.graph</groupId>
             <artifactId>graph-core</artifactId>
@@ -97,23 +127,25 @@
             <!--<scope>test</scope>-->
         </dependency>
 
-
         <!-- iText -->
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>kernel</artifactId>
             <version>${itext.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>io</artifactId>
             <version>${itext.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>layout</artifactId>
             <version>${itext.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>hyph</artifactId>
@@ -123,6 +155,7 @@
 
     <build>
         <finalName>${project.name}</finalName>
+
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -139,6 +172,7 @@
                 </includes>
             </resource>
         </resources>
+
         <testResources>
             <testResource>
                 <directory>src/test/resources</directory>
@@ -148,12 +182,14 @@
                 </excludes>
             </testResource>
         </testResources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.0.1</version>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -211,6 +247,78 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- Nexus staging plugin for Sonatype deployment -->
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+
+            <!-- Generate source jar file -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Generate JavaDoc jar file -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Signs deployed jar, source jar, and JavaDoc jar with GPG -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Allows "release" mvn goal to deploy a SNAPSHOT or version release to Sonatype -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <releaseProfiles>release</releaseProfiles>
+                    <goals>deploy</goals>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -226,6 +334,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+
         <!-- EBI SNAPSHOT repo -->
         <repository>
             <id>nexus-ebi-snapshot-repo</id>
@@ -239,21 +348,20 @@
         </repository>
     </repositories>
 
-    <!--Configures the distribution to nexus repository. mvn:deploy -->
+    <!-- Configures the distribution to nexus repository. mvn:deploy -->
     <distributionManagement>
-        <!-- EBI repo -->
+        <!-- Sonatype Release repo -->
         <repository>
-            <id>pst-release</id>
-            <name>EBI Nexus Repository</name>
-            <url>https://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release</url>
+            <id>ossrh</id>
+            <name>Sonatype Release Repository</name>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
-        <!-- EBI SNAPSHOT repo -->
+
+        <!-- Sonatype SNAPSHOT repo -->
         <snapshotRepository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>pst-snapshots</id>
-            <name>EBI Nexus Snapshots Repository</name>
-            <url>https://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-snapshots</url>
+            <id>ossrh</id>
+            <name>Sonatype Snapshot Repository</name>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-
 </project>
