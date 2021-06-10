@@ -113,17 +113,33 @@ public class CoverPage implements Section {
 
 	private Collection<Person> collectAuthors(Event event, int level, int maxLevel) {
 		final Set<Person> authors = new HashSet<>();
-		if (event.getAuthored() != null) {
-			for (InstanceEdit instanceEdit : event.getAuthored()) authors.addAll(instanceEdit.getAuthor());
+		if (event.getAuthored() != null && !event.getAuthored().isEmpty()) {
+			for (InstanceEdit instanceEdit : event.getAuthored()) {
+				if (instanceEdit.getAuthor() != null && !instanceEdit.getAuthor().isEmpty()) {
+					authors.addAll(instanceEdit.getAuthor());
+				}
+			}
 		}
-		if (event.getEdited() != null) {
-			for (InstanceEdit instanceEdit : event.getEdited()) authors.addAll(instanceEdit.getAuthor());
+		if (event.getEdited() != null && !event.getEdited().isEmpty()) {
+			for (InstanceEdit instanceEdit : event.getEdited()) {
+				if (instanceEdit.getAuthor() != null && !instanceEdit.getAuthor().isEmpty()) {
+					authors.addAll(instanceEdit.getAuthor());
+				}
+			}
 		}
-		if (event.getReviewed() != null) {
-			for (InstanceEdit instanceEdit : event.getReviewed()) authors.addAll(instanceEdit.getAuthor());
+		if (event.getReviewed() != null && !event.getReviewed().isEmpty()) {
+			for (InstanceEdit instanceEdit : event.getReviewed()) {
+				if (instanceEdit.getAuthor() != null && !instanceEdit.getAuthor().isEmpty()) {
+					authors.addAll(instanceEdit.getAuthor());
+				}
+			}
 		}
-		if (event.getRevised() != null) {
-			for (InstanceEdit instanceEdit : event.getRevised()) authors.addAll(instanceEdit.getAuthor());
+		if (event.getRevised() != null && !event.getRevised().isEmpty()) {
+			for (InstanceEdit instanceEdit : event.getRevised()) {
+				if (instanceEdit.getAuthor() != null && !instanceEdit.getAuthor().isEmpty()) {
+					authors.addAll(instanceEdit.getAuthor());
+				}
+			}
 		}
 		if (event instanceof Pathway && level < maxLevel) {
 			final Pathway pathway = (Pathway) event;
