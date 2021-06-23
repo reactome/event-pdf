@@ -48,8 +48,8 @@ public class EventsDetails implements Section {
 	}
 
 	private void details(Document document, DocumentContent content, Event event, java.util.List<Event> nav, int level) {
-		if (printed.contains(event.getId())) return;
-		printed.add(event.getId());
+		if (printed.contains(event.getDbId())) return;
+		printed.add(event.getDbId());
 		final PdfProfile profile = content.getPdfProfile();
 		final AnalysisData analysisData = content.getAnalysisData();
 		final DocumentArgs args = content.getArgs();
@@ -57,7 +57,7 @@ public class EventsDetails implements Section {
 
 		final PdfPage page = document.getPdfDocument().getLastPage();
 		final int number = document.getPdfDocument().getPageNumber(page);
-		map.put(event.getId(), number - 1);
+		map.put(event.getDbId(), number - 1);
 
 		addTitle(document, content, event, profile);
 		addLocation(document, nav, profile, content);

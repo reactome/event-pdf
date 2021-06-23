@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.reactome.server.graph.aop.LazyFetchAspect;
-import org.reactome.server.graph.config.Neo4jConfig;
+import org.reactome.server.graph.config.GraphCoreNeo4jConfig;
 import org.reactome.server.graph.service.GeneralService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +15,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 
-@ContextConfiguration(classes = {Neo4jConfig.class})
+@ContextConfiguration(classes = {GraphCoreNeo4jConfig.class})
 @ExtendWith(SpringExtension.class)
 public abstract class BaseTest {
 
