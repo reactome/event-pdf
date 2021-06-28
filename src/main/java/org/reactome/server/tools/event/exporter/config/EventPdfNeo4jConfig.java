@@ -3,6 +3,7 @@ package org.reactome.server.tools.event.exporter.config;
 import org.aspectj.lang.Aspects;
 import org.reactome.server.graph.aop.LazyFetchAspect;
 import org.reactome.server.graph.config.GraphCoreNeo4jConfig;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -16,6 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableNeo4jRepositories(basePackages = {"org.reactome.server.graph.repository"})
 @EnableSpringConfigured
+@EnableAutoConfiguration
 public class EventPdfNeo4jConfig extends GraphCoreNeo4jConfig {
 
     /**
