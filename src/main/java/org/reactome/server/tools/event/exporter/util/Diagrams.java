@@ -79,7 +79,7 @@ public class Diagrams {
 		ReactionLikeEvent rle = databaseObjectService.findByIdNoRelations(stId);
 		final String pStId = rle.getEventOf().isEmpty() ? stId : rle.getEventOf().get(0).getStId();
 
-		final LayoutFactory layoutFactory = new LayoutFactory(advancedDatabaseObjectService);
+		final LayoutFactory layoutFactory = new LayoutFactory(advancedDatabaseObjectService, databaseObjectService);
 		final Layout layout = layoutFactory.getReactionLikeEventLayout(rle, LayoutFactory.Style.BOX);
 		final Diagram diagram = ReactionDiagramFactory.get(layout);
 
