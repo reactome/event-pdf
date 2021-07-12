@@ -162,25 +162,18 @@
                 </configuration>
             </plugin>
 
-            <!-- Generate the jar only -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>${maven.jar.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <mainClass>org.reactome.server.tools.event.exporter.Main</mainClass>
+                </configuration>
                 <executions>
                     <execution>
-                        <id>default-jar</id>
-                        <phase>install</phase>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>repackage</goal>
                         </goals>
-                        <configuration>
-                            <excludes>
-                                <exclude>**/logback.xml</exclude>
-                                <exclude>org/reactome/server/tools/event/exporter/Main.class</exclude>
-                                <exclude>org/reactome/server/tools/event/exporter/config/EventPdfNeo4jConfig.class</exclude>
-                            </excludes>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>

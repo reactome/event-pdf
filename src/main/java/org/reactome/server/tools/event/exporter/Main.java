@@ -33,7 +33,7 @@ public class Main {
 						// GRAPH-DB options
 						new FlaggedOption("host", JSAP.STRING_PARSER, "bolt://localhost:7687", JSAP.NOT_REQUIRED, 'h', "host", "The neo4j host"),
 						new FlaggedOption("user", JSAP.STRING_PARSER, "neo4j", JSAP.NOT_REQUIRED, 'u', "user", "The neo4j user"),
-						new FlaggedOption("password", JSAP.STRING_PARSER, "neo4jj", JSAP.NOT_REQUIRED, 'w', "password", "The neo4j password"),
+						new FlaggedOption("password", JSAP.STRING_PARSER, "neo4j", JSAP.NOT_REQUIRED, 'w', "password", "The neo4j password"),
 
 						new FlaggedOption("profile", JSAP.STRING_PARSER, "Modern", JSAP.NOT_REQUIRED, 'c', "profile", "The colour diagram [Modern or Standard]"),
 
@@ -112,9 +112,8 @@ public class Main {
 					dbIds.add(Long.parseLong(id));
 				}
 			}
-			// TODO: RETURN QUERY TO MATCH p:TopLevelPathway
-			
-			query = "MATCH (p {schemaClass:\"TopLevelPathway\"} ) " +
+
+			query = "MATCH (p:TopLevelPathway) " +
 					"WHERE p.dbId IN $dbIds OR p.stId IN $stIds " +
 					"WITH DISTINCT p " +
 					"RETURN p.stId as stId, p.displayName as displayName " +
@@ -124,19 +123,19 @@ public class Main {
 		} else {
 			String aux = target[0];
 			if (aux.toLowerCase().equals("all")) {
-				query = "MATCH (p {schemaClass:\"TopLevelPathway\"})-[:species]->(s:Species) " +
+				query = "MATCH (p:TopLevelPathway)-[:species]->(s:Species) " +
 						"WITH DISTINCT p, s " +
 						"RETURN p.stId as stId, p.displayName as displayName " +
 						"ORDER BY s.dbId, p.dbId";
 			} else if (DatabaseObjectUtils.isStId(aux)) {
-				query = "MATCH (p  {schemaClass:\"TopLevelPathway\", stId:$stId}) RETURN DISTINCT p.stId as stId, p.displayName as displayName ";
+				query = "MATCH (p:TopLevelPathway{stId:$stId}) RETURN DISTINCT p.stId as stId, p.displayName as displayName ";
 				parametersMap.put("stId", DatabaseObjectUtils.getIdentifier(aux));
 			} else if (DatabaseObjectUtils.isDbId(aux)) {
-				query = "MATCH (p  {schemaClass:\"TopLevelPathway\", dbId:$dbId}) RETURN DISTINCT p.stId as stId, p.displayName as displayName ";
+				query = "MATCH (p:TopLevelPathway{dbId:$dbId}) RETURN DISTINCT p.stId as stId, p.displayName as displayName ";
 				parametersMap.put("dbId", DatabaseObjectUtils.getIdentifier(aux));
 			} else {
 				if (verbose) System.out.println(String.format("Detected species '%s'", aux));
-				query = "MATCH (p  {schemaClass:\"TopLevelPathway\", speciesName:$speciesName}) " +
+				query = "MATCH (p:TopLevelPathway{speciesName:$speciesName}) " +
 						"WITH DISTINCT p " +
 						"RETURN p.stId as stId, p.displayName as displayName " +
 						"ORDER BY p.dbId";
