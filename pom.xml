@@ -11,6 +11,15 @@
 
     <name>event-pdf</name>
 
+    <!--
+        NOTE:
+        This project is a core dependency in the ContentService (spring-boot)
+        and also an executable jar as part of the release process.
+        Instruction:
+            as dependency: run `mvn clean install` and use in the ContentService, etc
+            as executable: run `mvn clean package -Dboot.repackage.skip=false`
+    -->
+
     <organization>
         <name>The European Bioinformatics Institute</name>
         <url>http://www.ebi.ac.uk/</url>
@@ -51,6 +60,8 @@
         <maven.assembly.version>3.3.0</maven.assembly.version>
         <maven.surefire.version>3.0.0-M5</maven.surefire.version>
         <maven.source.version>3.2.1</maven.source.version>
+
+        <boot.repackage.skip>true</boot.repackage.skip>
     </properties>
 
     <dependencies>
@@ -118,6 +129,14 @@
         </dependency>
     </dependencies>
 
+    <!--
+        NOTE:
+        This project is a core dependency in the ContentService (spring-boot)
+        and also an executable jar as part of the release process.
+        Instruction:
+            as dependency: run `mvn clean install` and use in the ContentService, etc
+            as executable: run `mvn clean package -Dboot.repackage.skip=false`
+    -->
     <build>
         <finalName>${project.name}</finalName>
         <resources>
@@ -146,6 +165,7 @@
                 </excludes>
             </testResource>
         </testResources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -161,13 +181,13 @@
                     <target>${jdk.version}</target>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
                     <mainClass>org.reactome.server.tools.event.exporter.Main</mainClass>
+                    <skip>${boot.repackage.skip}</skip>
                 </configuration>
                 <executions>
                     <execution>
@@ -183,31 +203,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
-            </plugin>
-
-            <!-- Generate jar with dependencies -->
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>${maven.assembly.version}</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>org.reactome.server.tools.event.exporter.Main</mainClass>
-                        </manifest>
-                    </archive>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>make-assembly</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

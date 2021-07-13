@@ -22,7 +22,8 @@ pipeline{
 		stage('Setup: Build jar file'){
 			steps{
 				script{
-					sh "mvn clean package"
+				    // see comments in the pom file on how to build.
+					sh "mvn clean package -Dboot.repackage.skip=false"
 				}
 			}
 		}
@@ -35,7 +36,7 @@ pipeline{
 					def ehldFolderPath = "${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/ehld/"
 					
 					withCredentials([usernamePassword(credentialsId: 'neo4jUsernamePassword', passwordVariable: 'pass', usernameVariable: 'user')]){
-						sh "java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-jar-with-dependencies.jar --user $user --password $pass --diagram ${diagramFolderPath} --ehld ${ehldFolderPath} --summary ${ehldFolderPath}/svgsummary.txt --output TheReactomeBook --verbose"
+						sh "java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf.jar --user $user --password $pass --diagram ${diagramFolderPath} --ehld ${ehldFolderPath} --summary ${ehldFolderPath}/svgsummary.txt --output TheReactomeBook --verbose"
 					}
 				}
 			}
