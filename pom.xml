@@ -60,8 +60,6 @@
         <maven.assembly.version>3.3.0</maven.assembly.version>
         <maven.surefire.version>3.0.0-M5</maven.surefire.version>
         <maven.source.version>3.2.1</maven.source.version>
-
-        <boot.repackage.skip>true</boot.repackage.skip>
     </properties>
 
     <dependencies>
@@ -187,7 +185,7 @@
                 <configuration>
                     <fork>true</fork>
                     <mainClass>org.reactome.server.tools.event.exporter.Main</mainClass>
-                    <skip>${boot.repackage.skip}</skip>
+                    <classifier>exec</classifier>
                 </configuration>
                 <executions>
                     <execution>
