@@ -41,6 +41,7 @@
     </developers>
 
     <properties>
+        <main.class>org.reactome.server.tools.event.exporter.Main</main.class>
         <jdk.version>11</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -54,6 +55,7 @@
         <itext.version>7.1.15</itext.version>
         <spring.test.version>5.3.6</spring.test.version>
 
+        <spring.boot.version>2.5.2</spring.boot.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.jar.version>3.2.0</maven.jar.version>
         <maven.resources.version>3.2.0</maven.resources.version>
@@ -182,9 +184,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>org.reactome.server.tools.event.exporter.Main</mainClass>
+                    <mainClass>${main.class}</mainClass>
                     <classifier>exec</classifier>
                 </configuration>
                 <executions>
