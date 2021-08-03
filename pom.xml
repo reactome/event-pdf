@@ -11,15 +11,6 @@
 
     <name>event-pdf</name>
 
-    <!--
-        NOTE:
-        This project is a core dependency in the ContentService (spring-boot)
-        and also an executable jar as part of the release process.
-        Instruction:
-            as dependency: run `mvn clean install` and use in the ContentService, etc
-            as executable: run `mvn clean package -Dboot.repackage.skip=false`
-    -->
-
     <organization>
         <name>The European Bioinformatics Institute</name>
         <url>http://www.ebi.ac.uk/</url>
@@ -40,6 +31,12 @@
         </developer>
     </developers>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-parent</artifactId>
+        <version>2.5.3</version>
+    </parent>
+
     <properties>
         <main.class>org.reactome.server.tools.event.exporter.Main</main.class>
         <jdk.version>11</jdk.version>
@@ -55,7 +52,6 @@
         <itext.version>7.1.15</itext.version>
         <spring.test.version>5.3.6</spring.test.version>
 
-        <spring.boot.version>2.5.2</spring.boot.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.jar.version>3.2.0</maven.jar.version>
         <maven.resources.version>3.2.0</maven.resources.version>
@@ -94,7 +90,6 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -102,8 +97,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>${spring.test.version}</version>
-            <!--<scope>test</scope>-->
+            <scope>test</scope>
         </dependency>
 
         <!-- iText -->
@@ -184,7 +178,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring.boot.version}</version>
+                <version>${project.parent.version}</version>
                 <configuration>
                     <fork>true</fork>
                     <mainClass>${main.class}</mainClass>
