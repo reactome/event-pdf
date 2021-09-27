@@ -270,7 +270,7 @@ public class EventsDetails implements Section {
 		// Check the total entities found in the diagram
 		final Collection<FoundEntity> totalEntities = getFoundEntities(analysisData, event, analysisData.getResource());
 		if (totalEntities.isEmpty()) return;
-		document.add(profile.getH3(String.format("Entities found in the analysis (%d)", totalEntities.size())).setKeepWithNext(true));
+		document.add(profile.getH3(String.format("%d submitted entities found in this pathway, mapping to %d Reactome entities", totalEntities.size(), totalEntities.stream().mapToInt(FoundEntity::getMatchingEntitiesCount).sum())).setKeepWithNext(true));
 		// Split by resource
 		for (String resource : analysisData.getResources()) {
 			final Collection<FoundEntity> entities = getFoundEntities(analysisData, event, resource);
