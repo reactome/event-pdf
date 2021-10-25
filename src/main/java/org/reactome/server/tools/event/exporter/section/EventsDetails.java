@@ -48,8 +48,8 @@ public class EventsDetails implements Section {
 	}
 
 	private void details(Document document, DocumentContent content, Event event, java.util.List<Event> nav, int level) {
-		if (printed.contains(event.getId())) return;
-		printed.add(event.getId());
+		if (printed.contains(event.getDbId())) return;
+		printed.add(event.getDbId());
 		final PdfProfile profile = content.getPdfProfile();
 		final AnalysisData analysisData = content.getAnalysisData();
 		final DocumentArgs args = content.getArgs();
@@ -57,7 +57,7 @@ public class EventsDetails implements Section {
 
 		final PdfPage page = document.getPdfDocument().getLastPage();
 		final int number = document.getPdfDocument().getPageNumber(page);
-		map.put(event.getId(), number - 1);
+		map.put(event.getDbId(), number - 1);
 
 		addTitle(document, content, event, profile);
 		addLocation(document, nav, profile, content);
@@ -270,7 +270,7 @@ public class EventsDetails implements Section {
 		// Check the total entities found in the diagram
 		final Collection<FoundEntity> totalEntities = getFoundEntities(analysisData, event, analysisData.getResource());
 		if (totalEntities.isEmpty()) return;
-		document.add(profile.getH3(String.format("Entities found in the analysis (%d)", totalEntities.size())).setKeepWithNext(true));
+		document.add(profile.getH3(String.format("%d submitted entities found in this pathway, mapping to %d Reactome entities", totalEntities.size(), totalEntities.stream().mapToInt(FoundEntity::getMatchingEntitiesCount).sum())).setKeepWithNext(true));
 		// Split by resource
 		for (String resource : analysisData.getResources()) {
 			final Collection<FoundEntity> entities = getFoundEntities(analysisData, event, resource);

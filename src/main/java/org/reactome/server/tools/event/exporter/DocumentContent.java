@@ -37,6 +37,13 @@ public class DocumentContent {
 		return rtn;
 	}
 
+//	"labels": [
+//    "DatabaseObject",
+//    "Event",
+//    "Pathway",
+//    "TopLevelPathway"
+//  ],
+
 	public AnalysisData getAnalysisData() {
 		return analysisData;
 	}

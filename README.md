@@ -1,16 +1,19 @@
 [<img src=https://user-images.githubusercontent.com/6883670/31999264-976dfb86-b98a-11e7-9432-0316345a72ea.png height=75 />](https://reactome.org)
 
 # Document exporter
+
 Generates a PDF (Portable Digital Format) document out of a Reactome event (Pathway or Reaction).
 
 The generated document contains the details for the given event and, optionally, its children. These details include:
- - A diagram image
- - Summation
- - Literature references
- - Edit history
- - Other details: type, location, compartments, diseases
- 
+
+- A diagram image
+- Summation
+- Literature references
+- Edit history
+- Other details: type, location, compartments, diseases
+
 ## Options
+
 Option | Default value | Description
 ---|---|---
 stId | - | stable identifier of event
@@ -77,7 +80,7 @@ Exports the requested pathway(s) to pdf
 
 ```console
 mvn clean package
-java -jar target/event-pdf-jar-with-dependencies.jar -o /tmp/TheReactomeBook  -d diagrams/ -e ehlds/ -s svgsummary.txt -v
+java -jar target/event-pdf-exec.jar -o /tmp/TheReactomeBook  -d diagrams/ -e ehlds/ -s svgsummary.txt -v
 ```
 
 ## Distribution
@@ -90,8 +93,11 @@ mv TheReactomeBook.pdf.tgz <path>/static/download/current
 ```
 
 ## Installation
+
 Add to maven
+
 ```xml
+
 <dependency>
     <groupId>org.reactome.server.tools</groupId>
     <artifactId>event-pdf</artifactId>
@@ -99,8 +105,11 @@ Add to maven
 </dependency>
 
 ```
+
 with reactome EBI repository
+
 ```xml
+
 <repository>
     <id>nexus-ebi-repo</id>
     <name>The EBI internal repository</name>
@@ -109,6 +118,7 @@ with reactome EBI repository
 ```
 
 ## Usage
+
 ```java
 EventExporter eventExporter = new EventExporter(DIAGRAM_PATH, EHLD_PATH, ANALYSIS_PATH, FIREWORKS_PATH, SVGSUMMARY, diagramService, databaseObjectService, generalService, advancedDatabaseObjectService);
 String stId = "R-HSA-8963743";  // Digestion and absorption (small)
