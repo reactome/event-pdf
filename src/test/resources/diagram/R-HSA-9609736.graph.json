@@ -1,0 +1,1387 @@
+{
+  "dbId" : 9609736,
+  "stId" : "R-HSA-9609736",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 5624926,
+    "stId" : "R-HSA-5624926",
+    "displayName" : "KIF17 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1667 ],
+    "parents" : [ 9610410 ],
+    "children" : [ 5624873 ]
+  }, {
+    "dbId" : 9610654,
+    "stId" : "R-HSA-9610654",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2151 ],
+    "parents" : [ 9610878 ],
+    "children" : [ 9610652, 202135, 9610678 ]
+  }, {
+    "dbId" : 9610652,
+    "stId" : "R-HSA-9610652",
+    "displayName" : "DLG1,DLG2,DLG3,DLG4 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2149 ],
+    "parents" : [ 9610654 ],
+    "children" : [ 443609, 202135, 9610662, 9610630 ]
+  }, {
+    "dbId" : 8982424,
+    "stId" : "R-HSA-8982424",
+    "displayName" : "Microtubule protofilament [cytosol]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 190599 ],
+    "children" : [ 190570 ]
+  }, {
+    "dbId" : 9610630,
+    "stId" : "R-HSA-9610630",
+    "displayName" : "DLG1 homotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2069 ],
+    "parents" : [ 9610652 ],
+    "children" : [ 375977 ]
+  }, {
+    "dbId" : 9610631,
+    "stId" : "R-HSA-9610631",
+    "displayName" : "DLG1 [transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12959",
+    "geneNames" : [ "DLG1" ],
+    "parents" : [ 9610633 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610633,
+    "stId" : "R-HSA-9610633",
+    "displayName" : "DLG1 homotetramer [transport vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610410 ],
+    "children" : [ 9610631 ]
+  }, {
+    "dbId" : 432166,
+    "stId" : "R-HSA-432166",
+    "displayName" : "GRIN3B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60391",
+    "geneNames" : [ "GRIN3B" ],
+    "parents" : [ 9610822, 9610783, 9610818 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610678,
+    "stId" : "R-HSA-9610678",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2461 ],
+    "parents" : [ 9610654 ],
+    "children" : [ 9610756, 3928507 ]
+  }, {
+    "dbId" : 190502,
+    "stId" : "R-HSA-190502",
+    "displayName" : "beta-tubulin [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 190512 ],
+    "children" : [ 6805240, 190588, 6805243, 191705, 190532, 191703, 191702, 191699, 191698 ]
+  }, {
+    "dbId" : 9610679,
+    "stId" : "R-HSA-9610679",
+    "displayName" : "GRIN1:GRIN2A di-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419564, 419556 ]
+  }, {
+    "dbId" : 9610932,
+    "stId" : "R-HSA-9610932",
+    "displayName" : "ACTN2 homodimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3198 ],
+    "parents" : [ 9611031 ],
+    "children" : [ 390562 ]
+  }, {
+    "dbId" : 9610687,
+    "stId" : "R-HSA-9610687",
+    "displayName" : "GRIN1:GRIN2C di-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419560, 419564 ]
+  }, {
+    "dbId" : 190509,
+    "stId" : "R-HSA-190509",
+    "displayName" : "alpha-tubulin:GTP [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 190570 ],
+    "children" : [ 29438, 190587 ]
+  }, {
+    "dbId" : 190512,
+    "stId" : "R-HSA-190512",
+    "displayName" : "beta-tubulin:GDP [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 190570 ],
+    "children" : [ 29420, 190502 ]
+  }, {
+    "dbId" : 9610662,
+    "stId" : "R-HSA-9610662",
+    "displayName" : "DLG2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15700",
+    "geneNames" : [ "DLG2" ],
+    "parents" : [ 9610652 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610410,
+    "stId" : "R-HSA-9610410",
+    "displayName" : "GRIN1:GRIN2B di-heterotetramer:LIN7:CASK:APBA1:DLG1:KIF17:Microtubule [transport vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1670 ],
+    "parents" : [ ],
+    "children" : [ 9610633, 5624926, 9610409, 9610570, 190599 ]
+  }, {
+    "dbId" : 9610411,
+    "stId" : "R-HSA-9610411",
+    "displayName" : "LIN7C [transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NUP9",
+    "geneNames" : [ "LIN7C", "MALS3", "VELI3" ],
+    "parents" : [ 9610412 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610409,
+    "stId" : "R-HSA-9610409",
+    "displayName" : "LIN7:CASK:APBA1 [transport vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1668 ],
+    "parents" : [ 9610410 ],
+    "children" : [ 9610412, 5336459, 373631 ]
+  }, {
+    "dbId" : 9610415,
+    "stId" : "R-HSA-9610415",
+    "displayName" : "LIN7B [transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HAP6",
+    "geneNames" : [ "LIN7B", "MALS2", "VELI2", "UNQ3116/PRO10200" ],
+    "parents" : [ 9610412 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610412,
+    "stId" : "R-HSA-9610412",
+    "displayName" : "LIN7A,B,C [transport vesicle membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 9610409 ],
+    "children" : [ 9610413, 9610415, 9610411 ]
+  }, {
+    "dbId" : 9610413,
+    "stId" : "R-HSA-9610413",
+    "displayName" : "LIN7A [transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14910",
+    "geneNames" : [ "LIN7A", "MALS1", "VELI1" ],
+    "parents" : [ 9610412 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610194,
+    "stId" : "R-HSA-9610194",
+    "displayName" : "GRIN1:GRIN2A:GRIN2D tri-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 702 ],
+    "parents" : [ 9610757 ],
+    "children" : [ 9609766, 9609760, 9609763 ]
+  }, {
+    "dbId" : 9610705,
+    "stId" : "R-HSA-9610705",
+    "displayName" : "GRIN1:GRIN2B:GRIN2D tri-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419561, 419564, 419558 ]
+  }, {
+    "dbId" : 190532,
+    "stId" : "R-HSA-190532",
+    "displayName" : "TUBB3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13509",
+    "geneNames" : [ "TUBB3", "TUBB4" ],
+    "parents" : [ 190502 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9617118,
+    "stId" : "R-HSA-9617118",
+    "displayName" : "TUBA3C/3D [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 190587 ],
+    "children" : [ 9617117, 9617120 ]
+  }, {
+    "dbId" : 9617117,
+    "stId" : "R-HSA-9617117",
+    "displayName" : "TUBA3D [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0DPH8",
+    "geneNames" : [ "TUBA3D" ],
+    "parents" : [ 9617118 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610690,
+    "stId" : "R-HSA-9610690",
+    "displayName" : "GRIN1:GRIN2D di-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419561, 419564 ]
+  }, {
+    "dbId" : 9610694,
+    "stId" : "R-HSA-9610694",
+    "displayName" : "GRIN1:GRIN2A:GRIN2C tri-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419560, 419564, 419556 ]
+  }, {
+    "dbId" : 9610700,
+    "stId" : "R-HSA-9610700",
+    "displayName" : "GRIN1:GRIN2A:GRIN2D tri-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610756 ],
+    "children" : [ 419561, 419564, 419556 ]
+  }, {
+    "dbId" : 190570,
+    "stId" : "R-HSA-190570",
+    "displayName" : "alpha-beta tubulin dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8982424 ],
+    "children" : [ 190509, 190512 ]
+  }, {
+    "dbId" : 4332329,
+    "stId" : "R-HSA-4332329",
+    "displayName" : "CAMK2A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UQM7",
+    "geneNames" : [ "CAMK2A", "CAMKA", "KIAA0968" ],
+    "parents" : [ 9611359 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9617120,
+    "stId" : "R-HSA-9617120",
+    "displayName" : "TUBA3C [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0DPH7",
+    "geneNames" : [ "TUBA3C", "TUBA2" ],
+    "parents" : [ 9617118 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 190587,
+    "stId" : "R-HSA-190587",
+    "displayName" : "alpha-tubulin [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 190509 ],
+    "children" : [ 191694, 9617118, 190590, 191689, 191691, 6805233, 6805234, 6805236, 6805238 ]
+  }, {
+    "dbId" : 373631,
+    "stId" : "R-HSA-373631",
+    "displayName" : "CASK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14936",
+    "geneNames" : [ "CASK", "LIN2" ],
+    "parents" : [ 9610409 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 190590,
+    "stId" : "R-HSA-190590",
+    "displayName" : "TUBA1C [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BQE3",
+    "geneNames" : [ "TUBA1C", "TUBA6" ],
+    "parents" : [ 190587 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 5624873,
+    "stId" : "R-HSA-5624873",
+    "displayName" : "KIF17 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9P2E2",
+    "geneNames" : [ "KIF17", "KIAA1405", "KIF3X" ],
+    "parents" : [ 5624926 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 190588,
+    "stId" : "R-HSA-190588",
+    "displayName" : "TUBB4A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04350",
+    "geneNames" : [ "TUBB4A", "TUBB4", "TUBB5" ],
+    "parents" : [ 190502 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 3928507,
+    "stId" : "R-HSA-3928507",
+    "displayName" : "GRIN1:GRIN2B di-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2118 ],
+    "parents" : [ 9610678 ],
+    "children" : [ 419564, 419558 ]
+  }, {
+    "dbId" : 442755,
+    "stId" : "R-HSA-442755",
+    "displayName" : "Activation of NMDA receptors and postsynaptic events",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3247 ]
+  }, {
+    "dbId" : 9611031,
+    "stId" : "R-HSA-9611031",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4:NEFL:ACTN2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3199 ],
+    "parents" : [ 9611369 ],
+    "children" : [ 9610878, 9610932 ]
+  }, {
+    "dbId" : 190599,
+    "stId" : "R-HSA-190599",
+    "displayName" : "Microtubule [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1669 ],
+    "parents" : [ 9610410 ],
+    "children" : [ 8982424 ]
+  }, {
+    "dbId" : 9610778,
+    "stId" : "R-HSA-9610778",
+    "displayName" : "GRIN1:GRIN3 di-heteromers,(GRIN1:GRIN2:GRIN3 tri-heteromers) [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3042 ],
+    "parents" : [ ],
+    "children" : [ 9609786, 9609777, 9610268, 9609785, 9609781, 9610323 ]
+  }, {
+    "dbId" : 9610777,
+    "stId" : "R-HSA-9610777",
+    "displayName" : "GRIN1:GRIN3 di-heteromers,(GRIN1:GRIN2:GRIN3 tri-heteromers) [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3049 ],
+    "parents" : [ ],
+    "children" : [ 9610823, 9610822, 9610797, 9610783, 9610816, 9610818 ]
+  }, {
+    "dbId" : 9610783,
+    "stId" : "R-HSA-9610783",
+    "displayName" : "GRIN1:GRIN2A:GRIN3B tri-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610777 ],
+    "children" : [ 419564, 419556, 432166 ]
+  }, {
+    "dbId" : 9610268,
+    "stId" : "R-HSA-9610268",
+    "displayName" : "GRIN1:GRIN2A:GRIN3A tri-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1308 ],
+    "parents" : [ 9610778 ],
+    "children" : [ 9609764, 9609760, 9609763 ]
+  }, {
+    "dbId" : 6805238,
+    "stId" : "R-HSA-6805238",
+    "displayName" : "TUBA8 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NY65",
+    "geneNames" : [ "TUBA8", "TUBAL2" ],
+    "parents" : [ 190587 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 6805236,
+    "stId" : "R-HSA-6805236",
+    "displayName" : "TUBA4B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H853",
+    "geneNames" : [ "TUBA4B", "TUBA4" ],
+    "parents" : [ 190587 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 202135,
+    "stId" : "R-HSA-202135",
+    "displayName" : "DLG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3137 ],
+    "identifier" : "P78352",
+    "geneNames" : [ "DLG4", "PSD95" ],
+    "parents" : [ 9610654, 9610652 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 6805234,
+    "stId" : "R-HSA-6805234",
+    "displayName" : "TUBAL3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A6NHL2",
+    "geneNames" : [ "TUBAL3" ],
+    "parents" : [ 190587 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610756,
+    "stId" : "R-HSA-9610756",
+    "displayName" : "GRIN1:GRIN2A,C,D di-heteromers,GRIN1:GRIN2 tri-heteromers [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2431 ],
+    "parents" : [ 9610678 ],
+    "children" : [ 9610679, 9610700, 9610687, 9610694, 9610705, 9610690 ]
+  }, {
+    "dbId" : 6805233,
+    "stId" : "R-HSA-6805233",
+    "displayName" : "TUBA3E [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6PEY2",
+    "geneNames" : [ "TUBA3E" ],
+    "parents" : [ 190587 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610757,
+    "stId" : "R-HSA-9610757",
+    "displayName" : "GRIN1:GRIN2A,C,D di-heteromers, GRIN1:GRIN2 tri-heteromers [endoplasmic reticulum membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2423 ],
+    "parents" : [ ],
+    "children" : [ 9609784, 9609783, 9609779, 9609780, 9609782, 9609776, 9610194 ]
+  }, {
+    "dbId" : 432284,
+    "stId" : "R-HSA-432284",
+    "displayName" : "NEFL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3107 ],
+    "identifier" : "P07196",
+    "geneNames" : [ "NEFL", "NF68", "NFL" ],
+    "parents" : [ 9610878 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 6805243,
+    "stId" : "R-HSA-6805243",
+    "displayName" : "TUBB8 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q3ZCM7",
+    "geneNames" : [ "TUBB8" ],
+    "parents" : [ 190502 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 6805240,
+    "stId" : "R-HSA-6805240",
+    "displayName" : "Tubulin beta-8 chain-like protein [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A6NNZ2",
+    "geneNames" : [ "TUBB8B" ],
+    "parents" : [ 190502 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9609778,
+    "stId" : "R-HSA-9609778",
+    "displayName" : "GRIN1:GRIN2B di-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 196 ],
+    "parents" : [ ],
+    "children" : [ 9609765, 9609763 ]
+  }, {
+    "dbId" : 9609779,
+    "stId" : "R-HSA-9609779",
+    "displayName" : "GRIN1:GRIN2D di-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 202 ],
+    "parents" : [ 9610757 ],
+    "children" : [ 9609766, 9609763 ]
+  }, {
+    "dbId" : 9609776,
+    "stId" : "R-HSA-9609776",
+    "displayName" : "GRIN1:GRIN2A:GRIN2C tri-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 226 ],
+    "parents" : [ 9610757 ],
+    "children" : [ 9609761, 9609760, 9609763 ]
+  }, {
+    "dbId" : 9609777,
+    "stId" : "R-HSA-9609777",
+    "displayName" : "GRIN1:GRIN3B di-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 208 ],
+    "parents" : [ 9610778 ],
+    "children" : [ 9609767, 9609763 ]
+  }, {
+    "dbId" : 9609782,
+    "stId" : "R-HSA-9609782",
+    "displayName" : "GRIN1:GRIN2A:GRIN2B tri-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 210 ],
+    "parents" : [ 9610757 ],
+    "children" : [ 9609765, 9609760, 9609763 ]
+  }, {
+    "dbId" : 9609783,
+    "stId" : "R-HSA-9609783",
+    "displayName" : "GRIN1:GRIN2A di-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 193 ],
+    "parents" : [ 9610757 ],
+    "children" : [ 9609760, 9609763 ]
+  }, {
+    "dbId" : 9609780,
+    "stId" : "R-HSA-9609780",
+    "displayName" : "GRIN1:GRIN2B:GRIN2D tri-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 228 ],
+    "parents" : [ 9610757 ],
+    "children" : [ 9609765, 9609766, 9609763 ]
+  }, {
+    "dbId" : 9609781,
+    "stId" : "R-HSA-9609781",
+    "displayName" : "GRIN1:GRIN2B:GRIN3A tri-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 230 ],
+    "parents" : [ 9610778 ],
+    "children" : [ 9609765, 9609764, 9609763 ]
+  }, {
+    "dbId" : 390562,
+    "stId" : "R-HSA-390562",
+    "displayName" : "ACTN2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35609",
+    "geneNames" : [ "ACTN2" ],
+    "parents" : [ 9610932 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9609786,
+    "stId" : "R-HSA-9609786",
+    "displayName" : "GRIN1:GRIN3A di-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 205 ],
+    "parents" : [ 9610778 ],
+    "children" : [ 9609764, 9609763 ]
+  }, {
+    "dbId" : 9609784,
+    "stId" : "R-HSA-9609784",
+    "displayName" : "GRIN1:GRIN2C di-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 199 ],
+    "parents" : [ 9610757 ],
+    "children" : [ 9609761, 9609763 ]
+  }, {
+    "dbId" : 9609785,
+    "stId" : "R-HSA-9609785",
+    "displayName" : "GRIN1:GRIN2B:GRIN3B tri-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 232 ],
+    "parents" : [ 9610778 ],
+    "children" : [ 9609765, 9609767, 9609763 ]
+  }, {
+    "dbId" : 375977,
+    "stId" : "R-HSA-375977",
+    "displayName" : "DLG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12959",
+    "geneNames" : [ "DLG1" ],
+    "parents" : [ 9610630 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9609763,
+    "stId" : "R-HSA-9609763",
+    "displayName" : "GRIN1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 192 ],
+    "identifier" : "Q05586",
+    "geneNames" : [ "GRIN1", "NMDAR1" ],
+    "parents" : [ 9609778, 9609786, 9609777, 9610268, 9609785, 9610323, 9609784, 9609779, 9609780, 9609782, 9609776, 9610194, 9609783, 9609781 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9609760,
+    "stId" : "R-HSA-9609760",
+    "displayName" : "GRIN2A [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 191 ],
+    "identifier" : "Q12879",
+    "geneNames" : [ "GRIN2A", "NMDAR2A" ],
+    "parents" : [ 9610268, 9610323, 9609782, 9609776, 9610194, 9609783 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9609761,
+    "stId" : "R-HSA-9609761",
+    "displayName" : "GRIN2C [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 198 ],
+    "identifier" : "Q14957",
+    "geneNames" : [ "GRIN2C", "NMDAR2C" ],
+    "parents" : [ 9609784, 9609776 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9609766,
+    "stId" : "R-HSA-9609766",
+    "displayName" : "GRIN2D [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 201 ],
+    "identifier" : "O15399",
+    "geneNames" : [ "GRIN2D", "GluN2D", "NMDAR2D" ],
+    "parents" : [ 9609779, 9609780, 9610194 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9609767,
+    "stId" : "R-HSA-9609767",
+    "displayName" : "GRIN3B [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 207 ],
+    "identifier" : "O60391",
+    "geneNames" : [ "GRIN3B" ],
+    "parents" : [ 9609777, 9609785, 9610323 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9609764,
+    "stId" : "R-HSA-9609764",
+    "displayName" : "GRIN3A [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 204 ],
+    "identifier" : "Q8TCU5",
+    "geneNames" : [ "GRIN3A", "KIAA1973" ],
+    "parents" : [ 9609786, 9610268, 9609781 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9609765,
+    "stId" : "R-HSA-9609765",
+    "displayName" : "GRIN2B [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 195 ],
+    "identifier" : "Q13224",
+    "geneNames" : [ "GRIN2B", "NMDAR2B" ],
+    "parents" : [ 9609778, 9609785, 9609780, 9609782, 9609781 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9667627,
+    "stId" : "R-HSA-9667627",
+    "displayName" : "NBEA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3258 ],
+    "identifier" : "Q8NFP9",
+    "geneNames" : [ "NBEA", "BCL8B", "KIAA1544", "LYST2" ],
+    "parents" : [ 9668211 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "speciesId" : 0,
+    "diagramIds" : [ 2117 ],
+    "identifier" : "30616",
+    "parents" : [ ],
+    "children" : [ ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "speciesId" : 0,
+    "diagramIds" : [ 2119 ],
+    "identifier" : "456216",
+    "parents" : [ ],
+    "children" : [ ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "speciesId" : 0,
+    "diagramIds" : [ 2068 ],
+    "identifier" : "43474",
+    "parents" : [ ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610797,
+    "stId" : "R-HSA-9610797",
+    "displayName" : "GRIN1:GRIN2A:GRIN3A tri-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610777 ],
+    "children" : [ 419564, 419554, 419556 ]
+  }, {
+    "dbId" : 9610323,
+    "stId" : "R-HSA-9610323",
+    "displayName" : "GRIN1:GRIN2A:GRIN3B tri-heterotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1546 ],
+    "parents" : [ 9610778 ],
+    "children" : [ 9609767, 9609760, 9609763 ]
+  }, {
+    "dbId" : 9611351,
+    "stId" : "R-HSA-9611351",
+    "displayName" : "LRRC7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3230 ],
+    "identifier" : "Q96NW7",
+    "geneNames" : [ "LRRC7", "KIAA1365", "LAP1" ],
+    "parents" : [ 9611369 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9611355,
+    "stId" : "R-HSA-9611355",
+    "displayName" : "CaMKII dodecamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3229 ],
+    "parents" : [ 9611369 ],
+    "children" : [ 9611359 ]
+  }, {
+    "dbId" : 191691,
+    "stId" : "R-HSA-191691",
+    "displayName" : "TUBA1B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P68363",
+    "geneNames" : [ "TUBA1B" ],
+    "parents" : [ 190587 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 191689,
+    "stId" : "R-HSA-191689",
+    "displayName" : "TUBA1A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q71U36",
+    "geneNames" : [ "TUBA1A", "TUBA3" ],
+    "parents" : [ 190587 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9611358,
+    "stId" : "R-HSA-9611358",
+    "displayName" : "CAMK2G [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13555",
+    "geneNames" : [ "CAMK2G", "CAMK", "CAMK-II", "CAMKG" ],
+    "parents" : [ 9611359 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 191694,
+    "stId" : "R-HSA-191694",
+    "displayName" : "TUBA4A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P68366",
+    "geneNames" : [ "TUBA4A", "TUBA1" ],
+    "parents" : [ 190587 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9611359,
+    "stId" : "R-HSA-9611359",
+    "displayName" : "CAMK2A,CAMK2B,(CAMK2D,CAMK2G) [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 9611355 ],
+    "children" : [ 4332329, 9611360, 9611357, 9611358 ]
+  }, {
+    "dbId" : 9611357,
+    "stId" : "R-HSA-9611357",
+    "displayName" : "CAMK2D [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13557",
+    "geneNames" : [ "CAMK2D", "CAMKD" ],
+    "parents" : [ 9611359 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 191698,
+    "stId" : "R-HSA-191698",
+    "displayName" : "TUBB6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BUF5",
+    "geneNames" : [ "TUBB6" ],
+    "parents" : [ 190502 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610818,
+    "stId" : "R-HSA-9610818",
+    "displayName" : "GRIN1:GRIN2B:GRIN3B tri-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610777 ],
+    "children" : [ 419564, 432166, 419558 ]
+  }, {
+    "dbId" : 191699,
+    "stId" : "R-HSA-191699",
+    "displayName" : "TUBB2A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13885",
+    "geneNames" : [ "TUBB2A", "TUBB2" ],
+    "parents" : [ 190502 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610816,
+    "stId" : "R-HSA-9610816",
+    "displayName" : "GRIN1:GRIN2B:GRIN3A tri-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610777 ],
+    "children" : [ 419564, 419554, 419558 ]
+  }, {
+    "dbId" : 191702,
+    "stId" : "R-HSA-191702",
+    "displayName" : "TUBB4B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P68371",
+    "geneNames" : [ "TUBB4B", "TUBB2C" ],
+    "parents" : [ 190502 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610822,
+    "stId" : "R-HSA-9610822",
+    "displayName" : "GRIN1:GRIN3B di-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610777 ],
+    "children" : [ 419564, 432166 ]
+  }, {
+    "dbId" : 191703,
+    "stId" : "R-HSA-191703",
+    "displayName" : "TUBB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H4B7",
+    "geneNames" : [ "TUBB1" ],
+    "parents" : [ 190502 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610823,
+    "stId" : "R-HSA-9610823",
+    "displayName" : "GRIN1:GRIN3A di-heterotetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610777 ],
+    "children" : [ 419564, 419554 ]
+  }, {
+    "dbId" : 9610565,
+    "stId" : "R-HSA-9610565",
+    "displayName" : "GRIN1 [transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05586",
+    "geneNames" : [ "GRIN1", "NMDAR1" ],
+    "parents" : [ 9610570 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610570,
+    "stId" : "R-HSA-9610570",
+    "displayName" : "GRIN1:GRIN2B di-heterotetramer [transport vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9610410 ],
+    "children" : [ 9610568, 9610565 ]
+  }, {
+    "dbId" : 5336459,
+    "stId" : "R-HSA-5336459",
+    "displayName" : "APBA1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q02410",
+    "geneNames" : [ "APBA1", "MINT1", "X11" ],
+    "parents" : [ 9610409 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610568,
+    "stId" : "R-HSA-9610568",
+    "displayName" : "GRIN2B [transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13224",
+    "geneNames" : [ "GRIN2B", "NMDAR2B" ],
+    "parents" : [ 9610570 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 191705,
+    "stId" : "R-HSA-191705",
+    "displayName" : "TUBB2B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BVA1",
+    "geneNames" : [ "TUBB2B" ],
+    "parents" : [ 190502 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 443609,
+    "stId" : "R-HSA-443609",
+    "displayName" : "DLG3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3256 ],
+    "identifier" : "Q92796",
+    "geneNames" : [ "DLG3", "KIAA1232" ],
+    "parents" : [ 9668211, 9610652 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 419558,
+    "stId" : "R-HSA-419558",
+    "displayName" : "GRIN2B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13224",
+    "geneNames" : [ "GRIN2B", "NMDAR2B" ],
+    "parents" : [ 9610816, 9610818, 3928507, 9610705 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9668211,
+    "stId" : "R-HSA-9668211",
+    "displayName" : "NBEA:DLG3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3259 ],
+    "parents" : [ ],
+    "children" : [ 443609, 9667627 ]
+  }, {
+    "dbId" : 419556,
+    "stId" : "R-HSA-419556",
+    "displayName" : "GRIN2A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12879",
+    "geneNames" : [ "GRIN2A", "NMDAR2A" ],
+    "parents" : [ 9610797, 9610783, 9610679, 9610700, 9610694 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 419554,
+    "stId" : "R-HSA-419554",
+    "displayName" : "GRIN3A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TCU5",
+    "geneNames" : [ "GRIN3A", "KIAA1973" ],
+    "parents" : [ 9610823, 9610797, 9610816 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 419564,
+    "stId" : "R-HSA-419564",
+    "displayName" : "GRIN1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05586",
+    "geneNames" : [ "GRIN1", "NMDAR1" ],
+    "parents" : [ 9610823, 9610822, 9610797, 9610783, 9610816, 9610818, 9610679, 9610700, 9610687, 9610694, 9610690, 3928507, 9610705 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610878,
+    "stId" : "R-HSA-9610878",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors:DLG4:DLG1,DLG2,DLG3,DLG4:NEFL [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3108 ],
+    "parents" : [ 9611031 ],
+    "children" : [ 9610654, 432284 ]
+  }, {
+    "dbId" : 29420,
+    "stId" : "R-ALL-29420",
+    "displayName" : "GDP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "speciesId" : 0,
+    "identifier" : "58189",
+    "parents" : [ 190512 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 419560,
+    "stId" : "R-HSA-419560",
+    "displayName" : "GRIN2C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14957",
+    "geneNames" : [ "GRIN2C", "NMDAR2C" ],
+    "parents" : [ 9610687, 9610694 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 419561,
+    "stId" : "R-HSA-419561",
+    "displayName" : "GRIN2D [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15399",
+    "geneNames" : [ "GRIN2D", "GluN2D", "NMDAR2D" ],
+    "parents" : [ 9610700, 9610690, 9610705 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9611360,
+    "stId" : "R-HSA-9611360",
+    "displayName" : "CAMK2B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13554",
+    "geneNames" : [ "CAMK2B", "CAM2", "CAMK2", "CAMKB" ],
+    "parents" : [ 9611359 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610593,
+    "stId" : "R-HSA-9610593",
+    "displayName" : "DLG1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12959",
+    "geneNames" : [ "DLG1" ],
+    "parents" : [ 9610596 ],
+    "children" : [ ]
+  }, {
+    "dbId" : 9610596,
+    "stId" : "R-HSA-9610596",
+    "displayName" : "DLG1 homotetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1671 ],
+    "parents" : [ ],
+    "children" : [ 9610593 ]
+  }, {
+    "dbId" : 9611369,
+    "stId" : "R-HSA-9611369",
+    "displayName" : "GRIN1:GRIN2 NMDA receptors:PSD proteins [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3231 ],
+    "parents" : [ ],
+    "children" : [ 9611355, 9611351, 9611031 ]
+  }, {
+    "dbId" : 29438,
+    "stId" : "R-ALL-29438",
+    "displayName" : "GTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "speciesId" : 0,
+    "identifier" : "37565",
+    "parents" : [ 190509 ],
+    "children" : [ ]
+  } ],
+  "edges" : [ {
+    "dbId" : 9610802,
+    "stId" : "R-HSA-9610802",
+    "displayName" : "GluN3A (GRIN3A), GluN3B (GRIN3B) NMDA receptors traffic to the plasma membrane",
+    "schemaClass" : "BlackBoxEvent",
+    "speciesId" : 0,
+    "inputs" : [ 9610778 ],
+    "outputs" : [ 9610777 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3041 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609746,
+    "stId" : "R-HSA-9609746",
+    "displayName" : "Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2A (GRIN2A) and GluN2B (GRIN2B)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "following" : [ 9610750 ],
+    "inputs" : [ 9609765, 9609760, 9609763 ],
+    "outputs" : [ 9609782 ],
+    "efs" : [ ],
+    "diagramIds" : [ 209 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9610195,
+    "stId" : "R-HSA-9610195",
+    "displayName" : "Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2A (GRIN2A) and GluN2D (GRIN2D)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "following" : [ 9610750 ],
+    "inputs" : [ 9609766, 9609760, 9609763 ],
+    "outputs" : [ 9610194 ],
+    "efs" : [ ],
+    "diagramIds" : [ 701 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609747,
+    "stId" : "R-HSA-9609747",
+    "displayName" : "Formation of di-heterotetramers of GluN1 (GRIN1) and GluN3A (GRIN3A)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "inputs" : [ 9609764, 9609763 ],
+    "outputs" : [ 9609786 ],
+    "efs" : [ ],
+    "diagramIds" : [ 203 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609744,
+    "stId" : "R-HSA-9609744",
+    "displayName" : "Formation of di-heterotetramers of GluN1 (GRIN1) and GluN2B (GRIN2B)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "following" : [ 9610408 ],
+    "inputs" : [ 9609765, 9609763 ],
+    "outputs" : [ 9609778 ],
+    "efs" : [ ],
+    "diagramIds" : [ 194 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9611030,
+    "stId" : "R-HSA-9611030",
+    "displayName" : "GluN1 (GRIN1) binds to ACTN2 at postsynaptic density",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "preceding" : [ 9610879 ],
+    "following" : [ 9611368 ],
+    "inputs" : [ 9610878, 9610932 ],
+    "outputs" : [ 9611031 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3197 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9610327,
+    "stId" : "R-HSA-9610327",
+    "displayName" : "Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2A (GRIN2A) and GluN3B (GRIN3B)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "inputs" : [ 9609767, 9609760, 9609763 ],
+    "outputs" : [ 9610323 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1545 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9668218,
+    "stId" : "R-HSA-9668218",
+    "displayName" : "NBEA binds DLG3",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "inputs" : [ 443609, 9667627 ],
+    "outputs" : [ 9668211 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3255 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9610750,
+    "stId" : "R-HSA-9610750",
+    "displayName" : "GluN1:GluN2 (GRIN1:GRIN2) NMDA receptors traffic to the plasma membrane",
+    "schemaClass" : "BlackBoxEvent",
+    "speciesId" : 0,
+    "preceding" : [ 9609741, 9609742, 9609737, 9609739, 9609738, 9610195, 9609746 ],
+    "inputs" : [ 9610757 ],
+    "outputs" : [ 9610756 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2422 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9610270,
+    "stId" : "R-HSA-9610270",
+    "displayName" : "Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2A (GRIN2A) and GluN3A (GRIN3A)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "inputs" : [ 9609764, 9609760, 9609763 ],
+    "outputs" : [ 9610268 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1307 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9610879,
+    "stId" : "R-HSA-9610879",
+    "displayName" : "GluN1 (GRIN1) binds to NEFL at postsynaptic density",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "preceding" : [ 9610653 ],
+    "following" : [ 9611030 ],
+    "inputs" : [ 9610654, 432284 ],
+    "outputs" : [ 9610878 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3106 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9610653,
+    "stId" : "R-HSA-9610653",
+    "displayName" : "GluN1:GluN2 (GRIN1:GRIN2) NMDA receptors bind to postsynaptic density proteins",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "preceding" : [ 9610627 ],
+    "following" : [ 9610879 ],
+    "inputs" : [ 9610652, 202135, 9610678 ],
+    "outputs" : [ 9610654 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2148 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9610627,
+    "stId" : "R-HSA-9610627",
+    "displayName" : "KIF17 transports GluN1:GluN2B (GRIN1:GRIN2B) NMDA receptors to the plasma membrane",
+    "schemaClass" : "BlackBoxEvent",
+    "speciesId" : 0,
+    "preceding" : [ 9610408 ],
+    "following" : [ 9610653 ],
+    "inputs" : [ 113592, 9610410 ],
+    "outputs" : [ 29372, 9610409, 5624926, 29370, 190599, 9610630, 3928507 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2116 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609728,
+    "stId" : "R-HSA-9609728",
+    "displayName" : "Formation of di-heterotetramers of GluN1 (GRIN1) and GluN3B (GRIN3B)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "inputs" : [ 9609767, 9609763 ],
+    "outputs" : [ 9609777 ],
+    "efs" : [ ],
+    "diagramIds" : [ 206 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609738,
+    "stId" : "R-HSA-9609738",
+    "displayName" : "Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2A (GRIN2A) and GluN2C (GRIN2C)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "following" : [ 9610750 ],
+    "inputs" : [ 9609761, 9609760, 9609763 ],
+    "outputs" : [ 9609776 ],
+    "efs" : [ ],
+    "diagramIds" : [ 225 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609739,
+    "stId" : "R-HSA-9609739",
+    "displayName" : "Formation of di-heterotetramers of GluN1 (GRIN1) and GluN2C (GRIN2C)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "following" : [ 9610750 ],
+    "inputs" : [ 9609761, 9609763 ],
+    "outputs" : [ 9609784 ],
+    "efs" : [ ],
+    "diagramIds" : [ 197 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9611368,
+    "stId" : "R-HSA-9611368",
+    "displayName" : "CaMKII and LRRC7 bind to NMDA receptors at postsynaptic density",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "preceding" : [ 9611030 ],
+    "inputs" : [ 9611355, 9611351, 9611031 ],
+    "outputs" : [ 9611369 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3246 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9610408,
+    "stId" : "R-HSA-9610408",
+    "displayName" : "GluN1:GluN2B (GRIN1:GRIN2B) di-heterotetramers bind LIN7:CASK:APBA1, DLG1 and KIF17",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "preceding" : [ 9609744 ],
+    "following" : [ 9610627 ],
+    "inputs" : [ 5624926, 9610409, 9610596, 190599, 9609778 ],
+    "outputs" : [ 9610410 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1666 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609737,
+    "stId" : "R-HSA-9609737",
+    "displayName" : "Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2B (GRIN2B) and GluN2D (GRIN2D)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "following" : [ 9610750 ],
+    "inputs" : [ 9609765, 9609766, 9609763 ],
+    "outputs" : [ 9609780 ],
+    "efs" : [ ],
+    "diagramIds" : [ 227 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609742,
+    "stId" : "R-HSA-9609742",
+    "displayName" : "Formation of di-heterotetramers of GluN1 (GRIN1) and GluN2A (GRIN2A)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "following" : [ 9610750 ],
+    "inputs" : [ 9609760, 9609763 ],
+    "outputs" : [ 9609783 ],
+    "efs" : [ ],
+    "diagramIds" : [ 190 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609743,
+    "stId" : "R-HSA-9609743",
+    "displayName" : "Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2B (GRIN2B) and GluN3A (GRIN3A)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "inputs" : [ 9609765, 9609764, 9609763 ],
+    "outputs" : [ 9609781 ],
+    "efs" : [ ],
+    "diagramIds" : [ 229 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609740,
+    "stId" : "R-HSA-9609740",
+    "displayName" : "Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2B (GRIN2B) and GluN3B (GRIN3B)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "inputs" : [ 9609765, 9609767, 9609763 ],
+    "outputs" : [ 9609785 ],
+    "efs" : [ ],
+    "diagramIds" : [ 231 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9609741,
+    "stId" : "R-HSA-9609741",
+    "displayName" : "Formation of di-heterotetramers of GluN1 (GRIN1) and GluN2D (GRIN2D)",
+    "schemaClass" : "Reaction",
+    "speciesId" : 0,
+    "following" : [ 9610750 ],
+    "inputs" : [ 9609766, 9609763 ],
+    "outputs" : [ 9609779 ],
+    "efs" : [ ],
+    "diagramIds" : [ 200 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

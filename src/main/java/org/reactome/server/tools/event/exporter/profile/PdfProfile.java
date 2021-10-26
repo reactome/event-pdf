@@ -51,15 +51,15 @@ public class PdfProfile {
 		try {
 			byte[] bytes;
 			bytes = getFontBytes("Regular");
-			regular = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
+			regular = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, PdfFontFactory.EmbeddingStrategy.FORCE_EMBEDDED);
 			bytes = getFontBytes("Bold");
-			bold = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
+			bold = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, PdfFontFactory.EmbeddingStrategy.FORCE_EMBEDDED);
 			bytes = getFontBytes("Semibold");
-			light = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
+			light = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, PdfFontFactory.EmbeddingStrategy.FORCE_EMBEDDED);
 			bytes = getFontBytes("It");
-			italic = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
+			italic = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, PdfFontFactory.EmbeddingStrategy.FORCE_EMBEDDED);
 			bytes = getFontBytes("BoldIt");
-			boldItalic = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, true);
+			boldItalic = PdfFontFactory.createFont(bytes, PdfEncodings.IDENTITY_H, PdfFontFactory.EmbeddingStrategy.FORCE_EMBEDDED);
 
 		} catch (IOException e) {
 			throw new DocumentExporterException("Internal error. Couldn't read fonts", e);

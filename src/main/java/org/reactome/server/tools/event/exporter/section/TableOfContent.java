@@ -88,7 +88,7 @@ public class TableOfContent implements Section {
 				.setFontSize(profile.getFontSize() - 1)
 				.setMultipliedLeading(1.0f)
 				.setTextAlignment(TextAlignment.RIGHT)
-				.add(profile.getGoTo(String.valueOf(pages.get(event.getId())), event.getStId()));
+				.add(profile.getGoTo(String.valueOf(pages.get(event.getDbId())), event.getStId()));
 		table.addCell(new Cell().add(t1).setBorder(Border.NO_BORDER).setPaddingRight(20f).setPaddingLeft(10 * level))
 				.addCell(new Cell().add(p2).setBorder(Border.NO_BORDER));
 	}

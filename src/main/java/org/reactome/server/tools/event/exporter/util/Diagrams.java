@@ -76,10 +76,10 @@ public class Diagrams {
 	}
 
 	public static void insertReaction(String stId, AnalysisData analysisData, Document document, DocumentArgs documentArgs) {
-		ReactionLikeEvent rle = databaseObjectService.findById(stId);
+		ReactionLikeEvent rle = databaseObjectService.findByIdNoRelations(stId);
 		final String pStId = rle.getEventOf().isEmpty() ? stId : rle.getEventOf().get(0).getStId();
 
-		final LayoutFactory layoutFactory = new LayoutFactory(advancedDatabaseObjectService);
+		final LayoutFactory layoutFactory = new LayoutFactory(advancedDatabaseObjectService, databaseObjectService);
 		final Layout layout = layoutFactory.getReactionLikeEventLayout(rle, LayoutFactory.Style.BOX);
 		final Diagram diagram = ReactionDiagramFactory.get(layout);
 
