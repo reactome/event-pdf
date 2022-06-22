@@ -59,10 +59,10 @@ public class CoverPage implements Section {
         p = HtmlProcessor.createParagraph(Texts.getProperty("cover.page.disclaimer"), profile);
         bottomDiv.add(p.setTextAlignment(TextAlignment.CENTER));
 
-        if (event.getSchemaClass().equals("Pathway") || event.getSchemaClass().equals("TopLevelPathway")) {
-            p = HtmlProcessor.createParagraph(Texts.getProperty("cover.page.warning"), profile);
-            p.setFontSize(8);
-            bottomDiv.add(p.setTextAlignment(TextAlignment.CENTER));
+        if(content.getArgs().getMaxLevel() <= 1 && event instanceof Pathway){
+                p = HtmlProcessor.createParagraph(Texts.getProperty("cover.page.warning"), profile);
+                p.setFontSize(8);
+                bottomDiv.add(p.setTextAlignment(TextAlignment.CENTER));
         }
 
         bottomDiv.add(profile.getParagraph(DATE_FORMAT.format(new Date())).setTextAlignment(TextAlignment.CENTER));
