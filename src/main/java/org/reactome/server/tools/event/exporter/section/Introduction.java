@@ -4,7 +4,7 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Div;
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.property.VerticalAlignment;
+import com.itextpdf.layout.properties.VerticalAlignment;
 import org.reactome.server.graph.domain.model.LiteratureReference;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.ReactionLikeEvent;

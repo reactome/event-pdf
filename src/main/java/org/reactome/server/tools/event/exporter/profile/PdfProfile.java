@@ -11,9 +11,9 @@ import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.borders.SolidBorder;
 import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.hyphenation.HyphenationConfig;
-import com.itextpdf.layout.property.ListNumberingType;
-import com.itextpdf.layout.property.TextAlignment;
-import com.itextpdf.layout.property.VerticalAlignment;
+import com.itextpdf.layout.properties.ListNumberingType;
+import com.itextpdf.layout.properties.TextAlignment;
+import com.itextpdf.layout.properties.VerticalAlignment;
 import org.apache.commons.io.IOUtils;
 import org.reactome.server.tools.event.exporter.exception.DocumentExporterException;
 

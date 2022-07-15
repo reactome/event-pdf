@@ -3,7 +3,7 @@ package org.reactome.server.tools.event.exporter.util;
 import com.itextpdf.kernel.pdf.xobject.PdfFormXObject;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
-import com.itextpdf.layout.property.HorizontalAlignment;
+import com.itextpdf.layout.properties.HorizontalAlignment;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.domain.model.ReactionLikeEvent;
 import org.reactome.server.graph.domain.result.DiagramResult;
