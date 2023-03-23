@@ -37,94 +37,96 @@ import java.io.IOException;
  */
 public class Diagrams {
 
-	private static final Integer QUALITY = 3;
-	private static String fireworksProfile;
-	private static FireworksExporter fireworksExporter;
-	private static RasterExporter diagramExporter;
-	private static DiagramService diagramService;
-	private static DatabaseObjectService databaseObjectService;
-	private static AdvancedDatabaseObjectService advancedDatabaseObjectService;
+    private static final Integer QUALITY = 3;
+    private static String fireworksProfile;
+    private static FireworksExporter fireworksExporter;
+    private static RasterExporter diagramExporter;
+    private static DiagramService diagramService;
+    private static DatabaseObjectService databaseObjectService;
+    private static AdvancedDatabaseObjectService advancedDatabaseObjectService;
 
-	public static void insertFireworks(Document document, AnalysisData data) throws AnalysisServerError {
-		final FireworkArgs args = new FireworkArgs(data.getSpecies().replace(" ", "_"), "png");
-		args.setQuality(QUALITY);
-		args.setWriteTitle(false);
-		args.setProfile(fireworksProfile);
-		try {
-			addToDocument(document, fireworksExporter.renderPdf(args, data.getResult()), 0.5f);
-		} catch (IOException e) {
-			LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert fireworks", e);
-		}
+    public static void insertFireworks(Document document, AnalysisData data) throws AnalysisServerError {
+        final FireworkArgs args = new FireworkArgs(data.getSpecies().replace(" ", "_"), "png");
+        args.setQuality(QUALITY);
+        args.setWriteTitle(false);
+        args.setProfile(fireworksProfile);
+        try {
+            addToDocument(document, fireworksExporter.renderPdf(args, data.getResult()), 0.5f);
+        } catch (IOException e) {
+            LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert fireworks", e);
+        }
 
-	}
+    }
 
-	public static void insertDiagram(String stId, AnalysisData analysisData, Document document, DocumentArgs documentArgs) {
-		final DiagramResult diagramResult = diagramService.getDiagramResult(stId);
-		final RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "pdf")
-			.setSelected(diagramResult.getEvents())
-			.setWriteTitle(false)
-			.setProfiles(new ColorProfiles(documentArgs.getDiagramProfile(), documentArgs.getAnalysisProfile(), null));
-		if (analysisData != null) {
-			args.setResource(analysisData.getResource())
-			.setColumn(documentArgs.getExpressionColumn());
-		}
-		try {
-			addToDocument(document, diagramExporter.exportToPdf(args, analysisData != null ? analysisData.getResult() : null), 0.5f);
-		} catch (AnalysisException | EhldException | DiagramJsonNotFoundException | DiagramJsonDeserializationException | IOException e) {
-			LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert diagram " + stId, e);
-		}
-	}
+    public static void insertDiagram(String stId, AnalysisData analysisData, Document document, DocumentArgs documentArgs) {
+        final DiagramResult diagramResult = diagramService.getDiagramResult(stId);
+        final RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "pdf")
+                .setSelected(diagramResult.getEvents())
+                .setWriteTitle(false)
+                .setQuality(9)
+                .setProfiles(new ColorProfiles(documentArgs.getDiagramProfile(), documentArgs.getAnalysisProfile(), null));
+        if (analysisData != null) {
+            args.setResource(analysisData.getResource())
+                    .setColumn(documentArgs.getExpressionColumn());
+        }
+        try {
+            addToDocument(document, diagramExporter.exportToPdf(args, analysisData != null ? analysisData.getResult() : null), 0.5f);
+        } catch (AnalysisException | EhldException | DiagramJsonNotFoundException |
+                 DiagramJsonDeserializationException | IOException e) {
+            LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert diagram " + stId, e);
+        }
+    }
 
-	public static void insertReaction(String stId, AnalysisData analysisData, Document document, DocumentArgs documentArgs) {
-		ReactionLikeEvent rle = databaseObjectService.findByIdNoRelations(stId);
-		final String pStId = rle.getEventOf().isEmpty() ? stId : rle.getEventOf().get(0).getStId();
+    public static void insertReaction(String stId, AnalysisData analysisData, Document document, DocumentArgs documentArgs) {
+        ReactionLikeEvent rle = databaseObjectService.findByIdNoRelations(stId);
+        final String pStId = rle.getEventOf().isEmpty() ? stId : rle.getEventOf().get(0).getStId();
 
-		final LayoutFactory layoutFactory = new LayoutFactory(advancedDatabaseObjectService, databaseObjectService);
-		final Layout layout = layoutFactory.getReactionLikeEventLayout(rle, LayoutFactory.Style.BOX);
-		final Diagram diagram = ReactionDiagramFactory.get(layout);
+        final LayoutFactory layoutFactory = new LayoutFactory(advancedDatabaseObjectService, databaseObjectService);
+        final Layout layout = layoutFactory.getReactionLikeEventLayout(rle, LayoutFactory.Style.BOX);
+        final Diagram diagram = ReactionDiagramFactory.get(layout);
 
-		final Graph graph = new ReactionGraphFactory(advancedDatabaseObjectService).getGraph(rle, layout);
+        final Graph graph = new ReactionGraphFactory(advancedDatabaseObjectService).getGraph(rle, layout);
 
-		try {
-			final RasterArgs args = new RasterArgs(pStId, "pdf")
-					.setProfiles(new ColorProfiles(documentArgs.getDiagramProfile(), documentArgs.getAnalysisProfile(), null))
-					.setMargin(2)
-					.setWriteTitle(false);
-			if (analysisData != null) {
-				args.setResource(analysisData.getResource())
-						.setColumn(args.getColumn());
-			}
-			final AnalysisStoredResult result = analysisData == null ? null : analysisData.getResult();
-			addToDocument(document, diagramExporter.exportToPdf(diagram, graph, args, result), 0.4f);
-		} catch (AnalysisException | IOException e) {
-			LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert diagram for " + stId, e);
-		}
+        try {
+            final RasterArgs args = new RasterArgs(pStId, "pdf")
+                    .setProfiles(new ColorProfiles(documentArgs.getDiagramProfile(), documentArgs.getAnalysisProfile(), null))
+                    .setMargin(2)
+                    .setWriteTitle(false);
+            if (analysisData != null) {
+                args.setResource(analysisData.getResource())
+                        .setColumn(args.getColumn());
+            }
+            final AnalysisStoredResult result = analysisData == null ? null : analysisData.getResult();
+            addToDocument(document, diagramExporter.exportToPdf(diagram, graph, args, result), 0.4f);
+        } catch (AnalysisException | IOException e) {
+            LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert diagram for " + stId, e);
+        }
 
-	}
+    }
 
-	private static void addToDocument(Document document, Document imagePdf, float proportion) throws IOException {
-		final PdfFormXObject object = imagePdf.getPdfDocument().getFirstPage().copyAsFormXObject(document.getPdfDocument());
-		final float wi = document.getPdfDocument().getLastPage().getPageSize().getWidth() - document.getLeftMargin() - document.getRightMargin() - 0.1f;  // avoid image too large
-		final float he = proportion * document.getPdfDocument().getLastPage().getPageSize().getHeight() - document.getTopMargin() - document.getBottomMargin();
-		document.add(new Image(object).scaleToFit(wi, he).setHorizontalAlignment(HorizontalAlignment.CENTER));
-		document.flush();
-	}
+    private static void addToDocument(Document document, Document imagePdf, float proportion) throws IOException {
+        final PdfFormXObject object = imagePdf.getPdfDocument().getFirstPage().copyAsFormXObject(document.getPdfDocument());
+        final float wi = document.getPdfDocument().getLastPage().getPageSize().getWidth() - document.getLeftMargin() - document.getRightMargin() - 0.1f;  // avoid image too large
+        final float he = proportion * document.getPdfDocument().getLastPage().getPageSize().getHeight() - document.getTopMargin() - document.getBottomMargin();
+        document.add(new Image(object).scaleToFit(wi, he).setHorizontalAlignment(HorizontalAlignment.CENTER));
+        document.flush();
+    }
 
-	public static void setPaths(String diagramPath, String ehldPath, String analysisPath, String fireworksPath, String svgSummary) {
-		fireworksExporter = new FireworksExporter(fireworksPath, analysisPath);
-		diagramExporter = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
-	}
+    public static void setPaths(String diagramPath, String ehldPath, String analysisPath, String fireworksPath, String svgSummary) {
+        fireworksExporter = new FireworksExporter(fireworksPath, analysisPath);
+        diagramExporter = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
+    }
 
-	public static void setDiagramService(DiagramService diagramService) {
-		Diagrams.diagramService = diagramService;
-	}
+    public static void setDiagramService(DiagramService diagramService) {
+        Diagrams.diagramService = diagramService;
+    }
 
-	public static void setDatabaseObjectService(DatabaseObjectService databaseObjectService) {
-		Diagrams.databaseObjectService = databaseObjectService;
-	}
+    public static void setDatabaseObjectService(DatabaseObjectService databaseObjectService) {
+        Diagrams.databaseObjectService = databaseObjectService;
+    }
 
-	public static void setAdvancedDatabaseObjectService(AdvancedDatabaseObjectService advancedDatabaseObjectService) {
-		Diagrams.advancedDatabaseObjectService = advancedDatabaseObjectService;
-	}
+    public static void setAdvancedDatabaseObjectService(AdvancedDatabaseObjectService advancedDatabaseObjectService) {
+        Diagrams.advancedDatabaseObjectService = advancedDatabaseObjectService;
+    }
 
 }
