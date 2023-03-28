@@ -13,11 +13,8 @@ import org.reactome.server.graph.service.DiagramService;
 import org.reactome.server.tools.diagram.data.graph.Graph;
 import org.reactome.server.tools.diagram.data.layout.Diagram;
 import org.reactome.server.tools.diagram.exporter.common.analysis.AnalysisException;
-import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonDeserializationException;
-import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonNotFoundException;
 import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
 import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
-import org.reactome.server.tools.diagram.exporter.raster.ehld.exception.EhldException;
 import org.reactome.server.tools.diagram.exporter.raster.profiles.ColorProfiles;
 import org.reactome.server.tools.event.exporter.AnalysisData;
 import org.reactome.server.tools.event.exporter.DocumentArgs;
@@ -63,7 +60,6 @@ public class Diagrams {
         final RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "pdf")
                 .setSelected(diagramResult.getEvents())
                 .setWriteTitle(false)
-                .setQuality(9)
                 .setProfiles(new ColorProfiles(documentArgs.getDiagramProfile(), documentArgs.getAnalysisProfile(), null));
         if (analysisData != null) {
             args.setResource(analysisData.getResource())
@@ -71,8 +67,7 @@ public class Diagrams {
         }
         try {
             addToDocument(document, diagramExporter.exportToPdf(args, analysisData != null ? analysisData.getResult() : null), 0.5f);
-        } catch (AnalysisException | EhldException | DiagramJsonNotFoundException |
-                 DiagramJsonDeserializationException | IOException e) {
+        } catch (Exception e) {
             LoggerFactory.getLogger(Diagrams.class).error("Couldn't insert diagram " + stId, e);
         }
     }
