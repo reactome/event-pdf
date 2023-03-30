@@ -22,7 +22,7 @@ pipeline{
 		stage('Setup: Build jar file'){
 			steps{
 				script{
-					sh "mvn clean package"
+					sh "mvn clean package -P Reactome-Server"
 				}
 			}
 		}
