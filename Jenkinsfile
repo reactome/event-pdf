@@ -8,8 +8,22 @@ def utils = new Utilities()
 
 pipeline{
 	agent any
+	environment {
+		ECRURL = '851227637779.dkr.ecr.us-east-1.amazonaws.com'
+	}
+	    
+	stages {
+		stage('pull image') {
+			steps {
+				script{
+					sh("eval \$(aws ecr get-login --no-include-email --region us-east-1)")
+					docker.withRegistry("https://" + ECRURL) {
+						docker.image("event-pdf:latest").pull()
+					}
+				}
+			}
+		}
 
-	stages{
 		// This stage checks that upstream project 'DiagramConverter' was run successfully.
 		stage('Check DiagramConverter build succeeded'){
 			steps{
@@ -18,14 +32,7 @@ pipeline{
 				}
 			}
 		}
-		// This stage builds the jar file using maven.
-		stage('Setup: Build jar file'){
-			steps{
-				script{
-					sh "mvn clean package -P Reactome-Server"
-				}
-			}
-		}
+		
 		// Execute the jar file, producing a folder (TheReactomeBook) of Reactome PDFs.
 		stage('Main: Run EventPDF'){
 			steps{
@@ -35,7 +42,7 @@ pipeline{
 					def ehldFolderPath = "${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/ehld/"
 					
 					withCredentials([usernamePassword(credentialsId: 'neo4jUsernamePassword', passwordVariable: 'pass', usernameVariable: 'user')]){
-						sh "java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user $user --password $pass --diagram ${diagramFolderPath} --ehld ${ehldFolderPath} --summary ${ehldFolderPath}/svgsummary.txt --output TheReactomeBook --verbose"
+						sh "docker run -v \$(pwd)/output:/eventpdf --net=host  ${ECRURL}/event-pdf:latest java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user $user --password $pass --diagram ${diagramFolderPath} --ehld ${ehldFolderPath} --summary ${ehldFolderPath}/svgsummary.txt --output TheReactomeBook --verbose"
 					}
 				}
 			}
