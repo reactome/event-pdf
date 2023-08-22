@@ -42,7 +42,7 @@ pipeline{
 					def ehldFolderPath = "${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/ehld/"
 					
 					withCredentials([usernamePassword(credentialsId: 'neo4jUsernamePassword', passwordVariable: 'pass', usernameVariable: 'user')]){
-						sh "docker run -v \$(pwd)/output:/eventpdf --net=host  ${ECRURL}/event-pdf:latest java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user $user --password $pass --diagram ${diagramFolderPath} --ehld ${ehldFolderPath} --summary ${ehldFolderPath}/svgsummary.txt --output TheReactomeBook --verbose"
+						sh "docker run -v \$(pwd)/output:/graphdb --net=host  ${ECRURL}/event-pdf:latest java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user $user --password $pass --diagram ${diagramFolderPath} --ehld ${ehldFolderPath} --summary ${ehldFolderPath}/svgsummary.txt --output TheReactomeBook --verbose"
 					}
 				}
 			}
