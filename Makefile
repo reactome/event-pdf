@@ -8,4 +8,4 @@ build-image: docker-pull \
 
 .PHONY: run-image
 run-image: $(call print-help,run, "Run the docker image.")
-	docker run reactome/event-pdf:latest -v $(pwd)/output:/graphdb --net=host
+	docker run reactome/event-pdf:latest -v $(pwd)/output:/output --net=host
