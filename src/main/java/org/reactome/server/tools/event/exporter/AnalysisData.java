@@ -29,6 +29,7 @@ public class AnalysisData {
 	private final String species;
 	private final String speciesComparisonSpecies;
 	private final String resource;
+	private final boolean importableOnly;
 	private final AnalysisStoredResult result;
 	private final Long speciesDbId;
 	private final int maxPathways;
@@ -37,12 +38,13 @@ public class AnalysisData {
 	private final Collection<String> resources;
 	private final String serverName;
 
-	AnalysisData(AnalysisStoredResult result, String resource, Long speciesDbId, int maxPathways) {
+	AnalysisData(AnalysisStoredResult result, boolean importableOnly, String resource, Long speciesDbId, int maxPathways) {
 		serverName = result.getSummary().getServer() == null
 				? DEFAULT_SERVER_NAME
 				: result.getSummary().getServer();
 		this.result = result;
 		this.resource = resource;
+		this.importableOnly = importableOnly;
 		this.speciesDbId = speciesDbId;
 		this.beautifiedResource = beautify(resource);
 		this.species = getSpeciesName(speciesDbId);
@@ -69,7 +71,7 @@ public class AnalysisData {
 	}
 
 	private List<PathwayData> collectPathways() {
-		return result.filterBySpecies(speciesDbId, resource).getPathways().stream()
+		return result.filterBySpecies(speciesDbId, resource, importableOnly).getPathways().stream()
 				.limit(maxPathways)
 				.map(base -> {
 					final PathwayNodeSummary summary = result.getPathway(base.getStId());

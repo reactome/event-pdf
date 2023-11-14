@@ -78,7 +78,7 @@ public class EventExporter {
 			if (!result.getResourceSummary().contains(new ResourceSummary(args.getResource(), null)))
 				args.setResource(getDefaultResource(result));
 
-			analysisData = new AnalysisData(result, args.getResource(), args.getSpecies(), Integer.MAX_VALUE);
+			analysisData = new AnalysisData(result, args.isImportableOnly(), args.getResource(), args.getSpecies(), Integer.MAX_VALUE);
 		} else analysisData = null;
 		final DocumentContent content = new DocumentContent(analysisData, pdfProfile, event, args);
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {

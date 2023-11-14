@@ -6,6 +6,7 @@ public class DocumentArgs {
 	private int maxLevel = 0;
 	private Long species = 48887L;   // Homo sapiens
 	private String resource;
+	private boolean importableOnly = false;
 	private String diagramProfile;
 	private String analysisProfile;
 	private Integer expressionColumn;
@@ -43,6 +44,15 @@ public class DocumentArgs {
 
 	public DocumentArgs setResource(String resource) {
 		this.resource = resource;
+		return this;
+	}
+
+	public boolean isImportableOnly() {
+		return importableOnly;
+	}
+
+	public DocumentArgs setImportableOnly(boolean importableOnly) {
+		this.importableOnly = importableOnly;
 		return this;
 	}
 
