@@ -28,7 +28,11 @@ import java.io.IOException;
 public class PdfProfile {
 
 	private static final HyphenationConfig HYPHENATION_CONFIG = new HyphenationConfig("en", "uk", 2, 2);
-	private static final Color REACTOME_COLOR = new DeviceRgb(47, 158, 194);
+
+	public static final int R = 47;
+	public static final int G = 158;
+	public static final int B = 194;
+	private static final Color REACTOME_COLOR = new DeviceRgb(R, G, B);
 	private static final Color LINK_COLOR = REACTOME_COLOR;
 	private static final Color LIGHT_GRAY = new DeviceGray(0.9f);
 	private static final String FONT_PATH_FORMAT = "/fonts/%s/%s-%s.ttf";

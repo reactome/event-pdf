@@ -21,7 +21,7 @@ public class Main {
 	public static void main(String[] args) throws JSAPException {
 		SimpleJSAP jsap = new SimpleJSAP(Main.class.getName(), "Exports the requested pathway(s) to pdf",
 				new Parameter[]{
-						new QualifiedSwitch("target", JSAP.STRING_PARSER, "Homo sapiens", JSAP.REQUIRED, 't', "target", "Target event to convert. Use either comma separated IDs, pathways for a given species (e.g. 'Homo sapiens') or 'all' for every pathway").setList(true).setListSeparator(','),
+						new FlaggedOption("target", JSAP.STRING_PARSER, "Homo sapiens", JSAP.REQUIRED, 't', "target", "Target event to convert. Use either comma separated IDs, pathways for a given species (e.g. 'Homo sapiens') or 'all' for every pathway").setList(true).setListSeparator(','),
 						new FlaggedOption("output", JSAP.STRING_PARSER, null, JSAP.REQUIRED, 'o', "output", "The output folder"),
 
 						// diagram options
@@ -34,6 +34,7 @@ public class Main {
 						new FlaggedOption("host", JSAP.STRING_PARSER, "bolt://localhost:7687", JSAP.NOT_REQUIRED, 'h', "host", "The neo4j host"),
 						new FlaggedOption("user", JSAP.STRING_PARSER, "neo4j", JSAP.NOT_REQUIRED, 'u', "user", "The neo4j user"),
 						new FlaggedOption("password", JSAP.STRING_PARSER, "neo4j", JSAP.NOT_REQUIRED, 'w', "password", "The neo4j password"),
+						new FlaggedOption("databaseName", JSAP.STRING_PARSER, "graph.db", JSAP.NOT_REQUIRED, 'n', "dbname", "The neo4j database name"),
 
 						new FlaggedOption("profile", JSAP.STRING_PARSER, "Modern", JSAP.NOT_REQUIRED, 'c', "profile", "The colour diagram [Modern or Standard]"),
 
@@ -51,6 +52,7 @@ public class Main {
 				config.getString("host"),
 				config.getString("user"),
 				config.getString("password"),
+				config.getString("databaseName"),
 				EventPdfNeo4jConfig.class
 		);
 
@@ -113,7 +115,7 @@ public class Main {
 				}
 			}
 
-			query = "MATCH (p:TopLevelPathway) " +
+			query = "MATCH (p:Event) " +
 					"WHERE p.dbId IN $dbIds OR p.stId IN $stIds " +
 					"WITH DISTINCT p " +
 					"RETURN p.stId as stId, p.displayName as displayName " +
@@ -128,14 +130,14 @@ public class Main {
 						"RETURN p.stId as stId, p.displayName as displayName " +
 						"ORDER BY s.dbId, p.dbId";
 			} else if (DatabaseObjectUtils.isStId(aux)) {
-				query = "MATCH (p:TopLevelPathway{stId:$stId}) RETURN DISTINCT p.stId as stId, p.displayName as displayName ";
+				query = "MATCH (p:Event{stId:$stId}) RETURN DISTINCT p.stId as stId, p.displayName as displayName ";
 				parametersMap.put("stId", DatabaseObjectUtils.getIdentifier(aux));
 			} else if (DatabaseObjectUtils.isDbId(aux)) {
-				query = "MATCH (p:TopLevelPathway{dbId:$dbId}) RETURN DISTINCT p.stId as stId, p.displayName as displayName ";
+				query = "MATCH (p:Event{dbId:$dbId}) RETURN DISTINCT p.stId as stId, p.displayName as displayName ";
 				parametersMap.put("dbId", DatabaseObjectUtils.getIdentifier(aux));
 			} else {
 				if (verbose) System.out.println(String.format("Detected species '%s'", aux));
-				query = "MATCH (p:TopLevelPathway{speciesName:$speciesName}) " +
+				query = "MATCH (p:Event{speciesName:$speciesName}) " +
 						"WITH DISTINCT p " +
 						"RETURN p.stId as stId, p.displayName as displayName " +
 						"ORDER BY p.dbId";
