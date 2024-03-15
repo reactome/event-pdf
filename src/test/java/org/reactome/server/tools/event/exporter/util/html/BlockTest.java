@@ -12,6 +12,7 @@ import org.reactome.server.graph.service.AdvancedDatabaseObjectService;
 import org.reactome.server.tools.event.exporter.BaseTest;
 import org.reactome.server.tools.event.exporter.exception.DocumentExporterException;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
+import org.reactome.server.tools.event.exporter.util.HtmlUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.FileNotFoundException;
@@ -33,7 +34,7 @@ public class BlockTest extends BaseTest {
         try (Document document = new Document(new PdfDocument(new PdfWriter("output.pdf")))) {
             document.add(profile.getParagraph(text).setFontSize(profile.getFontSize() - 1).setFontColor(new DeviceGray(0.5f)));
             try {
-                HtmlProcessor.getBlocks(text, profile).forEach(document::add);
+                HtmlUtils.getElements(text, profile).forEach(document::add);
             } catch (Exception e) {
                 System.err.println(text);
                 e.printStackTrace();
@@ -62,7 +63,7 @@ public class BlockTest extends BaseTest {
 //				if (!hasAny) continue;
                 document.add(profile.getParagraph(text).setFontSize(profile.getFontSize() - 1).setFontColor(new DeviceGray(0.5f)));
                 try {
-                    HtmlProcessor.getBlocks(text, profile).forEach(document::add);
+                    HtmlUtils.getElements(text, profile).forEach(document::add);
                 } catch (Exception e) {
                     System.err.println(text);
                     e.printStackTrace();
