@@ -8,8 +8,8 @@ import org.reactome.server.analysis.core.result.model.AnalysisSummary;
 import org.reactome.server.tools.event.exporter.AnalysisData;
 import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
+import org.reactome.server.tools.event.exporter.util.HtmlUtils;
 import org.reactome.server.tools.event.exporter.util.Texts;
-import org.reactome.server.tools.event.exporter.util.html.HtmlProcessor;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -53,7 +53,9 @@ public class PropertiesSection implements Section {
         }
 
         if (analysisTypeDescription != null && analysisTypeSeeMoreLink != null) {
-            paragraphs.add(HtmlProcessor.createParagraph(analysisTypeDescription, profile)
+
+
+            paragraphs.add(HtmlUtils.getParagraph(analysisTypeDescription, profile)
                     .add(" ")
                     .add(analysisTypeSeeMoreLink));
         }

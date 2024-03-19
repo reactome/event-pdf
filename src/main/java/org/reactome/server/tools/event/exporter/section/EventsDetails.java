@@ -3,10 +3,8 @@ package org.reactome.server.tools.event.exporter.section;
 import com.itextpdf.kernel.pdf.PdfPage;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.AreaBreak;
-import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.element.Table;
-import com.itextpdf.layout.element.Text;
+import com.itextpdf.layout.element.*;
+import com.itextpdf.layout.properties.TextAlignment;
 import org.reactome.server.analysis.core.model.AnalysisType;
 import org.reactome.server.analysis.core.result.model.FoundEntities;
 import org.reactome.server.analysis.core.result.model.FoundEntity;
@@ -19,10 +17,11 @@ import org.reactome.server.tools.event.exporter.DocumentArgs;
 import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
 import org.reactome.server.tools.event.exporter.util.Diagrams;
+import org.reactome.server.tools.event.exporter.util.HtmlUtils;
 import org.reactome.server.tools.event.exporter.util.References;
 import org.reactome.server.tools.event.exporter.util.Tables;
-import org.reactome.server.tools.event.exporter.util.html.HtmlProcessor;
 
+import java.util.List;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -224,9 +223,13 @@ public class EventsDetails implements Section {
 
 	private void addSummations(Document document, Event event, PdfProfile profile) {
 		for (Summation summation : event.getSummation()) {
-			HtmlProcessor.getBlocks(summation.getText(), profile).forEach(document::add);
+			HtmlUtils.getElements(summation.getText(), profile).forEach(element -> {
+				element.setTextAlignment(TextAlignment.JUSTIFIED);
+				document.add(element);
+			});
 		}
 	}
+
 
 	private void addPrecedingAndFollowing(Document document, Event event, PdfProfile profile, Set<Event> contentEvents) {
 		if (event instanceof ReactionLikeEvent) {
