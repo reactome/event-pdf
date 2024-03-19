@@ -137,7 +137,7 @@ public class Main {
 				parametersMap.put("dbId", DatabaseObjectUtils.getIdentifier(aux));
 			} else {
 				if (verbose) System.out.println(String.format("Detected species '%s'", aux));
-				query = "MATCH (p:Event{speciesName:$speciesName}) " +
+				query = "MATCH (p:TopLevelPathway {speciesName:$speciesName}) " +
 						"WITH DISTINCT p " +
 						"RETURN p.stId as stId, p.displayName as displayName " +
 						"ORDER BY p.dbId";
