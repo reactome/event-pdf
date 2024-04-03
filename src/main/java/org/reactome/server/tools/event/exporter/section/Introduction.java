@@ -4,6 +4,7 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Div;
 import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.properties.TextAlignment;
 import com.itextpdf.layout.properties.VerticalAlignment;
 import org.reactome.server.graph.domain.model.LiteratureReference;
 import org.reactome.server.graph.domain.model.Pathway;
@@ -11,9 +12,9 @@ import org.reactome.server.graph.domain.model.ReactionLikeEvent;
 import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
+import org.reactome.server.tools.event.exporter.util.HtmlUtils;
 import org.reactome.server.tools.event.exporter.util.References;
 import org.reactome.server.tools.event.exporter.util.Texts;
-import org.reactome.server.tools.event.exporter.util.html.HtmlProcessor;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -37,9 +38,7 @@ public class Introduction implements Section {
 		final PdfProfile profile = content.getPdfProfile();
 		document.add(new AreaBreak());
 		document.add(profile.getH2("Introduction").setDestination("introduction"));
-		HtmlProcessor.getBlocks(INTRODUCTION, profile).forEach(document::add);
-//		final Collection<Paragraph> intro = HtmlParser.parseText(profile, INTRODUCTION);
-//		intro.forEach(document::add);
+		document.add(HtmlUtils.getParagraph(INTRODUCTION, profile).setTextAlignment(TextAlignment.JUSTIFIED));
 
 		addReferences(document, profile);
 		addBottomText(document, content, profile);

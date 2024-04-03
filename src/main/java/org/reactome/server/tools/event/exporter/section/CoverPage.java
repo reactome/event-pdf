@@ -11,9 +11,9 @@ import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.event.exporter.DocumentContent;
 import org.reactome.server.tools.event.exporter.profile.PdfProfile;
 import org.reactome.server.tools.event.exporter.util.Diagrams;
+import org.reactome.server.tools.event.exporter.util.HtmlUtils;
 import org.reactome.server.tools.event.exporter.util.Images;
 import org.reactome.server.tools.event.exporter.util.Texts;
-import org.reactome.server.tools.event.exporter.util.html.HtmlProcessor;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -54,13 +54,13 @@ public class CoverPage implements Section {
                 .setVerticalAlignment(VerticalAlignment.BOTTOM)
                 .setTextAlignment(TextAlignment.CENTER);
         Paragraph p;
-        p = HtmlProcessor.createParagraph(Texts.getProperty("cover.page.institutions"), profile);
-        bottomDiv.add(p.setTextAlignment(TextAlignment.CENTER));
-        p = HtmlProcessor.createParagraph(Texts.getProperty("cover.page.disclaimer"), profile);
-        bottomDiv.add(p.setTextAlignment(TextAlignment.CENTER));
+        p = HtmlUtils.getParagraph(Texts.getProperty("cover.page.institutions"), profile);
+        bottomDiv.add(p.setTextAlignment(TextAlignment.CENTER).setFontSize(12));
+        p = HtmlUtils.getParagraph(Texts.getProperty("cover.page.disclaimer"), profile);
+        bottomDiv.add(p.setTextAlignment(TextAlignment.CENTER).setFontSize(12));
 
         if(content.getArgs().getMaxLevel() <= 1 && event instanceof Pathway){
-                p = HtmlProcessor.createParagraph(Texts.getProperty("cover.page.warning"), profile);
+                p = HtmlUtils.getParagraph(Texts.getProperty("cover.page.warning"), profile);
                 p.setFontSize(8);
                 bottomDiv.add(p.setTextAlignment(TextAlignment.CENTER));
         }
