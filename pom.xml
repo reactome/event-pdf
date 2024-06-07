@@ -112,6 +112,16 @@
 	        </dependency>
     </dependencies>
 	<repositories>
+		 <repository>
+                        <id>central</id>
+                        <url>https://repo.maven.apache.org/maven2</url>
+                        <releases>
+                               <enabled>true</enabled>
+                        </releases>
+                        <snapshots>
+                               <enabled>false</enabled>
+                        </snapshots>
+                </repository>
 		<!-- EBI repo -->
 		<repository>
 			<id>nexus-ebi-repo</id>
