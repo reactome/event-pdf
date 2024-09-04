@@ -6,7 +6,7 @@
 
     <groupId>org.reactome.server.tools</groupId>
     <artifactId>event-pdf</artifactId>
-    <version>1.1.8</version>
+    <version>1.1.10</version>
     <packaging>jar</packaging>
 
 	<name>event-pdf</name>
@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.reactome.maven</groupId>
         <artifactId>reactome-parent</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.5</version>
     </parent>
 
 	<organization>
@@ -103,67 +103,42 @@
 		</dependency>
 	</dependencies>
 
-	<repositories>
-		<!-- EBI repo -->
-		<repository>
-			<id>nexus-ebi-repo</id>
-			<name>The EBI internal repository</name>
-			<url>https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/</url>
-			<releases>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<!-- EBI SNAPSHOT repo -->
-		<repository>
-			<id>nexus-ebi-snapshot-repo</id>
-			<name>The EBI internal snapshot repository</name>
-			<url>https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-snapshots/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-			</snapshots>
-		</repository>
-	</repositories>
-
-	<!--
-		NOTE:
-		This project is a core dependency in the ContentService (spring-boot)
-		and also an executable jar as part of the release process.
-		Instruction:
-			as dependency: run `mvn clean install` and use in the ContentService, etc
-			as executable: run `mvn clean package -Dboot.repackage.skip=false`
-	-->
-	<build>
-		<finalName>${project.name}</finalName>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-				<excludes>
-					<exclude>**/*.ttf</exclude>
-				</excludes>
-			</resource>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>false</filtering>
-				<includes>
-					<include>**/*.ttf</include>
-				</includes>
-			</resource>
-		</resources>
-		<testResources>
-			<testResource>
-				<directory>src/test/resources</directory>
-				<filtering>true</filtering>
-				<excludes>
-					<exclude>**/*.ttf</exclude>
-					<exclude>**/*.bin</exclude>
-				</excludes>
-			</testResource>
-		</testResources>
+    <!--
+        NOTE:
+        This project is a core dependency in the ContentService (spring-boot)
+        and also an executable jar as part of the release process.
+        Instruction:
+            as dependency: run `mvn clean install` and use in the ContentService, etc
+            as executable: run `mvn clean package -Dboot.repackage.skip=false`
+    -->
+    <build>
+        <finalName>${project.name}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>**/*.ttf</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>**/*.ttf</include>
+                </includes>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>**/*.ttf</exclude>
+                    <exclude>**/*.bin</exclude>
+                </excludes>
+            </testResource>
+        </testResources>
 
 		<plugins>
 			<plugin>
@@ -247,4 +222,30 @@
 			</plugin>
 		</plugins>
 	</build>
+
+    <repositories>
+        <!-- EBI repo -->
+        <repository>
+            <id>nexus-ebi-repo</id>
+            <name>The EBI internal repository</name>
+            <url>https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/</url>
+            <releases>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <!-- EBI SNAPSHOT repo -->
+        <repository>
+            <id>nexus-ebi-snapshot-repo</id>
+            <name>The EBI internal snapshot repository</name>
+            <url>https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+            </snapshots>
+        </repository>
+    </repositories>
+
 </project>
