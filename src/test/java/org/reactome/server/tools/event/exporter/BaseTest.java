@@ -41,8 +41,9 @@ public abstract class BaseTest {
     @BeforeAll
     public static void setUpStatic(@Value("${spring.neo4j.uri}") String uri,
                                    @Value("${spring.neo4j.authentication.username}") String user,
-                                   @Value("${spring.neo4j.authentication.password}") String pass) {
-        ReactomeGraphCore.initialise(uri, user, pass);
+                                   @Value("${spring.neo4j.authentication.password}") String pass,
+                                   @Value("${spring.data.neo4j.database}") String database) {
+        ReactomeGraphCore.initialise(uri, user, pass, database);
     }
 
     @BeforeEach
