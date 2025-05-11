@@ -1,37 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.reactome.server.tools</groupId>
-  <artifactId>event-pdf</artifactId>
-  <version>1.2.0</version>
-  <packaging>jar</packaging>
-  <name>event-pdf</name>
+
   <parent>
     <groupId>org.reactome.maven</groupId>
     <artifactId>reactome-parent</artifactId>
     <version>1.1.0</version>
   </parent>
+
+  <groupId>org.reactome.server.tools</groupId>
+  <artifactId>event-pdf</artifactId>
+  <version>1.2.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>event-pdf</name>
+  <description>Generates a PDF (Portable Digital Format) document out of a Reactome event (Pathway or Reaction)</description>
+  <url>https://github.com/reactome/event-pdf</url>
   <organization>
-    <name>The European Bioinformatics Institute</name>
-    <url>https://www.ebi.ac.uk/</url>
+    <name>Reactome</name>
+    <url>https://reactome.org</url>
   </organization>
+  <licenses>
+    <license>
+      <name>GNU Affero General Public License, Version 3</name>
+      <url>https://www.gnu.org/licenses/agpl-3.0.html</url>
+    </license>
+  </licenses>
+
   <developers>
     <developer>
       <id>plorente</id>
       <name>Pascual Lorente</name>
-      <email>plorente@ebi.ac.uk</email>
-      <organization>https://www.ebi.ac.uk/</organization>
+      <roles>
+        <role>alumni</role>
+      </roles>
+      <organization>The European Bioinformatics Institute</organization>
+      <organizationUrl>https://www.ebi.ac.uk/</organizationUrl>
     </developer>
     <developer>
       <id>fabregat</id>
       <name>Antonio Fabregat</name>
-      <email>fabregat@ebi.ac.uk</email>
-      <organization>https://www.ebi.ac.uk/</organization>
+      <roles>
+        <role>alumni</role>
+      </roles>
+      <organization>The European Bioinformatics Institute</organization>
+      <organizationUrl>https://www.ebi.ac.uk/</organizationUrl>
     </developer>
   </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/reactome/event-pdf.git</connection>
+    <developerConnection>scm:git:ssh://github.com:reactome/event-pdf.git</developerConnection>
+    <url>https://github.com/reactome/event-pdf/tree/master</url>
+  </scm>
+  <!-- Configures the distribution to nexus repository -->
+  <distributionManagement>
+    <!-- Sonatype Release repo -->
+    <repository>
+      <id>ossrh</id>
+      <name>Sonatype Release Repository</name>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+
+    <!-- Sonatype SNAPSHOT repo -->
+    <snapshotRepository>
+      <id>ossrh</id>
+      <name>Sonatype Snapshot Repository</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <properties>
     <main.class>org.reactome.server.tools.event.exporter.Main</main.class>
+
+    <maven.source.version>3.2.1</maven.source.version>
+    <maven.release.version>3.3.1</maven.release.version>
+    <maven.gpg.version>3.2.7</maven.gpg.version>
+    <maven.javadoc.version>3.11.2</maven.javadoc.version>
+    <maven.tidy.version>1.3.0</maven.tidy.version>
+    <nexus-staging-maven-plugin>1.7.0</nexus-staging-maven-plugin>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.reactome.server.graph</groupId>
@@ -87,6 +136,32 @@
       <version>5.0.3</version>
     </dependency>
   </dependencies>
+
+  <repositories>
+    <!-- EBI repo -->
+    <repository>
+      <id>nexus-ebi-repo</id>
+      <name>The EBI internal repository</name>
+      <url>https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/</url>
+      <releases>
+            </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <!-- EBI SNAPSHOT repo -->
+    <repository>
+      <id>nexus-ebi-snapshot-repo</id>
+      <name>The EBI internal snapshot repository</name>
+      <url>https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+            </snapshots>
+    </repository>
+  </repositories>
+
   <!--
         NOTE:
         This project is a core dependency in the ContentService (spring-boot)
@@ -200,30 +275,82 @@
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
+
+      <!-- Nexus staging plugin for Sonatype deployment -->
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>${nexus-staging-maven-plugin}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>ossrh</serverId>
+          <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
+      </plugin>
+
+      <!-- Generate JavaDoc jar file -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>${maven.javadoc.version}</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Signs deployed jar, source jar, and JavaDoc jar with GPG -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>${maven.gpg.version}</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <gpgExecutable>gpg</gpgExecutable> <!-- Explicitly specify the GPG executable -->
+        </configuration>
+      </plugin>
+
+      <!-- Allows "release" mvn goal to deploy a SNAPSHOT or version release to Sonatype -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>${maven.release.version}</version>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+          <useReleaseProfile>false</useReleaseProfile>
+          <releaseProfiles>release</releaseProfiles>
+          <goals>deploy</goals>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>tidy-maven-plugin</artifactId>
+        <version>${maven.tidy.version}</version>
+        <executions>
+          <execution>
+            <id>validate</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
     </plugins>
   </build>
-  <repositories>
-    <!-- EBI repo -->
-    <repository>
-      <id>nexus-ebi-repo</id>
-      <name>The EBI internal repository</name>
-      <url>https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/</url>
-      <releases>
-            </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <!-- EBI SNAPSHOT repo -->
-    <repository>
-      <id>nexus-ebi-snapshot-repo</id>
-      <name>The EBI internal snapshot repository</name>
-      <url>https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-snapshots/</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-            </snapshots>
-    </repository>
-  </repositories>
 </project>
