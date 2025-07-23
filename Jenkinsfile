@@ -9,8 +9,13 @@ def utils = new Utilities()
 pipeline{
 	agent any
 
+        environment {
+		ECR_URL = 'public.ecr.aws/reactome/event-pdf'
+	        CONT_NAME = 'event_pdf_container'
+        }
+	
 	stages{
-		// This stage checks that upstream project 'DiagramConverter' was run successfully.
+		// This stage verifies that the upstream project 'DiagramConverter' was executed successfully.
 		stage('Check DiagramConverter build succeeded'){
 			steps{
 				script{
@@ -18,11 +23,15 @@ pipeline{
 				}
 			}
 		}
-		// This stage builds the jar file using maven.
-		stage('Setup: Build jar file'){
+		stage('Pull event-pdf Docker image') {
 			steps{
-				script{
-					sh "mvn clean package -P Reactome-Server"
+				script {
+                			sh "docker pull ${ECR_URL}:latest"
+					sh """
+						if docker ps -a --format '{{.Names}}' | grep -Eq '${CONT_NAME}'; then
+							docker rm -f ${CONT_NAME}
+						fi
+					"""
 				}
 			}
 		}
@@ -33,11 +42,23 @@ pipeline{
 					def releaseVersion = utils.getReleaseVersion()
 					def diagramFolderPath = "${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/diagram/"
 					def ehldFolderPath = "${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/ehld/"
-					sh "sudo service tomcat9 stop"
-					withCredentials([usernamePassword(credentialsId: 'neo4jUsernamePassword', passwordVariable: 'pass', usernameVariable: 'user')]){
-						sh "java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user $user --password $pass --diagram ${diagramFolderPath} --ehld ${ehldFolderPath} --summary ${ehldFolderPath}/svgsummary.txt --output TheReactomeBook --verbose"
-					}
-					sh "sudo service tomcat9 start"
+					try {
+					  sh "sudo service tomcat9 stop"
+					  withCredentials([usernamePassword(credentialsId: 'neo4jUsernamePassword', passwordVariable: 'pass', usernameVariable: 'user')]){
+					     sh """
+                                                 docker run \\
+						     -v ${diagramFolderPath}:/data/diagram:ro \\
+                                                     -v ${ehldFolderPath}:/data/ehld:ro \\
+                                                     -v ${pwd()}/output:/app/output \\
+						     --net=host \\
+		                                     --name ${CONT_NAME} \\
+						     ${ECR_URL}:latest \\
+	                                             /bin/bash -c "java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user \$user --password \$pass --diagram /data/diagram --ehld /data/ehld --summary /data/ehld/svgsummary.txt --output /app/output/TheReactomeBook --verbose"
+						"""
+					  }
+					} finally {
+                                            sh "sudo service tomcat9 start"
+                                        }
 				}
 			}
 		}
@@ -47,7 +68,7 @@ pipeline{
 		        script{
 				def releaseVersion = utils.getReleaseVersion()
 				def previousReleaseVersion = utils.getPreviousReleaseVersion()
-				def reactomeBookFolder = "TheReactomeBook"
+				def reactomeBookFolder = "output/TheReactomeBook"
 
 				sh "mkdir -p ${previousReleaseVersion}"
 				// Download previous 'TheReactomeBook' archive from S3.
@@ -72,8 +93,10 @@ pipeline{
 		        script{
 				def releaseVersion = utils.getReleaseVersion()
 				def reactomeBookFolder = "TheReactomeBook"
-				sh "tar -zcvf ${reactomeBookFolder}.pdf.tgz ${reactomeBookFolder}/" 
-				sh "cp ${reactomeBookFolder}.pdf.tgz ${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/"
+				dir("output"){
+				    sh "tar -zcvf ${reactomeBookFolder}.pdf.tgz ${reactomeBookFolder}/" 
+				    sh "cp ${reactomeBookFolder}.pdf.tgz ${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/"
+				}
 		        }
 		    }
 		}
@@ -82,9 +105,9 @@ pipeline{
 			steps{
 				script{
 					def releaseVersion = utils.getReleaseVersion()
-					def dataFiles = ["TheReactomeBook.pdf.tgz"]
+					def dataFiles = ["output/TheReactomeBook.pdf.tgz"]
 					def logFiles = []
-					def foldersToDelete = ["TheReactomeBook/"]
+					def foldersToDelete = ["output"]
 					utils.cleanUpAndArchiveBuildFiles("event_pdf", dataFiles, logFiles, foldersToDelete)
 				}
 			}
