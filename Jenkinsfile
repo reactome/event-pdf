@@ -53,7 +53,7 @@ pipeline{
 						     --net=host \\
 		                                     --name ${CONT_NAME} \\
 						     ${ECR_URL}:latest \\
-	                                             /bin/bash -c "java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user \$user --password \$pass --diagram /data/diagram --ehld /data/ehld --summary /data/ehld/svgsummary.txt --output /app/output/TheReactomeBook --verbose"
+	                                             /bin/bash -c "java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user \$user --password \'$pass\' --diagram /data/diagram --ehld /data/ehld --summary /data/ehld/svgsummary.txt --output /app/output/TheReactomeBook --verbose"
 						"""
 					  }
 					} finally {
