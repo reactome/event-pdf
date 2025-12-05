@@ -39,9 +39,8 @@
 
 
     <properties>
-
         <main.class>org.reactome.server.tools.event.exporter.Main</main.class>
-
+        <verifier.main.class>org.reactome.server.tools.event.exporter.verifier.Verifier</verifier.main.class>
     </properties>
 
     <dependencies>
@@ -166,14 +165,31 @@
                 <version>${spring-boot.version}</version>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>${main.class}</mainClass>
-                    <classifier>exec</classifier>
+                    <mainClass>NONE</mainClass>
                 </configuration>
                 <executions>
                     <execution>
+                        <id>primary-exec</id>
                         <goals>
                             <goal>repackage</goal>
                         </goals>
+                        <configuration>
+                            <mainClass>${main.class}</mainClass>
+                            <classifier>exec</classifier>
+                            <skipIfEmpty>true</skipIfEmpty>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>verifier-exec</id>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>${verifier.main.class}</mainClass>
+                            <classifier>verifier</classifier>
+                            <skipIfEmpty>true</skipIfEmpty>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
