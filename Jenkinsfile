@@ -45,8 +45,10 @@ pipeline{
 			steps {
 				script {
 					def releaseVersion = utils.getReleaseVersion()
+					def outputDirectory = "TheReactomeBook/"
+					def dropTolerancePercentage = 2
 
-					sh "java -jar target/event-pdf-verifier.jar --releaseNumber ${releaseVersion} --output TheReactomeBook/"
+					sh "java -jar target/event-pdf-verifier.jar --releaseNumber ${releaseVersion} --output ${outputDirectory} --sizeDropTolerance ${dropTolerancePercentage}"
 				}
 			}
 		}
