@@ -13,7 +13,7 @@ import java.io.IOException;
 public class EventPdfVerifier {
 
     public static void main(String[] args) throws JSAPException, IOException {
-        Verifier verifier = new DefaultVerifier("event-pdf");
+        Verifier verifier = new DefaultVerifier("event_pdf");
         verifier.parseCommandLineArgs(args);
         verifier.run();
     }
