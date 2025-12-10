@@ -66,6 +66,33 @@ pipeline{
 			}
 		}
 
+		// Execute the verifier jar file checking for the existence and proper file sizes of the TheReactomeBook output
+		stage('Post: Verify EventPDF ran correctly') {
+			steps {
+				script {
+					def releaseVersion = utils.getReleaseVersion()
+					def outputDirectory = "TheReactomeBook/"
+					def dropTolerancePercentage = 2
+
+					sh "java -jar target/event-pdf-verifier.jar --releaseNumber ${releaseVersion} --output ${outputDirectory} --sizeDropTolerance ${dropTolerancePercentage}"
+				}
+			}
+		}
+
+		// Creates a list of files and their sizes to use for comparison baseline during next release
+		stage('Post: Create files and sizes list to upload for next release\'s verifier') {
+			steps {
+				script {
+					def fileSizeList = "files_and_sizes.txt"
+					def releaseVersion = utils.getReleaseVersion()
+
+					sh "find TheReactomeBook/ -type f -printf \"%s\t%P\n\" > ${fileSizeList}"
+					sh "aws s3 --no-progress cp ${fileSizeList} s3://reactome/private/releases/${releaseVersion}/event_pdf/data/"
+					sh "rm ${fileSizeList}"
+				}
+			}
+		}
+
 		// This step just lists the contents of the 'TheReactomeBook' folder between releases, allowing for comparison of file sizes.
 		stage('Post: Compare TheReactomeBook contents between releases') {
 			steps{
