@@ -54,7 +54,7 @@ pipeline{
 								-v ${ehldFolderPath}:/data/ehld:ro \\
 								-v ${pwd()}/output:/app/output \\
 								--net=host \\
-								--name ${CONT_NAME} \\
+								--name ${CONT_NAME}_exec \\
 								${ECR_URL}:latest \\
 								/bin/bash -c "java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user \$user --password \'$pass\' --diagram /data/diagram --ehld /data/ehld --summary /data/ehld/svgsummary.txt --output /app/output/TheReactomeBook --verbose"
 							"""
@@ -71,10 +71,18 @@ pipeline{
 			steps {
 				script {
 					def releaseVersion = utils.getReleaseVersion()
-					def outputDirectory = "TheReactomeBook/"
+					def outputDirectory = "/app/output"
+					def reactomeBookDirectory = "TheReactomeBook/"
 					def dropTolerancePercentage = 2
 
-					sh "java -jar target/event-pdf-verifier.jar --releaseNumber ${releaseVersion} --output ${outputDirectory} --sizeDropTolerance ${dropTolerancePercentage}"
+					sh """
+						docker run \\
+						-v ${pwd()}/output:${outputDirectory}/ \\
+						--net=host \\
+						--name ${CONT_NAME}_verifier \\
+						${ECR_URL}:latest \\
+						/bin/bash -c "java -jar target/event-pdf-verifier.jar --releaseNumber ${releaseVersion} --output ${outputDirectory}/${reactomeBookDirectory} --sizeDropTolerance ${dropTolerancePercentage}"
+					"""
 				}
 			}
 		}
