@@ -9,8 +9,13 @@ def utils = new Utilities()
 pipeline{
 	agent any
 
+	environment {
+		ECR_URL = 'public.ecr.aws/reactome/event-pdf'
+		CONT_NAME = 'event_pdf_container'
+	}
+
 	stages{
-		// This stage checks that upstream project 'DiagramConverter' was run successfully.
+		// This stage verifies that the upstream project 'DiagramConverter' was executed successfully.
 		stage('Check DiagramConverter build succeeded'){
 			steps{
 				script{
@@ -18,14 +23,20 @@ pipeline{
 				}
 			}
 		}
-		// This stage builds the jar file using maven.
-		stage('Setup: Build jar file'){
+
+		stage('Pull event-pdf Docker image') {
 			steps{
-				script{
-					sh "mvn clean package -P Reactome-Server"
+				script {
+					sh "docker pull ${ECR_URL}:latest"
+					sh """
+						if docker ps -a --format '{{.Names}}' | grep -Eq '${CONT_NAME}'; then
+							docker rm -f ${CONT_NAME}
+						fi
+					"""
 				}
 			}
 		}
+
 		// Execute the jar file, producing a folder (TheReactomeBook) of Reactome PDFs.
 		stage('Main: Run EventPDF'){
 			steps{
@@ -34,26 +45,48 @@ pipeline{
 					def diagramFolderPath = "${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/diagram/"
 					def ehldFolderPath = "${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/ehld/"
 
-					sh "sudo service tomcat9 stop"
-					withCredentials([usernamePassword(credentialsId: 'neo4jUsernamePassword', passwordVariable: 'pass', usernameVariable: 'user')]){
-						sh "java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user $user --password $pass --diagram ${diagramFolderPath} --ehld ${ehldFolderPath} --summary ${ehldFolderPath}/svgsummary.txt --output TheReactomeBook --verbose"
+					try {
+						sh "sudo service tomcat9 stop"
+						withCredentials([usernamePassword(credentialsId: 'neo4jUsernamePassword', passwordVariable: 'pass', usernameVariable: 'user')]){
+							sh """
+								docker run \\
+								-v ${diagramFolderPath}:/data/diagram:ro \\
+								-v ${ehldFolderPath}:/data/ehld:ro \\
+								-v ${pwd()}/output:/app/output \\
+								--net=host \\
+								--name ${CONT_NAME}_exec \\
+								${ECR_URL}:latest \\
+								/bin/bash -c "java -Xmx${env.JAVA_MEM_MAX}m -jar target/event-pdf-exec.jar --user \$user --password \'$pass\' --diagram /data/diagram --ehld /data/ehld --summary /data/ehld/svgsummary.txt --output /app/output/TheReactomeBook --verbose"
+							"""
+						}
+					} finally {
+						sh "sudo service tomcat9 start"
 					}
-					sh "sudo service tomcat9 start"
 				}
 			}
 		}
+
 		// Execute the verifier jar file checking for the existence and proper file sizes of the TheReactomeBook output
 		stage('Post: Verify EventPDF ran correctly') {
 			steps {
 				script {
 					def releaseVersion = utils.getReleaseVersion()
-					def outputDirectory = "TheReactomeBook/"
+					def outputDirectory = "/app/output"
+					def reactomeBookDirectory = "TheReactomeBook/"
 					def dropTolerancePercentage = 2
 
-					sh "java -jar target/event-pdf-verifier.jar --releaseNumber ${releaseVersion} --output ${outputDirectory} --sizeDropTolerance ${dropTolerancePercentage}"
+					sh """
+						docker run \\
+						-v ${pwd()}/output:${outputDirectory}/ \\
+						--net=host \\
+						--name ${CONT_NAME}_verifier \\
+						${ECR_URL}:latest \\
+						/bin/bash -c "java -jar target/event-pdf-verifier.jar --releaseNumber ${releaseVersion} --output ${outputDirectory}/${reactomeBookDirectory} --sizeDropTolerance ${dropTolerancePercentage}"
+					"""
 				}
 			}
 		}
+
 		// Creates a list of files and their sizes to use for comparison baseline during next release
 		stage('Post: Create files and sizes list to upload for next release\'s verifier') {
 			steps {
@@ -67,13 +100,14 @@ pipeline{
 				}
 			}
 		}
+
 		// This step just lists the contents of the 'TheReactomeBook' folder between releases, allowing for comparison of file sizes.
 		stage('Post: Compare TheReactomeBook contents between releases') {
 			steps{
 				script{
 					def releaseVersion = utils.getReleaseVersion()
 					def previousReleaseVersion = utils.getPreviousReleaseVersion()
-					def reactomeBookFolder = "TheReactomeBook"
+					def reactomeBookFolder = "output/TheReactomeBook"
 
 					sh "mkdir -p ${previousReleaseVersion}"
 					// Download previous 'TheReactomeBook' archive from S3.
@@ -91,25 +125,31 @@ pipeline{
 				}
 			}
 		}
+
 		// Create tar archive of the 'TheReactomeBook' folder that was produced by this step, copying it over to the downloads folder.
 		stage('Post: Generate ReactomeBook archive and move to downloads folder') {
 			steps{
 				script{
 					def releaseVersion = utils.getReleaseVersion()
 					def reactomeBookFolder = "TheReactomeBook"
-					sh "tar -zcvf ${reactomeBookFolder}.pdf.tgz ${reactomeBookFolder}/"
-					sh "cp ${reactomeBookFolder}.pdf.tgz ${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/"
+
+					dir("output"){
+						sh "tar -zcvf ${reactomeBookFolder}.pdf.tgz ${reactomeBookFolder}/"
+						sh "cp ${reactomeBookFolder}.pdf.tgz ${env.ABS_DOWNLOAD_PATH}/${releaseVersion}/"
+					}
 				}
 			}
 		}
+
 		// Archive everything on S3, and move the PDF archive to the download/XX folder.
 		stage('Post: Archive Outputs'){
 			steps{
 				script{
 					def releaseVersion = utils.getReleaseVersion()
-					def dataFiles = ["TheReactomeBook.pdf.tgz"]
+					def dataFiles = ["output/TheReactomeBook.pdf.tgz"]
 					def logFiles = []
-					def foldersToDelete = ["TheReactomeBook/"]
+					def foldersToDelete = ["output"]
+
 					utils.cleanUpAndArchiveBuildFiles("event_pdf", dataFiles, logFiles, foldersToDelete)
 				}
 			}
