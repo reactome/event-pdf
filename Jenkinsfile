@@ -78,11 +78,15 @@ pipeline{
 					sh """
 						docker run \\
 						-v ${pwd()}/output:${outputDirectory}/ \\
+					    -v \$HOME/.aws:/root/.aws:ro \
+                        -e AWS_REGION=us-east-1 \
+						--rm \\
 						--net=host \\
 						--name ${CONT_NAME}_verifier \\
 						${ECR_URL}:latest \\
 						/bin/bash -c "java -jar target/event-pdf-verifier.jar --releaseNumber ${releaseVersion} --output ${outputDirectory}/${reactomeBookDirectory} --sizeDropTolerance ${dropTolerancePercentage}"
 					"""
+
 				}
 			}
 		}
