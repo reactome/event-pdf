@@ -9,7 +9,8 @@ public class SimplePathwayResult implements CustomQuery {
 
     public SimplePathwayResult() {}
 
-    public SimplePathwayResult(String stId, String displayName) {
+    // Must stay private: graph-core instantiates CustomQuery classes via getConstructors()[0].newInstance()
+    private SimplePathwayResult(String stId, String displayName) {
         this.stId = stId;
         this.displayName = displayName;
     }
